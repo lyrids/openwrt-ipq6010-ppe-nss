@@ -1,0 +1,70 @@
+diff --git a/ipq6010-lab/config.seed b/ipq6010-lab/config.seed
+index b62de60363..df85ae7256 100644
+--- a/ipq6010-lab/config.seed
++++ b/ipq6010-lab/config.seed
+@@ -47,3 +47,5 @@ CONFIG_PACKAGE_nss-firmware-ipq60xx=y
+ CONFIG_PACKAGE_tcpdump=y
+ # CONFIG_PACKAGE_wpad-basic-mbedtls is not set
+ CONFIG_PACKAGE_wpad-openssl=y
++CONFIG_KERNEL_KEXEC=y
++CONFIG_PACKAGE_kexec=y
+diff --git a/package/kernel/nss-wifi-drv/src/nss_core.c b/package/kernel/nss-wifi-drv/src/nss_core.c
+index 0f0e1a0894..016cccc648 100644
+--- a/package/kernel/nss-wifi-drv/src/nss_core.c
++++ b/package/kernel/nss-wifi-drv/src/nss_core.c
+@@ -1509,6 +1509,8 @@ MODULE_DEVICE_TABLE(of, nss_of_match);
+ static struct platform_driver nss_driver = {
+ 	.probe = nss_probe,
+ 	.remove = nss_remove,
++	/* Shutdown and remove are exclusive; both must halt NSS DMA. */
++	.shutdown = nss_remove,
+ 	.driver = {
+ 		.name = "nss-wifi-drv",
+ 		.of_match_table = nss_of_match,
+diff --git a/target/linux/qualcommax/config-6.18 b/target/linux/qualcommax/config-6.18
+index 2217e37b91..676d63645d 100644
+--- a/target/linux/qualcommax/config-6.18
++++ b/target/linux/qualcommax/config-6.18
+@@ -659,3 +659,11 @@ CONFIG_ZONE_DMA32=y
+ CONFIG_ZSTD_COMMON=y
+ CONFIG_ZSTD_COMPRESS=y
+ CONFIG_ZSTD_DECOMPRESS=y
++
++# ARM64 kexec bootstrap: suspend supplies PM_SLEEP_SMP for legacy kexec.
++CONFIG_HOTPLUG_CPU=y
++CONFIG_KEXEC=y
++CONFIG_KEXEC_FILE=y
++CONFIG_SUSPEND=y
++
++# CONFIG_FW_CACHE is not set
+diff --git a/target/linux/qualcommax/files/drivers/net/ethernet/qualcomm/qca_edma.c b/target/linux/qualcommax/files/drivers/net/ethernet/qualcomm/qca_edma.c
+index 71e0a039bd..4382cf4a1e 100644
+--- a/target/linux/qualcommax/files/drivers/net/ethernet/qualcomm/qca_edma.c
++++ b/target/linux/qualcommax/files/drivers/net/ethernet/qualcomm/qca_edma.c
+@@ -2650,6 +2650,18 @@ static void edma_remove(struct platform_device *pdev)
+ 	edma_port_md_free(priv);
+ }
+ 
++/* A kexec kernel does not pass through firmware's DMA reset path. */
++static void edma_shutdown(struct platform_device *pdev)
++{
++	struct edma_priv *priv = platform_get_drvdata(pdev);
++
++	rtnl_lock();
++	dev_close(priv->netdev);
++	netif_tx_disable(priv->netdev);
++	edma_hw_stop(priv);
++	rtnl_unlock();
++}
++
+ static const struct edma_soc_data ipq60xx_data = {
+ 	.txcmpl_base = 0x79000,
+ 	.tx_int_base = 0x91000,
+@@ -2686,6 +2698,7 @@ static struct platform_driver edma_driver = {
+ 	},
+ 	.probe = edma_probe,
+ 	.remove = edma_remove,
++	.shutdown = edma_shutdown,
+ };
+ 
+ module_platform_driver(edma_driver);

@@ -1,0 +1,12 @@
+{
+  "timestamp_utc": "2026-10-25T08:06:01.895466+00:00",
+  "static_utility_router_version": "kexec-tools 2.0.32",
+  "static_utility_router_sha256": "13516e64dfb8ba8aa9cb30f392d190ffa8822e28962daf08e5fcaec29238b3af",
+  "current_kernel_syscalls": "both ENOSYS; rejection-only probes",
+  "extract_known_good_fit": "passed ARM64 header and exact JDCloud compatible check",
+  "incorrect_sha256": "rejected before creating output",
+  "kernel_loaded": false,
+  "router_rebooted": false,
+  "bootstrap_boot_tested": false,
+  "warm_transition_tested": false
+}

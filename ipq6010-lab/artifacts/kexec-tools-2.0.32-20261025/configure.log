@@ -1,0 +1,41 @@
+checking for aarch64-openwrt-linux-musl-gcc... /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.4.0_musl/bin/aarch64-openwrt-linux-musl-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... yes
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.4.0_musl/bin/aarch64-openwrt-linux-musl-gcc accepts -g... yes
+checking for /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.4.0_musl/bin/aarch64-openwrt-linux-musl-gcc option to enable C11 features... none needed
+checking build system type... aarch64-unknown-linux-gnu
+checking host system type... aarch64-openwrt-linux-musl
+checking target system type... aarch64-openwrt-linux-musl
+checking for aarch64-linux-gnu-gcc... aarch64-linux-gnu-gcc
+checking how to run the C preprocessor... /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.4.0_musl/bin/aarch64-openwrt-linux-musl-gcc -E
+checking for aarch64-openwrt-linux-musl-ld... /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.4.0_musl/bin/aarch64-openwrt-linux-musl-ld
+checking for aarch64-openwrt-linux-musl-as... no
+checking for as... as
+configure: WARNING: using cross tools not prefixed with host triplet
+checking for aarch64-openwrt-linux-musl-objcopy... no
+checking for objcopy... objcopy
+checking for aarch64-openwrt-linux-musl-ar... /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.4.0_musl/bin/aarch64-openwrt-linux-musl-ar
+checking for aarch64-openwrt-linux-musl-strip... no
+checking for strip... strip
+checking whether /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.4.0_musl/bin/aarch64-openwrt-linux-musl-gcc accepts -fno-zero-initialized-in-bss... Yes
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for chmod... chmod
+checking for mkdir... mkdir
+checking for rm... rm
+checking for cp... cp
+checking for ln... ln
+checking for tar... tar
+checking for rpmbuild... no
+checking for sed... sed
+checking for find... find
+checking for xargs... xargs
+checking for dirname... dirname
+checking for xenctrl.h... no
+checking for memfd_create... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating include/config.h

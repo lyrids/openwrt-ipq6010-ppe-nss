@@ -1,0 +1,17 @@
+{
+  "source_sha256": "9532829d86a54e50f73e99666d92d68bb18fef7694b02cd12105aa6493a37277",
+  "configuration": "config@cp03-c3",
+  "compatible": "jdcloud,re-cs-02 qcom,ipq6018",
+  "kernel_compression": "gzip",
+  "initramfs": "built into source kernel; no separate initrd",
+  "files": {
+    "Image": {
+      "bytes": 27879432,
+      "sha256": "c66cc48981aa13d31c938a72d9380a8d8669e0f288c6a5142b2fb2fd9b7fae71"
+    },
+    "target.dtb": {
+      "bytes": 29786,
+      "sha256": "fcffe029dac05cea6d9aceb7fd2db9df2000e57b0dffb00947341fe0e46d6752"
+    }
+  }
+}

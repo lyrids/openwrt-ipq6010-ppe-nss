@@ -262,5 +262,65 @@
     "bytes": 14510355,
     "sha256": "abd4a0436b242f1569f30fae354bb125bbb7532a74f0fb651c1620ceba34f364",
     "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/nss-ethernet-kexec-20261025/rootfs.squashfs",
+    "bytes": 12114944,
+    "sha256": "fe9254bd7507a9ec4395fb3ca97ebdcce4a4eb6e970cc20c502b1cffae37b035",
+    "reason": "generated binary or image"
+  },
+  {
+    "path": "artifacts/nss-ethernet-kexec-20261025/initramfs-kernel.gz",
+    "bytes": 18928110,
+    "sha256": "8fa5083098b9f168823ec2c96753b72071d998a049b3ba8a48b220616eaccc7e",
+    "reason": "generated binary or image"
+  },
+  {
+    "path": "artifacts/nss-ethernet-kexec-20261025/images/openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-initramfs-uImage.itb",
+    "bytes": 18959300,
+    "sha256": "9532829d86a54e50f73e99666d92d68bb18fef7694b02cd12105aa6493a37277",
+    "reason": "generated binary or image"
+  },
+  {
+    "path": "artifacts/nss-ethernet-kexec-20261025/images/openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-squashfs-sysupgrade.bin",
+    "bytes": 18032918,
+    "sha256": "d03957150bcc9bc77cb1693ca7c3d7b3b635bbf7738bac57bf236b6fa15b59c4",
+    "reason": "generated binary or image"
+  },
+  {
+    "path": "artifacts/nss-ethernet-kexec-20261025/kexec-bundle/target.dtb",
+    "bytes": 29786,
+    "sha256": "fcffe029dac05cea6d9aceb7fd2db9df2000e57b0dffb00947341fe0e46d6752",
+    "reason": "generated binary or image"
+  },
+  {
+    "path": "artifacts/nss-ethernet-kexec-20261025/kexec-bundle/Image",
+    "bytes": 27879432,
+    "sha256": "c66cc48981aa13d31c938a72d9380a8d8669e0f288c6a5142b2fb2fd9b7fae71",
+    "reason": "generated binary or image"
+  },
+  {
+    "path": "artifacts/kexec-tools-2.0.32-20261025/kexec",
+    "bytes": 264200,
+    "sha256": "13516e64dfb8ba8aa9cb30f392d190ffa8822e28962daf08e5fcaec29238b3af",
+    "reason": "generated binary or image"
+  },
+  {
+    "path": "artifacts/kexec-tools-2.0.32-20261025/probe-kexec",
+    "bytes": 244320,
+    "sha256": "a650097575c470db31e6c582a0ff61c60e57709782e2cfeb6e3b89790c130ce5",
+    "reason": "generated binary or image"
+  },
+  {
+    "path": "artifacts/kexec-tools-2.0.32-20261025/test-bundle/target.dtb",
+    "bytes": 29786,
+    "sha256": "fcffe029dac05cea6d9aceb7fd2db9df2000e57b0dffb00947341fe0e46d6752",
+    "reason": "generated binary or image"
+  },
+  {
+    "path": "artifacts/kexec-tools-2.0.32-20261025/test-bundle/Image",
+    "bytes": 27678728,
+    "sha256": "511f0255c9d50f052cca769148cde1a5788949f0f71a91d9eccab3f04a109143",
+    "reason": "generated binary or image"
   }
 ]

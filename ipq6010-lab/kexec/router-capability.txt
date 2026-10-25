@@ -1,0 +1,5 @@
+kexec_file_load with invalid fds: return=-1 errno=38 (Function not implemented)
+kexec_load with invalid flags: return=-1 errno=38 (Function not implemented)
+kexec-tools 2.0.32
+13516e64dfb8ba8aa9cb30f392d190ffa8822e28962daf08e5fcaec29238b3af  /tmp/kexec
+7059.53 28028.19

@@ -40,6 +40,10 @@ Last tested RAM image: iteration5, nss-ethernet-mtuguard-03803c78cd-20261025, 18
 
 Raw logs include failed attempts. Earlier validation-pending fields are historical; this table and iteration5 summary describe latest status. CPU samples include idle periods. Long-term stability, QinQ and2.5G throughput are not qualified.
 
+## Kexec bootstrap
+
+An iteration6 bootstrap image and static ARM64 kexec-tools2.0.32 are now built. See [kexec details](kexec/README.md) for artifacts, tests and the staged qualification procedure. Offline validation passed; actual bootstrap boot and kernel replacement remain pending.
+
 ## Archive policy
 
 All custom OpenWrt source changes are committed in the source tree. historical-scripts/ contains helpers; artifacts/ contains text provenance, configs, patches, C harnesses, logs, manifests and hashes from every iteration; evidence/ contains measurements and failures; workspace/ records host setup. historical-source-guard.patch preserves a stashed earlier compile guard; do not apply it over current code.
