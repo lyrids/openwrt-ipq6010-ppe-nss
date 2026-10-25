@@ -1,0 +1,47 @@
+{
+  "timestamp_utc": "2026-10-25T13:03:20.928499+00:00",
+  "source_commit": "3011049917bfb2fdc9a141196b3a94b63e58b96a",
+  "chosen_mode": "on-demand network pause; preserve automatic boot",
+  "applied": {
+    "net_abort_en": "1",
+    "telnet_en": "1",
+    "telnet_port": "23",
+    "bootdelay": "5"
+  },
+  "bootcmd_unchanged": true,
+  "serial_stdio_unchanged": true,
+  "bootloader_binary_or_kernel_modified": false,
+  "tests": {
+    "loopback_request_reply_invalid_reply_timeout": "passed",
+    "network_pause_without_SCREEN": {
+      "acknowledged": true,
+      "peer": [
+        "192.168.1.1",
+        37540
+      ],
+      "packets_sent": 159,
+      "ignored_replies": 0,
+      "elapsed_seconds": 15.915,
+      "telnet_ready": true,
+      "address": "192.168.1.1",
+      "port": 23
+    },
+    "Telnet_version_printenv_help": "passed",
+    "Telnet_run_bootcmd_resumes_TFTP": "passed",
+    "unpaused_normal_TFTP_reboot": "passed",
+    "new_boot_ids": [
+      "c73f2b56-18f8-49b9-aa34-1a4abd19ea16",
+      "5e322d80-a02f-4787-afd3-f0ca1c0adddd",
+      "c5e8285d-cdd2-4bf9-bcdb-66dc3066fd59"
+    ]
+  },
+  "final": {
+    "CPU_online": "0-3",
+    "NSS": "enabled1 active1",
+    "image": "pre-kexec iteration5",
+    "root": "tmpfs",
+    "kexec": "absent",
+    "pause_helper": "exited; no persistent sender"
+  },
+  "recovery": "network-triggered failsafe Telnet verified; physical SCREEN uses the same source path and was verified in earlier tests"
+}

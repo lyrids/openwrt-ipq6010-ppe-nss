@@ -1,0 +1,13 @@
+{
+  "acknowledged": true,
+  "peer": [
+    "192.168.1.1",
+    37540
+  ],
+  "packets_sent": 159,
+  "ignored_replies": 0,
+  "elapsed_seconds": 15.915,
+  "telnet_ready": true,
+  "address": "192.168.1.1",
+  "port": 23
+}

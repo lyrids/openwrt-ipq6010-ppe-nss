@@ -1,0 +1,20 @@
+{
+  "repository": "https://github.com/chenxin527/uboot-qsdk12.5-build",
+  "tag": "26.08.16-14.22.36-3011049",
+  "commit": "3011049917bfb2fdc9a141196b3a94b63e58b96a",
+  "selected_behavior": "user selected on-demand Telnet pause; preserve automatic boot",
+  "apply": {
+    "net_abort_en": "1",
+    "telnet_en": "1",
+    "telnet_port": "23",
+    "bootdelay": "5"
+  },
+  "unchanged": [
+    "bootcmd",
+    "stdin",
+    "stdout",
+    "stderr"
+  ],
+  "bootloader_binary_modified": false,
+  "kernel_modified": false
+}

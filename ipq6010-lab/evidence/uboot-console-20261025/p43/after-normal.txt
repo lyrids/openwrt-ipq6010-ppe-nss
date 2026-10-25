@@ -1,0 +1,15 @@
+c5e8285d-cdd2-4bf9-bcdb-66dc3066fd59
+0-3
+1
+ethernet enabled 1 active 1 offers 0 pushed 0 rejected 0
+mtu_policy limited 0 link 0/0 route 0/0 rule 0/0 l3if 0/0
+tmpfs / tmpfs rw,relatime 0 0
+bootcmd=run boot_tftp; run boot_emmc
+bootdelay=5
+net_abort_en=1
+telnet_en=1
+telnet_port=23
+stdin=serial@78B1000
+stdout=serial@78B1000
+stderr=serial@78B1000
+KEXEC_ABSENT

@@ -1,0 +1,11 @@
+5e322d80-a02f-4787-afd3-f0ca1c0adddd
+0-3
+1
+ethernet enabled 1 active 1 offers 0 pushed 0 rejected 0
+mtu_policy limited 0 link 0/0 route 0/0 rule 0/0 l3if 0/0
+tmpfs / tmpfs rw,relatime 0 0
+bootcmd=run boot_tftp; run boot_emmc
+bootdelay=5
+telnet_en=1
+telnet_port=23
+net_abort_en=1

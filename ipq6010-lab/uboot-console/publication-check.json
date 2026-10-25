@@ -1,0 +1,6 @@
+{
+  "known_test_wifi_PSK_matches": 0,
+  "private_key_token_patterns": "none",
+  "scope": "console helper, four named environment values, and explicit test transcripts only",
+  "raw_partitions_or_SSH_key_files_included": false
+}

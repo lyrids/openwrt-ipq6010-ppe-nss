@@ -21,7 +21,8 @@ boot_tftp downloads the file to0x50000000, verifies FIT hashes with iminfo,
 sets RAM-safe console arguments and boots config@cp03-c3. It only calls
 bootm after successful transfer and FIT validation. If transfer, validation,
 or bootm returns, original console arguments are restored and boot_emmc
-runs the original bootipq path. bootdelay remains2. autostart=no prevents
+runs the original bootipq path. TFTP setup initially kept bootdelay2; the later on-demand console setup
+sets it to5 (see ../uboot-console/README.md). autostart=no prevents
 implicit execution by the TFTP download command.
 
 Exact variables: tftp-first.env and expected-environment.json.

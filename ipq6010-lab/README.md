@@ -3,7 +3,8 @@
 Kexec work is suspended. Active package/target source and build defaults
 match the pre-kexec state08c04ac881. Iteration5 runs with four CPUs and
 active NSS. Normal reboot downloads the image from p43 over TFTP, with
-the original eMMC bootipq fallback. USB boot is the next stage.
+the original eMMC bootipq fallback. USB boot is the next stage. On-demand Telnet pause from p43 is configured;
+see [U-Boot console](uboot-console/README.md).
 
 See [TFTP workflow/configuration/rollback](tftp-boot/README.md).
 Earlier experiments below are retained as historical development records.
