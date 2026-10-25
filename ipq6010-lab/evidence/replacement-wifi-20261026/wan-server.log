@@ -1,0 +1,92 @@
+-----------------------------------------------------------
+Server listening on 5361 (test #1)
+-----------------------------------------------------------
+Accepted connection from 192.168.21.138, port 48053
+[  5] local 192.168.21.63 port 5361 connected to 192.168.21.138 port 48427
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-1.00   sec  8.00 MBytes  67.0 Mbits/sec                  
+[  5]   1.00-2.00   sec  8.12 MBytes  68.1 Mbits/sec                  
+[  5]   2.00-3.00   sec  7.88 MBytes  66.1 Mbits/sec                  
+[  5]   3.00-4.00   sec  7.38 MBytes  61.9 Mbits/sec                  
+[  5]   4.00-5.00   sec  8.12 MBytes  68.2 Mbits/sec                  
+[  5]   5.00-6.00   sec  8.50 MBytes  71.3 Mbits/sec                  
+[  5]   6.00-7.00   sec  8.75 MBytes  73.4 Mbits/sec                  
+[  5]   7.00-8.00   sec  8.38 MBytes  70.3 Mbits/sec                  
+[  5]   8.00-9.00   sec  8.75 MBytes  73.4 Mbits/sec                  
+[  5]   9.00-10.00  sec  8.75 MBytes  73.4 Mbits/sec                  
+[  5]  10.00-11.00  sec  8.50 MBytes  71.3 Mbits/sec                  
+[  5]  11.00-12.00  sec  8.62 MBytes  72.4 Mbits/sec                  
+[  5]  12.00-13.00  sec  8.50 MBytes  71.3 Mbits/sec                  
+[  5]  13.00-14.00  sec  8.00 MBytes  67.1 Mbits/sec                  
+[  5]  14.00-15.00  sec  8.25 MBytes  69.2 Mbits/sec                  
+[  5]  15.00-15.02  sec   128 KBytes  72.4 Mbits/sec                  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-15.02  sec   125 MBytes  69.7 Mbits/sec                  receiver
+-----------------------------------------------------------
+Server listening on 5361 (test #2)
+-----------------------------------------------------------
+Accepted connection from 192.168.21.138, port 47655
+[  5] local 192.168.21.63 port 5361 connected to 192.168.21.138 port 43569
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  8.50 MBytes  71.2 Mbits/sec    0    505 KBytes       
+[  5]   1.00-2.00   sec  6.62 MBytes  55.6 Mbits/sec    0    762 KBytes       
+[  5]   2.00-3.00   sec  6.12 MBytes  51.3 Mbits/sec    0    826 KBytes       
+[  5]   3.00-4.00   sec  7.38 MBytes  61.9 Mbits/sec    0    872 KBytes       
+[  5]   4.00-5.00   sec  7.38 MBytes  61.9 Mbits/sec    0    930 KBytes       
+[  5]   5.00-6.00   sec  7.00 MBytes  58.7 Mbits/sec    0    930 KBytes       
+[  5]   6.00-7.00   sec  5.62 MBytes  47.2 Mbits/sec    0    981 KBytes       
+[  5]   7.00-8.00   sec  5.88 MBytes  49.3 Mbits/sec    0   1.08 MBytes       
+[  5]   8.00-9.00   sec  7.25 MBytes  60.8 Mbits/sec    0   1.14 MBytes       
+[  5]   9.00-10.00  sec  5.88 MBytes  49.3 Mbits/sec    0   1.14 MBytes       
+[  5]  10.00-11.00  sec  8.75 MBytes  73.4 Mbits/sec    0   1.21 MBytes       
+[  5]  11.00-12.00  sec  6.12 MBytes  51.4 Mbits/sec    0   1.28 MBytes       
+[  5]  12.00-13.00  sec  7.38 MBytes  61.9 Mbits/sec    0   1.34 MBytes       
+[  5]  13.00-14.00  sec  5.88 MBytes  49.3 Mbits/sec    0   1.34 MBytes       
+[  5]  14.00-15.00  sec  7.75 MBytes  65.0 Mbits/sec    0   1.34 MBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-15.02  sec   104 MBytes  57.8 Mbits/sec    0            sender
+-----------------------------------------------------------
+Server listening on 5361 (test #3)
+-----------------------------------------------------------
+Accepted connection from 192.168.21.138, port 36019
+[  5] local 192.168.21.63 port 5361 connected to 192.168.21.138 port 59358
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-1.00   sec  1.01 MBytes  8.50 Mbits/sec  0.352 ms  0/886 (0%)  
+[  5]   1.00-2.00   sec   750 KBytes  6.14 Mbits/sec  0.184 ms  0/640 (0%)  
+[  5]   2.00-3.00   sec   825 KBytes  6.76 Mbits/sec  0.296 ms  0/704 (0%)  
+[  5]   3.00-4.00   sec   825 KBytes  6.76 Mbits/sec  0.274 ms  0/704 (0%)  
+[  5]   4.00-5.00   sec   825 KBytes  6.76 Mbits/sec  0.330 ms  0/704 (0%)  
+[  5]   5.00-6.00   sec   750 KBytes  6.14 Mbits/sec  0.379 ms  0/640 (0%)  
+[  5]   6.00-7.00   sec   750 KBytes  6.14 Mbits/sec  0.344 ms  0/640 (0%)  
+[  5]   7.00-8.00   sec   750 KBytes  6.14 Mbits/sec  0.273 ms  0/640 (0%)  
+[  5]   8.00-9.00   sec   825 KBytes  6.76 Mbits/sec  0.353 ms  0/704 (0%)  
+[  5]   9.00-10.00  sec   750 KBytes  6.14 Mbits/sec  0.433 ms  0/640 (0%)  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-10.01  sec  7.90 MBytes  6.62 Mbits/sec  0.433 ms  0/6902 (0%)  receiver
+-----------------------------------------------------------
+Server listening on 5361 (test #4)
+-----------------------------------------------------------
+Accepted connection from 192.168.21.138, port 53591
+[  5] local 192.168.21.63 port 5361 connected to 192.168.21.138 port 43349
+[ ID] Interval           Transfer     Bitrate         Total Datagrams
+[  5]   0.00-1.00   sec  6.71 MBytes  56.3 Mbits/sec  5868  
+[  5]   1.00-2.00   sec  7.18 MBytes  60.2 Mbits/sec  6271  
+[  5]   2.00-3.00   sec  7.59 MBytes  63.7 Mbits/sec  6634  
+[  5]   3.00-4.00   sec  7.39 MBytes  62.0 Mbits/sec  6454  
+[  5]   4.00-5.00   sec  7.06 MBytes  59.2 Mbits/sec  6166  
+[  5]   5.00-6.00   sec  7.50 MBytes  63.0 Mbits/sec  6557  
+[  5]   6.00-7.00   sec  7.70 MBytes  64.5 Mbits/sec  6726  
+[  5]   7.00-8.00   sec  7.47 MBytes  62.7 Mbits/sec  6528  
+[  5]   8.00-9.00   sec  7.90 MBytes  66.3 Mbits/sec  6905  
+[  5]   9.00-10.00  sec  7.76 MBytes  65.1 Mbits/sec  6784  
+[  5]  10.00-10.04  sec   322 KBytes  65.6 Mbits/sec  274  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-10.04  sec  74.6 MBytes  62.3 Mbits/sec  0.000 ms  0/65167 (0%)  sender
+iperf3: interrupt - the server has terminated by signal Terminated(15)
+-----------------------------------------------------------
+Server listening on 5361 (test #5)
+-----------------------------------------------------------

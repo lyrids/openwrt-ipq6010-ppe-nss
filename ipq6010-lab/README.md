@@ -1,13 +1,10 @@
-# Current status: pre-kexec runtime, TFTP-first normal boot
+# Current status: iteration9 RAM runtime, TFTP-first normal boot
 
-Kexec work is suspended. Active package/target source and build defaults
-match the pre-kexec state08c04ac881. Iteration5 runs with four CPUs and
-active NSS. Normal reboot downloads the image from p43 over TFTP, with
-the original eMMC bootipq fallback. USB boot is the next stage. On-demand Telnet pause from p43 is configured;
-see [U-Boot console](uboot-console/README.md).
+Kexec work remains suspended. Kernel/NSS source matches the pre-kexec08c04ac881 baseline; firewall4 adds a debounced netifd.wireless.done reload trigger. Iteration9 (built from49b3824932) runs with CPUs0-3 and active NSS. Normal reboot downloads the current image from p43 over TFTP, retaining original eMMC bootipq fallback. [Build and boot checkpoint](artifacts/wifi-lifecycle-49b3824932-20261026/README.md).
 
-See [TFTP workflow/configuration/rollback](tftp-boot/README.md).
-Earlier experiments below are retained as historical development records.
+Automatic AP flowtable membership, active deauthentication/AP-restart recovery, a30-minute wired NAT soak, and a separate30-minute mixed wired/Wi-Fi soak passed. Receiver rates and limitations are in iteration9-* and replacement-wifi-* evidence folders. WRT32X UDP sender under-delivery persists with IP-flow offload bypassed and remains unisolated; it is not a full-rate UDP pass.
+
+[TFTP workflow/rollback](tftp-boot/README.md), [on-demand U-Boot Telnet pause](uboot-console/README.md), and [wireless lifecycle integration](wifi-lifecycle/README.md). Earlier experiments below are retained as historical records.
 
 # JDCloud RE-CS-02 / IPQ6010 PPE + NSS laboratory
 
@@ -33,7 +30,7 @@ Run current mocked regression tests from the repository root:
 
 Requires Python3, GCC, ASan and UBSan. Mocked tests cover control flow; hardware evidence is separate.
 
-Last tested RAM image: iteration5, nss-ethernet-mtuguard-03803c78cd-20261025, 18858976 bytes, SHA256 b2b63a339a3e6496a198de3d39a14ca21d19214dc08c047f00a8da1953795c56. This predates the archival commit. Full source diff/config are preserved. New builds have changed revision metadata and need not reproduce the identical image hash.
+Historical pre-lifecycle RAM image: iteration5, nss-ethernet-mtuguard-03803c78cd-20261025, 18858976 bytes, SHA256 b2b63a339a3e6496a198de3d39a14ca21d19214dc08c047f00a8da1953795c56. This predates the archival commit. Full source diff/config are preserved. New builds have changed revision metadata and need not reproduce the identical image hash.
 
 ## Verification status
 
@@ -47,9 +44,9 @@ Last tested RAM image: iteration5, nss-ethernet-mtuguard-03803c78cd-20261025, 18
 | UDP | Buffered128-byte50Mbps bidirectional test zero loss; other tests have endpoint receive-buffer drops. Mixed simultaneous startup had control failures; UDP-first buffered run passed. Not unconditional loss-free qualification. extended-wired-20261025 |
 | IPv6 TCP | 925.696 / 925.901 Mbps with NSS counters. IPv6 UDP bidirectional benchmark inconclusive. ipv6-mtu-20261025 |
 | Reduced MTU | Iteration3 failed; iteration4 fixed existing flows only. Iteration5 guard blocked40/40 existing-flow and40/40 fresh oversize probes through software fallback; restore1500 delivered29/29 and NSS resumed. mtuguard-ramboot-20261025 |
-| Wi-Fi | User retested both5GHz SSIDs successfully on another client. Earlier QCN9074 upload problem was the original client's adapter bug. No replacement measured rates supplied. wifi-client-resolution-20261025.json |
+| Wi-Fi | User retested both5GHz SSIDs successfully on another client. Earlier QCN9074 upload problem was the original client's adapter bug. Iteration9 replacement-client results and limitations are in replacement-wifi-20261026; earlier user resolution in wifi-client-resolution-20261025.json |
 
-Raw logs include failed attempts. Earlier validation-pending fields are historical; this table and iteration5 summary describe latest status. CPU samples include idle periods. Long-term stability, QinQ and2.5G throughput are not qualified.
+Raw logs include failed attempts. Earlier validation-pending fields are historical; this table preserves baseline qualifications; the current status and iteration9 reports describe the latest run. CPU samples include idle periods. Long-term stability, QinQ and2.5G throughput are not qualified.
 
 ## Kexec bootstrap
 
@@ -95,3 +92,7 @@ No actual kexec transition or persistent firmware write has been performed.
 QCN9074 channel36 HE80: LAN bridge received432 Mbit/s outbound, reverse sender503; NSS bridge32/1 counters confirmed. WAN NAT received393/396 Mbit/s after refreshing flowtable Wi-Fi membership. Simultaneous60-second TCP250/166 Mbit/s, NSS active. UDP100/200/300 Mbit/s sweep accelerated; isolated0.1% inbound loss at200 was not reproduced over60 seconds;300 outbound lost2 datagrams. Reconnect released peer11, created12, resumed NSS NAT at367/514 Mbit/s. See qcn9074-* evidence. Wired WAN to192.168.21.154 reached936.5 Mbit/s each way; WAN negotiated1Gb/s, not2.5Gb/s.
 
 Lifecycle fix and reproducible test AP recipe: [wifi-lifecycle](wifi-lifecycle/README.md). Iteration9 build retains pre-kexec iteration5 datapath and adds firewall completion-event trigger. Live repeated AP down/up membership tests pass; new image boot validation remains pending.
+
+## Iteration9 RAM-boot qualification (2026-10-26)
+
+Source49b3824932 produced FIT1f1cc86103aa7ead9dcdaf8c4b814ed9450c56383eed0de310dee5c435637f4e and successfully normal-TFTP RAM-booted. Automatic AP lifecycle membership passes. Thirty-minute wired NAT bidirectional899/924 Mbit/s; additional thirty-minute mixed wired NAT plus Wi-Fi routing saturated shared gigabit LAN at938/939 Mbit/s aggregate per direction, with four NSS rules active and mean normalized DUT CPU0.25%. No new kernel failure markers or WAN errors. WRT32X Wi-Fi/LAN short tests433/827 Mbit/s; proper deauth reconnected in3.7s and active TCP/NSS resumed. Retransmissions and endpoint UDP under-delivery are retained in reports, not hidden by a blanket loss-free claim. See iteration9-* and replacement-wifi-* evidence, and wifi-lifecycle/replacement-client.md. No kexec, bootloader rewrite, or eMMC firmware flash.

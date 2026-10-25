@@ -1,0 +1,1339 @@
+SAMPLE-1
+3571.54 14104.45
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 44 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 1751 tx 1751 drop 0/0/0/0 exceptions
+node ipv4 rx 1927 tx 1921 drop 0/0/0/0 exceptions 9:6
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 32/1 prio 0 installed 1 age 600ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 if 32/1 prio 0 installed 1 age 600ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 if 32/1 prio 0 installed 1 age 660ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:11:23 2026 kern.info kernel: [ 1657.965981] nss-wifi-drv 39000000.nss: peer 62:ba:80:c7:2d:19: id 39 ast_idx 265 ast_hash 0x109 vdev 0
+Sun Oct 25 17:11:27 2026 kern.info kernel: [ 1661.095750] nss-wifi-drv 39000000.nss: peer 62:ba:80:c7:2d:19: id 39 released from vdev 0
+Sun Oct 25 17:35:43 2026 kern.info kernel: [ 3117.404785] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:35:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-2
+3573.59 14112.47
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 44 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 2241 tx 2241 drop 0/0/0/0 exceptions
+node ipv4 rx 2012 tx 2012 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 32/1 prio 0 installed 1 age 2660ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 if 32/1 prio 0 installed 1 age 2660ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 if 32/1 prio 0 installed 1 age 2720ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:11:23 2026 kern.info kernel: [ 1657.965981] nss-wifi-drv 39000000.nss: peer 62:ba:80:c7:2d:19: id 39 ast_idx 265 ast_hash 0x109 vdev 0
+Sun Oct 25 17:11:27 2026 kern.info kernel: [ 1661.095750] nss-wifi-drv 39000000.nss: peer 62:ba:80:c7:2d:19: id 39 released from vdev 0
+Sun Oct 25 17:35:43 2026 kern.info kernel: [ 3117.404785] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:35:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-3
+3575.66 14120.50
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 44 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 1852 tx 1852 drop 0/0/0/0 exceptions
+node ipv4 rx 1479 tx 1479 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 32/1 prio 0 installed 1 age 4720ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 if 32/1 prio 0 installed 1 age 4720ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 if 32/1 prio 0 installed 1 age 4780ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:11:23 2026 kern.info kernel: [ 1657.965981] nss-wifi-drv 39000000.nss: peer 62:ba:80:c7:2d:19: id 39 ast_idx 265 ast_hash 0x109 vdev 0
+Sun Oct 25 17:11:27 2026 kern.info kernel: [ 1661.095750] nss-wifi-drv 39000000.nss: peer 62:ba:80:c7:2d:19: id 39 released from vdev 0
+Sun Oct 25 17:35:43 2026 kern.info kernel: [ 3117.404785] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:35:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-4
+3577.72 14128.53
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 44 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 1639 tx 1639 drop 0/0/0/0 exceptions
+node ipv4 rx 1993 tx 1993 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 32/1 prio 0 installed 1 age 210ms fw flow rx 146326 tx 4863 return rx 4863 tx 146326
+proto 6 v4 if 32/1 prio 0 installed 1 age 210ms fw flow rx 10439 tx 304288 return rx 304288 tx 10439
+proto 6 v4 if 32/1 prio 0 installed 1 age 210ms fw flow rx 4 tx 8 return rx 8 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:11:23 2026 kern.info kernel: [ 1657.965981] nss-wifi-drv 39000000.nss: peer 62:ba:80:c7:2d:19: id 39 ast_idx 265 ast_hash 0x109 vdev 0
+Sun Oct 25 17:11:27 2026 kern.info kernel: [ 1661.095750] nss-wifi-drv 39000000.nss: peer 62:ba:80:c7:2d:19: id 39 released from vdev 0
+Sun Oct 25 17:35:43 2026 kern.info kernel: [ 3117.404785] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:35:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-5
+3579.78 14136.55
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 44 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 1577 tx 1577 drop 0/0/0/0 exceptions
+node ipv4 rx 1918 tx 1918 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 32/1 prio 0 installed 1 age 2270ms fw flow rx 146326 tx 4863 return rx 4863 tx 146326
+proto 6 v4 if 32/1 prio 0 installed 1 age 2270ms fw flow rx 10439 tx 304288 return rx 304288 tx 10439
+proto 6 v4 if 32/1 prio 0 installed 1 age 2270ms fw flow rx 4 tx 8 return rx 8 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:11:23 2026 kern.info kernel: [ 1657.965981] nss-wifi-drv 39000000.nss: peer 62:ba:80:c7:2d:19: id 39 ast_idx 265 ast_hash 0x109 vdev 0
+Sun Oct 25 17:11:27 2026 kern.info kernel: [ 1661.095750] nss-wifi-drv 39000000.nss: peer 62:ba:80:c7:2d:19: id 39 released from vdev 0
+Sun Oct 25 17:35:43 2026 kern.info kernel: [ 3117.404785] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:35:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-6
+3581.85 14144.59
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 44 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 1816 tx 1816 drop 0/0/0/0 exceptions
+node ipv4 rx 2002 tx 2002 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 32/1 prio 0 installed 1 age 4340ms fw flow rx 146326 tx 4863 return rx 4863 tx 146326
+proto 6 v4 if 32/1 prio 0 installed 1 age 4340ms fw flow rx 10439 tx 304288 return rx 304288 tx 10439
+proto 6 v4 if 32/1 prio 0 installed 1 age 4340ms fw flow rx 4 tx 8 return rx 8 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:11:23 2026 kern.info kernel: [ 1657.965981] nss-wifi-drv 39000000.nss: peer 62:ba:80:c7:2d:19: id 39 ast_idx 265 ast_hash 0x109 vdev 0
+Sun Oct 25 17:11:27 2026 kern.info kernel: [ 1661.095750] nss-wifi-drv 39000000.nss: peer 62:ba:80:c7:2d:19: id 39 released from vdev 0
+Sun Oct 25 17:35:43 2026 kern.info kernel: [ 3117.404785] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:35:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-7
+3583.91 14152.61
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 44 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 2013 tx 2013 drop 0/0/0/0 exceptions
+node ipv4 rx 1862 tx 1862 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 32/1 prio 0 installed 1 age 160ms fw flow rx 284163 tx 9997 return rx 9997 tx 284163
+proto 6 v4 if 32/1 prio 0 installed 1 age 160ms fw flow rx 21201 tx 601356 return rx 601356 tx 21201
+proto 6 v4 if 32/1 prio 0 installed 1 age 6400ms fw flow rx 4 tx 8 return rx 8 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:11:23 2026 kern.info kernel: [ 1657.965981] nss-wifi-drv 39000000.nss: peer 62:ba:80:c7:2d:19: id 39 ast_idx 265 ast_hash 0x109 vdev 0
+Sun Oct 25 17:11:27 2026 kern.info kernel: [ 1661.095750] nss-wifi-drv 39000000.nss: peer 62:ba:80:c7:2d:19: id 39 released from vdev 0
+Sun Oct 25 17:35:43 2026 kern.info kernel: [ 3117.404785] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:35:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-8
+3585.97 14160.63
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 44 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 2071 tx 2071 drop 0/0/0/0 exceptions
+node ipv4 rx 2156 tx 2156 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 32/1 prio 0 installed 1 age 2220ms fw flow rx 284163 tx 9997 return rx 9997 tx 284163
+proto 6 v4 if 32/1 prio 0 installed 1 age 2220ms fw flow rx 21201 tx 601356 return rx 601356 tx 21201
+proto 6 v4 if 32/1 prio 0 installed 1 age 8460ms fw flow rx 4 tx 8 return rx 8 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:11:23 2026 kern.info kernel: [ 1657.965981] nss-wifi-drv 39000000.nss: peer 62:ba:80:c7:2d:19: id 39 ast_idx 265 ast_hash 0x109 vdev 0
+Sun Oct 25 17:11:27 2026 kern.info kernel: [ 1661.095750] nss-wifi-drv 39000000.nss: peer 62:ba:80:c7:2d:19: id 39 released from vdev 0
+Sun Oct 25 17:35:43 2026 kern.info kernel: [ 3117.404785] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:35:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-9
+3588.03 14168.65
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 44 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 1826 tx 1826 drop 0/0/0/0 exceptions
+node ipv4 rx 1733 tx 1734 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 32/1 prio 0 installed 1 age 120ms fw flow rx 380936 tx 13201 return rx 13201 tx 380936
+proto 6 v4 if 32/1 prio 0 installed 1 age 120ms fw flow rx 27691 tx 802334 return rx 802334 tx 27691
+proto 6 v4 if 32/1 prio 0 installed 1 age 10520ms fw flow rx 4 tx 8 return rx 8 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:11:23 2026 kern.info kernel: [ 1657.965981] nss-wifi-drv 39000000.nss: peer 62:ba:80:c7:2d:19: id 39 ast_idx 265 ast_hash 0x109 vdev 0
+Sun Oct 25 17:11:27 2026 kern.info kernel: [ 1661.095750] nss-wifi-drv 39000000.nss: peer 62:ba:80:c7:2d:19: id 39 released from vdev 0
+Sun Oct 25 17:35:43 2026 kern.info kernel: [ 3117.404785] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:35:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-10
+3590.09 14176.68
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 44 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 1673 tx 1673 drop 0/0/0/0 exceptions
+node ipv4 rx 1839 tx 1839 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 32/1 prio 0 installed 1 age 2180ms fw flow rx 380936 tx 13201 return rx 13201 tx 380936
+proto 6 v4 if 32/1 prio 0 installed 1 age 2180ms fw flow rx 27691 tx 802334 return rx 802334 tx 27691
+proto 6 v4 if 32/1 prio 0 installed 1 age 12580ms fw flow rx 4 tx 8 return rx 8 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:11:23 2026 kern.info kernel: [ 1657.965981] nss-wifi-drv 39000000.nss: peer 62:ba:80:c7:2d:19: id 39 ast_idx 265 ast_hash 0x109 vdev 0
+Sun Oct 25 17:11:27 2026 kern.info kernel: [ 1661.095750] nss-wifi-drv 39000000.nss: peer 62:ba:80:c7:2d:19: id 39 released from vdev 0
+Sun Oct 25 17:35:43 2026 kern.info kernel: [ 3117.404785] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:35:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-11
+3592.15 14184.70
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 44 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 1797 tx 1797 drop 0/0/0/0 exceptions
+node ipv4 rx 1764 tx 1764 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 32/1 prio 0 installed 1 age 80ms fw flow rx 470688 tx 16241 return rx 16241 tx 470688
+proto 6 v4 if 32/1 prio 0 installed 1 age 80ms fw flow rx 33981 tx 996673 return rx 996673 tx 33981
+proto 6 v4 if 32/1 prio 0 installed 1 age 14640ms fw flow rx 4 tx 8 return rx 8 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:11:23 2026 kern.info kernel: [ 1657.965981] nss-wifi-drv 39000000.nss: peer 62:ba:80:c7:2d:19: id 39 ast_idx 265 ast_hash 0x109 vdev 0
+Sun Oct 25 17:11:27 2026 kern.info kernel: [ 1661.095750] nss-wifi-drv 39000000.nss: peer 62:ba:80:c7:2d:19: id 39 released from vdev 0
+Sun Oct 25 17:35:43 2026 kern.info kernel: [ 3117.404785] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:35:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-12
+3594.21 14192.66
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 44 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 2 tx 2 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 32/1 prio 0 installed 1 age 2140ms fw flow rx 470688 tx 16241 return rx 16241 tx 470688
+proto 6 v4 if 32/1 prio 0 installed 1 age 2140ms fw flow rx 33981 tx 996673 return rx 996673 tx 33981
+proto 6 v4 if 32/1 prio 0 installed 1 age 16700ms fw flow rx 4 tx 8 return rx 8 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:35:43 2026 kern.info kernel: [ 3117.404785] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:35:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:43:39 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:43:39 2026 kern.info kernel: [ 3593.436032] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 released from vdev 0
+SAMPLE-13
+3596.27 14200.72
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 44 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 32/1 prio 0 installed 1 age 40ms fw flow rx 497013 tx 17128 return rx 17128 tx 497013
+proto 6 v4 if 32/1 prio 0 installed 1 age 40ms fw flow rx 36097 tx 1054171 return rx 1054171 tx 36097
+proto 6 v4 if 32/1 prio 0 installed 1 age 18760ms fw flow rx 4 tx 8 return rx 8 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:35:43 2026 kern.info kernel: [ 3117.404785] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:35:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:43:39 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:43:39 2026 kern.info kernel: [ 3593.436032] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 released from vdev 0
+SAMPLE-14
+3598.33 14208.75
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 44 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 1108 tx 1108 drop 0/0/0/0 exceptions
+node ipv4 rx 1150 tx 1150 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 32/1 prio 0 installed 1 age 2100ms fw flow rx 497013 tx 17128 return rx 17128 tx 497013
+proto 6 v4 if 32/1 prio 0 installed 1 age 2100ms fw flow rx 36097 tx 1054171 return rx 1054171 tx 36097
+proto 6 v4 if 32/1 prio 0 installed 1 age 20820ms fw flow rx 4 tx 8 return rx 8 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:43:39 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:43:39 2026 kern.info kernel: [ 3593.436032] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 released from vdev 0
+Sun Oct 25 17:43:43 2026 kern.info kernel: [ 3597.103817] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 44 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:43:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-15
+3600.39 14216.78
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 44 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 1975 tx 1975 drop 0/0/0/0 exceptions
+node ipv4 rx 1813 tx 1813 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 32/1 prio 0 installed 1 age 0ms fw flow rx 585191 tx 20259 return rx 20259 tx 585191
+proto 6 v4 if 32/1 prio 0 installed 1 age 0ms fw flow rx 36569 tx 1069687 return rx 1069687 tx 36569
+proto 6 v4 if 32/1 prio 0 installed 1 age 22880ms fw flow rx 4 tx 8 return rx 8 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:43:39 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:43:39 2026 kern.info kernel: [ 3593.436032] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 released from vdev 0
+Sun Oct 25 17:43:43 2026 kern.info kernel: [ 3597.103817] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 44 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:43:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-16
+3602.45 14224.80
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 44 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 1957 tx 1957 drop 0/0/0/0 exceptions
+node ipv4 rx 1923 tx 1923 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 32/1 prio 0 installed 1 age 2060ms fw flow rx 585191 tx 20259 return rx 20259 tx 585191
+proto 6 v4 if 32/1 prio 0 installed 1 age 2060ms fw flow rx 36569 tx 1069687 return rx 1069687 tx 36569
+proto 6 v4 if 32/1 prio 0 installed 1 age 24940ms fw flow rx 4 tx 8 return rx 8 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:43:39 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:43:39 2026 kern.info kernel: [ 3593.436032] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 released from vdev 0
+Sun Oct 25 17:43:43 2026 kern.info kernel: [ 3597.103817] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 44 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:43:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-17
+3604.51 14232.83
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 44 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 2058 tx 2058 drop 0/0/0/0 exceptions
+node ipv4 rx 2145 tx 2145 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 32/1 prio 0 installed 1 age 4120ms fw flow rx 585191 tx 20259 return rx 20259 tx 585191
+proto 6 v4 if 32/1 prio 0 installed 1 age 4120ms fw flow rx 36569 tx 1069687 return rx 1069687 tx 36569
+proto 6 v4 if 32/1 prio 0 installed 1 age 27010ms fw flow rx 4 tx 8 return rx 8 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:43:39 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:43:39 2026 kern.info kernel: [ 3593.436032] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 released from vdev 0
+Sun Oct 25 17:43:43 2026 kern.info kernel: [ 3597.103817] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 44 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:43:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-18
+3606.57 14240.85
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 44 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 2111 tx 2111 drop 0/0/0/0 exceptions
+node ipv4 rx 2020 tx 2020 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 32/1 prio 0 installed 1 age 2030ms fw flow rx 671141 tx 23115 return rx 23115 tx 671141
+proto 6 v4 if 32/1 prio 0 installed 1 age 2030ms fw flow rx 43981 tx 1284312 return rx 1284312 tx 43981
+proto 6 v4 if 32/1 prio 0 installed 1 age 29070ms fw flow rx 4 tx 8 return rx 8 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:43:39 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:43:39 2026 kern.info kernel: [ 3593.436032] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 released from vdev 0
+Sun Oct 25 17:43:43 2026 kern.info kernel: [ 3597.103817] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 44 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:43:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-19
+3608.64 14248.89
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 44 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 2108 tx 2108 drop 0/0/0/0 exceptions
+node ipv4 rx 1925 tx 1925 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 32/1 prio 0 installed 1 age 4090ms fw flow rx 671141 tx 23115 return rx 23115 tx 671141
+proto 6 v4 if 32/1 prio 0 installed 1 age 4090ms fw flow rx 43981 tx 1284312 return rx 1284312 tx 43981
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:43:39 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:43:39 2026 kern.info kernel: [ 3593.436032] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 released from vdev 0
+Sun Oct 25 17:43:43 2026 kern.info kernel: [ 3597.103817] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 44 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:43:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-20
+3610.70 14256.91
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 44 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 2049 tx 2049 drop 0/0/0/0 exceptions
+node ipv4 rx 1805 tx 1805 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 32/1 prio 0 installed 1 age 1990ms fw flow rx 762131 tx 26139 return rx 26139 tx 762131
+proto 6 v4 if 32/1 prio 0 installed 1 age 1990ms fw flow rx 50208 tx 1490806 return rx 1490806 tx 50208
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:43:39 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:43:39 2026 kern.info kernel: [ 3593.436032] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 released from vdev 0
+Sun Oct 25 17:43:43 2026 kern.info kernel: [ 3597.103817] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 44 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:43:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-21
+3612.76 14264.93
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 44 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 2144 tx 2144 drop 0/0/0/0 exceptions
+node ipv4 rx 2047 tx 2046 drop 0/0/0/0 exceptions 9:1
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 32/1 prio 0 installed 1 age 4050ms fw flow rx 762131 tx 26139 return rx 26139 tx 762131
+proto 6 v4 if 32/1 prio 0 installed 1 age 4050ms fw flow rx 50208 tx 1490806 return rx 1490806 tx 50208
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:43:39 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:43:39 2026 kern.info kernel: [ 3593.436032] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 released from vdev 0
+Sun Oct 25 17:43:43 2026 kern.info kernel: [ 3597.103817] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 44 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:43:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-22
+3614.82 14272.96
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 44 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 1845 tx 1845 drop 0/0/0/0 exceptions
+node ipv4 rx 2081 tx 2081 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 32/1 prio 0 installed 1 age 6120ms fw flow rx 762131 tx 26139 return rx 26139 tx 762131
+proto 6 v4 if 32/1 prio 0 installed 1 age 6120ms fw flow rx 50208 tx 1490806 return rx 1490806 tx 50208
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:43:39 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:43:39 2026 kern.info kernel: [ 3593.436032] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 released from vdev 0
+Sun Oct 25 17:43:43 2026 kern.info kernel: [ 3597.103817] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 44 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:43:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-23
+3616.88 14280.98
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 44 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 1451 tx 1451 drop 0/0/0/0 exceptions 0:1
+node ipv4 rx 2110 tx 2110 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 32/1 prio 0 installed 1 age 1940ms fw flow rx 903206 tx 30842 return rx 30842 tx 903206
+proto 6 v4 if 32/1 prio 0 installed 1 age 1940ms fw flow rx 59497 tx 1785031 return rx 1785031 tx 59497
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:43:39 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:43:39 2026 kern.info kernel: [ 3593.436032] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 released from vdev 0
+Sun Oct 25 17:43:43 2026 kern.info kernel: [ 3597.103817] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 44 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:43:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-24
+3618.95 14289.01
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 44 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 1244 tx 1244 drop 0/0/0/0 exceptions
+node ipv4 rx 1476 tx 1476 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 32/1 prio 0 installed 1 age 4000ms fw flow rx 903206 tx 30842 return rx 30842 tx 903206
+proto 6 v4 if 32/1 prio 0 installed 1 age 4000ms fw flow rx 59497 tx 1785031 return rx 1785031 tx 59497
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:43:39 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:43:39 2026 kern.info kernel: [ 3593.436032] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 released from vdev 0
+Sun Oct 25 17:43:43 2026 kern.info kernel: [ 3597.103817] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 44 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:43:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-25
+3621.01 14297.04
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 44 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 972 tx 972 drop 0/0/0/0 exceptions
+node ipv4 rx 1574 tx 1574 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 32/1 prio 0 installed 1 age 6060ms fw flow rx 903206 tx 30842 return rx 30842 tx 903206
+proto 6 v4 if 32/1 prio 0 installed 1 age 6060ms fw flow rx 59497 tx 1785031 return rx 1785031 tx 59497
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:43:39 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:43:39 2026 kern.info kernel: [ 3593.436032] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 released from vdev 0
+Sun Oct 25 17:43:43 2026 kern.info kernel: [ 3597.103817] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 44 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:43:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-26
+3623.07 14305.06
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 44 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 1839 tx 1839 drop 0/0/0/0 exceptions
+node ipv4 rx 1825 tx 1824 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 32/1 prio 0 installed 1 age 1880ms fw flow rx 1059486 tx 36067 return rx 36067 tx 1059486
+proto 6 v4 if 32/1 prio 0 installed 1 age 1880ms fw flow rx 66618 tx 2055910 return rx 2055910 tx 66618
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:43:39 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:43:39 2026 kern.info kernel: [ 3593.436032] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 released from vdev 0
+Sun Oct 25 17:43:43 2026 kern.info kernel: [ 3597.103817] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 44 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:43:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-27
+3625.13 14313.09
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 44 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 1892 tx 1892 drop 0/0/0/0 exceptions
+node ipv4 rx 2130 tx 2130 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 32/1 prio 0 installed 1 age 3940ms fw flow rx 1059486 tx 36067 return rx 36067 tx 1059486
+proto 6 v4 if 32/1 prio 0 installed 1 age 3940ms fw flow rx 66618 tx 2055910 return rx 2055910 tx 66618
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:43:39 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:43:39 2026 kern.info kernel: [ 3593.436032] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 released from vdev 0
+Sun Oct 25 17:43:43 2026 kern.info kernel: [ 3597.103817] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 44 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:43:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-28
+3627.19 14321.12
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 44 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 1760 tx 1760 drop 0/0/0/0 exceptions
+node ipv4 rx 1867 tx 1867 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 32/1 prio 0 installed 1 age 6010ms fw flow rx 1059486 tx 36067 return rx 36067 tx 1059486
+proto 6 v4 if 32/1 prio 0 installed 1 age 6010ms fw flow rx 66618 tx 2055910 return rx 2055910 tx 66618
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:43:39 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:43:39 2026 kern.info kernel: [ 3593.436032] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 released from vdev 0
+Sun Oct 25 17:43:43 2026 kern.info kernel: [ 3597.103817] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 44 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:43:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-29
+3629.26 14329.14
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 44 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 2078 tx 2078 drop 0/0/0/0 exceptions
+node ipv4 rx 2051 tx 2051 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 32/1 prio 0 installed 1 age 1830ms fw flow rx 1219736 tx 41457 return rx 41457 tx 1219736
+proto 6 v4 if 32/1 prio 0 installed 1 age 1830ms fw flow rx 74411 tx 2324400 return rx 2324400 tx 74411
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:43:39 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:43:39 2026 kern.info kernel: [ 3593.436032] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 released from vdev 0
+Sun Oct 25 17:43:43 2026 kern.info kernel: [ 3597.103817] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 44 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:43:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-30
+3631.32 14337.16
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 45 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 32/1 prio 0 installed 0 age 3890ms fw flow rx 1219736 tx 41457 return rx 41457 tx 1219736
+proto 6 v4 if 32/1 prio 0 installed 0 age 360ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 if 32/1 prio 0 installed 0 age 3890ms fw flow rx 74411 tx 2324400 return rx 2324400 tx 74411
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:43:39 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:43:39 2026 kern.info kernel: [ 3593.436032] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 released from vdev 0
+Sun Oct 25 17:43:43 2026 kern.info kernel: [ 3597.103817] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 44 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:43:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-31
+3633.38 14345.18
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 45 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:43:39 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:43:39 2026 kern.info kernel: [ 3593.436032] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 released from vdev 0
+Sun Oct 25 17:43:43 2026 kern.info kernel: [ 3597.103817] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 44 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:43:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-32
+3635.44 14353.24
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 45 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 1 tx 0 drop 0/0/0/0 exceptions 9:1
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:43:39 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:43:39 2026 kern.info kernel: [ 3593.436032] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 released from vdev 0
+Sun Oct 25 17:43:43 2026 kern.info kernel: [ 3597.103817] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 44 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:43:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-33
+3637.50 14361.29
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 45 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:43:39 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:43:39 2026 kern.info kernel: [ 3593.436032] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 released from vdev 0
+Sun Oct 25 17:43:43 2026 kern.info kernel: [ 3597.103817] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 44 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:43:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-34
+3639.56 14369.34
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 45 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 2 tx 2 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:43:39 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:43:39 2026 kern.info kernel: [ 3593.436032] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 released from vdev 0
+Sun Oct 25 17:43:43 2026 kern.info kernel: [ 3597.103817] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 44 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:43:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-35
+3641.62 14377.40
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 45 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:43:39 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:43:39 2026 kern.info kernel: [ 3593.436032] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 released from vdev 0
+Sun Oct 25 17:43:43 2026 kern.info kernel: [ 3597.103817] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 44 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:43:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-36
+3643.68 14385.46
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 45 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:43:39 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:43:39 2026 kern.info kernel: [ 3593.436032] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 released from vdev 0
+Sun Oct 25 17:43:43 2026 kern.info kernel: [ 3597.103817] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 44 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:43:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-37
+3645.74 14393.52
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 45 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:43:39 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:43:39 2026 kern.info kernel: [ 3593.436032] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 released from vdev 0
+Sun Oct 25 17:43:43 2026 kern.info kernel: [ 3597.103817] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 44 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:43:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-38
+3647.80 14401.57
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 45 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:43:39 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:43:39 2026 kern.info kernel: [ 3593.436032] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 released from vdev 0
+Sun Oct 25 17:43:43 2026 kern.info kernel: [ 3597.103817] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 44 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:43:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-39
+3649.86 14409.63
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 45 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:43:39 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:43:39 2026 kern.info kernel: [ 3593.436032] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 released from vdev 0
+Sun Oct 25 17:43:43 2026 kern.info kernel: [ 3597.103817] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 44 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:43:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-40
+3651.93 14417.69
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 45 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:43:39 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:43:39 2026 kern.info kernel: [ 3593.436032] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 released from vdev 0
+Sun Oct 25 17:43:43 2026 kern.info kernel: [ 3597.103817] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 44 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:43:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-41
+3653.99 14425.75
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 45 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:43:39 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:43:39 2026 kern.info kernel: [ 3593.436032] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 released from vdev 0
+Sun Oct 25 17:43:43 2026 kern.info kernel: [ 3597.103817] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 44 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:43:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+SAMPLE-42
+3656.05 14433.81
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 45 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 17:41:10 2026 kern.info kernel: [ 3444.627565] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 40 released from vdev 0
+Sun Oct 25 17:41:30 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:41:30 2026 kern.info kernel: [ 3464.878214] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 23 released from vdev 0
+Sun Oct 25 17:41:33 2026 kern.info kernel: [ 3467.987056] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 42 ast_idx 155 ast_hash 0x9b vdev 0
+Sun Oct 25 17:41:34 2026 kern.info kernel: [ 3468.509299] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:41:34 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 17:43:39 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 17:43:39 2026 kern.info kernel: [ 3593.436032] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 43 released from vdev 0
+Sun Oct 25 17:43:43 2026 kern.info kernel: [ 3597.103817] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 44 ast_idx 86 ast_hash 0x56 vdev 0
+Sun Oct 25 17:43:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open

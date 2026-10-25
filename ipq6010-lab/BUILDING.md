@@ -16,3 +16,7 @@ Outputs: bin/targets/qualcommax/ipq60xx/. The initramfs FIT is the RAM-boot arti
 Pins: feeds.conf.pinned; configuration: config.seed and artifacts/*/build-state/config.full; firmware adaptation: nss-firmware-selected-line.patch. The selected firmware line is12.5; no closed firmware binary is committed here.
 
 Historical helper scripts are preserved unchanged and may not be idempotent. Do not run implement/fix scripts on this tree: their changes are already committed. The earlier stashed guard is archived only.
+
+Latest validated integration build: wifi-lifecycle-49b3824932-20261026 (iteration9), FIT SHA256 1f1cc86103aa7ead9dcdaf8c4b814ed9450c56383eed0de310dee5c435637f4e. Exact .config, build-state/feed pins, firmware adaptation, dates and image checksums are in artifacts/wifi-lifecycle-49b3824932-20261026. The current overlay provenance is updated to iteration9; no Wi-Fi password is embedded. AP setup is opt-in through wifi-lifecycle/configure-test-ap.sh.
+
+The workspace-specific wifi-lifecycle/build-wifi-lifecycle wrapper records the current source commit and build inputs; it assumes the pinned feeds/config/overlay have already been prepared. It does not install images. A successful incremental build and RAM boot are verified; a separate fresh-toolchain clean-room build remains untested.

@@ -1,0 +1,7 @@
+default via 192.168.21.1 dev wlan0 proto dhcp src 192.168.21.63 metric 600 
+8.8.4.4 via 192.168.21.1 dev wlan0 proto dhcp src 192.168.21.63 metric 600 
+8.8.8.8 via 192.168.21.1 dev wlan0 proto dhcp src 192.168.21.63 metric 600 
+192.168.1.0/24 dev eth0 proto kernel scope link src 192.168.1.2 
+192.168.21.0/24 dev wlan0 proto kernel scope link src 192.168.21.63 metric 600 
+192.168.21.1 dev wlan0 proto dhcp scope link src 192.168.21.63 metric 600 
+192.168.100.0/24 dev eth0.100 proto kernel scope link src 192.168.100.63 

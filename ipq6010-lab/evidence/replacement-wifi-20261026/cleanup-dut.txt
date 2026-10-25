@@ -1,0 +1,65 @@
+ 18:24:00 up  1:40,  load average: 0.00, 0.00, 0.00
+0-3
+table inet fw4 {
+	flowtable ft {
+		hook ingress priority filter
+		devices = { "lan1", "lan2", "lan3", "lan4", "phy2-ap0", "wan" }
+		flags offload
+		counter
+	}
+}
+phy#2
+	Interface phy2-ap0
+		ifindex 14
+		wdev 0x200000006
+		addr dc:d8:7c:54:83:f0
+		ssid OpenWrt-RAM-test-QCN9074
+		type AP
+		channel 36 (5180 MHz), width: 80 MHz, center1: 5210 MHz
+		txpower 27.00 dBm
+		multicast TXQ:
+			qsz-byt	qsz-pkt	flows	drops	marks	overlmt	hashcol	tx-bytes	tx-packets
+			0	0	4	0	0	0	0	512		4
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+eth0             UNKNOWN        fe80::ded8:7bff:fe54:83ec/64 
+lan1@eth0        UP             
+lan2@eth0        DOWN           
+lan3@eth0        DOWN           
+lan4@eth0        UP             
+wan@eth0         UP             192.168.21.138/24 fe80::ded8:7bff:fe54:83ec/64 
+br-lan           UP             192.168.1.1/24 fd2a:f883:6d8c::1/60 fe80::ded8:7bff:fe54:83ec/64 
+phy2-ap0         UP             
+table inet fw4 {
+	chain forward { # handle 2
+		type filter hook forward priority filter; policy drop;
+		meta l4proto { tcp, udp } flow add @ft # handle 1095
+		ct state vmap { established : accept, related : accept } comment "!fw4: Handle forwarded flows" # handle 1097
+		iifname "br-lan" jump forward_lan comment "!fw4: Handle lan IPv4/IPv6 forward traffic" # handle 1098
+		iifname "wan" jump forward_wan comment "!fw4: Handle wan IPv4/IPv6 forward traffic" # handle 1099
+		jump handle_reject # handle 1100
+	}
+}
+ethernet enabled 1 active 1 offers 52 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 13/3
+bound 1 pushed 60 last-ifindex 3
+rejected not-ours 26 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 5 tx 5 drop 0/0/0/0 exceptions
+node ipv4 rx 5 tx 0 drop 0/0/0/0 exceptions 9:5
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:39953 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:53789 -> 192.168.21.154:5201 detail 3
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+Sun Oct 25 18:21:18 2026 daemon.notice hostapd: phy2-ap0: AP-STA-CONNECTED 60:38:e0:c1:c5:22 auth_alg=open
+Sun Oct 25 18:21:18 2026 daemon.info hostapd: phy2-ap0: STA 60:38:e0:c1:c5:22 RADIUS: starting accounting session F3009C0578FDAB9E
+Sun Oct 25 18:21:18 2026 daemon.info hostapd: phy2-ap0: STA 60:38:e0:c1:c5:22 WPA: pairwise key handshake completed (RSN)
+Sun Oct 25 18:21:18 2026 daemon.notice hostapd: phy2-ap0: EAPOL-4WAY-HS-COMPLETED 60:38:e0:c1:c5:22
+Sun Oct 25 18:21:43 2026 daemon.notice hostapd: phy2-ap0: AP-STA-DISCONNECTED 60:38:e0:c1:c5:22
+Sun Oct 25 18:21:44 2026 kern.info kernel: [ 5878.062571] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 47 released from vdev 0

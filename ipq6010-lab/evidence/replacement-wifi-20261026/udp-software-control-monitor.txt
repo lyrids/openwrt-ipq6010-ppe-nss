@@ -1,0 +1,29 @@
+5795.74 22866.98
+5796.74 22870.94
+ipv4     2 udp      17 59 src=192.168.77.154 dst=192.168.1.2 sport=55002 dport=5360 packets=115 bytes=1289624 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=55002 packets=1 bytes=32 mark=0 use=1
+5797.75 22874.91
+ipv4     2 udp      17 59 src=192.168.77.154 dst=192.168.1.2 sport=55002 dport=5360 packets=181 bytes=1982672 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=55002 packets=1 bytes=32 mark=0 use=1
+5798.76 22878.88
+ipv4     2 udp      17 179 src=192.168.77.154 dst=192.168.1.2 sport=55002 dport=5360 packets=258 bytes=2752828 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=55002 packets=1 bytes=32 [ASSURED] mark=0 use=1
+5799.77 22882.85
+ipv4     2 udp      17 180 src=192.168.77.154 dst=192.168.1.2 sport=55002 dport=5360 packets=330 bytes=3676444 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=55002 packets=1 bytes=32 [ASSURED] mark=0 use=1
+5800.78 22886.81
+ipv4     2 udp      17 179 src=192.168.77.154 dst=192.168.1.2 sport=55002 dport=5360 packets=410 bytes=4446684 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=55002 packets=1 bytes=32 [ASSURED] mark=0 use=1
+5801.79 22890.78
+ipv4     2 udp      17 179 src=192.168.77.154 dst=192.168.1.2 sport=55002 dport=5360 packets=485 bytes=5215584 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=55002 packets=1 bytes=32 [ASSURED] mark=0 use=1
+5802.80 22894.76
+ipv4     2 udp      17 179 src=192.168.77.154 dst=192.168.1.2 sport=55002 dport=5360 packets=551 bytes=5908632 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=55002 packets=1 bytes=32 [ASSURED] mark=0 use=1
+5803.81 22898.73
+ipv4     2 udp      17 180 src=192.168.77.154 dst=192.168.1.2 sport=55002 dport=5360 packets=624 bytes=6678676 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=55002 packets=1 bytes=32 [ASSURED] mark=0 use=1
+5804.81 22902.70
+ipv4     2 udp      17 179 src=192.168.77.154 dst=192.168.1.2 sport=55002 dport=5360 packets=692 bytes=7371780 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=55002 packets=1 bytes=32 [ASSURED] mark=0 use=1
+5805.82 22906.67
+ipv4     2 udp      17 179 src=192.168.77.154 dst=192.168.1.2 sport=55002 dport=5360 packets=750 bytes=7987804 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=55002 packets=1 bytes=32 [ASSURED] mark=0 use=1
+5806.83 22910.66
+ipv4     2 udp      17 178 src=192.168.77.154 dst=192.168.1.2 sport=55002 dport=5360 packets=750 bytes=7987804 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=55002 packets=1 bytes=32 [ASSURED] mark=0 use=1
+5807.84 22914.65
+ipv4     2 udp      17 177 src=192.168.77.154 dst=192.168.1.2 sport=55002 dport=5360 packets=750 bytes=7987804 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=55002 packets=1 bytes=32 [ASSURED] mark=0 use=1
+5808.85 22918.63
+ipv4     2 udp      17 176 src=192.168.77.154 dst=192.168.1.2 sport=55002 dport=5360 packets=750 bytes=7987804 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=55002 packets=1 bytes=32 [ASSURED] mark=0 use=1
+5809.86 22922.61
+ipv4     2 udp      17 175 src=192.168.77.154 dst=192.168.1.2 sport=55002 dport=5360 packets=750 bytes=7987804 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=55002 packets=1 bytes=32 [ASSURED] mark=0 use=1

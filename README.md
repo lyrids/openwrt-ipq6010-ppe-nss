@@ -1,6 +1,8 @@
 # JDCloud IPQ6010 PPE + NSS development
 
-Active runtime source is restored to pre-kexec. [Normal TFTP boot and image publishing](ipq6010-lab/tftp-boot/README.md) is the current workflow; [history and results](ipq6010-lab/README.md) retain the suspended experiments.
+Current RAM image: iteration9, source49b3824932, kernel6.18.55. It retains the pre-kexec kernel/NSS backend and adds automatic firewall flowtable refresh after Wi-Fi setup. Kexec remains suspended. [Normal TFTP boot and rollback](ipq6010-lab/tftp-boot/README.md), [build provenance](ipq6010-lab/artifacts/wifi-lifecycle-49b3824932-20261026/README.md), and [hardware results](ipq6010-lab/README.md) describe the active integration.
+
+On this IPQ6010 lab build, eligible Ethernet routing/NAT uses the community NSS firmware backend through the PPE flow callback; Wi-Fi uses the community NSS adapter. The general engine table below is inherited community-project documentation. Device-specific architecture and qualified cases are recorded in the lab documentation.
 
 # OpenWrt with PPE and NSS offload for IPQ807x and IPQ60xx
 

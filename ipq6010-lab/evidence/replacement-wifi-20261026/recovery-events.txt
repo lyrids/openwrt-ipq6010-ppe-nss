@@ -1,0 +1,14 @@
+DEAUTH
+3444.52 13610.35
+AP-DOWN
+3464.66 13688.84
+AP-UP
+table inet fw4 {
+	flowtable ft {
+		hook ingress priority filter
+		devices = { "lan1", "lan2", "lan3", "lan4", "phy2-ap0", "wan" }
+		flags offload
+		counter
+	}
+}
+3472.72 13717.85
