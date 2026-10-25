@@ -1,0 +1,51 @@
+Variant: iteration 7 CPU restart diagnostics, host-control
+Source base: e3caef34ec plus 0990-arm64-trace-ipq-cpu-restart.patch
+Kernel: KEXEC/KEXEC_FILE/HOTPLUG_CPU/SUSPEND retained
+PSCI: raw CPU_ON result, entry/affinity, secondary-C checkpoints
+NSS firmware packaging: 12.5 only; no secure firmware modifications
+CPU restart fix: none applied, diagnostics only
+0-3
+0
+nss-wifi.general=general
+nss-wifi.general.offload='0'
+nss-wifi.general.firmware='12.5'
+nss-wifi.general.ethernet_offload='0'
+N
+N
+0
+ethernet enabled 0 active 0 offers 0 pushed 0 rejected 0
+mtu_policy limited 0 link 0/0 route 0/0 rule 0/0 l3if 0/0
+bound 0 pushed 0 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+Wiphy phy2
+Wiphy phy1
+Wiphy phy0
+[    0.000000] psci: probing for conduit method from DT.
+[    0.000000] psci: PSCIv1.0 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: MIGRATE_INFO_TYPE not supported.
+[    0.000000] psci: SMC Calling Convention v1.0
+[    0.015266] psci: ipq-cpu-diag: CPU1 mpidr=0x1 entry=0x0000000041c41520 affinity-before=1
+[    0.015315] psci: ipq-cpu-diag: CPU_ON fn=0xc4000003 target=0x1 entry=0x41c41520 raw=0 errno=0
+[    0.015333] psci: ipq-cpu-diag: CPU1 cpu_on-errno=0 affinity-after=2
+[    0.015464] ipq-cpu-diag: CPU1 reached secondary C before capability checks
+[    0.015631] ipq-cpu-diag: CPU1 completed starting notifiers
+[    0.016243] psci: ipq-cpu-diag: CPU2 mpidr=0x2 entry=0x0000000041c41520 affinity-before=1
+[    0.016287] psci: ipq-cpu-diag: CPU_ON fn=0xc4000003 target=0x2 entry=0x41c41520 raw=0 errno=0
+[    0.016304] psci: ipq-cpu-diag: CPU2 cpu_on-errno=0 affinity-after=2
+[    0.016415] ipq-cpu-diag: CPU2 reached secondary C before capability checks
+[    0.016544] ipq-cpu-diag: CPU2 completed starting notifiers
+[    0.017119] psci: ipq-cpu-diag: CPU3 mpidr=0x3 entry=0x0000000041c41520 affinity-before=1
+[    0.017162] psci: ipq-cpu-diag: CPU_ON fn=0xc4000003 target=0x3 entry=0x41c41520 raw=0 errno=0
+[    0.017179] psci: ipq-cpu-diag: CPU3 cpu_on-errno=0 affinity-after=2
+[    0.017286] ipq-cpu-diag: CPU3 reached secondary C before capability checks
+[    0.017404] ipq-cpu-diag: CPU3 completed starting notifiers
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+eth0             UNKNOWN        fe80::ded8:7bff:fe54:83ec/64 
+lan1@eth0        UP             
+lan2@eth0        DOWN           
+lan3@eth0        DOWN           
+lan4@eth0        UP             
+wan@eth0         DOWN           
+br-lan           UP             192.168.1.1/24 fdbb:2676:600::1/60 fe80::ded8:7bff:fe54:83ec/64 
+ed911380-4b66-4b8d-b387-34c15459668a

@@ -1,0 +1,8 @@
+Image contains unit addresses @, this will break signing
+Image contains unit addresses @, this will break signing
+host-control
+openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-initramfs-uImage.itb 18960156 5e072483cefb5558c59da01d351d4bf47bfb50c294b34a36df9f4d7ce3ed968c
+openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-squashfs-sysupgrade.bin 18032915 b7655e414659a50a6bbc07eb332cac0ff8e9c156e1f91bbc8c0b7d3cbf38875b
+kernel headroom 384524
+PASS opt-in experiment; default disabled; actual CPU restart test pending
+PASS opt-in bool is zero-initialized BSS

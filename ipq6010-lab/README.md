@@ -65,3 +65,16 @@ No further CPU hotplug attempt has been made. The next hardware test should
 boot the host-control variant first using physical SCREEN recovery.
 Default build overlay now identifies the NSS-enabled diagnostic variant.
 These are diagnostic images, not a confirmed CPU restart correction.
+
+## CPU restart control result and opt-in experiment
+
+The iteration7 NSS-disabled control booted with four CPUs but reproduced
+CPU3 restart failure. CPU_ON returned0; CPU3 remained ON_PENDING minutes
+later and never reached the C checkpoints. NSS offload is not required to
+trigger this failure. Current router state after testing:CPUs0-2, NSS off,
+no kexec candidate loaded, management networking reachable.
+
+An iteration8 board-scoped SCM warm-entry registration experiment has built
+and passed offline checks. It is off by default and not yet runtime tested.
+It is not a confirmed fix. See cpu-restart/WARM-ENTRY-EXPERIMENT.md.
+No actual kexec transition or persistent firmware write has been performed.

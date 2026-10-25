@@ -1,0 +1,48 @@
+{
+  "timestamp_utc": "2026-10-25T09:07:23.098278+00:00",
+  "image_iteration": 7,
+  "variant": "host-control",
+  "image_sha256": "b16f6de80ad6604c9021d2a88494d8f31d33164090cedceb1e8cbf563165b5ac",
+  "boot": "passed; four CPUs initially online",
+  "NSS": {
+    "firmware_boot": 0,
+    "ath11k_nss_offload": "N",
+    "Ethernet_offload_parameter": "N",
+    "Ethernet_enabled": 0,
+    "Ethernet_active": 0
+  },
+  "hotplug": {
+    "CPU": 3,
+    "attempts": 1,
+    "CPU_OFF": "passed; affinity-before next CPU_ON=OFF(1)",
+    "CPU_ON_function": "0xc4000003",
+    "entry_physical": "0x41c41520 (same as successful cold startup)",
+    "raw_return": 0,
+    "errno": 0,
+    "affinity_after": 2,
+    "secondary_C_checkpoints_after_request": false,
+    "result": "5s timeout",
+    "secondary_status": "0xffffffffffffffff",
+    "early_status": "0x0"
+  },
+  "affinity_read_only_probe": {
+    "queried_after_failure": true,
+    "CPU0": 0,
+    "CPU1": 0,
+    "CPU2": 0,
+    "CPU3": 2,
+    "meaning_CPU3": "ON_PENDING minutes after request",
+    "module_unloaded": true,
+    "out_of_tree_taint": "introduced after failure by diagnostic probe; not present when failure occurred"
+  },
+  "conclusion": "NSS offload is not required to reproduce CPU restart failure. Firmware/very early startup remains under investigation; exact cause unproven.",
+  "final_state": {
+    "CPUs_online": "0-2",
+    "kexec_loaded": 0,
+    "NSS_boot": 0,
+    "router_reachable": true,
+    "router_to_m4m_ping": "2/2",
+    "retry_CPU_ON": false,
+    "executed_kexec_reboot": false
+  }
+}

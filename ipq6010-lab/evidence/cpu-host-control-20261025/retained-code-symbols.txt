@@ -1,0 +1,12 @@
+Runtime kernel Image load base:0x41000000
+vmlinux symbols (linked _text=ffffffc080000000):
+__secondary_switched ffffffc080033da0
+__idmap_text_start ffffffc080c41000
+secondary_entry ffffffc080c41520
+__enable_mmu ffffffc080c41550
+__cpu_setup ffffffc080c4184c
+__idmap_text_end ffffffc080c41924
+__init_begin ffffffc080c50000
+__init_end ffffffc0819b0000
+These startup code symbols lie outside freed init memory. This does not
+verify every runtime data/page-table dependency or prove firmware causality.

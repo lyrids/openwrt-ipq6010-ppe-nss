@@ -20,7 +20,7 @@
       "kernel_headroom_bytes": 384540
     }
   ],
-  "hardware_boot_tested": false,
+  "hardware_boot_tested": true,
   "fix_applied": false,
   "checks": [
     "profile size/SHA256",
@@ -31,5 +31,6 @@
     "selected NSS12.5 only",
     "built-in kexec and effective kernel config",
     "vendor NSS/ECM/SSDK packages absent"
-  ]
+  ],
+  "hotplug_test": "failed; raw CPU_ON0, prolonged ON_PENDING, no C checkpoint; see evidence/cpu-host-control-20261025"
 }

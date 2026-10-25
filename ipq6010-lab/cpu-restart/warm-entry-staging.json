@@ -1,0 +1,9 @@
+{
+  "p43_path": "/home/ubuntu/openwrt-ramboot/cpu-warm-entry-experiment.itb",
+  "bytes": 18960156,
+  "sha256": "5e072483cefb5558c59da01d351d4bf47bfb50c294b34a36df9f4d7ce3ed968c",
+  "transfer_verified": true,
+  "registration_default": false,
+  "hardware_boot_tested": false,
+  "fix_verified": false
+}

@@ -22,7 +22,7 @@
           "kernel_headroom_bytes": 384540
         }
       ],
-      "hardware_boot_tested": false,
+      "hardware_boot_tested": true,
       "fix_applied": false,
       "checks": [
         "profile size/SHA256",
@@ -33,7 +33,8 @@
         "selected NSS12.5 only",
         "built-in kexec and effective kernel config",
         "vendor NSS/ECM/SSDK packages absent"
-      ]
+      ],
+      "hotplug_test": "failed"
     },
     {
       "variant": "nss-enabled",
@@ -72,6 +73,6 @@
     }
   ],
   "same_CPU_objects_and_kernel_config": true,
-  "hardware_tested": false,
+  "hardware_tested": "host-control only; NSS-enabled diagnostic image not booted",
   "fix_applied": false
 }

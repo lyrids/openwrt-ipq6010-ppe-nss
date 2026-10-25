@@ -1,0 +1,3 @@
+ffffffc080941a50 d __param_str_ipq_cpu_warm_vector
+ffffffc080c3a4c8 r __param_ipq_cpu_warm_vector
+ffffffc081a9b0e0 b ipq_cpu_warm_vector

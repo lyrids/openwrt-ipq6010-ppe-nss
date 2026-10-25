@@ -358,5 +358,53 @@
     "bytes": 18032915,
     "sha256": "2dfe0e1b4697938b7ddbe8c34e611e855e27a8d25c34e5a7d40272cc85a6db40",
     "reason": "generated diagnostic image/binary"
+  },
+  {
+    "path": "artifacts/cpu-restart-affinity-probe-20261025/ipq_psci_affinity_probe.ko",
+    "bytes": 39176,
+    "sha256": "2d22040061232eea300d1a27acc05f4a7abbff9bdf8ceffe94083b3489f72689",
+    "reason": "generated binary or firmware image"
+  },
+  {
+    "path": "artifacts/cpu-restart-affinity-probe-20261025/build-record/ipq_psci_affinity_probe.o",
+    "bytes": 15616,
+    "sha256": "709e4d4a59926ad4ae739bbf697c603c0c875f41bcd116ab52f5178bb7e6f307",
+    "reason": "generated binary or firmware image"
+  },
+  {
+    "path": "artifacts/cpu-restart-affinity-probe-20261025/build-record/ipq_psci_affinity_probe.mod.o",
+    "bytes": 13696,
+    "sha256": "b6afc0e6eb243dcd15cf71921253633434d1f5905ac5c63ac0a85987780eadaa",
+    "reason": "generated binary or firmware image"
+  },
+  {
+    "path": "artifacts/cpu-restart-affinity-probe-20261025/build-record/.module-common.o",
+    "bytes": 13168,
+    "sha256": "648788f4873b25812bd4bfa10e12bee4c78552d4481318b7522f9b969b1b991a",
+    "reason": "generated binary or firmware image"
+  },
+  {
+    "path": "artifacts/cpu-restart-affinity-probe-20261025/build-record/ipq_psci_affinity_probe.ko",
+    "bytes": 39176,
+    "sha256": "2d22040061232eea300d1a27acc05f4a7abbff9bdf8ceffe94083b3489f72689",
+    "reason": "generated binary or firmware image"
+  },
+  {
+    "path": "artifacts/cpu-warm-entry-experiment-20261025/host-control/kernel.gz",
+    "bytes": 18928965,
+    "sha256": "f7564efa1c89f000bf532a73d0f26d67ab8a17ddab96e511a5760fc4f4caeeb0",
+    "reason": "generated binary or firmware image"
+  },
+  {
+    "path": "artifacts/cpu-warm-entry-experiment-20261025/host-control/images/openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-initramfs-uImage.itb",
+    "bytes": 18960156,
+    "sha256": "5e072483cefb5558c59da01d351d4bf47bfb50c294b34a36df9f4d7ce3ed968c",
+    "reason": "generated binary or firmware image"
+  },
+  {
+    "path": "artifacts/cpu-warm-entry-experiment-20261025/host-control/images/openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-squashfs-sysupgrade.bin",
+    "bytes": 18032915,
+    "sha256": "b7655e414659a50a6bbc07eb332cac0ff8e9c156e1f91bbc8c0b7d3cbf38875b",
+    "reason": "generated binary or firmware image"
   }
 ]
