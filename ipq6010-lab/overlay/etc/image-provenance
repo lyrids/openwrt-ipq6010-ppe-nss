@@ -1,6 +1,7 @@
-Variant: iteration 8 opt-in SCM warm-entry experiment, nss-enabled-default
-Source base: 9f8c7df335 plus diagnostic0990 and opt-in0991
-Kernel: KEXEC/KEXEC_FILE/HOTPLUG_CPU/SUSPEND retained
-PSCI: raw CPU_ON result, entry/affinity, secondary-C checkpoints
-NSS firmware packaging: 12.5 only; no secure firmware modifications
-CPU restart fix: unverified experiment, disabled by default; sysfs ipq_cpu_warm_vector
+Variant: experimental PPE + NSS Ethernet backend, iteration 5 (live routed MTU guard with safe software fallback)
+Base: 03803c78cd3b6968c20dab239c0c2f688692be63
+PPE: DSA/VLAN topology and unchanged-packet flow steering
+NSS: Ethernet-only routed flow backend, Wi-Fi datapath, CP firmware 12.5
+Module parameter ethernet_offload=1 selected at boot
+No vendor qca-nss-drv or ECM
+Reduced-MTU guard hardware validation pending; Wi-Fi upload issue resolved by user retest (client adapter)

@@ -1509,8 +1509,6 @@ MODULE_DEVICE_TABLE(of, nss_of_match);
 static struct platform_driver nss_driver = {
 	.probe = nss_probe,
 	.remove = nss_remove,
-	/* Shutdown and remove are exclusive; both must halt NSS DMA. */
-	.shutdown = nss_remove,
 	.driver = {
 		.name = "nss-wifi-drv",
 		.of_match_table = nss_of_match,

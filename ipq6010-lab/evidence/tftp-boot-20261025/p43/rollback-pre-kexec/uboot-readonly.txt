@@ -1,0 +1,44 @@
+������
+U-Boot Telnet Console
+Version: U-Boot 2016.01-3011049 (2026-08-16 14:28:46 +0800)
+Ported from project: Yuzhii0718/bl-mt798x-dhcpd
+Author: Yuzhii0718
+
+IPQ6018# 
+>>> version
+
+
+U-Boot 2016.01-3011049 (2026-08-16 14:28:46 +0800)
+arm-openwrt-linux-gcc (OpenWrt GCC 5.2.0 6404588+r49254) 5.2.0
+GNU ld (GNU Binutils) 2.24.0
+
+IPQ6018# 
+>>> printenv bootcmd bootargs bootdelay ipaddr serverip netretry tftptimeout tftptimeoutcountmax
+printen
+bootcmd=bootipq
+bootargs=console=ttyMSM0,115200n8
+bootdelay=2
+ipaddr=192.168.1.1
+serverip=192.168.1.2
+## Error: "netretry" not defined
+## Error: "tftptimeout" not defined
+## Error: "tftptimeoutcountmax" not defined
+
+IPQ6018# 
+>>> if test 1 = 1; then echo hush-ok; fi
+printenv bootcmd bootargs bootdelay ipaddr serverip netretry tftptimeout tftptimeoutcountmax
+hush-ok
+
+IPQ6018# 
+>>> help tftpboot
+help tftpboot; then echo hush-ok; fi
+tftpboot - boot image via network using TFTP protocol
+
+
+IPQ6018# 
+>>> help bootm
+help tftpboot
+bootm - boot application image from memory
+
+
+IPQ6018# 

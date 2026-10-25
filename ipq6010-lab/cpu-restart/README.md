@@ -1,3 +1,5 @@
+**Historical experiment — suspended.** Active source/router restored to iteration5. Use [TFTP normal boot](../tftp-boot/README.md); archived experiments are not the current workflow.
+
 # CPU restart investigation
 
 Iteration6 restores all CPUs after an ordinary U-Boot RAM boot, but CPU3

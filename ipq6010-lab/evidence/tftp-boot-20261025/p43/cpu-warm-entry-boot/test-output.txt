@@ -1,0 +1,30 @@
+before=0-3
+after_offline=0-2
+online_write_failed=1
+remaining_online=0-2
+[    0.015275] psci: ipq-cpu-diag: CPU1 mpidr=0x1 entry=0x0000000041c41520 affinity-before=1
+[    0.015324] psci: ipq-cpu-diag: CPU_ON fn=0xc4000003 target=0x1 entry=0x41c41520 raw=0 errno=0
+[    0.015342] psci: ipq-cpu-diag: CPU1 cpu_on-errno=0 affinity-after=2
+[    0.015471] ipq-cpu-diag: CPU1 reached secondary C before capability checks
+[    0.015642] ipq-cpu-diag: CPU1 completed starting notifiers
+[    0.016253] psci: ipq-cpu-diag: CPU2 mpidr=0x2 entry=0x0000000041c41520 affinity-before=1
+[    0.016298] psci: ipq-cpu-diag: CPU_ON fn=0xc4000003 target=0x2 entry=0x41c41520 raw=0 errno=0
+[    0.016315] psci: ipq-cpu-diag: CPU2 cpu_on-errno=0 affinity-after=2
+[    0.016426] ipq-cpu-diag: CPU2 reached secondary C before capability checks
+[    0.016554] ipq-cpu-diag: CPU2 completed starting notifiers
+[    0.017128] psci: ipq-cpu-diag: CPU3 mpidr=0x3 entry=0x0000000041c41520 affinity-before=1
+[    0.017171] psci: ipq-cpu-diag: CPU_ON fn=0xc4000003 target=0x3 entry=0x41c41520 raw=0 errno=0
+[    0.017190] psci: ipq-cpu-diag: CPU3 cpu_on-errno=0 affinity-after=2
+[    0.017298] ipq-cpu-diag: CPU3 reached secondary C before capability checks
+[    0.017317] Detected VIPT I-cache on CPU3
+[    0.017417] ipq-cpu-diag: CPU3 completed starting notifiers
+[    0.017427] CPU3: Booted secondary processor 0x0000000003 [0x51af8014]
+[   61.948229] IRQ54: set affinity failed(-22).
+[   61.948252] IRQ55: set affinity failed(-22).
+[   61.948259] IRQ56: set affinity failed(-22).
+[   61.948460] psci: CPU3 killed (polled 0 ms)
+[   61.963779] psci: ipq-cpu-diag: CPU3 mpidr=0x3 entry=0x0000000041c41520 affinity-before=1
+[   61.964310] psci: ipq-cpu-warm-entry: CPU3 SCM warm-entry=0x0000000041c41520 errno=-5
+[   61.972574] CPU3: failed to boot: -5
+STOP: preserve logs; do not offline another CPU or bypass the kexec guard.
+Opt-in parameter disabled again; this does not undo a successful SCM registration.

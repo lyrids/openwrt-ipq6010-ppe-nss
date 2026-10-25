@@ -1,3 +1,5 @@
+**Historical experiment — suspended.** Active source/router restored to iteration5. Use [TFTP normal boot](../tftp-boot/README.md); archived experiments are not the current workflow.
+
 # Experimental ARM64 kexec support
 
 The static kexec-tools2.0.32 utility was cross-compiled on Orb with OpenWrt GCC14.4/musl and executed on the router. SHA256:13516e64dfb8ba8aa9cb30f392d190ffa8822e28962daf08e5fcaec29238b3af. It is dynamically independent of router libraries. Compression libraries were disabled; feed it the uncompressed ARM64 Image extracted from the FIT.

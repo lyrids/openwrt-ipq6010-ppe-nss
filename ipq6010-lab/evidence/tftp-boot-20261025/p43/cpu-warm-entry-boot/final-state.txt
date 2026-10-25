@@ -1,0 +1,27 @@
+0-2
+N
+0
+0
+177.40 567.66
+[   25.902604] qca-ppe 3a000000.ppe lan4: entered allmulticast mode
+[   25.908234] qca-ppe 3a000000.ppe lan4: entered promiscuous mode
+[   25.914378] br-lan: port 4(lan4) entered blocking state
+[   25.919668] br-lan: port 4(lan4) entered forwarding state
+[   25.929307] qca-ppe 3a000000.ppe wan: configuring for phy/2500base-x link mode
+[   28.500961] qca-ppe 3a000000.ppe lan1: Link is Up - 1Gbps/Full - flow control rx/tx
+[   28.501027] br-lan: port 1(lan1) entered blocking state
+[   28.507443] br-lan: port 1(lan1) entered forwarding state
+[   61.948229] IRQ54: set affinity failed(-22).
+[   61.948252] IRQ55: set affinity failed(-22).
+[   61.948259] IRQ56: set affinity failed(-22).
+[   61.948460] psci: CPU3 killed (polled 0 ms)
+[   61.963779] psci: ipq-cpu-diag: CPU3 mpidr=0x3 entry=0x0000000041c41520 affinity-before=1
+[   61.964310] psci: ipq-cpu-warm-entry: CPU3 SCM warm-entry=0x0000000041c41520 errno=-5
+[   61.972574] CPU3: failed to boot: -5
+PING 192.168.1.158 (192.168.1.158): 56 data bytes
+64 bytes from 192.168.1.158: seq=0 ttl=64 time=0.884 ms
+64 bytes from 192.168.1.158: seq=1 ttl=64 time=0.895 ms
+
+--- 192.168.1.158 ping statistics ---
+2 packets transmitted, 2 packets received, 0% packet loss
+round-trip min/avg/max = 0.884/0.889/0.895 ms

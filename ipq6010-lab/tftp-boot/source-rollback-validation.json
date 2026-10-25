@@ -1,0 +1,8 @@
+{
+  "reference": "08c04ac88171b95ea5510339c66742c39110e73b",
+  "package_target_diff": "empty",
+  "KERNEL_KEXEC": "not set",
+  "PACKAGE_kexec": "not enabled",
+  "experiments": "archived; not active",
+  "next_rebuild": "clean/reprepare kernel; old build_dir artifacts are historical"
+}

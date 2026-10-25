@@ -1,3 +1,13 @@
+# Current status: pre-kexec runtime, TFTP-first normal boot
+
+Kexec work is suspended. Active package/target source and build defaults
+match the pre-kexec state08c04ac881. Iteration5 runs with four CPUs and
+active NSS. Normal reboot downloads the image from p43 over TFTP, with
+the original eMMC bootipq fallback. USB boot is the next stage.
+
+See [TFTP workflow/configuration/rollback](tftp-boot/README.md).
+Earlier experiments below are retained as historical development records.
+
 # JDCloud RE-CS-02 / IPQ6010 PPE + NSS laboratory
 
 This repository preserves the OpenWrt source history and the experimental Ethernet NSS backend tested on the JDCloud RE-CS-02. Community base: JuliusBairaktaris/openwrt-ppe-nss commit 03803c78cd3b6968c20dab239c0c2f688692be63; kernel 6.18.55. This is a downstream integration. Earlier official OpenWrt baseline: 5192094fd6fb7050ec3c859cf9f3f8fee5b10d91.

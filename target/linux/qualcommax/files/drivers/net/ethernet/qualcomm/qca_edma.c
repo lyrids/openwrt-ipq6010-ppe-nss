@@ -2650,18 +2650,6 @@ static void edma_remove(struct platform_device *pdev)
 	edma_port_md_free(priv);
 }
 
-/* A kexec kernel does not pass through firmware's DMA reset path. */
-static void edma_shutdown(struct platform_device *pdev)
-{
-	struct edma_priv *priv = platform_get_drvdata(pdev);
-
-	rtnl_lock();
-	dev_close(priv->netdev);
-	netif_tx_disable(priv->netdev);
-	edma_hw_stop(priv);
-	rtnl_unlock();
-}
-
 static const struct edma_soc_data ipq60xx_data = {
 	.txcmpl_base = 0x79000,
 	.tx_int_base = 0x91000,
@@ -2698,7 +2686,6 @@ static struct platform_driver edma_driver = {
 	},
 	.probe = edma_probe,
 	.remove = edma_remove,
-	.shutdown = edma_shutdown,
 };
 
 module_platform_driver(edma_driver);

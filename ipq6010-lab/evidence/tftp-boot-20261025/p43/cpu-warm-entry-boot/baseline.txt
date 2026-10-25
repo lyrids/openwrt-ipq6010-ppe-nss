@@ -1,0 +1,45 @@
+Variant: iteration 8 opt-in SCM warm-entry experiment, host-control
+Source base: 9f8c7df335 plus diagnostic0990 and opt-in0991
+Kernel: KEXEC/KEXEC_FILE/HOTPLUG_CPU/SUSPEND retained
+PSCI: raw CPU_ON result, entry/affinity, secondary-C checkpoints
+NSS firmware packaging: 12.5 only; no secure firmware modifications
+CPU restart fix: unverified experiment, disabled by default; sysfs ipq_cpu_warm_vector
+CPU
+0-3
+OPT_IN
+N
+KEXEC
+0
+NSS
+0
+nss-wifi.general=general
+nss-wifi.general.offload='0'
+nss-wifi.general.firmware='12.5'
+nss-wifi.general.ethernet_offload='0'
+6aef1b20-22d3-4bd3-aad2-f8a65e8f372f
+[    0.015275] psci: ipq-cpu-diag: CPU1 mpidr=0x1 entry=0x0000000041c41520 affinity-before=1
+[    0.015324] psci: ipq-cpu-diag: CPU_ON fn=0xc4000003 target=0x1 entry=0x41c41520 raw=0 errno=0
+[    0.015342] psci: ipq-cpu-diag: CPU1 cpu_on-errno=0 affinity-after=2
+[    0.015471] ipq-cpu-diag: CPU1 reached secondary C before capability checks
+[    0.015642] ipq-cpu-diag: CPU1 completed starting notifiers
+[    0.015655] CPU1: Booted secondary processor 0x0000000001 [0x51af8014]
+[    0.016253] psci: ipq-cpu-diag: CPU2 mpidr=0x2 entry=0x0000000041c41520 affinity-before=1
+[    0.016298] psci: ipq-cpu-diag: CPU_ON fn=0xc4000003 target=0x2 entry=0x41c41520 raw=0 errno=0
+[    0.016315] psci: ipq-cpu-diag: CPU2 cpu_on-errno=0 affinity-after=2
+[    0.016426] ipq-cpu-diag: CPU2 reached secondary C before capability checks
+[    0.016554] ipq-cpu-diag: CPU2 completed starting notifiers
+[    0.016564] CPU2: Booted secondary processor 0x0000000002 [0x51af8014]
+[    0.017128] psci: ipq-cpu-diag: CPU3 mpidr=0x3 entry=0x0000000041c41520 affinity-before=1
+[    0.017171] psci: ipq-cpu-diag: CPU_ON fn=0xc4000003 target=0x3 entry=0x41c41520 raw=0 errno=0
+[    0.017190] psci: ipq-cpu-diag: CPU3 cpu_on-errno=0 affinity-after=2
+[    0.017298] ipq-cpu-diag: CPU3 reached secondary C before capability checks
+[    0.017417] ipq-cpu-diag: CPU3 completed starting notifiers
+[    0.017427] CPU3: Booted secondary processor 0x0000000003 [0x51af8014]
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+eth0             UNKNOWN        fe80::ded8:7bff:fe54:83ec/64 
+lan1@eth0        UP             
+lan2@eth0        DOWN           
+lan3@eth0        DOWN           
+lan4@eth0        UP             
+wan@eth0         DOWN           
+br-lan           UP             192.168.1.1/24 fd50:f593:ffce::1/60 fe80::ded8:7bff:fe54:83ec/64 

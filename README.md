@@ -1,6 +1,6 @@
 # JDCloud IPQ6010 PPE + NSS development
 
-Local source changes, build instructions and test results: [ipq6010-lab](ipq6010-lab/README.md). Experimental kernel replacement tooling: [kexec](ipq6010-lab/kexec/README.md).
+Active runtime source is restored to pre-kexec. [Normal TFTP boot and image publishing](ipq6010-lab/tftp-boot/README.md) is the current workflow; [history and results](ipq6010-lab/README.md) retain the suspended experiments.
 
 # OpenWrt with PPE and NSS offload for IPQ807x and IPQ60xx
 
