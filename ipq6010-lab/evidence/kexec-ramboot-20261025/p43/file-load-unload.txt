@@ -1,0 +1,13 @@
+FILE LOAD
+arch_process_options:179: command_line: console=ttyMSM0,115200n8 kexec_trial=iteration6-file
+arch_process_options:181: initrd: (null)
+arch_process_options:183: dtb: (null)
+arch_process_options:186: console: (null)
+Try gzip decompression.
+elf_arm64_probe: Not an ELF executable.
+loaded=1
+FILE UNLOAD
+loaded=0
+boot_id=11bed04e-a8b8-40c6-a389-a5217746b5d1
+534.29 2098.96
+PASS file-based load/unload without reboot

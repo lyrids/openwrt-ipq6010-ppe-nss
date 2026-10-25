@@ -1,0 +1,351 @@
+LEGACY LOAD WITH LIVE DTB
+arch_process_options:179: command_line: console=ttyMSM0,115200n8 kexec_trial=iteration6-legacy
+arch_process_options:181: initrd: (null)
+arch_process_options:183: dtb: /tmp/kexec-test/live.dtb
+arch_process_options:186: console: (null)
+Try gzip decompression.
+kernel: 0x7f8c5d4040 kernel_size: 0x1a96808
+Can't open (/proc/kcore).
+Cannot get kernel _text symbol address
+Can't get the symbol of _text to calculate page_offset.
+get_memory_ranges:+[0] 0000000041000000 - 000000004a0fffff
+get_memory_ranges:-      0000000041c50000 - 00000000429affff
+get_memory_ranges:-      00000000484f5000 - 00000000484fcfff
+get_memory_ranges:+[3] 000000004a500000 - 000000004a5fffff
+get_memory_ranges:+[4] 0000000050000000 - 000000007fffffff
+get_memory_ranges:-      000000007eb29000 - 000000007fdfffff
+get_memory_ranges:-      000000007fe02000 - 000000007fe02fff
+get_memory_ranges:-      000000007fe04000 - 000000007fe06fff
+get_memory_ranges:-      000000007fe07000 - 000000007fe17fff
+get_memory_ranges:-      000000007fe18000 - 000000007fe3afff
+get_memory_ranges:-      000000007fe3b000 - 000000007fffffff
+set_phys_offset: phys_offset : 0000000041000000 (method : iomem)
+System RAM ranges;
+0000000041000000-0000000041c4ffff (0)
+00000000429b0000-00000000484f4fff (0)
+00000000484fd000-000000004a0fffff (0)
+000000004a500000-000000004a5fffff (0)
+0000000050000000-000000007eb28fff (0)
+000000007fe00000-000000007fe01fff (0)
+000000007fe03000-000000007fe03fff (0)
+elf_arm64_probe: Not an ELF executable.
+image_arm64_load: kernel_segment: 0000000042a00000
+image_arm64_load: text_offset:    0000000000000000
+image_arm64_load: image_size:     0000000001af0000
+image_arm64_load: phys_offset:    0000000041000000
+image_arm64_load: vp_offset:      ffffffffffffffff
+image_arm64_load: PE format:      no
+arm64_load_other_segments:742: purgatory sink: 0x0
+get_cells_size: #address-cells:2 #size-cells:2
+cells_size_fitted: 0-0
+setup_2nd_dtb: no kaslr-seed found
+dump_reservemap: dtb_user {484f5000, 8000}
+dtb_delete_property: fdt_delprop failed: <valid offset/length>
+dtb_delete_property: fdt_delprop failed: <valid offset/length>
+dtb:    base 444f0000, size 7628h (30248)
+sym: sha256_starts info: 12 other: 00 shndx: 1 value: f40 size: 50
+sym: sha256_starts value: 444f8f40 addr: 444f8014
+machine_apply_elf_rel: CALL26 9000000094000000->90000000940003cb
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f80f0 addr: 444f8018
+machine_apply_elf_rel: ADR_PREL_PG_HI21 f940001390000000->f940001390000000
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f80f0 addr: 444f801c
+machine_apply_elf_rel: LDST64_ABS_LO12_NC aa1303f5f9400013->aa1303f5f9407813
+sym: sha256_update info: 12 other: 00 shndx: 1 value: 2ee8 size: c
+sym: sha256_update value: 444faee8 addr: 444f8030
+machine_apply_elf_rel: CALL26 eb14027f94000000->eb14027f94000bae
+sym: sha256_finish info: 12 other: 00 shndx: 1 value: 2f00 size: 194
+sym: sha256_finish value: 444faf00 addr: 444f8048
+machine_apply_elf_rel: CALL26 aa1303e194000000->aa1303e194000bae
+sym:     memcmp info: 12 other: 00 shndx: 1 value: 62c size: 34
+sym: memcmp value: 444f862c addr: 444f8058
+machine_apply_elf_rel: CALL26 3400042094000000->3400042094000175
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f80f8 addr: 444f8060
+machine_apply_elf_rel: ADR_PREL_PG_HI21 9000001490000000->9000001490000000
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f8108 addr: 444f8064
+machine_apply_elf_rel: ADR_PREL_PG_HI21 9100029490000014->9100029490000014
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f8108 addr: 444f8068
+machine_apply_elf_rel: ADD_ABS_LO12_NC d280001391000294->d280001391042294
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f80f8 addr: 444f8070
+machine_apply_elf_rel: LDST64_ABS_LO12_NC 94000000f9400000->94000000f9407c00
+sym:     printf info: 12 other: 00 shndx: 1 value: 55c size: 70
+sym: printf value: 444f855c addr: 444f8074
+machine_apply_elf_rel: CALL26 9000000094000000->900000009400013a
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f8100 addr: 444f8078
+machine_apply_elf_rel: ADR_PREL_PG_HI21 f940000090000000->f940000090000000
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f8100 addr: 444f807c
+machine_apply_elf_rel: LDST64_ABS_LO12_NC 94000000f9400000->94000000f9408000
+sym:     printf info: 12 other: 00 shndx: 1 value: 55c size: 70
+sym: printf value: 444f855c addr: 444f8080
+machine_apply_elf_rel: CALL26 f940028094000000->f940028094000137
+sym:     printf info: 12 other: 00 shndx: 1 value: 55c size: 70
+sym: printf value: 444f855c addr: 444f8090
+machine_apply_elf_rel: CALL26 f100827f94000000->f100827f94000133
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f8110 addr: 444f809c
+machine_apply_elf_rel: ADR_PREL_PG_HI21 910402b590000016->910402b590000016
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f8110 addr: 444f80a8
+machine_apply_elf_rel: LDST64_ABS_LO12_NC 94000000f94002c0->94000000f9408ac0
+sym:     printf info: 12 other: 00 shndx: 1 value: 55c size: 70
+sym: printf value: 444f855c addr: 444f80ac
+machine_apply_elf_rel: CALL26 9000000094000000->900000009400012c
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f8118 addr: 444f80b0
+machine_apply_elf_rel: ADR_PREL_PG_HI21 f940000090000000->f940000090000000
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f8118 addr: 444f80b4
+machine_apply_elf_rel: LDST64_ABS_LO12_NC 94000000f9400000->94000000f9408c00
+sym:     printf info: 12 other: 00 shndx: 1 value: 55c size: 70
+sym: printf value: 444f855c addr: 444f80b8
+machine_apply_elf_rel: CALL26 f940028094000000->f940028094000129
+sym:     printf info: 12 other: 00 shndx: 1 value: 55c size: 70
+sym: printf value: 444f855c addr: 444f80c8
+machine_apply_elf_rel: CALL26 f100827f94000000->f100827f94000125
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f8110 addr: 444f80d4
+machine_apply_elf_rel: LDST64_ABS_LO12_NC 94000000f94002c0->94000000f9408ac0
+sym:     printf info: 12 other: 00 shndx: 1 value: 55c size: 70
+sym: printf value: 444f855c addr: 444f80d8
+machine_apply_elf_rel: CALL26 5280002094000000->5280002094000121
+sym:      .data info: 03 other: 00 shndx: 5 value: 0 size: 0
+sym: .data value: 444fb348 addr: 444f80f0
+machine_apply_elf_rel: ABS64 0000000000000000->00000000444fb348
+sym: .rodata.str1.1 info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .rodata.str1.1 value: 444fb4c0 addr: 444f80f8
+machine_apply_elf_rel: ABS64 0000000000000000->00000000444fb4c0
+sym: .rodata.str1.1 info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .rodata.str1.1 value: 444fb4e0 addr: 444f8100
+machine_apply_elf_rel: ABS64 0000000000000000->00000000444fb4e0
+sym: .rodata.str1.1 info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .rodata.str1.1 value: 444fb4f0 addr: 444f8108
+machine_apply_elf_rel: ABS64 0000000000000000->00000000444fb4f0
+sym: .rodata.str1.1 info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .rodata.str1.1 value: 444fb4f6 addr: 444f8110
+machine_apply_elf_rel: ABS64 0000000000000000->00000000444fb4f6
+sym: .rodata.str1.1 info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .rodata.str1.1 value: 444fb4f8 addr: 444f8118
+machine_apply_elf_rel: ABS64 0000000000000000->00000000444fb4f8
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f8160 addr: 444f8124
+machine_apply_elf_rel: ADR_PREL_PG_HI21 910003fd90000000->910003fd90000000
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f8160 addr: 444f812c
+machine_apply_elf_rel: LDST64_ABS_LO12_NC 94000000f9400000->94000000f940b000
+sym:     printf info: 12 other: 00 shndx: 1 value: 55c size: 70
+sym: printf value: 444f855c addr: 444f8130
+machine_apply_elf_rel: CALL26 9400000094000000->940000009400010b
+sym: setup_arch info: 12 other: 00 shndx: 1 value: ee0 size: 3c
+sym: setup_arch value: 444f8ee0 addr: 444f8134
+machine_apply_elf_rel: CALL26 9000000094000000->900000009400036b
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f8168 addr: 444f8138
+machine_apply_elf_rel: ADR_PREL_PG_HI21 f940000090000000->f940000090000000
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f8168 addr: 444f813c
+machine_apply_elf_rel: LDST64_ABS_LO12_NC b9412000f9400000->b9412000f940b400
+sym: verify_sha256_digest info: 12 other: 00 shndx: 1 value: 0 size: f0
+sym: verify_sha256_digest value: 444f8000 addr: 444f8148
+machine_apply_elf_rel: CALL26 3400004094000000->3400004097ffffae
+sym: post_verification_setup_arch info: 12 other: 00 shndx: 1 value: ec8 size: c
+sym: post_verification_setup_arch value: 444f8ec8 addr: 444f8158
+machine_apply_elf_rel: JUMP26 d503201f14000000->d503201f1400035c
+sym: .rodata.str1.1 info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .rodata.str1.1 value: 444fb508 addr: 444f8160
+machine_apply_elf_rel: ABS64 0000000000000000->00000000444fb508
+sym:      .data info: 03 other: 00 shndx: 5 value: 0 size: 0
+sym: .data value: 444fb348 addr: 444f8168
+machine_apply_elf_rel: ABS64 0000000000000000->00000000444fb348
+sym:    putchar info: 12 other: 00 shndx: 1 value: e90 size: 2c
+sym: putchar value: 444f8e90 addr: 444f81e4
+machine_apply_elf_rel: CALL26 17fffffb94000000->17fffffb9400032b
+sym:    putchar info: 12 other: 00 shndx: 1 value: e90 size: 2c
+sym: putchar value: 444f8e90 addr: 444f8250
+machine_apply_elf_rel: CALL26 17fffffd94000000->17fffffd94000310
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f84f0 addr: 444f82ac
+machine_apply_elf_rel: ADR_PREL_PG_HI21 f940010790000008->f940010790000008
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f84f0 addr: 444f82b0
+machine_apply_elf_rel: LDST64_ABS_LO12_NC 9ac324c4f9400107->9ac324c4f9427907
+sym:    putchar info: 12 other: 00 shndx: 1 value: e90 size: 2c
+sym: putchar value: 444f8e90 addr: 444f84e8
+machine_apply_elf_rel: CALL26 17fffffd94000000->17fffffd9400026a
+sym: .rodata.str1.1 info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .rodata.str1.1 value: 444fb51a addr: 444f84f0
+machine_apply_elf_rel: ABS64 0000000000000000->00000000444fb51a
+sym:   vsprintf info: 12 other: 00 shndx: 1 value: 170 size: 380
+sym: vsprintf value: 444f8170 addr: 444f8550
+machine_apply_elf_rel: CALL26 a8d07bfd94000000->a8d07bfd97ffff08
+sym:   vsprintf info: 12 other: 00 shndx: 1 value: 170 size: 380
+sym: vsprintf value: 444f8170 addr: 444f85c0
+machine_apply_elf_rel: CALL26 a8d17bfd94000000->a8d17bfd97fffeec
+sym:  purgatory info: 12 other: 00 shndx: 1 value: 120 size: 3c
+sym: purgatory value: 444f8120 addr: 444f8668
+machine_apply_elf_rel: CALL26 5800001194000000->5800001197fffeae
+sym: arm64_kernel_entry info: 10 other: 00 shndx: 5 value: 128 size: 8
+sym: arm64_kernel_entry value: 444fb470 addr: 444f866c
+machine_apply_elf_rel: LD_PREL_LO19 5800000058000011->5800000058017031
+sym: arm64_dtb_addr info: 10 other: 00 shndx: 5 value: 130 size: 8
+sym: arm64_dtb_addr value: 444fb478 addr: 444f8670
+machine_apply_elf_rel: LD_PREL_LO19 aa1f03e158000000->aa1f03e158017040
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f8ec0 addr: 444f8e90
+machine_apply_elf_rel: ADR_PREL_PG_HI21 f940002190000001->f940002190000001
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f8ec0 addr: 444f8e94
+machine_apply_elf_rel: LDST64_ABS_LO12_NC f9400022f9400021->f9400022f9476021
+sym:       data info: 03 other: 00 shndx: a value: 0 size: 0
+sym: data value: 444fb578 addr: 444f8ec0
+machine_apply_elf_rel: ABS64 0000000000000000->00000000444fb578
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f8ed8 addr: 444f8ec8
+machine_apply_elf_rel: ADR_PREL_PG_HI21 f940000090000000->f940000090000000
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f8ed8 addr: 444f8ecc
+machine_apply_elf_rel: LDST64_ABS_LO12_NC 14000000f9400000->14000000f9476c00
+sym:     printf info: 12 other: 00 shndx: 1 value: 55c size: 70
+sym: printf value: 444f855c addr: 444f8ed0
+machine_apply_elf_rel: JUMP26 d503201f14000000->d503201f17fffda3
+sym: .rodata.str1.1 info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .rodata.str1.1 value: 444fb52b addr: 444f8ed8
+machine_apply_elf_rel: ABS64 0000000000000000->00000000444fb52b
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f8f20 addr: 444f8ee4
+machine_apply_elf_rel: ADR_PREL_PG_HI21 910003fd90000000->910003fd90000000
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f8f20 addr: 444f8eec
+machine_apply_elf_rel: LDST64_ABS_LO12_NC f9400001f9400000->f9400001f9479000
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f8f28 addr: 444f8ef4
+machine_apply_elf_rel: ADR_PREL_PG_HI21 f940000090000000->f940000090000000
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f8f28 addr: 444f8ef8
+machine_apply_elf_rel: LDST64_ABS_LO12_NC 94000000f9400000->94000000f9479400
+sym:     printf info: 12 other: 00 shndx: 1 value: 55c size: 70
+sym: printf value: 444f855c addr: 444f8efc
+machine_apply_elf_rel: CALL26 9000000094000000->9000000097fffd98
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f8f30 addr: 444f8f00
+machine_apply_elf_rel: ADR_PREL_PG_HI21 a8c17bfd90000000->a8c17bfd90000000
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f8f30 addr: 444f8f08
+machine_apply_elf_rel: LDST64_ABS_LO12_NC f9400001f9400000->f9400001f9479800
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f8f38 addr: 444f8f10
+machine_apply_elf_rel: ADR_PREL_PG_HI21 f940000090000000->f940000090000000
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f8f38 addr: 444f8f14
+machine_apply_elf_rel: LDST64_ABS_LO12_NC 14000000f9400000->14000000f9479c00
+sym:     printf info: 12 other: 00 shndx: 1 value: 55c size: 70
+sym: printf value: 444f855c addr: 444f8f18
+machine_apply_elf_rel: JUMP26 d503201f14000000->d503201f17fffd91
+sym: arm64_kernel_entry info: 10 other: 00 shndx: 5 value: 128 size: 8
+sym: arm64_kernel_entry value: 444fb470 addr: 444f8f20
+machine_apply_elf_rel: ABS64 0000000000000000->00000000444fb470
+sym: .rodata.str1.1 info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .rodata.str1.1 value: 444fb54a addr: 444f8f28
+machine_apply_elf_rel: ABS64 0000000000000000->00000000444fb54a
+sym: arm64_dtb_addr info: 10 other: 00 shndx: 5 value: 130 size: 8
+sym: arm64_dtb_addr value: 444fb478 addr: 444f8f30
+machine_apply_elf_rel: ABS64 0000000000000000->00000000444fb478
+sym: .rodata.str1.1 info: 03 other: 00 shndx: 8 value: 0 size: 0
+sym: .rodata.str1.1 value: 444fb560 addr: 444f8f38
+machine_apply_elf_rel: ABS64 0000000000000000->00000000444fb560
+sym:     memcpy info: 12 other: 00 shndx: 1 value: 60c size: 20
+sym: memcpy value: 444f860c addr: 444fae44
+machine_apply_elf_rel: JUMP26 f100031f14000000->f100031f17fff5f2
+sym: sha256_process info: 12 other: 00 shndx: 1 value: f90 size: 1e34
+sym: sha256_process value: 444f8f90 addr: 444fae7c
+machine_apply_elf_rel: CALL26 eb16027f94000000->eb16027f97fff845
+sym:     memcpy info: 12 other: 00 shndx: 1 value: 60c size: 20
+sym: memcpy value: 444f860c addr: 444faec8
+machine_apply_elf_rel: CALL26 aa1603e194000000->aa1603e197fff5d1
+sym: sha256_process info: 12 other: 00 shndx: 1 value: f90 size: 1e34
+sym: sha256_process value: 444f8f90 addr: 444faee0
+machine_apply_elf_rel: CALL26 17ffffdc94000000->17ffffdc97fff82c
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444fb098 addr: 444faf04
+machine_apply_elf_rel: ADR_PREL_PG_HI21 5280070590000002->52800705b0000002
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444fb098 addr: 444faf20
+machine_apply_elf_rel: LDST64_ABS_LO12_NC 52800f02f9400041->52800f02f9404c41
+sym:      .data info: 03 other: 00 shndx: 5 value: 0 size: 0
+sym: .data value: 444fb480 addr: 444fb098
+machine_apply_elf_rel: ABS64 0000000000000000->00000000444fb480
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f8000 addr: 444fb0bc
+machine_apply_elf_rel: PREL32 000000f000000000->000000f0ffffcf44
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f8120 addr: 444fb0e8
+machine_apply_elf_rel: PREL32 0000003c00000000->0000003cffffd038
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f8170 addr: 444fb11c
+machine_apply_elf_rel: PREL32 0000038000000000->00000380ffffd054
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f84f8 addr: 444fb158
+machine_apply_elf_rel: PREL32 0000006400000000->00000064ffffd3a0
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f855c addr: 444fb178
+machine_apply_elf_rel: PREL32 0000007000000000->00000070ffffd3e4
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f85cc addr: 444fb1ac
+machine_apply_elf_rel: PREL32 0000002400000000->00000024ffffd420
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f85f0 addr: 444fb1c0
+machine_apply_elf_rel: PREL32 0000001c00000000->0000001cffffd430
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f860c addr: 444fb1d4
+machine_apply_elf_rel: PREL32 0000002000000000->00000020ffffd438
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f862c addr: 444fb1e8
+machine_apply_elf_rel: PREL32 0000003400000000->00000034ffffd444
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f8e90 addr: 444fb214
+machine_apply_elf_rel: PREL32 0000002c00000000->0000002cffffdc7c
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f8ec8 addr: 444fb228
+machine_apply_elf_rel: PREL32 0000000c00000000->0000000cffffdca0
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f8ee0 addr: 444fb23c
+machine_apply_elf_rel: PREL32 0000003c00000000->0000003cffffdca4
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f8f40 addr: 444fb274
+machine_apply_elf_rel: PREL32 0000005000000000->00000050ffffdccc
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444f8f90 addr: 444fb288
+machine_apply_elf_rel: PREL32 00001e3400000000->00001e34ffffdd08
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444fadc4 addr: 444fb2c8
+machine_apply_elf_rel: PREL32 0000012400000000->00000124fffffafc
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444faee8 addr: 444fb310
+machine_apply_elf_rel: PREL32 0000000c00000000->0000000cfffffbd8
+sym:      .text info: 03 other: 00 shndx: 1 value: 0 size: 0
+sym: .text value: 444faf00 addr: 444fb324
+machine_apply_elf_rel: PREL32 0000019400000000->00000194fffffbdc
+kexec_load: entry = 0x444f8660 flags = 0xb70000
+nr_segments = 3
+segment[0].buf   = 0x7f8c5d4040
+segment[0].bufsz = 0x1a96808
+segment[0].mem   = 0x42a00000
+segment[0].memsz = 0x1af0000
+segment[1].buf   = 0x7f8c5cb080
+segment[1].bufsz = 0x7628
+segment[1].mem   = 0x444f0000
+segment[1].memsz = 0x8000
+segment[2].buf   = 0x7f8e1420b0
+segment[2].bufsz = 0x3580
+segment[2].mem   = 0x444f8000
+segment[2].memsz = 0x4000
+loaded=1
+LEGACY UNLOAD
+loaded=0
+PASS legacy load/unload without reboot

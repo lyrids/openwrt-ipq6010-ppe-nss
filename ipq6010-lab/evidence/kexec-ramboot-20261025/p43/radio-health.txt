@@ -1,0 +1,74 @@
+RADIOS
+Wiphy phy2
+	Band 2:
+Wiphy phy1
+	Band 1:
+Wiphy phy0
+	Band 2:
+{
+	"radio0": {
+		"up": true,
+		"pending": false,
+		"autostart": true,
+		"disabled": false,
+		"retry_setup_failed": false,
+		"config": {
+			"type": "mac80211",
+			"band": "5g",
+			"channel": "100",
+			"htmode": "HE80",
+			"path": "platform/soc@0/c000000.wifi"
+		},
+		"interfaces": [
+			
+		]
+	},
+	"radio1": {
+		"up": true,
+		"pending": false,
+		"autostart": true,
+		"disabled": false,
+		"retry_setup_failed": false,
+		"config": {
+			"type": "mac80211",
+			"band": "2g",
+			"channel": "1",
+			"htmode": "HE20",
+			"path": "platform/soc@0/c000000.wifi+1"
+		},
+		"interfaces": [
+			
+		]
+	},
+	"radio2": {
+		"up": true,
+		"pending": false,
+		"autostart": true,
+		"disabled": false,
+		"retry_setup_failed": false,
+		"config": {
+			"type": "mac80211",
+			"band": "5g",
+			"channel": "36",
+			"htmode": "HE80",
+			"path": "soc@0/20000000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0"
+		},
+		"interfaces": [
+			
+		]
+	}
+}
+MODULES
+ath11k                503808  2 ath11k_pci,ath11k_ahb
+ath11k_ahb             24576  0 
+ath11k_pci             20480  0 
+cfg80211              397312  2 ath11k,mac80211
+compat                 16384  4 ath11k_pci,ath11k_ahb,mac80211,cfg80211
+mac80211              741376  1 ath11k
+mhi                    69632  2 ath11k_pci,qrtr_mhi
+nf_conntrack           98304 10 nss_wifi_drv,nft_flow_offload,nf_flow_table,nft_redir,nft_nat,nft_masq,nft_ct,nf_nat,nf_conntrack_netlink,nf_conntrack_bridge
+nf_flow_table          36864  3 nss_wifi_drv,nft_flow_offload,nf_flow_table_inet
+nss_wifi_drv          204800  1 ath11k
+qmi_helpers            20480  1 ath11k
+FAULT
+LOG

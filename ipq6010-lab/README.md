@@ -42,7 +42,7 @@ Raw logs include failed attempts. Earlier validation-pending fields are historic
 
 ## Kexec bootstrap
 
-An iteration6 bootstrap image and static ARM64 kexec-tools2.0.32 are now built. See [kexec details](kexec/README.md) for artifacts, tests and the staged qualification procedure. Offline validation passed; actual bootstrap boot and kernel replacement remain pending.
+An iteration6 bootstrap image and static ARM64 kexec-tools2.0.32 are now built. See [kexec details](kexec/README.md) for artifacts, tests and the staged qualification procedure. Offline validation and RAM boot passed, as did both kexec load/unload paths. CPU3 failed to restart after a hotplug test; its stuck-CPU guard now blocks further loads. Warm replacement remains untested. See evidence/kexec-ramboot-20261025.
 
 ## Archive policy
 

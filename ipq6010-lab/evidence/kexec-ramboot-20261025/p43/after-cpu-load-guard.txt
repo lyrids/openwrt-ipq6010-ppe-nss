@@ -1,0 +1,15 @@
+CPU ONLINE/OFFLINE
+0-2
+3
+LOAD GUARD CHECK
+kexec_file_load failed: Resource busy
+load_exit=255
+loaded=0
+[  620.668026] IRQ55: set affinity failed(-22).
+[  620.668031] IRQ56: set affinity failed(-22).
+[  620.668342] psci: CPU3 killed (polled 0 ms)
+[  625.687626] CPU3: failed to come online
+[  625.687668] CPU3: failed in unknown state : 0x0
+[  625.690882] psci: failed to boot CPU3 (-22)
+[  625.694886] CPU3: failed to boot: -22
+[  727.569741] Can't kexec: CPUs are stuck in the kernel.

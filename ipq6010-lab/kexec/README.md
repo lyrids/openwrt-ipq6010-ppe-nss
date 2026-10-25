@@ -28,3 +28,11 @@ Iteration6 RAM FIT:18959300 bytes, SHA2569532829d86a54e50f73e99666d92d68bb18fef7
 Orb path:/home/ly/projects/openwrt-dev/artifacts/nss-ethernet-kexec-20261025/images/openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-initramfs-uImage.itb.
 A separate uncompressed Image/DTB bundle is under the same artifact directory's kexec-bundle/.
 Offline checks passed, with385888 bytes of headroom in the6MiB kernel limit. Hardware boot, load/unload and a real warm transition remain untested. This image retains the iteration5 MTU software-fallback guard.
+
+## Runtime result after iteration6 RAM boot
+
+RAM boot passed. Both syscalls are implemented. File-based and legacy load/unload each passed, preserving boot ID and returning kexec_loaded to0. All three radios enumerated; NSS firmware and Ethernet backend started. No new throughput qualification was performed.
+
+CPU3 offline succeeded, but re-online timed out and the restoration retry failed with PSCI -22. The kernel now marks a CPU as stuck and rejects new kexec loads with EBUSY. CPU3 remains offline; CPUs0-2 and wired networking/NSS startup remain operational. A normal reboot is needed to restore the previous CPU state; none has been performed. The exact cause in CPU/firmware warm startup is not yet established.
+
+The boot/load-pending statements above describe the earlier build-time stage. Current detailed results and the failed hotplug test are in ../evidence/kexec-ramboot-20261025/. Actual kexec execution and driver warm reinitialization remain untested. Do not bypass the kernel's stuck-CPU check or offline other CPUs to repeat the failure.

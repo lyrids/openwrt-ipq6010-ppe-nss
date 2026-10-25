@@ -1,0 +1,57 @@
+{
+  "timestamp_utc": "2026-10-25T08:27:29.859872+00:00",
+  "image_sha256": "9532829d86a54e50f73e99666d92d68bb18fef7694b02cd12105aa6493a37277",
+  "image_iteration": 6,
+  "ram_boot": "passed: user confirmation and independent SSH identification, tmpfs root",
+  "live_syscalls": {
+    "kexec_file_load_invalid_fds": "EBADF (implemented)",
+    "kexec_load_invalid_flags": "EINVAL (implemented)"
+  },
+  "file_load_unload": {
+    "result": "passed before CPU hotplug test",
+    "loaded_states": [
+      0,
+      1,
+      0
+    ],
+    "device_tree": "live bootloader-fixed DTB carried by kernel",
+    "reboot": false
+  },
+  "legacy_load_unload": {
+    "result": "passed before CPU hotplug test",
+    "loaded_states": [
+      0,
+      1,
+      0
+    ],
+    "device_tree": "copy of /sys/firmware/fdt",
+    "warnings": "missing /proc/kcore/_text address; nonfatal for this successful load; use file path preferentially",
+    "reboot": false
+  },
+  "cpu_hotplug": {
+    "result": "FAILED",
+    "cpu": 3,
+    "offline": "PSCI CPU3 killed, online becomes0-2",
+    "reonline": "first attempt times out after5s, unknown state0x0; restoration trap retry gets PSCI -22",
+    "kernel_guard": "cpus_stuck_in_kernel increments; subsequent file load fails Resource busy with no candidate loaded",
+    "root_cause": "not established; CPU/PSCI warm-start investigation needed"
+  },
+  "final_state": {
+    "cpus_online": "0-2",
+    "cpu3_offline": true,
+    "kexec_loaded": 0,
+    "router_reachable": true,
+    "nss_firmware_boot": 1,
+    "nss_ethernet": "enabled1 active1",
+    "wired_router_to_m4m_ping": "2/2 after failure",
+    "radios": "all3 wiphys enumerated, no configured VAPs",
+    "kernel_boot_id": "11bed04e-a8b8-40c6-a389-a5217746b5d1"
+  },
+  "pending": [
+    "restore CPU3 using an ordinary reboot (not performed)",
+    "diagnose CPU restart failure before a real kexec hop",
+    "NSS forwarding and Wi-Fi throughput on iteration6",
+    "actual warm shutdown and reinitialization validation"
+  ],
+  "executed_kexec_reboot": false
+}

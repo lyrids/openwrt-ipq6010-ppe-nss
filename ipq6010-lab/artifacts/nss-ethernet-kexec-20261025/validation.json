@@ -47,8 +47,8 @@
     "iteration-6 identity embedded",
     "compiled EDMA and NSS shutdown source matches working tree"
   ],
-  "hardware_boot_tested": false,
-  "feature_status": "Kexec bootstrap; offline validated, no hardware boot or warm-transition test yet",
+  "hardware_boot_tested": true,
+  "feature_status": "RAM boot verified; warm kexec blocked by CPU hotplug failure",
   "kexec_test_status": {
     "userspace_static_tool_on_current_router": "version/checksum passed",
     "current_kernel": "both syscalls ENOSYS",
@@ -56,5 +56,6 @@
     "load_unload": false,
     "warm_transition": false
   },
-  "regressions": "all three ASan/UBSan harnesses passed after source changes"
+  "regressions": "all three ASan/UBSan harnesses passed after source changes",
+  "kexec_runtime_summary": "See evidence/kexec-ramboot-20261025: boot and both load/unload passed, CPU3 restart failed, warm execution not attempted"
 }

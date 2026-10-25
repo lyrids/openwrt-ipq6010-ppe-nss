@@ -1,5 +1,5 @@
 e9eb6b2502faf08e2b2fdb84b80441dc6f2003189f84a54288b72170326becb6  ipq6010-lab/BUILDING.md
-65faccd4d8ab10d15ce7c5dadd46d988eceeaf6ae2510e61921b31d33f1f1c23  ipq6010-lab/README.md
+38b04a7e46925e9e998f94972b921f37e4405e971c10b39881bf60d9d6dca926  ipq6010-lab/README.md
 c9ace5bd970985fa3a1d6932a74b98893dcf11e078467f494b5580ac2e517d48  ipq6010-lab/TESTING.md
 6a8839a8184429abbde1c56243bd1932cfe0ea9740a11d8457df47817d9d6981  ipq6010-lab/artifacts/ax6600-main.config
 4f3917b2d3a04985c10e268fb1c9ccdcbb9aa838551fc66efaf706ea0aa036a0  ipq6010-lab/artifacts/ax6600-main.config.seed
@@ -238,7 +238,7 @@ b583f67aff7f514a91f773d74b2504fc021fdc23414cef73c764709c516811b8  ipq6010-lab/ar
 6da5b18878e110928643ebcc38dbb7552cf3a296eea56493e23edc2b93eecff8  ipq6010-lab/artifacts/nss-ethernet-kexec-20261025/status.pass1
 4c9cbd1c58024f3e423d0a01c0f5c06f8df83c2204fc233911670f8342bbba20  ipq6010-lab/artifacts/nss-ethernet-kexec-20261025/validation-output.pass1.txt
 e0ab4b4375d745e5c5f4e0fc8f328de6d9128230767bc0359a2ec969bed79a22  ipq6010-lab/artifacts/nss-ethernet-kexec-20261025/validation-output.txt
-99c28c4b5be02a3482a703137aa68ef09f93d87b44b3e954a28c386d6c584359  ipq6010-lab/artifacts/nss-ethernet-kexec-20261025/validation.json
+e804b070e15ce70688748e7ca90aaab0ed492b966925a17ee2fbfd850a08a824  ipq6010-lab/artifacts/nss-ethernet-kexec-20261025/validation.json
 dab97c14cbe0c83b2b2eacce2de8580ce1ec943a3b1e36dd60ac9a11f58e7134  ipq6010-lab/artifacts/nss-ethernet-mtufix-03803c78cd-20261025/README-MTU-FIX.txt
 fce57034b468e9fbb328b77f917bb39e7b3b1aadcb14930ced938274b90f86f2  ipq6010-lab/artifacts/nss-ethernet-mtufix-03803c78cd-20261025/build-state/config.full
 178ae386ea16b1ccd796908631e4a217e7d341a38567aa145365b704ed529a57  ipq6010-lab/artifacts/nss-ethernet-mtufix-03803c78cd-20261025/build-state/config.seed
@@ -486,6 +486,18 @@ e0975b4d2d4664f1e266bc7363241ee2e25bfe671ede87600ba7d5d795f4ec4e  ipq6010-lab/ev
 4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865  ipq6010-lab/evidence/ipv6-mtu-20261025/p43/ipv6-validation/udp-bidir.exit
 1deb648f245c903527a1533b6efdf43a3d8fd8098f115c8e27e7e84993d589d0  ipq6010-lab/evidence/ipv6-mtu-20261025/p43/ipv6-validation/udp-bidir.json
 86c629ea385837ae395fbbe1d7bd2c31512b991de36cd73eadcdec06001c2f1f  ipq6010-lab/evidence/ipv6-mtu-20261025/p43/ipv6-validation/udp6-mtu-probe.py
+f0c7ee50c34fe69025a5b7051287b56f4eda2923f2d2f7b17a637843d67847cf  ipq6010-lab/evidence/kexec-ramboot-20261025/CPU-HOTPLUG-TEST.txt
+12bd03cb8c17de809414d9b28a6425e00fd117bc8a9e1fe43a77dbf570e2fe3c  ipq6010-lab/evidence/kexec-ramboot-20261025/p43/after-cpu-load-guard.txt
+1487f6e1bc8f3da7333362332b65c5479e2cf9e0d896e147c212752ff29609c8  ipq6010-lab/evidence/kexec-ramboot-20261025/p43/baseline.txt
+d02fb593069ae0d07b38f91d76dd52d56b7f617429399e6f58b0222740441883  ipq6010-lab/evidence/kexec-ramboot-20261025/p43/boot.json
+8c538242205cc04ebc2afdfcc1ead4646c87c3dde7d1b466ea02b48b73707e04  ipq6010-lab/evidence/kexec-ramboot-20261025/p43/cpu-failure-state.txt
+31506e9b7698d5e29dbdbeef931a8c617e5aa3b7f4ba6614419a3c035c2090e5  ipq6010-lab/evidence/kexec-ramboot-20261025/p43/cpu-hotplug.txt
+47e20500b5a2ef85b0d3d9590b2566ddd34ba66236b6f294ceb8d3b0687364b9  ipq6010-lab/evidence/kexec-ramboot-20261025/p43/file-load-unload.txt
+1695c9389b7f4156dc336d9b773ea3e62bc1f16ecbe354af53bceae8011663e7  ipq6010-lab/evidence/kexec-ramboot-20261025/p43/legacy-load-unload.txt
+378643e71151f944456a3019f9eff336d0c1922e966c03c6825a71c5c6a16a55  ipq6010-lab/evidence/kexec-ramboot-20261025/p43/preload.txt
+0ad6fb3afb8be28680c360a2a00bb7a231403800f57f8b4ad236d3ae29912daa  ipq6010-lab/evidence/kexec-ramboot-20261025/p43/radio-health.txt
+d207140c56fb10e0db069251d345ab569be47332c41e38e98f627a8aeecd9e1c  ipq6010-lab/evidence/kexec-ramboot-20261025/p43/upload.json
+80729574a6a9b570308dfd05b5dbdb894c66416640ad81c5bc17701fd007a967  ipq6010-lab/evidence/kexec-ramboot-20261025/summary.json
 858b6fd24157da38061183d87cd9ef720d5dd9508e7a53ba47d25be0fd5a7c76  ipq6010-lab/evidence/mtufix-ramboot-20261025/m4/mtufix-validation/baseline-state.txt
 4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865  ipq6010-lab/evidence/mtufix-ramboot-20261025/m4/mtufix-validation/disable-before.txt
 a48c47fc9e7cc875517cc64773b5a98e1fd39ef005bca1aa478b82b9ad8603fd  ipq6010-lab/evidence/mtufix-ramboot-20261025/m4/mtufix-validation/final-state.txt
@@ -693,7 +705,7 @@ e977153d498654dcea254c349d3982b2985ea6085c9551618d368831bdac9695  ipq6010-lab/hi
 189146b3f4f200829d73fb99d263959872227e10741512a646ef1b7c6507061a  ipq6010-lab/historical-scripts/validate-nss-ethernet-vlanfix
 d7e0575f2146775d663e0fbd2296e0dfa4b59f0483e5024b3a2af6d18ccc2fe9  ipq6010-lab/historical-scripts/validate-nss-ethernet-vlanfix-extra.py
 0227c87f48804f99aece5eba28cc7d6b97936bf6e7b6957f5d2e7846bd5a12fa  ipq6010-lab/historical-source-guard.patch
-40d30212ea102ba414e9797bc737329aab4c28f859c8145e5899fc96f4accbc9  ipq6010-lab/kexec/README.md
+e8e495e4ac23a62f48af9118a1fdb704533d8d2dabf0ebb17eb7429c182564cb  ipq6010-lab/kexec/README.md
 d84a9c78b2a4f2cbda62d04d47a722f6db20c620670301212f8e884980f8e011  ipq6010-lab/kexec/build-bootstrap-image.sh
 30cfe431b62fcfa0a868f8c0916cf3bbcc9f8774f12cd470f980af4ee0b7bd8f  ipq6010-lab/kexec/build-static-tools.sh
 416d4768a4a390091def9927b17a3c06f1cc3b10f22156cd40e0dd92772a025b  ipq6010-lab/kexec/build.log
