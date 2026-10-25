@@ -1,0 +1,43 @@
+cpu  944 0 1750 3675393 3 0 56 0 0 0
+cpu0 233 0 972 918647 3 0 22 0 0 0
+cpu1 336 0 332 918932 0 0 7 0 0 0
+cpu2 169 0 256 918715 0 0 21 0 0 0
+cpu3 206 0 190 919097 0 0 6 0 0 0
+intr 2251899 0 5077 256104 0 0 0 1556 0 0 0 0 0 1964438 0 0 0 0 2 9 0 0 0 0 0 0 0 0 0 0 0 613 0 3331 0 1535 0 3030 663 0 3808 679 0 3603 0 0 940 2 0 0 0 0 1 0 0 0 0 0 0 0 1 60 4 5 9 1 0 0 0 0 0 0 0 0 0 1 0 0 1 0 0 1 1 1 1 0 0 0 0 4 5 60 3 1028 5106 199 0 0 0 0 17 0 0 0 0
+ctxt 3481924
+btime 0
+processes 3553
+procs_running 1
+procs_blocked 0
+softirq 1079439 4 213927 33 16211 0 0 6669 574890 0 267705
+Inter-|   Receive                                                |  Transmit
+ face |bytes    packets errs drop fifo frame compressed multicast|bytes    packets errs drop fifo colls carrier compressed
+    lo:  189772    2433    0    0    0     0          0         0   189772    2433    0    0    0     0       0          0
+  eth0: 8519609   15902    0    0    0     0          0         0   885553    3666    0    0    0     0       0          0
+  lan1: 24778529   27064    0    0    0     0          0        86  1069636    4068    0    0    0     0       0          0
+  lan2:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+  lan3:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+  lan4:    7175      73    0    0    0     0          0        11     8313      76    0    0    0     0       0          0
+   wan:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+br-lan: 8253893   14385    0    0    0     0          0        90   876369    3617    0    3    0     0       0          0
+phy2-ap0:       0       0    0    0    0     0          0         0       78       1    0    0    0     0       0          0
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    15902 8519609 0 0
+1    3660 892146 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    76 8009 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   2 408
+1   15917 8521333
+vport packets bytes drop_packets drop_bytes
+kind code port packets bytes
+cpu  107  -    73 7930
+drop 0    0    3720 898389
+drop 0    1    15838 8513500
+drop 0    4    73 6883
+drop 114  0    16 1712

@@ -1,0 +1,14 @@
+{
+  "timestamp_utc": "2026-10-25T07:55:46.829320+00:00",
+  "source_base": "03803c78cd3b6968c20dab239c0c2f688692be63",
+  "regressions": {
+    "command": "python3 ipq6010-lab/tests/run-regressions.py",
+    "result": "passed all three source-derived/snapshot harnesses, GCC ASan+UBSan"
+  },
+  "build_helper": {
+    "command": "bash -n ipq6010-lab/prepare-build.sh",
+    "result": "passed syntax check; clean-room execution not yet verified"
+  },
+  "credential_scan": "No matches for private-key blocks, GitHub token patterns, AWS access-key IDs, or URL credentials in archive",
+  "router_retested_for_publication": false
+}

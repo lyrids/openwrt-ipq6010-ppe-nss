@@ -1,0 +1,301 @@
+{
+  "image": "nss-ethernet-vlanfix-03803c78cd-20261025",
+  "cases": {
+    "dnat-bidir": {
+      "error": null,
+      "sum_received": {
+        "mbps": 794.3259912598912,
+        "lost_packets": null,
+        "lost_percent": null
+      },
+      "sum_received_bidir_reverse": {
+        "mbps": 932.173391920631,
+        "lost_packets": null,
+        "lost_percent": null
+      },
+      "sum_sent_retransmits": 101,
+      "sum_sent_bidir_reverse_retransmits": 0
+    },
+    "mixed-tcp-buffered": {
+      "error": null,
+      "sum_received": {
+        "mbps": 716.4560972785177,
+        "lost_packets": null,
+        "lost_percent": null
+      },
+      "sum_received_bidir_reverse": {
+        "mbps": 731.3076442285662,
+        "lost_packets": null,
+        "lost_percent": null
+      },
+      "sum_sent_retransmits": 29,
+      "sum_sent_bidir_reverse_retransmits": 0
+    },
+    "mixed-udp-buffered": {
+      "error": null,
+      "sum_received": {
+        "mbps": 199.96293483241345,
+        "lost_packets": 32,
+        "lost_percent": 0.009956006894534774
+      },
+      "sum_received_bidir_reverse": {
+        "mbps": 199.98284513826331,
+        "lost_packets": 0,
+        "lost_percent": 0
+      },
+      "sum_sent_retransmits": null,
+      "sum_sent_bidir_reverse_retransmits": null
+    },
+    "route-bidir": {
+      "error": null,
+      "sum_received": {
+        "mbps": 824.8838355406334,
+        "lost_packets": null,
+        "lost_percent": null
+      },
+      "sum_received_bidir_reverse": {
+        "mbps": 929.1624273495815,
+        "lost_packets": null,
+        "lost_percent": null
+      },
+      "sum_sent_retransmits": 99,
+      "sum_sent_bidir_reverse_retransmits": 0
+    },
+    "snat-bidir": {
+      "error": null,
+      "sum_received": {
+        "mbps": 810.130336358508,
+        "lost_packets": null,
+        "lost_percent": null
+      },
+      "sum_received_bidir_reverse": {
+        "mbps": 925.0424408065232,
+        "lost_packets": null,
+        "lost_percent": null
+      },
+      "sum_sent_retransmits": 93,
+      "sum_sent_bidir_reverse_retransmits": 1
+    },
+    "udp128-buffered": {
+      "error": null,
+      "sum_received": {
+        "mbps": 49.99209831058164,
+        "lost_packets": 0,
+        "lost_percent": 0
+      },
+      "sum_received_bidir_reverse": {
+        "mbps": 49.99679116250658,
+        "lost_packets": 0,
+        "lost_percent": 0
+      },
+      "sum_sent_retransmits": null,
+      "sum_sent_bidir_reverse_retransmits": null
+    },
+    "udp1400-forward": {
+      "error": null,
+      "sum_received": {
+        "mbps": 699.8350218125606,
+        "lost_packets": 27,
+        "lost_percent": 0.0035996976253994664
+      },
+      "sum_sent_retransmits": null
+    },
+    "udp1400-reverse": {
+      "error": null,
+      "sum_received": {
+        "mbps": 699.818949265798,
+        "lost_packets": 181,
+        "lost_percent": 0.0241308880700089
+      },
+      "sum_sent_retransmits": null
+    },
+    "vlan-route-bidir": {
+      "error": null,
+      "sum_received": {
+        "mbps": 761.3722168622037,
+        "lost_packets": null,
+        "lost_percent": null
+      },
+      "sum_received_bidir_reverse": {
+        "mbps": 926.6069305927945,
+        "lost_packets": null,
+        "lost_percent": null
+      },
+      "sum_sent_retransmits": 97,
+      "sum_sent_bidir_reverse_retransmits": 0
+    },
+    "vlan-snat-bidir": {
+      "error": null,
+      "sum_received": {
+        "mbps": 747.6994403081386,
+        "lost_packets": null,
+        "lost_percent": null
+      },
+      "sum_received_bidir_reverse": {
+        "mbps": 929.6477861281013,
+        "lost_packets": null,
+        "lost_percent": null
+      },
+      "sum_sent_retransmits": 86,
+      "sum_sent_bidir_reverse_retransmits": 0
+    },
+    "vlan-udp-buffered2": {
+      "error": null,
+      "sum_received": {
+        "mbps": 299.7512390966081,
+        "lost_packets": 223,
+        "lost_percent": 0.0693809230462892
+      },
+      "sum_received_bidir_reverse": {
+        "mbps": 299.9668196584275,
+        "lost_packets": 0,
+        "lost_percent": 0
+      },
+      "sum_sent_retransmits": null,
+      "sum_sent_bidir_reverse_retransmits": null
+    }
+  },
+  "diagnostic_runs": {
+    "mixed-tcp-matched": {
+      "error": null,
+      "sum_received": {
+        "mbps": 925.8271634886522,
+        "lost_packets": null,
+        "lost_percent": null
+      },
+      "sum_received_bidir_reverse": {
+        "mbps": 910.0167364114329,
+        "lost_packets": null,
+        "lost_percent": null
+      },
+      "sum_sent_retransmits": 6,
+      "sum_sent_bidir_reverse_retransmits": 1
+    },
+    "mixed-tcp": {
+      "error": null,
+      "sum_received": {
+        "mbps": 921.967851576955,
+        "lost_packets": null,
+        "lost_percent": null
+      },
+      "sum_received_bidir_reverse": {
+        "mbps": 728.3920634068714,
+        "lost_packets": null,
+        "lost_percent": null
+      },
+      "sum_sent_retransmits": 0,
+      "sum_sent_bidir_reverse_retransmits": 0
+    },
+    "mixed-udp-matched": {
+      "error": "control socket has closed unexpectedly"
+    },
+    "mixed-udp": {
+      "error": null,
+      "sum_received": {
+        "mbps": 13.9773246879336,
+        "lost_packets": 0,
+        "lost_percent": 0
+      },
+      "sum_received_bidir_reverse": {
+        "mbps": 198.9335829505266,
+        "lost_packets": 7,
+        "lost_percent": 0.003250643162968673
+      },
+      "sum_sent_retransmits": null,
+      "sum_sent_bidir_reverse_retransmits": null
+    },
+    "udp128-bidir-matched": {
+      "error": null,
+      "sum_received": {
+        "mbps": 49.84624235589127,
+        "lost_packets": 1778,
+        "lost_percent": 0.303447145924285
+      },
+      "sum_received_bidir_reverse": {
+        "mbps": 49.99087731777343,
+        "lost_packets": 61,
+        "lost_percent": 0.010410533411838995
+      },
+      "sum_sent_retransmits": null,
+      "sum_sent_bidir_reverse_retransmits": null
+    },
+    "udp128-bidir": {
+      "error": "control socket has closed unexpectedly"
+    },
+    "vlan-udp-bidir": {
+      "error": null,
+      "sum_received": {
+        "mbps": 298.9870191228065,
+        "lost_packets": 1035,
+        "lost_percent": 0.3220206093189964
+      },
+      "sum_received_bidir_reverse": {
+        "mbps": 299.96506157969486,
+        "lost_packets": 0,
+        "lost_percent": 0
+      },
+      "sum_sent_retransmits": null,
+      "sum_sent_bidir_reverse_retransmits": null
+    }
+  },
+  "endpoint_udp_error_deltas": {
+    "small128_default_socket": {
+      "p43": {
+        "InErrors": 61,
+        "RcvbufErrors": 61,
+        "InCsumErrors": 0
+      },
+      "m4": {
+        "InErrors": 1778,
+        "RcvbufErrors": 1778,
+        "InCsumErrors": 0
+      }
+    },
+    "small128_1M_socket": {
+      "p43": {
+        "InErrors": 0,
+        "RcvbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "m4": {
+        "InErrors": 0,
+        "RcvbufErrors": 0,
+        "InCsumErrors": 0
+      }
+    },
+    "vlan300M_1M_socket": {
+      "p43": {
+        "InErrors": 0,
+        "RcvbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "m4": {
+        "InErrors": 1035,
+        "RcvbufErrors": 1035,
+        "InCsumErrors": 0
+      }
+    },
+    "vlan300M_2M_socket": {
+      "p43": {
+        "InErrors": 0,
+        "RcvbufErrors": 0,
+        "InCsumErrors": 0
+      },
+      "m4": {
+        "InErrors": 223,
+        "RcvbufErrors": 223,
+        "InCsumErrors": 0
+      }
+    }
+  },
+  "hardware_evidence": "Live NSS rules, firmware packet counters, PPE steering, conntrack HW_OFFLOAD and NAT tuples saved per case.",
+  "qualifications": [
+    "Concurrent TCP throughput asymmetric with some saturation retransmissions; no line-rate guarantee",
+    "Original mixed-version small-packet test failed; matched-version standalone retest passed",
+    "Mixed-flow simultaneous startup also failed with matched tools; buffered UDP-first established-flow test passed; startup root cause not isolated",
+    "VLAN UDP lost packets match endpoint RcvbufErrors; no observed hardware egress drops",
+    "Initial700Mbps UDP losses not fully localized because endpoint baselines were not saved before those runs",
+    "Short IPv4 tests only; IPv6,QinQ,physicalWAN2.5G and sustained stress pending"
+  ],
+  "cleanup": "Original LAN1 tagged100/PVID100 and LAN4 untagged1 restored,temporary routes/rules/servers/VLAN200 removed,original socket limits restored,restored ping passed."
+}

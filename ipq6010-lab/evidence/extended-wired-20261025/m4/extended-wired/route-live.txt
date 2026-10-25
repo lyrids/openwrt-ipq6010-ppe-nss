@@ -1,0 +1,18 @@
+ethernet enabled 1 active 1 offers 90 pushed 21 rejected 24
+bound 0 pushed 21 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 2 tx 2 drop 0/0/0/0 exceptions
+node ipv4 rx 4 tx 0 drop 0/0/0/0 exceptions 9:4
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.88.2 dst=192.168.1.158 sport=35123 dport=5230 packets=7 bytes=6201 src=192.168.1.158 dst=192.168.88.2 sport=5230 dport=35123 packets=11 bytes=526 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.88.2 dst=192.168.1.158 sport=49501 dport=5230 packets=9 bytes=516 src=192.168.1.158 dst=192.168.88.2 sport=5230 dport=49501 packets=7 bytes=384 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.88.2 dst=192.168.1.158 sport=41619 dport=5230 packets=5 bytes=299 src=192.168.1.158 dst=192.168.88.2 sport=5230 dport=41619 packets=51 bytes=377692 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.88.2 dst=192.168.1.158 sport=41745 dport=5230 packets=5 bytes=299 src=192.168.1.158 dst=192.168.88.2 sport=5230 dport=41745 packets=8 bytes=25040 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.88.2 dst=192.168.1.158 sport=47857 dport=5230 packets=6 bytes=345 src=192.168.1.158 dst=192.168.88.2 sport=5230 dport=47857 packets=57 bytes=424340 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.88.2 dst=192.168.1.158 sport=40767 dport=5230 packets=9 bytes=9201 src=192.168.1.158 dst=192.168.88.2 sport=5230 dport=40767 packets=10 bytes=480 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.88.2 dst=192.168.1.158 sport=59805 dport=5230 packets=7 bytes=6201 src=192.168.1.158 dst=192.168.88.2 sport=5230 dport=59805 packets=9 bytes=434 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.88.2 dst=192.168.1.158 sport=52225 dport=5230 packets=5 bytes=299 src=192.168.1.158 dst=192.168.88.2 sport=5230 dport=52225 packets=33 bytes=285532 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.88.2 dst=192.168.1.158 sport=45675 dport=5230 packets=19 bytes=95153 src=192.168.1.158 dst=192.168.88.2 sport=5230 dport=45675 packets=8 bytes=388 [OFFLOAD] mark=0 use=2

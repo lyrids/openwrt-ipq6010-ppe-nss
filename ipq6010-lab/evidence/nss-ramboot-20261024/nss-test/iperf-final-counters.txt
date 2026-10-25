@@ -1,0 +1,56 @@
+[ ID] Interval           Transfer     Bitrate
+[  6]   0.00-1.00   sec  0.00 Bytes  0.00 bits/sec                  
+[  6]   1.00-2.00   sec   256 KBytes  2.10 Mbits/sec                  
+[  6]   2.00-3.00   sec   256 KBytes  2.10 Mbits/sec                  
+[  6]   3.00-4.00   sec   128 KBytes  1.05 Mbits/sec                  
+[  6]   4.00-5.00   sec   256 KBytes  2.10 Mbits/sec                  
+[  6]   5.00-6.00   sec   384 KBytes  3.15 Mbits/sec                  
+[  6]   5.00-6.00   sec   384 KBytes  3.15 Mbits/sec                  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate
+[  6]   0.00-6.00   sec  1.38 MBytes  1.92 Mbits/sec                  receiver
+iperf3: the client has terminated
+wifili 203 reports 0
+wifili 215 reports 0
+wifili 216 reports 0
+vdev if 34 reports 4085
+  rx enqueue 0 fail 0 except 0 except_fail 0 bytes 0 mcast 0
+  rx decrypt_err 0 mic_err 0
+  tx rcvd 0 enqueue 0 fail 0 hw_ring_full 0 desc_fail 0 dropped 0
+  me rcvd 0 converted 0 no_member_drop 0 alloc_fail 0 enq_fail 0
+vdev if 35 reports 4079
+  rx enqueue 0 fail 0 except 0 except_fail 0 bytes 0 mcast 0
+  rx decrypt_err 0 mic_err 0
+  tx rcvd 0 enqueue 0 fail 0 hw_ring_full 0 desc_fail 0 dropped 0
+  me rcvd 0 converted 0 no_member_drop 0 alloc_fail 0 enq_fail 0
+vdev if 36 reports 4075
+  rx enqueue 5966 fail 0 except 0 except_fail 0 bytes 570917 mcast 430
+  rx decrypt_err 1 mic_err 0
+  tx rcvd 6441 enqueue 6441 fail 0 hw_ring_full 0 desc_fail 0 dropped 0
+  me rcvd 724 converted 0 no_member_drop 0 alloc_fail 0 enq_fail 0
+wifili 203 reports 0
+wifili 215 reports 0
+wifili 216 reports 0
+vdev if 34 reports 5954
+  rx enqueue 0 fail 0 except 0 except_fail 0 bytes 0 mcast 0
+  rx decrypt_err 0 mic_err 0
+  tx rcvd 0 enqueue 0 fail 0 hw_ring_full 0 desc_fail 0 dropped 0
+  me rcvd 0 converted 0 no_member_drop 0 alloc_fail 0 enq_fail 0
+vdev if 35 reports 5949
+  rx enqueue 0 fail 0 except 0 except_fail 0 bytes 0 mcast 0
+  rx decrypt_err 0 mic_err 0
+  tx rcvd 0 enqueue 0 fail 0 hw_ring_full 0 desc_fail 0 dropped 0
+  me rcvd 0 converted 0 no_member_drop 0 alloc_fail 0 enq_fail 0
+vdev if 36 reports 5945
+  rx enqueue 122480 fail 0 except 0 except_fail 0 bytes 16153991 mcast 430
+  rx decrypt_err 1 mic_err 0
+  tx rcvd 1571031 enqueue 1571019 fail 0 hw_ring_full 0 desc_fail 7658340 dropped 0
+  me rcvd 730 converted 0 no_member_drop 0 alloc_fail 0 enq_fail 0
+bound 0 pushed 0 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0

@@ -1,0 +1,55 @@
+PING 192.168.1.158 (192.168.1.158) from 192.168.88.2 : 56(84) bytes of data.
+64 bytes from 192.168.1.158: icmp_seq=1 ttl=63 time=0.679 ms
+64 bytes from 192.168.1.158: icmp_seq=2 ttl=63 time=12.0 ms
+64 bytes from 192.168.1.158: icmp_seq=3 ttl=63 time=3.48 ms
+64 bytes from 192.168.1.158: icmp_seq=4 ttl=63 time=3.10 ms
+64 bytes from 192.168.1.158: icmp_seq=5 ttl=63 time=3.17 ms
+64 bytes from 192.168.1.158: icmp_seq=6 ttl=63 time=1.96 ms
+64 bytes from 192.168.1.158: icmp_seq=7 ttl=63 time=3.13 ms
+64 bytes from 192.168.1.158: icmp_seq=8 ttl=63 time=3.51 ms
+64 bytes from 192.168.1.158: icmp_seq=9 ttl=63 time=2.46 ms
+64 bytes from 192.168.1.158: icmp_seq=10 ttl=63 time=3.50 ms
+64 bytes from 192.168.1.158: icmp_seq=11 ttl=63 time=3.15 ms
+64 bytes from 192.168.1.158: icmp_seq=12 ttl=63 time=2.72 ms
+64 bytes from 192.168.1.158: icmp_seq=13 ttl=63 time=4.00 ms
+64 bytes from 192.168.1.158: icmp_seq=14 ttl=63 time=5.34 ms
+64 bytes from 192.168.1.158: icmp_seq=15 ttl=63 time=3.84 ms
+64 bytes from 192.168.1.158: icmp_seq=16 ttl=63 time=2.84 ms
+64 bytes from 192.168.1.158: icmp_seq=17 ttl=63 time=3.73 ms
+64 bytes from 192.168.1.158: icmp_seq=18 ttl=63 time=2.72 ms
+64 bytes from 192.168.1.158: icmp_seq=19 ttl=63 time=3.39 ms
+64 bytes from 192.168.1.158: icmp_seq=20 ttl=63 time=3.16 ms
+64 bytes from 192.168.1.158: icmp_seq=21 ttl=63 time=3.23 ms
+64 bytes from 192.168.1.158: icmp_seq=22 ttl=63 time=3.19 ms
+64 bytes from 192.168.1.158: icmp_seq=23 ttl=63 time=3.81 ms
+64 bytes from 192.168.1.158: icmp_seq=24 ttl=63 time=5.44 ms
+64 bytes from 192.168.1.158: icmp_seq=25 ttl=63 time=3.81 ms
+64 bytes from 192.168.1.158: icmp_seq=26 ttl=63 time=3.11 ms
+64 bytes from 192.168.1.158: icmp_seq=27 ttl=63 time=3.97 ms
+64 bytes from 192.168.1.158: icmp_seq=28 ttl=63 time=3.46 ms
+64 bytes from 192.168.1.158: icmp_seq=29 ttl=63 time=2.99 ms
+64 bytes from 192.168.1.158: icmp_seq=30 ttl=63 time=2.87 ms
+64 bytes from 192.168.1.158: icmp_seq=31 ttl=63 time=3.97 ms
+64 bytes from 192.168.1.158: icmp_seq=32 ttl=63 time=3.43 ms
+64 bytes from 192.168.1.158: icmp_seq=33 ttl=63 time=3.45 ms
+64 bytes from 192.168.1.158: icmp_seq=34 ttl=63 time=5.60 ms
+64 bytes from 192.168.1.158: icmp_seq=35 ttl=63 time=3.33 ms
+64 bytes from 192.168.1.158: icmp_seq=36 ttl=63 time=3.06 ms
+64 bytes from 192.168.1.158: icmp_seq=37 ttl=63 time=3.17 ms
+64 bytes from 192.168.1.158: icmp_seq=38 ttl=63 time=3.56 ms
+64 bytes from 192.168.1.158: icmp_seq=39 ttl=63 time=3.71 ms
+64 bytes from 192.168.1.158: icmp_seq=40 ttl=63 time=2.92 ms
+64 bytes from 192.168.1.158: icmp_seq=41 ttl=63 time=3.95 ms
+64 bytes from 192.168.1.158: icmp_seq=42 ttl=63 time=4.49 ms
+64 bytes from 192.168.1.158: icmp_seq=43 ttl=63 time=3.02 ms
+64 bytes from 192.168.1.158: icmp_seq=44 ttl=63 time=3.67 ms
+64 bytes from 192.168.1.158: icmp_seq=45 ttl=63 time=3.56 ms
+64 bytes from 192.168.1.158: icmp_seq=46 ttl=63 time=3.76 ms
+64 bytes from 192.168.1.158: icmp_seq=47 ttl=63 time=3.32 ms
+64 bytes from 192.168.1.158: icmp_seq=48 ttl=63 time=2.88 ms
+64 bytes from 192.168.1.158: icmp_seq=49 ttl=63 time=2.83 ms
+64 bytes from 192.168.1.158: icmp_seq=50 ttl=63 time=3.18 ms
+
+--- 192.168.1.158 ping statistics ---
+50 packets transmitted, 50 received, 0% packet loss, time 9839ms
+rtt min/avg/max/mdev = 0.679/3.571/11.988/1.430 ms

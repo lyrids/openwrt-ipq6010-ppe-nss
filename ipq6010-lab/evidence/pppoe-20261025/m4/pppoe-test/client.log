@@ -1,0 +1,50 @@
+Send PPPOE Discovery V1T1 PADI session 0x0 length 20
+ dst ff:ff:ff:ff:ff:ff  src 96:63:65:3c:53:51
+ [service-name nss-test] [host-uniq  3f f8 06 00]
+Recv PPPOE Discovery V1T1 PADO session 0x0 length 59
+ dst 96:63:65:3c:53:51  src dc:a6:32:b0:ab:b0
+ [AC-name nss-test-ac] [service-name nss-test] [AC-cookie  18 fe ac b7 5b 61 3f c0 ed 72 90 f5 35 6b 25 8a e7 1e 01 00] [host-uniq  3f f8 06 00]
+Send PPPOE Discovery V1T1 PADR session 0x0 length 44
+ dst dc:a6:32:b0:ab:b0  src 96:63:65:3c:53:51
+ [service-name nss-test] [host-uniq  3f f8 06 00] [AC-cookie  18 fe ac b7 5b 61 3f c0 ed 72 90 f5 35 6b 25 8a e7 1e 01 00]
+Recv PPPOE Discovery V1T1 PADO session 0x0 length 59
+ dst 96:63:65:3c:53:51  src dc:a6:32:b0:ab:b0
+ [AC-name nss-test-ac] [service-name nss-test] [AC-cookie  18 fe ac b7 5b 61 3f c0 ed 72 90 f5 35 6b 25 8a e7 1e 01 00] [host-uniq  3f f8 06 00]
+Recv PPPOE Discovery V1T1 PADS session 0x1 length 20
+ dst 96:63:65:3c:53:51  src dc:a6:32:b0:ab:b0
+ [service-name nss-test] [host-uniq  3f f8 06 00]
+PADS: Service-Name: 'nss-test'
+PPP session is 1
+Connected to dc:a6:32:b0:ab:b0 via interface end0.100
+using channel 1
+Renamed interface ppp0 to ppp-nsstest
+Using interface ppp-nsstest
+Connect: ppp-nsstest <--> end0.100
+sent [LCP ConfReq id=0x1 <mru 1492> <magic 0xb08335b5>]
+rcvd [LCP ConfReq id=0x1 <mru 1492> <magic 0x25ac66c3>]
+sent [LCP ConfAck id=0x1 <mru 1492> <magic 0x25ac66c3>]
+sent [LCP ConfReq id=0x1 <mru 1492> <magic 0xb08335b5>]
+rcvd [LCP ConfAck id=0x1 <mru 1492> <magic 0xb08335b5>]
+sent [LCP EchoReq id=0x0 magic=0xb08335b5]
+peer from calling number DC:A6:32:B0:AB:B0 authorized
+sent [IPCP ConfReq id=0x1 <addr 0.0.0.0>]
+rcvd [LCP EchoReq id=0x0 magic=0x25ac66c3]
+sent [LCP EchoRep id=0x0 magic=0xb08335b5]
+rcvd [LCP EchoRep id=0x0 magic=0x25ac66c3]
+rcvd [IPCP ConfReq id=0x1 <addr 172.31.100.1>]
+sent [IPCP ConfAck id=0x1 <addr 172.31.100.1>]
+rcvd [IPCP ConfNak id=0x1 <addr 172.31.100.2>]
+sent [IPCP ConfReq id=0x2 <addr 172.31.100.2>]
+rcvd [IPCP ConfAck id=0x2 <addr 172.31.100.2>]
+Script /etc/ppp/ip-pre-up started (pid 456776)
+Script /etc/ppp/ip-pre-up finished (pid 456776), status = 0x0
+local  IP address 172.31.100.2
+remote IP address 172.31.100.1
+Script /etc/ppp/ip-up started (pid 456779)
+Script /etc/ppp/ip-up finished (pid 456779), status = 0x0
+Modem hangup
+Connect time 2.0 minutes.
+Sent 1784055272 bytes, received 1661452829 bytes.
+Script /etc/ppp/ip-down started (pid 457951)
+Connection terminated.
+Script /etc/ppp/ip-down finished (pid 457951), status = 0x0

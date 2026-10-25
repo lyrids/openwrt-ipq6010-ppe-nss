@@ -1,0 +1,53 @@
+{
+	"start":	{
+		"connected":	[{
+				"socket":	5,
+				"local_host":	"192.168.88.2",
+				"local_port":	39461,
+				"remote_host":	"192.168.1.158",
+				"remote_port":	5233
+			}, {
+				"socket":	7,
+				"local_host":	"192.168.88.2",
+				"local_port":	54950,
+				"remote_host":	"192.168.1.158",
+				"remote_port":	5233
+			}],
+		"version":	"iperf 3.20",
+		"system_info":	"Linux p43 7.0.0-1020-raspi #20-Ubuntu SMP PREEMPT_DYNAMIC Fri Sep 11 16:02:28 UTC 2026 aarch64",
+		"timestamp":	{
+			"time":	"Sun, 25 Oct 2026 01:34:57 GMT",
+			"timesecs":	1792892097,
+			"timemillisecs":	1792892097514
+		},
+		"connecting_to":	{
+			"host":	"192.168.1.158",
+			"port":	5233
+		},
+		"cookie":	"mlf2qot5x2ipgg36ljt4alaiqvc2hxs6a4pm",
+		"target_bitrate":	50000000,
+		"fq_rate":	0,
+		"sock_bufsize":	0,
+		"sndbuf_actual":	212992,
+		"rcvbuf_actual":	212992,
+		"test_start":	{
+			"protocol":	"UDP",
+			"num_streams":	1,
+			"blksize":	128,
+			"omit":	0,
+			"duration":	12,
+			"bytes":	0,
+			"blocks":	0,
+			"reverse":	0,
+			"tos":	0,
+			"target_bitrate":	50000000,
+			"bidir":	1,
+			"fqrate":	0,
+			"interval":	1
+		}
+	},
+	"intervals":	[],
+	"end":	{
+	},
+	"error":	"control socket has closed unexpectedly"
+}

@@ -1,0 +1,20 @@
+#!/bin/bash
+set -euo pipefail
+workspace="$HOME/projects/openwrt-dev"
+. "$workspace/env.sh"
+run="$workspace/artifacts/baseline-5192094fd6-20261024"
+mkdir -p "$run"
+exec 9>"$workspace/.build.lock"
+flock -n 9 || { echo 'Another workspace build is running'; exit 1; }
+printf '%s\n' "$$" > "$run/pid"
+trap 'rc=$?; printf "%s\n" "$rc" > "$run/exit-code"; if test "$rc" -ne 0; then printf "failed\n" > "$run/status"; fi' EXIT
+cd "$workspace/src/openwrt-main"
+test "$(git rev-parse HEAD)" = 5192094fd6fb7050ec3c859cf9f3f8fee5b10d91
+"$workspace/bin/snapshot-build-state" "$PWD" "$run/build-state"
+date -u +%FT%TZ > "$run/started-utc"
+printf 'downloading\n' > "$run/status"
+make download -j"$BUILD_JOBS" > "$run/download.log" 2>&1
+printf 'building\n' > "$run/status"
+make -j"$BUILD_JOBS" V=s > "$run/build.log" 2>&1
+printf 'built\n' > "$run/status"
+date -u +%FT%TZ > "$run/finished-utc"

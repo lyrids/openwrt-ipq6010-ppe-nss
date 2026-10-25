@@ -1,0 +1,23 @@
+#!/bin/bash
+# Execute on p43 only after the user has entered U-Boot web recovery.
+set -euo pipefail
+work="$HOME/openwrt-ramboot"
+cd "$work"
+printf '%s  %s\n' cd94c82d62b5c2e9df62744000c5f7dd5e2e009e8e54489eb2bcc49682f9f582 initramfs.itb | sha256sum -c -
+curl --noproxy '*' --interface eth0 --connect-timeout 3 --max-time 10 -fsS \
+  http://192.168.1.1/uimage.html -o uimage-page.html
+python3 - <<'PY'
+from html.parser import HTMLParser
+class FormCheck(HTMLParser):
+    def __init__(self): super().__init__(); self.found=False
+    def handle_starttag(self,tag,attrs):
+        a=dict(attrs)
+        if tag=='input' and a.get('type','').lower()=='file' and a.get('name')=='uImage':
+            self.found=True
+p=FormCheck();p.feed(open('uimage-page.html').read())
+assert p.found, 'Expected RAM-only uImage form not found; refusing upload'
+print('Verified uImage upload form')
+PY
+curl --noproxy '*' --interface eth0 --connect-timeout 3 --max-time 180 \
+  --http1.0 -H 'Expect:' -F 'uImage=@initramfs.itb;filename=initramfs.itb' \
+  http://192.168.1.1/uimage.html -o upload-response.html

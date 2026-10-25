@@ -1,0 +1,55 @@
+iperf3: error - unable to start listener for connections: Cannot assign requested address
+iperf3: exiting
+-----------------------------------------------------------
+Server listening on 5240 (test #1)
+-----------------------------------------------------------
+Accepted connection from fd42:6018:100::63, port 41533
+[  6] local fd42:6018:1::60 port 5240 connected to fd42:6018:100::63 port 60663
+[ ID] Interval           Transfer     Bitrate
+[  6]   0.00-1.00   sec   110 MBytes   922 Mbits/sec                  
+[  6]   1.00-2.00   sec   110 MBytes   926 Mbits/sec                  
+[  6]   2.00-3.00   sec   110 MBytes   926 Mbits/sec                  
+[  6]   3.00-4.00   sec   110 MBytes   926 Mbits/sec                  
+[  6]   4.00-5.00   sec   110 MBytes   926 Mbits/sec                  
+[  6]   5.00-6.00   sec   110 MBytes   926 Mbits/sec                  
+[  6]   6.00-7.00   sec   110 MBytes   927 Mbits/sec                  
+[  6]   7.00-8.00   sec   110 MBytes   926 Mbits/sec                  
+[  6]   8.00-9.00   sec   110 MBytes   926 Mbits/sec                  
+[  6]   9.00-10.00  sec   110 MBytes   926 Mbits/sec                  
+[  6]  10.00-11.00  sec   110 MBytes   926 Mbits/sec                  
+[  6]  11.00-12.00  sec   110 MBytes   926 Mbits/sec                  
+[  6]  12.00-13.00  sec   110 MBytes   926 Mbits/sec                  
+[  6]  13.00-14.00  sec   110 MBytes   926 Mbits/sec                  
+[  6]  14.00-15.00  sec   110 MBytes   926 Mbits/sec                  
+[  6]  15.00-15.01  sec   896 KBytes   956 Mbits/sec                  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate
+[  6]   0.00-15.01  sec  1.62 GBytes   926 Mbits/sec                  receiver
+-----------------------------------------------------------
+Server listening on 5240 (test #2)
+-----------------------------------------------------------
+Accepted connection from fd42:6018:100::63, port 44011
+[  6] local fd42:6018:1::60 port 5240 connected to fd42:6018:100::63 port 39925
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  6]   0.00-1.00   sec   113 MBytes   946 Mbits/sec    0    639 KBytes       
+[  6]   1.00-2.00   sec   111 MBytes   933 Mbits/sec    0    883 KBytes       
+[  6]   2.00-3.00   sec   111 MBytes   929 Mbits/sec    0   1.18 MBytes       
+[  6]   3.00-4.00   sec   110 MBytes   923 Mbits/sec    3    725 KBytes       
+[  6]   4.00-5.00   sec   110 MBytes   922 Mbits/sec    0    833 KBytes       
+[  6]   5.00-6.00   sec   111 MBytes   932 Mbits/sec    0    929 KBytes       
+[  6]   6.00-7.00   sec   109 MBytes   916 Mbits/sec    0   1017 KBytes       
+[  6]   7.00-8.00   sec   110 MBytes   924 Mbits/sec    0   1.07 MBytes       
+[  6]   8.00-9.00   sec   111 MBytes   932 Mbits/sec    0   1.14 MBytes       
+[  6]   9.00-10.00  sec   110 MBytes   924 Mbits/sec    0   1.21 MBytes       
+[  6]  10.00-11.00  sec   110 MBytes   927 Mbits/sec    3    957 KBytes       
+[  6]  11.00-12.00  sec   110 MBytes   925 Mbits/sec    0   1.03 MBytes       
+[  6]  12.00-13.00  sec   110 MBytes   927 Mbits/sec    0   1.11 MBytes       
+[  6]  13.00-14.00  sec   111 MBytes   930 Mbits/sec    0   1.16 MBytes       
+[  6]  14.00-15.00  sec   110 MBytes   919 Mbits/sec    0   1.21 MBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  6]   0.00-15.00  sec  1.62 GBytes   928 Mbits/sec    6             sender
+-----------------------------------------------------------
+Server listening on 5240 (test #3)
+-----------------------------------------------------------
+iperf3: interrupt - the server has terminated

@@ -1,0 +1,2 @@
+origin	https://github.com/openwrt/openwrt.git (fetch) [blob:none]
+origin	https://github.com/openwrt/openwrt.git (push)

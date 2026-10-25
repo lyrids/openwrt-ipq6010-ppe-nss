@@ -1,0 +1,74 @@
+ 00:26:18 up 26 min,  load average: 0.00, 0.01, 0.00
+bound 0 pushed 0 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+wifili 203 reports 0
+wifili 215 reports 0
+wifili 216 reports 0
+vdev if 34 reports 7699
+  rx enqueue 0 fail 0 except 0 except_fail 0 bytes 0 mcast 0
+  rx decrypt_err 0 mic_err 0
+  tx rcvd 0 enqueue 0 fail 0 hw_ring_full 0 desc_fail 0 dropped 0
+  me rcvd 0 converted 0 no_member_drop 0 alloc_fail 0 enq_fail 0
+vdev if 35 reports 7694
+  rx enqueue 0 fail 0 except 0 except_fail 0 bytes 0 mcast 0
+  rx decrypt_err 0 mic_err 0
+  tx rcvd 0 enqueue 0 fail 0 hw_ring_full 0 desc_fail 0 dropped 0
+  me rcvd 0 converted 0 no_member_drop 0 alloc_fail 0 enq_fail 0
+vdev if 36 reports 7689
+  rx enqueue 251589 fail 0 except 0 except_fail 0 bytes 38345081 mcast 430
+  rx decrypt_err 1 mic_err 0
+  tx rcvd 2705467 enqueue 2705444 fail 0 hw_ring_full 0 desc_fail 7658585 dropped 0
+  me rcvd 730 converted 0 no_member_drop 0 alloc_fail 0 enq_fail 0
+Station 70:1a:b8:b4:69:a5 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	short
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	690 ms
+	rx bytes:	38134215
+	rx packets:	249426
+	tx bytes:	4068477930
+	tx packets:	2702645
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-71 dBm
+	signal avg:	-72 dBm
+	tx bitrate:	720.6 MBit/s 80MHz HE-MCS 7 HE-NSS 2 HE-GI 0 HE-DCM 0
+	tx duration:	44920407 us
+	rx bitrate:	612.5 MBit/s 80MHz HE-MCS 7 HE-NSS 2 HE-GI 2 HE-DCM 0
+	rx duration:	3469216 us
+	expected throughput:	609.289Mbps
+	DTIM period:	2
+	beacon interval:100
+	short preamble:	yes
+	short slot time:yes
+	connected time:	554 seconds
+	associated at [boottime]:	1024.821s
+	associated at:	1024822 ms
+	current time:	1578803 ms
+
+[  809.737324] br-lan: port 5(phy0-ap0) entered blocking state
+[  809.737382] br-lan: port 5(phy0-ap0) entered forwarding state
+[  809.899334] nss-wifi-drv 39000000.nss: vdev 0 on radio 0 is interface 36, encap 2 decap 2
+[  809.923148] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 3 ast_idx 155 ast_hash 0x9b vdev 0
+[  809.925230] br-lan: port 7(phy2-ap0) entered blocking state
+[  809.931520] br-lan: port 7(phy2-ap0) entered disabled state
+[  809.936882] ath11k_pci 0000:01:00.0 phy2-ap0: entered allmulticast mode
+[  809.942655] ath11k_pci 0000:01:00.0 phy2-ap0: entered promiscuous mode
+[  810.341436] br-lan: port 7(phy2-ap0) entered blocking state
+[  810.341487] br-lan: port 7(phy2-ap0) entered forwarding state
+[  840.025504] nss-wifi-drv 39000000.nss: peer 70:1a:b8:b4:69:a5: id 4 ast_idx 220 ast_hash 0xdc vdev 0
+[  840.100418] nss-wifi-drv 39000000.nss: interface 36 protects frames with 6
+[  918.099108] nss-wifi-drv 39000000.nss: peer 70:1a:b8:b4:69:a5: id 4 released from vdev 0
+[ 1024.822993] nss-wifi-drv 39000000.nss: peer 70:1a:b8:b4:69:a5: id 5 ast_idx 220 ast_hash 0xdc vdev 0
+[ 1024.880843] nss-wifi-drv 39000000.nss: interface 36 protects frames with 6

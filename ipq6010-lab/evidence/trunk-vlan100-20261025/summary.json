@@ -1,0 +1,30 @@
+{
+  "topology": "p43 eth0.100 192.168.100.63 -> LAN1 tagged VLAN100 -> PPE bridge VLAN100 -> LAN4 tagged VLAN100 -> m4 end0.100 192.168.100.60; native VLAN1 retained; no router L3 interface in VLAN100",
+  "results": {
+    "reverse": {
+      "receiver_mbps": 938.9492455831254,
+      "retransmits": 0,
+      "error": null
+    },
+    "forward": {
+      "receiver_mbps": 938.7611269745254,
+      "retransmits": 0,
+      "error": null
+    }
+  },
+  "sampled_cpu_busy_percent": 0.402,
+  "cpu_window_note": "50 one-second samples including setup/teardown around two 20-second tests",
+  "isolation": {
+    "lan4_vlan100_membership_removed": "0/3 ping replies",
+    "membership_restored": "3/3 ping replies",
+    "unconfigured_vlan101": "0 frames observed on m4 physical link during probe"
+  },
+  "hardware_evidence": [
+    "PPE VSI counters increased",
+    "VLAN100 endpoint MACs read from PPE hardware FDB via DSA self entries",
+    "NSS Ethernet pushed counter unchanged at 8; no new NSS flow rules",
+    "physical endpoint capture shows 802.1Q VLAN100 both directions"
+  ],
+  "cleanup": "Original bridge filtering=0 restored, temporary VLAN memberships/interfaces removed, LAN reachability verified",
+  "limitation": "Verifies PPE L2 VLAN switching only; NSS routed VLAN failure unresolved"
+}

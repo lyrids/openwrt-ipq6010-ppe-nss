@@ -1,0 +1,28 @@
+Sat Oct 24 04:05:39 UTC 2026
+Linux openwrt-dev 7.2.12-orbstack-00394-gbecdd6130068 #1 SMP PREEMPT Thu Oct 22 22:17:17 UTC 2026 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 25.10"
+NAME="Ubuntu"
+VERSION_ID="25.10"
+VERSION="25.10 (Questing Quokka)"
+VERSION_CODENAME=questing
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=questing
+LOGO=ubuntu-logo
+
+Compiler
+gcc (Ubuntu 15.2.0-4ubuntu4) 15.2.0
+
+Build tools
+GNU Make 4.4.1
+Python 3.13.7
+ccache version 4.11.2
+Version: DTC 1.7.2
+mkimage version 2025.10
+
+Case sensitivity
+PASS: workspace filesystem is case-sensitive

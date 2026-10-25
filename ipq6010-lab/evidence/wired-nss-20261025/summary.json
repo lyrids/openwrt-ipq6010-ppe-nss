@@ -1,0 +1,74 @@
+{
+  "image": "nss-ethernet-bootfix-03803c78cd-20261025",
+  "topology": "p43 eth0 -> LAN1 routed 192.168.88.0/24 -> LAN4 bridge 192.168.1.0/24 -> m4 end0; management over separate Wi-Fi",
+  "cases": {
+    "nat-forward": {
+      "error": null,
+      "receiver_mbps": 941.189125243981,
+      "sender_retransmits": 0
+    },
+    "nat-reverse": {
+      "error": null,
+      "receiver_mbps": 941.3814556624916,
+      "sender_retransmits": 0
+    },
+    "routed-forward": {
+      "error": null,
+      "receiver_mbps": 937.0986146929137,
+      "sender_retransmits": 1
+    },
+    "routed-reverse": {
+      "error": null,
+      "receiver_mbps": 941.367429735917,
+      "sender_retransmits": 0
+    },
+    "vlan-forward": {
+      "error": "interrupt - the client has terminated by signal Interrupt(2)",
+      "receiver_mbps": 0.0,
+      "sender_retransmits": 0
+    },
+    "vlan-reverse": {
+      "error": "interrupt - the client has terminated by signal Interrupt(2)",
+      "receiver_mbps": 0.0,
+      "sender_retransmits": null
+    }
+  },
+  "monitor_windows": {
+    "route": {
+      "samples": 50,
+      "all_core_busy_percent": 0.321,
+      "cpu0_busy_percent": 0.49,
+      "max_firmware_flow_rx_packets": 1360785,
+      "max_firmware_return_rx_packets": 1409339,
+      "note": "Approximately 50-second window includes setup and teardown around two 20-second tests."
+    },
+    "nat": {
+      "samples": 50,
+      "all_core_busy_percent": 0.27,
+      "cpu0_busy_percent": 0.307,
+      "max_firmware_flow_rx_packets": 1584140,
+      "max_firmware_return_rx_packets": 1394309,
+      "note": "Approximately 50-second window includes setup and teardown around two 20-second tests."
+    },
+    "vlan": {
+      "samples": 50,
+      "all_core_busy_percent": 0.336,
+      "cpu0_busy_percent": 0.633,
+      "max_firmware_flow_rx_packets": 0,
+      "max_firmware_return_rx_packets": 0,
+      "note": "Approximately 50-second window includes setup and teardown around two 20-second tests."
+    }
+  },
+  "verdict": "Plain IPv4 routing and SNAT verified with NSS firmware packet counters and conntrack HW_OFFLOAD; VLAN routing failed and fallback stalled.",
+  "vlan_root_cause": "nss_flow_pppoe_take explicitly rejects VLAN without PPPoE (-EOPNOTSUPP); new PPE integration leaves partial steering while firmware rule cannot be installed.",
+  "untested": [
+    "PPPoE",
+    "IPv6",
+    "DNAT",
+    "UDP",
+    "WAN physical port and 2.5 Gbit/s",
+    "VLAN bridge filtering",
+    "long-duration stability"
+  ],
+  "cleanup": "Original router bridge/firewall restored; temporary p43 VLAN/route removed; NSS/PPE flow tables empty; LAN ping verified."
+}

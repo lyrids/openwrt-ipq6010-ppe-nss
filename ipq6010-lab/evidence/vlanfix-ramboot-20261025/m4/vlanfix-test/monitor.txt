@@ -1,0 +1,1307 @@
+SAMPLE
+77.77 285.10
+cpu  709 0 1689 28510 2 0 3 0 0 0
+cpu0 160 0 261 7288 2 0 1 0 0 0
+cpu1 91 0 1078 6513 0 0 1 0 0 0
+cpu2 374 0 128 7257 0 0 1 0 0 0
+cpu3 84 0 222 7450 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 0 pushed 0 rejected 0
+bound 0 pushed 0 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 5 tx 5 drop 0/0/0/0 exceptions
+node ipv4 rx 6 tx 0 drop 0/0/0/0 exceptions 9:6
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+SAMPLE
+78.78 289.08
+cpu  709 0 1693 28909 2 0 3 0 0 0
+cpu0 160 0 264 7386 2 0 1 0 0 0
+cpu1 91 0 1078 6613 0 0 1 0 0 0
+cpu2 374 0 128 7358 0 0 1 0 0 0
+cpu3 84 0 223 7550 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 4 pushed 2 rejected 0
+bound 0 pushed 2 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 2143 tx 2143 drop 0/0/0/0 exceptions
+node ipv4 rx 2145 tx 2145 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 410ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 410ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+240   ipv4 1     4   3   376   0   1651 108966
+640   ipv4 1     4   3   192   0   32724 49672136
+1168  ipv4 1     4   3   376   0   6 400
+1264  ipv4 1     4   3   192   0   5 478
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE
+79.80 293.07
+cpu  711 0 1696 29308 2 0 3 0 0 0
+cpu0 161 0 264 7484 2 0 1 0 0 0
+cpu1 91 0 1078 6713 0 0 1 0 0 0
+cpu2 374 0 131 7458 0 0 1 0 0 0
+cpu3 85 0 223 7651 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 4 pushed 2 rejected 0
+bound 0 pushed 2 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 2141 tx 2141 drop 0/0/0/0 exceptions
+node ipv4 rx 2143 tx 2143 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 1430ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 1430ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+240   ipv4 1     4   3   376   0   6253 412698
+640   ipv4 1     4   3   192   0   115026 174606572
+1168  ipv4 1     4   3   376   12  0 0
+1264  ipv4 1     4   3   192   12  0 0
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE
+80.81 297.05
+cpu  712 0 1698 29706 2 0 3 0 0 0
+cpu0 162 0 265 7582 2 0 1 0 0 0
+cpu1 91 0 1078 6811 0 0 1 0 0 0
+cpu2 374 0 131 7559 0 0 1 0 0 0
+cpu3 85 0 224 7751 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 4 pushed 2 rejected 0
+bound 0 pushed 2 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 2145 tx 2145 drop 0/0/0/0 exceptions
+node ipv4 rx 2143 tx 2143 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 2440ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 2440ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+240   ipv4 1     4   3   376   0   10899 719334
+640   ipv4 1     4   3   192   0   197336 299553152
+1168  ipv4 1     4   3   376   12  0 0
+1264  ipv4 1     4   3   192   12  0 0
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE
+81.83 301.04
+cpu  716 0 1700 30104 2 0 3 0 0 0
+cpu0 164 0 266 7680 2 0 1 0 0 0
+cpu1 91 0 1079 6911 0 0 1 0 0 0
+cpu2 375 0 131 7660 0 0 1 0 0 0
+cpu3 86 0 224 7851 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 4 pushed 2 rejected 0
+bound 0 pushed 2 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 2143 tx 2143 drop 0/0/0/0 exceptions
+node ipv4 rx 2143 tx 2143 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 160ms fw flow rx 27674 tx 1556 return rx 1556 tx 27674
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 3460ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+240   ipv4 1     4   3   376   0   15514 1023924
+640   ipv4 1     4   3   192   0   279663 424525538
+1168  ipv4 1     4   3   376   12  0 0
+1264  ipv4 1     4   3   192   12  0 0
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE
+82.84 305.03
+cpu  716 0 1703 30503 2 0 3 0 0 0
+cpu0 164 0 267 7778 2 0 1 0 0 0
+cpu1 91 0 1079 7010 0 0 1 0 0 0
+cpu2 375 0 133 7760 0 0 1 0 0 0
+cpu3 86 0 224 7952 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 4 pushed 2 rejected 0
+bound 0 pushed 2 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 2146 tx 2146 drop 0/0/0/0 exceptions
+node ipv4 rx 2147 tx 2147 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 1170ms fw flow rx 27674 tx 1556 return rx 1556 tx 27674
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 4470ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+240   ipv4 1     4   3   376   0   20123 1328118
+640   ipv4 1     4   3   192   0   361949 549435686
+1168  ipv4 1     4   3   376   12  0 0
+1264  ipv4 1     4   3   192   12  0 0
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE
+83.86 309.01
+cpu  716 0 1709 30902 2 0 3 0 0 0
+cpu0 164 0 270 7876 2 0 1 0 0 0
+cpu1 91 0 1080 7110 0 0 1 0 0 0
+cpu2 375 0 134 7861 0 0 1 0 0 0
+cpu3 86 0 225 8053 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 4 pushed 2 rejected 0
+bound 0 pushed 2 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 2140 tx 2140 drop 0/0/0/0 exceptions
+node ipv4 rx 2142 tx 2142 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 2190ms fw flow rx 27674 tx 1556 return rx 1556 tx 27674
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 5490ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+240   ipv4 1     4   3   376   0   24338 1606308
+640   ipv4 1     4   3   192   0   444255 674376194
+1168  ipv4 1     4   3   376   12  0 0
+1264  ipv4 1     4   3   192   12  0 0
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE
+84.87 313.00
+cpu  717 0 1712 31300 2 0 3 0 0 0
+cpu0 164 0 272 7974 2 0 1 0 0 0
+cpu1 91 0 1080 7209 0 0 1 0 0 0
+cpu2 375 0 134 7962 0 0 1 0 0 0
+cpu3 87 0 226 8153 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 4 pushed 2 rejected 0
+bound 0 pushed 2 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 2144 tx 2144 drop 0/0/0/0 exceptions
+node ipv4 rx 2148 tx 2148 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 3210ms fw flow rx 27674 tx 1556 return rx 1556 tx 27674
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 6510ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+240   ipv4 1     4   3   376   0   28795 1900470
+640   ipv4 1     4   3   192   0   526572 799333400
+1168  ipv4 1     4   3   376   12  0 0
+1264  ipv4 1     4   3   192   12  0 0
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE
+85.89 316.98
+cpu  719 0 1715 31699 2 0 3 0 0 0
+cpu0 165 0 274 8073 2 0 1 0 0 0
+cpu1 91 0 1080 7309 0 0 1 0 0 0
+cpu2 375 0 135 8063 0 0 1 0 0 0
+cpu3 88 0 226 8253 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 4 pushed 2 rejected 0
+bound 0 pushed 2 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 2135 tx 2135 drop 0/0/0/0 exceptions
+node ipv4 rx 2143 tx 2143 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 60ms fw flow rx 364906 tx 19856 return rx 19856 tx 364906
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 7520ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+240   ipv4 1     4   3   376   0   33364 2202024
+640   ipv4 1     4   3   192   0   608848 924228368
+1168  ipv4 1     4   3   376   12  0 0
+1264  ipv4 1     4   3   192   12  0 0
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE
+86.90 320.93
+cpu  724 0 1718 32093 2 0 3 0 0 0
+cpu0 166 0 275 8171 2 0 1 0 0 0
+cpu1 91 0 1080 7408 0 0 1 0 0 0
+cpu2 375 0 137 8163 0 0 1 0 0 0
+cpu3 92 0 226 8350 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 4 pushed 2 rejected 0
+bound 0 pushed 2 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 2141 tx 2141 drop 0/0/0/0 exceptions
+node ipv4 rx 2146 tx 2146 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 1080ms fw flow rx 364906 tx 19856 return rx 19856 tx 364906
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 8540ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+240   ipv4 1     4   3   376   0   37959 2505294
+640   ipv4 1     4   3   192   0   691106 1049096012
+1168  ipv4 1     4   3   376   12  0 0
+1264  ipv4 1     4   3   192   12  0 0
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE
+87.92 324.89
+cpu  729 0 1719 32490 2 0 3 0 0 0
+cpu0 168 0 275 8268 2 0 1 0 0 0
+cpu1 92 0 1080 7508 0 0 1 0 0 0
+cpu2 375 0 137 8263 0 0 1 0 0 0
+cpu3 94 0 227 8450 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 4 pushed 2 rejected 0
+bound 0 pushed 2 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 2136 tx 2136 drop 0/0/0/0 exceptions
+node ipv4 rx 2133 tx 2133 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 2090ms fw flow rx 364906 tx 19856 return rx 19856 tx 364906
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 9550ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+240   ipv4 1     4   3   376   0   42564 2809224
+640   ipv4 1     4   3   192   0   773391 1174004642
+1168  ipv4 1     4   3   376   12  0 0
+1264  ipv4 1     4   3   192   12  0 0
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE
+88.93 328.88
+cpu  730 0 1721 32888 2 0 3 0 0 0
+cpu0 168 0 277 8366 2 0 1 0 0 0
+cpu1 92 0 1080 7607 0 0 1 0 0 0
+cpu2 375 0 137 8363 0 0 1 0 0 0
+cpu3 95 0 227 8550 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 4 pushed 2 rejected 0
+bound 0 pushed 2 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 2137 tx 2137 drop 0/0/0/0 exceptions
+node ipv4 rx 2144 tx 2144 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 3110ms fw flow rx 364906 tx 19856 return rx 19856 tx 364906
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 10570ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+240   ipv4 1     4   3   376   0   47162 3112692
+640   ipv4 1     4   3   192   0   855676 1298913272
+1168  ipv4 1     4   3   376   12  0 0
+1264  ipv4 1     4   3   192   12  0 0
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE
+89.95 332.89
+cpu  730 0 1724 33289 2 0 3 0 0 0
+cpu0 168 0 277 8466 2 0 1 0 0 0
+cpu1 92 0 1080 7707 0 0 1 0 0 0
+cpu2 375 0 140 8464 0 0 1 0 0 0
+cpu3 95 0 227 8651 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 4 pushed 2 rejected 0
+bound 0 pushed 2 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 2134 tx 2134 drop 0/0/0/0 exceptions
+node ipv4 rx 2135 tx 2134 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 4120ms fw flow rx 364906 tx 19856 return rx 19856 tx 364906
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 11580ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+240   ipv4 1     4   3   376   0   51764 3416424
+640   ipv4 1     4   3   192   0   937942 1423793060
+1168  ipv4 1     4   3   376   12  0 0
+1264  ipv4 1     4   3   192   12  0 0
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE
+90.96 336.90
+cpu  730 0 1725 33691 2 0 3 0 0 0
+cpu0 168 0 277 8567 2 0 1 0 0 0
+cpu1 92 0 1080 7807 0 0 1 0 0 0
+cpu2 375 0 141 8565 0 0 1 0 0 0
+cpu3 95 0 227 8751 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 4 pushed 2 rejected 0
+bound 0 pushed 2 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 2137 tx 2137 drop 0/0/0/0 exceptions
+node ipv4 rx 2139 tx 2137 drop 0/0/0/0 exceptions 9:2
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 980ms fw flow rx 702093 tx 38713 return rx 38713 tx 702093
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 12600ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+240   ipv4 1     4   3   376   0   56384 3721344
+640   ipv4 1     4   3   192   0   1020249 1548735086
+1168  ipv4 1     4   3   376   12  0 0
+1264  ipv4 1     4   3   192   12  0 0
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE
+91.98 340.92
+cpu  730 0 1727 34092 2 0 4 0 0 0
+cpu0 168 0 278 8667 2 0 2 0 0 0
+cpu1 92 0 1080 7906 0 0 1 0 0 0
+cpu2 375 0 141 8666 0 0 1 0 0 0
+cpu3 95 0 228 8852 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 4 pushed 2 rejected 0
+bound 0 pushed 2 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 2141 tx 2141 drop 0/0/0/0 exceptions
+node ipv4 rx 2136 tx 2136 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 1990ms fw flow rx 702093 tx 38713 return rx 38713 tx 702093
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 13610ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+240   ipv4 1     4   3   376   0   60998 4025868
+640   ipv4 1     4   3   192   0   1102564 1673689256
+1168  ipv4 1     4   3   376   12  0 0
+1264  ipv4 1     4   3   192   12  0 0
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE
+92.99 344.93
+cpu  732 0 1727 34493 2 0 4 0 0 0
+cpu0 169 0 278 8767 2 0 2 0 0 0
+cpu1 92 0 1080 8006 0 0 1 0 0 0
+cpu2 375 0 141 8766 0 0 1 0 0 0
+cpu3 96 0 228 8953 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 4 pushed 2 rejected 0
+bound 0 pushed 2 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 2141 tx 2141 drop 0/0/0/0 exceptions
+node ipv4 rx 2142 tx 2142 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 3010ms fw flow rx 702093 tx 38713 return rx 38713 tx 702093
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 14630ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+240   ipv4 1     4   3   376   0   65575 4327950
+640   ipv4 1     4   3   192   0   1184881 1798646462
+1168  ipv4 1     4   3   376   12  0 0
+1264  ipv4 1     4   3   192   12  0 0
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE
+94.01 348.93
+cpu  732 0 1730 34894 2 0 4 0 0 0
+cpu0 169 0 278 8866 2 0 2 0 0 0
+cpu1 92 0 1081 8105 0 0 1 0 0 0
+cpu2 375 0 141 8867 0 0 1 0 0 0
+cpu3 96 0 230 9053 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 2095 tx 2095 drop 0/0/0/0 exceptions
+node ipv4 rx 2094 tx 2094 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 610ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 ethernet if 1/4 prio 0 installed 0 age 4020ms fw flow rx 702093 tx 38713 return rx 38713 tx 702093
+proto 6 v4 ethernet if 1/4 prio 0 installed 0 age 15640ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 610ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+72    ipv4 1     4   3   192   0   5 493
+240   ipv4 1     4   3   376   0   67332 4443912
+640   ipv4 1     4   3   192   0   1216458 1846578940
+728   ipv4 1     4   3   376   0   6 400
+1064  ipv4 1     4   3   376   0   49146 74404148
+1168  ipv4 1     4   3   376   12  7 810
+1264  ipv4 1     4   3   192   12  10 1020
+1872  ipv4 1     4   3   192   0   1585 110950
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=36 bytes=511613 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=4 bytes=204 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=7 bytes=411 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=4 bytes=216 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE
+95.03 352.96
+cpu  732 0 1732 35296 2 0 4 0 0 0
+cpu0 169 0 279 8967 2 0 2 0 0 0
+cpu1 92 0 1081 8206 0 0 1 0 0 0
+cpu2 375 0 142 8969 0 0 1 0 0 0
+cpu3 96 0 230 9154 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 2099 tx 2099 drop 0/0/0/0 exceptions
+node ipv4 rx 2101 tx 2101 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 1630ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 1630ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+72    ipv4 1     4   3   192   12  0 0
+728   ipv4 1     4   3   376   12  0 0
+1064  ipv4 1     4   3   376   0   131800 199542304
+1872  ipv4 1     4   3   192   0   4234 296380
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=37 bytes=513113 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=5 bytes=250 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=9 bytes=515 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=6 bytes=320 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE
+96.04 356.97
+cpu  732 0 1733 35697 2 0 4 0 0 0
+cpu0 169 0 279 9067 2 0 2 0 0 0
+cpu1 92 0 1081 8305 0 0 1 0 0 0
+cpu2 375 0 142 9069 0 0 1 0 0 0
+cpu3 96 0 231 9254 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 2097 tx 2097 drop 0/0/0/0 exceptions
+node ipv4 rx 2097 tx 2097 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 2650ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 2650ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+72    ipv4 1     4   3   192   12  0 0
+728   ipv4 1     4   3   376   12  0 0
+1064  ipv4 1     4   3   376   0   214327 324488182
+1872  ipv4 1     4   3   192   0   6879 481530
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=37 bytes=513113 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=5 bytes=250 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=9 bytes=515 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=6 bytes=320 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE
+97.06 360.98
+cpu  734 0 1733 36099 2 0 4 0 0 0
+cpu0 169 0 279 9167 2 0 2 0 0 0
+cpu1 92 0 1081 8405 0 0 1 0 0 0
+cpu2 377 0 142 9170 0 0 1 0 0 0
+cpu3 96 0 231 9355 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 2096 tx 2096 drop 0/0/0/0 exceptions
+node ipv4 rx 2100 tx 2100 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 3660ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 3660ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+72    ipv4 1     4   3   192   12  0 0
+728   ipv4 1     4   3   376   12  0 0
+1064  ipv4 1     4   3   376   0   296825 449390154
+1872  ipv4 1     4   3   192   0   9535 667450
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=37 bytes=513113 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=5 bytes=250 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=9 bytes=515 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=6 bytes=320 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE
+98.07 364.99
+cpu  734 0 1734 36500 2 0 4 0 0 0
+cpu0 169 0 279 9267 2 0 2 0 0 0
+cpu1 92 0 1081 8505 0 0 1 0 0 0
+cpu2 377 0 143 9271 0 0 1 0 0 0
+cpu3 96 0 231 9456 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 2097 tx 2097 drop 0/0/0/0 exceptions
+node ipv4 rx 2094 tx 2094 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 810ms fw flow rx 5 tx 6 return rx 6 tx 5
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 810ms fw flow rx 10069 tx 313302 return rx 313302 tx 10069
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+72    ipv4 1     4   3   192   12  0 0
+728   ipv4 1     4   3   376   12  0 0
+1064  ipv4 1     4   3   376   0   379087 573934822
+1872  ipv4 1     4   3   192   0   12198 854568
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=37 bytes=513113 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=5 bytes=250 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=9 bytes=515 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=6 bytes=320 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE
+99.09 369.01
+cpu  736 0 1735 36901 2 0 4 0 0 0
+cpu0 169 0 279 9367 2 0 2 0 0 0
+cpu1 93 0 1081 8604 0 0 1 0 0 0
+cpu2 377 0 143 9371 0 0 1 0 0 0
+cpu3 97 0 232 9556 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 2092 tx 2092 drop 0/0/0/0 exceptions
+node ipv4 rx 2092 tx 2091 drop 0/0/0/0 exceptions 9:1
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 1820ms fw flow rx 5 tx 6 return rx 6 tx 5
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 1820ms fw flow rx 10069 tx 313302 return rx 313302 tx 10069
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+72    ipv4 1     4   3   192   12  0 0
+728   ipv4 1     4   3   376   12  0 0
+1064  ipv4 1     4   3   376   0   461454 698638460
+1872  ipv4 1     4   3   192   0   14864 1041188
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=37 bytes=513113 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=5 bytes=250 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=9 bytes=515 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=6 bytes=320 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE
+100.10 373.02
+cpu  738 0 1735 37303 2 0 4 0 0 0
+cpu0 170 0 279 9468 2 0 2 0 0 0
+cpu1 93 0 1081 8704 0 0 1 0 0 0
+cpu2 377 0 143 9472 0 0 1 0 0 0
+cpu3 98 0 232 9657 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 1823 tx 1823 drop 0/0/0/0 exceptions
+node ipv4 rx 1826 tx 1826 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 2840ms fw flow rx 5 tx 6 return rx 6 tx 5
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 2840ms fw flow rx 10069 tx 313302 return rx 313302 tx 10069
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+72    ipv4 1     4   3   192   12  0 0
+728   ipv4 1     4   3   376   12  0 0
+1064  ipv4 1     4   3   376   0   543618 823034756
+1872  ipv4 1     4   3   192   0   17530 1228436
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=37 bytes=513113 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=5 bytes=250 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=9 bytes=515 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=6 bytes=320 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE
+101.12 377.04
+cpu  738 0 1739 37704 2 0 4 0 0 0
+cpu0 170 0 280 9568 2 0 2 0 0 0
+cpu1 93 0 1081 8804 0 0 1 0 0 0
+cpu2 377 0 146 9573 0 0 1 0 0 0
+cpu3 98 0 232 9758 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 2095 tx 2095 drop 0/0/0/0 exceptions
+node ipv4 rx 2096 tx 2096 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 3850ms fw flow rx 5 tx 6 return rx 6 tx 5
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 3850ms fw flow rx 10069 tx 313302 return rx 313302 tx 10069
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+72    ipv4 1     4   3   192   12  0 0
+728   ipv4 1     4   3   376   12  0 0
+1064  ipv4 1     4   3   376   0   626014 947782300
+1872  ipv4 1     4   3   192   0   20187 1414426
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=37 bytes=513113 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=5 bytes=250 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=9 bytes=515 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=6 bytes=320 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE
+102.13 381.05
+cpu  738 0 1742 38105 2 0 4 0 0 0
+cpu0 170 0 281 9668 2 0 2 0 0 0
+cpu1 93 0 1081 8904 0 0 1 0 0 0
+cpu2 377 0 147 9674 0 0 1 0 0 0
+cpu3 98 0 233 9859 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 2089 tx 2089 drop 0/0/0/0 exceptions
+node ipv4 rx 2097 tx 2097 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 4870ms fw flow rx 5 tx 6 return rx 6 tx 5
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 4870ms fw flow rx 10069 tx 313302 return rx 313302 tx 10069
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+72    ipv4 1     4   3   192   12  0 0
+728   ipv4 1     4   3   376   12  0 0
+1064  ipv4 1     4   3   376   0   708364 1072460200
+1872  ipv4 1     4   3   192   0   22847 1600626
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=37 bytes=513113 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=5 bytes=250 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=9 bytes=515 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=6 bytes=320 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE
+103.15 385.07
+cpu  738 0 1743 38507 2 0 4 0 0 0
+cpu0 170 0 281 9768 2 0 2 0 0 0
+cpu1 93 0 1081 9003 0 0 1 0 0 0
+cpu2 377 0 148 9774 0 0 1 0 0 0
+cpu3 98 0 233 9960 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 2098 tx 2098 drop 0/0/0/0 exceptions
+node ipv4 rx 2099 tx 2099 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 5880ms fw flow rx 5 tx 6 return rx 6 tx 5
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 5880ms fw flow rx 10069 tx 313302 return rx 313302 tx 10069
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+72    ipv4 1     4   3   192   12  0 0
+728   ipv4 1     4   3   376   12  0 0
+1064  ipv4 1     4   3   376   0   790767 1197218342
+1872  ipv4 1     4   3   192   0   25489 1785566
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=37 bytes=513113 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=5 bytes=250 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=9 bytes=515 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=6 bytes=320 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE
+104.17 389.09
+cpu  738 0 1746 38909 2 0 4 0 0 0
+cpu0 170 0 281 9868 2 0 2 0 0 0
+cpu1 93 0 1083 9103 0 0 1 0 0 0
+cpu2 377 0 149 9875 0 0 1 0 0 0
+cpu3 98 0 233 10061 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 2093 tx 2093 drop 0/0/0/0 exceptions
+node ipv4 rx 2095 tx 2094 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 6900ms fw flow rx 5 tx 6 return rx 6 tx 5
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 660ms fw flow rx 26406 tx 819131 return rx 819131 tx 26406
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+72    ipv4 1     4   3   192   12  0 0
+728   ipv4 1     4   3   376   12  0 0
+1064  ipv4 1     4   3   376   0   873377 1322289882
+1872  ipv4 1     4   3   192   0   28156 1972256
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=37 bytes=513113 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=5 bytes=250 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=9 bytes=515 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=6 bytes=320 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE
+105.18 393.10
+cpu  739 0 1747 39310 2 0 4 0 0 0
+cpu0 170 0 281 9969 2 0 2 0 0 0
+cpu1 93 0 1083 9203 0 0 1 0 0 0
+cpu2 378 0 149 9976 0 0 1 0 0 0
+cpu3 98 0 234 10161 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 2101 tx 2101 drop 0/0/0/0 exceptions
+node ipv4 rx 2100 tx 2100 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 7920ms fw flow rx 5 tx 6 return rx 6 tx 5
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 1680ms fw flow rx 26406 tx 819131 return rx 819131 tx 26406
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+72    ipv4 1     4   3   192   12  0 0
+728   ipv4 1     4   3   376   12  0 0
+1064  ipv4 1     4   3   376   0   955487 1446604422
+1872  ipv4 1     4   3   192   0   30814 2158968
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=37 bytes=513113 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=5 bytes=250 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=9 bytes=515 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=6 bytes=320 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE
+106.20 397.11
+cpu  739 0 1748 39712 2 0 4 0 0 0
+cpu0 170 0 281 10069 2 0 2 0 0 0
+cpu1 93 0 1083 9303 0 0 1 0 0 0
+cpu2 378 0 149 10077 0 0 1 0 0 0
+cpu3 98 0 235 10262 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 2097 tx 2097 drop 0/0/0/0 exceptions
+node ipv4 rx 2095 tx 2095 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 8930ms fw flow rx 5 tx 6 return rx 6 tx 5
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 2690ms fw flow rx 26406 tx 819131 return rx 819131 tx 26406
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+72    ipv4 1     4   3   192   12  0 0
+728   ipv4 1     4   3   376   12  0 0
+1064  ipv4 1     4   3   376   0   1037897 1571373162
+1872  ipv4 1     4   3   192   0   33470 2344888
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=37 bytes=513113 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=5 bytes=250 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=9 bytes=515 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=6 bytes=320 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE
+107.21 401.13
+cpu  740 0 1750 40113 2 0 4 0 0 0
+cpu0 170 0 281 10169 2 0 2 0 0 0
+cpu1 93 0 1083 9403 0 0 1 0 0 0
+cpu2 379 0 149 10178 0 0 1 0 0 0
+cpu3 98 0 237 10362 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 2087 tx 2087 drop 0/0/0/0 exceptions
+node ipv4 rx 2098 tx 2098 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 9950ms fw flow rx 5 tx 6 return rx 6 tx 5
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 3710ms fw flow rx 26406 tx 819131 return rx 819131 tx 26406
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+72    ipv4 1     4   3   192   12  0 0
+728   ipv4 1     4   3   376   12  0 0
+1064  ipv4 1     4   3   376   0   1120289 1696114650
+1872  ipv4 1     4   3   192   0   36118 2530248
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=37 bytes=513113 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=5 bytes=250 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=9 bytes=515 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=6 bytes=320 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE
+108.23 405.14
+cpu  740 0 1751 40515 2 0 4 0 0 0
+cpu0 170 0 281 10269 2 0 2 0 0 0
+cpu1 93 0 1083 9502 0 0 1 0 0 0
+cpu2 379 0 149 10279 0 0 1 0 0 0
+cpu3 98 0 238 10463 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 2093 tx 2093 drop 0/0/0/0 exceptions
+node ipv4 rx 2090 tx 2091 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 10960ms fw flow rx 5 tx 6 return rx 6 tx 5
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 560ms fw flow rx 37274 tx 1156355 return rx 1156355 tx 37274
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+72    ipv4 1     4   3   192   12  0 0
+728   ipv4 1     4   3   376   12  0 0
+1064  ipv4 1     4   3   376   0   1202637 1820789522
+1872  ipv4 1     4   3   192   0   38774 2716168
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=37 bytes=513113 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=5 bytes=250 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=9 bytes=515 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=6 bytes=320 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=3 bytes=201 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE
+109.25 409.15
+cpu  741 0 1752 40916 2 0 4 0 0 0
+cpu0 170 0 281 10369 2 0 2 0 0 0
+cpu1 93 0 1083 9602 0 0 1 0 0 0
+cpu2 379 0 149 10380 0 0 1 0 0 0
+cpu3 99 0 239 10564 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=37 bytes=513113 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=5 bytes=250 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=5 bytes=295 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=10 bytes=58448 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=9 bytes=515 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=6 bytes=320 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=8 bytes=462 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=5 bytes=268 [OFFLOAD] mark=0 use=2
+SAMPLE
+110.26 413.17
+cpu  741 0 1753 41317 2 0 4 0 0 0
+cpu0 170 0 281 10469 2 0 2 0 0 0
+cpu1 93 0 1083 9702 0 0 1 0 0 0
+cpu2 379 0 150 10480 0 0 1 0 0 0
+cpu3 99 0 239 10665 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 1 tx 1 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=37 bytes=513113 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=5 bytes=250 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=5 bytes=295 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=10 bytes=58448 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=9 bytes=515 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=6 bytes=320 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=8 bytes=462 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=5 bytes=268 [OFFLOAD] mark=0 use=2
+SAMPLE
+111.28 417.18
+cpu  741 0 1755 41719 2 0 4 0 0 0
+cpu0 170 0 282 10569 2 0 2 0 0 0
+cpu1 93 0 1083 9801 0 0 1 0 0 0
+cpu2 379 0 151 10581 0 0 1 0 0 0
+cpu3 99 0 239 10766 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=37 bytes=513113 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=5 bytes=250 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=5 bytes=295 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=10 bytes=58448 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=9 bytes=515 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=6 bytes=320 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=8 bytes=462 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=5 bytes=268 [OFFLOAD] mark=0 use=2
+SAMPLE
+112.29 421.20
+cpu  741 0 1756 42120 2 0 4 0 0 0
+cpu0 170 0 282 10669 2 0 2 0 0 0
+cpu1 93 0 1083 9901 0 0 1 0 0 0
+cpu2 379 0 151 10682 0 0 1 0 0 0
+cpu3 99 0 240 10866 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=37 bytes=513113 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=5 bytes=250 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=5 bytes=295 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=10 bytes=58448 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=9 bytes=515 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=6 bytes=320 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=8 bytes=462 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=5 bytes=268 [OFFLOAD] mark=0 use=2
+SAMPLE
+113.31 425.21
+cpu  742 0 1757 42522 2 0 4 0 0 0
+cpu0 170 0 282 10769 2 0 2 0 0 0
+cpu1 94 0 1083 10001 0 0 1 0 0 0
+cpu2 379 0 151 10783 0 0 1 0 0 0
+cpu3 99 0 241 10967 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=37 bytes=513113 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=5 bytes=250 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=5 bytes=295 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=10 bytes=58448 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=9 bytes=515 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=6 bytes=320 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=8 bytes=462 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=5 bytes=268 [OFFLOAD] mark=0 use=2
+SAMPLE
+114.32 429.22
+cpu  742 0 1759 42923 2 0 4 0 0 0
+cpu0 170 0 282 10869 2 0 2 0 0 0
+cpu1 94 0 1084 10100 0 0 1 0 0 0
+cpu2 379 0 152 10884 0 0 1 0 0 0
+cpu3 99 0 241 11068 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=37 bytes=513113 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=5 bytes=250 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=5 bytes=295 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=10 bytes=58448 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=9 bytes=515 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=6 bytes=320 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=8 bytes=462 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=5 bytes=268 [OFFLOAD] mark=0 use=2
+SAMPLE
+115.34 433.24
+cpu  744 0 1760 43324 2 0 4 0 0 0
+cpu0 170 0 282 10969 2 0 2 0 0 0
+cpu1 94 0 1084 10200 0 0 1 0 0 0
+cpu2 380 0 152 10984 0 0 1 0 0 0
+cpu3 100 0 242 11169 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 1 tx 1 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=37 bytes=513113 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=5 bytes=250 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=5 bytes=295 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=10 bytes=58448 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=9 bytes=515 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=6 bytes=320 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=8 bytes=462 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=5 bytes=268 [OFFLOAD] mark=0 use=2
+SAMPLE
+116.35 437.25
+cpu  744 0 1761 43726 2 0 4 0 0 0
+cpu0 170 0 282 11069 2 0 2 0 0 0
+cpu1 94 0 1084 10300 0 0 1 0 0 0
+cpu2 380 0 152 11085 0 0 1 0 0 0
+cpu3 100 0 243 11270 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=37 bytes=513113 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=5 bytes=250 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=5 bytes=295 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=10 bytes=58448 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=9 bytes=515 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=6 bytes=320 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=8 bytes=462 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=5 bytes=268 [OFFLOAD] mark=0 use=2
+SAMPLE
+117.37 441.27
+cpu  744 0 1763 44127 2 0 4 0 0 0
+cpu0 170 0 282 11170 2 0 2 0 0 0
+cpu1 94 0 1084 10399 0 0 1 0 0 0
+cpu2 380 0 153 11186 0 0 1 0 0 0
+cpu3 100 0 244 11370 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=37 bytes=513113 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=5 bytes=250 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=5 bytes=295 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=10 bytes=58448 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=9 bytes=515 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=6 bytes=320 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=8 bytes=462 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=5 bytes=268 [OFFLOAD] mark=0 use=2
+SAMPLE
+118.38 445.28
+cpu  744 0 1764 44528 2 0 4 0 0 0
+cpu0 170 0 282 11270 2 0 2 0 0 0
+cpu1 94 0 1084 10499 0 0 1 0 0 0
+cpu2 380 0 154 11287 0 0 1 0 0 0
+cpu3 100 0 244 11471 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=37 bytes=513113 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=5 bytes=250 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=5 bytes=295 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=10 bytes=58448 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=9 bytes=515 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=6 bytes=320 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=8 bytes=462 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=5 bytes=268 [OFFLOAD] mark=0 use=2
+SAMPLE
+119.40 449.29
+cpu  745 0 1766 44930 2 0 4 0 0 0
+cpu0 170 0 282 11370 2 0 2 0 0 0
+cpu1 94 0 1084 10599 0 0 1 0 0 0
+cpu2 380 0 155 11388 0 0 1 0 0 0
+cpu3 101 0 245 11572 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=37 bytes=513113 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=5 bytes=250 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=5 bytes=295 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=10 bytes=58448 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=9 bytes=515 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=6 bytes=320 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=8 bytes=462 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=5 bytes=268 [OFFLOAD] mark=0 use=2
+SAMPLE
+120.41 453.31
+cpu  745 0 1767 45331 2 0 4 0 0 0
+cpu0 170 0 282 11470 2 0 2 0 0 0
+cpu1 94 0 1084 10699 0 0 1 0 0 0
+cpu2 380 0 155 11489 0 0 1 0 0 0
+cpu3 101 0 246 11673 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=37 bytes=513113 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=5 bytes=250 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=5 bytes=295 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=10 bytes=58448 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=9 bytes=515 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=6 bytes=320 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=8 bytes=462 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=5 bytes=268 [OFFLOAD] mark=0 use=2
+SAMPLE
+121.43 457.32
+cpu  745 0 1769 45733 2 0 4 0 0 0
+cpu0 170 0 282 11570 2 0 2 0 0 0
+cpu1 94 0 1084 10798 0 0 1 0 0 0
+cpu2 380 0 156 11589 0 0 1 0 0 0
+cpu3 101 0 247 11774 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=37 bytes=513113 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=5 bytes=250 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=5 bytes=295 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=10 bytes=58448 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=9 bytes=515 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=6 bytes=320 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=8 bytes=462 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=5 bytes=268 [OFFLOAD] mark=0 use=2
+SAMPLE
+122.44 461.34
+cpu  745 0 1770 46134 2 0 4 0 0 0
+cpu0 170 0 282 11670 2 0 2 0 0 0
+cpu1 94 0 1084 10898 0 0 1 0 0 0
+cpu2 380 0 156 11690 0 0 1 0 0 0
+cpu3 101 0 248 11874 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=37 bytes=513113 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=5 bytes=250 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=5 bytes=295 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=10 bytes=58448 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=9 bytes=515 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=6 bytes=320 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=8 bytes=462 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=5 bytes=268 [OFFLOAD] mark=0 use=2
+SAMPLE
+123.46 465.35
+cpu  747 0 1770 46535 2 0 5 0 0 0
+cpu0 170 0 282 11770 2 0 3 0 0 0
+cpu1 94 0 1084 10997 0 0 1 0 0 0
+cpu2 382 0 156 11791 0 0 1 0 0 0
+cpu3 101 0 248 11975 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=37 bytes=513113 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=5 bytes=250 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=5 bytes=295 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=10 bytes=58448 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=9 bytes=515 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=6 bytes=320 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=8 bytes=462 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=5 bytes=268 [OFFLOAD] mark=0 use=2
+SAMPLE
+124.47 469.36
+cpu  747 0 1771 46937 2 0 5 0 0 0
+cpu0 170 0 282 11870 2 0 3 0 0 0
+cpu1 94 0 1084 11097 0 0 1 0 0 0
+cpu2 382 0 157 11892 0 0 1 0 0 0
+cpu3 101 0 248 12076 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=37 bytes=513113 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=5 bytes=250 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=5 bytes=295 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=10 bytes=58448 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=9 bytes=515 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=6 bytes=320 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=8 bytes=462 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=5 bytes=268 [OFFLOAD] mark=0 use=2
+SAMPLE
+125.49 473.38
+cpu  747 0 1775 47338 2 0 5 0 0 0
+cpu0 170 0 283 11971 2 0 3 0 0 0
+cpu1 94 0 1084 11197 0 0 1 0 0 0
+cpu2 382 0 158 11992 0 0 1 0 0 0
+cpu3 101 0 250 12177 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+ipv4     2 tcp      6 9 CLOSE src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=37 bytes=513113 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=5 bytes=250 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=5 bytes=295 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=10 bytes=58448 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 9 CLOSE src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=9 bytes=515 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=6 bytes=320 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=8 bytes=462 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=5 bytes=268 [OFFLOAD] mark=0 use=2
+SAMPLE
+126.50 477.39
+cpu  747 0 1776 47739 2 0 5 0 0 0
+cpu0 170 0 283 12071 2 0 3 0 0 0
+cpu1 94 0 1084 11296 0 0 1 0 0 0
+cpu2 382 0 158 12093 0 0 1 0 0 0
+cpu3 101 0 251 12277 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+ipv4     2 tcp      6 8 CLOSE src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=37 bytes=513113 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=5 bytes=250 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=5 bytes=295 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=10 bytes=58448 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 8 CLOSE src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=9 bytes=515 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=6 bytes=320 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=8 bytes=462 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=5 bytes=268 [OFFLOAD] mark=0 use=2
+SAMPLE
+127.52 481.40
+cpu  748 0 1777 48141 2 0 5 0 0 0
+cpu0 170 0 283 12171 2 0 3 0 0 0
+cpu1 94 0 1084 11396 0 0 1 0 0 0
+cpu2 383 0 159 12194 0 0 1 0 0 0
+cpu3 101 0 251 12378 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+ipv4     2 tcp      6 7 CLOSE src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=37 bytes=513113 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=5 bytes=250 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=5 bytes=295 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=10 bytes=58448 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 7 CLOSE src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=9 bytes=515 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=6 bytes=320 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=8 bytes=462 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=5 bytes=268 [OFFLOAD] mark=0 use=2
+SAMPLE
+128.53 485.42
+cpu  748 0 1778 48542 2 0 5 0 0 0
+cpu0 170 0 283 12271 2 0 3 0 0 0
+cpu1 94 0 1084 11496 0 0 1 0 0 0
+cpu2 383 0 160 12295 0 0 1 0 0 0
+cpu3 101 0 251 12479 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+ipv4     2 tcp      6 6 CLOSE src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=37 bytes=513113 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=5 bytes=250 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=5 bytes=295 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=10 bytes=58448 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 6 CLOSE src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=9 bytes=515 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=6 bytes=320 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=8 bytes=462 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=5 bytes=268 [OFFLOAD] mark=0 use=2
+SAMPLE
+129.55 489.43
+cpu  748 0 1780 48944 2 0 5 0 0 0
+cpu0 170 0 283 12371 2 0 3 0 0 0
+cpu1 94 0 1084 11596 0 0 1 0 0 0
+cpu2 383 0 161 12395 0 0 1 0 0 0
+cpu3 101 0 252 12580 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+ipv4     2 tcp      6 5 CLOSE src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=37 bytes=513113 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=5 bytes=250 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=5 bytes=295 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=10 bytes=58448 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 5 CLOSE src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=9 bytes=515 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=6 bytes=320 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=8 bytes=462 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=5 bytes=268 [OFFLOAD] mark=0 use=2
+SAMPLE
+130.56 493.45
+cpu  748 0 1781 49345 2 0 5 0 0 0
+cpu0 170 0 284 12471 2 0 3 0 0 0
+cpu1 94 0 1084 11695 0 0 1 0 0 0
+cpu2 383 0 161 12496 0 0 1 0 0 0
+cpu3 101 0 252 12681 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+ipv4     2 tcp      6 4 CLOSE src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=37 bytes=513113 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=5 bytes=250 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=5 bytes=295 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=10 bytes=58448 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 4 CLOSE src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=9 bytes=515 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=6 bytes=320 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=8 bytes=462 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=5 bytes=268 [OFFLOAD] mark=0 use=2
+SAMPLE
+131.58 497.46
+cpu  749 0 1782 49746 2 0 5 0 0 0
+cpu0 170 0 284 12571 2 0 3 0 0 0
+cpu1 94 0 1084 11795 0 0 1 0 0 0
+cpu2 383 0 161 12597 0 0 1 0 0 0
+cpu3 102 0 253 12782 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+ipv4     2 tcp      6 3 CLOSE src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=37 bytes=513113 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=5 bytes=250 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=5 bytes=295 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=10 bytes=58448 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 3 CLOSE src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=9 bytes=515 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=6 bytes=320 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=8 bytes=462 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=5 bytes=268 [OFFLOAD] mark=0 use=2
+SAMPLE
+132.59 501.47
+cpu  749 0 1783 50148 2 0 5 0 0 0
+cpu0 170 0 284 12671 2 0 3 0 0 0
+cpu1 94 0 1084 11895 0 0 1 0 0 0
+cpu2 383 0 161 12698 0 0 1 0 0 0
+cpu3 102 0 254 12883 0 0 0 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 4 rejected 0
+bound 0 pushed 4 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+ipv4     2 tcp      6 2 CLOSE src=192.168.100.63 dst=192.168.1.158 sport=55385 dport=5214 packets=37 bytes=513113 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=55385 packets=5 bytes=250 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=35819 dport=5214 packets=5 bytes=295 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=35819 packets=10 bytes=58448 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 2 CLOSE src=192.168.100.63 dst=192.168.1.158 sport=44199 dport=5214 packets=9 bytes=515 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=44199 packets=6 bytes=320 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=34271 dport=5214 packets=8 bytes=462 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=34271 packets=5 bytes=268 [OFFLOAD] mark=0 use=2

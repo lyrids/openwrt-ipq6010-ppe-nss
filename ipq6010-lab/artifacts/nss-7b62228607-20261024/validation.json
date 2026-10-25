@@ -1,0 +1,104 @@
+{
+  "target": "qualcommax/ipq60xx",
+  "version_code": "r37616+90-a31dd90f69",
+  "supported_devices": [
+    "jdcloud,re-cs-02"
+  ],
+  "images": [
+    {
+      "filesystem": "initramfs",
+      "name": "openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-initramfs-uImage.itb",
+      "sha256": "5f581295b381e402d7a428429c785d58bc9a6c9587a487e981a660935f615246",
+      "sha256_unsigned": "5f581295b381e402d7a428429c785d58bc9a6c9587a487e981a660935f615246",
+      "size": 18028036,
+      "type": "kernel"
+    },
+    {
+      "filesystem": "squashfs",
+      "name": "openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-squashfs-sysupgrade.bin",
+      "sha256": "b0965e43762b73286c43ebdc8d2415ee9835c30fad5b62eaa67b8f9a4a458052",
+      "sha256_unsigned": "b0965e43762b73286c43ebdc8d2415ee9835c30fad5b62eaa67b8f9a4a458052",
+      "size": 17336598,
+      "type": "sysupgrade",
+      "kernel_bytes": 5852156,
+      "rootfs_bytes": 11479040,
+      "kernel_partition_bytes": 6291456,
+      "archive_members": [
+        "sysupgrade-jdcloud_re-cs-02",
+        "sysupgrade-jdcloud_re-cs-02/CONTROL",
+        "sysupgrade-jdcloud_re-cs-02/kernel",
+        "sysupgrade-jdcloud_re-cs-02/root"
+      ]
+    }
+  ],
+  "checks": [
+    "metadata SHA256 and size",
+    "FIT board configuration",
+    "sysupgrade archive and 6 MiB kernel limit",
+    "required wireless package manifest",
+    "PPE/EDMA kernel configuration",
+    "actual SquashFS NSS module, firmware 12.5/11.4 and startup files",
+    "NSS enabled by default; firmware 12.5 selected",
+    "ath11k bus autoload deferred to NSS startup",
+    "board DTB contains NSS core and reserved memory"
+  ],
+  "hardware_boot_tested": true,
+  "local_patch": "local-fixes.patch (guard absent stacked-switch DSA tag protocol)",
+  "hardware_validation": {
+    "rootfs": "initramfs/tmpfs",
+    "NSS_firmware": "12.5 CP, core 0 booted",
+    "NSS_initialization": "integrated radios and QCN9074 firmware init/start acknowledged",
+    "AP_interfaces": "three secured APs enabled, NSS virtual interfaces 31/32/33 reporting",
+    "wired_management": "p43 LAN1 ping/SSH; second server LAN4 DHCP",
+    "unchanged_partition_hashes": [
+      "/dev/mmcblk0p12",
+      "/dev/mmcblk0p13",
+      "/dev/mmcblk0p14",
+      "/dev/mmcblk0p15",
+      "/dev/mmcblk0p16",
+      "/dev/mmcblk0p17",
+      "/dev/mmcblk0p2",
+      "/dev/mmcblk0p3"
+    ],
+    "previous_crypto_clock_warning_observed": false,
+    "client_traffic_offload_verified": true,
+    "persistent_installation_tested": false,
+    "traffic_test": {
+      "wired_iperf": {
+        "wifi_to_ethernet_mbps": 2.17,
+        "ethernet_to_wifi_sender_mbps": 565,
+        "reverse_tcp_retransmissions": 63
+      },
+      "monitoring": [
+        {
+          "start_uptime": 1880.57,
+          "end_uptime": 1910.7,
+          "mean_cpu_busy_percent": 1.644459436667229,
+          "cpu0_busy_percent": 3.5775713794289645,
+          "maximum_reported_firmware_packet_counters": [
+            4682,
+            2523,
+            2523,
+            4682
+          ]
+        },
+        {
+          "start_uptime": 1914.72,
+          "end_uptime": 1944.84,
+          "mean_cpu_busy_percent": 1.206140350877193,
+          "cpu0_busy_percent": 2.28611014894354,
+          "maximum_reported_firmware_packet_counters": [
+            108112,
+            1332096,
+            1332096,
+            108112
+          ]
+        }
+      ],
+      "NSS_bridge_rule_pushes": 4,
+      "NSS_bridge_firmware_rejections": 0,
+      "conclusion": "NSS Wi-Fi datapath and bridged connection offload exercised: installed rules and firmware packet counters observed. Severe uplink throughput limitation and descriptor allocation-failure reports remain unresolved.",
+      "persistent_installation_tested": false
+    }
+  }
+}

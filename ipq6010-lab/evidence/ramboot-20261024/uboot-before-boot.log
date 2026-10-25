@@ -1,0 +1,128 @@
+
+
+U-Boot 2016.01-3011049 (2026-08-16 14:28:46 +0800)
+
+Model: JDCloud AX6600 (Athena) (ipq6018-jdcloud_re-cs-02)
+Config(s): config@cp03-c3, config-cp03-c3
+DRAM:  smem ram ptable found: ver: 2 len: 4
+1 GiB
+NAND:  Nand Flash error. Status = 80
+Reset cmd status failed
+SF: Unsupported flash IDs: manuf 00, jedec 0000, ext_jedec 0000
+ipq_spi: SPI Flash not found (bus/cs/speed/mode) = (0/0/48000000/0)
+0 MiB
+MMC:   <NULL>: 0 (eMMC)
+In:    serial@78B1000
+Out:   serial@78B1000
+Err:   serial@78B1000
+SF: Unsupported flash IDs: manuf 00, jedec 0000, ext_jedec 0000
+FLASH(S): MMC
+machid: 8030202
+eth5 MAC Address from ART is not valid
+Net: MAC0 addr:dc:d8:7b:54:83:ec
+PHY ID1: 0xffff
+PHY ID2: 0xffff
+PHY ID1: 0x4d
+PHY ID2: 0xd101
+EDMA ver 1 hw init
+Num rings - TxDesc:1 (0-0) TxCmpl:1 (0-0)
+RxDesc:1 (15-15) RxFill:1 (7-7)
+ipq6018_edma_alloc_rings: successfull
+ipq6018_edma_setup_ring_resources: successfull
+ipq6018_edma_configure_rings: successfull
+ipq6018_edma_hw_init: successfull
+eth0
+screen button pressed, enter web failsafe mode after: 3 2 1 0 
+
+Web failsafe UI started
+URL: http://192.168.1.1/
+
+Press Ctrl+C to exit
+
+ipq6018_eth_halt: done
+eth0 PHY0 up Speed :1000 Full duplex
+eth0 PHY1 Down Speed :10 Half duplex
+eth0 PHY2 Down Speed :10 Half duplex
+eth0 PHY3 Down Speed :10 Half duplex
+eth0 PHY4 Down Speed :10 Half duplex
+ipq6018_eth_init: done
+Telnet server started on port 23
+httpd_recv_hdr: GET /uimage.html
+gunzip_and_send: gunzipping 404.html (410 -> 777 bytes)
+httpd_cleanup: Freeing gunzip buffer at 0x4a282150
+httpd_recv_hdr: GET /
+gunzip_and_send: gunzipping index.html (381 -> 869 bytes)
+httpd_cleanup: Freeing gunzip buffer at 0x4a282150
+Telnet connection from 192.168.1.132:52508
+Telnet connection closed 192.168.1.132:52508
+httpd_recv_hdr: GET /
+gunzip_and_send: gunzipping index.html (381 -> 869 bytes)
+httpd_cleanup: Freeing gunzip buffer at 0x4a282150
+Telnet connection from 192.168.1.132:50774
+httpd_recv_hdr: GET /main.js
+gunzip_and_send: gunzipping main.js (34182 -> 126142 bytes)
+httpd_cleanup: Freeing gunzip buffer at 0x4a282df8
+
+U-Boot 2016.01-3011049 (2026-08-16 14:28:46 +0800)
+arm-openwrt-linux-gcc (OpenWrt GCC 5.2.0 6404588+r49254) 5.2.0
+GNU ld (GNU Binutils) 2.24.0
+
+IPQ6018# arch_number = 0x08030202
+boot_params = 0x40000100
+DRAM bank   = 0x00000000
+-> start    = 0x40000000
+-> size     = 0x40000000
+eth0name    = eth0
+ethaddr     = dc:d8:7b:54:83:ec
+current eth = eth0
+ip_addr     = 192.168.1.1
+baudrate    = 115200 bps
+TLB addr    = 0x4A4C0000
+relocaddr   = 0x4A400000
+reloc off   = 0x00000000
+irq_sp      = 0x4A27BE80
+sp start    = 0x4A27BE70
+Board Type  = 0
+
+IPQ6018# bootcmd=bootipq
+ipaddr=192.168.1.1
+serverip=192.168.1.2
+## Error: "loadaddr" not defined
+## Error: "verify" not defined
+
+IPQ6018# bootm - boot application image from memory
+
+
+IPQ6018# tftpboot - boot image via network using TFTP protocol
+
+
+IPQ6018# Telnet connection closed 192.168.1.132:50774
+httpd_recv_hdr: GET /initramfs.html
+httpd_recv_hdr: POST /upload
+httpd_recv_hdr: Content-Length: 15173198 Bytes
+httpd_recv_hdr: pdata->upload_ptr = 0x50000000
+httpd_recv_payload: speed: 4.9 MiB/s
+httpd_parse_post_data: numformdata: 1
+httpd_parse_post_data: formdata[1]: name = initramfs, filename = initramfs.itb, data = 0x500000a8, size = 15172976 (0xe78570)
+upload_handler: upload_data = 0x500000a8, upload_size = 15172976 (0xe78570)
+failsafe_validate_image: fw_type = 3 (FIT Image), data_addr = 0x500000a8, data_size = 15172976 (0xe78570)
+upload_handler: response message: {"status":"success","info":{"type":"FIT Image","size":"15172976","md5":"00fb51bb6b72b682f6b59aad18dc524b","name":"initramfs.itb"}}
+Telnet connection from 192.168.1.132:35358
+
+## Checking Image at 50000000 ...
+Unknown image format!
+
+IPQ6018# Telnet connection closed 192.168.1.132:35358
+Telnet connection from 192.168.1.132:41990
+## Error: "fileaddr" not defined
+## Error: "filesize" not defined
+
+IPQ6018# 50000000: 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d    ----------------
+
+IPQ6018# bootm - boot application image from memory
+
+
+IPQ6018# iminfo - print header information for application image
+
+
+IPQ6018# Telnet connection closed 192.168.1.132:41990

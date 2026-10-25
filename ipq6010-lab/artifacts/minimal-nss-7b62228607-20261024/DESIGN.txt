@@ -1,0 +1,27 @@
+JDCloud RE-CS-02 PPE/NSS minimal candidate
+Pinned project source: 7b62228607e718d1317e5622264147772c59916c
+This is the current project ppe-nss tip as checked 2026-10-24.
+The previous NSS candidate already used this project and architecture.
+The new variant changes firmware packaging and adds explicit image provenance;
+it does not claim a different upstream source revision or a throughput fix.
+
+Wired plane: qca_edma plus qca_ppe/DSA; PPE programs hardware without firmware.
+Integration: kernel flowtable, switchdev/DSA and standard Linux network model.
+Wi-Fi: patched ath11k plus nss-wifi-drv to boot and manage NSS firmware.
+Closed component: selected IPQ60xx CP NSS 12.5 firmware only.
+Excluded: firmware 11.4, qca-nss-drv, ECM, NSS proprietary qdiscs, optional QoS/UI.
+Board Wi-Fi firmware/calibration remains required and included separately.
+Retained diagnostic tools: iperf3, ethtool-full, ppe-help.
+
+Local source fix: fail closed for absent stacked-switch QCA 802.1Q tagger.
+Local feed patch: install NSS_LINE only, package release bumped to 2.
+Source/feed patches, their SHA256s, full config, feed pins, overlay and hashes
+are exported alongside the images for reconstruction.
+Future kernel compatibility is a goal, not a guarantee: this branch contains
+out-of-tree patches and a firmware ABI adapter that still need maintenance.
+
+Known hardware limitation inherited from first NSS candidate:
+QCN9074 client-to-LAN TCP ~2.17 Mbit/s versus reverse ~565 Mbit/s;
+NSS firmware bridge rules and packet counters confirmed, but descriptor
+allocation-failure reports rise. This is not production-ready.
+No persistent installation or automatic router reboot is part of this build.

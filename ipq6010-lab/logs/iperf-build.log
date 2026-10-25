@@ -1,0 +1,57 @@
+Making all in src
+make[1]: Entering directory '/home/ly/projects/openwrt-dev/src/iperf-3.17.1/src'
+make  all-am
+make[2]: Entering directory '/home/ly/projects/openwrt-dev/src/iperf-3.17.1/src'
+  CC       iperf_api.lo
+  CC       iperf_client_api.lo
+  CC       iperf_locale.lo
+  CC       iperf_server_api.lo
+  CC       iperf_tcp.lo
+  CC       iperf_udp.lo
+  CC       iperf_sctp.lo
+  CC       iperf_util.lo
+  CC       iperf_time.lo
+  CC       iperf_pthread.lo
+  CC       dscp.lo
+  CC       net.lo
+  CC       tcp_info.lo
+  CC       timer.lo
+  CC       units.lo
+  CC       t_timer-t_timer.o
+  CC       t_units-t_units.o
+  CC       t_uuid-t_uuid.o
+  CC       t_api-t_api.o
+  CC       t_auth-t_auth.o
+  CC       iperf3-main.o
+  CC       cjson.lo
+  CC       iperf_error.lo
+  CC       iperf_auth.lo
+  CCLD     libiperf.la
+  CCLD     iperf3
+  CCLD     t_timer
+  CCLD     t_units
+  CCLD     t_uuid
+/usr/bin/ld: ./.libs/libiperf.a(iperf_tcp.o): in function `iperf_tcp_listen':
+iperf_tcp.c:(.text+0x3f0): warning: Using 'getaddrinfo' in statically linked applications requires at runtime the shared libraries from the glibc version used for linking
+/usr/bin/ld: ./.libs/libiperf.a(iperf_tcp.o): in function `iperf_tcp_listen':
+iperf_tcp.c:(.text+0x3f0): warning: Using 'getaddrinfo' in statically linked applications requires at runtime the shared libraries from the glibc version used for linking
+  CCLD     t_api
+  CCLD     t_auth
+/usr/bin/ld: ./.libs/libiperf.a(iperf_tcp.o): in function `iperf_tcp_listen':
+iperf_tcp.c:(.text+0x3f0): warning: Using 'getaddrinfo' in statically linked applications requires at runtime the shared libraries from the glibc version used for linking
+make[2]: Leaving directory '/home/ly/projects/openwrt-dev/src/iperf-3.17.1/src'
+make[1]: Leaving directory '/home/ly/projects/openwrt-dev/src/iperf-3.17.1/src'
+Making all in examples
+make[1]: Entering directory '/home/ly/projects/openwrt-dev/src/iperf-3.17.1/examples'
+  CC       mic-mic.o
+  CC       mis-mis.o
+  CCLD     mis
+  CCLD     mic
+/usr/bin/ld/usr/bin/ld: : ../src/.libs/libiperf.a(iperf_tcp.o)../src/.libs/libiperf.a(iperf_tcp.o): in function `: in function `iperf_tcp_listeniperf_tcp_listen':
+':
+iperf_tcp.c:iperf_tcp.c:((.text.text+0x+0x3f03f0)): : warning: warning: Using 'getaddrinfo' in statically linked applications requires at runtime the shared libraries from the glibc version used for linkingUsing 'getaddrinfo' in statically linked applications requires at runtime the shared libraries from the glibc version used for linking
+
+make[1]: Leaving directory '/home/ly/projects/openwrt-dev/src/iperf-3.17.1/examples'
+make[1]: Entering directory '/home/ly/projects/openwrt-dev/src/iperf-3.17.1'
+make[1]: Nothing to be done for 'all-am'.
+make[1]: Leaving directory '/home/ly/projects/openwrt-dev/src/iperf-3.17.1'

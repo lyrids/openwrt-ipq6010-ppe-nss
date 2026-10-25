@@ -1,0 +1,18 @@
+2026-10-24
+Router kexec_load and kexec_file_load both return ENOSYS (38), verified by
+static probe with invalid flags/descriptors; no kernel was loaded/executed.
+U-Boot partition banner: U-Boot 2016.01-3011049 (2026-08-16 14:28:46 +0800).
+CRC-valid 256 KiB environment at p12 offset 0, header size 4:
+bootcmd=bootipq; bootdelay=2; ipaddr=192.168.1.1; serverip=192.168.1.2;
+stdin/stdout/stderr=serial@78B1000.
+Installed bootloader contains U-Boot Telnet Console and HTTP loader strings.
+Reference source (not proven byte-identical):
+chenxin527/uboot-ipq60xx-emmc-build f2d712418b0bd9224247af55854fac58586b6107.
+Reference uImage field selects FIT RAM boot through bootm 0x50000000;
+it does not select firmware/eMMC upgrade. Verify actual live page before POST.
+SCREEN/RESET held across boot for 5 LED flashes enters HTTP recovery in
+reference source. User confirmed availability to operate physical button.
+p43 Wi-Fi 192.168.21.63 remains management path, eth0 has 10.0.0.28 and a
+new temporary 192.168.1.2/24 alias. Image staged at
+/home/ubuntu/openwrt-ramboot/initramfs.itb; SHA256 verified against build.
+Partition hashes saved separately before test. No reboot has occurred yet.

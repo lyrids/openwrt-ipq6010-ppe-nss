@@ -1,0 +1,19 @@
+{
+  "topology": "p43 192.168.100.63 eth0.100 tagged -> LAN1 PVID100 tagged -> br-lan.100 192.168.100.1 routing -> br-lan 192.168.1.1 -> LAN4 untagged VLAN1 -> m4 192.168.1.158",
+  "hardware_offload": "Both TCP directions stalled during iperf parameter exchange; bounded commands exited 137; no complete throughput JSON",
+  "nss_pushed_before": 8,
+  "nss_pushed_after": 8,
+  "reject_detail": 95,
+  "reason": "Host adapter rejects VLAN without PPPoE; partial PPE steering remains",
+  "software_control": {
+    "software-forward": {
+      "receiver_mbps": 936.188761541967,
+      "retransmits": 0
+    },
+    "software-reverse": {
+      "receiver_mbps": 938.8283561752686,
+      "retransmits": 7
+    }
+  },
+  "final_state": "Hardware flowtable restored; VLAN/PVID configuration retained; p43 host route and narrow forwarding allowance retained; temporary iperf servers stopped"
+}

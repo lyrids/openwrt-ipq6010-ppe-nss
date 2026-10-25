@@ -1,0 +1,19 @@
+ethernet enabled 1 active 1 offers 8 pushed 2 rejected 2
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 9/6
+bound 0 pushed 2 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 2
+node eth_rx rx 5 tx 5 drop 0/0/0/0 exceptions
+node ipv4 rx 5 tx 0 drop 0/0/0/0 exceptions 9:5
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject mtu dir 1 proto 17 [fd42:6018:1::60]:5242 -> [fd42:6018:100::63]:59940 detail 95
+reject mtu dir 1 proto 17 [fd42:6018:1::60]:5242 -> [fd42:6018:100::63]:59940 detail 95
+proto 17 v6 ethernet if 1/4 prio 0 installed 1 age 6230ms fw flow rx 28 tx 28 return rx 28 tx 28
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+232   ipv6 2     4   3   280   12  18 2628
+2008  ipv6 2     4   3   496   12  18 26388
+ipv6     10 udp      17 121 src=fd42:6018:100::63 dst=fd42:6018:1::60 sport=55007 dport=5242 packets=63 bytes=91224 src=fd42:6018:1::60 dst=fd42:6018:100::63 sport=5242 dport=55007 packets=1 bytes=132 [ASSURED] mark=0 use=1
+ipv6     10 udp      17 src=fd42:6018:100::63 dst=fd42:6018:1::60 sport=60172 dport=5242 packets=1 bytes=1448 src=fd42:6018:1::60 dst=fd42:6018:100::63 sport=5242 dport=60172 packets=1 bytes=132 [HW_OFFLOAD] mark=0 use=2
+ipv6     10 udp      17 129 src=fd42:6018:100::63 dst=fd42:6018:1::60 sport=59940 dport=5242 packets=59 bytes=63696 src=fd42:6018:1::60 dst=fd42:6018:100::63 sport=5242 dport=59940 packets=19 bytes=2508 [ASSURED] mark=0 use=1

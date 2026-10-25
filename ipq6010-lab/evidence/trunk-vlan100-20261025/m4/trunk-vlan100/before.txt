@@ -1,0 +1,72 @@
+[{"ifname":"lan1","vlans":[{"vlan":1,"flags":["PVID","Egress Untagged"]},{"vlan":100}]},{"ifname":"lan2","vlans":[{"vlan":1,"flags":["PVID","Egress Untagged"]}]},{"ifname":"lan3","vlans":[{"vlan":1,"flags":["PVID","Egress Untagged"]}]},{"ifname":"lan4","vlans":[{"vlan":1,"flags":["PVID","Egress Untagged"]},{"vlan":100}]},{"ifname":"br-lan","vlans":[{"vlan":1,"flags":["PVID","Egress Untagged"]}]}]
+dc:d8:7c:54:83:ec dev eth0 self permanent
+33:33:00:00:00:01 dev eth0 self permanent
+01:00:5e:00:00:01 dev eth0 self permanent
+33:33:ff:54:83:ec dev eth0 self permanent
+33:33:00:00:00:02 dev eth0 self permanent
+33:33:ff:00:00:00 dev eth0 self permanent
+dc:a6:32:b0:ab:b0 dev lan1 vlan 1 master br-lan 
+dc:d8:7b:54:83:ec dev lan1 vlan 100 master br-lan permanent
+dc:a6:32:b0:ab:b0 dev lan1 master br-lan 
+dc:a6:32:b0:ab:b0 dev lan1 self 
+dc:a6:32:b0:ab:b0 dev lan1 vlan 1 self 
+dc:d8:7c:54:83:ec dev lan2 vlan 1 master br-lan permanent
+dc:d8:7c:54:83:ec dev lan2 master br-lan permanent
+96:63:65:3c:53:51 dev lan4 vlan 1 master br-lan 
+96:63:65:3c:53:51 dev lan4 master br-lan 
+dc:d8:7b:54:83:ec dev lan4 vlan 1 master br-lan permanent
+dc:d8:7b:54:83:ec dev lan4 master br-lan permanent
+96:63:65:3c:53:51 dev lan4 self 
+96:63:65:3c:53:51 dev lan4 vlan 1 self 
+33:33:00:00:00:01 dev br-lan self permanent
+33:33:00:00:00:02 dev br-lan self permanent
+01:00:5e:00:00:01 dev br-lan self permanent
+33:33:ff:00:00:01 dev br-lan self permanent
+33:33:ff:54:83:ec dev br-lan self permanent
+33:33:ff:00:00:00 dev br-lan self permanent
+33:33:00:01:00:02 dev br-lan self permanent
+33:33:00:01:00:03 dev br-lan self permanent
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   77 77 38238 2 220
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813220 9877900104 0 0
+1    4711995 5021697085 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    26105710 39369800779 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   77 38238
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 1 tx 0 drop 0/0/0/0 exceptions 9:1
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0

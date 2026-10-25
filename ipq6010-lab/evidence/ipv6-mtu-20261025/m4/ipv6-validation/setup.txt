@@ -1,0 +1,9 @@
+fd42:6018:1::/64 dev br-lan proto kernel metric 256 pref medium
+fd42:6018:1:4::/62 via fe80::dea6:32ff:feb0:abb0 dev br-lan proto static metric 1024 pref medium
+fd42:6018:100::/64 dev br-lan.100 proto kernel metric 256 pref medium
+fde5:c658:76a2::/64 dev br-lan proto static metric 1024 pref medium
+fde5:c658:76a2:4::/62 via fe80::dea6:32ff:feb0:abb0 dev br-lan proto static metric 1024 pref medium
+unreachable fde5:c658:76a2::/48 dev lo proto static metric 2147483647 pref medium
+fe80::/64 dev eth0 proto kernel metric 256 pref medium
+fe80::/64 dev br-lan proto kernel metric 256 pref medium
+fe80::/64 dev br-lan.100 proto kernel metric 256 pref medium

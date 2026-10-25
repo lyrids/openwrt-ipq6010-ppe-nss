@@ -1,0 +1,143 @@
+Failed to create pid file /var/run/pppd/ppp-nss-pppoe.pid: No such file or directory
+Failed to create pid file /var/run/pppd/ppp-nss-pppoe.pid: No such file or directory
+Send PPPOE Discovery V1T1 PADI session 0x0 length 20
+ dst ff:ff:ff:ff:ff:ff  src dc:d8:7b:54:83:ec
+ [service-name nss-test] [host-uniq 9f 0f 00 00]
+Recv PPPOE Discovery V1T1 PADO session 0x0 length 59
+ dst dc:d8:7b:54:83:ec  src dc:a6:32:b0:ab:b0
+ [AC-name nss-test-ac] [service-name nss-test] [AC-cookie 5b cf 22 73 48 0c d4 99 09 93 cd ce 33 61 96 8e e7 1e 01 00] [host-uniq 9f 0f 00 00]
+Send PPPOE Discovery V1T1 PADR session 0x0 length 44
+ dst dc:a6:32:b0:ab:b0  src dc:d8:7b:54:83:ec
+ [service-name nss-test] [host-uniq 9f 0f 00 00] [AC-cookie 5b cf 22 73 48 0c d4 99 09 93 cd ce 33 61 96 8e e7 1e 01 00]
+Recv PPPOE Discovery V1T1 PADS session 0x0 length 55
+ dst dc:d8:7b:54:83:ec  src dc:a6:32:b0:ab:b0
+ [AC-system-error RP-PPPoE: Server: No client slots available] [host-uniq 9f 0f 00 00]
+PADS: System-Error: RP-PPPoE: Server: No client slots available
+Send PPPOE Discovery V1T1 PADR session 0x0 length 44
+ dst dc:a6:32:b0:ab:b0  src dc:d8:7b:54:83:ec
+ [service-name nss-test] [host-uniq 9f 0f 00 00] [AC-cookie 5b cf 22 73 48 0c d4 99 09 93 cd ce 33 61 96 8e e7 1e 01 00]
+Recv PPPOE Discovery V1T1 PADS session 0x0 length 55
+ dst dc:d8:7b:54:83:ec  src dc:a6:32:b0:ab:b0
+ [AC-system-error RP-PPPoE: Server: No client slots available] [host-uniq 9f 0f 00 00]
+PADS: System-Error: RP-PPPoE: Server: No client slots available
+Send PPPOE Discovery V1T1 PADR session 0x0 length 44
+ dst dc:a6:32:b0:ab:b0  src dc:d8:7b:54:83:ec
+ [service-name nss-test] [host-uniq 9f 0f 00 00] [AC-cookie 5b cf 22 73 48 0c d4 99 09 93 cd ce 33 61 96 8e e7 1e 01 00]
+Recv PPPOE Discovery V1T1 PADS session 0x0 length 55
+ dst dc:d8:7b:54:83:ec  src dc:a6:32:b0:ab:b0
+ [AC-system-error RP-PPPoE: Server: No client slots available] [host-uniq 9f 0f 00 00]
+PADS: System-Error: RP-PPPoE: Server: No client slots available
+Timeout waiting for PADS packets
+Unable to complete PPPoE Discovery phase 2
+Failed to create pid file /var/run/pppd/ppp-nss-pppoe.pid: No such file or directory
+Failed to create pid file /var/run/pppd/ppp-nss-pppoe.pid: No such file or directory
+Send PPPOE Discovery V1T1 PADI session 0x0 length 20
+ dst ff:ff:ff:ff:ff:ff  src dc:d8:7b:54:83:ec
+ [service-name nss-test] [host-uniq a8 0f 00 00]
+Recv PPPOE Discovery V1T1 PADO session 0x0 length 59
+ dst dc:d8:7b:54:83:ec  src dc:a6:32:b0:ab:b0
+ [AC-name nss-test-ac] [service-name nss-test] [AC-cookie 5b cf 22 73 48 0c d4 99 09 93 cd ce 33 61 96 8e e7 1e 01 00] [host-uniq a8 0f 00 00]
+Send PPPOE Discovery V1T1 PADR session 0x0 length 44
+ dst dc:a6:32:b0:ab:b0  src dc:d8:7b:54:83:ec
+ [service-name nss-test] [host-uniq a8 0f 00 00] [AC-cookie 5b cf 22 73 48 0c d4 99 09 93 cd ce 33 61 96 8e e7 1e 01 00]
+Recv PPPOE Discovery V1T1 PADS session 0x1 length 20
+ dst dc:d8:7b:54:83:ec  src dc:a6:32:b0:ab:b0
+ [service-name nss-test] [host-uniq a8 0f 00 00]
+PPP session is 1
+Connected to DC:A6:32:B0:AB:B0 via interface br-lan.100
+using channel 1
+Using interface ppp-nsstest
+Connect: ppp-nsstest <--> br-lan.100
+sent [LCP ConfReq id=0x1 <mru 1492> <magic 0x244e0cf9>]
+rcvd [LCP ConfReq id=0x1 <mru 1492> <magic 0x1cf383b9>]
+sent [LCP ConfAck id=0x1 <mru 1492> <magic 0x1cf383b9>]
+sent [LCP ConfReq id=0x1 <mru 1492> <magic 0x244e0cf9>]
+rcvd [LCP ConfAck id=0x1 <mru 1492> <magic 0x244e0cf9>]
+peer from calling number DC:A6:32:B0:AB:B0 authorized
+sent [IPCP ConfReq id=0x1 <addr 0.0.0.0>]
+rcvd [LCP EchoReq id=0x0 magic=0x1cf383b9]
+sent [LCP EchoRep id=0x0 magic=0x244e0cf9]
+rcvd [IPCP ConfReq id=0x1 <addr 172.31.100.1>]
+sent [IPCP ConfAck id=0x1 <addr 172.31.100.1>]
+rcvd [IPCP ConfNak id=0x1 <addr 172.31.100.2>]
+sent [IPCP ConfReq id=0x2 <addr 172.31.100.2>]
+rcvd [IPCP ConfAck id=0x2 <addr 172.31.100.2>]
+local  IP address 172.31.100.2
+remote IP address 172.31.100.1
+Script /bin/true started (pid 4025)
+Script /bin/true finished (pid 4025), status = 0x0
+Send PPPOE Discovery V1T1 PADI session 0x0 length 20
+ dst ff:ff:ff:ff:ff:ff  src dc:d8:7b:54:83:ec
+ [service-name nss-test] [host-uniq 12 11 00 00]
+Recv PPPOE Discovery V1T1 PADO session 0x0 length 59
+ dst dc:d8:7b:54:83:ec  src dc:a6:32:b0:ab:b0
+ [AC-name nss-test-ac] [service-name nss-test] [AC-cookie 5b cf 22 73 48 0c d4 99 09 93 cd ce 33 61 96 8e e7 1e 01 00] [host-uniq 12 11 00 00]
+Send PPPOE Discovery V1T1 PADR session 0x0 length 44
+ dst dc:a6:32:b0:ab:b0  src dc:d8:7b:54:83:ec
+ [service-name nss-test] [host-uniq 12 11 00 00] [AC-cookie 5b cf 22 73 48 0c d4 99 09 93 cd ce 33 61 96 8e e7 1e 01 00]
+Recv PPPOE Discovery V1T1 PADS session 0x0 length 55
+ dst dc:d8:7b:54:83:ec  src dc:a6:32:b0:ab:b0
+ [AC-system-error RP-PPPoE: Server: No client slots available] [host-uniq 12 11 00 00]
+PADS: System-Error: RP-PPPoE: Server: No client slots available
+Send PPPOE Discovery V1T1 PADR session 0x0 length 44
+ dst dc:a6:32:b0:ab:b0  src dc:d8:7b:54:83:ec
+ [service-name nss-test] [host-uniq 12 11 00 00] [AC-cookie 5b cf 22 73 48 0c d4 99 09 93 cd ce 33 61 96 8e e7 1e 01 00]
+Recv PPPOE Discovery V1T1 PADS session 0x0 length 55
+ dst dc:d8:7b:54:83:ec  src dc:a6:32:b0:ab:b0
+ [AC-system-error RP-PPPoE: Server: No client slots available] [host-uniq 12 11 00 00]
+PADS: System-Error: RP-PPPoE: Server: No client slots available
+Send PPPOE Discovery V1T1 PADR session 0x0 length 44
+ dst dc:a6:32:b0:ab:b0  src dc:d8:7b:54:83:ec
+ [service-name nss-test] [host-uniq 12 11 00 00] [AC-cookie 5b cf 22 73 48 0c d4 99 09 93 cd ce 33 61 96 8e e7 1e 01 00]
+Recv PPPOE Discovery V1T1 PADS session 0x0 length 55
+ dst dc:d8:7b:54:83:ec  src dc:a6:32:b0:ab:b0
+ [AC-system-error RP-PPPoE: Server: No client slots available] [host-uniq 12 11 00 00]
+PADS: System-Error: RP-PPPoE: Server: No client slots available
+Timeout waiting for PADS packets
+Unable to complete PPPoE Discovery phase 2
+Terminating on signal 15
+Connect time 2.6 minutes.
+Sent 89454 bytes, received 4716 bytes.
+Script /bin/true started (pid 4384)
+sent [LCP TermReq id=0x2 "User request"]
+Script /bin/true finished (pid 4384), status = 0x0
+rcvd [LCP TermAck id=0x2]
+Connection terminated.
+Send PPPOE Discovery V1T1 PADT session 0x1 length 32
+ dst dc:a6:32:b0:ab:b0  src dc:d8:7b:54:83:ec
+ [host-uniq a8 0f 00 00] [AC-cookie 5b cf 22 73 48 0c d4 99 09 93 cd ce 33 61 96 8e e7 1e 01 00]
+Sent PADT
+Send PPPOE Discovery V1T1 PADI session 0x0 length 20
+ dst ff:ff:ff:ff:ff:ff  src dc:d8:7b:54:83:ec
+ [service-name nss-test] [host-uniq 30 11 00 00]
+Recv PPPOE Discovery V1T1 PADO session 0x0 length 59
+ dst dc:d8:7b:54:83:ec  src dc:a6:32:b0:ab:b0
+ [AC-name nss-test-ac] [service-name nss-test] [AC-cookie 5b cf 22 73 48 0c d4 99 09 93 cd ce 33 61 96 8e e7 1e 01 00] [host-uniq 30 11 00 00]
+Send PPPOE Discovery V1T1 PADR session 0x0 length 44
+ dst dc:a6:32:b0:ab:b0  src dc:d8:7b:54:83:ec
+ [service-name nss-test] [host-uniq 30 11 00 00] [AC-cookie 5b cf 22 73 48 0c d4 99 09 93 cd ce 33 61 96 8e e7 1e 01 00]
+Recv PPPOE Discovery V1T1 PADS session 0x1 length 20
+ dst dc:d8:7b:54:83:ec  src dc:a6:32:b0:ab:b0
+ [service-name nss-test] [host-uniq 30 11 00 00]
+PPP session is 1
+Connected to DC:A6:32:B0:AB:B0 via interface br-lan.100
+using channel 2
+Using interface ppp-nsstest
+Connect: ppp-nsstest <--> br-lan.100
+sent [LCP ConfReq id=0x1 <mru 1492> <magic 0x82024f69>]
+rcvd [LCP ConfReq id=0x1 <mru 1492> <magic 0x31b9dd9a>]
+sent [LCP ConfAck id=0x1 <mru 1492> <magic 0x31b9dd9a>]
+rcvd [LCP ConfAck id=0x1 <mru 1492> <magic 0x82024f69>]
+peer from calling number DC:A6:32:B0:AB:B0 authorized
+sent [IPCP ConfReq id=0x1 <addr 0.0.0.0>]
+rcvd [LCP EchoReq id=0x0 magic=0x31b9dd9a]
+sent [LCP EchoRep id=0x0 magic=0x82024f69]
+rcvd [IPCP ConfReq id=0x1 <addr 172.31.100.1>]
+sent [IPCP ConfAck id=0x1 <addr 172.31.100.1>]
+rcvd [IPCP ConfNak id=0x1 <addr 172.31.100.2>]
+sent [IPCP ConfReq id=0x2 <addr 172.31.100.2>]
+rcvd [IPCP ConfAck id=0x2 <addr 172.31.100.2>]
+local  IP address 172.31.100.2
+remote IP address 172.31.100.1
+Script /bin/true started (pid 4406)
+Script /bin/true finished (pid 4406), status = 0x0

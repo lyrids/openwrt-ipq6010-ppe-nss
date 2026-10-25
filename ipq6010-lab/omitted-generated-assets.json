@@ -1,0 +1,266 @@
+[
+  {
+    "path": "evidence/installed-uboot-main.js",
+    "bytes": 126142,
+    "sha256": "3d257d392e945dcdfaf7692acbba929a056ac4b7ae0f6a1892806ac53ae85124",
+    "reason": "recovered third-party U-Boot web UI asset"
+  },
+  {
+    "path": "evidence/extended-wired-20261025/p43/extended-wired/iperf3-matched",
+    "bytes": 1417088,
+    "sha256": "2189513fe62f4f473334c214ce1a95e5c592f36c6cba6216c337b13cde7ec67a",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/probe-kexec",
+    "bytes": 244280,
+    "sha256": "b10070afdef61050c636f304c818c6726e071a978e8650da8e95da32537eb952",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/baseline-5192094fd6-20261024/board.dtb",
+    "bytes": 27179,
+    "sha256": "39ae5ad73fa95dbef0bd1bc5c1719ab1327ff24e621801ec9f17d9344058c406",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/nss-7b62228607-20261024/rootfs.squashfs",
+    "bytes": 11479040,
+    "sha256": "b8726be8dd9b31af98205646fa1bb238ae56cd55d5475e0e33cb289e63745133",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/nss-7b62228607-20261024/sysupgrade-kernel.itb",
+    "bytes": 5852156,
+    "sha256": "468e2193158ea2d9bea34fd96c2b151ab299b3f15953b0ebf42ebf5a8588adc4",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/minimal-nss-7b62228607-20261024/rootfs.squashfs",
+    "bytes": 11209728,
+    "sha256": "9f78ea94be93a1c9e86e4a4dfac38343e9c975295fca86f529d9094d4b374125",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/minimal-nss-7b62228607-20261024/sysupgrade-kernel.itb",
+    "bytes": 5852156,
+    "sha256": "468e2193158ea2d9bea34fd96c2b151ab299b3f15953b0ebf42ebf5a8588adc4",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/minimal-nss-7b62228607-20261024/board.dtb",
+    "bytes": 29786,
+    "sha256": "fcffe029dac05cea6d9aceb7fd2db9df2000e57b0dffb00947341fe0e46d6752",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/minimal-nss-7b62228607-20261024/initramfs-kernel.gz",
+    "bytes": 17909926,
+    "sha256": "53f653ba748c2e6eadb8c77753248524d478a809f762777e8a296bad505ea636",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/nss-ethernet-03803c78cd-20261025/rootfs.squashfs",
+    "bytes": 12060672,
+    "sha256": "d067c0f477b017360a6a42e9a1c1c8b44dbc3cea46b209f2e1a7e8505cb3257d",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/nss-ethernet-03803c78cd-20261025/initramfs-kernel.gz",
+    "bytes": 18822562,
+    "sha256": "fc09253737e8f46aed9f411c7603c371c95da060a134067e151308b24b30a349",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/nss-ethernet-bootfix-03803c78cd-20261025/rootfs.squashfs",
+    "bytes": 12060672,
+    "sha256": "5f6a916e7559b9b79a44d39dd4c2f5fcfc53493784a53c66cddf0d0168b5ab27",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/nss-ethernet-bootfix-03803c78cd-20261025/initramfs-kernel.gz",
+    "bytes": 18824781,
+    "sha256": "ef0dc9b538f2c3dd2cbb6c8db9c2e86dc863243b442a45dbb6b0015ab93d7ab0",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/nss-ethernet-vlanfix-03803c78cd-20261025/paired-flow-regression",
+    "bytes": 146104,
+    "sha256": "c98bed4f516ff8b02742b0f7a5619ea7aed9d2fbf1444b9b40f2a44a2d6ba4f5",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/nss-ethernet-vlanfix-03803c78cd-20261025/vlan-rule-regression",
+    "bytes": 93816,
+    "sha256": "340036304d28ec21141df74f8760ae21d6d6e82c334da5cc11e96a9309fac523",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/nss-ethernet-vlanfix-03803c78cd-20261025/rootfs.squashfs",
+    "bytes": 12060672,
+    "sha256": "6e2330b296e813491548beaa0eb2202b1652e4abaac368db87857c62a8743bf0",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/nss-ethernet-vlanfix-03803c78cd-20261025/initramfs-kernel.gz",
+    "bytes": 18827958,
+    "sha256": "67695a1599a49f7b2abad12e0d9099ea653bd8584bac871570aa64146b49ec1c",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/nss-ethernet-mtufix-03803c78cd-20261025/mtu-regression",
+    "bytes": 87392,
+    "sha256": "db290b5bc7ef5510ed28d9fd6be6d8c79450ead7b1941674b5cc5f49d9ab505d",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/nss-ethernet-mtufix-03803c78cd-20261025/paired-flow-regression",
+    "bytes": 146104,
+    "sha256": "f74562e18bc9fc39cc4018c94f7e097ddf06a69d9a56bed0accd52082320b340",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/nss-ethernet-mtufix-03803c78cd-20261025/vlan-rule-regression",
+    "bytes": 93816,
+    "sha256": "12dd29bbfd4939883261bd767be35c23fede841c88785b74edddbfa9ba29c7b2",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/nss-ethernet-mtufix-03803c78cd-20261025/rootfs.squashfs",
+    "bytes": 12060672,
+    "sha256": "8b56eccfd75272b6d65f111d301e767730bd65622e6c6e54208923f43dbb23b3",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/nss-ethernet-mtufix-03803c78cd-20261025/initramfs-kernel.gz",
+    "bytes": 18828956,
+    "sha256": "8c6ac7731e72d8be3650c919825d5dc5530971bd0ea03941ddf8d58d13780972",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/nss-ethernet-mtuguard-03803c78cd-20261025/paired-flow-regression",
+    "bytes": 146104,
+    "sha256": "5311ada1ade8f3c3134cf2be502d693644085d7b25d64a4e30422b98aff68b85",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/nss-ethernet-mtuguard-03803c78cd-20261025/vlan-rule-regression",
+    "bytes": 93824,
+    "sha256": "34b67bf9ef0aeb4c7402f6bdb662ac1afd3713ebdfe23fde895bfdf330a7d759",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/nss-ethernet-mtuguard-03803c78cd-20261025/mtu-guard-regression",
+    "bytes": 98424,
+    "sha256": "96ad05359baa0a6fa4a2c790fbae79894888dbf39958bd113f4477aac2706965",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/nss-ethernet-mtuguard-03803c78cd-20261025/rootfs.squashfs",
+    "bytes": 12061696,
+    "sha256": "406cfeea40d89cc73e2b145a6f5dea3b226417037097eaeaa2e04abc22f94937",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/nss-ethernet-mtuguard-03803c78cd-20261025/initramfs-kernel.gz",
+    "bytes": 18827786,
+    "sha256": "5d8515fd196761d6e97ff5caaa4f1dd49c185a725ca0c455df34a56aa9faab13",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/nss-ethernet-mtuguard-03803c78cd-20261025/images/openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-initramfs-uImage.itb",
+    "bytes": 18858976,
+    "sha256": "b2b63a339a3e6496a198de3d39a14ca21d19214dc08c047f00a8da1953795c56",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/nss-ethernet-mtuguard-03803c78cd-20261025/images/openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-squashfs-sysupgrade.bin",
+    "bytes": 17920278,
+    "sha256": "0d965f641c23b96c7efa2b2215304b69244b95b3c202224534483365113da473",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/nss-ethernet-mtufix-03803c78cd-20261025/images/openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-initramfs-uImage.itb",
+    "bytes": 18860144,
+    "sha256": "e743202ad9cf33d2c266e27e36d83a6e666b95b6ab2e6db9370966da4e26e4c1",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/nss-ethernet-mtufix-03803c78cd-20261025/images/openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-squashfs-sysupgrade.bin",
+    "bytes": 17920278,
+    "sha256": "f168845ef675e8afb64c95a7762dcc63e5d098a71d02ef540ba320a14ff9c41e",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/nss-ethernet-vlanfix-03803c78cd-20261025/images/openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-initramfs-uImage.itb",
+    "bytes": 18859148,
+    "sha256": "b576aa82f2088bd9d67698cd1d89a4343eae0d28a9cea4139e456a590a9725d2",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/nss-ethernet-vlanfix-03803c78cd-20261025/images/openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-squashfs-sysupgrade.bin",
+    "bytes": 17920278,
+    "sha256": "4375a4705d5a90476f78b9361552a8a607e2729516acfde760829ce8cbde0708",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/nss-ethernet-bootfix-03803c78cd-20261025/images/openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-initramfs-uImage.itb",
+    "bytes": 18855972,
+    "sha256": "ddbf79299dd60e61ab6b4b060833f60399021fec04a0a2c2d6ad6135623b5bec",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/nss-ethernet-bootfix-03803c78cd-20261025/images/openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-squashfs-sysupgrade.bin",
+    "bytes": 17920278,
+    "sha256": "79797b29aa6f3700566bfec6a941638d7dfc5fad4bc10cb19398a43baa4f2661",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/nss-ethernet-03803c78cd-20261025/images/openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-initramfs-uImage.itb",
+    "bytes": 18853752,
+    "sha256": "b1b1229fcaf9a56a6f1e84b9a1cb4b1c1ebd14d4539381e06969adf4745e5122",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/nss-ethernet-03803c78cd-20261025/images/openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-squashfs-sysupgrade.bin",
+    "bytes": 17920278,
+    "sha256": "0a91aa1df234dd7e78605b7dd71d51bcde93964d7d1735416712e67e1ff0b4c5",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/minimal-nss-7b62228607-20261024/images/openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-initramfs-uImage.itb",
+    "bytes": 17941116,
+    "sha256": "3f2e4db823172b8a7a806a6de17937081c60c87d2d5ef32cea0dc0964268645b",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/minimal-nss-7b62228607-20261024/images/openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-squashfs-sysupgrade.bin",
+    "bytes": 17070358,
+    "sha256": "ae1d5673ce3d7cbfaf32a7c31d181e66603d5744180b1b6ccf06275eb32e0553",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/nss-7b62228607-20261024/images/openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-initramfs-uImage.itb",
+    "bytes": 18028036,
+    "sha256": "5f581295b381e402d7a428429c785d58bc9a6c9587a487e981a660935f615246",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/nss-7b62228607-20261024/images/openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-squashfs-sysupgrade.bin",
+    "bytes": 17336598,
+    "sha256": "b0965e43762b73286c43ebdc8d2415ee9835c30fad5b62eaa67b8f9a4a458052",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/baseline-5192094fd6-20261024/images/openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-initramfs-uImage.itb",
+    "bytes": 15172976,
+    "sha256": "cd94c82d62b5c2e9df62744000c5f7dd5e2e009e8e54489eb2bcc49682f9f582",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  },
+  {
+    "path": "artifacts/baseline-5192094fd6-20261024/images/openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-squashfs-sysupgrade.bin",
+    "bytes": 14510355,
+    "sha256": "abd4a0436b242f1569f30fae354bb125bbb7532a74f0fb651c1620ceba34f364",
+    "reason": "generated binary, firmware/image, or non-text asset"
+  }
+]

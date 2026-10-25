@@ -1,0 +1,35 @@
+ 00:32:56 up 32 min,  load average: 0.02, 0.01, 0.00
+bound 0 pushed 0 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 3 tx 3 drop 0/0/0/0 exceptions
+node ipv4 rx 5 tx 0 drop 0/0/0/0 exceptions 9:5
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 4 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 4
+wifili 203 reports 0
+wifili 215 reports 0
+wifili 216 reports 0
+vdev if 34 reports 11678
+  rx enqueue 0 fail 0 except 0 except_fail 0 bytes 0 mcast 0
+  rx decrypt_err 0 mic_err 0
+  tx rcvd 0 enqueue 0 fail 0 hw_ring_full 0 desc_fail 0 dropped 0
+  me rcvd 0 converted 0 no_member_drop 0 alloc_fail 0 enq_fail 0
+vdev if 35 reports 11673
+  rx enqueue 0 fail 0 except 0 except_fail 0 bytes 0 mcast 0
+  rx decrypt_err 0 mic_err 0
+  tx rcvd 0 enqueue 0 fail 0 hw_ring_full 0 desc_fail 0 dropped 0
+  me rcvd 0 converted 0 no_member_drop 0 alloc_fail 0 enq_fail 0
+vdev if 36 reports 11668
+  rx enqueue 398130 fail 0 except 0 except_fail 0 bytes 56935270 mcast 431
+  rx decrypt_err 1 mic_err 0
+  tx rcvd 4195741 enqueue 4195655 fail 54 hw_ring_full 0 desc_fail 20986933 dropped 0
+  me rcvd 735 converted 0 no_member_drop 0 alloc_fail 0 enq_fail 0
+[  809.942655] ath11k_pci 0000:01:00.0 phy2-ap0: entered promiscuous mode
+[  810.341436] br-lan: port 7(phy2-ap0) entered blocking state
+[  810.341487] br-lan: port 7(phy2-ap0) entered forwarding state
+[  840.025504] nss-wifi-drv 39000000.nss: peer 70:1a:b8:b4:69:a5: id 4 ast_idx 220 ast_hash 0xdc vdev 0
+[  840.100418] nss-wifi-drv 39000000.nss: interface 36 protects frames with 6
+[  918.099108] nss-wifi-drv 39000000.nss: peer 70:1a:b8:b4:69:a5: id 4 released from vdev 0
+[ 1024.822993] nss-wifi-drv 39000000.nss: peer 70:1a:b8:b4:69:a5: id 5 ast_idx 220 ast_hash 0xdc vdev 0
+[ 1024.880843] nss-wifi-drv 39000000.nss: interface 36 protects frames with 6

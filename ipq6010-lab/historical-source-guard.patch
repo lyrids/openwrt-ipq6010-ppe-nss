@@ -1,0 +1,25 @@
+diff --git a/package/kernel/nss-wifi-drv/src/nss_flow.c b/package/kernel/nss-wifi-drv/src/nss_flow.c
+index bb34bf3646..69abafdc6f 100644
+--- a/package/kernel/nss-wifi-drv/src/nss_flow.c
++++ b/package/kernel/nss-wifi-drv/src/nss_flow.c
+@@ -380,9 +380,19 @@ int nss_flow_port(struct nss_core *core, int ifindex, u16 flow_vid, u32 *mtu,
+ 	if (!dev || !dsa_user_dev_check(dev))
+ 		return -ENODEV;
+ 	dp = dsa_port_from_netdev(dev);
+-	if (IS_ERR(dp) || dp->cpu_dp->tag_ops->proto != DSA_TAG_PROTO_QCA_8021Q)
++	if (IS_ERR(dp))
+ 		return -ENODEV;
+ 
++#ifdef DSA_TAG_PROTO_QCA_8021Q_VALUE
++	if (dp->cpu_dp->tag_ops->proto != DSA_TAG_PROTO_QCA_8021Q)
++		return -ENODEV;
++#else
++	/* The stacked-switch tagger is absent from this kernel. Do not
++	 * mistake another 802.1Q tag protocol for its wire format.
++	 */
++	return -EOPNOTSUPP;
++#endif
++
+ 	ifnum = nss_flow_ifnum(core, dp->cpu_dp->conduit->ifindex, mtu);
+ 	if (ifnum < 0)
+ 		return ifnum;

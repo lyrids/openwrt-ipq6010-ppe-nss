@@ -1,0 +1,122 @@
+-----------------------------------------------------------
+Server listening on 5216 (test #1)
+-----------------------------------------------------------
+Accepted connection from 172.31.100.2, port 43887
+[  6] local 172.31.100.1 port 5216 connected to 172.31.100.2 port 55215
+[ ID] Interval           Transfer     Bitrate
+[  6]   0.00-1.00   sec   108 MBytes   903 Mbits/sec                  
+[  6]   1.00-2.00   sec   111 MBytes   933 Mbits/sec                  
+[  6]   2.00-3.00   sec   111 MBytes   933 Mbits/sec                  
+[  6]   3.00-4.00   sec   111 MBytes   934 Mbits/sec                  
+[  6]   4.00-5.00   sec   111 MBytes   933 Mbits/sec                  
+[  6]   5.00-6.00   sec   111 MBytes   934 Mbits/sec                  
+[  6]   6.00-7.00   sec   111 MBytes   934 Mbits/sec                  
+[  6]   7.00-8.00   sec   106 MBytes   889 Mbits/sec                  
+[  6]   8.00-9.00   sec   107 MBytes   898 Mbits/sec                  
+[  6]   9.00-10.00  sec   108 MBytes   908 Mbits/sec                  
+[  6]  10.00-11.00  sec   106 MBytes   888 Mbits/sec                  
+[  6]  11.00-12.00  sec   111 MBytes   933 Mbits/sec                  
+[  6]  12.00-13.00  sec   109 MBytes   916 Mbits/sec                  
+[  6]  13.00-14.00  sec   111 MBytes   934 Mbits/sec                  
+[  6]  14.00-15.00  sec   104 MBytes   868 Mbits/sec                  
+[  6]  15.00-15.01  sec   512 KBytes  1.06 Gbits/sec                  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate
+[  6]   0.00-15.01  sec  1.60 GBytes   916 Mbits/sec                  receiver
+-----------------------------------------------------------
+Server listening on 5216 (test #2)
+-----------------------------------------------------------
+Accepted connection from 172.31.100.2, port 53763
+[  6] local 172.31.100.1 port 5216 connected to 172.31.100.2 port 60367
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  6]   0.00-1.00   sec   107 MBytes   893 Mbits/sec    0    359 KBytes       
+[  6]   1.00-2.00   sec   105 MBytes   880 Mbits/sec    0    359 KBytes       
+[  6]   2.00-3.00   sec   104 MBytes   877 Mbits/sec    0    377 KBytes       
+[  6]   3.00-4.00   sec   104 MBytes   875 Mbits/sec    0    377 KBytes       
+[  6]   4.00-5.00   sec   105 MBytes   879 Mbits/sec    0    377 KBytes       
+[  6]   5.00-6.00   sec   105 MBytes   880 Mbits/sec    0    377 KBytes       
+[  6]   6.00-7.00   sec   104 MBytes   872 Mbits/sec    0    377 KBytes       
+[  6]   7.00-8.00   sec   105 MBytes   880 Mbits/sec    0    377 KBytes       
+[  6]   8.00-9.00   sec   104 MBytes   870 Mbits/sec    0    377 KBytes       
+[  6]   9.00-10.00  sec   105 MBytes   883 Mbits/sec    0    377 KBytes       
+[  6]  10.00-11.00  sec   104 MBytes   875 Mbits/sec    0    377 KBytes       
+[  6]  11.00-12.00  sec   103 MBytes   866 Mbits/sec    0    377 KBytes       
+[  6]  12.00-13.00  sec   101 MBytes   845 Mbits/sec    0    377 KBytes       
+[  6]  13.00-14.00  sec   105 MBytes   879 Mbits/sec    0    377 KBytes       
+[  6]  14.00-15.00  sec   105 MBytes   881 Mbits/sec    0    377 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  6]   0.00-15.00  sec  1.53 GBytes   875 Mbits/sec    0            sender
+-----------------------------------------------------------
+Server listening on 5216 (test #3)
+-----------------------------------------------------------
+Accepted connection from 172.31.100.2, port 57659
+[  6] local 172.31.100.1 port 5216 connected to 172.31.100.2 port 52005
+[ ID] Interval           Transfer     Bitrate
+[  6]   0.00-1.00   sec   110 MBytes   919 Mbits/sec                  
+[  6]   1.00-2.00   sec   111 MBytes   934 Mbits/sec                  
+[  6]   2.00-3.00   sec   111 MBytes   933 Mbits/sec                  
+[  6]   3.00-4.00   sec   111 MBytes   934 Mbits/sec                  
+[  6]   4.00-5.00   sec   111 MBytes   933 Mbits/sec                  
+[  6]   5.00-6.00   sec   111 MBytes   933 Mbits/sec                  
+[  6]   6.00-7.00   sec   111 MBytes   934 Mbits/sec                  
+[  6]   7.00-8.00   sec   111 MBytes   933 Mbits/sec                  
+[  6]   8.00-9.00   sec   111 MBytes   934 Mbits/sec                  
+[  6]   9.00-10.00  sec   111 MBytes   933 Mbits/sec                  
+[  6]  10.00-11.00  sec   111 MBytes   933 Mbits/sec                  
+[  6]  11.00-12.00  sec   111 MBytes   934 Mbits/sec                  
+[  6]  12.00-13.00  sec   111 MBytes   933 Mbits/sec                  
+[  6]  13.00-14.00  sec   111 MBytes   933 Mbits/sec                  
+[  6]  14.00-15.00  sec   111 MBytes   933 Mbits/sec                  
+[  6]  15.00-15.01  sec  1.25 MBytes   988 Mbits/sec                  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate
+[  6]   0.00-15.01  sec  1.63 GBytes   933 Mbits/sec                  receiver
+-----------------------------------------------------------
+Server listening on 5216 (test #4)
+-----------------------------------------------------------
+Accepted connection from 172.31.100.2, port 38331
+[  6] local 172.31.100.1 port 5216 connected to 172.31.100.2 port 48519
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  6]   0.00-1.00   sec   106 MBytes   885 Mbits/sec    0    352 KBytes       
+[  6]   1.00-2.00   sec   104 MBytes   873 Mbits/sec    0    352 KBytes       
+[  6]   2.00-3.00   sec   105 MBytes   878 Mbits/sec    0    367 KBytes       
+[  6]   3.00-4.00   sec   105 MBytes   878 Mbits/sec    0    367 KBytes       
+[  6]   4.00-5.00   sec   104 MBytes   871 Mbits/sec    0    367 KBytes       
+[  6]   5.00-6.00   sec   104 MBytes   873 Mbits/sec    0    382 KBytes       
+[  6]   6.00-7.00   sec   105 MBytes   878 Mbits/sec    0    382 KBytes       
+[  6]   7.00-8.00   sec   105 MBytes   880 Mbits/sec    0    382 KBytes       
+[  6]   8.00-9.00   sec   104 MBytes   873 Mbits/sec    0    475 KBytes       
+[  6]   9.00-10.00  sec   103 MBytes   867 Mbits/sec    0    475 KBytes       
+[  6]  10.00-11.00  sec   104 MBytes   868 Mbits/sec    0    475 KBytes       
+[  6]  11.00-12.00  sec   104 MBytes   868 Mbits/sec    0    475 KBytes       
+[  6]  12.00-13.00  sec   104 MBytes   868 Mbits/sec    0    475 KBytes       
+[  6]  13.00-14.00  sec   103 MBytes   867 Mbits/sec    0    475 KBytes       
+[  6]  14.00-15.00  sec   104 MBytes   875 Mbits/sec    0    475 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  6]   0.00-15.00  sec  1.53 GBytes   874 Mbits/sec    0            sender
+-----------------------------------------------------------
+Server listening on 5216 (test #5)
+-----------------------------------------------------------
+Accepted connection from 172.31.100.2, port 56059
+[  6] local 172.31.100.1 port 5216 connected to 172.31.100.2 port 60289
+[ ID] Interval           Transfer     Bitrate
+[  6]   0.00-1.00   sec   111 MBytes   929 Mbits/sec                  
+[  6]   1.00-2.00   sec   111 MBytes   934 Mbits/sec                  
+[  6]   2.00-3.00   sec   111 MBytes   933 Mbits/sec                  
+[  6]   3.00-4.00   sec   111 MBytes   934 Mbits/sec                  
+[  6]   4.00-5.00   sec   111 MBytes   933 Mbits/sec                  
+[  6]   5.00-6.00   sec   111 MBytes   933 Mbits/sec                  
+[  6]   6.00-7.00   sec   111 MBytes   934 Mbits/sec                  
+[  6]   7.00-8.00   sec   111 MBytes   933 Mbits/sec                  
+[  6]   8.00-9.00   sec   111 MBytes   933 Mbits/sec                  
+[  6]   9.00-10.00  sec   111 MBytes   934 Mbits/sec                  
+[  6]  10.00-10.01  sec  1.00 MBytes   834 Mbits/sec                  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate
+[  6]   0.00-10.01  sec  1.09 GBytes   933 Mbits/sec                  receiver
+-----------------------------------------------------------
+Server listening on 5216 (test #6)
+-----------------------------------------------------------
+iperf3: interrupt - the server has terminated by signal Interrupt(2)

@@ -1,0 +1,658 @@
+diff --git a/package/kernel/nss-wifi-drv/files/nss-wifi.config b/package/kernel/nss-wifi-drv/files/nss-wifi.config
+index e5057dd384..0e3527cddd 100644
+--- a/package/kernel/nss-wifi-drv/files/nss-wifi.config
++++ b/package/kernel/nss-wifi-drv/files/nss-wifi.config
+@@ -11,3 +11,6 @@
+ config general 'general'
+ 	option offload '1'
+ 	option firmware '12.5'
++
++	# Experimental Ethernet-only routed/NAT backend, chosen at boot.
++	option ethernet_offload '0'
+diff --git a/package/kernel/nss-wifi-drv/files/nss-wifi.init b/package/kernel/nss-wifi-drv/files/nss-wifi.init
+index 4be37341d6..54162cdd38 100755
+--- a/package/kernel/nss-wifi-drv/files/nss-wifi.init
++++ b/package/kernel/nss-wifi-drv/files/nss-wifi.init
+@@ -57,7 +57,30 @@ start_service() {
+ 	echo "the last bring-up did not complete" > "$PENDING"
+ 	sync
+ 
+-	modprobe nss-wifi-drv 2>/dev/null
++	# OpenWrt kmodloader's modprobe ignores trailing parameters.
++	# Its options are read from /etc/modules.conf using the .ko basename.
++	local ethernet=0 expected=N opts
++	if [ "$(uci -q get nss-wifi.general.ethernet_offload)" = "1" ]; then
++		ethernet=1
++		expected=Y
++	fi
++	opts=$(mktemp /etc/modules.conf.nss.XXXXXX) || return 1
++	if [ -f /etc/modules.conf ]; then
++		sed '/# nss-wifi-managed-ethernet$/d' /etc/modules.conf > "$opts"
++	fi
++	printf 'options nss-wifi-drv ethernet_offload=%s # nss-wifi-managed-ethernet\n' "$ethernet" >> "$opts"
++	chmod 644 "$opts"
++	mv "$opts" /etc/modules.conf || return 1
++	if ! modprobe nss-wifi-drv; then
++		logger -t nss-wifi "NSS module load failed"
++		wifi_load_host
++		return 1
++	fi
++	if [ "$(cat /sys/module/nss_wifi_drv/parameters/ethernet_offload)" != "$expected" ]; then
++		logger -t nss-wifi "Ethernet mode mismatch; refusing NSS firmware startup"
++		wifi_load_host
++		return 1
++	fi
+ 
+ 	# The radios are handed over below, so a board whose device tree
+ 	# describes no NSS core keeps them on the host path instead.
+diff --git a/package/kernel/nss-wifi-drv/src/nss_core.c b/package/kernel/nss-wifi-drv/src/nss_core.c
+index 3a26ba8668..0f0e1a0894 100644
+--- a/package/kernel/nss-wifi-drv/src/nss_core.c
++++ b/package/kernel/nss-wifi-drv/src/nss_core.c
+@@ -453,6 +453,7 @@ static void nss_core_halt(struct nss_core *core)
+ 	if (!core->loaded)
+ 		return;
+ 
++	nss_ethernet_stop(core->conduit);
+ 	qca_ppe_fw_carrier_set(core->conduit, NULL);
+ 	writel(1, core->nphys + NSS_CORE_RESET_CTRL);
+ 
+@@ -898,6 +899,13 @@ static int nss_core_boot(struct nss_core *core)
+ 	if (ret)
+ 		dev_err(core->dev, "flows not steered to the firmware: %d\n", ret);
+ 
++	ret = nss_ethernet_setup(core->conduit);
++	if (ret) {
++		dev_err(core->dev, "Ethernet backend setup failed: %d\n", ret);
++		nss_core_halt(core);
++		return ret;
++	}
++
+ 	nss_pool_configure(core);
+ 	nss_accel_in_core(core);
+ 	nss_rps_enable(core);
+diff --git a/package/kernel/nss-wifi-drv/src/nss_drv.h b/package/kernel/nss-wifi-drv/src/nss_drv.h
+index 26097b1541..1726bfaa94 100644
+--- a/package/kernel/nss-wifi-drv/src/nss_drv.h
++++ b/package/kernel/nss-wifi-drv/src/nss_drv.h
+@@ -563,6 +563,8 @@ void nss_flow_dyn_free(struct nss_core *core, u32 type, int if_num);
+ void nss_flow_notify(const struct nss_cmn_msg *ncm, u32 len);
+ void nss_flow_print(struct seq_file *s);
+ int nss_flow_init(void);
++int nss_ethernet_setup(struct net_device *conduit);
++void nss_ethernet_stop(struct net_device *conduit);
+ void nss_flow_exit(void);
+ bool nss_redir_bound(int ifindex);
+ bool nss_redir_recv(struct nss_core *core, const struct n2h_descriptor *desc,
+diff --git a/package/kernel/nss-wifi-drv/src/nss_flow.c b/package/kernel/nss-wifi-drv/src/nss_flow.c
+index d48ee826ec..a42248b78d 100644
+--- a/package/kernel/nss-wifi-drv/src/nss_flow.c
++++ b/package/kernel/nss-wifi-drv/src/nss_flow.c
+@@ -27,9 +27,11 @@
+ #include <linux/if_arp.h>
+ #include <linux/if_vlan.h>
+ #include <linux/mutex.h>
++#include <linux/module.h>
+ #include <linux/netdevice.h>
+ #include <linux/rhashtable.h>
+ #include <linux/soc/qcom/nss_wifi.h>
++#include <linux/soc/qcom/qca_ppe.h>
+ #include <net/flow_offload.h>
+ #include <net/netfilter/nf_conntrack.h>
+ #include <net/netfilter/nf_flow_table.h>
+@@ -102,6 +104,8 @@ struct nss_flow_pppoe {
+ static struct nss_flow_pppoe nss_flow_pppoe_tbl[4];
+ 
+ struct nss_flow_entry {
++	const struct flow_block *ppe_block;
++	bool ethernet;
+ 	struct rhash_head node;
+ 	struct rcu_head rcu;	/* the debugfs walker holds no lock */
+ 	unsigned long flow;
+@@ -133,6 +137,14 @@ static LIST_HEAD(nss_flow_blocks);
+ static struct rhashtable nss_flow_table;
+ static bool nss_flow_ready;
+ static struct nss_core *nss_flow_core;
++static bool nss_ethernet_offload;
++static bool nss_ethernet_active;
++module_param_named(ethernet_offload, nss_ethernet_offload, bool, 0444);
++MODULE_PARM_DESC(ethernet_offload,
++	"Experimental Ethernet routed/NAT flow backend; select at module load");
++static u32 nss_ethernet_offers, nss_ethernet_pushed;
++static u32 nss_ethernet_rejected;
++
+ /* Why a flow was not taken. A flow the firmware does not carry and a flow it
+  * was never offered look the same from outside, and so do the several reasons
+  * for the first, so each is counted where it is decided.
+@@ -938,7 +950,8 @@ static void nss_flow_forget(struct nss_core *core, struct nss_flow_entry *e)
+ 	kfree_rcu(e, rcu);
+ }
+ 
+-static int nss_flow_replace(struct nss_core *core, struct flow_cls_offload *f)
++static int nss_flow_replace(struct nss_core *core, struct flow_cls_offload *f,
++			    bool ethernet)
+ {
+ 	enum flow_offload_tuple_dir dir = nss_flow_dir_of(f->cookie);
+ 	struct flow_offload *flow = nss_flow_of(f->cookie);
+@@ -965,7 +978,8 @@ static int nss_flow_replace(struct nss_core *core, struct flow_cls_offload *f)
+ 		 * flow.
+ 		 */
+ 		flow_rule_match_meta(rule, &meta);
+-		if (!nss_flow_is_ours(meta.key->ingress_ifindex) &&
++		if (!ethernet &&
++		    !nss_flow_is_ours(meta.key->ingress_ifindex) &&
+ 		    !nss_flow_is_ours(flow->tuplehash[!dir].tuple.iifidx)) {
+ 			nss_flow_last_ifindex = meta.key->ingress_ifindex;
+ 			dev_dbg_ratelimited(core->dev,
+@@ -990,6 +1004,7 @@ static int nss_flow_replace(struct nss_core *core, struct flow_cls_offload *f)
+ 			return -ENOMEM;
+ 
+ 		e->flow = key;
++		e->ethernet = ethernet;
+ 		e->protocol = basic.key->ip_proto;
+ 		e->v6 = basic.key->n_proto == htons(ETH_P_IPV6);
+ 		e->lastused = jiffies;
+@@ -1333,7 +1348,7 @@ static int nss_flow_block_cb(enum tc_setup_type type, void *type_data,
+ 
+ 	switch (f->command) {
+ 	case FLOW_CLS_REPLACE:
+-		return nss_flow_replace(core, f);
++		return nss_flow_replace(core, f, false);
+ 	case FLOW_CLS_DESTROY:
+ 		return nss_flow_destroy(core, f);
+ 	case FLOW_CLS_STATS:
+@@ -1343,6 +1358,200 @@ static int nss_flow_block_cb(enum tc_setup_type type, void *type_data,
+ 	}
+ }
+ 
++/* This path is offered through the PPE's own DSA block, so no
++ * netfilter patch or second device-level classifier is needed.
++ */
++static bool nss_ethernet_port(struct nss_core *core, int ifindex)
++{
++	struct net_device *dev;
++	u32 mtu;
++
++	guard(rcu)();
++	dev = dev_get_by_index_rcu(&init_net, ifindex);
++	return dev && dsa_user_dev_check(dev) &&
++	       nss_flow_ifnum(core, ifindex, &mtu) >= 0;
++}
++
++static int nss_ethernet_flow(struct flow_cls_offload *f,
++			     const struct flow_block *block, bool *owned)
++{
++	struct nss_flow_entry *e;
++	struct nss_core *core;
++	struct flow_offload *flow;
++	struct flow_rule *rule;
++	unsigned long key;
++	bool installed;
++	int ret;
++
++	*owned = false;
++	guard(mutex)(&nss_flow_lock);
++	core = nss_flow_core;
++	if (!nss_ethernet_offload || !nss_ethernet_active ||
++	    !core || !core->running)
++		return 0;
++
++	if (!f) {
++		struct rhashtable_iter iter;
++
++		/* Blocks disappear before their flows get DESTROY offers. */
++		do {
++			rhashtable_walk_enter(&nss_flow_table, &iter);
++			rhashtable_walk_start(&iter);
++			while ((e = rhashtable_walk_next(&iter)) != NULL)
++				if (!IS_ERR(e) && e->ethernet &&
++				    e->ppe_block == block)
++					break;
++			rhashtable_walk_stop(&iter);
++			rhashtable_walk_exit(&iter);
++			if (e)
++				nss_flow_forget(core, e);
++		} while (e);
++		return 0;
++	}
++
++	flow = nss_flow_of(f->cookie);
++	key = (unsigned long)flow;
++	e = rhashtable_lookup_fast(&nss_flow_table, &key, nss_flow_ht_params);
++	if (e && e->ethernet) {
++		*owned = true;
++		if (f->command == FLOW_CLS_DESTROY)
++			return nss_flow_destroy(core, f);
++		if (f->command == FLOW_CLS_STATS)
++			return nss_flow_stats(core, f);
++	}
++	if (f->command != FLOW_CLS_REPLACE)
++		return 0;
++
++	/* Both ends must be physical ports that this core has armed. */
++	if (!nss_ethernet_port(core, flow->tuplehash[0].tuple.iifidx) ||
++	    !nss_ethernet_port(core, flow->tuplehash[1].tuple.iifidx))
++		return 0;
++	*owned = true;
++	nss_ethernet_offers++;
++	rule = flow_cls_offload_flow_rule(f);
++	if (flow_rule_match_key(rule, FLOW_DISSECTOR_KEY_CVLAN)) {
++		ret = -EOPNOTSUPP;
++		goto reject;
++	}
++	if (flow_rule_match_key(rule, FLOW_DISSECTOR_KEY_VLAN)) {
++		struct flow_match_vlan vlan;
++
++		flow_rule_match_vlan(rule, &vlan);
++		if (vlan.key->vlan_tpid != htons(ETH_P_8021Q)) {
++			ret = -EOPNOTSUPP;
++			goto reject;
++		}
++	}
++	installed = e && e->installed;
++	ret = nss_flow_replace(core, f, true);
++	if (ret)
++		goto reject;
++	e = rhashtable_lookup_fast(&nss_flow_table, &key, nss_flow_ht_params);
++	if (e) {
++		e->ppe_block = block;
++		if (e->installed && !installed)
++			nss_ethernet_pushed++;
++	}
++	return 0;
++reject:
++	/* A changed encapsulation must not leave the old rule active. */
++	e = rhashtable_lookup_fast(&nss_flow_table, &key, nss_flow_ht_params);
++	if (e && e->ethernet)
++		nss_flow_forget(core, e);
++	nss_ethernet_rejected++;
++	return ret;
++}
++
++/* RTNL serializes topology changes. Stop new hardware offers before
++ * invalidating connection state, without holding nss_flow_lock while waiting
++ * for the PPE's SRCU readers.
++ */
++static int nss_ethernet_netdev_event(struct notifier_block *nb,
++				   unsigned long event, void *ptr)
++{
++	struct nss_core *core;
++	struct net_device *conduit;
++
++	if (!nss_ethernet_offload)
++		return NOTIFY_DONE;
++	switch (event) {
++	case NETDEV_DOWN:
++	case NETDEV_UNREGISTER:
++	case NETDEV_CHANGEUPPER:
++	case NETDEV_CHANGEADDR:
++	case NETDEV_CHANGEMTU:
++		break;
++	default:
++		return NOTIFY_DONE;
++	}
++	/* The initial prototype deliberately invalidates all Ethernet rules
++	 * on topology changes, including VLAN/PPPoE uppers. It is preferable
++	 * to guessing which cached encapsulation is still valid.
++	 */
++	scoped_guard(mutex, &nss_flow_lock) {
++		core = nss_flow_core;
++		if (!core || !core->running)
++			return NOTIFY_DONE;
++		conduit = core->conduit;
++		dev_hold(conduit);
++	}
++	qca_ppe_fw_flow_set(conduit, NULL);
++	scoped_guard(mutex, &nss_flow_lock) {
++		struct rhashtable_iter iter;
++		struct nss_flow_entry *e;
++
++		/* Binding can disappear while SRCU drains; do not retain the
++		 * old core pointer outside nss_flow_lock.
++		 */
++		core = nss_flow_core;
++		if (!core || !core->running || !nss_ethernet_active) {
++			dev_put(conduit);
++			return NOTIFY_DONE;
++		}
++		do {
++			rhashtable_walk_enter(&nss_flow_table, &iter);
++			rhashtable_walk_start(&iter);
++			while ((e = rhashtable_walk_next(&iter)) != NULL)
++				if (!IS_ERR(e) && e->ethernet)
++					break;
++			rhashtable_walk_stop(&iter);
++			rhashtable_walk_exit(&iter);
++			if (e)
++				nss_flow_forget(core, e);
++		} while (e);
++		/* A concurrent halt clears active under this same mutex
++		 * before removing the callback.
++		 */
++		qca_ppe_fw_flow_set(conduit, nss_ethernet_flow);
++	}
++	dev_put(conduit);
++	return NOTIFY_DONE;
++}
++
++static struct notifier_block nss_ethernet_netdev_nb = {
++	.notifier_call = nss_ethernet_netdev_event,
++};
++
++int nss_ethernet_setup(struct net_device *conduit)
++{
++	int ret;
++
++	if (!nss_ethernet_offload)
++		return 0;
++	guard(mutex)(&nss_flow_lock);
++	ret = qca_ppe_fw_flow_set(conduit, nss_ethernet_flow);
++	if (!ret)
++		nss_ethernet_active = true;
++	return ret;
++}
++
++void nss_ethernet_stop(struct net_device *conduit)
++{
++	scoped_guard(mutex, &nss_flow_lock)
++		nss_ethernet_active = false;
++	qca_ppe_fw_flow_set(conduit, NULL);
++}
++
+ /* Withdraw every routed rule through @dev. The flow table lets go of a
+  * device's block before it destroys the connections it offloaded, so those
+  * destroys reach no block; the live connections are offered again. A halted
+@@ -1554,6 +1763,9 @@ void nss_flow_print(struct seq_file *s)
+ 	struct nss_flow_node *nd;
+ 	int i;
+ 
++	seq_printf(s, "ethernet enabled %u active %u offers %u pushed %u rejected %u\n",
++		   nss_ethernet_offload, nss_ethernet_active, nss_ethernet_offers,
++		   nss_ethernet_pushed, nss_ethernet_rejected);
+ 	seq_printf(s, "bound %u pushed %u last-ifindex %d\n",
+ 		   nss_flow_bound, nss_flow_pushed, nss_flow_last_ifindex);
+ 	seq_puts(s, "rejected");
+@@ -1596,7 +1808,7 @@ void nss_flow_print(struct seq_file *s)
+ 			continue;
+ 		seq_printf(s, "proto %u %s%s if %d/%d prio %u installed %d age %ums fw flow rx %llu tx %llu return rx %llu tx %llu\n",
+ 			   e->protocol, e->v6 ? "v6" : "v4",
+-			   e->bridged ? " bridged" : "",
++			   e->bridged ? " bridged" : e->ethernet ? " ethernet" : "",
+ 			   e->dir[FLOW_OFFLOAD_DIR_ORIGINAL].ifnum,
+ 			   e->dir[FLOW_OFFLOAD_DIR_REPLY].ifnum,
+ 			   e->priority, e->installed,
+@@ -1646,6 +1858,12 @@ int nss_flow_init(void)
+ 		return ret;
+ 	}
+ 
++	ret = register_netdevice_notifier(&nss_ethernet_netdev_nb);
++	if (ret) {
++		flow_indr_dev_unregister(nss_flow_indr_cb, &nss_flow_blocks, NULL);
++		rhashtable_destroy(&nss_flow_table);
++		return ret;
++	}
+ 	nss_flow_ready = true;
+ 
+ 	return 0;
+@@ -1661,6 +1879,7 @@ void nss_flow_exit(void)
+ 	if (!nss_flow_ready)
+ 		return;
+ 
++	unregister_netdevice_notifier(&nss_ethernet_netdev_nb);
+ 	flow_indr_dev_unregister(nss_flow_indr_cb, &nss_flow_blocks, NULL);
+ 	rhashtable_free_and_destroy(&nss_flow_table, nss_flow_free, NULL);
+ 	nss_flow_ready = false;
+diff --git a/target/linux/qualcommax/files/drivers/net/ethernet/qualcomm/qca_ppe.h b/target/linux/qualcommax/files/drivers/net/ethernet/qualcomm/qca_ppe.h
+index 16186b2941..f70a11ebb6 100644
+--- a/target/linux/qualcommax/files/drivers/net/ethernet/qualcomm/qca_ppe.h
++++ b/target/linux/qualcommax/files/drivers/net/ethernet/qualcomm/qca_ppe.h
+@@ -1454,7 +1454,11 @@ struct qca_ppe_priv {
+ 	struct ppe_pppoe_session pppoe[PPE_PPPOE_SESSIONS];
+ 	u32 flow_reject[PPE_REJECT_MAX];
+ 	/* Which devices the NSS firmware forwards to, while it runs. */
++	/* Boot-latched: a stopped backend falls back to Linux, not PPE NAT. */
++	bool fw_flow_reserved;
+ 	bool (__rcu *fw_carries)(int ifindex);
++	int (__rcu *fw_flow)(struct flow_cls_offload *,
++			    const struct flow_block *, bool *);
+ 	u32 flow_offloaded;
+ 	u32 flow_reinstalled;
+ 	u32 flow_destroy_miss;
+@@ -1706,6 +1710,10 @@ int qca_ppe_port_vlan_add(struct dsa_switch *ds, int port,
+ int qca_ppe_port_vlan_del(struct dsa_switch *ds, int port,
+ 			  const struct switchdev_obj_port_vlan *vlan);
+ 
++int ppe_fw_flow_offload(struct qca_ppe_priv *priv,
++		       struct flow_cls_offload *f,
++		       const struct flow_block *block, bool *owned);
++void ppe_flow_purge_steer(struct qca_ppe_priv *priv);
+ void ppe_flow_init(struct qca_ppe_priv *priv);
+ void ppe_flow_excep_init(struct qca_ppe_priv *priv);
+ void ppe_qm_pri_map_init(struct qca_ppe_priv *priv);
+diff --git a/target/linux/qualcommax/files/drivers/net/ethernet/qualcomm/qca_ppe_flow_offload.c b/target/linux/qualcommax/files/drivers/net/ethernet/qualcomm/qca_ppe_flow_offload.c
+index 835b430374..5f7128f328 100644
+--- a/target/linux/qualcommax/files/drivers/net/ethernet/qualcomm/qca_ppe_flow_offload.c
++++ b/target/linux/qualcommax/files/drivers/net/ethernet/qualcomm/qca_ppe_flow_offload.c
+@@ -1367,7 +1367,8 @@ static int ppe_flow_reject(struct qca_ppe_priv *priv, enum ppe_flow_reject why)
+ }
+ 
+ static int ppe_flow_offload_replace(struct ppe_flow_block *fb,
+-				    struct flow_cls_offload *f)
++				    struct flow_cls_offload *f,
++				    bool firmware_owned)
+ {
+ 	struct flow_rule *rule = flow_cls_offload_flow_rule(f);
+ 	struct qca_ppe_priv *priv = fb->priv;
+@@ -1430,7 +1431,8 @@ static int ppe_flow_offload_replace(struct ppe_flow_block *fb,
+ 	entry = rhashtable_lookup_fast(&priv->flow_table, &f->cookie,
+ 				       ppe_flow_ht_params);
+ 	if (entry) {
+-		if (entry->src_if == ppe_flow_src_if(priv, iport, data.ivid) &&
++		if ((!firmware_owned || entry->steer) &&
++		    entry->src_if == ppe_flow_src_if(priv, iport, data.ivid) &&
+ 		    ppe_flow_entry_age(priv, entry) >= 0)
+ 			return 0;
+ 
+@@ -1518,7 +1520,7 @@ static int ppe_flow_offload_replace(struct ppe_flow_block *fb,
+ 	    !is_valid_ether_addr(data.eth.h_dest))
+ 		return ppe_flow_reject(priv, PPE_REJECT_L2);
+ 
+-	steer = ppe_flow_fw_carries(priv, data.odev);
++	steer = firmware_owned || ppe_flow_fw_carries(priv, data.odev);
+ 
+ 	switch (data.addr_type) {
+ 	case FLOW_DISSECTOR_KEY_IPV4_ADDRS: {
+@@ -1746,6 +1748,30 @@ static int ppe_flow_offload_stats(struct qca_ppe_priv *priv,
+ 	return 0;
+ }
+ 
++/* Reservation survives firmware failure until reboot. A flow that cannot
++ * currently reach NSS must stay in Linux instead of acquiring a competing
++ * PPE route/NAT entry during the restart window.
++ */
++static bool ppe_flow_ethernet_pair(struct qca_ppe_priv *priv,
++				   struct flow_cls_offload *f)
++{
++	struct flow_rule *rule = flow_cls_offload_flow_rule(f);
++	struct flow_match_meta meta;
++	struct flow_action_entry *act;
++	int i;
++
++	if (!flow_rule_match_key(rule, FLOW_DISSECTOR_KEY_META))
++		return false;
++	flow_rule_match_meta(rule, &meta);
++	if (ppe_flow_port_by_ifindex(priv, meta.key->ingress_ifindex) < 0)
++		return false;
++	flow_action_for_each(i, act, &rule->action)
++		if (act->id == FLOW_ACTION_REDIRECT)
++			return act->dev &&
++			       ppe_flow_port_by_ifindex(priv, act->dev->ifindex) >= 0;
++	return false;
++}
++
+ static int ppe_flow_block_cb(enum tc_setup_type type, void *type_data,
+ 			     void *cb_priv)
+ {
+@@ -1756,9 +1782,46 @@ static int ppe_flow_block_cb(enum tc_setup_type type, void *type_data,
+ 	if (type != TC_SETUP_CLSFLOWER)
+ 		return -EOPNOTSUPP;
+ 
++	{
++		bool owned;
++		int ret, ppe_ret;
++
++		ret = ppe_fw_flow_offload(priv, cls, fb->block, &owned);
++		if (!owned && READ_ONCE(priv->fw_flow_reserved) &&
++		    cls->command == FLOW_CLS_REPLACE &&
++		    ppe_flow_ethernet_pair(priv, cls))
++			return -EOPNOTSUPP;
++		if (owned) {
++			switch (cls->command) {
++			case FLOW_CLS_REPLACE:
++				if (ret)
++					return ret;
++				/* Firmware performs L3/NAT. PPE delivers the
++				 * original packet to its CPU port unchanged.
++				 */
++				ppe_ret = ppe_flow_offload_replace(fb, cls, true);
++				if (ppe_ret) {
++					struct flow_cls_offload undo = *cls;
++
++					undo.command = FLOW_CLS_DESTROY;
++					ppe_fw_flow_offload(priv, &undo, fb->block,
++							    &owned);
++				}
++				return ppe_ret;
++			case FLOW_CLS_DESTROY:
++				ppe_ret = ppe_flow_offload_destroy(priv, cls);
++				return ret ? ret : ppe_ret == -ENOENT ? 0 : ppe_ret;
++			case FLOW_CLS_STATS:
++				return ret;
++			default:
++				return -EOPNOTSUPP;
++			}
++		}
++	}
++
+ 	switch (cls->command) {
+ 	case FLOW_CLS_REPLACE:
+-		return ppe_flow_offload_replace(fb, cls);
++		return ppe_flow_offload_replace(fb, cls, false);
+ 	case FLOW_CLS_DESTROY:
+ 		return ppe_flow_offload_destroy(priv, cls);
+ 	case FLOW_CLS_STATS:
+@@ -1768,6 +1831,18 @@ static int ppe_flow_block_cb(enum tc_setup_type type, void *type_data,
+ 	}
+ }
+ 
++/* Firmware halt must not leave connections steered at a dead core. */
++void ppe_flow_purge_steer(struct qca_ppe_priv *priv)
++{
++	struct ppe_flow_entry *entry, *tmp;
++
++	guard(mutex)(&priv->flow_lock);
++	guard(mutex)(&priv->vlan_lock);
++	list_for_each_entry_safe(entry, tmp, &priv->flow_list, list)
++		if (entry->steer)
++			ppe_flow_free(priv, entry);
++}
++
+ static LIST_HEAD(ppe_block_cb_list);
+ 
+ static void ppe_flow_block_release(void *cb_priv)
+@@ -1775,7 +1850,10 @@ static void ppe_flow_block_release(void *cb_priv)
+ 	struct ppe_flow_block *fb = cb_priv;
+ 	struct qca_ppe_priv *priv = fb->priv;
+ 	struct ppe_flow_entry *entry, *tmp;
++	bool owned;
+ 
++	/* Withdraw firmware rules before freeing their steering entries. */
++	ppe_fw_flow_offload(priv, NULL, fb->block, &owned);
+ 	mutex_lock(&priv->flow_lock);
+ 	mutex_lock(&priv->vlan_lock);
+ 	list_for_each_entry_safe(entry, tmp, &priv->flow_list, list) {
+diff --git a/target/linux/qualcommax/files/drivers/net/ethernet/qualcomm/qca_ppe_main.c b/target/linux/qualcommax/files/drivers/net/ethernet/qualcomm/qca_ppe_main.c
+index efbe5faac9..4c1b837ea2 100644
+--- a/target/linux/qualcommax/files/drivers/net/ethernet/qualcomm/qca_ppe_main.c
++++ b/target/linux/qualcommax/files/drivers/net/ethernet/qualcomm/qca_ppe_main.c
+@@ -12,12 +12,59 @@
+ #include <linux/phylink.h>
+ #include <linux/platform_device.h>
+ #include <linux/reset.h>
++#include <linux/srcu.h>
+ #include <linux/if_bridge.h>
+ #include <linux/if_vlan.h>
+ #include <linux/soc/qcom/qca_ppe.h>
+ 
+ #include "qca_ppe.h"
+ 
++static const struct dsa_switch_ops qca_ppe_ops;
++
++/* Firmware messages can sleep; regular RCU is not sufficient here. */
++DEFINE_STATIC_SRCU(ppe_fw_flow_srcu);
++
++int ppe_fw_flow_offload(struct qca_ppe_priv *priv,
++		       struct flow_cls_offload *f,
++		       const struct flow_block *block, bool *owned)
++{
++	int (*handler)(struct flow_cls_offload *, const struct flow_block *,
++		       bool *);
++	int idx, ret = 0;
++
++	*owned = false;
++	idx = srcu_read_lock(&ppe_fw_flow_srcu);
++	handler = srcu_dereference(priv->fw_flow, &ppe_fw_flow_srcu);
++	if (handler)
++		ret = handler(f, block, owned);
++	srcu_read_unlock(&ppe_fw_flow_srcu, idx);
++	return ret;
++}
++
++int qca_ppe_fw_flow_set(struct net_device *conduit,
++		int (*handler)(struct flow_cls_offload *,
++			       const struct flow_block *, bool *))
++{
++	struct qca_ppe_priv *priv;
++
++	if (!conduit || !netdev_uses_dsa(conduit) ||
++	    conduit->dsa_ptr->ds->ops != &qca_ppe_ops)
++		return -ENODEV;
++	priv = ds_to_priv(conduit->dsa_ptr->ds);
++	if (handler && rcu_access_pointer(priv->fw_flow) &&
++	    rcu_access_pointer(priv->fw_flow) != handler)
++		return -EBUSY;
++	if (handler)
++		WRITE_ONCE(priv->fw_flow_reserved, true);
++	rcu_assign_pointer(priv->fw_flow, handler);
++	if (!handler) {
++		synchronize_srcu(&ppe_fw_flow_srcu);
++		ppe_flow_purge_steer(priv);
++	}
++	return 0;
++}
++EXPORT_SYMBOL_GPL(qca_ppe_fw_flow_set);
++
+ /* A port carrying nothing but minimum-sized frames at 10G wraps a packet
+  * counter in under five minutes, and a total only stays monotonic for as long
+  * as no counter wraps twice unobserved between folds.
+diff --git a/target/linux/qualcommax/files/include/linux/soc/qcom/qca_ppe.h b/target/linux/qualcommax/files/include/linux/soc/qcom/qca_ppe.h
+index 4dfcc2bd09..fdc568f36d 100644
+--- a/target/linux/qualcommax/files/include/linux/soc/qcom/qca_ppe.h
++++ b/target/linux/qualcommax/files/include/linux/soc/qcom/qca_ppe.h
+@@ -8,6 +8,16 @@
+ 
+ #include <linux/netdevice.h>
+ 
++struct flow_cls_offload;
++struct flow_block;
++
++/* Optional firmware route backend. A NULL rule withdraws a released block.
++ * owned=true means PPE may only steer this connection, never route/NAT it.
++ * The callback may sleep; unregister waits for in-flight callbacks.
++ */
++int qca_ppe_fw_flow_set(struct net_device *conduit,
++        int (*handler)(struct flow_cls_offload *, const struct flow_block *,
++                       bool *));
+ int qca_ppe_fw_booted(struct net_device *conduit);
+ int qca_ppe_fw_ports_set(struct net_device *conduit);
+ int qca_ppe_fw_carrier_set(struct net_device *conduit,

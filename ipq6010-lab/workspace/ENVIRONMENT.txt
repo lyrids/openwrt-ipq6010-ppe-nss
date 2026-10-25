@@ -1,0 +1,62 @@
+OpenWrt development environment
+
+Connect: ssh openwrt-dev@orb
+Actual Linux account/home: ly /home/ly
+Workspace: /home/ly/projects/openwrt-dev
+
+All development and builds run inside this Linux VM. The macOS side is
+used only to initiate SSH and transfer existing evidence.
+
+Directories:
+  src/openwrt-main  upstream OpenWrt checkout
+  downloads         shared source download cache
+  ccache            compiler cache (20 GiB limit)
+  artifacts         exported images and build manifests
+  logs              build/check logs
+  evidence          router inventory and host/source manifests
+  bin               workspace helper scripts
+
+Enter environment:
+  cd ~/projects/openwrt-dev
+  . ./env.sh
+  cd src/openwrt-main
+
+Default parallelism: 8 jobs (BUILD_JOBS), chosen conservatively for 15 GiB RAM.
+The OpenWrt build creates its own target cross-toolchain. Host build tools
+are ARM64; no distribution cross compiler or multilib packages are required
+for the initial environment.
+
+Host dependencies can be reapplied with bin/install-host-deps.
+No global shell startup files or global Git configuration were changed.
+Source/feed pins and validation results are stored under evidence.
+
+No router flashing or reboot is part of this environment setup.
+
+Validation completed 2026-10-24:
+  Host compiler/tools and case-sensitive filesystem: PASS.
+  make defconfig for qualcommax/ipq60xx JDCloud RE-CS-02: PASS.
+  make prereq: PASS.
+  Initramfs output: enabled for future RAM-boot experiments.
+  Source checkout: detached at the revision in evidence/openwrt-initial-commit.txt.
+  Official feeds: fetched; exact revisions written to feeds.conf and
+  artifacts/state-main/feeds.conf.pinned.
+
+Feed installation policy:
+  Initially installing every package exposed Kconfig recursion in unrelated
+  Qt5, luci-app-fwknopd, and squeezelite packages. Source files were not patched.
+  Generated links were reset and only luci, iperf3 and their feed dependencies
+  were installed. This prepares available package definitions; it does not
+  automatically enable LuCI or iperf3 in the image configuration.
+  Metadata warnings for uninstalled optional packages remain in defconfig.log;
+  no Kconfig recursion/errors remain. Install additional package definitions
+  deliberately with ./scripts/feeds install <package> as the image evolves.
+
+Build configuration:
+  artifacts/ax6600-main.config contains the full generated configuration.
+  artifacts/ax6600-main.config.seed contains its compact diffconfig.
+  artifacts/state-main contains the source/feed/configuration snapshot.
+  bin/snapshot-build-state can refresh these records after intentional changes.
+
+A complete firmware build and target cross-toolchain build have not been run.
+Passing host/target prerequisite checks is not a bootability guarantee.
+The main baseline uses kernel 6.18; existing LibWrt uses 6.12.108.

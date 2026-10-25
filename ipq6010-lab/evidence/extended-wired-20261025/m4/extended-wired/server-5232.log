@@ -1,0 +1,141 @@
+-----------------------------------------------------------
+Server listening on 5232 (test #1)
+-----------------------------------------------------------
+Accepted connection from 192.168.88.2, port 47453
+[  6] local 192.168.1.158 port 5232 connected to 192.168.88.2 port 40676
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  6]   0.00-1.00   sec  83.3 MBytes   699 Mbits/sec  0.015 ms  0/62410 (0%)  
+[  6]   1.00-2.00   sec  83.4 MBytes   700 Mbits/sec  0.016 ms  25/62490 (0.04%)  
+[  6]   2.00-3.00   sec  83.5 MBytes   700 Mbits/sec  0.010 ms  0/62510 (0%)  
+[  6]   3.00-4.00   sec  83.4 MBytes   700 Mbits/sec  0.015 ms  0/62498 (0%)  
+[  6]   4.00-5.00   sec  83.4 MBytes   700 Mbits/sec  0.012 ms  0/62503 (0%)  
+[  6]   5.00-6.00   sec  83.4 MBytes   700 Mbits/sec  0.013 ms  1/62499 (0.0016%)  
+[  6]   6.00-7.00   sec  83.4 MBytes   700 Mbits/sec  0.010 ms  1/62500 (0.0016%)  
+[  6]   7.00-8.00   sec  83.4 MBytes   700 Mbits/sec  0.010 ms  0/62495 (0%)  
+[  6]   8.00-9.00   sec  83.4 MBytes   700 Mbits/sec  0.008 ms  0/62484 (0%)  
+[  6]   9.00-10.00  sec  83.5 MBytes   700 Mbits/sec  0.010 ms  0/62520 (0%)  
+[  6]  10.00-11.00  sec  83.4 MBytes   700 Mbits/sec  0.008 ms  0/62503 (0%)  
+[  6]  11.00-12.00  sec  83.4 MBytes   700 Mbits/sec  0.010 ms  0/62498 (0%)  
+[  6]  12.00-12.00  sec   205 KBytes   503 Mbits/sec  0.012 ms  0/153 (0%)  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  6]   0.00-12.00  sec  1001 MBytes   700 Mbits/sec  0.012 ms  27/750063 (0.0036%)  receiver
+-----------------------------------------------------------
+Server listening on 5232 (test #2)
+-----------------------------------------------------------
+Accepted connection from 192.168.88.2, port 35847
+[  6] local 192.168.1.158 port 5232 connected to 192.168.88.2 port 45284
+[ ID] Interval           Transfer     Bitrate         Total Datagrams
+[  6]   0.00-1.00   sec  83.4 MBytes   700 Mbits/sec  62470  
+[  6]   1.00-2.00   sec  83.4 MBytes   700 Mbits/sec  62501  
+[  6]   2.00-3.00   sec  83.4 MBytes   700 Mbits/sec  62491  
+[  6]   3.00-4.00   sec  83.5 MBytes   700 Mbits/sec  62516  
+[  6]   4.00-5.00   sec  83.4 MBytes   700 Mbits/sec  62483  
+[  6]   5.00-6.00   sec  83.5 MBytes   700 Mbits/sec  62515  
+[  6]   6.00-7.00   sec  83.4 MBytes   700 Mbits/sec  62492  
+[  6]   7.00-8.00   sec  83.5 MBytes   700 Mbits/sec  62513  
+[  6]   8.00-9.00   sec  83.4 MBytes   700 Mbits/sec  62484  
+[  6]   9.00-10.00  sec  83.4 MBytes   700 Mbits/sec  62502  
+[  6]  10.00-11.00  sec  83.5 MBytes   700 Mbits/sec  62506  
+[  6]  11.00-12.00  sec  83.4 MBytes   700 Mbits/sec  62493  
+[  6]  12.00-12.00  sec   150 KBytes   610 Mbits/sec  110  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  6]   0.00-12.00  sec  1001 MBytes   700 Mbits/sec  0.000 ms  0/750076 (0%)  sender
+-----------------------------------------------------------
+Server listening on 5232 (test #3)
+-----------------------------------------------------------
+Accepted connection from 192.168.88.2, port 59079
+[  6] local 192.168.1.158 port 5232 connected to 192.168.88.2 port 38477
+[  7] local 192.168.1.158 port 5232 connected to 192.168.88.2 port 59119
+[ ID][Role] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  6][RX-S]   0.00-1.00   sec  5.32 MBytes  44.6 Mbits/sec  6.951 ms  0/3985 (0%)  
+[  7][TX-S]   0.00-1.00   sec  23.8 MBytes   200 Mbits/sec            17845  
+[  6][RX-S]   1.00-2.00   sec   211 KBytes  1.72 Mbits/sec  11.819 ms  0/154 (0%)  
+[  7][TX-S]   1.00-2.00   sec  23.8 MBytes   200 Mbits/sec            17854  
+[  6][RX-S]   2.00-3.00   sec  1.28 MBytes  10.7 Mbits/sec  0.247 ms  0/959 (0%)  
+[  7][TX-S]   2.00-3.00   sec  23.8 MBytes   200 Mbits/sec            17858  
+[  6][RX-S]   3.00-4.00   sec  1.21 MBytes  10.1 Mbits/sec  3.749 ms  0/905 (0%)  
+[  7][TX-S]   3.00-4.00   sec  23.8 MBytes   200 Mbits/sec            17856  
+[  6][RX-S]   4.00-5.00   sec  3.71 MBytes  31.1 Mbits/sec  3.995 ms  0/2778 (0%)  
+[  7][TX-S]   4.00-5.00   sec  23.8 MBytes   200 Mbits/sec            17858  
+[  6][RX-S]   5.00-6.00   sec  1.72 MBytes  14.4 Mbits/sec  0.515 ms  0/1286 (0%)  
+[  7][TX-S]   5.00-6.00   sec  23.8 MBytes   200 Mbits/sec            17857  
+[  6][RX-S]   6.00-7.00   sec   741 KBytes  6.07 Mbits/sec  9.680 ms  0/542 (0%)  
+[  7][TX-S]   6.00-7.00   sec  23.8 MBytes   200 Mbits/sec            17857  
+[  6][RX-S]   7.00-8.00   sec   295 KBytes  2.42 Mbits/sec  13.237 ms  0/216 (0%)  
+[  7][TX-S]   7.00-8.00   sec  23.8 MBytes   200 Mbits/sec            17857  
+[  6][RX-S]   8.00-9.00   sec  2.94 MBytes  24.6 Mbits/sec  6.147 ms  0/2199 (0%)  
+[  7][TX-S]   8.00-9.00   sec  23.8 MBytes   200 Mbits/sec            17862  
+[  6][RX-S]   9.00-10.00  sec  1.18 MBytes  9.87 Mbits/sec  1.398 ms  0/881 (0%)  
+[  7][TX-S]   9.00-10.00  sec  23.8 MBytes   200 Mbits/sec            17853  
+[  6][RX-S]  10.00-11.00  sec   552 KBytes  4.52 Mbits/sec  1.474 ms  0/405 (0%)  
+[  7][TX-S]  10.00-11.00  sec  23.8 MBytes   200 Mbits/sec            17857  
+[  6][RX-S]  11.00-12.00  sec   923 KBytes  7.56 Mbits/sec  3.254 ms  0/675 (0%)  
+[  7][TX-S]  11.00-12.00  sec  23.8 MBytes   200 Mbits/sec            17857  
+[  6][RX-S]  12.00-12.06  sec  91.6 KBytes  12.3 Mbits/sec  0.665 ms  0/67 (0%)  
+[  7][TX-S]  12.00-12.06  sec  1.43 MBytes   196 Mbits/sec            1071  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID][Role] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  6][RX-S]   0.00-12.06  sec  20.1 MBytes  14.0 Mbits/sec  0.665 ms  0/15052 (0%)  receiver
+[  7][TX-S]   0.00-12.06  sec   288 MBytes   200 Mbits/sec  0.000 ms  0/215342 (0%)  sender
+-----------------------------------------------------------
+Server listening on 5232 (test #4)
+-----------------------------------------------------------
+Accepted connection from 192.168.88.2, port 45173
+[  6] local 192.168.1.158 port 5232 connected to 192.168.88.2 port 47886
+[  7] local 192.168.1.158 port 5232 connected to 192.168.88.2 port 41280
+iperf3: error - idle timeout for receiving data
+-----------------------------------------------------------
+Server listening on 5232 (test #5)
+-----------------------------------------------------------
+Accepted connection from 192.168.88.2, port 40771
+[  6] local 192.168.1.158 port 5232 connected to 192.168.88.2 port 58606
+[  7] local 192.168.1.158 port 5232 connected to 192.168.88.2 port 45028
+[ ID][Role] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  6][RX-S]   0.00-1.00   sec  23.8 MBytes   200 Mbits/sec  0.001 ms  0/17843 (0%)  
+[  7][TX-S]   0.00-1.00   sec  23.8 MBytes   200 Mbits/sec            17843  
+[  6][RX-S]   1.00-2.00   sec  23.8 MBytes   200 Mbits/sec  0.007 ms  0/17857 (0%)  
+[  7][TX-S]   1.00-2.00   sec  23.8 MBytes   200 Mbits/sec            17857  
+[  6][RX-S]   2.00-3.00   sec  23.8 MBytes   200 Mbits/sec  0.011 ms  30/17857 (0.17%)  
+[  7][TX-S]   2.00-3.00   sec  23.8 MBytes   200 Mbits/sec            17855  
+[  6][RX-S]   3.00-4.00   sec  23.8 MBytes   200 Mbits/sec  0.015 ms  0/17850 (0%)  
+[  7][TX-S]   3.00-4.00   sec  23.8 MBytes   200 Mbits/sec            17862  
+[  6][RX-S]   4.00-5.00   sec  23.8 MBytes   200 Mbits/sec  0.012 ms  0/17850 (0%)  
+[  7][TX-S]   4.00-5.00   sec  23.8 MBytes   200 Mbits/sec            17854  
+[  6][RX-S]   5.00-6.00   sec  23.8 MBytes   200 Mbits/sec  0.021 ms  0/17855 (0%)  
+[  7][TX-S]   5.00-6.00   sec  23.8 MBytes   200 Mbits/sec            17857  
+[  6][RX-S]   6.00-7.00   sec  23.8 MBytes   200 Mbits/sec  0.026 ms  0/17863 (0%)  
+[  7][TX-S]   6.00-7.00   sec  23.8 MBytes   200 Mbits/sec            17858  
+[  6][RX-S]   7.00-8.00   sec  23.8 MBytes   200 Mbits/sec  0.017 ms  0/17849 (0%)  
+[  7][TX-S]   7.00-8.00   sec  23.8 MBytes   200 Mbits/sec            17857  
+[  6][RX-S]   8.00-9.00   sec  23.8 MBytes   200 Mbits/sec  0.017 ms  2/17859 (0.011%)  
+[  7][TX-S]   8.00-9.00   sec  23.8 MBytes   200 Mbits/sec            17856  
+[  6][RX-S]   9.00-10.00  sec  23.8 MBytes   200 Mbits/sec  0.009 ms  0/17856 (0%)  
+[  7][TX-S]   9.00-10.00  sec  23.8 MBytes   200 Mbits/sec            17858  
+[  6][RX-S]  10.00-11.00  sec  23.9 MBytes   200 Mbits/sec  0.004 ms  0/17875 (0%)  
+[  7][TX-S]  10.00-11.00  sec  23.8 MBytes   200 Mbits/sec            17856  
+[  6][RX-S]  11.00-12.00  sec  23.8 MBytes   200 Mbits/sec  0.016 ms  0/17841 (0%)  
+[  7][TX-S]  11.00-12.00  sec  23.8 MBytes   200 Mbits/sec            17858  
+[  6][RX-S]  12.00-13.00  sec  23.8 MBytes   200 Mbits/sec  0.032 ms  0/17856 (0%)  
+[  7][TX-S]  12.00-13.00  sec  23.8 MBytes   200 Mbits/sec            17858  
+[  6][RX-S]  13.00-14.00  sec  23.8 MBytes   200 Mbits/sec  0.019 ms  0/17857 (0%)  
+[  7][TX-S]  13.00-14.00  sec  23.8 MBytes   200 Mbits/sec            17859  
+[  6][RX-S]  14.00-15.00  sec  23.9 MBytes   200 Mbits/sec  0.001 ms  0/17875 (0%)  
+[  7][TX-S]  14.00-15.00  sec  23.8 MBytes   200 Mbits/sec            17855  
+[  6][RX-S]  15.00-16.00  sec  23.8 MBytes   200 Mbits/sec  0.001 ms  0/17857 (0%)  
+[  7][TX-S]  15.00-16.00  sec  23.8 MBytes   200 Mbits/sec            17857  
+[  6][RX-S]  16.00-17.00  sec  23.8 MBytes   200 Mbits/sec  0.002 ms  0/17857 (0%)  
+[  7][TX-S]  16.00-17.00  sec  23.8 MBytes   200 Mbits/sec            17857  
+[  6][RX-S]  17.00-18.00  sec  23.8 MBytes   200 Mbits/sec  0.002 ms  0/17857 (0%)  
+[  7][TX-S]  17.00-18.00  sec  23.8 MBytes   200 Mbits/sec            17857  
+[  6][RX-S]  18.00-18.00  sec  0.00 Bytes  0.00 bits/sec  0.002 ms  0/0 (0%)  
+[  7][TX-S]  18.00-18.00  sec  28.7 KBytes   361 Mbits/sec            21  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID][Role] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  6][RX-S]   0.00-18.00  sec   429 MBytes   200 Mbits/sec  0.002 ms  32/321414 (0.01%)  receiver
+[  7][TX-S]   0.00-18.00  sec   429 MBytes   200 Mbits/sec  0.000 ms  0/321435 (0%)  sender
+-----------------------------------------------------------
+Server listening on 5232 (test #6)
+-----------------------------------------------------------
+iperf3: interrupt - the server has terminated

@@ -1,0 +1,7 @@
+PING 192.168.1.158 (192.168.1.158) from 192.168.100.63 : 56(84) bytes of data.
+64 bytes from 192.168.1.158: icmp_seq=1 ttl=63 time=1.25 ms
+64 bytes from 192.168.1.158: icmp_seq=2 ttl=63 time=1.06 ms
+
+--- 192.168.1.158 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1002ms
+rtt min/avg/max/mdev = 1.055/1.151/1.247/0.096 ms

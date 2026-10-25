@@ -1,0 +1,9 @@
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+eth0             UNKNOWN        fe80::ded8:7bff:fe54:83ec/64 
+lan1@eth0        UP             192.168.88.1/24 
+lan2@eth0        DOWN           
+lan3@eth0        DOWN           
+lan4@eth0        UP             
+wan@eth0         DOWN           
+br-lan           UP             192.168.1.1/24 fde5:c658:76a2::1/60 fe80::ded8:7bff:fe54:83ec/64 
+br-lan.100@br-lan UP             192.168.100.1/24 fe80::ded8:7bff:fe54:83ec/64 

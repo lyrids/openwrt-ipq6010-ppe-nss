@@ -1,0 +1,43 @@
+port              vlan-id  
+lan1              1 PVID Egress Untagged
+                    state forwarding mcast_router 1 neigh_suppress off 
+                  100
+                    state forwarding mcast_router 1 neigh_suppress off 
+lan2              1 PVID Egress Untagged
+                    state forwarding mcast_router 1 neigh_suppress off 
+lan3              1 PVID Egress Untagged
+                    state forwarding mcast_router 1 neigh_suppress off 
+lan4              1 PVID Egress Untagged
+                    state forwarding mcast_router 1 neigh_suppress off 
+                  100
+                    state forwarding mcast_router 1 neigh_suppress off 
+br-lan            1 PVID Egress Untagged
+                    state forwarding mcast_router 1 neigh_suppress off 
+dc:d8:7c:54:83:ec dev eth0 self permanent
+33:33:00:00:00:01 dev eth0 self permanent
+01:00:5e:00:00:01 dev eth0 self permanent
+33:33:ff:54:83:ec dev eth0 self permanent
+33:33:00:00:00:02 dev eth0 self permanent
+33:33:ff:00:00:00 dev eth0 self permanent
+dc:a6:32:b0:ab:b0 dev lan1 vlan 100 master br-lan 
+dc:a6:32:b0:ab:b0 dev lan1 vlan 1 master br-lan 
+dc:d8:7b:54:83:ec dev lan1 vlan 100 master br-lan permanent
+dc:a6:32:b0:ab:b0 dev lan1 master br-lan 
+dc:a6:32:b0:ab:b0 dev lan1 vlan 100 self 
+dc:a6:32:b0:ab:b0 dev lan1 vlan 1 self 
+dc:d8:7c:54:83:ec dev lan2 vlan 1 master br-lan permanent
+dc:d8:7c:54:83:ec dev lan2 master br-lan permanent
+96:63:65:3c:53:51 dev lan4 vlan 1 master br-lan 
+96:63:65:3c:53:51 dev lan4 master br-lan 
+dc:d8:7b:54:83:ec dev lan4 vlan 1 master br-lan permanent
+dc:d8:7b:54:83:ec dev lan4 master br-lan permanent
+96:63:65:3c:53:51 dev lan4 vlan 1 self 
+96:63:65:3c:53:51 dev lan4 vlan 100 self 
+33:33:00:00:00:01 dev br-lan self permanent
+33:33:00:00:00:02 dev br-lan self permanent
+01:00:5e:00:00:01 dev br-lan self permanent
+33:33:ff:00:00:01 dev br-lan self permanent
+33:33:ff:54:83:ec dev br-lan self permanent
+33:33:ff:00:00:00 dev br-lan self permanent
+33:33:00:01:00:02 dev br-lan self permanent
+33:33:00:01:00:03 dev br-lan self permanent

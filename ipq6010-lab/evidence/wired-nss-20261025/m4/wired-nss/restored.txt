@@ -1,0 +1,38 @@
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+eth0             UNKNOWN        fe80::ded8:7bff:fe54:83ec/64 
+lan1@eth0        UP             fe80::ded8:7bff:fe54:83ec/64 
+lan2@eth0        DOWN           
+lan3@eth0        DOWN           
+lan4@eth0        UP             
+wan@eth0         DOWN           
+br-lan           UP             192.168.1.1/24 fd43:e5f6:78de::1/60 fe80::ded8:7bff:fe54:83ec/64 
+[23967.067667] qca-ppe 3a000000.ppe lan1: Link is Down
+[23967.070076] qca-ppe 3a000000.ppe lan1: configuring for phy/psgmii link mode
+[23970.331095] qca-ppe 3a000000.ppe lan1: Link is Up - 1Gbps/Full - flow control rx/tx
+[24098.377688] qca-ppe 3a000000.ppe lan1: Link is Down
+[24098.433823] qca-ppe 3a000000.ppe lan1: configuring for phy/psgmii link mode
+[24101.700596] qca-ppe 3a000000.ppe lan1: Link is Up - 1Gbps/Full - flow control rx/tx
+[24188.156369] br-lan: port 1(lan1) entered blocking state
+[24188.156415] br-lan: port 1(lan1) entered disabled state
+[24188.160574] qca-ppe 3a000000.ppe lan1: entered allmulticast mode
+[24188.166431] qca-ppe 3a000000.ppe lan1: entered promiscuous mode
+[24188.172199] br-lan: port 1(lan1) entered blocking state
+[24188.177512] br-lan: port 1(lan1) entered forwarding state

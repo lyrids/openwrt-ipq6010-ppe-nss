@@ -1,0 +1,51 @@
+JDCloud RE-CS-02 OpenWrt baseline — built and validated 2026-10-24
+
+VM: ssh openwrt-dev@orb
+Build source: /home/ly/projects/openwrt-dev/src/openwrt-main
+Source commit: 5192094fd6fb7050ec3c859cf9f3f8fee5b10d91
+OpenWrt revision: r37652-5192094fd6
+Kernel: 6.18.55
+Toolchain: GCC 14.4.0, musl
+Target: qualcommax/ipq60xx, jdcloud_re-cs-02
+Build start/end UTC: 2026-10-24T07:27:56Z / 2026-10-24T07:51:50Z
+Elapsed download and build: 23 minutes 54 seconds.
+
+Images (under images/):
+openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-initramfs-uImage.itb
+  15172976 bytes
+  SHA256 cd94c82d62b5c2e9df62744000c5f7dd5e2e009e8e54489eb2bcc49682f9f582
+openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-squashfs-sysupgrade.bin
+  14510355 bytes
+  SHA256 abd4a0436b242f1569f30fae354bb125bbb7532a74f0fb651c1620ceba34f364
+
+Architecture:
+Upstream OpenWrt baseline: built-in qca_edma and qca_ppe, standard ath11k.
+Vendor NSS modules and NSS Wi-Fi add-ons have not been added.
+Board-specific Wi-Fi data and integrated/PCIe radio firmware are present.
+LuCI and iperf3 package definitions were made available during environment
+setup, but neither was selected for this baseline image.
+
+Validation passed:
+- Board supported-device identity and embedded sysupgrade metadata.
+- Image sizes and SHA256 against generated profiles.json.
+- FIT configuration config@cp03-c3 in initramfs and sysupgrade kernel.
+- Sysupgrade archive structure and kernel size: 5834248 bytes, below
+  the 6291456-byte (6 MiB) partition limit by 457208 bytes.
+- Package manifest includes board Wi-Fi data and both radio driver families.
+- Actual SquashFS contains integrated/PCIe board data, PCIe firmware, and
+  ath11k AHB/PCIe modules.
+- Compiled kernel enables CONFIG_QCOM_EDMA and CONFIG_QCOM_80211AX_PPE.
+
+Evidence:
+validation.json; kernel.config; rootfs-file-list.txt;
+initramfs-fit-info.txt; sysupgrade-fit-info.txt; sysupgrade-metadata.json;
+build-state/ (source commit, full/seed configuration and pinned feeds);
+download.log; build.log; images/SHA256SUMS.validated.
+
+The FIT inspection tool emits its generic unit-address/signing warning for
+config@cp03-c3. FITs parse correctly; this is not a secure-boot validation.
+Hardware RAM boot succeeded through installed U-Boot HTTP recovery.
+LAN bridge TCP measured 940.9/941.1 Mbit/s, with hardware forwarding evidence.
+Eight checked eMMC partition hashes unchanged. No persistent installation tested.
+Three Wi-Fi PHYs registered; client association/throughput pending.
+Clock warning at probe requires investigation. See evidence/ramboot-20261024.

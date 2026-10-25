@@ -1,0 +1,29 @@
+tcp      6 4 CLOSE src=192.168.1.158 dst=172.31.100.1 sport=56059 dport=5216 packets=5 bytes=305 src=172.31.100.1 dst=172.31.100.2 sport=5216 dport=56059 packets=3 bytes=164 [ASSURED] mark=0 use=1
+tcp      6 3 CLOSE src=192.168.1.158 dst=172.31.100.1 sport=60289 dport=5216 packets=9 bytes=69633 src=172.31.100.1 dst=172.31.100.2 sport=5216 dport=60289 packets=743 bytes=29752 [ASSURED] mark=0 use=1
+Id       Address              Device
+ethernet enabled 1 active 1 offers 72 pushed 12 rejected 24
+bound 0 pushed 12 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+port              vlan-id  
+lan1              100 PVID
+lan2              1 PVID Egress Untagged
+lan3              1 PVID Egress Untagged
+lan4              1 PVID Egress Untagged
+br-lan            1 PVID Egress Untagged
+                  100
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+eth0             UNKNOWN        fe80::ded8:7bff:fe54:83ec/64 
+lan1@eth0        UP             
+lan2@eth0        DOWN           
+lan3@eth0        DOWN           
+lan4@eth0        UP             
+wan@eth0         DOWN           
+br-lan           UP             192.168.1.1/24 fde5:c658:76a2::1/60 fe80::ded8:7bff:fe54:83ec/64 
+br-lan.100@br-lan UP             192.168.100.1/24 fe80::ded8:7bff:fe54:83ec/64 

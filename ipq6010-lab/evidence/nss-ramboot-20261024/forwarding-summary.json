@@ -1,0 +1,37 @@
+{
+  "wired_iperf": {
+    "wifi_to_ethernet_mbps": 2.17,
+    "ethernet_to_wifi_sender_mbps": 565,
+    "reverse_tcp_retransmissions": 63
+  },
+  "monitoring": [
+    {
+      "start_uptime": 1880.57,
+      "end_uptime": 1910.7,
+      "mean_cpu_busy_percent": 1.644459436667229,
+      "cpu0_busy_percent": 3.5775713794289645,
+      "maximum_reported_firmware_packet_counters": [
+        4682,
+        2523,
+        2523,
+        4682
+      ]
+    },
+    {
+      "start_uptime": 1914.72,
+      "end_uptime": 1944.84,
+      "mean_cpu_busy_percent": 1.206140350877193,
+      "cpu0_busy_percent": 2.28611014894354,
+      "maximum_reported_firmware_packet_counters": [
+        108112,
+        1332096,
+        1332096,
+        108112
+      ]
+    }
+  ],
+  "NSS_bridge_rule_pushes": 4,
+  "NSS_bridge_firmware_rejections": 0,
+  "conclusion": "NSS Wi-Fi datapath and bridged connection offload exercised: installed rules and firmware packet counters observed. Severe uplink throughput limitation and descriptor allocation-failure reports remain unresolved.",
+  "persistent_installation_tested": false
+}

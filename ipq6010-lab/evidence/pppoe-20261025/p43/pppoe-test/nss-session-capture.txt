@@ -1,0 +1,9 @@
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on eth0.100, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+01:19:39.618646 dc:d8:7b:54:83:ec > dc:a6:32:b0:ab:b0, ethertype PPPoE S (0x8864), length 1514: PPPoE  [ses 0x1] IP (0x0021), length 1494: 172.31.100.2.60289 > 172.31.100.1.5216: Flags [.], seq 2028812085:2028813525, ack 1767105493, win 126, options [nop,nop,TS val 1577799185 ecr 4060215688], length 1440
+01:19:39.618646 dc:d8:7b:54:83:ec > dc:a6:32:b0:ab:b0, ethertype PPPoE S (0x8864), length 1514: PPPoE  [ses 0x1] IP (0x0021), length 1494: 172.31.100.2.60289 > 172.31.100.1.5216: Flags [.], seq 1440:2880, ack 1, win 126, options [nop,nop,TS val 1577799185 ecr 4060215688], length 1440
+01:19:39.618646 dc:d8:7b:54:83:ec > dc:a6:32:b0:ab:b0, ethertype PPPoE S (0x8864), length 1514: PPPoE  [ses 0x1] IP (0x0021), length 1494: 172.31.100.2.60289 > 172.31.100.1.5216: Flags [.], seq 2880:4320, ack 1, win 126, options [nop,nop,TS val 1577799185 ecr 4060215688], length 1440
+01:19:39.618680 dc:a6:32:b0:ab:b0 > dc:d8:7b:54:83:ec, ethertype PPPoE S (0x8864), length 74: PPPoE  [ses 0x1] IP (0x0021), length 54: 172.31.100.1.5216 > 172.31.100.2.60289: Flags [.], ack 4320, win 1776, options [nop,nop,TS val 4060215692 ecr 1577799185], length 0
+4 packets captured
+314 packets received by filter
+0 packets dropped by kernel

@@ -1,0 +1,10 @@
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on end0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+08:35:22.949794 dc:a6:32:b0:ab:b0 > 96:63:65:3c:53:51, ethertype 802.1Q (0x8100), length 42062: vlan 100, p 0, ethertype IPv4 (0x0800), 192.168.100.63.37937 > 192.168.100.60.5211: Flags [.], seq 2811020130:2811062122, ack 2441948638, win 63, options [nop,nop,TS val 2115794957 ecr 1358566405], length 41992
+08:35:22.949943 dc:a6:32:b0:ab:b0 > 96:63:65:3c:53:51, ethertype 802.1Q (0x8100), length 20342: vlan 100, p 0, ethertype IPv4 (0x0800), 192.168.100.63.37937 > 192.168.100.60.5211: Flags [.], seq 41992:62264, ack 1, win 63, options [nop,nop,TS val 2115794957 ecr 1358566405], length 20272
+08:35:22.949959 96:63:65:3c:53:51 > dc:a6:32:b0:ab:b0, ethertype 802.1Q (0x8100), length 70: vlan 100, p 0, ethertype IPv4 (0x0800), 192.168.100.60.5211 > 192.168.100.63.37937: Flags [.], ack 41992, win 3130, options [nop,nop,TS val 1358566409 ecr 2115794957], length 0
+08:35:22.950016 96:63:65:3c:53:51 > dc:a6:32:b0:ab:b0, ethertype 802.1Q (0x8100), length 70: vlan 100, p 0, ethertype IPv4 (0x0800), 192.168.100.60.5211 > 192.168.100.63.37937: Flags [.], ack 62264, win 3093, options [nop,nop,TS val 1358566409 ecr 2115794957], length 0
+08:35:22.950309 dc:a6:32:b0:ab:b0 > 96:63:65:3c:53:51, ethertype 802.1Q (0x8100), length 1518: vlan 100, p 0, ethertype IPv4 (0x0800), 192.168.100.63.37937 > 192.168.100.60.5211: Flags [P.], seq 62264:63712, ack 1, win 63, options [nop,nop,TS val 2115794957 ecr 1358566405], length 1448
+5 packets captured
+60 packets received by filter
+0 packets dropped by kernel

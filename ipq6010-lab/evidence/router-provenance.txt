@@ -1,0 +1,1206 @@
+
+### package databases
+/etc/apk:
+-rw-r--r--    1 root     root            19 Oct  7 11:43 arch
+drwxr-xr-x    2 root     root            91 Oct  7 11:43 keys
+drwxr-xr-x    1 root     root          3488 Oct  7 11:43 repositories.d
+-rw-r--r--    1 root     root          7632 Oct 23 01:08 world
+
+/etc/apk/repositories.d:
+-rw-r--r--    1 root     root            91 Oct  7 11:43 customfeeds.list
+-rw-r--r--    1 root     root           825 Oct  7 11:43 distfeeds.list
+-rw-r--r--    1 root     root          1083 Oct  7 11:43 distfeeds.list.bak
+
+/lib/apk/db:
+-rw-r--r--    1 root     root        421629 Oct 23 01:08 installed
+-rw-------    1 root     root             0 Oct 21 00:22 lock
+-rw-r--r--    1 root     root         41712 Oct 23 01:08 scripts.tar.gz
+-rw-r--r--    1 root     root             0 Oct 23 01:08 triggers
+
+### package provenance
+C:Q1ZqmR6hmpZ8aJj8HptBlNjjQjFMM=
+P:ath11k-firmware-ipq6018
+V:2026.08.21~0c817c46-r1
+A:aarch64_cortex-a53
+S:2562182
+I:5259317
+T:IPQ6018 ath11k firmware
+U:https://github.com/laipeng668/ath11k-firmware-ddwrt.git
+L:
+o:feeds/base/firmware/ath11k-firmware
+m:Robert Marko <robimarko@gmail.com>
+D:libc
+p:ath11k-firmware-ipq6018-any
+f:S
+F:lib
+F:lib/apk
+F:lib/apk/packages
+R:ath11k-firmware-ipq6018.list
+Z:Q16d7J9nOy/XecDP8G20lgxwZQW6U=
+F:lib/firmware
+F:lib/firmware/IPQ6018
+R:board-2.bin
+Z:Q1eIPKmmr4Uza2BV8PQsi6NeYfMag=
+R:fw_version.txt
+Z:Q1OQQUPPF7diEKUDjljhxCrT1wUrA=
+R:m3_fw.b00
+Z:Q1K/awGmLNLIhYYjnn+CC8jNquNIA=
+R:m3_fw.b01
+Z:Q1BfADzGtwy2rBmTE3rq6BUE9dAhQ=
+R:m3_fw.b02
+Z:Q1RFvMuZQRUe+8cMng4d8bYbXtpE0=
+R:m3_fw.flist
+Z:Q1Xaeo1UFtGYz3iq5OlBscQu4IB5w=
+R:m3_fw.mdt
+Z:Q1wRmqCkqPJNtiq+LEn5c+8adt0CY=
+R:q6_fw.b00
+Z:Q1G59H25r7WDx+SDgvZ5RawPhu3yU=
+R:q6_fw.b01
+Z:Q1oxZC+LdbtajuCE5poJIUAzMkeIQ=
+R:q6_fw.b02
+Z:Q1Vqzzv6TpzpdAt6NLfXagTIVsq1M=
+R:q6_fw.b03
+Z:Q13OhuAYzM1UcKkffV8SfEhO/6tSE=
+R:q6_fw.b04
+Z:Q18rs6RYawb3qNQduoW+Fo5TP8pZQ=
+R:q6_fw.b05
+Z:Q1g1irrxCay+6wgHWmJVcQjxuUjVA=
+R:q6_fw.b07
+Z:Q1eBiVC0vch598hGu27Txi0w5MEnA=
+R:q6_fw.b08
+Z:Q1qIWQpMYmsluZaT3CymxHinIfpg4=
+R:q6_fw.flist
+Z:Q1igd6Hu7Mu/lVlf4sKCutrYche10=
+R:q6_fw.mdt
+Z:Q1IiFLqgizMW5xCyts99GgvlcOmlM=
+R:regdb.bin
+Z:Q1e8hJO3Ccqq0gpNgBuyROu+mDEk4=
+C:Q1ZI+HApDeImpnP+i4n5ArQBNT5AI=
+P:ath11k-firmware-qcn9074
+V:2026.08.21~0c817c46-r1
+A:aarch64_cortex-a53
+S:2436703
+I:5304364
+T:QCN9074 ath11k firmware
+U:https://github.com/laipeng668/ath11k-firmware-ddwrt.git
+L:
+o:feeds/base/firmware/ath11k-firmware
+m:Robert Marko <robimarko@gmail.com>
+D:libc
+p:ath11k-firmware-qcn9074-any
+f:S
+F:lib
+F:lib/apk
+F:lib/apk/packages
+R:ath11k-firmware-qcn9074.list
+Z:Q180yH0D5vImVc49J7vFOQ+JHVu/Y=
+F:lib/firmware
+F:lib/firmware/ath11k
+F:lib/firmware/ath11k/QCN9074
+F:lib/firmware/ath11k/QCN9074/hw1.0
+R:amss.bin
+Z:Q1EsYUWYqVTffOYuJJTP9nDamsM6w=
+R:board-2.bin
+Z:Q1PFhkdSnp5rvcuxfuWwOCaGjCdwE=
+R:fw_version.txt
+Z:Q1M/kWEoPMUv8C9T0yUu5cVjTzWgU=
+R:m3.bin
+Z:Q1HiOMwMM4tHLLaEUmnBKSvmlr21k=
+R:regdb.bin
+Z:Q1nBGsy6cS071dWtSj6j3kjKtEibQ=
+C:Q15prK7oa33jmt6ZzLnAfaqUTjz4w=
+P:base-files
+V:1992~0a42723cf9
+A:aarch64_cortex-a53
+S:10832303
+I:10983375
+T:This package contains a base filesystem and system scripts for OpenWrt.
+U:http://openwrt.org/
+L:GPL-2.0
+o:feeds/base/base-files
+D:busybox fstools fwtool jsonfilter libc netifd openwrt-keyring procd procd-seccomp ubi-utils usign
+p:base-files-any
+f:S
+F:
+R:lib64
+a:0:0:777
+Z:Q1drWjVzkSdrKCpRb1T0jvPCB/Rtg=
+R:var
+a:0:0:777
+Z:Q1zxDT60uA8f3XQwarbmFS8YIrGUU=
+F:bin
+M:0:0:775
+R:board_detect
+a:0:0:775
+Z:Q1MjtLS4Ed40SP2kzm8gwFF32/CAM=
+R:config_generate
+a:0:0:775
+Z:Q1opq1wpLVgIWJ7xcPu0dl0MkRK64=
+R:ipcalc.sh
+a:0:0:775
+Z:Q1Xpuo8HQeaaTBLujYiblWJEBOyVo=
+F:dev
+F:etc
+M:0:0:775
+R:TZ
+a:0:0:777
+Z:Q1ClRNZZdloFGqLbROe4nnerWuHNI=
+R:banner
+a:0:0:664
+Z:Q1Z4RMTCB6iZF8L1SdaQ6Qia87Zes=
+R:banner.failsafe
+a:0:0:664
+Z:Q1+hQpyyqGRp9N33D2HjVbVXiNM5c=
+R:device_info
+a:0:0:664
+Z:Q1SADJQktkjE2TNXI8m8khfh1Ioy0=
+R:diag.sh
+a:0:0:664
+Z:Q1brG85E2BXyusuw2SlCHVO4g+4kY=
+R:ethers
+a:0:0:664
+Z:Q1Vr2gmwqj0eiBB7+oocbkRJ1cH0c=
+R:fstab
+a:0:0:664
+Z:Q1vfWcHNCS8YDyGBW3rCrtHFcJpJI=
+R:group
+a:0:0:664
+Z:Q1RejKsmjUoiVNSMyx+IljAEfoF1g=
+R:hosts
+a:0:0:664
+Z:Q1wal42QZzQ3s1+pSU4KVClAYsFSs=
+R:inittab
+a:0:0:664
+Z:Q1izlffYJ3U+HpLUocNp2f4WyqI78=
+R:localtime
+a:0:0:777
+Z:Q1Sw98okogC33ci7UK/y3mkKy8kOM=
+R:mtab
+a:0:0:777
+Z:Q1tQHp881J4AGlHtjNXhc+MrMrHxE=
+R:openwrt_release
+a:0:0:664
+Z:Q1GCkxFZXyfiPUiuT35Q9vggBzjOY=
+R:openwrt_version
+a:0:0:664
+Z:Q1GdQKCEHxUrY8KNNWwLLqs7DHvgU=
+R:os-release
+a:0:0:777
+Z:Q12aQkVROeK9h6GUars7Bm+1GGPPs=
+R:passwd
+a:0:0:664
+Z:Q1akUaozOT9Hreibi85NlxGBjCYwM=
+R:preinit
+a:0:0:775
+Z:Q1F2iKz/ODwMh2SeGVjD9vC/wlXK8=
+R:profile
+a:0:0:664
+Z:Q1QcRDONv1wonJRjZMqGRTEkluHGY=
+R:protocols
+a:0:0:664
+Z:Q1fVUTVdVUCwe52G5iPLvEq+y7lNI=
+R:rc.common
+a:0:0:775
+Z:Q13YrpXHjRDMz3jLSHh08WOs5MHuE=
+R:rc.local
+a:0:0:664
+Z:Q1UVAYqpTrSTfa3hLcDWmJCzUq81o=
+R:resolv.conf
+a:0:0:777
+Z:Q1Rq6oIf3WWe616OH39wV3yMBeSCw=
+R:services
+a:0:0:664
+Z:Q1dUzMcco0e8eaxMRROdQWt88eZak=
+R:shadow
+a:0:0:600
+Z:Q1kACnT8vwJzAeeEkJ504s//G4eXA=
+R:shells
+a:0:0:664
+Z:Q1izXOc8GBYafX7Rb6JEQQmTvQMVE=
+R:shinit
+a:0:0:664
+Z:Q19jOTnN2hajEWIlpXj0VylbKg2oI=
+R:sysctl.conf
+a:0:0:664
+Z:Q1+hQDE1/2btI8HIgWO6BtHRPW6p4=
+R:sysupgrade.conf
+a:0:0:664
+Z:Q1noewX+LxLITRxGWzljInSEefZLw=
+F:etc/apk
+F:etc/apk/keys
+R:public-key.pem
+a:0:0:666
+Z:Q1KwLf2aSiB+WDvYrZ0Q9WHegkhhE=
+F:etc/apk/repositories.d
+R:distfeeds.list
+Z:Q17Ek12ihl4VazxdIAHwkCm6GIIHw=
+F:etc/board.d
+M:0:0:775
+R:01_leds
+a:0:0:775
+Z:Q1IPuglwshx3iQQy3HZ7YsXPz1rVc=
+R:02_network
+a:0:0:775
+Z:Q1MY4juAoBVQ1TnySjz8sO+u0EJ60=
+R:99-default_network
+a:0:0:775
+Z:Q1hrlmAGMkz/q3yblI139Cqxro2F4=
+F:etc/config
+F:etc/crontabs
+F:etc/hotplug.d
+M:0:0:775
+F:etc/hotplug.d/firmware
+M:0:0:775
+R:11-ath11k-caldata
+a:0:0:775
+Z:Q1EhkawPxMmXfTYzVhyvyyV2F0YGU=
+F:etc/hotplug.d/ieee80211
+M:0:0:775
+R:11_fix_wifi_mac
+a:0:0:775
+Z:Q1gqGkgNqJGvHXAzcm6WEM9SJ70xc=
+F:etc/hotplug.d/leds
+M:0:0:775
+R:00-init
+a:0:0:775
+Z:Q1U/0/YzQojfLZemn1F9VRQb0uUqY=
+F:etc/hotplug.d/net
+M:0:0:775
+R:00-sysctl
+a:0:0:775
+Z:Q10pSZJxHU+7SNYhspHvRA1QJQ3n0=
+F:etc/init.d
+M:0:0:775
+R:boot
+a:0:0:775
+Z:Q1ri2P7m9sUj3Tayj3r0Josg1BY4A=
+R:bootcount
+a:0:0:775
+Z:Q1uREim+sUHc2hOzPNkcQuIE/G+A0=
+R:done
+a:0:0:775
+Z:Q1XhoXD3hV9SlPssAmMB1xZWlaCB0=
+R:gpio_switch
+a:0:0:775
+Z:Q1AvOC18wLU4o40xS+NGxddSvNyUM=
+R:led
+a:0:0:775
+Z:Q1+tktjFzuc3SANJaaz7Z+2YImg7g=
+R:set-irq-affinity
+a:0:0:775
+Z:Q1Gz4zHsUKy4/MH0pbOEGU3vLS3Ao=
+R:smp_affinity
+a:0:0:775
+Z:Q11Bdlbd+JRpzURwAOuTXWn05aUx4=
+R:sysctl
+a:0:0:775
+Z:Q1TPiK3kfy+3HIrV259gXiCo0c9k0=
+R:sysfixtime
+a:0:0:775
+Z:Q1fDsRg4YV8LkdSXIlCgZhXGP6j1k=
+R:system
+a:0:0:775
+Z:Q1eU1eWP6tERHNydmkiFSpJCeoHHs=
+R:umount
+a:0:0:775
+Z:Q1t+PbttjYwvL60EaLwdTArYM63sE=
+F:etc/iproute2
+M:0:0:775
+R:ematch_map
+a:0:0:664
+Z:Q1Cx1zECMQ7tywtqbxsQTEDZ16M6s=
+R:rt_protos
+a:0:0:664
+Z:Q1oHErF3HI1fPg3PmmMUiA5xqjSY4=
+R:rt_tables
+a:0:0:664
+Z:Q193HiuBdB9w4/r2WNxQTw3ASGcvw=
+F:etc/openclash
+M:0:0:775
+F:etc/openclash/core
+M:0:0:775
+R:clash_meta
+a:0:0:775
+Z:Q1GJWdGja46rrAhfgL9kVPuVQKCns=
+F:etc/profile.d
+M:0:0:775
+R:00-passwordless-root.sh
+a:0:0:664
+Z:Q1Y5j/Sg1sRjPvPzOwfAb28nfDHSk=
+R:apk-cheatsheet.sh
+a:0:0:664
+Z:Q18eYAzMpcOKohjT4qVtOLiKiyFtw=
+F:etc/rc.button
+M:0:0:775
+R:failsafe
+a:0:0:775
+Z:Q1476I/F4h0Tjg+P6PbrdNovNmTF0=
+R:power
+a:0:0:775
+Z:Q1XoH2AKFB5JcFj98czzthm3SxlEc=
+R:reboot
+a:0:0:775
+Z:Q1ZCPh3DF5Zp7FE/6U25OqCN/hhjI=
+R:reset
+a:0:0:775
+Z:Q1iaHZJpwK81lQF7jK1zFezNWEfcU=
+R:rfkill
+a:0:0:775
+Z:Q1jk912q1q5/37mUUNIxfIo2pUSMA=
+F:etc/rc.d
+F:etc/sysctl.d
+M:0:0:775
+R:10-default.conf
+a:0:0:775
+Z:Q1UgqpSHRTNWdz+vHCUxPwb7EFQ1E=
+F:etc/uci-defaults
+M:0:0:775
+R:10_migrate-shadow
+a:0:0:775
+Z:Q1LhWw7DNTWmV26EfecYVTWqgjOx8=
+R:11_network-migrate-bridges
+a:0:0:775
+Z:Q1SxYw8OUN1cA2o066DaUZxGbevdw=
+R:12_network-generate-ula
+a:0:0:775
+Z:Q1QX9KhtEl4cCBTacR9vchez3UUOI=
+R:14_network-generate-duid
+a:0:0:664
+Z:Q1R9k4hvaChnj9XF/5ljhCRo4gzIA=
+R:15_migrate-time-zonename
+a:0:0:664
+Z:Q1uTaXY80jZgugS9Yy68aJvSz2DVQ=
+R:15_smp_affinity.sh
+a:0:0:775
+Z:Q1AkP/2CMJIfCZ5ck+TtURZBfvn6Y=
+R:50-root-passwd
+a:0:0:775
+Z:Q10dMPObkS8Wv5q+aT2izdMR3y9Mc=
+R:992_set-nss-load.sh
+a:0:0:775
+Z:Q1Ss/GGVWNhJrV6eEc+5/JmQiAs6g=
+R:993_set-ecm-conntrack.sh
+a:0:0:775
+Z:Q1+jjeBZCwkASB2bp6qB8y5kAUb9Q=
+R:994_custom-scripts.sh
+a:0:0:664
+Z:Q1lvTaCTTUfJjZGkuRqEBCPalYAC4=
+R:995_feeds-scripts.sh
+a:0:0:664
+Z:Q11DwqnhnPHIsZCklszV/wA4Mxvuk=
+R:996_wifi-scripts.sh
+a:0:0:664
+Z:Q1BO6zP25YracAeuJ32wzt9F1ezug=
+R:999_set_password.sh
+a:0:0:664
+Z:Q1bNlzpD4dTGtouq7l+bRfZ5QOGEI=
+F:lib
+M:0:0:775
+R:functions.sh
+a:0:0:664
+Z:Q1lRfbguaUYkVZxB83c/Pxi/XTzRs=
+F:lib/apk
+F:lib/apk/packages
+R:base-files.conffiles
+Z:Q1z+R1FHU6dUVBiARmgUJh3H5CxXM=
+R:base-files.conffiles_static
+Z:Q10wjt18tFrqG1kVsw90/iXDtXwqk=
+R:base-files.list
+Z:Q1q7lSpxTlMxpfKl52Hf2ZS0F8Zbk=
+F:lib/firmware
+F:lib/functions
+M:0:0:775
+R:bootconfig.sh
+a:0:0:664
+Z:Q1alosRh/06moB/GBGU6zjMiIGDm4=
+R:caldata.sh
+a:0:0:664
+Z:Q1lgUMzq39MHULAUd0Q2TKsj931aI=
+R:ipv4.sh
+a:0:0:664
+Z:Q1mAylvI7IYuUQFV2POjefKRbrRjE=
+R:leds.sh
+a:0:0:664
+Z:Q1iv6otRJuff2wD2tWBSBhUClzuks=
+R:migrations.sh
+a:0:0:664
+Z:Q1tvU6i5NO8aVZ7qxZntneKaAZiXo=
+R:network.sh
+a:0:0:664
+Z:Q1lRyI4Vh0CohbR93PJL6VM2dM8Pk=
+R:preinit.sh
+a:0:0:664
+Z:Q1HM9T0jHRQgcu/bOJNYdLB4WyEUw=
+R:service.sh
+a:0:0:664
+Z:Q1r7dQq9nEtO6x6NxeufZsfUd3R4I=
+R:system.sh
+a:0:0:664
+Z:Q1zxSaZUcqnCQzT3fGxWiG3tEs23c=
+R:uci-defaults.sh
+a:0:0:664
+Z:Q1g7YfbjxwxuRjZAEm80LtSEHEYKY=
+F:lib/preinit
+M:0:0:775
+R:00_preinit.conf
+Z:Q1vaVPXtJ3sIhHy40EQS57Pyb42Ws=
+R:02_default_set_state
+a:0:0:664
+Z:Q1qPOgmHJpqmygQhilLFy/H4eQF8k=
+R:02_sysinfo
+a:0:0:664
+Z:Q1GOSaqeOcl2UKEPYAkITXc5Gzajc=
+R:09_mount_factory_data
+a:0:0:775
+Z:Q1L9ZIMv4LYaN0qSD3KS+rRfCADt8=
+R:10_indicate_failsafe
+a:0:0:664
+Z:Q1zuQBIKyiGGq99hZw8Y5bmJg+H68=
+R:10_indicate_preinit
+a:0:0:664
+Z:Q1OWlT/f8AeAFFsysAp38+7Pqx5Es=
+R:30_failsafe_wait
+a:0:0:664
+Z:Q1Swn/Gke6kn8Lc98cXRLr47qO5b0=
+R:40_run_failsafe_hook
+a:0:0:664
+Z:Q1mrBE4NXCIR2kqRL36Y+BGZIBfzQ=
+R:50_indicate_regular_preinit
+a:0:0:664
+Z:Q1aeEESrDskcpqMksZQ2IOhi1MkN4=
+R:70_initramfs_test
+a:0:0:664
+Z:Q1FTPlUzsaKljeB2FEqC3Tw81tnwc=
+R:80_mount_root
+a:0:0:664
+Z:Q12ljNCNneD5/VH6JZExSh8y2fj60=
+R:82_config_generate
+a:0:0:664
+Z:Q1gWGj5qDZBr9uEHVXTx/AD9sKwbs=
+R:99_10_failsafe_login
+a:0:0:664
+Z:Q1kCqqTMTm4nu9eF/CDWq/dJsNJ20=
+R:99_10_run_init
+a:0:0:664
+Z:Q1Wr4Xidxgp0wSJJVHbzuiaEreKak=
+F:lib/upgrade
+M:0:0:775
+R:api-alfa.sh
+a:0:0:775
+Z:Q1r0qALGPNfRdsrqGgHSHqYt5AVEg=
+R:api-asus.sh
+a:0:0:775
+Z:Q1IZP+lBWwfUm/sTet6ebunTmRXuc=
+R:api-buffalo.sh
+a:0:0:775
+Z:Q12QFc4ZrvD6TwJCWXP9u0Rh+nac0=
+R:api-elecom.sh
+a:0:0:775
+Z:Q18ECtPdeoaT8k/UEXcM7Ufc4cMPs=
+R:api-glinet.sh
+a:0:0:775
+Z:Q1mo1nTepnrBBEStw7Svd3bywvua0=
+R:api-linksys.sh
+a:0:0:775
+Z:Q1vkREhMd4d46XtB8KFo7R+Px6yF8=
+R:api-tplink.sh
+a:0:0:775
+Z:Q1jgSfAa2EPsbS80wols5EBMSu0gk=
+R:api-xiaomi.sh
+a:0:0:775
+Z:Q1V6+TNwppB9u/x5bbCC4T9fSAT0E=
+R:api-yuncore.sh
+a:0:0:775
+Z:Q1rxwRAB8M+c3PtBghbJb+ODWNyik=
+R:common.sh
+a:0:0:664
+Z:Q1/uCKbc6nV4UPkHFCXqo5WVaL5Ys=
+R:do_stage2
+a:0:0:775
+Z:Q1uEm0BURqXmsUZ9Z73XEuOt6dIVw=
+R:emmc.sh
+a:0:0:664
+Z:Q11FA2MleChYlrHp3apk0SwWPrzzk=
+R:fwtool.sh
+a:0:0:664
+Z:Q1RsEq8jkWXPYS/k03XJntjyEMWMY=
+R:nand.sh
+a:0:0:664
+Z:Q1idF+KsSquCST5Lz/oU/Zjf++WfI=
+R:platform.sh
+a:0:0:775
+Z:Q15k6DOKSY8tfCwaN2w3d/tUEya64=
+R:stage2
+a:0:0:775
+Z:Q1xJTTzCMLMNo/W0T21dl/LgXVpKs=
+R:tar.sh
+a:0:0:664
+Z:Q1OoGEIncJjjRa9TkyNUq/fjCrhto=
+F:lib/upgrade/keep.d
+M:0:0:775
+R:base-files
+Z:Q16x/VglrTaodGtGFwU6CYWlHccM4=
+R:base-files-essential
+a:0:0:664
+Z:Q1tGmeOrYUQqylQerzJmsL5zmoR9s=
+F:mnt
+F:overlay
+F:proc
+F:rom
+M:0:0:775
+R:note
+a:0:0:664
+Z:Q1aHKo9U5irLVhOkP+uV2+kiJDaq0=
+F:root
+M:0:0:750
+F:sbin
+M:0:0:775
+R:cpuusage
+a:0:0:775
+Z:Q1s/OhNSGrgw2xMXx8JEK0cAG+nAc=
+R:firstboot
+a:0:0:775
+Z:Q1jJJLP/SrSnT5w4g1bo74kqWq7g4=
+R:hotplug-call
+a:0:0:775
+Z:Q1a0+1HF+MVVoESMhf5BB314Hso8Y=
+R:led.sh
+a:0:0:775
+Z:Q1KF/fg5HTbX2tHisAjT5xq0ZP/oM=
+R:sysupgrade
+a:0:0:775
+Z:Q14IacVLx0NEz2+ZEelJgKNEawl4I=
+F:sys
+F:tmp
+M:0:0:1777
+F:usr
+M:0:0:775
+R:lib64
+a:0:0:777
+Z:Q1drWjVzkSdrKCpRb1T0jvPCB/Rtg=
+F:usr/bin
+F:usr/lib
+M:0:0:775
+R:os-release
+a:0:0:664
+Z:Q1u33tQYZWQiULXO2YPTfs5866Rjc=
+F:usr/libexec
+M:0:0:775
+R:login.sh
+a:0:0:775
+Z:Q1jyJ939dheMqp8kel74XmmtE7piw=
+R:validate_firmware_image
+a:0:0:775
+Z:Q1NE0PV7OvnuE7sftOZOypMdQxs8U=
+F:www
+C:Q1BH1S9Y/uXW/6XgY8XDOe0Zrmg/4=
+P:kernel
+V:6.12.108~73d5afada07ce4798ce71914150d5e75-r1
+A:aarch64_cortex-a53
+S:3721
+I:11663
+T:Virtual kernel package
+U:http://www.kernel.org/
+L:GPL-2.0-only
+o:feeds/base/kernel/linux
+D:libc
+p:kernel-any
+f:S
+F:lib
+F:lib/apk
+F:lib/apk/packages
+R:kernel.list
+Z:Q1X74VuhEd+Pd+WOyoa9J1aMepHy0=
+F:lib/modules
+F:lib/modules/6.12.108
+R:modules.builtin
+Z:Q1lXIgN6gVhkChs97Htb3VY7eOTpg=
+R:modules.builtin.modinfo
+Z:Q1zzn3zHQ957a9K2Q+jeD+YYxHkIY=
+C:Q1UPIY3vrJp6etbKqO6Od279zY2d8=
+P:kmod-ath11k
+V:6.12.108.6.18.39-r1
+A:aarch64_cortex-a53
+S:266822
+I:886662
+T:This module adds support for Qualcomm Technologies 802.11ax family of chipsets.
+U:https://wireless.wiki.kernel.org/en/users/drivers/ath11k
+L:GPL-2.0-only
+o:feeds/base/kernel/mac80211
+m:Felix Fietkau <nbd@nbd.name>
+D:kernel=6.12.108~73d5afada07ce4798ce71914150d5e75-r1 kmod-ath kmod-crypto-michael-mic kmod-hwmon-core kmod-qca-nss-drv kmod-qcom-qmi-helpers kmod-thermal
+p:kmod-ath11k-any
+f:S
+F:etc
+R:ipq_release
+Z:Q16YD7hrVJkrAKW8wqzHERb3omuaM=
+F:etc/config
+R:pbuf
+Z:Q12p+C/fgcWCAlmJRKiveSPJ5C5o4=
+F:etc/hotplug.d
+F:etc/hotplug.d/net
+R:99-disable_mesh_chksum_ath11k
+Z:Q1P26CZ0Jrmwz7NMgzn6Pclwq6Pkk=
+F:etc/init.d
+R:qca-nss-pbuf
+a:0:0:755
+Z:Q1kkGNhAab/oXmss//Q5n5b6eF3BQ=
+F:etc/modules.d
+R:ath11k
+Z:Q1XevzR9Z7dxTleIvqSYmK7tw8O+A=
+F:lib
+F:lib/apk
+F:lib/apk/packages
+R:kmod-ath11k.conffiles
+Z:Q1mYHkCQ4H3x32Dt4vB7tLQY6te1Q=
+R:kmod-ath11k.conffiles_static
+Z:Q1pLjnNSFAhLfMLVP4IRd0m5KE4pY=
+R:kmod-ath11k.list
+Z:Q1aWqM5MGpvfUDIJdA7Xj7/tsND8Q=
+F:lib/modules
+F:lib/modules/6.12.108
+R:ath11k.ko
+Z:Q1nVVeOOph8qkfS7G6nY7oddkOv14=
+F:usr
+F:usr/bin
+R:nss_diag
+a:0:0:755
+Z:Q1ROmYQyZ46Z+SDsFjyf+plgi1ojo=
+C:Q1W0AMHY3klSypPlm++i2yc1Yom+0=
+P:kmod-qca-nss-dp
+V:6.12.108.2025.11.24~19c51af0-r1
+A:aarch64_cortex-a53
+S:22289
+I:71006
+T:Qualcom NSS dataplane ethernet driver
+U:
+L:
+o:feeds/base/kernel/qca-nss-dp
+D:kernel=6.12.108~73d5afada07ce4798ce71914150d5e75-r1 kmod-qca-ssdk
+p:kmod-qca-nss-dp-any
+f:S
+F:etc
+F:etc/modules-boot.d
+R:31-qca-nss-dp
+a:0:0:777
+Z:Q1eKfLq19lulc+ulYgdZdNYE79K5A=
+F:etc/modules.d
+R:31-qca-nss-dp
+Z:Q1/BnyJqcOdAy7nQH5ohqS15Q85Z0=
+F:lib
+F:lib/apk
+F:lib/apk/packages
+R:kmod-qca-nss-dp.list
+Z:Q1jsRZJcJEz53rcPwOovXxsjvIneY=
+F:lib/modules
+F:lib/modules/6.12.108
+R:qca-nss-dp.ko
+Z:Q1+As+ewCo0g6ZejqB4KQwXHpuVR8=
+C:Q1DyuZeXjdrsuDVUN381pNHDu9jjQ=
+P:kmod-qca-nss-drv
+V:6.12.108.12.5.2024.11.13~d5ee67b-r17
+A:aarch64_cortex-a53
+S:165873
+I:736381
+T:Kernel driver for NSS (core driver)
+U:
+L:
+o:feeds/nss_packages/feeds/nss_packages/qca-nss-drv
+D:kernel=6.12.108~73d5afada07ce4798ce71914150d5e75-r1 kmod-qca-nss-dp nss-firmware
+p:kmod-qca-nss-drv-any
+f:S
+F:etc
+F:etc/config
+R:nss
+Z:Q194yj1IArjeSHG7gYgq2xnMbwOcU=
+F:etc/hotplug.d
+F:etc/hotplug.d/firmware
+R:10-qca-nss-fw
+Z:Q1HBJH1KAv1JtJD+P01/K0AsphFHs=
+F:etc/init.d
+R:qca-nss-drv
+a:0:0:755
+Z:Q1QpF48+14jbhZalMqIcOxBGvaMRg=
+R:skb_recycler
+a:0:0:755
+Z:Q1jD5lAgAE0V9HrB+74mA2JiSL+iI=
+F:etc/modules.d
+R:32-qca-nss-drv
+Z:Q1Y32YPcu7tHYI08dopMg6g1VHN3w=
+F:lib
+F:lib/apk
+F:lib/apk/packages
+R:kmod-qca-nss-drv.conffiles
+Z:Q1F/Cf919LNO6P27kxvaMwZSZq1Jw=
+R:kmod-qca-nss-drv.conffiles_static
+Z:Q1qQnZCTAZhEZ1cBW1+ipDKrr00qQ=
+R:kmod-qca-nss-drv.list
+Z:Q1m5/zo0WrqFaBGC0shWx6uN/LUSk=
+F:lib/modules
+F:lib/modules/6.12.108
+R:qca-nss-drv.ko
+Z:Q1rWUuH2ucVi0YmVSbue1xhfiBbTk=
+F:lib/upgrade
+F:lib/upgrade/keep.d
+R:kmod-qca-nss-drv
+Z:Q1pzKGHcSyYMm1lAQbaL11PhPhLJg=
+F:usr
+F:usr/bin
+R:nss_stats
+a:0:0:755
+Z:Q1VQ7glDNKW6uCTPp3R0g1tMc7bok=
+C:Q1HwBxKD46hW2KM1E/ALEdZIX29lY=
+P:kmod-qca-nss-ecm
+V:6.12.108.12.5.2024.11.06~30fbfa4-r7
+A:aarch64_cortex-a53
+S:201176
+I:924122
+T:QCA NSS Enhanced Connection Manager (ECM)
+U:
+L:
+o:feeds/nss_packages/feeds/nss_packages/qca-nss-ecm
+D:ethtool kernel=6.12.108~73d5afada07ce4798ce71914150d5e75-r1 kmod-bonding kmod-nat46 kmod-nf-conntrack kmod-ppp kmod-pppoe kmod-pppol2tp kmod-pptp kmod-qca-nss-drv kmod-vxlan
+p:kmod-qca-nss-ecm-any
+f:S
+F:etc
+F:etc/config
+R:ecm
+Z:Q1PsjHWphJ4BiTZuA7OCrtpEnRP8g=
+F:etc/firewall.d
+R:qca-nss-ecm
+Z:Q1mgqlOVQYqeGC+xlrstDmRG24x3w=
+F:etc/hotplug.d
+F:etc/hotplug.d/net
+R:99-disable_offloads
+Z:Q1OBNiIJPeMi2aYW6J8eWWrABMQ2U=
+F:etc/init.d
+R:qca-nss-ecm
+a:0:0:755
+Z:Q1HMrLlsj5LqsLnmT0QmqabrJPPj0=
+F:etc/sysctl.d
+R:qca-nss-ecm.conf
+Z:Q1MApf4lgOhfRignIWnpZr4T7GIpI=
+F:etc/uci-defaults
+R:99-qca-nss-ecm
+Z:Q1Cq5hzYoJEFpMAIyET0tsKDElqzQ=
+F:lib
+F:lib/apk
+F:lib/apk/packages
+R:kmod-qca-nss-ecm.conffiles
+Z:Q11blHcSrtOz9Z0nVP+wxP+9W29Lo=
+R:kmod-qca-nss-ecm.conffiles_static
+Z:Q1Bk+uwspv61Z7gteKRA16XHo39VM=
+R:kmod-qca-nss-ecm.list
+Z:Q1hx9ffY7PtPjj/plOJaC5ZBs4mb8=
+F:lib/modules
+F:lib/modules/6.12.108
+R:ecm.ko
+Z:Q1Rvh61owM46LoE8QtX9YvVLgQfDw=
+F:lib/netifd
+F:lib/netifd/offload
+R:disable_offloads.sh
+Z:Q1xaybhJdb+2d7AOFS6TUEdVeZ2DU=
+R:on-demand-down
+Z:Q1n+a40t6z1K2YPMDJYaJg5FZtKzM=
+F:usr
+F:usr/bin
+R:ecm_dump.sh
+a:0:0:755
+Z:Q16Zg4uP24WZ7wG9RJbCl4MfmNmlY=
+C:Q1ZWrpvx+sSxVAlpFSwsmfd3ANzMM=
+P:kmod-qca-ssdk
+V:6.12.108.2025.05.30~446db12b-r1
+A:aarch64_cortex-a53
+S:353549
+I:1640014
+T:Qualcom SSDK switch driver
+U:
+L:
+o:feeds/base/kernel/qca-ssdk
+D:kernel=6.12.108~73d5afada07ce4798ce71914150d5e75-r1
+p:kmod-qca-ssdk-any
+f:S
+F:etc
+F:etc/modules.d
+R:30-qca-ssdk
+Z:Q1TXycwpvuMeCVh3wQzz2fJqJTAIk=
+F:lib
+F:lib/apk
+F:lib/apk/packages
+R:kmod-qca-ssdk.list
+Z:Q12jRgNV6i+N1zpRsxj4McAq5Y5Bc=
+F:lib/modules
+F:lib/modules/6.12.108
+R:qca-ssdk.ko
+Z:Q14YXR6M8TopkNvr9old2Q3NucEbg=
+C:Q1VXbesua8HDZ7bP2Yembz15zh3uk=
+P:nss-firmware-ipq60xx
+V:2025.05.01-r1
+A:aarch64_cortex-a53
+S:356508
+I:862218
+T:NSS firmware
+U:https://github.com/qosmio/qca-sdk-nss-fw/releases/download/v2025.05.01
+L:
+o:feeds/nss_packages/feeds/nss_packages/firmware/nss-firmware
+m:Sean K <datapronix@protonmail.com>
+D:libc
+p:nss-firmware-ipq60xx-any
+f:S
+F:lib
+F:lib/apk
+F:lib/apk/packages
+R:nss-firmware-ipq60xx.list
+Z:Q1+MuOsKUhxjuAphaFcVCd9bZ1KCg=
+F:lib/firmware
+R:qca-nss0-retail.bin
+Z:Q1PHcIlgaBhZok2WSJXf8WbyM23ow=
+
+### NSS summary
+
+________________________________________________________________________________
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< IPV4 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+________________________________________________________________________________
+
+	ipv4_rx_pkts           = 19985875        common
+	ipv4_rx_byts           = 15174843986     common
+	ipv4_tx_pkts           = 947858          common
+	ipv4_tx_byts           = 733532892       common
+	ipv4_rx_queue[0]_drops = 0               drop
+	ipv4_rx_queue[1]_drops = 0               drop
+	ipv4_rx_queue[2]_drops = 0               drop
+	ipv4_rx_queue[3]_drops = 0               drop
+
+#ipv4 special stats
+
+	ipv4_rx_pkts                               = 949333          special
+	ipv4_rx_bytes                              = 720374395       special
+	ipv4_tx_pkts                               = 949333          special
+	ipv4_tx_bytes                              = 733644407       special
+	ipv4_create_requests                       = 6402            special
+	ipv4_create_collisions                     = 0               special
+	ipv4_create_invalid_interface              = 0               special
+	ipv4_destroy_requests                      = 645             special
+	ipv4_destroy_misses                        = 0               special
+	ipv4_hash_hits                             = 953431          special
+	ipv4_hash_reorders                         = 177             special
+	ipv4_flushes                               = 5750            special
+	ipv4_evictions                             = 0               special
+	ipv4_fragmentations                        = 0               special
+	ipv4_by_rule_drops                         = 0               drop
+	ipv4_mc_create_requests                    = 0               special
+	ipv4_mc_update_requests                    = 0               special
+	ipv4_mc_create_invalid_interface           = 0               special
+	ipv4_mc_destroy_requests                   = 0               special
+	ipv4_mc_destroy_misses                     = 0               special
+	ipv4_mc_flushes                            = 0               special
+	ipv4_mirror_invalid_ifnum_conn_create_req  = 0               special
+	ipv4_mirror_invalid_iftype_conn_create_req = 0               special
+	ipv4_mirror_failures                       = 0               special
+
+#ipv4 exception stats
+
+	ipv4_icmp_hdr_incomplete                 = 0               exception
+	ipv4_icmp_unhandled_type                 = 1144            exception
+	ipv4_icmp_ipv4_hdr_incomplete            = 0               exception
+	ipv4_icmp_ipv4_udp_hdr_incomplete        = 0               exception
+	ipv4_icmp_ipv4_tcp_header_incomplete     = 1375            exception
+	ipv4_icmp_sipv4_unknown_protocol         = 0               exception
+	ipv4_icmp_no_icme                        = 26259           exception
+	ipv4_icmp_flush_to_host                  = 1269            exception
+	ipv4_tcp_header_incomplete               = 0               exception
+	ipv4_tcp_no_icme                         = 15085741        exception
+	ipv4_tcp_ip_option                       = 0               exception
+	ipv4_tcp_ip_fragment                     = 0               exception
+	ipv4_tcp_small_ttl                       = 0               exception
+	ipv4_tcp_needs_fragmentation             = 0               exception
+	ipv4_tcp_flags                           = 4481            exception
+	ipv4_tcp_seq_exceeds_right_edge          = 0               exception
+	ipv4_tcp_small_data_offs                 = 0               exception
+	ipv4_tcp_bad_sack                        = 0               exception
+	ipv4_tcp_big_data_offs                   = 0               exception
+	ipv4_tcp_seq_before_left_edge            = 0               exception
+	ipv4_tcp_ack_exceeds_right_edge          = 0               exception
+	ipv4_tcp_ack_before_left_edge            = 0               exception
+	ipv4_udp_header_incomplete               = 0               exception
+	ipv4_udp_no_icme                         = 3916732         exception
+	ipv4_udp_ip_option                       = 0               exception
+	ipv4_udp_ip_fragment                     = 0               exception
+	ipv4_udp_small_ttl                       = 0               exception
+	ipv4_udp_needs_fragmentation             = 0               exception
+	ipv4_wrong_target_mac                    = 0               exception
+	ipv4_header_incomplete                   = 0               exception
+	ipv4_bad_total_length                    = 0               exception
+	ipv4_bad_checksum                        = 0               exception
+	ipv4_non_initial_fragment                = 0               exception
+	ipv4_datagram_incomplete                 = 0               exception
+	ipv4_options_incomplete                  = 0               exception
+	ipv4_unknown_protocol                    = 1016            exception
+	ipv4_esp_header_incomplete               = 0               exception
+	ipv4_esp_no_icme                         = 0               exception
+	ipv4_esp_ip_option                       = 0               exception
+	ipv4_esp_ip_fragment                     = 0               exception
+	ipv4_esp_small_ttl                       = 0               exception
+	ipv4_esp_needs_fragmentation             = 0               exception
+	ipv4_ingress_vid_mismatch                = 0               exception
+	ipv4_ingress_vid_missing                 = 0               exception
+	ipv4_6rd_no_icme                         = 0               exception
+	ipv4_6rd_ip_option                       = 0               exception
+	ipv4_6rd_ip_fragment                     = 0               exception
+	ipv4_6rd_needs_fragmentation             = 0               exception
+	ipv4_dscp_marking_mismatch               = 0               exception
+	ipv4_vlan_marking_mismatch               = 0               exception
+	ipv4_interface_mismatch                  = 0               exception
+	ipv4_gre_header_incomplete               = 0               exception
+	ipv4_gre_no_icme                         = 0               exception
+	ipv4_gre_ip_option                       = 0               exception
+	ipv4_gre_ip_fragment                     = 0               exception
+	ipv4_gre_small_ttl                       = 0               exception
+	ipv4_gre_needs_fragmentation             = 0               exception
+	ipv4_pptp_gre_session_match_fail         = 0               exception
+	ipv4_pptp_gre_invalid_proto              = 0               exception
+	ipv4_pptp_gre_no_cme                     = 0               exception
+	ipv4_pptp_gre_ip_option                  = 0               exception
+	ipv4_pptp_gre_ip_fragment                = 0               exception
+	ipv4_pptp_gre_small_ttl                  = 0               exception
+	ipv4_pptp_gre_needs_fragmentation        = 0               exception
+	ipv4_destroy                             = 0               exception
+	ipv4_frag_df_set                         = 0               exception
+	ipv4_frag_fail                           = 0               exception
+	ipv4_icmp_ipv4_udplite_header_incomplete = 0               exception
+	ipv4_udplite_header_incomplete           = 0               exception
+	ipv4_udplite_no_icme                     = 0               exception
+	ipv4_udplite_ip_option                   = 0               exception
+	ipv4_udplite_ip_fragment                 = 0               exception
+	ipv4_udplite_small_ttl                   = 0               exception
+	ipv4_udplite_needs_fragmentation         = 0               exception
+	ipv4_mc_udp_no_icme                      = 0               exception
+	ipv4_mc_mem_alloc_failure                = 0               exception
+	ipv4_mc_update_failure                   = 0               exception
+	ipv4_mc_pbuf_alloc_failure               = 0               exception
+	ipv4_pppoe_bridge_no_icme                = 0               exception
+	ipv4_pppoe_no_session                    = 0               drop
+	ipv4_icmp_ipv4_gre_hdr_incomplete        = 0               exception
+	ipv4_icmp_ipv4_esp_hdr_incomplete        = 0               exception
+	ipv4_emesh_prio_mismatch                 = 0               exception
+	ipv4_mc_ucast_dmac_failure               = 0               exception
+
+________________________________________________________________________________
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< IPV6 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+________________________________________________________________________________
+
+	ipv6_rx_pkts           = 33359           common
+	ipv6_rx_byts           = 7575946         common
+	ipv6_tx_pkts           = 1052            common
+	ipv6_tx_byts           = 552947          common
+	ipv6_rx_queue[0]_drops = 0               drop
+	ipv6_rx_queue[1]_drops = 0               drop
+	ipv6_rx_queue[2]_drops = 0               drop
+	ipv6_rx_queue[3]_drops = 0               drop
+
+#ipv6 node stats
+
+	ipv6_rx_pkts                               = 1052            special
+	ipv6_rx_bytes                              = 538219          special
+	ipv6_tx_pkts                               = 1052            special
+	ipv6_tx_bytes                              = 552947          special
+	ipv6_create_requests                       = 23              special
+	ipv6_create_collisions                     = 0               special
+	ipv6_create_invalid_interface              = 0               special
+	ipv6_destroy_requests                      = 4               special
+	ipv6_destroy_misses                        = 0               special
+	ipv6_hash_hits                             = 1071            special
+	ipv6_hash_reorders                         = 0               special
+	ipv6_flushes                               = 19              special
+	ipv6_evictions                             = 0               special
+	ipv6_fragmentations                        = 0               special
+	ipv6_frag_fails                            = 0               special
+	ipv6_by_rule_drops                         = 0               drop
+	ipv6_mc_create_requests                    = 0               special
+	ipv6_mc_update_requests                    = 0               special
+	ipv6_mc_create_invalid_interface           = 0               special
+	ipv6_mc_destroy_requests                   = 0               special
+	ipv6_mc_destroy_misses                     = 0               special
+	ipv6_mc_flushes                            = 0               special
+	ipv6_mirror_invalid_ifnum_conn_create_req  = 0               special
+	ipv6_mirror_invalid_iftype_conn_create_req = 0               special
+	ipv6_mirror_failures                       = 0               special
+
+#ipv6 exception stats
+
+	ipv6_icmp_header_incomplete         = 0               exception
+	ipv6_icmp_unhandled_type            = 5041            exception
+	ipv6_icmp_header_incomplete         = 0               exception
+	ipv6_icmp_udp_header_incomplete     = 0               exception
+	ipv6_icmp_tcp_header_incomplete     = 0               exception
+	ipv6_icmp_unknown_protocol          = 0               exception
+	ipv6_icmp_no_icme                   = 13              exception
+	ipv6_icmp_flush_to_host             = 0               exception
+	ipv6_tcp_header_incomplete          = 0               exception
+	ipv6_tcp_no_icme                    = 1540            exception
+	ipv6_tcp_small_hop_limit            = 0               exception
+	ipv6_tcp_needs_fragmentation        = 0               exception
+	ipv6_tcp_flags                      = 19              exception
+	ipv6_tcp_seq_exceeds_right_edge     = 0               exception
+	ipv6_tcp_small_data_offs            = 0               exception
+	ipv6_tcp_bad_sack                   = 0               exception
+	ipv6_tcp_big_data_offs              = 0               exception
+	ipv6_tcp_seq_before_left_edge       = 0               exception
+	ipv6_tcp_ack_exceeds_right_edge     = 0               exception
+	ipv6_tcp_ack_before_left_edge       = 0               exception
+	ipv6_udp_header_incomplete          = 0               exception
+	ipv6_udp_no_icme                    = 23353           exception
+	ipv6_udp_small_hop_limit            = 0               exception
+	ipv6_udp_needs_fragmentation        = 0               exception
+	ipv6_wrong_target_mac               = 0               exception
+	ipv6_header_incomplete              = 0               exception
+	ipv6_unknown_protocol               = 2341            exception
+	ipv6_ingress_vid_mismatch           = 0               exception
+	ipv6_ingress_vid_missing            = 0               exception
+	ipv6_dscp_marking_mismatch          = 0               exception
+	ipv6_vlan_marking_mismatch          = 0               exception
+	ipv6_interface_mismatch             = 0               exception
+	ipv6_gre_no_icme                    = 0               exception
+	ipv6_gre_needs_fragmentation        = 0               exception
+	ipv6_gre_small_hop_limit            = 0               exception
+	ipv6_destroy                        = 0               exception
+	ipv6_icmp_udplite_header_incomplete = 0               exception
+	ipv6_udplite_header_incomplete      = 0               exception
+	ipv6_udplite_no_icme                = 0               exception
+	ipv6_udplite_small_hop_limit        = 0               exception
+	ipv6_udplite_needs_fragmentation    = 0               exception
+	ipv6_mc_udp_no_icme                 = 0               exception
+	ipv6_mc_mem_alloc_failure           = 0               exception
+	ipv6_mc_update_failure              = 0               exception
+	ipv6_mc_pbuf_alloc_failure          = 0               exception
+	ipv6_esp_header_incomplete          = 0               exception
+	ipv6_esp_no_icme                    = 0               exception
+	ipv6_esp_ip_fragment                = 0               exception
+	ipv6_esp_small_hop_limit            = 0               exception
+	ipv6_esp_needs_fragmentation        = 0               exception
+	ipv6_tunipip6_no_icme               = 0               exception
+	ipv6_tunipip6_small_hop_limit       = 0               exception
+	ipv6_tunipip6_needs_fragmentation   = 0               exception
+	ipv6_pppoe_bridge_no_icme           = 0               exception
+	ipv6_dont_frag_set                  = 0               exception
+	ipv6_reassembly_not_supported       = 0               exception
+	ipv6_pppoe_no_session               = 0               drop
+	ipv6_icmp_gre_header_incomplete     = 0               exception
+	ipv6_icmp_esp_header_incomplete     = 0               exception
+	ipv6_emesh_prio_mismatch            = 0               exception
+	ipv6_mc_ucast_dmac_failure          = 0               exception
+
+### ECM counters available
+/sys/kernel/debug/ecm/ecm_nss_ipv6/non_ported_accelerated_count
+/sys/kernel/debug/ecm/ecm_nss_ipv6/stats_request_counter
+/sys/kernel/debug/ecm/ecm_nss_ipv6/tcp_accelerated_count
+/sys/kernel/debug/ecm/ecm_nss_ipv6/udp_accelerated_count
+/sys/kernel/debug/ecm/ecm_nss_ipv6/pending_decel_count
+/sys/kernel/debug/ecm/ecm_nss_ipv6/pending_accel_count
+/sys/kernel/debug/ecm/ecm_nss_ipv6/accelerated_count
+/sys/kernel/debug/ecm/ecm_nss_ipv4/non_ported_accelerated_count
+/sys/kernel/debug/ecm/ecm_nss_ipv4/stats_request_counter
+/sys/kernel/debug/ecm/ecm_nss_ipv4/tcp_accelerated_count
+/sys/kernel/debug/ecm/ecm_nss_ipv4/udp_accelerated_count
+/sys/kernel/debug/ecm/ecm_nss_ipv4/pending_decel_count
+/sys/kernel/debug/ecm/ecm_nss_ipv4/pending_accel_count
+/sys/kernel/debug/ecm/ecm_nss_ipv4/accelerated_count
+/sys/kernel/debug/ecm/ecm_db/iface_count
+/sys/kernel/debug/ecm/ecm_db/node_count
+/sys/kernel/debug/ecm/ecm_db/mapping_count
+/sys/kernel/debug/ecm/ecm_db/host_count
+/sys/kernel/debug/ecm/ecm_db/connection_count_simple
+/sys/kernel/debug/ecm/ecm_db/connection_count
+
+### wireless startup events
+
+### upgrade helpers
+# Copyright (C) 2021 OpenWrt.org
+#
+
+. /lib/functions.sh
+
+emmc_upgrade_tar() {
+	local tar_file="$1"
+	[ "$CI_KERNPART" -a -z "$EMMC_KERN_DEV" ] && export EMMC_KERN_DEV="$(find_mmc_part $CI_KERNPART $CI_ROOTDEV)"
+	[ "$CI_ROOTPART" -a -z "$EMMC_ROOT_DEV" ] && export EMMC_ROOT_DEV="$(find_mmc_part $CI_ROOTPART $CI_ROOTDEV)"
+	[ "$CI_DATAPART" -a -z "$EMMC_DATA_DEV" ] && export EMMC_DATA_DEV="$(find_mmc_part $CI_DATAPART $CI_ROOTDEV)"
+	[ "$CI_DTBPART" -a -z "$EMMC_DTB_DEV" ]   && export EMMC_DTB_DEV="$(find_mmc_part $CI_DTBPART $CI_ROOTDEV)"
+	local has_kernel
+	local has_rootfs
+	local has_dtb
+	local gz
+	local board_dir
+	[ "$(identify_magic_long $(get_magic_long "$tar_file" cat))" = "gzip" ] && \
+		gz="z"
+	board_dir=$(tar t${gz}f "$tar_file" | grep -m 1 '^sysupgrade-.*/$')
+	board_dir=${board_dir%/}
+
+	tar t${gz}f "$tar_file" ${board_dir}/kernel 1>/dev/null 2>/dev/null && has_kernel=1
+	tar t${gz}f "$tar_file" ${board_dir}/root 1>/dev/null 2>/dev/null && has_rootfs=1
+	tar t${gz}f "$tar_file" ${board_dir}/dtb 1>/dev/null 2>/dev/null && has_dtb=1
+
+	[ "$has_rootfs" = 1 -a "$EMMC_ROOT_DEV" ] && {
+		# Invalidate kernel image while rootfs is being written
+		[ "$has_kernel" = 1 -a "$EMMC_KERN_DEV" ] && {
+			dd if=/dev/zero of="$EMMC_KERN_DEV" bs=512 count=8
+			sync
+		}
+
+		export EMMC_ROOTFS_BLOCKS=$(($(tar x${gz}f "$tar_file" ${board_dir}/root -O | dd of="$EMMC_ROOT_DEV" bs=512 2>&1 | grep "records out" | cut -d' ' -f1)))
+		# Account for 64KiB ROOTDEV_OVERLAY_ALIGN in libfstools
+		EMMC_ROOTFS_BLOCKS=$(((EMMC_ROOTFS_BLOCKS + 127) & ~127))
+		sync
+	}
+	[ "$has_dtb" = 1 -a "$EMMC_DTB_DEV" ] &&
+		export EMMC_DTB_BLOCKS=$(($(tar x${gz}f "$tar_file" ${board_dir}/dtb -O | dd of="$EMMC_DTB_DEV" bs=512 2>&1 | grep "records out" | cut -d' ' -f1)))
+
+	[ "$has_kernel" = 1 -a "$EMMC_KERN_DEV" ] &&
+		export EMMC_KERNEL_BLOCKS=$(($(tar x${gz}f "$tar_file" ${board_dir}/kernel -O | dd of="$EMMC_KERN_DEV" bs=512 2>&1 | grep "records out" | cut -d' ' -f1)))
+
+	if [ -z "$UPGRADE_BACKUP" ]; then
+		if [ "$EMMC_DATA_DEV" ]; then
+			dd if=/dev/zero of="$EMMC_DATA_DEV" bs=512 count=8
+		elif [ "$EMMC_ROOTFS_BLOCKS" ]; then
+			dd if=/dev/zero of="$EMMC_ROOT_DEV" bs=512 seek=$EMMC_ROOTFS_BLOCKS count=8
+		elif [ "$EMMC_KERNEL_BLOCKS" ]; then
+			dd if=/dev/zero of="$EMMC_KERN_DEV" bs=512 seek=$EMMC_KERNEL_BLOCKS count=8
+		fi
+	fi
+}
+
+emmc_upgrade_fit() {
+	local fit_file="$1"
+	[ "$CI_KERNPART" -a -z "$EMMC_KERN_DEV" ] && export EMMC_KERN_DEV="$(find_mmc_part $CI_KERNPART $CI_ROOTDEV)"
+
+	if [ "$EMMC_KERN_DEV" ]; then
+		export EMMC_KERNEL_BLOCKS=$(($(get_image "$fit_file" | fwtool -i /dev/null -T - | dd of="$EMMC_KERN_DEV" bs=512 2>&1 | grep "records out" | cut -d' ' -f1)))
+
+		[ -z "$UPGRADE_BACKUP" ] && dd if=/dev/zero of="$EMMC_KERN_DEV" bs=512 seek=$EMMC_KERNEL_BLOCKS count=8
+	fi
+}
+
+emmc_copy_config() {
+	if [ "$EMMC_DATA_DEV" ]; then
+		dd if="$UPGRADE_BACKUP" of="$EMMC_DATA_DEV" bs=512
+	elif [ "$EMMC_ROOTFS_BLOCKS" ]; then
+		dd if="$UPGRADE_BACKUP" of="$EMMC_ROOT_DEV" bs=512 seek=$EMMC_ROOTFS_BLOCKS
+	elif [ "$EMMC_KERNEL_BLOCKS" ]; then
+		dd if="$UPGRADE_BACKUP" of="$EMMC_KERN_DEV" bs=512 seek=$EMMC_KERNEL_BLOCKS
+	fi
+}
+
+emmc_do_upgrade() {
+	local file_type=$(identify_magic_long "$(get_magic_long "$1")")
+
+	case "$file_type" in
+		"fit")  emmc_upgrade_fit $1;;
+		*)      emmc_upgrade_tar $1;;
+	esac
+}
+
+### firmware versions
+WLAN.HK.2.12-01460-QCAHKSWPL_SILICONZ-1 v1
+WLAN.HK.2.15.0.1.r2-00004-QCAHKSWPL_SILICONZ-1 v1

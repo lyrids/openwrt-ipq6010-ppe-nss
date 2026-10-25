@@ -1,0 +1,23 @@
+ethernet enabled 1 active 1 offers 252 pushed 103 rejected 24
+bound 0 pushed 103 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 17 v4 ethernet if 1/4 prio 0 installed 1 age 24330ms fw flow rx 0 tx 321439 return rx 321439 tx 0
+proto 17 v4 ethernet if 1/4 prio 0 installed 1 age 24330ms fw flow rx 321414 tx 0 return rx 0 tx 321414
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 udp      17 src=192.168.100.63 dst=192.168.200.60 sport=37575 dport=5235 packets=1 bytes=32 src=192.168.200.60 dst=192.168.200.1 sport=5235 dport=37575 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 udp      17 src=192.168.100.63 dst=192.168.200.60 sport=34432 dport=5235 packets=1 bytes=32 src=192.168.200.60 dst=192.168.200.1 sport=5235 dport=34432 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 udp      17 74 src=192.168.100.63 dst=192.168.200.60 sport=59332 dport=5235 packets=1 bytes=32 src=192.168.200.60 dst=192.168.200.1 sport=5235 dport=59332 packets=1 bytes=32 mark=0 use=1
+ipv4     2 udp      17 74 src=192.168.100.63 dst=192.168.200.60 sport=59336 dport=5235 packets=1 bytes=32 src=192.168.200.60 dst=192.168.200.1 sport=5235 dport=59336 packets=1 bytes=32 mark=0 use=1
+[ 1510.345297] qca-ppe 3a000000.ppe lan1: left promiscuous mode
+[ 1510.350256] br-lan: port 1(lan1) entered disabled state
+[ 3199.812635] br-lan: port 1(lan1) entered blocking state
+[ 3199.812675] br-lan: port 1(lan1) entered disabled state
+[ 3199.816709] qca-ppe 3a000000.ppe lan1: entered allmulticast mode
+[ 3199.822458] qca-ppe 3a000000.ppe lan1: entered promiscuous mode
+[ 3199.828382] br-lan: port 1(lan1) entered blocking state
+[ 3199.833775] br-lan: port 1(lan1) entered forwarding state

@@ -1,0 +1,74 @@
+#!/usr/bin/env python3
+import hashlib
+import json
+import pathlib
+import shutil
+import subprocess
+import tarfile
+
+workspace = pathlib.Path.home() / 'projects/openwrt-dev'
+tree = workspace / 'src/openwrt-ppe-nss'
+run = workspace / 'artifacts/nss-ethernet-vlanfix-03803c78cd-20261025'
+out = run / 'images'
+out.mkdir(exist_ok=True)
+target = tree / 'bin/targets/qualcommax/ipq60xx'
+metadata = json.loads((target / 'profiles.json').read_text())
+assert metadata['target'] == 'qualcommax/ipq60xx'
+profile = metadata['profiles']['jdcloud_re-cs-02']
+assert 'jdcloud,re-cs-02' in profile['supported_devices']
+images = profile['images']
+assert any('initramfs' in i['name'] for i in images)
+assert any(i['type'] == 'sysupgrade' for i in images)
+results = []
+for item in images:
+    src = target / item['name']
+    digest = hashlib.file_digest(src.open('rb'), 'sha256').hexdigest()
+    assert digest == item['sha256'], src.name
+    assert src.stat().st_size == item['size'], src.name
+    entry = dict(item)
+    if item['type'] == 'sysupgrade':
+        with tarfile.open(src) as archive:
+            kernel = next(m for m in archive.getmembers() if m.name.endswith('/kernel'))
+            root = next(m for m in archive.getmembers() if m.name.endswith('/root'))
+            assert kernel.size <= 6144 * 1024, kernel.size
+            entry['kernel_bytes'] = kernel.size
+            entry['rootfs_bytes'] = root.size
+            entry['kernel_partition_bytes'] = 6144 * 1024
+            entry['archive_members'] = archive.getnames()
+    if 'initramfs' in src.name:
+        listing = subprocess.check_output(['dumpimage', '-l', str(src)], text=True)
+        assert 'config@cp03-c3' in listing
+        (run / 'initramfs-fit-info.txt').write_text(listing)
+    shutil.copy2(src, out / src.name)
+    results.append(entry)
+
+manifests = list(target.glob('*.manifest'))
+assert manifests, 'Package manifest missing'
+manifest_text = '\n'.join(p.read_text() for p in manifests)
+for package in ['kmod-ath11k-ahb', 'kmod-ath11k-pci', 'ath11k-firmware-ipq6018',
+                'ath11k-firmware-qcn9074', 'ipq-wifi-jdcloud_re-cs-02', 'kmod-nss-wifi-drv', 'nss-firmware-ipq60xx', 'wpad-openssl', 'ppe-help', 'iperf3', 'ethtool-full']:
+    assert any(line.split()[0] == package for line in manifest_text.splitlines() if line.strip()), package
+assert 'kmod-qca-nss-drv ' not in manifest_text
+assert 'kmod-qca-nss-ecm ' not in manifest_text
+configs = list((tree / 'build_dir').glob('target-*/linux-qualcommax_ipq60xx/linux-*/.config'))
+assert len(configs) == 1, configs
+kernel_config = configs[0].read_text()
+for option in ['CONFIG_QCOM_EDMA=y', 'CONFIG_QCOM_80211AX_PPE=y']:
+    assert option in kernel_config.splitlines(), option
+shutil.copy2(configs[0], run / 'kernel.config')
+for pattern in ['*.manifest', '*.buildinfo', 'profiles.json', 'sha256sums']:
+    for src in target.glob(pattern):
+        shutil.copy2(src, out / src.name)
+report = {'target': metadata['target'], 'version_code': metadata['version_code'],
+          'supported_devices': profile['supported_devices'], 'images': results,
+          'checks': ['metadata SHA256 and size', 'FIT board configuration',
+                     'sysupgrade archive and 6 MiB kernel limit',
+                     'required wireless package manifest', 'PPE/EDMA kernel configuration'],
+          'hardware_boot_tested': False}
+(run / 'validation.json').write_text(json.dumps(report, indent=2) + '\n')
+with (out / 'SHA256SUMS.validated').open('w') as f:
+    for src in sorted(out.iterdir()):
+        if src.is_file() and src.name != 'SHA256SUMS.validated':
+            with src.open('rb') as data:
+                f.write(f'{hashlib.file_digest(data, "sha256").hexdigest()}  {src.name}\n')
+print(json.dumps(report, indent=2))

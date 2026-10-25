@@ -1,0 +1,43 @@
+port              vlan-id  
+lan1              100 PVID
+lan2              1 PVID Egress Untagged
+lan3              1 PVID Egress Untagged
+lan4              1 PVID Egress Untagged
+br-lan            1 PVID Egress Untagged
+                  100
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+eth0             UNKNOWN        fe80::ded8:7bff:fe54:83ec/64 
+lan1@eth0        UP             
+lan2@eth0        DOWN           
+lan3@eth0        DOWN           
+lan4@eth0        UP             
+wan@eth0         DOWN           
+br-lan           UP             192.168.1.1/24 fde5:c658:76a2::1/60 fe80::ded8:7bff:fe54:83ec/64 
+br-lan.100@br-lan UP             192.168.100.1/24 fe80::ded8:7bff:fe54:83ec/64 
+ethernet enabled 1 active 1 offers 252 pushed 103 rejected 24
+bound 0 pushed 103 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+table inet fw4 {
+	chain forward { # handle 2
+		type filter hook forward priority filter; policy drop;
+		meta l4proto { tcp, udp } flow add @ft # handle 77
+		ct state vmap { established : accept, related : accept } comment "!fw4: Handle forwarded flows" # handle 79
+		iifname "br-lan" jump forward_lan comment "!fw4: Handle lan IPv4/IPv6 forward traffic" # handle 80
+		iifname "wan" jump forward_wan comment "!fw4: Handle wan IPv4/IPv6 forward traffic" # handle 81
+		iifname "br-lan.100" ip saddr 192.168.100.63 ip daddr 192.168.1.158 counter packets 11 bytes 684 accept comment "vlanfix-test" # handle 127
+		jump handle_reject # handle 82
+	}
+}
+table inet fw4 {
+	chain srcnat { # handle 20
+		type nat hook postrouting priority srcnat; policy accept;
+		oifname "wan" jump srcnat_wan comment "!fw4: Handle wan IPv4/IPv6 srcnat traffic" # handle 122
+	}
+}

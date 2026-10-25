@@ -1,0 +1,43 @@
+Image contains unit addresses @, this will break signing
+{
+  "target": "qualcommax/ipq60xx",
+  "version_code": "r37616+90-a31dd90f69",
+  "supported_devices": [
+    "jdcloud,re-cs-02"
+  ],
+  "images": [
+    {
+      "filesystem": "initramfs",
+      "name": "openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-initramfs-uImage.itb",
+      "sha256": "b1b1229fcaf9a56a6f1e84b9a1cb4b1c1ebd14d4539381e06969adf4745e5122",
+      "sha256_unsigned": "b1b1229fcaf9a56a6f1e84b9a1cb4b1c1ebd14d4539381e06969adf4745e5122",
+      "size": 18853752,
+      "type": "kernel"
+    },
+    {
+      "filesystem": "squashfs",
+      "name": "openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-squashfs-sysupgrade.bin",
+      "sha256": "0a91aa1df234dd7e78605b7dd71d51bcde93964d7d1735416712e67e1ff0b4c5",
+      "sha256_unsigned": "0a91aa1df234dd7e78605b7dd71d51bcde93964d7d1735416712e67e1ff0b4c5",
+      "size": 17920278,
+      "type": "sysupgrade",
+      "kernel_bytes": 5852672,
+      "rootfs_bytes": 12060672,
+      "kernel_partition_bytes": 6291456,
+      "archive_members": [
+        "sysupgrade-jdcloud_re-cs-02",
+        "sysupgrade-jdcloud_re-cs-02/CONTROL",
+        "sysupgrade-jdcloud_re-cs-02/kernel",
+        "sysupgrade-jdcloud_re-cs-02/root"
+      ]
+    }
+  ],
+  "checks": [
+    "metadata SHA256 and size",
+    "FIT board configuration",
+    "sysupgrade archive and 6 MiB kernel limit",
+    "required wireless package manifest",
+    "PPE/EDMA kernel configuration"
+  ],
+  "hardware_boot_tested": false
+}

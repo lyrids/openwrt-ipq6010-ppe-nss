@@ -1,0 +1,25 @@
+ethernet enabled 1 active 1 offers 136 pushed 45 rejected 24
+bound 0 pushed 45 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    15918933 22242878587 0 0
+1    9355834 13469682203 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    9284939 12345412586 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3365335 4906676583
+1   208 52734
+2   8106837 11620655347
+3   7169694 9287023093
+vport packets bytes drop_packets drop_bytes

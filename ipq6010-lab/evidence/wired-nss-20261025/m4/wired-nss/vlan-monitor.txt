@@ -1,0 +1,1189 @@
+SAMPLE
+24113.24 95768.45
+cpu  1000 0 1935 9576845 2 0 885 0 0 0
+cpu0 186 0 218 2389420 0 0 832 0 0 0
+cpu1 224 0 957 2371880 2 0 26 0 0 0
+cpu2 344 0 382 2407594 0 0 11 0 0 0
+cpu3 246 0 378 2407949 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 16 pushed 8 rejected 0
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+SAMPLE
+24114.24 95772.45
+cpu  1001 0 1935 9577245 2 0 886 0 0 0
+cpu0 186 0 218 2389520 0 0 833 0 0 0
+cpu1 224 0 957 2371980 2 0 26 0 0 0
+cpu2 344 0 382 2407695 0 0 11 0 0 0
+cpu3 247 0 378 2408049 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 18 pushed 8 rejected 0
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 4 tx 4 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 430ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+976   ipv4 1     4   3   376   0   12 870
+SAMPLE
+24115.25 95776.44
+cpu  1001 0 1935 9577645 2 0 886 0 0 0
+cpu0 186 0 218 2389619 0 0 833 0 0 0
+cpu1 224 0 957 2372079 2 0 26 0 0 0
+cpu2 344 0 382 2407795 0 0 11 0 0 0
+cpu3 247 0 378 2408150 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 18 pushed 8 rejected 0
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 1440ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+976   ipv4 1     4   3   376   12  0 0
+SAMPLE
+24116.26 95780.44
+cpu  1002 0 1936 9578044 2 0 886 0 0 0
+cpu0 186 0 218 2389719 0 0 833 0 0 0
+cpu1 224 0 958 2372178 2 0 26 0 0 0
+cpu2 344 0 382 2407895 0 0 11 0 0 0
+cpu3 248 0 378 2408250 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 20 pushed 8 rejected 1
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 1
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 780ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+976   ipv4 1     4   3   376   12  4 298
+SAMPLE
+24117.27 95784.44
+cpu  1002 0 1937 9578444 2 0 886 0 0 0
+cpu0 186 0 219 2389819 0 0 833 0 0 0
+cpu1 224 0 958 2372277 2 0 26 0 0 0
+cpu2 344 0 382 2407996 0 0 11 0 0 0
+cpu3 248 0 378 2408351 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 22 pushed 8 rejected 2
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 2
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 1 tx 0 drop 0/0/0/0 exceptions 9:1
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 120ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+976   ipv4 1     4   3   376   12  8 596
+SAMPLE
+24118.28 95788.43
+cpu  1003 0 1937 9578844 2 0 886 0 0 0
+cpu0 187 0 219 2389918 0 0 833 0 0 0
+cpu1 224 0 958 2372376 2 0 26 0 0 0
+cpu2 344 0 382 2408096 0 0 11 0 0 0
+cpu3 248 0 378 2408452 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 22 pushed 8 rejected 2
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 2
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 1130ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+976   ipv4 1     4   3   376   12  8 596
+SAMPLE
+24119.29 95792.43
+cpu  1003 0 1938 9579244 2 0 886 0 0 0
+cpu0 187 0 220 2390018 0 0 833 0 0 0
+cpu1 224 0 958 2372476 2 0 26 0 0 0
+cpu2 344 0 382 2408196 0 0 11 0 0 0
+cpu3 248 0 378 2408552 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 22 pushed 8 rejected 2
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 2
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 2140ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+976   ipv4 1     4   3   376   12  8 596
+SAMPLE
+24120.30 95796.43
+cpu  1003 0 1940 9579643 2 0 886 0 0 0
+cpu0 187 0 220 2390118 0 0 833 0 0 0
+cpu1 224 0 958 2372575 2 0 26 0 0 0
+cpu2 344 0 383 2408296 0 0 11 0 0 0
+cpu3 248 0 379 2408653 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 22 pushed 8 rejected 2
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 2
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 3150ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+976   ipv4 1     4   3   376   12  8 596
+SAMPLE
+24121.31 95800.43
+cpu  1004 0 1940 9580043 2 0 886 0 0 0
+cpu0 187 0 220 2390217 0 0 833 0 0 0
+cpu1 224 0 958 2372674 2 0 26 0 0 0
+cpu2 344 0 383 2408397 0 0 11 0 0 0
+cpu3 249 0 379 2408753 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 24 pushed 8 rejected 3
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 3
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 880ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+976   ipv4 1     4   3   376   12  12 894
+SAMPLE
+24122.32 95804.42
+cpu  1004 0 1941 9580443 2 0 886 0 0 0
+cpu0 187 0 220 2390317 0 0 833 0 0 0
+cpu1 224 0 958 2372773 2 0 26 0 0 0
+cpu2 344 0 384 2408497 0 0 11 0 0 0
+cpu3 249 0 379 2408854 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 24 pushed 8 rejected 3
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 3
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 1890ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+976   ipv4 1     4   2   376   12  12 894
+SAMPLE
+24123.32 95808.42
+cpu  1005 0 1942 9580842 2 0 886 0 0 0
+cpu0 187 0 220 2390416 0 0 833 0 0 0
+cpu1 224 0 958 2372873 2 0 26 0 0 0
+cpu2 344 0 385 2408598 0 0 11 0 0 0
+cpu3 250 0 379 2408954 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 24 pushed 8 rejected 3
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 3
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 2900ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+976   ipv4 1     4   2   376   12  12 894
+SAMPLE
+24124.33 95812.42
+cpu  1006 0 1942 9581242 2 0 886 0 0 0
+cpu0 188 0 220 2390516 0 0 833 0 0 0
+cpu1 224 0 958 2372972 2 0 26 0 0 0
+cpu2 344 0 385 2408698 0 0 11 0 0 0
+cpu3 250 0 379 2409054 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 24 pushed 8 rejected 3
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 3
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 3910ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+976   ipv4 1     4   2   376   12  12 894
+SAMPLE
+24125.34 95816.41
+cpu  1006 0 1942 9581642 2 0 886 0 0 0
+cpu0 188 0 220 2390616 0 0 833 0 0 0
+cpu1 224 0 958 2373071 2 0 26 0 0 0
+cpu2 344 0 385 2408799 0 0 11 0 0 0
+cpu3 250 0 379 2409155 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 24 pushed 8 rejected 3
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 3
+node eth_rx rx 1 tx 1 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 4920ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+976   ipv4 1     4   2   376   12  12 894
+SAMPLE
+24126.35 95820.41
+cpu  1006 0 1943 9582041 2 0 886 0 0 0
+cpu0 188 0 221 2390715 0 0 833 0 0 0
+cpu1 224 0 958 2373170 2 0 26 0 0 0
+cpu2 344 0 385 2408899 0 0 11 0 0 0
+cpu3 250 0 379 2409255 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 24 pushed 8 rejected 3
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 3
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 5920ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+976   ipv4 1     4   2   376   12  12 894
+SAMPLE
+24127.36 95824.40
+cpu  1006 0 1944 9582441 2 0 886 0 0 0
+cpu0 188 0 222 2390815 0 0 833 0 0 0
+cpu1 224 0 958 2373269 2 0 26 0 0 0
+cpu2 344 0 385 2409000 0 0 11 0 0 0
+cpu3 250 0 379 2409355 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 26 pushed 8 rejected 4
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 4
+node eth_rx rx 2 tx 2 drop 0/0/0/0 exceptions
+node ipv4 rx 2 tx 0 drop 0/0/0/0 exceptions 9:2
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 130ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+976   ipv4 1     4   3   376   12  16 1192
+SAMPLE
+24128.37 95828.40
+cpu  1006 0 1945 9582840 2 0 886 0 0 0
+cpu0 188 0 223 2390914 0 0 833 0 0 0
+cpu1 224 0 958 2373369 2 0 26 0 0 0
+cpu2 344 0 385 2409100 0 0 11 0 0 0
+cpu3 250 0 379 2409456 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 26 pushed 8 rejected 4
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 4
+node eth_rx rx 1 tx 1 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 1140ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+976   ipv4 1     4   3   376   12  16 1192
+SAMPLE
+24129.38 95832.40
+cpu  1006 0 1946 9583240 2 0 886 0 0 0
+cpu0 188 0 223 2391014 0 0 833 0 0 0
+cpu1 224 0 959 2373468 2 0 26 0 0 0
+cpu2 344 0 385 2409201 0 0 11 0 0 0
+cpu3 250 0 379 2409556 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 26 pushed 8 rejected 4
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 4
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 2150ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+976   ipv4 1     4   3   376   12  16 1192
+SAMPLE
+24130.39 95836.39
+cpu  1006 0 1947 9583640 2 0 886 0 0 0
+cpu0 188 0 223 2391113 0 0 833 0 0 0
+cpu1 224 0 959 2373567 2 0 26 0 0 0
+cpu2 344 0 385 2409301 0 0 11 0 0 0
+cpu3 250 0 380 2409656 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 26 pushed 8 rejected 4
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 4
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 3160ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+976   ipv4 1     4   3   376   12  16 1192
+SAMPLE
+24131.40 95840.34
+cpu  1010 0 1948 9584035 2 0 886 0 0 0
+cpu0 191 0 224 2391209 0 0 833 0 0 0
+cpu1 224 0 959 2373666 2 0 26 0 0 0
+cpu2 345 0 385 2409402 0 0 11 0 0 0
+cpu3 250 0 380 2409756 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 26 pushed 8 rejected 4
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 4
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 1 tx 0 drop 0/0/0/0 exceptions 9:2
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 4170ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+976   ipv4 1     4   3   376   12  16 1192
+SAMPLE
+24132.40 95844.32
+cpu  1012 0 1948 9584432 2 0 887 0 0 0
+cpu0 191 0 224 2391308 0 0 834 0 0 0
+cpu1 224 0 959 2373765 2 0 26 0 0 0
+cpu2 345 0 385 2409501 0 0 11 0 0 0
+cpu3 252 0 380 2409856 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 26 pushed 8 rejected 4
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 4
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 5180ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+976   ipv4 1     4   3   376   12  16 1192
+SAMPLE
+24133.41 95848.31
+cpu  1012 0 1949 9584832 2 0 887 0 0 0
+cpu0 191 0 224 2391408 0 0 834 0 0 0
+cpu1 224 0 959 2373864 2 0 26 0 0 0
+cpu2 345 0 385 2409602 0 0 11 0 0 0
+cpu3 252 0 381 2409957 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 26 pushed 8 rejected 4
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 4
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 6190ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+976   ipv4 1     4   3   376   12  16 1192
+SAMPLE
+24134.42 95852.31
+cpu  1012 0 1950 9585232 2 0 887 0 0 0
+cpu0 191 0 225 2391508 0 0 834 0 0 0
+cpu1 224 0 959 2373963 2 0 26 0 0 0
+cpu2 345 0 385 2409702 0 0 11 0 0 0
+cpu3 252 0 381 2410057 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 26 pushed 8 rejected 4
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 4
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 1 tx 0 drop 0/0/0/0 exceptions 9:1
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 7200ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+976   ipv4 1     4   3   376   12  16 1192
+SAMPLE
+24135.43 95856.31
+cpu  1013 0 1950 9585631 2 0 887 0 0 0
+cpu0 192 0 225 2391607 0 0 834 0 0 0
+cpu1 224 0 959 2374062 2 0 26 0 0 0
+cpu2 345 0 385 2409803 0 0 11 0 0 0
+cpu3 252 0 381 2410157 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 26 pushed 8 rejected 4
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 4
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 8200ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+976   ipv4 1     4   3   376   12  16 1192
+SAMPLE
+24136.44 95860.30
+cpu  1014 0 1950 9586031 2 0 887 0 0 0
+cpu0 193 0 225 2391707 0 0 834 0 0 0
+cpu1 224 0 959 2374162 2 0 26 0 0 0
+cpu2 345 0 385 2409903 0 0 11 0 0 0
+cpu3 252 0 381 2410258 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 26 pushed 8 rejected 4
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 4
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 9210ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+976   ipv4 1     4   3   376   12  16 1192
+SAMPLE
+24137.45 95864.30
+cpu  1014 0 1951 9586430 2 0 887 0 0 0
+cpu0 193 0 226 2391806 0 0 834 0 0 0
+cpu1 224 0 959 2374261 2 0 26 0 0 0
+cpu2 345 0 385 2410004 0 0 11 0 0 0
+cpu3 252 0 381 2410358 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 26 pushed 8 rejected 4
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 4
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 10220ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+976   ipv4 1     4   3   376   12  16 1192
+SAMPLE
+24138.46 95868.30
+cpu  1015 0 1951 9586830 2 0 887 0 0 0
+cpu0 193 0 226 2391906 0 0 834 0 0 0
+cpu1 224 0 959 2374360 2 0 26 0 0 0
+cpu2 345 0 385 2410104 0 0 11 0 0 0
+cpu3 253 0 381 2410458 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 26 pushed 8 rejected 4
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 4
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 11230ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+976   ipv4 1     4   3   376   12  16 1192
+SAMPLE
+24139.47 95872.29
+cpu  1015 0 1952 9587230 2 0 887 0 0 0
+cpu0 193 0 226 2392005 0 0 834 0 0 0
+cpu1 224 0 959 2374459 2 0 26 0 0 0
+cpu2 345 0 386 2410205 0 0 11 0 0 0
+cpu3 253 0 381 2410559 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 26 pushed 8 rejected 4
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 4
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 12240ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+976   ipv4 1     4   3   376   12  16 1192
+SAMPLE
+24140.47 95876.29
+cpu  1015 0 1953 9587629 2 0 887 0 0 0
+cpu0 193 0 226 2392105 0 0 834 0 0 0
+cpu1 224 0 960 2374559 2 0 26 0 0 0
+cpu2 345 0 386 2410305 0 0 11 0 0 0
+cpu3 253 0 381 2410659 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 26 pushed 8 rejected 4
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 4
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 13250ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+976   ipv4 1     4   3   376   12  16 1192
+SAMPLE
+24141.48 95880.28
+cpu  1015 0 1953 9588029 2 0 887 0 0 0
+cpu0 193 0 226 2392204 0 0 834 0 0 0
+cpu1 224 0 960 2374658 2 0 26 0 0 0
+cpu2 345 0 386 2410406 0 0 11 0 0 0
+cpu3 253 0 381 2410759 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 28 pushed 8 rejected 5
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 5
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 950ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+976   ipv4 1     4   3   376   12  20 1490
+SAMPLE
+24142.49 95884.28
+cpu  1015 0 1955 9588428 2 0 887 0 0 0
+cpu0 193 0 226 2392304 0 0 834 0 0 0
+cpu1 224 0 960 2374757 2 0 26 0 0 0
+cpu2 345 0 387 2410506 0 0 11 0 0 0
+cpu3 253 0 382 2410860 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 28 pushed 8 rejected 5
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 5
+node eth_rx rx 2 tx 2 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 1960ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+976   ipv4 1     4   3   376   12  20 1490
+SAMPLE
+24143.50 95888.28
+cpu  1016 0 1956 9588828 2 0 887 0 0 0
+cpu0 194 0 226 2392403 0 0 834 0 0 0
+cpu1 224 0 960 2374856 2 0 26 0 0 0
+cpu2 345 0 388 2410607 0 0 11 0 0 0
+cpu3 253 0 382 2410960 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 28 pushed 8 rejected 5
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 5
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 2960ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+976   ipv4 1     4   3   376   12  20 1490
+SAMPLE
+24144.51 95892.27
+cpu  1016 0 1957 9589228 2 0 887 0 0 0
+cpu0 194 0 227 2392503 0 0 834 0 0 0
+cpu1 224 0 960 2374956 2 0 26 0 0 0
+cpu2 345 0 388 2410707 0 0 11 0 0 0
+cpu3 253 0 382 2411061 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 28 pushed 8 rejected 5
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 5
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 3970ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+976   ipv4 1     4   3   376   12  20 1490
+SAMPLE
+24145.52 95896.27
+cpu  1016 0 1958 9589628 2 0 887 0 0 0
+cpu0 194 0 228 2392602 0 0 834 0 0 0
+cpu1 224 0 960 2375055 2 0 26 0 0 0
+cpu2 345 0 388 2410808 0 0 11 0 0 0
+cpu3 253 0 382 2411162 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 28 pushed 8 rejected 5
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 5
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 4980ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+976   ipv4 1     4   3   376   12  20 1490
+SAMPLE
+24146.53 95900.27
+cpu  1016 0 1959 9590027 2 0 887 0 0 0
+cpu0 194 0 229 2392701 0 0 834 0 0 0
+cpu1 224 0 960 2375154 2 0 26 0 0 0
+cpu2 345 0 388 2410908 0 0 11 0 0 0
+cpu3 253 0 382 2411262 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 28 pushed 8 rejected 5
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 5
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 5990ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+976   ipv4 1     4   3   376   12  20 1490
+SAMPLE
+24147.54 95904.26
+cpu  1017 0 1959 9590427 2 0 888 0 0 0
+cpu0 194 0 229 2392801 0 0 835 0 0 0
+cpu1 224 0 960 2375253 2 0 26 0 0 0
+cpu2 345 0 388 2411009 0 0 11 0 0 0
+cpu3 254 0 382 2411363 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 28 pushed 8 rejected 5
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 5
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 7000ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+976   ipv4 1     4   3   376   12  20 1490
+SAMPLE
+24148.55 95908.26
+cpu  1017 0 1960 9590827 2 0 888 0 0 0
+cpu0 194 0 229 2392900 0 0 835 0 0 0
+cpu1 224 0 960 2375352 2 0 26 0 0 0
+cpu2 345 0 389 2411109 0 0 11 0 0 0
+cpu3 254 0 382 2411463 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 28 pushed 8 rejected 5
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 5
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 1 tx 0 drop 0/0/0/0 exceptions 9:1
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 8010ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+976   ipv4 1     4   3   376   12  20 1490
+SAMPLE
+24149.56 95912.26
+cpu  1018 0 1960 9591226 2 0 888 0 0 0
+cpu0 194 0 229 2393000 0 0 835 0 0 0
+cpu1 224 0 960 2375452 2 0 26 0 0 0
+cpu2 346 0 389 2411210 0 0 11 0 0 0
+cpu3 254 0 382 2411563 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 28 pushed 8 rejected 5
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 5
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 9020ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+976   ipv4 1     4   3   376   12  20 1490
+SAMPLE
+24150.56 95916.26
+cpu  1018 0 1961 9591626 2 0 888 0 0 0
+cpu0 194 0 230 2393099 0 0 835 0 0 0
+cpu1 224 0 960 2375551 2 0 26 0 0 0
+cpu2 346 0 389 2411311 0 0 11 0 0 0
+cpu3 254 0 382 2411664 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 28 pushed 8 rejected 5
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 5
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 10030ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+976   ipv4 1     4   3   376   12  20 1490
+SAMPLE
+24151.57 95920.25
+cpu  1018 0 1961 9592026 2 0 888 0 0 0
+cpu0 194 0 230 2393199 0 0 835 0 0 0
+cpu1 224 0 960 2375650 2 0 26 0 0 0
+cpu2 346 0 389 2411411 0 0 11 0 0 0
+cpu3 254 0 382 2411764 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 30 pushed 8 rejected 5
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 5
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 400ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 11040ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+704   ipv4 1     4   3   376   0   8 572
+976   ipv4 1     4   3   376   12  20 1490
+SAMPLE
+24152.58 95924.25
+cpu  1018 0 1962 9592425 2 0 888 0 0 0
+cpu0 194 0 230 2393298 0 0 835 0 0 0
+cpu1 224 0 960 2375749 2 0 26 0 0 0
+cpu2 346 0 389 2411511 0 0 11 0 0 0
+cpu3 254 0 383 2411865 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 30 pushed 8 rejected 5
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 5
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 1410ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 12050ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+704   ipv4 1     4   3   376   12  0 0
+976   ipv4 1     4   3   376   12  20 1490
+SAMPLE
+24153.59 95928.24
+cpu  1019 0 1962 9592825 2 0 889 0 0 0
+cpu0 194 0 230 2393398 0 0 836 0 0 0
+cpu1 224 0 960 2375849 2 0 26 0 0 0
+cpu2 346 0 389 2411612 0 0 11 0 0 0
+cpu3 255 0 383 2411965 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 32 pushed 8 rejected 6
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 6
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 730ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 13050ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+704   ipv4 1     4   3   376   12  4 298
+976   ipv4 1     4   3   376   12  20 1490
+SAMPLE
+24154.60 95932.24
+cpu  1019 0 1963 9593224 2 0 889 0 0 0
+cpu0 194 0 230 2393497 0 0 836 0 0 0
+cpu1 224 0 960 2375948 2 0 26 0 0 0
+cpu2 346 0 389 2411712 0 0 11 0 0 0
+cpu3 255 0 384 2412066 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 34 pushed 8 rejected 7
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 7
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 80ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 14060ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+704   ipv4 1     4   3   376   12  8 596
+976   ipv4 1     4   3   376   12  20 1490
+SAMPLE
+24155.61 95936.23
+cpu  1019 0 1964 9593623 2 0 889 0 0 0
+cpu0 194 0 230 2393597 0 0 836 0 0 0
+cpu1 224 0 960 2376047 2 0 26 0 0 0
+cpu2 346 0 389 2411812 0 0 11 0 0 0
+cpu3 255 0 385 2412166 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 34 pushed 8 rejected 7
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 7
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 1090ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 15070ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+704   ipv4 1     4   3   376   12  8 596
+976   ipv4 1     4   3   376   12  20 1490
+SAMPLE
+24156.62 95940.18
+cpu  1024 0 1965 9594019 2 0 889 0 0 0
+cpu0 198 0 230 2393692 0 0 836 0 0 0
+cpu1 225 0 960 2376146 2 0 26 0 0 0
+cpu2 346 0 389 2411913 0 0 11 0 0 0
+cpu3 255 0 386 2412266 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 34 pushed 8 rejected 7
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 7
+node eth_rx rx 2 tx 2 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 2100ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 16080ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+704   ipv4 1     4   3   376   12  8 596
+976   ipv4 1     4   3   376   12  20 1490
+SAMPLE
+24157.63 95944.16
+cpu  1025 0 1966 9594416 2 0 889 0 0 0
+cpu0 199 0 230 2393791 0 0 836 0 0 0
+cpu1 225 0 960 2376245 2 0 26 0 0 0
+cpu2 346 0 389 2412013 0 0 11 0 0 0
+cpu3 255 0 387 2412366 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 34 pushed 8 rejected 7
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 7
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 3110ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 17090ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+704   ipv4 1     4   3   376   12  8 596
+976   ipv4 1     4   3   376   12  20 1490
+SAMPLE
+24158.64 95948.15
+cpu  1025 0 1968 9594816 2 0 889 0 0 0
+cpu0 199 0 231 2393891 0 0 836 0 0 0
+cpu1 225 0 960 2376344 2 0 26 0 0 0
+cpu2 346 0 389 2412113 0 0 11 0 0 0
+cpu3 255 0 388 2412466 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 36 pushed 8 rejected 8
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 8
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 840ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 18100ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+704   ipv4 1     4   3   376   12  12 894
+976   ipv4 1     4   3   376   12  20 1490
+SAMPLE
+24159.65 95952.15
+cpu  1026 0 1968 9595216 2 0 889 0 0 0
+cpu0 199 0 231 2393990 0 0 836 0 0 0
+cpu1 225 0 960 2376443 2 0 26 0 0 0
+cpu2 346 0 389 2412214 0 0 11 0 0 0
+cpu3 256 0 388 2412567 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 36 pushed 8 rejected 8
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 8
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 2 tx 0 drop 0/0/0/0 exceptions 9:2
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 1850ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 19110ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+704   ipv4 1     4   3   376   12  12 894
+976   ipv4 1     4   3   376   12  20 1490
+SAMPLE
+24160.65 95956.15
+cpu  1026 0 1969 9595615 2 0 889 0 0 0
+cpu0 199 0 231 2394090 0 0 836 0 0 0
+cpu1 225 0 960 2376543 2 0 26 0 0 0
+cpu2 346 0 390 2412314 0 0 11 0 0 0
+cpu3 256 0 388 2412667 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 36 pushed 8 rejected 8
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 8
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 2860ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 20120ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+704   ipv4 1     4   3   376   12  12 894
+976   ipv4 1     4   3   376   12  20 1490
+SAMPLE
+24161.66 95960.15
+cpu  1026 0 1969 9596015 2 0 889 0 0 0
+cpu0 199 0 231 2394190 0 0 836 0 0 0
+cpu1 225 0 960 2376642 2 0 26 0 0 0
+cpu2 346 0 390 2412414 0 0 11 0 0 0
+cpu3 256 0 388 2412768 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 36 pushed 8 rejected 8
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 8
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 3870ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 21130ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+704   ipv4 1     4   3   376   12  12 894
+976   ipv4 1     4   3   376   12  20 1490
+SAMPLE
+24162.67 95964.14
+cpu  1027 0 1970 9596415 2 0 889 0 0 0
+cpu0 199 0 232 2394290 0 0 836 0 0 0
+cpu1 225 0 960 2376741 2 0 26 0 0 0
+cpu2 346 0 390 2412515 0 0 11 0 0 0
+cpu3 257 0 388 2412868 0 0 16 0 0 0
+ethernet enabled 1 active 1 offers 36 pushed 8 rejected 8
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 8
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 4880ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 22140ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+704   ipv4 1     4   3   376   12  12 894
+976   ipv4 1     4   3   376   12  20 1490

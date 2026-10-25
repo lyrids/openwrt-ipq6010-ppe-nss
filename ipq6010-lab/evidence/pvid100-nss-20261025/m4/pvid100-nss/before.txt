@@ -1,0 +1,55 @@
+port              vlan-id  
+lan1              100 PVID
+lan2              1 PVID Egress Untagged
+lan3              1 PVID Egress Untagged
+lan4              1 PVID Egress Untagged
+br-lan            1 PVID Egress Untagged
+                  100
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+eth0             UNKNOWN        fe80::ded8:7bff:fe54:83ec/64 
+lan1@eth0        UP             fe80::ded8:7bff:fe54:83ec/64 
+lan2@eth0        DOWN           
+lan3@eth0        DOWN           
+lan4@eth0        UP             
+wan@eth0         DOWN           
+br-lan           UP             192.168.1.1/24 fd43:e5f6:78de::1/60 fe80::ded8:7bff:fe54:83ec/64 
+br-lan.100@br-lan UP             192.168.100.1/24 fe80::ded8:7bff:fe54:83ec/64 
+table inet fw4 {
+	chain forward { # handle 2
+		type filter hook forward priority filter; policy drop;
+		meta l4proto { tcp, udp } flow add @ft # handle 328
+		ct state vmap { established : accept, related : accept } comment "!fw4: Handle forwarded flows" # handle 330
+		iifname "br-lan" jump forward_lan comment "!fw4: Handle lan IPv4/IPv6 forward traffic" # handle 331
+		iifname "wan" jump forward_wan comment "!fw4: Handle wan IPv4/IPv6 forward traffic" # handle 332
+		jump handle_reject # handle 333
+	}
+}
+table inet fw4 {
+	chain input { # handle 1
+		type filter hook input priority filter; policy drop;
+		iifname "br-lan.100" ip saddr 192.168.100.63 ip daddr 192.168.100.1 counter packets 12 bytes 832 accept comment "pvid100-test" # handle 377
+		iif "lo" accept comment "!fw4: Accept traffic from loopback" # handle 320
+		ct state vmap { established : accept, related : accept } comment "!fw4: Handle inbound flows" # handle 322
+		tcp flags & (fin | syn | rst | ack) == syn jump syn_flood comment "!fw4: Rate limit TCP syn packets" # handle 323
+		iifname "br-lan" jump input_lan comment "!fw4: Handle lan IPv4/IPv6 input traffic" # handle 324
+		iifname "wan" jump input_wan comment "!fw4: Handle wan IPv4/IPv6 input traffic" # handle 325
+		jump handle_reject # handle 326
+	}
+}
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 6 tx 6 drop 0/0/0/0 exceptions
+node ipv4 rx 5 tx 0 drop 0/0/0/0 exceptions 9:5
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0

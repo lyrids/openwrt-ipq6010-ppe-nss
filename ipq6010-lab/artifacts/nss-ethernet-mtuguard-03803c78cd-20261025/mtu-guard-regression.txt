@@ -1,0 +1,4 @@
+PASS: normal1500 stays eligible; live bridge1400 overrides stale cached1500 and declines NSS
+PASS: both directional route limits and asymmetric MTUs are checked
+PASS: standard PPPoE1492 retained without double subtraction; custom PPPoE1400 falls back
+PASS: physical cap, missing device, neighbour route and bridged pointer safety
