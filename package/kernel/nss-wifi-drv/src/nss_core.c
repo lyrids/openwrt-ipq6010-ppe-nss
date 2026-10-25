@@ -453,6 +453,7 @@ static void nss_core_halt(struct nss_core *core)
 	if (!core->loaded)
 		return;
 
+	nss_ethernet_stop(core->conduit);
 	qca_ppe_fw_carrier_set(core->conduit, NULL);
 	writel(1, core->nphys + NSS_CORE_RESET_CTRL);
 
@@ -897,6 +898,13 @@ static int nss_core_boot(struct nss_core *core)
 	ret = qca_ppe_fw_carrier_set(core->conduit, nss_flow_is_ours);
 	if (ret)
 		dev_err(core->dev, "flows not steered to the firmware: %d\n", ret);
+
+	ret = nss_ethernet_setup(core->conduit);
+	if (ret) {
+		dev_err(core->dev, "Ethernet backend setup failed: %d\n", ret);
+		nss_core_halt(core);
+		return ret;
+	}
 
 	nss_pool_configure(core);
 	nss_accel_in_core(core);
