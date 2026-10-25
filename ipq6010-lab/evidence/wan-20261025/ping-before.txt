@@ -1,0 +1,8 @@
+PING 192.168.21.60 (192.168.21.60) from 192.168.1.2 : 56(84) bytes of data.
+64 bytes from 192.168.21.60: icmp_seq=1 ttl=63 time=10.5 ms
+64 bytes from 192.168.21.60: icmp_seq=2 ttl=63 time=9.13 ms
+64 bytes from 192.168.21.60: icmp_seq=3 ttl=63 time=8.46 ms
+
+--- 192.168.21.60 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 8.462/9.367/10.508/0.851 ms

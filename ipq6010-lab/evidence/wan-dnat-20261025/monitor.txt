@@ -1,0 +1,617 @@
+SAMPLE-1
+ethernet enabled 1 active 1 offers 44 pushed 22 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 3/7
+bound 0 pushed 22 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 4238 tx 4238 drop 0/0/0/0 exceptions
+node ipv4 rx 4235 tx 4235 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/5 prio 0 installed 1 age 1320ms fw flow rx 1594420 tx 137429 return rx 137429 tx 1594420
+proto 6 v4 ethernet if 1/5 prio 0 installed 1 age 1320ms fw flow rx 51757 tx 1663651 return rx 1663651 tx 51757
+proto 6 v4 ethernet if 1/5 prio 0 installed 1 age 15880ms fw flow rx 5 tx 6 return rx 6 tx 5
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE-2
+ethernet enabled 1 active 1 offers 44 pushed 22 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 3/7
+bound 0 pushed 22 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 4135 tx 4135 drop 0/0/0/0 exceptions
+node ipv4 rx 3953 tx 3953 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/5 prio 0 installed 1 age 2330ms fw flow rx 1594420 tx 137429 return rx 137429 tx 1594420
+proto 6 v4 ethernet if 1/5 prio 0 installed 1 age 2330ms fw flow rx 51757 tx 1663651 return rx 1663651 tx 51757
+proto 6 v4 ethernet if 1/5 prio 0 installed 1 age 16890ms fw flow rx 5 tx 6 return rx 6 tx 5
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE-3
+ethernet enabled 1 active 1 offers 44 pushed 22 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 3/7
+bound 0 pushed 22 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 4194 tx 4194 drop 0/0/0/0 exceptions
+node ipv4 rx 4275 tx 4275 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/5 prio 0 installed 1 age 3340ms fw flow rx 1594420 tx 137429 return rx 137429 tx 1594420
+proto 6 v4 ethernet if 1/5 prio 0 installed 1 age 3340ms fw flow rx 51757 tx 1663651 return rx 1663651 tx 51757
+proto 6 v4 ethernet if 1/5 prio 0 installed 1 age 17900ms fw flow rx 5 tx 6 return rx 6 tx 5
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE-4
+ethernet enabled 1 active 1 offers 44 pushed 22 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 3/7
+bound 0 pushed 22 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 4007 tx 4007 drop 0/0/0/0 exceptions
+node ipv4 rx 4011 tx 4011 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/5 prio 0 installed 1 age 190ms fw flow rx 1911395 tx 163846 return rx 163846 tx 1911395
+proto 6 v4 ethernet if 1/5 prio 0 installed 1 age 190ms fw flow rx 61565 tx 1998099 return rx 1998099 tx 61565
+proto 6 v4 ethernet if 1/5 prio 0 installed 1 age 18910ms fw flow rx 5 tx 6 return rx 6 tx 5
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE-5
+ethernet enabled 1 active 1 offers 44 pushed 22 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 3/7
+bound 0 pushed 22 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 4244 tx 4244 drop 0/0/0/0 exceptions
+node ipv4 rx 4269 tx 4269 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/5 prio 0 installed 1 age 1200ms fw flow rx 1911395 tx 163846 return rx 163846 tx 1911395
+proto 6 v4 ethernet if 1/5 prio 0 installed 1 age 1200ms fw flow rx 61565 tx 1998099 return rx 1998099 tx 61565
+proto 6 v4 ethernet if 1/5 prio 0 installed 1 age 19920ms fw flow rx 5 tx 6 return rx 6 tx 5
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE-6
+ethernet enabled 1 active 1 offers 44 pushed 22 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 3/7
+bound 0 pushed 22 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 4164 tx 4164 drop 0/0/0/0 exceptions
+node ipv4 rx 4242 tx 4242 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/5 prio 0 installed 1 age 2200ms fw flow rx 1911395 tx 163846 return rx 163846 tx 1911395
+proto 6 v4 ethernet if 1/5 prio 0 installed 1 age 2200ms fw flow rx 61565 tx 1998099 return rx 1998099 tx 61565
+proto 6 v4 ethernet if 1/5 prio 0 installed 1 age 20920ms fw flow rx 5 tx 6 return rx 6 tx 5
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE-7
+ethernet enabled 1 active 1 offers 44 pushed 22 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 3/7
+bound 0 pushed 22 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 4295 tx 4295 drop 0/0/0/0 exceptions
+node ipv4 rx 4298 tx 4298 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/5 prio 0 installed 1 age 3210ms fw flow rx 1911395 tx 163846 return rx 163846 tx 1911395
+proto 6 v4 ethernet if 1/5 prio 0 installed 1 age 3210ms fw flow rx 61565 tx 1998099 return rx 1998099 tx 61565
+proto 6 v4 ethernet if 1/5 prio 0 installed 1 age 21930ms fw flow rx 5 tx 6 return rx 6 tx 5
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE-8
+ethernet enabled 1 active 1 offers 46 pushed 23 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 6/7
+bound 0 pushed 23 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 4323 tx 4323 drop 0/0/0/0 exceptions
+node ipv4 rx 4320 tx 4320 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/5 prio 0 installed 1 age 22940ms fw flow rx 5 tx 6 return rx 6 tx 5
+proto 6 v4 ethernet if 1/5 prio 0 installed 1 age 60ms fw flow rx 72266 tx 2332588 return rx 2332588 tx 72266
+proto 6 v4 ethernet if 1/5 prio 0 installed 1 age 60ms fw flow rx 2234705 tx 193120 return rx 193120 tx 2234705
+proto 6 v4 ethernet if 4/5 prio 0 installed 1 age 60ms fw flow rx 6 tx 5 return rx 5 tx 6
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE-9
+ethernet enabled 1 active 1 offers 54 pushed 27 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 3/7
+bound 0 pushed 27 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 436 tx 436 drop 0/0/0/0 exceptions
+node ipv4 rx 415 tx 415 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 310ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 300ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=49639 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=49639 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=37127 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=37127 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE-10
+ethernet enabled 1 active 1 offers 54 pushed 27 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 3/7
+bound 0 pushed 27 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 574 tx 574 drop 0/0/0/0 exceptions
+node ipv4 rx 564 tx 564 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 1320ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 1310ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=49639 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=49639 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=37127 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=37127 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE-11
+ethernet enabled 1 active 1 offers 54 pushed 27 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 3/7
+bound 0 pushed 27 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 510 tx 510 drop 0/0/0/0 exceptions
+node ipv4 rx 523 tx 523 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 2330ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 2320ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=49639 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=49639 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=37127 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=37127 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE-12
+ethernet enabled 1 active 1 offers 54 pushed 27 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 3/7
+bound 0 pushed 27 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 427 tx 427 drop 0/0/0/0 exceptions
+node ipv4 rx 448 tx 448 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 3340ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 3330ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=49639 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=49639 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=37127 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=37127 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE-13
+ethernet enabled 1 active 1 offers 54 pushed 27 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 3/7
+bound 0 pushed 27 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 429 tx 429 drop 0/0/0/0 exceptions
+node ipv4 rx 352 tx 352 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 4350ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 4340ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=49639 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=49639 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=37127 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=37127 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE-14
+ethernet enabled 1 active 1 offers 54 pushed 27 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 3/7
+bound 0 pushed 27 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 468 tx 468 drop 0/0/0/0 exceptions
+node ipv4 rx 400 tx 400 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 5360ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 5350ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=49639 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=49639 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=37127 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=37127 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE-15
+ethernet enabled 1 active 1 offers 54 pushed 27 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 3/7
+bound 0 pushed 27 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 403 tx 403 drop 0/0/0/0 exceptions
+node ipv4 rx 389 tx 389 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 6370ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 6360ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=49639 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=49639 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=37127 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=37127 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE-16
+ethernet enabled 1 active 1 offers 54 pushed 27 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 3/7
+bound 0 pushed 27 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 325 tx 325 drop 0/0/0/0 exceptions
+node ipv4 rx 317 tx 317 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 860ms fw flow rx 6 tx 6 return rx 6 tx 6
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 860ms fw flow rx 98520 tx 11621 return rx 11621 tx 98520
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=49639 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=49639 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=37127 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=37127 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE-17
+ethernet enabled 1 active 1 offers 54 pushed 27 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 3/7
+bound 0 pushed 27 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 497 tx 497 drop 0/0/0/0 exceptions
+node ipv4 rx 502 tx 502 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 1870ms fw flow rx 6 tx 6 return rx 6 tx 6
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 1870ms fw flow rx 98520 tx 11621 return rx 11621 tx 98520
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=49639 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=49639 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=37127 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=37127 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE-18
+ethernet enabled 1 active 1 offers 54 pushed 27 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 3/7
+bound 0 pushed 27 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 266 tx 266 drop 0/0/0/0 exceptions
+node ipv4 rx 469 tx 469 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 2880ms fw flow rx 6 tx 6 return rx 6 tx 6
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 2880ms fw flow rx 98520 tx 11621 return rx 11621 tx 98520
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=49639 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=49639 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=37127 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=37127 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE-19
+ethernet enabled 1 active 1 offers 58 pushed 29 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 7/3
+bound 0 pushed 29 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 364 tx 364 drop 0/0/0/0 exceptions
+node ipv4 rx 354 tx 354 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 5/1 prio 0 installed 0 age 3890ms fw flow rx 98520 tx 11621 return rx 11621 tx 98520
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 340ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 350ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 ethernet if 5/1 prio 0 installed 0 age 3890ms fw flow rx 6 tx 6 return rx 6 tx 6
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=49639 dport=5261 packets=4 bytes=216 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=49639 packets=3 bytes=164 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=37127 dport=5261 packets=98 bytes=397512 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=37127 packets=169 bytes=7794 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=50659 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=50659 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=59959 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=59959 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE-20
+ethernet enabled 1 active 1 offers 58 pushed 29 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 7/3
+bound 0 pushed 29 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 266 tx 266 drop 0/0/0/0 exceptions
+node ipv4 rx 266 tx 266 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 1340ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 1350ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=49639 dport=5261 packets=4 bytes=216 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=49639 packets=3 bytes=164 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=37127 dport=5261 packets=98 bytes=397512 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=37127 packets=169 bytes=7794 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=50659 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=50659 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=59959 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=59959 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE-21
+ethernet enabled 1 active 1 offers 58 pushed 29 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 7/3
+bound 0 pushed 29 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 312 tx 312 drop 0/0/0/0 exceptions
+node ipv4 rx 314 tx 314 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 2350ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 2360ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=49639 dport=5261 packets=4 bytes=216 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=49639 packets=3 bytes=164 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=37127 dport=5261 packets=98 bytes=397512 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=37127 packets=169 bytes=7794 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=50659 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=50659 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=59959 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=59959 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE-22
+ethernet enabled 1 active 1 offers 58 pushed 29 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 7/3
+bound 0 pushed 29 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 213 tx 213 drop 0/0/0/0 exceptions
+node ipv4 rx 185 tx 185 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 3360ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 3370ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=49639 dport=5261 packets=4 bytes=216 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=49639 packets=3 bytes=164 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=37127 dport=5261 packets=98 bytes=397512 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=37127 packets=169 bytes=7794 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=50659 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=50659 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=59959 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=59959 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE-23
+ethernet enabled 1 active 1 offers 58 pushed 29 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 7/3
+bound 0 pushed 29 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 382 tx 382 drop 0/0/0/0 exceptions
+node ipv4 rx 316 tx 316 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 4370ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 4380ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=49639 dport=5261 packets=4 bytes=216 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=49639 packets=3 bytes=164 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=37127 dport=5261 packets=98 bytes=397512 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=37127 packets=169 bytes=7794 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=50659 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=50659 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=59959 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=59959 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE-24
+ethernet enabled 1 active 1 offers 58 pushed 29 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 7/3
+bound 0 pushed 29 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 262 tx 262 drop 0/0/0/0 exceptions
+node ipv4 rx 285 tx 285 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 5380ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 5390ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=49639 dport=5261 packets=4 bytes=216 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=49639 packets=3 bytes=164 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=37127 dport=5261 packets=98 bytes=397512 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=37127 packets=169 bytes=7794 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=50659 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=50659 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=59959 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=59959 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE-25
+ethernet enabled 1 active 1 offers 58 pushed 29 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 7/3
+bound 0 pushed 29 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 337 tx 337 drop 0/0/0/0 exceptions
+node ipv4 rx 376 tx 376 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 580ms fw flow rx 4586 tx 62262 return rx 62262 tx 4586
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 580ms fw flow rx 6 tx 6 return rx 6 tx 6
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=49639 dport=5261 packets=4 bytes=216 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=49639 packets=3 bytes=164 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=37127 dport=5261 packets=98 bytes=397512 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=37127 packets=169 bytes=7794 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=50659 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=50659 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=59959 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=59959 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE-26
+ethernet enabled 1 active 1 offers 58 pushed 29 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 7/3
+bound 0 pushed 29 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 317 tx 317 drop 0/0/0/0 exceptions
+node ipv4 rx 324 tx 324 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 1590ms fw flow rx 4586 tx 62262 return rx 62262 tx 4586
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 1590ms fw flow rx 6 tx 6 return rx 6 tx 6
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=49639 dport=5261 packets=4 bytes=216 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=49639 packets=3 bytes=164 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=37127 dport=5261 packets=98 bytes=397512 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=37127 packets=169 bytes=7794 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=50659 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=50659 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=59959 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=59959 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE-27
+ethernet enabled 1 active 1 offers 58 pushed 29 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 7/3
+bound 0 pushed 29 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 226 tx 226 drop 0/0/0/0 exceptions
+node ipv4 rx 213 tx 213 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 2600ms fw flow rx 4586 tx 62262 return rx 62262 tx 4586
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 2600ms fw flow rx 6 tx 6 return rx 6 tx 6
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=49639 dport=5261 packets=4 bytes=216 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=49639 packets=3 bytes=164 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=37127 dport=5261 packets=98 bytes=397512 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=37127 packets=169 bytes=7794 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=50659 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=50659 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=59959 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=59959 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE-28
+ethernet enabled 1 active 1 offers 58 pushed 29 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 7/3
+bound 0 pushed 29 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 220 tx 220 drop 0/0/0/0 exceptions
+node ipv4 rx 231 tx 231 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 3610ms fw flow rx 4586 tx 62262 return rx 62262 tx 4586
+proto 6 v4 ethernet if 5/1 prio 0 installed 1 age 3610ms fw flow rx 6 tx 6 return rx 6 tx 6
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=49639 dport=5261 packets=4 bytes=216 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=49639 packets=3 bytes=164 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=37127 dport=5261 packets=98 bytes=397512 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=37127 packets=169 bytes=7794 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=50659 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=50659 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=59959 dport=5261 packets=2 bytes=112 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=59959 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE-29
+ethernet enabled 1 active 1 offers 58 pushed 29 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 7/3
+bound 0 pushed 29 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 5/1 prio 0 installed 0 age 4620ms fw flow rx 4586 tx 62262 return rx 62262 tx 4586
+proto 6 v4 ethernet if 5/1 prio 0 installed 0 age 4620ms fw flow rx 6 tx 6 return rx 6 tx 6
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=49639 dport=5261 packets=4 bytes=216 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=49639 packets=3 bytes=164 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=37127 dport=5261 packets=98 bytes=397512 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=37127 packets=169 bytes=7794 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=50659 dport=5261 packets=4 bytes=216 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=50659 packets=2 bytes=112 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=59959 dport=5261 packets=46 bytes=2162 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=59959 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+SAMPLE-30
+ethernet enabled 1 active 1 offers 58 pushed 29 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 7/3
+bound 0 pushed 29 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=49639 dport=5261 packets=4 bytes=216 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=49639 packets=3 bytes=164 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=37127 dport=5261 packets=98 bytes=397512 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=37127 packets=169 bytes=7794 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=50659 dport=5261 packets=4 bytes=216 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=50659 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=59959 dport=5261 packets=46 bytes=2162 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=59959 packets=1 bytes=60 [OFFLOAD] mark=0 use=2
+SAMPLE-31
+ethernet enabled 1 active 1 offers 58 pushed 29 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 7/3
+bound 0 pushed 29 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=49639 dport=5261 packets=4 bytes=216 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=49639 packets=3 bytes=164 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=37127 dport=5261 packets=98 bytes=397512 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=37127 packets=169 bytes=7794 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=50659 dport=5261 packets=4 bytes=216 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=50659 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=59959 dport=5261 packets=46 bytes=2162 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=59959 packets=1 bytes=60 [OFFLOAD] mark=0 use=2
+SAMPLE-32
+ethernet enabled 1 active 1 offers 58 pushed 29 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 7/3
+bound 0 pushed 29 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=49639 dport=5261 packets=4 bytes=216 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=49639 packets=3 bytes=164 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=37127 dport=5261 packets=98 bytes=397512 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=37127 packets=169 bytes=7794 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=50659 dport=5261 packets=4 bytes=216 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=50659 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=59959 dport=5261 packets=46 bytes=2162 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=59959 packets=1 bytes=60 [OFFLOAD] mark=0 use=2
+SAMPLE-33
+ethernet enabled 1 active 1 offers 58 pushed 29 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 7/3
+bound 0 pushed 29 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=49639 dport=5261 packets=4 bytes=216 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=49639 packets=3 bytes=164 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=37127 dport=5261 packets=98 bytes=397512 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=37127 packets=169 bytes=7794 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=50659 dport=5261 packets=4 bytes=216 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=50659 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=59959 dport=5261 packets=46 bytes=2162 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=59959 packets=1 bytes=60 [OFFLOAD] mark=0 use=2
+SAMPLE-34
+ethernet enabled 1 active 1 offers 58 pushed 29 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 7/3
+bound 0 pushed 29 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=49639 dport=5261 packets=4 bytes=216 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=49639 packets=3 bytes=164 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=37127 dport=5261 packets=98 bytes=397512 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=37127 packets=169 bytes=7794 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=50659 dport=5261 packets=4 bytes=216 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=50659 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=59959 dport=5261 packets=46 bytes=2162 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=59959 packets=1 bytes=60 [OFFLOAD] mark=0 use=2
+SAMPLE-35
+ethernet enabled 1 active 1 offers 58 pushed 29 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 7/3
+bound 0 pushed 29 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=49639 dport=5261 packets=4 bytes=216 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=49639 packets=3 bytes=164 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=37127 dport=5261 packets=98 bytes=397512 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=37127 packets=169 bytes=7794 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=50659 dport=5261 packets=4 bytes=216 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=50659 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=59959 dport=5261 packets=46 bytes=2162 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=59959 packets=1 bytes=60 [OFFLOAD] mark=0 use=2
+SAMPLE-36
+ethernet enabled 1 active 1 offers 58 pushed 29 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 7/3
+bound 0 pushed 29 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=49639 dport=5261 packets=4 bytes=216 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=49639 packets=3 bytes=164 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=37127 dport=5261 packets=98 bytes=397512 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=37127 packets=169 bytes=7794 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=50659 dport=5261 packets=4 bytes=216 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=50659 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=59959 dport=5261 packets=46 bytes=2162 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=59959 packets=1 bytes=60 [OFFLOAD] mark=0 use=2
+SAMPLE-37
+ethernet enabled 1 active 1 offers 58 pushed 29 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 7/3
+bound 0 pushed 29 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=49639 dport=5261 packets=4 bytes=216 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=49639 packets=3 bytes=164 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=37127 dport=5261 packets=98 bytes=397512 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=37127 packets=169 bytes=7794 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=50659 dport=5261 packets=4 bytes=216 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=50659 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=59959 dport=5261 packets=46 bytes=2162 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=59959 packets=1 bytes=60 [OFFLOAD] mark=0 use=2
+SAMPLE-38
+ethernet enabled 1 active 1 offers 58 pushed 29 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 7/3
+bound 0 pushed 29 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=49639 dport=5261 packets=4 bytes=216 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=49639 packets=3 bytes=164 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=37127 dport=5261 packets=98 bytes=397512 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=37127 packets=169 bytes=7794 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=50659 dport=5261 packets=4 bytes=216 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=50659 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=59959 dport=5261 packets=46 bytes=2162 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=59959 packets=1 bytes=60 [OFFLOAD] mark=0 use=2
+SAMPLE-39
+ethernet enabled 1 active 1 offers 58 pushed 29 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 7/3
+bound 0 pushed 29 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=49639 dport=5261 packets=4 bytes=216 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=49639 packets=3 bytes=164 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=37127 dport=5261 packets=98 bytes=397512 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=37127 packets=169 bytes=7794 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=50659 dport=5261 packets=4 bytes=216 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=50659 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=59959 dport=5261 packets=46 bytes=2162 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=59959 packets=1 bytes=60 [OFFLOAD] mark=0 use=2
+SAMPLE-40
+ethernet enabled 1 active 1 offers 58 pushed 29 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 7/3
+bound 0 pushed 29 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=49639 dport=5261 packets=4 bytes=216 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=49639 packets=3 bytes=164 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=37127 dport=5261 packets=98 bytes=397512 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=37127 packets=169 bytes=7794 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=50659 dport=5261 packets=4 bytes=216 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=50659 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.21.60 dst=192.168.21.138 sport=59959 dport=5261 packets=46 bytes=2162 src=192.168.1.2 dst=192.168.21.60 sport=5262 dport=59959 packets=1 bytes=60 [OFFLOAD] mark=0 use=2

@@ -1,0 +1,220 @@
+7: wan@eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000
+    link/ether dc:d8:7b:54:83:ec brd ff:ff:ff:ff:ff:ff
+    RX:  bytes packets errors dropped  missed   mcast           
+     226713758  166038      0       5       0    2979 
+    TX:  bytes packets errors dropped carrier collsns           
+     206722912  153851      0       0       0       0 
+NIC statistics:
+     tx_packets: 438
+     tx_bytes: 39346
+     rx_packets: 7325
+     rx_bytes: 759509
+     rx_broadcast: 2448
+     rx_pause: 0
+     rx_multicast: 2979
+     rx_fcs_error: 0
+     rx_align_error: 0
+     rx_runt: 0
+     rx_fragment: 0
+     rx_jumbo_fcs_error: 0
+     rx_jumbo_align_error: 0
+     rx_64byte: 3264
+     rx_65_127byte: 13620
+     rx_128_255byte: 262
+     rx_256_511byte: 296
+     rx_512_1023byte: 254
+     rx_1024_1518byte: 148342
+     rx_1519_maxbyte: 0
+     rx_too_long: 0
+     rx_good_bytes: 226713758
+     rx_bad_bytes: 0
+     rx_unicast: 160611
+     tx_broadcast: 12
+     tx_pause: 0
+     tx_multicast: 85
+     tx_underrun: 0
+     tx_64byte: 142
+     tx_65_127byte: 18286
+     tx_128_255byte: 86
+     tx_256_511byte: 19
+     tx_512_1023byte: 5
+     tx_1024_1518byte: 135313
+     tx_1519_maxbyte: 0
+     tx_bytes: 206722912
+     tx_collisions: 0
+     tx_abort_collision: 0
+     tx_multi_collision: 0
+     tx_single_collision: 0
+     tx_excessive_defer: 0
+     tx_defer: 0
+     tx_late_collision: 0
+     tx_unicast: 153754
+     tx_queue_0_packets: 135464
+     tx_queue_0_bytes: 204870671
+     tx_queue_0_wred_drop_green: 0
+     tx_queue_0_wred_drop_yellow: 0
+     tx_queue_0_wred_drop_red: 0
+     tx_queue_0_drop_green: 0
+     tx_queue_0_drop_yellow: 0
+     tx_queue_0_drop_red: 0
+     tx_queue_1_packets: 0
+     tx_queue_1_bytes: 0
+     tx_queue_1_wred_drop_green: 0
+     tx_queue_1_wred_drop_yellow: 0
+     tx_queue_1_wred_drop_red: 0
+     tx_queue_1_drop_green: 0
+     tx_queue_1_drop_yellow: 0
+     tx_queue_1_drop_red: 0
+     tx_queue_2_packets: 18069
+     tx_queue_2_bytes: 1200687
+     tx_queue_2_wred_drop_green: 0
+     tx_queue_2_wred_drop_yellow: 0
+     tx_queue_2_wred_drop_red: 0
+     tx_queue_2_drop_green: 0
+     tx_queue_2_drop_yellow: 0
+     tx_queue_2_drop_red: 0
+     tx_queue_3_packets: 0
+     tx_queue_3_bytes: 0
+     tx_queue_3_wred_drop_green: 0
+     tx_queue_3_wred_drop_yellow: 0
+     tx_queue_3_wred_drop_red: 0
+     tx_queue_3_drop_green: 0
+     tx_queue_3_drop_yellow: 0
+     tx_queue_3_drop_red: 0
+     tx_queue_4_packets: 67
+     tx_queue_4_bytes: 6038
+     tx_queue_4_wred_drop_green: 0
+     tx_queue_4_wred_drop_yellow: 0
+     tx_queue_4_wred_drop_red: 0
+     tx_queue_4_drop_green: 0
+     tx_queue_4_drop_yellow: 0
+     tx_queue_4_drop_red: 0
+     tx_queue_5_packets: 48
+     tx_queue_5_bytes: 4962
+     tx_queue_5_wred_drop_green: 0
+     tx_queue_5_wred_drop_yellow: 0
+     tx_queue_5_wred_drop_red: 0
+     tx_queue_5_drop_green: 0
+     tx_queue_5_drop_yellow: 0
+     tx_queue_5_drop_red: 0
+     tx_queue_6_packets: 153
+     tx_queue_6_bytes: 19167
+     tx_queue_6_wred_drop_green: 0
+     tx_queue_6_wred_drop_yellow: 0
+     tx_queue_6_wred_drop_red: 0
+     tx_queue_6_drop_green: 0
+     tx_queue_6_drop_yellow: 0
+     tx_queue_6_drop_red: 0
+     tx_queue_7_packets: 40
+     tx_queue_7_bytes: 3719
+     tx_queue_7_wred_drop_green: 0
+     tx_queue_7_wred_drop_yellow: 0
+     tx_queue_7_wred_drop_red: 0
+     tx_queue_7_drop_green: 0
+     tx_queue_7_drop_yellow: 0
+     tx_queue_7_drop_red: 0
+     tx_queue_8_packets: 0
+     tx_queue_8_bytes: 0
+     tx_queue_8_wred_drop_green: 0
+     tx_queue_8_wred_drop_yellow: 0
+     tx_queue_8_wred_drop_red: 0
+     tx_queue_8_drop_green: 0
+     tx_queue_8_drop_yellow: 0
+     tx_queue_8_drop_red: 0
+     tx_queue_9_packets: 0
+     tx_queue_9_bytes: 0
+     tx_queue_9_wred_drop_green: 0
+     tx_queue_9_wred_drop_yellow: 0
+     tx_queue_9_wred_drop_red: 0
+     tx_queue_9_drop_green: 0
+     tx_queue_9_drop_yellow: 0
+     tx_queue_9_drop_red: 0
+     tx_queue_10_packets: 0
+     tx_queue_10_bytes: 0
+     tx_queue_10_wred_drop_green: 0
+     tx_queue_10_wred_drop_yellow: 0
+     tx_queue_10_wred_drop_red: 0
+     tx_queue_10_drop_green: 0
+     tx_queue_10_drop_yellow: 0
+     tx_queue_10_drop_red: 0
+     tx_queue_11_packets: 0
+     tx_queue_11_bytes: 0
+     tx_queue_11_wred_drop_green: 0
+     tx_queue_11_wred_drop_yellow: 0
+     tx_queue_11_wred_drop_red: 0
+     tx_queue_11_drop_green: 0
+     tx_queue_11_drop_yellow: 0
+     tx_queue_11_drop_red: 0
+     tx_queue_12_packets: 0
+     tx_queue_12_bytes: 0
+     tx_queue_12_wred_drop_green: 0
+     tx_queue_12_wred_drop_yellow: 0
+     tx_queue_12_wred_drop_red: 0
+     tx_queue_12_drop_green: 0
+     tx_queue_12_drop_yellow: 0
+     tx_queue_12_drop_red: 0
+     tx_queue_13_packets: 0
+     tx_queue_13_bytes: 0
+     tx_queue_13_wred_drop_green: 0
+     tx_queue_13_wred_drop_yellow: 0
+     tx_queue_13_wred_drop_red: 0
+     tx_queue_13_drop_green: 0
+     tx_queue_13_drop_yellow: 0
+     tx_queue_13_drop_red: 0
+     tx_queue_14_packets: 0
+     tx_queue_14_bytes: 0
+     tx_queue_14_wred_drop_green: 0
+     tx_queue_14_wred_drop_yellow: 0
+     tx_queue_14_wred_drop_red: 0
+     tx_queue_14_drop_green: 0
+     tx_queue_14_drop_yellow: 0
+     tx_queue_14_drop_red: 0
+     tx_queue_15_packets: 0
+     tx_queue_15_bytes: 0
+     tx_queue_15_wred_drop_green: 0
+     tx_queue_15_wred_drop_yellow: 0
+     tx_queue_15_wred_drop_red: 0
+     tx_queue_15_drop_green: 0
+     tx_queue_15_drop_yellow: 0
+     tx_queue_15_drop_red: 0
+     tx_mcast_queue_0_packets: 0
+     tx_mcast_queue_0_bytes: 0
+     tx_mcast_queue_0_drop_green: 0
+     tx_mcast_queue_0_drop_yellow: 0
+     tx_mcast_queue_0_drop_red: 0
+     tx_mcast_queue_1_packets: 0
+     tx_mcast_queue_1_bytes: 0
+     tx_mcast_queue_1_drop_green: 0
+     tx_mcast_queue_1_drop_yellow: 0
+     tx_mcast_queue_1_drop_red: 0
+     tx_mcast_queue_2_packets: 0
+     tx_mcast_queue_2_bytes: 0
+     tx_mcast_queue_2_drop_green: 0
+     tx_mcast_queue_2_drop_yellow: 0
+     tx_mcast_queue_2_drop_red: 0
+     tx_mcast_queue_3_packets: 0
+     tx_mcast_queue_3_bytes: 0
+     tx_mcast_queue_3_drop_green: 0
+     tx_mcast_queue_3_drop_yellow: 0
+     tx_mcast_queue_3_drop_red: 0
+     rx_bm_drop: 0
+     rx_bm_fc_drop: 0
+     rx_police_green: 0
+     rx_police_yellow: 0
+     rx_police_red: 0
+ethernet enabled 1 active 1 offers 28 pushed 14 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 3/7
+bound 0 pushed 14 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 10 tx 10 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/5 prio 0 installed 0 age 3500ms fw flow rx 11925 tx 97225 return rx 97225 tx 11925
+proto 6 v4 ethernet if 1/5 prio 0 installed 0 age 3500ms fw flow rx 4 tx 6 return rx 6 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.1.2 dst=192.168.21.60 sport=53663 dport=5260 packets=3 bytes=201 src=192.168.21.60 dst=192.168.21.138 sport=5260 dport=53663 packets=115 bytes=5310 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.1.2 dst=192.168.21.60 sport=49187 dport=5260 packets=5 bytes=305 src=192.168.21.60 dst=192.168.21.138 sport=5260 dport=49187 packets=2 bytes=112 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.1.2 dst=192.168.21.60 sport=43351 dport=5260 packets=5 bytes=305 src=192.168.21.60 dst=192.168.21.138 sport=5260 dport=43351 packets=3 bytes=164 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.1.2 dst=192.168.21.60 sport=50053 dport=5260 packets=4 bytes=253 src=192.168.21.60 dst=192.168.21.138 sport=5260 dport=50053 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2

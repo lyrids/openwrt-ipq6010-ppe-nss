@@ -1,0 +1,16 @@
+table inet fw4 {
+	chain dstnat { # handle 19
+		type nat hook prerouting priority dstnat; policy accept;
+		iifname "wan" ip saddr 192.168.21.60 ip daddr 192.168.21.138 tcp dport 5261 counter packets 0 bytes 0 dnat ip to 192.168.1.2:5262 comment "lab-dnat-20261025" # handle 184
+	}
+}
+table inet fw4 {
+	chain forward_wan { # handle 15
+		ip saddr 192.168.21.60 ip daddr 192.168.1.2 tcp dport 5262 ct status dnat counter packets 0 bytes 0 accept comment "lab-dnat-20261025" # handle 185
+		icmpv6 type { destination-unreachable, time-exceeded, echo-request, echo-reply } limit rate 1000/second burst 5 packets counter packets 0 bytes 0 accept comment "!fw4: Allow-ICMPv6-Forward" # handle 170
+		icmpv6 type . icmpv6 code { packet-too-big . 0, parameter-problem . 0, parameter-problem . 1 } limit rate 1000/second burst 5 packets counter packets 0 bytes 0 accept comment "!fw4: Allow-ICMPv6-Forward" # handle 172
+		meta l4proto esp counter packets 0 bytes 0 jump accept_to_lan comment "!fw4: Allow-IPSec-ESP" # handle 173
+		udp dport 500 counter packets 0 bytes 0 jump accept_to_lan comment "!fw4: Allow-ISAKMP" # handle 174
+		jump drop_to_wan # handle 175
+	}
+}

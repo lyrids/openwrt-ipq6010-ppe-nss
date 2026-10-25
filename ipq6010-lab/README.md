@@ -89,3 +89,9 @@ An iteration8 board-scoped SCM warm-entry registration experiment has built
 and passed offline checks. It is off by default and not yet runtime tested.
 It is not a confirmed fix. See cpu-restart/WARM-ENTRY-EXPERIMENT.md.
 No actual kexec transition or persistent firmware write has been performed.
+
+## Wireless/WAN validation update (2026-10-26)
+
+QCN9074 channel36 HE80: LAN bridge received432 Mbit/s outbound, reverse sender503; NSS bridge32/1 counters confirmed. WAN NAT received393/396 Mbit/s after refreshing flowtable Wi-Fi membership. Simultaneous60-second TCP250/166 Mbit/s, NSS active. UDP100/200/300 Mbit/s sweep accelerated; isolated0.1% inbound loss at200 was not reproduced over60 seconds;300 outbound lost2 datagrams. Reconnect released peer11, created12, resumed NSS NAT at367/514 Mbit/s. See qcn9074-* evidence. Wired WAN to192.168.21.154 reached936.5 Mbit/s each way; WAN negotiated1Gb/s, not2.5Gb/s.
+
+Lifecycle fix and reproducible test AP recipe: [wifi-lifecycle](wifi-lifecycle/README.md). Iteration9 build retains pre-kexec iteration5 datapath and adds firewall completion-event trigger. Live repeated AP down/up membership tests pass; new image boot validation remains pending.
