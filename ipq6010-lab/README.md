@@ -51,3 +51,17 @@ All custom OpenWrt source changes are committed in the source tree. historical-s
 Generated images, root filesystems, executables, firmware, toolchains and caches remain on Orb. omitted-generated-assets.json lists excluded artifact paths, lengths and SHA256. Private keys and device partition/calibration dumps are excluded. The known test Wi-Fi PSK is redacted in published copies; redactions.json records affected paths. Original checksum files describe originals; archive-sha256sums.txt verifies published copies.
 
 Original OpenWrt/package licenses apply. New lab helper Python/shell/C code is GPL-2.0-only.
+
+## CPU restart diagnostics: iteration7
+
+The current source includes a temporary diagnostic kernel patch0990. Both
+NSS-disabled host-control and NSS-enabled RAM images have built and passed
+offline validation, including actual embedded configs and identical CPU
+objects/kernel config. Neither diagnostic variant has been booted yet.
+See cpu-restart/README.md and artifacts/cpu-restart-diag-20261025/.
+
+The clean iteration6 RAM reboot restored all four CPUs and active NSS.
+No further CPU hotplug attempt has been made. The next hardware test should
+boot the host-control variant first using physical SCREEN recovery.
+Default build overlay now identifies the NSS-enabled diagnostic variant.
+These are diagnostic images, not a confirmed CPU restart correction.

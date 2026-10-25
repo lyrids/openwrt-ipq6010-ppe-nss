@@ -322,5 +322,41 @@
     "bytes": 27678728,
     "sha256": "511f0255c9d50f052cca769148cde1a5788949f0f71a91d9eccab3f04a109143",
     "reason": "generated binary or image"
+  },
+  {
+    "path": "artifacts/cpu-restart-diag-20261025/host-control/kernel.gz",
+    "bytes": 18928722,
+    "sha256": "c073cf09ee19e5ebb4b11b1ffe59172f6ac3bf5248add1f7006c9cb0621ccd00",
+    "reason": "generated diagnostic image/binary"
+  },
+  {
+    "path": "artifacts/cpu-restart-diag-20261025/nss-enabled/kernel.gz",
+    "bytes": 18928488,
+    "sha256": "a2e04b6c10b634b3b2af4ea0dce3cd84dc62897284fcba6b6198b2c8e39d328d",
+    "reason": "generated diagnostic image/binary"
+  },
+  {
+    "path": "artifacts/cpu-restart-diag-20261025/nss-enabled/images/openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-initramfs-uImage.itb",
+    "bytes": 18959676,
+    "sha256": "9d45f71bb77c21219b072d54e7cde6f19fb62e4a6ea94633a41422a45071c1b1",
+    "reason": "generated diagnostic image/binary"
+  },
+  {
+    "path": "artifacts/cpu-restart-diag-20261025/nss-enabled/images/openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-squashfs-sysupgrade.bin",
+    "bytes": 18032915,
+    "sha256": "8e7dff26cf85c4391e7e5b9cfca76e497f0439f7107bc637e3d33f036ec904d6",
+    "reason": "generated diagnostic image/binary"
+  },
+  {
+    "path": "artifacts/cpu-restart-diag-20261025/host-control/images/openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-initramfs-uImage.itb",
+    "bytes": 18959912,
+    "sha256": "b16f6de80ad6604c9021d2a88494d8f31d33164090cedceb1e8cbf563165b5ac",
+    "reason": "generated diagnostic image/binary"
+  },
+  {
+    "path": "artifacts/cpu-restart-diag-20261025/host-control/images/openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-squashfs-sysupgrade.bin",
+    "bytes": 18032915,
+    "sha256": "2dfe0e1b4697938b7ddbe8c34e611e855e27a8d25c34e5a7d40272cc85a6db40",
+    "reason": "generated diagnostic image/binary"
   }
 ]
