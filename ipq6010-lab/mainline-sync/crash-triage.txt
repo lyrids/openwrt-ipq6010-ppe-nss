@@ -9,3 +9,6 @@ References:
 https://cdn.kernel.org/doc/html/latest/admin-guide/ramoops.html
 https://docs.kernel.org/networking/netconsole.html
 The initial diagnostic build also showed lockup detectors disabled. Enable soft/hard buddy lockup and hung-task diagnostics to distinguish a kernel exception from a watchdog reset after stalled CPUs/tasks. These are diagnostic instrumentation, not a datapath fix.
+Prepared-source audit: all72 ath11k C/H files identical;93 mac80211 C/H files checked, iface.c guard only. Original iteration11 and previous ath11k module .text SHA256 both333f7ddb52e72f49bbac6bd2746ea87be9aa2003dc461de3b07730bab15ccf83 (328060bytes).
+Clean boot software-only QCN bridge rerun passed balanced15s and TCP60s each direction;60s down777.75M, no reboot. This suggests testing prior flowtable/qdisc/lifecycle history, without proving it is the cause.
+Diagnostic variants a6172f7d85 (pstore+netconsole) and90372853d8 (plus lockup detectors) reset before SSH; TFTP retries about42s apart. Treat this as a separate diagnostic regression, not evidence of the original Wi-Fi cause. Restore original NSS-off FIT83079590... while isolating pstore-only instrumentation.
