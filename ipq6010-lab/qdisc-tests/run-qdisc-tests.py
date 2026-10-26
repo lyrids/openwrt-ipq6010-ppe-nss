@@ -46,6 +46,11 @@ def delete(dev):
  save("delete-"+dev+"-"+str(time.time_ns())+".txt",p.stdout)
  time.sleep(1)
 
+save("harness.py",pathlib.Path(__file__).read_text())
+control="/tmp/qdisc-wrt-"+str(os.getpid())+".sock"
+master=wrt.copy()
+cmd(master[:-1]+["-M","-S",control,"-o","ControlPersist=600","-fNT",master[-1]])
+wrt=master[:-1]+["-S",control,master[-1]]
 server=None; route_added=False; touched=set()
 try:
  identity=remote(dut,"ubus call system board; cat /etc/image-provenance; tc -V; tc qdisc show; sysctl net.core.wmem_default net.core.wmem_max net.core.rmem_max").stdout
@@ -58,23 +63,27 @@ try:
  sta=remote(wrt,"ip -4 -o addr show dev wlan0-sta").stdout.split()[3].split("/")[0]
  assert sta.startswith("192.168.1.")
  save("client-path.txt",remote(wrt,"iw dev wlan0-sta link; ip route show default; ip -s link show wlan0-sta").stdout)
- assert not cmd(["ip","route","show","192.168.21.154/32"]).stdout.strip(), "Existing test host route"
- cmd(["sudo","ip","route","add","192.168.21.154/32","via","192.168.1.1","dev","eth0","src","192.168.1.2"]); route_added=True
- save("wired-route.txt",cmd(["ip","route","get","192.168.21.154","from","192.168.1.2"]).stdout)
- common=["-J","-t","12","-O","2","--connect-timeout","5000","--rcv-timeout","15000","--snd-timeout","15000"]
- wired=["iperf3","-c","192.168.21.154","-p","5201","-B","192.168.1.2"]+common
- test("ethernet-baseline","wan",wired)
- for rate in [100,200]:
-  name="ethernet-tbf"+str(rate)
-  touched.add("wan")
-  if install(name,"wan","handle 100: tbf rate "+str(rate)+"mbit burst 64kb latency 50ms"):
-   test(name,"wan",wired)
+ common=["-J","-t","12","-O","2","--connect-timeout","5000"]
+ if os.environ.get("SECTION") != "wifi":
+  assert not cmd(["ip","route","show","192.168.21.154/32"]).stdout.strip(), "Existing test host route"
+  cmd(["sudo","ip","route","add","192.168.21.154/32","via","192.168.1.1","dev","eth0","src","192.168.1.2"]); route_added=True
+  save("wired-route.txt",cmd(["ip","route","get","192.168.21.154","from","192.168.1.2"]).stdout)
+  wired=["iperf3","-c","192.168.21.154","-p","5201","-B","192.168.1.2"]+common
+  test("ethernet-baseline","wan",wired)
+  for rate in [100,200]:
+   name="ethernet-tbf"+str(rate)
+   touched.add("wan")
+   if install(name,"wan","handle 100: tbf rate "+str(rate)+"mbit burst 64kb latency 50ms"):
+    test(name,"wan",wired)
+   delete("wan")
+  for name,options in [("fq-codel","handle 150: fq_codel"),("cake100","handle 150: cake bandwidth 100mbit")]:
+   if install("ethernet-"+name,"wan",options): test("ethernet-"+name,"wan",wired)
+   delete("wan")
+  test("ethernet-recovery","wan",wired)
+  # Standard priority qdisc API acceptance; this is not a fairness test.
+  if install("ethernet-prio","wan","handle 200: prio bands 3 priomap 2 2 2 2 1 1 1 1 0 0 0 0 0 0 0 0"):
+   test("ethernet-prio","wan",wired)
   delete("wan")
- test("ethernet-recovery","wan",wired)
- # Standard priority qdisc API acceptance; this is not a fairness test.
- if install("ethernet-prio","wan","handle 200: prio bands 3 priomap 2 2 2 2 1 1 1 1 0 0 0 0 0 0 0 0"):
-  test("ethernet-prio","wan",wired)
- delete("wan")
  # Use a dedicated server. Never stop unrelated user listeners.
  assert not cmd(["ss","-H","-lnt","sport","=",":5362"]).stdout.strip()
  server=subprocess.Popen(["iperf3","-s","-B","192.168.1.2","-p","5362"],stdout=open(run/"wifi-server.log","w"),stderr=subprocess.STDOUT)
@@ -111,5 +120,6 @@ finally:
   save("restored-"+dev+".txt",remote(dut,"tc -s -d qdisc show dev "+dev,False).stdout)
  if route_added: cmd(["sudo","ip","route","del","192.168.21.154/32","via","192.168.1.1","dev","eth0"],False)
  if server: server.terminate(); server.wait(timeout=5)
+ cmd(master[:-1]+["-S",control,"-O","exit",master[-1]],False)
  save("dut-final.txt",remote(dut,"dmesg; cat /sys/devices/system/cpu/online; tc qdisc show",False).stdout)
  print("RESULTS",run,flush=True)

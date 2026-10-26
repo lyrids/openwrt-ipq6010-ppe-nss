@@ -1,0 +1,134 @@
+Mon Oct 26 05:25:24 UTC 2026
+qdisc tbf 100: root refcnt 13 offloaded rate 200Mbit burst 64Kb/1 mpu 0b lat 50ms linklayer ethernet 
+ Sent 347561206 bytes 228978 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+class tbf 100:1 parent 100: 
+
+cpu  1102 0 1888 706728 2 0 662 0 0 0
+cpu0 258 0 349 175714 2 0 653 0 0 0
+cpu1 291 0 979 177296 0 0 3 0 0 0
+cpu2 231 0 269 175670 0 0 3 0 0 0
+cpu3 322 0 291 178046 0 0 3 0 0 0
+ethernet enabled 1 active 1 offers 12 pushed 0 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 3/7
+bound 1 pushed 6 last-ifindex 3
+rejected not-ours 6 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 6 tx 6 drop 0/0/0/0 exceptions
+node ipv4 rx 8 tx 0 drop 0/0/0/0 exceptions 9:8
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:44789 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:54007 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:58267 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:51843 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:34527 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:35293 -> 192.168.21.154:5201 detail 3
+proto 6 v4 ethernet if 1/5 prio 0 installed 0 age 800ms fw flow rx 219637 tx 108981 return rx 108981 tx 219637
+proto 6 v4 ethernet if 1/5 prio 0 installed 0 age 11200ms fw flow rx 4 tx 6 return rx 6 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+PPE-egress
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    1783337 2255455949 0 0
+1    306906 20562823 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    457 105333 0 0
+5    1476420 2234920570 0 0
+6    0 0 0 0
+vsi packets bytes
+0   306344 20276979
+1   1477757 2235415199
+vport packets bytes drop_packets drop_bytes
+PPE-queues
+queue packets bytes buffers
+0     229381 346739772 0
+1     16 22304 0
+2     1247248 1888331800 0
+3     20 27880 0
+4     246234 16283123 0
+5     59878 3988401 0
+6     209 23932 0
+7     352 38803 0
+144   53 54395 0
+145   113684 7530500 0
+146   191256 12742950 0
+147   20 11983 0
+148   303 46553 0
+149   649 71834 0
+150   788 80736 0
+151   143 22912 0
+192   30 15140 0
+193   6 8364 0
+194   8 11152 0
+195   6 8364 0
+196   134 21679 0
+197   64 10178 0
+198   85 13469 0
+199   105 14384 0
+208   114829 173744414 0
+209   11 1553 0
+210   1132450 1714513832 0
+211   228959 346643166 0
+212   66 8190 0
+213   36 3183 0
+214   34 2992 0
+215   35 3240 0
+272   2 120 0
+275   10 1372 0
+284   8 480 0
+287   11 2123 0
+group buffers prealloc_used
+0     0 0
+1     0 0
+2     0 0
+3     0 0
+PPE-queue_drops
+queue reason packets bytes
+PPE-policer
+port colour packets bytes
+0    green  0 0
+0    yellow 0 0
+0    red    0 0
+1    green  0 0
+1    yellow 0 0
+1    red    0 0
+2    green  0 0
+2    yellow 0 0
+2    red    0 0
+3    green  0 0
+3    yellow 0 0
+3    red    0 0
+4    green  0 0
+4    yellow 0 0
+4    red    0 0
+5    green  0 0
+5    yellow 0 0
+5    red    0 0
+6    green  0 0
+6    yellow 0 0
+6    red    0 0
+PPE-offload
+offloaded                12
+reinstalled              0
+destroy_miss             0
+stale                    0
+xmit_drop                0
+sparse_promoted          6
+sparse_demoted           0
+live_entries             4
+ingress_not_switch_port  0
+ingress_vlan_domain      0
+unsupported_match        0
+unsupported_protocol     0
+unsupported_action       0
+no_egress_l2_header      0
+egress_not_switch_port   0
+snat_and_dnat            0
+ipv6_nat                 0
+table_full               0
+hardware_op_failed       0
+ipv4     2 tcp      6 src=192.168.1.2 dst=192.168.21.154 sport=35293 dport=5201 packets=3 bytes=201 src=192.168.21.154 dst=192.168.21.138 sport=5201 dport=35293 packets=389 bytes=17914 [HW_OFFLOAD] mark=0 zone=0 use=3
+ipv4     2 tcp      6 src=192.168.1.2 dst=192.168.21.154 sport=34527 dport=5201 packets=5 bytes=305 src=192.168.21.154 dst=192.168.21.138 sport=5201 dport=34527 packets=4 bytes=228 [HW_OFFLOAD] mark=0 zone=0 use=3

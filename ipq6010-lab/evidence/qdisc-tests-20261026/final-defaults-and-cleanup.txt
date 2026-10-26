@@ -1,0 +1,24 @@
+AX6600
+net.core.wmem_default = 8388608
+net.core.wmem_max = 8388608
+net.core.rmem_max = 8388608
+net.core.rmem_default = 212992
+# Match the 8 MiB actual send budget validated by iperf3 -w 4M.
+# These are ceilings/defaults for newly created sockets, not preallocated RAM.
+net.core.wmem_max = 8388608
+net.core.wmem_default = 8388608
+net.core.rmem_max = 8388608
+0-3
+qdisc noqueue 0: root refcnt 2 
+qdisc noqueue 0: root refcnt 2 
+WRT32X
+net.core.wmem_default = 8388608
+net.core.wmem_max = 8388608
+net.core.rmem_max = 8388608
+net.core.rmem_default = 180224
+# Match the 8 MiB actual send budget validated by iperf3 -w 4M.
+# These are ceilings/defaults for newly created sockets, not preallocated RAM.
+net.core.wmem_max = 8388608
+net.core.wmem_default = 8388608
+net.core.rmem_max = 8388608
+owned-test-server-stopped

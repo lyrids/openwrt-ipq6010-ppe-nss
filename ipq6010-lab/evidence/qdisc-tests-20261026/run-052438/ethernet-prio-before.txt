@@ -1,0 +1,139 @@
+Mon Oct 26 05:26:11 UTC 2026
+qdisc prio 200: root refcnt 13 offloaded bands 3 priomap 2 2 2 2 1 1 1 1 0 0 0 0 0 0 0 0
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+class prio 200:1 parent 200: 
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+class prio 200:2 parent 200: 
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+class prio 200:3 parent 200: 
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+cpu  1175 0 1931 725341 2 0 668 0 0 0
+cpu0 269 0 366 180350 2 0 658 0 0 0
+cpu1 313 0 989 181972 0 0 4 0 0 0
+cpu2 251 0 280 180287 0 0 3 0 0 0
+cpu3 342 0 296 182731 0 0 3 0 0 0
+ethernet enabled 1 active 1 offers 24 pushed 0 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 3/7
+bound 1 pushed 12 last-ifindex 3
+rejected not-ours 12 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 3 tx 0 drop 0/0/0/0 exceptions 9:3
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:54031 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:41885 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:36995 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:56863 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:34527 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:35293 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:34429 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33655 -> 192.168.21.154:5201 detail 3
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+PPE-egress
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    5571500 7424038744 0 0
+1    698320 46526927 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    459 105553 0 0
+5    4873206 7377569865 0 0
+6    0 0 0 0
+vsi packets bytes
+0   697346 46126951
+1   4874919 7378148196
+vport packets bytes drop_packets drop_bytes
+PPE-queues
+queue packets bytes buffers
+0     1361533 2060802640 0
+1     32 44608 0
+2     3511843 5316928150 0
+3     26 36244 0
+4     509277 33675885 0
+5     60088 4010561 0
+6     128264 8492713 0
+7     438 48009 0
+144   60 64813 0
+145   113697 7549586 0
+146   322455 21419478 0
+147   259702 17190015 0
+148   410 69333 0
+149   827 103318 0
+150   830 85452 0
+151   328 43798 0
+192   30 15140 0
+193   6 8364 0
+194   8 11152 0
+195   6 8364 0
+196   134 21679 0
+197   64 10178 0
+198   85 13469 0
+199   107 14604 0
+208   1247140 1888056370 0
+209   2264449 3428335546 0
+210   1132450 1714513832 0
+211   228968 346644222 0
+212   70 8599 0
+213   53 4509 0
+214   34 2992 0
+215   42 3795 0
+272   2 120 0
+275   11 1546 0
+284   8 480 0
+287   11 2123 0
+group buffers prealloc_used
+0     0 0
+1     0 0
+2     0 0
+3     0 0
+PPE-queue_drops
+queue reason packets bytes
+PPE-policer
+port colour packets bytes
+0    green  0 0
+0    yellow 0 0
+0    red    0 0
+1    green  0 0
+1    yellow 0 0
+1    red    0 0
+2    green  0 0
+2    yellow 0 0
+2    red    0 0
+3    green  0 0
+3    yellow 0 0
+3    red    0 0
+4    green  0 0
+4    yellow 0 0
+4    red    0 0
+5    green  0 0
+5    yellow 0 0
+5    red    0 0
+6    green  0 0
+6    yellow 0 0
+6    red    0 0
+PPE-offload
+offloaded                24
+reinstalled              0
+destroy_miss             0
+stale                    0
+xmit_drop                0
+sparse_promoted          12
+sparse_demoted           0
+live_entries             0
+ingress_not_switch_port  0
+ingress_vlan_domain      0
+unsupported_match        0
+unsupported_protocol     0
+unsupported_action       0
+no_egress_l2_header      0
+egress_not_switch_port   0
+snat_and_dnat            0
+ipv6_nat                 0
+table_full               0
+hardware_op_failed       0
