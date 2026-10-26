@@ -1,0 +1,22 @@
+#!/bin/bash
+set -euo pipefail
+workspace="$HOME/projects/openwrt-dev"
+. "$workspace/env.sh"
+cd "$workspace/src/openwrt-ppe-nss"
+run="$workspace/artifacts/udp-defaults-$(git rev-parse --short=10 HEAD)-20261026"
+mkdir -p "$run"
+exec 9>"$workspace/.build.lock"
+flock -n 9 || exit 1
+trap 'rc=$?; echo "$rc" > "$run/exit-code"; test "$rc" = 0 || echo failed > "$run/status"' EXIT
+"$workspace/bin/snapshot-build-state" "$PWD" "$run/build-state"
+git rev-parse HEAD > "$run/source-commit.txt"
+git -C feeds/nss diff > "$run/firmware-feed-local.patch"
+cp .config "$run/config.full"
+date -u +%FT%TZ > "$run/started-utc"
+echo building > "$run/status"
+make -j"$BUILD_JOBS" V=s > "$run/build.log" 2>&1
+mkdir -p "$run/images"
+cp bin/targets/qualcommax/ipq60xx/*jdcloud_re-cs-02* "$run/images/"
+sha256sum "$run"/images/* > "$run/images.sha256"
+date -u +%FT%TZ > "$run/finished-utc"
+echo built > "$run/status"

@@ -1,7 +1,9 @@
-Variant: experimental PPE + NSS Ethernet backend, iteration 9 (wireless flowtable lifecycle)
+Variant: experimental PPE + NSS Ethernet backend, iteration 10 (persistent UDP socket defaults)
 Base: community 03803c78cd3b6968c20dab239c0c2f688692be63 plus archived local backend fixes
 Kernel/NSS datapath: pre-kexec iteration5 MTU-guard source; kexec disabled
 NSS: community Ethernet and Wi-Fi adapters, CP firmware 12.5; no vendor qca-nss-drv or ECM
 Wi-Fi lifecycle: firewall reload after netifd.wireless.done, debounced 1000ms
 Hardware baseline: wired NAT, QCN9074 bridge/NAT, bidirectional TCP and UDP, peer reconnect validated
 Reduced routed MTU: software fallback guard, not arbitrary NSS hardware MTU enforcement
+UDP sockets: default send 8 MiB; send/receive maxima 8 MiB; receive default unchanged
+TC qualification tools: standard tc-full and scheduler modules; hardware behavior requires measured tests
