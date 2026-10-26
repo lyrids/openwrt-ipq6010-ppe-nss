@@ -1,0 +1,9 @@
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+01:18:22.153301 dc:a6:32:b0:ab:b0 > ff:ff:ff:ff:ff:ff, ethertype ARP (0x0806), length 42: Request who-has 192.168.1.1 tell 192.168.21.63, length 28
+01:18:23.177307 dc:a6:32:b0:ab:b0 > ff:ff:ff:ff:ff:ff, ethertype ARP (0x0806), length 42: Request who-has 192.168.1.1 tell 192.168.21.63, length 28
+01:18:24.201942 dc:a6:32:b0:ab:b0 > 33:33:ff:00:00:01, ethertype IPv6 (0x86dd), length 86: fde5:c658:76a2::a3a > ff02::1:ff00:1: ICMP6, neighbor solicitation, who has fde5:c658:76a2::1, length 32
+01:18:25.225324 dc:a6:32:b0:ab:b0 > 33:33:ff:00:00:01, ethertype IPv6 (0x86dd), length 86: fde5:c658:76a2::a3a > ff02::1:ff00:1: ICMP6, neighbor solicitation, who has fde5:c658:76a2::1, length 32
+4 packets captured
+4 packets received by filter
+0 packets dropped by kernel

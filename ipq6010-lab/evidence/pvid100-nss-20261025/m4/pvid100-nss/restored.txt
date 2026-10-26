@@ -1,0 +1,33 @@
+ethernet enabled 1 active 1 offers 70 pushed 8 rejected 25
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 25
+node eth_rx rx 5 tx 5 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 1 proto 6 192.168.1.158:5212 -> 192.168.100.63:40047 detail 95
+reject firmware dir 1 proto 6 192.168.1.158:5212 -> 192.168.100.63:53075 detail 95
+reject firmware dir 1 proto 6 192.168.1.158:5212 -> 192.168.100.63:40047 detail 95
+reject firmware dir 1 proto 6 192.168.1.158:5212 -> 192.168.100.63:40047 detail 95
+reject firmware dir 1 proto 6 192.168.1.158:5212 -> 192.168.100.63:40047 detail 95
+reject firmware dir 1 proto 6 192.168.1.158:5212 -> 192.168.100.63:40047 detail 95
+reject firmware dir 1 proto 6 192.168.1.158:5212 -> 192.168.100.63:40047 detail 95
+reject firmware dir 1 proto 6 192.168.1.158:5212 -> 192.168.100.63:53075 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+table inet fw4 {
+	flowtable ft {
+		hook ingress priority filter
+		devices = { "lan1", "lan2", "lan3", "lan4", "wan" }
+		flags offload
+		counter
+	}
+}
+port              vlan-id  
+lan1              100 PVID
+lan2              1 PVID Egress Untagged
+lan3              1 PVID Egress Untagged
+lan4              1 PVID Egress Untagged
+br-lan            1 PVID Egress Untagged
+                  100

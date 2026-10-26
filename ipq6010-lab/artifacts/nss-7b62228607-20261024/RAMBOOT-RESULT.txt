@@ -1,0 +1,22 @@
+{
+  "rootfs": "initramfs/tmpfs",
+  "NSS_firmware": "12.5 CP, core 0 booted",
+  "NSS_initialization": "integrated radios and QCN9074 firmware init/start acknowledged",
+  "AP_interfaces": "three secured APs enabled, NSS virtual interfaces 31/32/33 reporting",
+  "wired_management": "p43 LAN1 ping/SSH; second server LAN4 DHCP",
+  "unchanged_partition_hashes": [
+    "/dev/mmcblk0p12",
+    "/dev/mmcblk0p13",
+    "/dev/mmcblk0p14",
+    "/dev/mmcblk0p15",
+    "/dev/mmcblk0p16",
+    "/dev/mmcblk0p17",
+    "/dev/mmcblk0p2",
+    "/dev/mmcblk0p3"
+  ],
+  "previous_crypto_clock_warning_observed": false,
+  "client_traffic_offload_verified": false,
+  "persistent_installation_tested": false
+}
+Evidence: evidence/nss-ramboot-20261024
+Next: Wi-Fi client traffic and NSS firmware counter/flow verification.

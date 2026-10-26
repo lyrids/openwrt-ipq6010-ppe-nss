@@ -1,0 +1,18 @@
+port              vlan-id  
+lan1              100 PVID
+                    state forwarding mcast_router 1 neigh_suppress off 
+lan2              1 PVID Egress Untagged
+                    state forwarding mcast_router 1 neigh_suppress off 
+lan3              1 PVID Egress Untagged
+                    state forwarding mcast_router 1 neigh_suppress off 
+lan4              1 PVID Egress Untagged
+                    state forwarding mcast_router 1 neigh_suppress off 
+br-lan            1 PVID Egress Untagged
+                    state forwarding mcast_router 1 neigh_suppress off 
+                  100
+                    state forwarding mcast_router 1 neigh_suppress off 
+br-lan.100@br-lan UP             192.168.100.1/24 fe80::ded8:7bff:fe54:83ec/64 
+		iifname "br-lan.100" ip saddr 192.168.100.63 ip daddr 192.168.100.1 counter packets 12 bytes 832 accept comment "pvid100-test" # handle 377
+dc:a6:32:b0:ab:b0 dev lan1 vlan 100 master br-lan 
+dc:d8:7b:54:83:ec dev lan1 vlan 100 master br-lan permanent
+dc:a6:32:b0:ab:b0 dev lan1 vlan 100 self 

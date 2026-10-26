@@ -1,0 +1,9 @@
+{
+  "timestamp_utc": "2026-10-25T08:09:56.162958+00:00",
+  "image_offline_checks": "passed",
+  "three_regression_harnesses": "passed after changes",
+  "known_good_and_bootstrap_FIT_extraction": "passed",
+  "wrong_checksum_rejection": "passed",
+  "credential_pattern_scan": "passed",
+  "router_reboot_or_kexec_load": false
+}

@@ -1,0 +1,4 @@
+PASS: routed bridge MTU clamps the correct direction
+PASS: PPPoE MTU1492 has no double subtraction
+PASS: physical ceiling preserved; missing routed MTU stays invalid
+PASS: bridged connections never dereference a routed-flow pointer

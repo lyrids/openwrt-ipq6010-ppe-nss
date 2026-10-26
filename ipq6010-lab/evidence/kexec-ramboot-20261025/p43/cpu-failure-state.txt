@@ -1,0 +1,88 @@
+CPU STATE
+cat: can't open '/sys/devices/system/cpu/{online,offline,present,possible}': No such file or directory
+0
+0
+0
+KEXEC
+0
+DMESG
+[   23.411229] nss-wifi-drv 39000000.nss: wifili: reo0 id 0 base 0x45ac0000 x2048 hw 0xca3829c/0xca3b038
+[   23.419736] nss-wifi-drv 39000000.nss: wifili: reo1 id 1 base 0x45b00000 x2048 hw 0xca382f4/0xca3b040
+[   23.429111] nss-wifi-drv 39000000.nss: wifili: reo2 id 2 base 0x45b40000 x2048 hw 0xca3834c/0xca3b048
+[   23.438312] nss-wifi-drv 39000000.nss: wifili: reo3 id 3 base 0x45b80000 x2048 hw 0xca383a4/0xca3b050
+[   23.447506] nss-wifi-drv 39000000.nss: wifili: radio 0 rxdma id 128 base 0x46050000 x4096 hw 0xc000000/0xc000000 swdesc 12288
+[   23.456725] nss-wifi-drv 39000000.nss: wifili: radio 1 rxdma id 143 base 0x422c0000 x4096 hw 0xc000000/0xc000000 swdesc 12288
+[   23.482154] nss-wifi-drv 39000000.nss: wifili: txdesc 0x000000005c7a0000+b000 ext 0x000000005c7c0000+15000, 1 pools, 3 tcl, 4 reo
+[   23.482204] nss-wifi-drv 39000000.nss: wifili: tcl0 id 16 base 0x47478000 x512  txcomp id 106 base 0x56200000 x32768 hw 0x205b4924/0x205b70c0  tclhw 0x205c44f0/0x205c6000 tcle 8
+[   23.492824] nss-wifi-drv 39000000.nss: wifili: tcl1 id 17 base 0x44990000 x512  txcomp id 107 base 0x56400000 x32768 hw 0x205b497c/0x205b70c8  tclhw 0x205c4548/0x205c6008 tcle 8
+[   23.508615] nss-wifi-drv 39000000.nss: wifili: tcl2 id 18 base 0x44c18000 x512  txcomp id 108 base 0x56600000 x32768 hw 0x205b49d4/0x205b70d0  tclhw 0x205c45a0/0x205c6010 tcle 8
+[   23.524414] nss-wifi-drv 39000000.nss: wifili: shadow rd 0x44ac3000 wr 0x505a7000 lmac from 128
+[   23.540206] nss-wifi-drv 39000000.nss: wifili: reo0 id 0 base 0x56dc0000 x2048 hw 0x205b829c/0x205bb038
+[   23.548706] nss-wifi-drv 39000000.nss: wifili: reo1 id 1 base 0x56e00000 x2048 hw 0x205b82f4/0x205bb040
+[   23.558081] nss-wifi-drv 39000000.nss: wifili: reo2 id 2 base 0x56e40000 x2048 hw 0x205b834c/0x205bb048
+[   23.567447] nss-wifi-drv 39000000.nss: wifili: reo3 id 3 base 0x56e80000 x2048 hw 0x205b83a4/0x205bb050
+[   23.576831] nss-wifi-drv 39000000.nss: wifili: radio 0 rxdma id 128 base 0x56ec0000 x4096 hw 0x20400000/0x20400000 swdesc 12288
+[   24.160784] qca-ppe 3a000000.ppe lan1: configuring for phy/psgmii link mode
+[   24.318515] br-lan: port 1(lan1) entered blocking state
+[   24.318559] br-lan: port 1(lan1) entered disabled state
+[   24.322582] qca-ppe 3a000000.ppe lan1: entered allmulticast mode
+[   24.327833] qca-edma 3ab00000.edma eth0: entered allmulticast mode
+[   24.334449] qca-ppe 3a000000.ppe lan1: entered promiscuous mode
+[   24.346457] qca-ppe 3a000000.ppe lan2: configuring for phy/psgmii link mode
+[   24.498304] br-lan: port 2(lan2) entered blocking state
+[   24.498346] br-lan: port 2(lan2) entered disabled state
+[   24.502365] qca-ppe 3a000000.ppe lan2: entered allmulticast mode
+[   24.508211] qca-ppe 3a000000.ppe lan2: entered promiscuous mode
+[   24.517333] qca-ppe 3a000000.ppe lan3: configuring for phy/psgmii link mode
+[   24.678369] br-lan: port 3(lan3) entered blocking state
+[   24.678411] br-lan: port 3(lan3) entered disabled state
+[   24.682436] qca-ppe 3a000000.ppe lan3: entered allmulticast mode
+[   24.688171] qca-ppe 3a000000.ppe lan3: entered promiscuous mode
+[   24.696576] qca-ppe 3a000000.ppe lan4: configuring for phy/psgmii link mode
+[   24.860661] qca-ppe 3a000000.ppe lan4: Link is Up - 1Gbps/Full - flow control rx/tx
+[   24.860734] br-lan: port 4(lan4) entered blocking state
+[   24.867134] br-lan: port 4(lan4) entered disabled state
+[   24.872397] qca-ppe 3a000000.ppe lan4: entered allmulticast mode
+[   24.878081] qca-ppe 3a000000.ppe lan4: entered promiscuous mode
+[   24.884166] br-lan: port 4(lan4) entered blocking state
+[   24.889464] br-lan: port 4(lan4) entered forwarding state
+[   24.900071] qca-ppe 3a000000.ppe wan: configuring for phy/2500base-x link mode
+[   27.451486] qca-ppe 3a000000.ppe lan1: Link is Up - 1Gbps/Full - flow control rx/tx
+[   27.451552] br-lan: port 1(lan1) entered blocking state
+[   27.457984] br-lan: port 1(lan1) entered forwarding state
+[  534.183127] kexec_file: kernel: 00000000149135e2 kernel_size: 0x1a96808
+[  534.183682] kexec_file: Loaded dtb at 0x7ea00000 bufsz=0x76f0 memsz=0x8000
+[  534.188589] kexec_file(Image): Loaded kernel at 0x42c00000 bufsz=0x1a96808 memsz=0x1af0000
+[  534.195508] kexec_file: nr_segments = 2
+[  534.203747] kexec_file: segment[0]: buf=0x00000000149135e2 bufsz=0x1a96808 mem=0x42c00000 memsz=0x1af0000
+[  534.231743] kexec_file: segment[1]: buf=0x00000000e61c6d35 bufsz=0x76f0 mem=0x7ea00000 memsz=0x8000
+[  534.244583] machine_kexec_post_load:153:
+[  534.244615]   kexec kimage info:
+[  534.247566]     type:        0
+[  534.250803]     head:        6277a002
+[  534.253645]     kern_reloc: 0x0000000062778000
+[  534.257377]     el2_vectors: 0x0000000000000000
+[  534.261726] kexec_file: kexec_file_load: type:0, start:0x42c00000 head:0x6277a002 flags:0xc
+[  620.668007] IRQ54: set affinity failed(-22).
+[  620.668026] IRQ55: set affinity failed(-22).
+[  620.668031] IRQ56: set affinity failed(-22).
+[  620.668342] psci: CPU3 killed (polled 0 ms)
+[  625.687626] CPU3: failed to come online
+[  625.687668] CPU3: failed in unknown state : 0x0
+[  625.690882] psci: failed to boot CPU3 (-22)
+[  625.694886] CPU3: failed to boot: -22
+NSS
+1
+ethernet enabled 1 active 1 offers 0 pushed 0 rejected 0
+mtu_policy limited 0 link 0/0 route 0/0 rule 0/0 l3if 0/0
+bound 0 pushed 0 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+UPTIME
+677.47 2610.61
+PING 192.168.1.158 (192.168.1.158): 56 data bytes
+64 bytes from 192.168.1.158: seq=0 ttl=64 time=0.963 ms
+64 bytes from 192.168.1.158: seq=1 ttl=64 time=0.958 ms
+
+--- 192.168.1.158 ping statistics ---
+2 packets transmitted, 2 packets received, 0% packet loss
+round-trip min/avg/max = 0.958/0.960/0.963 ms

@@ -1,0 +1,13 @@
+Image contains unit addresses @, this will break signing
+Image contains unit addresses @, this will break signing
+Image contains unit addresses @, this will break signing
+Image contains unit addresses @, this will break signing
+host-control
+openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-initramfs-uImage.itb 18959912 b16f6de80ad6604c9021d2a88494d8f31d33164090cedceb1e8cbf563165b5ac
+openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-squashfs-sysupgrade.bin 18032915 2dfe0e1b4697938b7ddbe8c34e611e855e27a8d25c34e5a7d40272cc85a6db40
+kernel headroom 384540
+nss-enabled
+openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-initramfs-uImage.itb 18959676 9d45f71bb77c21219b072d54e7cde6f19fb62e4a6ea94633a41422a45071c1b1
+openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-squashfs-sysupgrade.bin 18032915 8e7dff26cf85c4391e7e5b9cfca76e497f0439f7107bc637e3d33f036ec904d6
+kernel headroom 384540
+PASS both diagnostic variants; actual CPU restart test pending

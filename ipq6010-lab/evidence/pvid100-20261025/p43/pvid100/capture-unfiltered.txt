@@ -1,0 +1,10 @@
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+00:43:31.690062 dc:a6:32:b0:ab:b0 > dc:d8:7b:54:83:ec, ethertype 802.1Q (0x8100), length 102: vlan 100, p 0, ethertype IPv4 (0x0800), 192.168.100.63 > 192.168.100.1: ICMP echo request, id 32138, seq 1, length 64
+00:43:31.690469 dc:d8:7b:54:83:ec > dc:a6:32:b0:ab:b0, ethertype 802.1Q (0x8100), length 102: vlan 100, p 0, ethertype IPv4 (0x0800), 192.168.100.1 > 192.168.100.63: ICMP echo reply, id 32138, seq 1, length 64
+00:43:32.745424 dc:a6:32:b0:ab:b0 > dc:d8:7b:54:83:ec, ethertype 802.1Q (0x8100), length 102: vlan 100, p 0, ethertype IPv4 (0x0800), 192.168.100.63 > 192.168.100.1: ICMP echo request, id 32138, seq 2, length 64
+00:43:32.745702 dc:d8:7b:54:83:ec > dc:a6:32:b0:ab:b0, ethertype 802.1Q (0x8100), length 102: vlan 100, p 0, ethertype IPv4 (0x0800), 192.168.100.1 > 192.168.100.63: ICMP echo reply, id 32138, seq 2, length 64
+
+4 packets captured
+4 packets received by filter
+0 packets dropped by kernel

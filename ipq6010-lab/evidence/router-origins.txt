@@ -1,0 +1,87 @@
+### acceleration counts
+/sys/kernel/debug/ecm/ecm_nss_ipv4/accelerated_count: 7
+/sys/kernel/debug/ecm/ecm_nss_ipv6/accelerated_count: 0
+/sys/kernel/debug/ecm/ecm_db/connection_count_simple: tcp 58 udp 14 other 0 total 72
+
+### package origins
+P:ath11k-firmware-ipq6018
+V:2026.08.21~0c817c46-r1
+U:https://github.com/laipeng668/ath11k-firmware-ddwrt.git
+o:feeds/base/firmware/ath11k-firmware
+D:libc
+
+P:ath11k-firmware-qcn9074
+V:2026.08.21~0c817c46-r1
+U:https://github.com/laipeng668/ath11k-firmware-ddwrt.git
+o:feeds/base/firmware/ath11k-firmware
+D:libc
+
+P:base-files
+V:1992~0a42723cf9
+U:http://openwrt.org/
+o:feeds/base/base-files
+D:busybox fstools fwtool jsonfilter libc netifd openwrt-keyring procd procd-seccomp ubi-utils usign
+
+P:kernel
+V:6.12.108~73d5afada07ce4798ce71914150d5e75-r1
+U:http://www.kernel.org/
+o:feeds/base/kernel/linux
+D:libc
+
+P:kmod-ath11k
+V:6.12.108.6.18.39-r1
+U:https://wireless.wiki.kernel.org/en/users/drivers/ath11k
+o:feeds/base/kernel/mac80211
+D:kernel=6.12.108~73d5afada07ce4798ce71914150d5e75-r1 kmod-ath kmod-crypto-michael-mic kmod-hwmon-core kmod-qca-nss-drv kmod-qcom-qmi-helpers kmod-thermal
+
+P:kmod-qca-nss-dp
+V:6.12.108.2025.11.24~19c51af0-r1
+U:
+o:feeds/base/kernel/qca-nss-dp
+D:kernel=6.12.108~73d5afada07ce4798ce71914150d5e75-r1 kmod-qca-ssdk
+
+P:kmod-qca-nss-drv
+V:6.12.108.12.5.2024.11.13~d5ee67b-r17
+U:
+o:feeds/nss_packages/feeds/nss_packages/qca-nss-drv
+D:kernel=6.12.108~73d5afada07ce4798ce71914150d5e75-r1 kmod-qca-nss-dp nss-firmware
+
+P:kmod-qca-nss-ecm
+V:6.12.108.12.5.2024.11.06~30fbfa4-r7
+U:
+o:feeds/nss_packages/feeds/nss_packages/qca-nss-ecm
+D:ethtool kernel=6.12.108~73d5afada07ce4798ce71914150d5e75-r1 kmod-bonding kmod-nat46 kmod-nf-conntrack kmod-ppp kmod-pppoe kmod-pppol2tp kmod-pptp kmod-qca-nss-drv kmod-vxlan
+
+P:kmod-qca-ssdk
+V:6.12.108.2025.05.30~446db12b-r1
+U:
+o:feeds/base/kernel/qca-ssdk
+D:kernel=6.12.108~73d5afada07ce4798ce71914150d5e75-r1
+
+P:nss-firmware-ipq60xx
+V:2025.05.01-r1
+U:https://github.com/qosmio/qca-sdk-nss-fw/releases/download/v2025.05.01
+o:feeds/nss_packages/feeds/nss_packages/firmware/nss-firmware
+D:libc
+
+
+### read-only partition identity
+/dev/mmcblk0p15: PARTLABEL="0:ART" PARTUUID="76f72eca-ec5d-cd5e-8e2b-91c6bd694c4a"
+/dev/mmcblk0p16: PARTLABEL="0:HLOS" PARTUUID="1f47d13f-9821-93a3-d8e0-c09dedb71f1c"
+/dev/mmcblk0p17: PARTLABEL="0:HLOS_1" PARTUUID="874cae67-e294-b2e6-8d92-05cba258a659"
+/dev/mmcblk0p18: BLOCK_SIZE="262144" TYPE="squashfs" PARTLABEL="rootfs" PARTUUID="dd27939e-c080-66fb-9451-7e30fa8e4c71"
+/dev/mmcblk0p20: PARTLABEL="rootfs_1" PARTUUID="88f425b9-e76a-5699-aa94-415e5d65bd3d"
+/dev/mmcblk0p22: PARTLABEL="rootfs_data" PARTUUID="7f3a7269-ab72-5235-1ace-702d93e375ff"
+
+### sanitized repository URLs
+# add your custom package feeds here
+#
+# http://www.example.com/path/to/files/packages.adb
+https://mirrors.pku.edu.cn/immortalwrt/releases/25.12.1/targets/qualcommax/ipq60xx/packages/packages.adb
+https://mirrors.pku.edu.cn/immortalwrt/releases/25.12.1/packages/aarch64_cortex-a53/base/packages.adb
+https://mirrors.pku.edu.cn/immortalwrt/releases/25.12.1/packages/aarch64_cortex-a53/collect_luci/packages.adb
+https://mirrors.pku.edu.cn/immortalwrt/releases/25.12.1/packages/aarch64_cortex-a53/luci/packages.adb
+https://mirrors.pku.edu.cn/immortalwrt/releases/25.12.1/packages/aarch64_cortex-a53/packages/packages.adb
+https://mirrors.pku.edu.cn/immortalwrt/releases/25.12.1/packages/aarch64_cortex-a53/routing/packages.adb
+https://mirrors.pku.edu.cn/immortalwrt/releases/25.12.1/packages/aarch64_cortex-a53/telephony/packages.adb
+https://bdme.cn/openwrt/build/packages/aarch64_cortex-a53/collect_luci-apk/packages.adb

@@ -1,0 +1,17 @@
+CASE wifi-baseline
+wifi-baseline 854.87 Mbit/s
+CASE wifi-fq-codel
+wifi-fq-codel 840.61 Mbit/s
+CASE wifi-tbf100
+wifi-tbf100 845.69 Mbit/s
+CASE wifi-cake100
+wifi-cake100 836.73 Mbit/s
+CASE wifi-htb100
+wifi-htb100 849.36 Mbit/s
+CASE wifi-recovery
+wifi-recovery 851.61 Mbit/s
+CASE wifi-local-baseline
+wifi-local-baseline 834.8 Mbit/s
+CASE wifi-local-tbf100
+wifi-local-tbf100 95.68 Mbit/s
+RESULTS /home/ubuntu/openwrt-ramboot/qdisc-tests-20261026/run-060636

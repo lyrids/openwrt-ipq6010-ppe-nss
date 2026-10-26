@@ -1,0 +1,6 @@
+Variant: iteration 7 CPU restart diagnostics, host-control
+Source base: e3caef34ec plus 0990-arm64-trace-ipq-cpu-restart.patch
+Kernel: KEXEC/KEXEC_FILE/HOTPLUG_CPU/SUSPEND retained
+PSCI: raw CPU_ON result, entry/affinity, secondary-C checkpoints
+NSS firmware packaging: 12.5 only; no secure firmware modifications
+CPU restart fix: none applied, diagnostics only

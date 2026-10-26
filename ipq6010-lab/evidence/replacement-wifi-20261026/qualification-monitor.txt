@@ -1,0 +1,3225 @@
+SAMPLE-1
+3238.70 12799.14
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 3/7
+bound 1 pushed 22 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 icmp     1 0 src=192.168.77.154 dst=192.168.21.63 type=8 code=0 id=7442 packets=2 bytes=168 src=192.168.21.63 dst=192.168.21.138 type=0 code=0 id=7442 packets=2 bytes=168 mark=0 use=1
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	29540 ms
+	rx bytes:	1750
+	rx packets:	19
+	tx bytes:	588
+	tx packets:	6
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-44 dBm
+	signal avg:	-44 dBm
+	tx bitrate:	6.0 MBit/s
+	tx duration:	3468 us
+	rx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	rx duration:	1577 us
+	expected throughput:	5.242Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	121 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949864613 ms
+
+SAMPLE-2
+3240.71 12807.08
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/3
+bound 1 pushed 24 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 896 tx 896 drop 0/0/0/0 exceptions
+node ipv4 rx 1230 tx 1230 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 31/1 prio 0 installed 1 age 1550ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 if 31/1 prio 0 installed 1 age 1610ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=48353 dport=5360 packets=3 bytes=201 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=48353 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43551 dport=5360 packets=3 bytes=201 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43551 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	50 ms
+	rx bytes:	74571670
+	rx packets:	49282
+	tx bytes:	118220
+	tx packets:	1788
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	65608 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	12090 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	123 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743356 ms
+	current time:	1792949866627 ms
+
+SAMPLE-3
+3242.72 12815.01
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/3
+bound 1 pushed 24 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 1006 tx 1006 drop 0/0/0/0 exceptions
+node ipv4 rx 1021 tx 1021 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 31/1 prio 0 installed 1 age 340ms fw flow rx 116978 tx 4018 return rx 4018 tx 116978
+proto 6 v4 if 31/1 prio 0 installed 1 age 340ms fw flow rx 4 tx 8 return rx 8 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=48353 dport=5360 packets=3 bytes=201 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=48353 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43551 dport=5360 packets=3 bytes=201 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43551 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	70 ms
+	rx bytes:	194050494
+	rx packets:	128198
+	tx bytes:	290612
+	tx packets:	4400
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	157272 us
+	rx bitrate:	1170.0 MBit/s VHT-MCS 8 80MHz short GI VHT-NSS 3
+	rx duration:	439038 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	125 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949868642 ms
+
+SAMPLE-4
+3244.74 12822.94
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/3
+bound 1 pushed 24 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 1002 tx 1002 drop 0/0/0/0 exceptions
+node ipv4 rx 707 tx 707 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 31/1 prio 0 installed 1 age 2350ms fw flow rx 116978 tx 4018 return rx 4018 tx 116978
+proto 6 v4 if 31/1 prio 0 installed 1 age 2350ms fw flow rx 4 tx 8 return rx 8 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=48353 dport=5360 packets=3 bytes=201 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=48353 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43551 dport=5360 packets=3 bytes=201 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43551 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	80 ms
+	rx bytes:	308281794
+	rx packets:	203648
+	tx bytes:	457328
+	tx packets:	6926
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	248029 us
+	rx bitrate:	1053.0 MBit/s VHT-MCS 8 80MHz VHT-NSS 3
+	rx duration:	1469433 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	127 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949870656 ms
+
+SAMPLE-5
+3246.75 12830.88
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/3
+bound 1 pushed 24 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 1177 tx 1177 drop 0/0/0/0 exceptions
+node ipv4 rx 1021 tx 1021 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 31/1 prio 0 installed 1 age 4360ms fw flow rx 116978 tx 4018 return rx 4018 tx 116978
+proto 6 v4 if 31/1 prio 0 installed 1 age 4360ms fw flow rx 4 tx 8 return rx 8 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=48353 dport=5360 packets=3 bytes=201 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=48353 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43551 dport=5360 packets=3 bytes=201 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43551 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	90 ms
+	rx bytes:	420516128
+	rx packets:	277779
+	tx bytes:	621008
+	tx packets:	9406
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	337011 us
+	rx bitrate:	1170.0 MBit/s VHT-MCS 8 80MHz short GI VHT-NSS 3
+	rx duration:	1934015 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	129 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949872670 ms
+
+SAMPLE-6
+3248.77 12838.81
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/3
+bound 1 pushed 24 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 618 tx 618 drop 0/0/0/0 exceptions
+node ipv4 rx 571 tx 571 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 31/1 prio 0 installed 1 age 140ms fw flow rx 352684 tx 11842 return rx 11842 tx 352684
+proto 6 v4 if 31/1 prio 0 installed 1 age 6380ms fw flow rx 4 tx 8 return rx 8 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=48353 dport=5360 packets=3 bytes=201 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=48353 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43551 dport=5360 packets=3 bytes=201 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43551 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	10 ms
+	rx bytes:	541528634
+	rx packets:	357708
+	tx bytes:	793334
+	tx packets:	12017
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-44 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	428388 us
+	rx bitrate:	1053.0 MBit/s VHT-MCS 8 80MHz VHT-NSS 3
+	rx duration:	2470354 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	131 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949874684 ms
+
+SAMPLE-7
+3250.78 12846.74
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/3
+bound 1 pushed 24 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 1053 tx 1053 drop 0/0/0/0 exceptions
+node ipv4 rx 918 tx 918 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 31/1 prio 0 installed 1 age 2150ms fw flow rx 352684 tx 11842 return rx 11842 tx 352684
+proto 6 v4 if 31/1 prio 0 installed 1 age 8390ms fw flow rx 4 tx 8 return rx 8 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=48353 dport=5360 packets=3 bytes=201 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=48353 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43551 dport=5360 packets=3 bytes=201 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43551 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	20 ms
+	rx bytes:	659393534
+	rx packets:	435558
+	tx bytes:	959720
+	tx packets:	14538
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-44 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	513170 us
+	rx bitrate:	1170.0 MBit/s VHT-MCS 8 80MHz short GI VHT-NSS 3
+	rx duration:	3007118 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	133 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743356 ms
+	current time:	1792949876698 ms
+
+SAMPLE-8
+3252.80 12854.67
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/3
+bound 1 pushed 24 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 978 tx 978 drop 0/0/0/0 exceptions
+node ipv4 rx 979 tx 979 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 31/1 prio 0 installed 1 age 10ms fw flow rx 508519 tx 16924 return rx 16924 tx 508519
+proto 6 v4 if 31/1 prio 0 installed 1 age 10410ms fw flow rx 4 tx 8 return rx 8 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=48353 dport=5360 packets=3 bytes=201 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=48353 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43551 dport=5360 packets=3 bytes=201 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43551 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	40 ms
+	rx bytes:	769150964
+	rx packets:	508053
+	tx bytes:	1116866
+	tx packets:	16919
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	597292 us
+	rx bitrate:	1170.0 MBit/s VHT-MCS 8 80MHz short GI VHT-NSS 3
+	rx duration:	3579983 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	135 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949878713 ms
+
+SAMPLE-9
+3254.81 12862.59
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/3
+bound 1 pushed 26 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 1945 tx 1945 drop 0/0/0/0 exceptions
+node ipv4 rx 1945 tx 1945 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 31/1 prio 0 installed 0 age 12420ms fw flow rx 4 tx 8 return rx 8 tx 4
+proto 6 v4 if 31/1 prio 0 installed 1 age 570ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 if 31/1 prio 0 installed 1 age 620ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 if 31/1 prio 0 installed 0 age 2020ms fw flow rx 508519 tx 16924 return rx 16924 tx 508519
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=48353 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=48353 packets=2 bytes=112 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43551 dport=5360 packets=38 bytes=718781 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43551 packets=66 bytes=3056 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=57347 dport=5360 packets=3 bytes=201 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=57347 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43745 dport=5360 packets=3 bytes=201 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43745 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	50 ms
+	rx bytes:	851003326
+	rx packets:	564492
+	tx bytes:	49959922
+	tx packets:	50938
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	1044594 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	4109882 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	137 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949880727 ms
+
+SAMPLE-10
+3256.82 12870.50
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/3
+bound 1 pushed 26 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 1911 tx 1911 drop 0/0/0/0 exceptions
+node ipv4 rx 1933 tx 1933 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 31/1 prio 0 installed 1 age 2590ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 if 31/1 prio 0 installed 1 age 2640ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=48353 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=48353 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43551 dport=5360 packets=38 bytes=718781 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43551 packets=66 bytes=3056 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=57347 dport=5360 packets=3 bytes=201 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=57347 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43745 dport=5360 packets=3 bytes=201 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43745 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	70 ms
+	rx bytes:	851769322
+	rx packets:	576098
+	tx bytes:	271873416
+	tx packets:	197513
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-44 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	2635147 us
+	rx bitrate:	1170.0 MBit/s VHT-MCS 8 80MHz short GI VHT-NSS 3
+	rx duration:	4399096 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	139 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949882742 ms
+
+SAMPLE-11
+3258.84 12878.42
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/3
+bound 1 pushed 26 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 2136 tx 2136 drop 0/0/0/0 exceptions
+node ipv4 rx 2136 tx 2136 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 31/1 prio 0 installed 1 age 4600ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 if 31/1 prio 0 installed 1 age 4650ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=48353 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=48353 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43551 dport=5360 packets=38 bytes=718781 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43551 packets=66 bytes=3056 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=57347 dport=5360 packets=3 bytes=201 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=57347 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43745 dport=5360 packets=3 bytes=201 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43745 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	80 ms
+	rx bytes:	852474994
+	rx packets:	586790
+	tx bytes:	489207378
+	tx packets:	341066
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	4208131 us
+	rx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	rx duration:	4444581 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	141 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949884756 ms
+
+SAMPLE-12
+3260.85 12886.33
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/3
+bound 1 pushed 26 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 2138 tx 2138 drop 0/0/0/0 exceptions
+node ipv4 rx 2109 tx 2109 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 31/1 prio 0 installed 1 age 780ms fw flow rx 31392 tx 417958 return rx 417958 tx 31392
+proto 6 v4 if 31/1 prio 0 installed 1 age 780ms fw flow rx 4 tx 7 return rx 7 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=48353 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=48353 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43551 dport=5360 packets=38 bytes=718781 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43551 packets=66 bytes=3056 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=57347 dport=5360 packets=3 bytes=201 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=57347 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43745 dport=5360 packets=3 bytes=201 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43745 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	90 ms
+	rx bytes:	853142452
+	rx packets:	596903
+	tx bytes:	712167420
+	tx packets:	488335
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	5798668 us
+	rx bitrate:	1053.0 MBit/s VHT-MCS 8 80MHz VHT-NSS 3
+	rx duration:	4489275 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	143 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949886770 ms
+
+SAMPLE-13
+3262.87 12894.25
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/3
+bound 1 pushed 26 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 2195 tx 2195 drop 0/0/0/0 exceptions
+node ipv4 rx 2198 tx 2198 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 31/1 prio 0 installed 1 age 2800ms fw flow rx 31392 tx 417958 return rx 417958 tx 31392
+proto 6 v4 if 31/1 prio 0 installed 1 age 2800ms fw flow rx 4 tx 7 return rx 7 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=48353 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=48353 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43551 dport=5360 packets=38 bytes=718781 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43551 packets=66 bytes=3056 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=57347 dport=5360 packets=3 bytes=201 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=57347 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43745 dport=5360 packets=3 bytes=201 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43745 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	10 ms
+	rx bytes:	853879144
+	rx packets:	608065
+	tx bytes:	944686508
+	tx packets:	641915
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	7406307 us
+	rx bitrate:	1053.0 MBit/s VHT-MCS 8 80MHz VHT-NSS 3
+	rx duration:	4489275 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	145 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743356 ms
+	current time:	1792949888784 ms
+
+SAMPLE-14
+3264.88 12902.16
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/3
+bound 1 pushed 26 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 1943 tx 1943 drop 0/0/0/0 exceptions
+node ipv4 rx 1568 tx 1568 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 31/1 prio 0 installed 1 age 4810ms fw flow rx 31392 tx 417958 return rx 417958 tx 31392
+proto 6 v4 if 31/1 prio 0 installed 1 age 4810ms fw flow rx 4 tx 7 return rx 7 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=48353 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=48353 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43551 dport=5360 packets=38 bytes=718781 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43551 packets=66 bytes=3056 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=57347 dport=5360 packets=3 bytes=201 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=57347 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43745 dport=5360 packets=3 bytes=201 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43745 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	20 ms
+	rx bytes:	854554984
+	rx packets:	618305
+	tx bytes:	1166642492
+	tx packets:	788519
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	9005430 us
+	rx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	rx duration:	4533911 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	147 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743356 ms
+	current time:	1792949890798 ms
+
+SAMPLE-15
+3266.90 12910.07
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/3
+bound 1 pushed 26 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 1659 tx 1659 drop 0/0/0/0 exceptions
+node ipv4 rx 1662 tx 1662 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 31/1 prio 0 installed 1 age 590ms fw flow rx 64227 tx 875934 return rx 875934 tx 64227
+proto 6 v4 if 31/1 prio 0 installed 1 age 6830ms fw flow rx 4 tx 7 return rx 7 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=48353 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=48353 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43551 dport=5360 packets=38 bytes=718781 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43551 packets=66 bytes=3056 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=57347 dport=5360 packets=3 bytes=201 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=57347 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43745 dport=5360 packets=3 bytes=201 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43745 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	40 ms
+	rx bytes:	855265408
+	rx packets:	629069
+	tx bytes:	1378855742
+	tx packets:	928688
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	10575429 us
+	rx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	rx duration:	4578570 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	149 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949892813 ms
+
+SAMPLE-16
+3268.91 12917.99
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/3
+bound 1 pushed 26 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 1562 tx 1562 drop 0/0/0/0 exceptions
+node ipv4 rx 1503 tx 1503 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 31/1 prio 0 installed 1 age 2600ms fw flow rx 64227 tx 875934 return rx 875934 tx 64227
+proto 6 v4 if 31/1 prio 0 installed 1 age 8840ms fw flow rx 4 tx 7 return rx 7 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=48353 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=48353 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43551 dport=5360 packets=38 bytes=718781 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43551 packets=66 bytes=3056 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=57347 dport=5360 packets=3 bytes=201 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=57347 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43745 dport=5360 packets=3 bytes=201 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43745 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	50 ms
+	rx bytes:	855905212
+	rx packets:	638763
+	tx bytes:	1588508804
+	tx packets:	1067167
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	12108418 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	4625323 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	151 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949894827 ms
+
+SAMPLE-17
+3270.92 12925.93
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 28 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 153 tx 153 drop 0/0/0/0 exceptions
+node ipv4 rx 153 tx 153 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 31/5 prio 0 installed 1 age 1540ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 if 31/5 prio 0 installed 1 age 1610ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=48353 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=48353 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43551 dport=5360 packets=38 bytes=718781 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43551 packets=66 bytes=3056 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=57347 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=57347 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48053 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48053 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48427 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48427 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43745 dport=5360 packets=4 bytes=253 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43745 packets=1 bytes=60 [OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	60 ms
+	rx bytes:	868722904
+	rx packets:	648669
+	tx bytes:	1625355641
+	tx packets:	1092510
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	12388477 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	4625323 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	153 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949896841 ms
+
+SAMPLE-18
+3272.94 12933.88
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 28 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 103 tx 103 drop 0/0/0/0 exceptions
+node ipv4 rx 106 tx 106 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 31/5 prio 0 installed 1 age 3550ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 if 31/5 prio 0 installed 1 age 3620ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=48353 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=48353 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43551 dport=5360 packets=38 bytes=718781 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43551 packets=66 bytes=3056 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=57347 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=57347 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48053 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48053 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48427 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48427 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43745 dport=5360 packets=4 bytes=253 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43745 packets=1 bytes=60 [OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	80 ms
+	rx bytes:	886644122
+	rx packets:	660506
+	tx bytes:	1625437475
+	tx packets:	1093747
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	12450363 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	4748858 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	155 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949898855 ms
+
+SAMPLE-19
+3274.95 12941.82
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 28 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 188 tx 188 drop 0/0/0/0 exceptions
+node ipv4 rx 188 tx 188 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 31/5 prio 0 installed 1 age 1360ms fw flow rx 23855 tx 2695 return rx 2695 tx 23855
+proto 6 v4 if 31/5 prio 0 installed 1 age 1360ms fw flow rx 4 tx 8 return rx 8 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=48353 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=48353 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43551 dport=5360 packets=38 bytes=718781 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43551 packets=66 bytes=3056 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=57347 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=57347 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48053 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48053 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48427 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48427 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43745 dport=5360 packets=4 bytes=253 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43745 packets=1 bytes=60 [OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	90 ms
+	rx bytes:	904077730
+	rx packets:	672022
+	tx bytes:	1625523671
+	tx packets:	1095051
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	12523947 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	4748858 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	157 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949900869 ms
+
+SAMPLE-20
+3276.97 12949.77
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 28 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 107 tx 107 drop 0/0/0/0 exceptions
+node ipv4 rx 107 tx 107 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 31/5 prio 0 installed 1 age 3380ms fw flow rx 23855 tx 2695 return rx 2695 tx 23855
+proto 6 v4 if 31/5 prio 0 installed 1 age 3380ms fw flow rx 4 tx 8 return rx 8 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=48353 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=48353 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43551 dport=5360 packets=38 bytes=718781 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43551 packets=66 bytes=3056 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=57347 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=57347 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48053 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48053 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48427 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48427 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43745 dport=5360 packets=4 bytes=253 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43745 packets=1 bytes=60 [OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	10 ms
+	rx bytes:	923659806
+	rx packets:	684956
+	tx bytes:	1625617655
+	tx packets:	1096475
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	12598267 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	4748858 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	159 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949902883 ms
+
+SAMPLE-21
+3278.98 12957.71
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 28 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 158 tx 158 drop 0/0/0/0 exceptions
+node ipv4 rx 153 tx 153 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 31/5 prio 0 installed 1 age 5390ms fw flow rx 23855 tx 2695 return rx 2695 tx 23855
+proto 6 v4 if 31/5 prio 0 installed 1 age 5390ms fw flow rx 4 tx 8 return rx 8 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=48353 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=48353 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43551 dport=5360 packets=38 bytes=718781 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43551 packets=66 bytes=3056 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=57347 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=57347 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48053 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48053 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48427 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48427 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43745 dport=5360 packets=4 bytes=253 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43745 packets=1 bytes=60 [OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	20 ms
+	rx bytes:	942395556
+	rx packets:	697331
+	tx bytes:	1625706491
+	tx packets:	1097821
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	12668763 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	5048162 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	161 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949904897 ms
+
+SAMPLE-22
+3280.99 12965.66
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 28 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 171 tx 171 drop 0/0/0/0 exceptions
+node ipv4 rx 178 tx 178 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 31/5 prio 0 installed 1 age 1170ms fw flow rx 62632 tx 6938 return rx 6938 tx 62632
+proto 6 v4 if 31/5 prio 0 installed 1 age 7410ms fw flow rx 4 tx 8 return rx 8 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=48353 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=48353 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43551 dport=5360 packets=38 bytes=718781 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43551 packets=66 bytes=3056 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=57347 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=57347 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48053 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48053 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48427 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48427 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43745 dport=5360 packets=4 bytes=253 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43745 packets=1 bytes=60 [OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	30 ms
+	rx bytes:	961293304
+	rx packets:	709813
+	tx bytes:	1625795405
+	tx packets:	1099166
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	12739036 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	5048162 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	163 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743356 ms
+	current time:	1792949906911 ms
+
+SAMPLE-23
+3283.01 12973.60
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 28 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 191 tx 191 drop 0/0/0/0 exceptions
+node ipv4 rx 186 tx 185 drop 0/0/0/0 exceptions 9:1
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 31/5 prio 0 installed 1 age 3180ms fw flow rx 62632 tx 6938 return rx 6938 tx 62632
+proto 6 v4 if 31/5 prio 0 installed 1 age 9420ms fw flow rx 4 tx 8 return rx 8 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=48353 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=48353 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43551 dport=5360 packets=38 bytes=718781 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43551 packets=66 bytes=3056 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=57347 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=57347 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48053 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48053 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48427 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48427 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43745 dport=5360 packets=4 bytes=253 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43745 packets=1 bytes=60 [OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	50 ms
+	rx bytes:	979821636
+	rx packets:	722051
+	tx bytes:	1625884385
+	tx packets:	1100512
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1170.0 MBit/s VHT-MCS 8 80MHz short GI VHT-NSS 3
+	tx duration:	12814376 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	5315208 us
+	expected throughput:	864.859Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	166 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743356 ms
+	current time:	1792949908925 ms
+
+SAMPLE-24
+3285.02 12981.53
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 30 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 183 tx 183 drop 0/0/0/0 exceptions
+node ipv4 rx 161 tx 161 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 31/5 prio 0 installed 0 age 1030ms fw flow rx 87857 tx 9712 return rx 9712 tx 87857
+proto 6 v4 if 31/5 prio 0 installed 1 age 500ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 if 31/5 prio 0 installed 1 age 560ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 if 31/5 prio 0 installed 0 age 11430ms fw flow rx 4 tx 8 return rx 8 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 10 CLOSE src=192.168.77.154 dst=192.168.1.2 sport=48353 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=48353 packets=2 bytes=112 [ASSURED] mark=0 use=2
+ipv4     2 tcp      6 10 CLOSE src=192.168.77.154 dst=192.168.1.2 sport=43551 dport=5360 packets=38 bytes=718781 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43551 packets=66 bytes=3056 [ASSURED] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=57347 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=57347 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48053 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48053 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48427 dport=5361 packets=9 bytes=65673 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48427 packets=90 bytes=4160 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43745 dport=5360 packets=4 bytes=253 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43745 packets=1 bytes=60 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=43569 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43569 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=47655 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=47655 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	60 ms
+	rx bytes:	993029193
+	rx packets:	731087
+	tx bytes:	1629272594
+	tx packets:	1103760
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	12929287 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	5315208 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	168 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949910940 ms
+
+SAMPLE-25
+3287.04 12989.43
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 30 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 174 tx 174 drop 0/0/0/0 exceptions
+node ipv4 rx 172 tx 172 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 31/5 prio 0 installed 1 age 2520ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 if 31/5 prio 0 installed 1 age 2580ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 7 CLOSE src=192.168.77.154 dst=192.168.1.2 sport=48353 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=48353 packets=2 bytes=112 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 7 CLOSE src=192.168.77.154 dst=192.168.1.2 sport=43551 dport=5360 packets=38 bytes=718781 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43551 packets=66 bytes=3056 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=57347 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=57347 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48053 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48053 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48427 dport=5361 packets=9 bytes=65673 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48427 packets=90 bytes=4160 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43745 dport=5360 packets=4 bytes=253 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43745 packets=1 bytes=60 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=43569 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43569 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=47655 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=47655 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	80 ms
+	rx bytes:	993115521
+	rx packets:	732395
+	tx bytes:	1642385348
+	tx packets:	1112421
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	13145303 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	5507546 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	170 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949912953 ms
+
+SAMPLE-26
+3289.05 12997.33
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 30 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 167 tx 167 drop 0/0/0/0 exceptions
+node ipv4 rx 147 tx 147 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 31/5 prio 0 installed 1 age 4530ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 if 31/5 prio 0 installed 1 age 4590ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 5 CLOSE src=192.168.77.154 dst=192.168.1.2 sport=48353 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=48353 packets=2 bytes=112 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 5 CLOSE src=192.168.77.154 dst=192.168.1.2 sport=43551 dport=5360 packets=38 bytes=718781 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43551 packets=66 bytes=3056 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=57347 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=57347 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48053 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48053 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48427 dport=5361 packets=9 bytes=65673 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48427 packets=90 bytes=4160 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43745 dport=5360 packets=4 bytes=253 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43745 packets=1 bytes=60 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=43569 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43569 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=47655 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=47655 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	90 ms
+	rx bytes:	993209307
+	rx packets:	733816
+	tx bytes:	1657139278
+	tx packets:	1122166
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	13375876 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	5545349 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	172 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949914967 ms
+
+SAMPLE-27
+3291.06 13005.24
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 30 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 144 tx 144 drop 0/0/0/0 exceptions
+node ipv4 rx 149 tx 149 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 31/5 prio 0 installed 1 age 6550ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 if 31/5 prio 0 installed 1 age 6610ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 3 CLOSE src=192.168.77.154 dst=192.168.1.2 sport=48353 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=48353 packets=2 bytes=112 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 3 CLOSE src=192.168.77.154 dst=192.168.1.2 sport=43551 dport=5360 packets=38 bytes=718781 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43551 packets=66 bytes=3056 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=57347 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=57347 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48053 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48053 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48427 dport=5361 packets=9 bytes=65673 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48427 packets=90 bytes=4160 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43745 dport=5360 packets=4 bytes=253 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43745 packets=1 bytes=60 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=43569 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43569 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=47655 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=47655 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	10 ms
+	rx bytes:	993305865
+	rx packets:	735279
+	tx bytes:	1673322424
+	tx packets:	1132855
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	13601781 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	5583252 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	174 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949916982 ms
+
+SAMPLE-28
+3293.08 13013.14
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 30 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 152 tx 152 drop 0/0/0/0 exceptions
+node ipv4 rx 162 tx 162 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 31/5 prio 0 installed 1 age 1810ms fw flow rx 4641 tx 32268 return rx 32268 tx 4641
+proto 6 v4 if 31/5 prio 0 installed 1 age 1810ms fw flow rx 4 tx 8 return rx 8 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 1 CLOSE src=192.168.77.154 dst=192.168.1.2 sport=48353 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=48353 packets=2 bytes=112 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 1 CLOSE src=192.168.77.154 dst=192.168.1.2 sport=43551 dport=5360 packets=38 bytes=718781 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43551 packets=66 bytes=3056 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=57347 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=57347 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48053 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48053 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48427 dport=5361 packets=9 bytes=65673 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48427 packets=90 bytes=4160 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43745 dport=5360 packets=4 bytes=253 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43745 packets=1 bytes=60 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=43569 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43569 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=47655 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=47655 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	20 ms
+	rx bytes:	993395361
+	rx packets:	736635
+	tx bytes:	1687320868
+	tx packets:	1142101
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	13820770 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	5621796 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	176 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949918996 ms
+
+SAMPLE-29
+3295.09 13021.04
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 30 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 160 tx 160 drop 0/0/0/0 exceptions
+node ipv4 rx 176 tx 176 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 31/5 prio 0 installed 1 age 3820ms fw flow rx 4641 tx 32268 return rx 32268 tx 4641
+proto 6 v4 if 31/5 prio 0 installed 1 age 3820ms fw flow rx 4 tx 8 return rx 8 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=57347 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=57347 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48053 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48053 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48427 dport=5361 packets=9 bytes=65673 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48427 packets=90 bytes=4160 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43745 dport=5360 packets=4 bytes=253 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43745 packets=1 bytes=60 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=43569 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43569 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=47655 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=47655 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	30 ms
+	rx bytes:	993489939
+	rx packets:	738068
+	tx bytes:	1702548680
+	tx packets:	1152159
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	14050400 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	5660343 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	178 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949921010 ms
+
+SAMPLE-30
+3297.11 13028.94
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 30 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 176 tx 176 drop 0/0/0/0 exceptions
+node ipv4 rx 191 tx 191 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 31/5 prio 0 installed 1 age 5840ms fw flow rx 4641 tx 32268 return rx 32268 tx 4641
+proto 6 v4 if 31/5 prio 0 installed 1 age 5840ms fw flow rx 4 tx 8 return rx 8 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=57347 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=57347 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48053 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48053 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48427 dport=5361 packets=9 bytes=65673 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48427 packets=90 bytes=4160 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43745 dport=5360 packets=4 bytes=253 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43745 packets=1 bytes=60 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=43569 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43569 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=47655 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=47655 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	50 ms
+	rx bytes:	993585375
+	rx packets:	739514
+	tx bytes:	1717823410
+	tx packets:	1162248
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	14283867 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	5699004 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	180 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949923024 ms
+
+SAMPLE-31
+3299.12 13036.84
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 30 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 137 tx 137 drop 0/0/0/0 exceptions
+node ipv4 rx 162 tx 162 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 31/5 prio 0 installed 1 age 1610ms fw flow rx 9048 tx 62920 return rx 62920 tx 9048
+proto 6 v4 if 31/5 prio 0 installed 1 age 7850ms fw flow rx 4 tx 8 return rx 8 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=57347 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=57347 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48053 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48053 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48427 dport=5361 packets=9 bytes=65673 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48427 packets=90 bytes=4160 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.1.2 sport=43745 dport=5360 packets=4 bytes=253 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43745 packets=1 bytes=60 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=43569 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43569 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=47655 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=47655 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	60 ms
+	rx bytes:	993680019
+	rx packets:	740948
+	tx bytes:	1732810496
+	tx packets:	1172147
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1170.0 MBit/s VHT-MCS 8 80MHz short GI VHT-NSS 3
+	tx duration:	14512505 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	5737281 us
+	expected throughput:	864.859Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	182 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743356 ms
+	current time:	1792949925038 ms
+
+SAMPLE-32
+3301.14 13044.77
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 32 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 31/5 prio 0 installed 1 age 1350ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 17 v4 if 31/5 prio 0 installed 1 age 1280ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 8 CLOSE src=192.168.77.154 dst=192.168.1.2 sport=57347 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=57347 packets=2 bytes=112 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48053 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48053 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48427 dport=5361 packets=9 bytes=65673 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48427 packets=90 bytes=4160 [OFFLOAD] mark=0 use=2
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=59358 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=59358 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 8 CLOSE src=192.168.77.154 dst=192.168.1.2 sport=43745 dport=5360 packets=4 bytes=253 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43745 packets=1 bytes=60 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=36019 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=36019 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=43569 dport=5361 packets=316 bytes=12733 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43569 packets=115 bytes=447628 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=47655 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=47655 packets=3 bytes=164 [OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	1280 ms
+	rx bytes:	994899976
+	rx packets:	742554
+	tx bytes:	1737746053
+	tx packets:	1175423
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	14584043 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	5737281 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	184 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949927053 ms
+
+SAMPLE-33
+3303.15 13052.73
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 32 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 31/5 prio 0 installed 1 age 3360ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 17 v4 if 31/5 prio 0 installed 1 age 3290ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 6 CLOSE src=192.168.77.154 dst=192.168.1.2 sport=57347 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=57347 packets=2 bytes=112 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48053 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48053 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48427 dport=5361 packets=9 bytes=65673 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48427 packets=90 bytes=4160 [OFFLOAD] mark=0 use=2
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=59358 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=59358 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 6 CLOSE src=192.168.77.154 dst=192.168.1.2 sport=43745 dport=5360 packets=4 bytes=253 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43745 packets=1 bytes=60 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=36019 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=36019 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=43569 dport=5361 packets=316 bytes=12733 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43569 packets=115 bytes=447628 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=47655 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=47655 packets=3 bytes=164 [OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	3290 ms
+	rx bytes:	996648712
+	rx packets:	743962
+	tx bytes:	1737746053
+	tx packets:	1175423
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	14584043 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	5737281 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	186 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949929067 ms
+
+SAMPLE-34
+3305.16 13060.68
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 32 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 55 tx 55 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 31/5 prio 0 installed 1 age 380ms fw flow rx 4 tx 7 return rx 7 tx 4
+proto 17 v4 if 31/5 prio 0 installed 1 age 380ms fw flow rx 3574 tx 0 return rx 0 tx 3574
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 4 CLOSE src=192.168.77.154 dst=192.168.1.2 sport=57347 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=57347 packets=2 bytes=112 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48053 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48053 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48427 dport=5361 packets=9 bytes=65673 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48427 packets=90 bytes=4160 [OFFLOAD] mark=0 use=2
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=59358 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=59358 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 4 CLOSE src=192.168.77.154 dst=192.168.1.2 sport=43745 dport=5360 packets=4 bytes=253 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43745 packets=1 bytes=60 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=36019 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=36019 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=43569 dport=5361 packets=316 bytes=12733 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43569 packets=115 bytes=447628 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=47655 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=47655 packets=3 bytes=164 [OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	5300 ms
+	rx bytes:	998476936
+	rx packets:	745434
+	tx bytes:	1737746053
+	tx packets:	1175423
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	14584043 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	5790631 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	188 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949931081 ms
+
+SAMPLE-35
+3307.18 13068.64
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 32 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 64 tx 64 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 31/5 prio 0 installed 1 age 2390ms fw flow rx 4 tx 7 return rx 7 tx 4
+proto 17 v4 if 31/5 prio 0 installed 1 age 2390ms fw flow rx 3574 tx 0 return rx 0 tx 3574
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 2 CLOSE src=192.168.77.154 dst=192.168.1.2 sport=57347 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=57347 packets=2 bytes=112 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48053 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48053 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48427 dport=5361 packets=9 bytes=65673 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48427 packets=90 bytes=4160 [OFFLOAD] mark=0 use=2
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=59358 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=59358 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 2 CLOSE src=192.168.77.154 dst=192.168.1.2 sport=43745 dport=5360 packets=4 bytes=253 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43745 packets=1 bytes=60 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=36019 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=36019 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=43569 dport=5361 packets=316 bytes=12733 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43569 packets=115 bytes=447628 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=47655 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=47655 packets=3 bytes=164 [OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	7320 ms
+	rx bytes:	1000146184
+	rx packets:	746778
+	tx bytes:	1737746053
+	tx packets:	1175423
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	14584043 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	5790631 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	190 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949933095 ms
+
+SAMPLE-36
+3309.19 13076.60
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 32 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 64 tx 64 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 6 v4 if 31/5 prio 0 installed 1 age 4400ms fw flow rx 4 tx 7 return rx 7 tx 4
+proto 17 v4 if 31/5 prio 0 installed 1 age 4400ms fw flow rx 3574 tx 0 return rx 0 tx 3574
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 0 CLOSE src=192.168.77.154 dst=192.168.1.2 sport=57347 dport=5360 packets=5 bytes=305 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=57347 packets=2 bytes=112 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48053 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48053 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48427 dport=5361 packets=9 bytes=65673 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48427 packets=90 bytes=4160 [OFFLOAD] mark=0 use=2
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=59358 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=59358 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 0 CLOSE src=192.168.77.154 dst=192.168.1.2 sport=43745 dport=5360 packets=4 bytes=253 src=192.168.1.2 dst=192.168.77.154 sport=5360 dport=43745 packets=1 bytes=60 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=36019 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=36019 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=43569 dport=5361 packets=316 bytes=12733 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43569 packets=115 bytes=447628 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=47655 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=47655 packets=3 bytes=164 [OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	9330 ms
+	rx bytes:	1001735944
+	rx packets:	748058
+	tx bytes:	1737746053
+	tx packets:	1175423
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	14584043 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	5790631 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	192 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743356 ms
+	current time:	1792949935109 ms
+
+SAMPLE-37
+3311.21 13084.52
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 34 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 166 tx 166 drop 0/0/0/0 exceptions
+node ipv4 rx 136 tx 136 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 17 v4 if 31/5 prio 0 installed 1 age 180ms fw flow rx 0 tx 5895 return rx 5895 tx 0
+proto 17 v4 if 31/5 prio 0 installed 1 age 180ms fw flow rx 6902 tx 0 return rx 0 tx 6902
+proto 6 v4 if 31/5 prio 0 installed 1 age 180ms fw flow rx 4 tx 7 return rx 7 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48053 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48053 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=43349 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43349 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48427 dport=5361 packets=9 bytes=65673 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48427 packets=90 bytes=4160 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=53591 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=53591 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=59358 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=59358 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=36019 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=36019 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=43569 dport=5361 packets=316 bytes=12733 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43569 packets=115 bytes=447628 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=47655 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=47655 packets=3 bytes=164 [OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	50 ms
+	rx bytes:	1002293831
+	rx packets:	748521
+	tx bytes:	1746125964
+	tx packets:	1182185
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	14726621 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	5790631 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	194 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949937124 ms
+
+SAMPLE-38
+3313.22 13092.41
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 34 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 122 tx 122 drop 0/0/0/0 exceptions
+node ipv4 rx 155 tx 155 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 17 v4 if 31/5 prio 0 installed 1 age 2190ms fw flow rx 0 tx 5895 return rx 5895 tx 0
+proto 17 v4 if 31/5 prio 0 installed 1 age 2190ms fw flow rx 6902 tx 0 return rx 0 tx 6902
+proto 6 v4 if 31/5 prio 0 installed 1 age 2190ms fw flow rx 4 tx 7 return rx 7 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48053 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48053 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=43349 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43349 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=48427 dport=5361 packets=9 bytes=65673 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48427 packets=90 bytes=4160 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=53591 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=53591 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=59358 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=59358 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=36019 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=36019 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=43569 dport=5361 packets=316 bytes=12733 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43569 packets=115 bytes=447628 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=47655 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=47655 packets=3 bytes=164 [OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	60 ms
+	rx bytes:	1002293831
+	rx packets:	748521
+	tx bytes:	1762211106
+	tx packets:	1195136
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-44 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	14998489 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	5830579 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	196 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949939138 ms
+
+SAMPLE-39
+3315.24 13100.31
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 34 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 171 tx 171 drop 0/0/0/0 exceptions
+node ipv4 rx 165 tx 165 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 17 v4 if 31/5 prio 0 installed 1 age 4210ms fw flow rx 0 tx 5895 return rx 5895 tx 0
+proto 17 v4 if 31/5 prio 0 installed 1 age 4210ms fw flow rx 6902 tx 0 return rx 0 tx 6902
+proto 6 v4 if 31/5 prio 0 installed 1 age 4210ms fw flow rx 4 tx 7 return rx 7 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 9 CLOSE src=192.168.77.154 dst=192.168.21.63 sport=48053 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48053 packets=2 bytes=112 [ASSURED] mark=0 use=1
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=43349 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43349 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 8 CLOSE src=192.168.77.154 dst=192.168.21.63 sport=48427 dport=5361 packets=9 bytes=65673 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48427 packets=90 bytes=4160 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=53591 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=53591 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=59358 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=59358 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=36019 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=36019 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=43569 dport=5361 packets=316 bytes=12733 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43569 packets=115 bytes=447628 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=47655 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=47655 packets=3 bytes=164 [OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	80 ms
+	rx bytes:	1002293831
+	rx packets:	748521
+	tx bytes:	1777883904
+	tx packets:	1207755
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-44 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	15271387 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	5830579 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	198 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949941152 ms
+
+SAMPLE-40
+3317.25 13108.20
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 34 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 171 tx 171 drop 0/0/0/0 exceptions
+node ipv4 rx 162 tx 162 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 17 v4 if 31/5 prio 0 installed 1 age 1020ms fw flow rx 0 tx 39218 return rx 39218 tx 0
+proto 17 v4 if 31/5 prio 0 installed 1 age 6220ms fw flow rx 6902 tx 0 return rx 0 tx 6902
+proto 6 v4 if 31/5 prio 0 installed 1 age 6220ms fw flow rx 4 tx 7 return rx 7 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 7 CLOSE src=192.168.77.154 dst=192.168.21.63 sport=48053 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48053 packets=2 bytes=112 [ASSURED] mark=0 use=1
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=43349 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43349 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 6 CLOSE src=192.168.77.154 dst=192.168.21.63 sport=48427 dport=5361 packets=9 bytes=65673 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48427 packets=90 bytes=4160 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=53591 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=53591 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=59358 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=59358 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=36019 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=36019 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=43569 dport=5361 packets=316 bytes=12733 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43569 packets=115 bytes=447628 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=47655 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=47655 packets=3 bytes=164 [OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	90 ms
+	rx bytes:	1002293831
+	rx packets:	748521
+	tx bytes:	1794654630
+	tx packets:	1221258
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-44 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	15557032 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	5830579 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	200 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949943166 ms
+
+SAMPLE-41
+3319.26 13116.10
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 34 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 120 tx 120 drop 0/0/0/0 exceptions
+node ipv4 rx 138 tx 138 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 17 v4 if 31/5 prio 0 installed 1 age 3030ms fw flow rx 0 tx 39218 return rx 39218 tx 0
+proto 17 v4 if 31/5 prio 0 installed 1 age 8230ms fw flow rx 6902 tx 0 return rx 0 tx 6902
+proto 6 v4 if 31/5 prio 0 installed 1 age 8230ms fw flow rx 4 tx 7 return rx 7 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 5 CLOSE src=192.168.77.154 dst=192.168.21.63 sport=48053 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48053 packets=2 bytes=112 [ASSURED] mark=0 use=1
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=43349 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43349 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 4 CLOSE src=192.168.77.154 dst=192.168.21.63 sport=48427 dport=5361 packets=9 bytes=65673 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48427 packets=90 bytes=4160 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=53591 dport=5361 packets=3 bytes=201 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=53591 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=59358 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=59358 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=36019 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=36019 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=43569 dport=5361 packets=316 bytes=12733 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43569 packets=115 bytes=447628 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=47655 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=47655 packets=3 bytes=164 [OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	0 ms
+	rx bytes:	1002293831
+	rx packets:	748521
+	tx bytes:	1811749518
+	tx packets:	1235022
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-44 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	15829316 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	5830579 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	202 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949945180 ms
+
+SAMPLE-42
+3321.28 13124.03
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 34 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 17 v4 if 31/5 prio 0 installed 1 age 890ms fw flow rx 0 tx 65167 return rx 65167 tx 0
+proto 17 v4 if 31/5 prio 0 installed 1 age 10250ms fw flow rx 6902 tx 0 return rx 0 tx 6902
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 3 CLOSE src=192.168.77.154 dst=192.168.21.63 sport=48053 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48053 packets=2 bytes=112 [ASSURED] mark=0 use=1
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=43349 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43349 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 2 CLOSE src=192.168.77.154 dst=192.168.21.63 sport=48427 dport=5361 packets=9 bytes=65673 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48427 packets=90 bytes=4160 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=53591 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=53591 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=59358 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=59358 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=36019 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=36019 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=43569 dport=5361 packets=316 bytes=12733 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43569 packets=115 bytes=447628 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=47655 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=47655 packets=3 bytes=164 [OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	1120 ms
+	rx bytes:	1002294625
+	rx packets:	748528
+	tx bytes:	1818685639
+	tx packets:	1240613
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-44 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	15940129 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	5830579 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	204 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949947194 ms
+
+SAMPLE-43
+3323.29 13132.00
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 34 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 17 v4 if 31/5 prio 0 installed 1 age 2900ms fw flow rx 0 tx 65167 return rx 65167 tx 0
+proto 17 v4 if 31/5 prio 0 installed 1 age 12260ms fw flow rx 6902 tx 0 return rx 0 tx 6902
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 1 CLOSE src=192.168.77.154 dst=192.168.21.63 sport=48053 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48053 packets=2 bytes=112 [ASSURED] mark=0 use=1
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=43349 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43349 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 0 CLOSE src=192.168.77.154 dst=192.168.21.63 sport=48427 dport=5361 packets=9 bytes=65673 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=48427 packets=90 bytes=4160 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=53591 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=53591 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=59358 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=59358 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=36019 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=36019 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=43569 dport=5361 packets=316 bytes=12733 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43569 packets=115 bytes=447628 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=47655 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=47655 packets=3 bytes=164 [OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	3130 ms
+	rx bytes:	1002294625
+	rx packets:	748528
+	tx bytes:	1818685639
+	tx packets:	1240613
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	15940129 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	5830843 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	206 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949949212 ms
+
+SAMPLE-44
+3325.31 13139.96
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 34 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 2 tx 0 drop 0/0/0/0 exceptions 9:2
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 17 v4 if 31/5 prio 0 installed 1 age 4920ms fw flow rx 0 tx 65167 return rx 65167 tx 0
+proto 17 v4 if 31/5 prio 0 installed 1 age 14280ms fw flow rx 6902 tx 0 return rx 0 tx 6902
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=43349 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43349 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=53591 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=53591 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=59358 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=59358 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=36019 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=36019 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=43569 dport=5361 packets=316 bytes=12733 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43569 packets=115 bytes=447628 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=47655 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=47655 packets=3 bytes=164 [OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	5150 ms
+	rx bytes:	1002294625
+	rx packets:	748528
+	tx bytes:	1818685639
+	tx packets:	1240613
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	15940129 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	5830843 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	208 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949951226 ms
+
+SAMPLE-45
+3327.32 13147.92
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 34 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 17 v4 if 31/5 prio 0 installed 1 age 6930ms fw flow rx 0 tx 65167 return rx 65167 tx 0
+proto 17 v4 if 31/5 prio 0 installed 1 age 16290ms fw flow rx 6902 tx 0 return rx 0 tx 6902
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=43349 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43349 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=53591 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=53591 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=59358 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=59358 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=36019 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=36019 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=43569 dport=5361 packets=316 bytes=12733 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43569 packets=115 bytes=447628 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=47655 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=47655 packets=3 bytes=164 [OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	7160 ms
+	rx bytes:	1002294625
+	rx packets:	748528
+	tx bytes:	1818685639
+	tx packets:	1240613
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	15940129 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	5830843 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	210 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949953240 ms
+
+SAMPLE-46
+3329.34 13155.88
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 34 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 17 v4 if 31/5 prio 0 installed 1 age 8950ms fw flow rx 0 tx 65167 return rx 65167 tx 0
+proto 17 v4 if 31/5 prio 0 installed 1 age 18310ms fw flow rx 6902 tx 0 return rx 0 tx 6902
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=43349 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43349 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=53591 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=53591 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=59358 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=59358 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=36019 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=36019 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=43569 dport=5361 packets=316 bytes=12733 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43569 packets=115 bytes=447628 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=47655 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=47655 packets=3 bytes=164 [OFFLOAD] mark=0 use=2
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	9180 ms
+	rx bytes:	1002294625
+	rx packets:	748528
+	tx bytes:	1818685639
+	tx packets:	1240613
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	15940129 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	5830843 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	212 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949955254 ms
+
+SAMPLE-47
+3331.35 13163.84
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 34 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 17 v4 if 31/5 prio 0 installed 1 age 10960ms fw flow rx 0 tx 65167 return rx 65167 tx 0
+proto 17 v4 if 31/5 prio 0 installed 1 age 20320ms fw flow rx 6902 tx 0 return rx 0 tx 6902
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=43349 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43349 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=53591 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=53591 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=59358 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=59358 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=36019 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=36019 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 8 CLOSE src=192.168.77.154 dst=192.168.21.63 sport=43569 dport=5361 packets=316 bytes=12733 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43569 packets=115 bytes=447628 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 8 CLOSE src=192.168.77.154 dst=192.168.21.63 sport=47655 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=47655 packets=3 bytes=164 [ASSURED] mark=0 use=1
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	11190 ms
+	rx bytes:	1002294625
+	rx packets:	748528
+	tx bytes:	1818685639
+	tx packets:	1240613
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	15940129 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	5830843 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	214 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949957268 ms
+
+SAMPLE-48
+3333.37 13171.80
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 34 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 17 v4 if 31/5 prio 0 installed 1 age 12980ms fw flow rx 0 tx 65167 return rx 65167 tx 0
+proto 17 v4 if 31/5 prio 0 installed 1 age 22340ms fw flow rx 6902 tx 0 return rx 0 tx 6902
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=43349 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43349 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=53591 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=53591 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=59358 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=59358 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=36019 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=36019 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 6 CLOSE src=192.168.77.154 dst=192.168.21.63 sport=43569 dport=5361 packets=316 bytes=12733 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43569 packets=115 bytes=447628 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 6 CLOSE src=192.168.77.154 dst=192.168.21.63 sport=47655 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=47655 packets=3 bytes=164 [ASSURED] mark=0 use=1
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	13210 ms
+	rx bytes:	1002294625
+	rx packets:	748528
+	tx bytes:	1818685639
+	tx packets:	1240613
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	15940129 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	5830843 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	216 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949959282 ms
+
+SAMPLE-49
+3335.38 13179.76
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 34 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 17 v4 if 31/5 prio 0 installed 1 age 14990ms fw flow rx 0 tx 65167 return rx 65167 tx 0
+proto 17 v4 if 31/5 prio 0 installed 1 age 24350ms fw flow rx 6902 tx 0 return rx 0 tx 6902
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=43349 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43349 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=53591 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=53591 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=59358 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=59358 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=36019 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=36019 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 4 CLOSE src=192.168.77.154 dst=192.168.21.63 sport=43569 dport=5361 packets=316 bytes=12733 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43569 packets=115 bytes=447628 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 4 CLOSE src=192.168.77.154 dst=192.168.21.63 sport=47655 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=47655 packets=3 bytes=164 [ASSURED] mark=0 use=1
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	15220 ms
+	rx bytes:	1002294625
+	rx packets:	748528
+	tx bytes:	1818685639
+	tx packets:	1240613
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	15940129 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	5830843 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	218 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949961296 ms
+
+SAMPLE-50
+3337.39 13187.72
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 34 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 17 v4 if 31/5 prio 0 installed 1 age 17000ms fw flow rx 0 tx 65167 return rx 65167 tx 0
+proto 17 v4 if 31/5 prio 0 installed 1 age 26360ms fw flow rx 6902 tx 0 return rx 0 tx 6902
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=43349 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43349 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=53591 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=53591 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=59358 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=59358 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=36019 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=36019 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 2 CLOSE src=192.168.77.154 dst=192.168.21.63 sport=43569 dport=5361 packets=316 bytes=12733 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43569 packets=115 bytes=447628 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 2 CLOSE src=192.168.77.154 dst=192.168.21.63 sport=47655 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=47655 packets=3 bytes=164 [ASSURED] mark=0 use=1
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	17230 ms
+	rx bytes:	1002294625
+	rx packets:	748528
+	tx bytes:	1818685639
+	tx packets:	1240613
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	15940129 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	5830843 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	220 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949963310 ms
+
+SAMPLE-51
+3339.41 13195.68
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 34 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 1 tx 1 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 17 v4 if 31/5 prio 0 installed 1 age 19020ms fw flow rx 0 tx 65167 return rx 65167 tx 0
+proto 17 v4 if 31/5 prio 0 installed 1 age 28380ms fw flow rx 6902 tx 0 return rx 0 tx 6902
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=43349 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43349 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=53591 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=53591 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=59358 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=59358 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=36019 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=36019 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 0 CLOSE src=192.168.77.154 dst=192.168.21.63 sport=43569 dport=5361 packets=316 bytes=12733 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43569 packets=115 bytes=447628 [ASSURED] mark=0 use=1
+ipv4     2 tcp      6 0 CLOSE src=192.168.77.154 dst=192.168.21.63 sport=47655 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=47655 packets=3 bytes=164 [ASSURED] mark=0 use=1
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	19250 ms
+	rx bytes:	1002294625
+	rx packets:	748528
+	tx bytes:	1818685639
+	tx packets:	1240613
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	15940129 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	5830843 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	222 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949965324 ms
+
+SAMPLE-52
+3341.42 13203.63
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 34 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 17 v4 if 31/5 prio 0 installed 1 age 21030ms fw flow rx 0 tx 65167 return rx 65167 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=43349 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43349 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=53591 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=53591 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 udp      17 149 src=192.168.77.154 dst=192.168.21.63 sport=59358 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=59358 packets=1 bytes=32 mark=0 use=2
+ipv4     2 tcp      6 8 CLOSE src=192.168.77.154 dst=192.168.21.63 sport=36019 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=36019 packets=2 bytes=112 [ASSURED] mark=0 use=1
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	21260 ms
+	rx bytes:	1002294625
+	rx packets:	748528
+	tx bytes:	1818685639
+	tx packets:	1240613
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	15940129 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	5830843 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	224 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949967338 ms
+
+SAMPLE-53
+3343.43 13211.59
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 34 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 1 tx 0 drop 0/0/0/0 exceptions 9:1
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 17 v4 if 31/5 prio 0 installed 1 age 23050ms fw flow rx 0 tx 65167 return rx 65167 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=43349 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43349 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=53591 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=53591 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 udp      17 147 src=192.168.77.154 dst=192.168.21.63 sport=59358 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=59358 packets=1 bytes=32 mark=0 use=1
+ipv4     2 tcp      6 6 CLOSE src=192.168.77.154 dst=192.168.21.63 sport=36019 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=36019 packets=2 bytes=112 [ASSURED] mark=0 use=1
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	23270 ms
+	rx bytes:	1002294625
+	rx packets:	748528
+	tx bytes:	1818685639
+	tx packets:	1240613
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	15940129 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	5830843 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	226 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949969351 ms
+
+SAMPLE-54
+3345.45 13219.56
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 34 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 17 v4 if 31/5 prio 0 installed 1 age 25060ms fw flow rx 0 tx 65167 return rx 65167 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=43349 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43349 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=53591 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=53591 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 udp      17 145 src=192.168.77.154 dst=192.168.21.63 sport=59358 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=59358 packets=1 bytes=32 mark=0 use=1
+ipv4     2 tcp      6 4 CLOSE src=192.168.77.154 dst=192.168.21.63 sport=36019 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=36019 packets=2 bytes=112 [ASSURED] mark=0 use=1
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	25290 ms
+	rx bytes:	1002294625
+	rx packets:	748528
+	tx bytes:	1818685639
+	tx packets:	1240613
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	15940129 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	5830843 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	228 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949971365 ms
+
+SAMPLE-55
+3347.46 13227.52
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 12/7
+bound 1 pushed 34 last-ifindex 3
+rejected not-ours 22 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 17 192.168.1.186:60440 -> 185.125.190.56:123 detail 6
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+proto 17 v4 if 31/5 prio 0 installed 1 age 27070ms fw flow rx 0 tx 65167 return rx 65167 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 udp      17 src=192.168.77.154 dst=192.168.21.63 sport=43349 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=43349 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.77.154 dst=192.168.21.63 sport=53591 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=53591 packets=2 bytes=112 [OFFLOAD] mark=0 use=2
+ipv4     2 udp      17 143 src=192.168.77.154 dst=192.168.21.63 sport=59358 dport=5361 packets=1 bytes=32 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=59358 packets=1 bytes=32 mark=0 use=1
+ipv4     2 tcp      6 2 CLOSE src=192.168.77.154 dst=192.168.21.63 sport=36019 dport=5361 packets=5 bytes=305 src=192.168.21.63 dst=192.168.21.138 sport=5361 dport=36019 packets=2 bytes=112 [ASSURED] mark=0 use=1
+Station 60:38:e0:c1:c5:22 (on phy2-ap0)
+	authorized:	yes
+	authenticated:	yes
+	associated:	yes
+	preamble:	long
+	WMM/WME:	yes
+	MFP:		no
+	TDLS peer:	no
+	inactive time:	27300 ms
+	rx bytes:	1002294625
+	rx packets:	748528
+	tx bytes:	1818685639
+	tx packets:	1240613
+	tx retries:	0
+	tx failed:	0
+	rx drop misc:	0
+	signal:  	-45 dBm
+	signal avg:	-45 dBm
+	tx bitrate:	1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx duration:	15940129 us
+	rx bitrate:	975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	rx duration:	5830843 us
+	expected throughput:	942.390Mbps
+	DTIM period:	2
+	beacon interval:100
+	short slot time:yes
+	connected time:	230 seconds
+	associated at [boottime]:	3117.453s
+	associated at:	1792949743355 ms
+	current time:	1792949973378 ms
+

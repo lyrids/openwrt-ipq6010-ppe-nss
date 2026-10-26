@@ -1,0 +1,1 @@
+eth0             UP             192.168.1.2/24 192.168.1.132/24 metric 100 fd9f:48ed:4a05::a3a/128 fd9f:48ed:4a05:0:dea6:32ff:feb0:abb0/64 fe80::dea6:32ff:feb0:abb0/64 

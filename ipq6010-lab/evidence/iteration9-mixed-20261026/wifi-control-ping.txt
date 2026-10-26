@@ -1,0 +1,15 @@
+PING 192.168.77.1 (192.168.77.1) from 192.168.77.154: 56 data bytes
+64 bytes from 192.168.77.1: seq=0 ttl=64 time=5.363 ms
+64 bytes from 192.168.77.1: seq=1 ttl=64 time=12.455 ms
+64 bytes from 192.168.77.1: seq=2 ttl=64 time=9.936 ms
+64 bytes from 192.168.77.1: seq=3 ttl=64 time=7.272 ms
+64 bytes from 192.168.77.1: seq=4 ttl=64 time=13.817 ms
+64 bytes from 192.168.77.1: seq=5 ttl=64 time=9.846 ms
+64 bytes from 192.168.77.1: seq=6 ttl=64 time=7.816 ms
+64 bytes from 192.168.77.1: seq=7 ttl=64 time=7.900 ms
+64 bytes from 192.168.77.1: seq=8 ttl=64 time=10.236 ms
+64 bytes from 192.168.77.1: seq=9 ttl=64 time=3.887 ms
+
+--- 192.168.77.1 ping statistics ---
+10 packets transmitted, 10 packets received, 0% packet loss
+round-trip min/avg/max = 3.887/8.852/13.817 ms

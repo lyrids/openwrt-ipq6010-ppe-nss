@@ -1,0 +1,1098 @@
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 6.12.112 (builder@buildhost) (arm-openwrt-linux-muslgnueabi-gcc (OpenWrt GCC 14.3.0 r33311-981c978eff) 14.3.0, GNU ld (GNU Binutils) 2.44) #0 SMP Sat Oct 17 21:45:38 2026
+[    0.000000] CPU: ARMv7 Processor [414fc091] revision 1 (ARMv7), cr=10c5387d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] OF: fdt: Machine model: Linksys WRT32X
+[    0.000000] Memory policy: Data cache writealloc
+[    0.000000] Zone ranges:
+[    0.000000]   Normal   [mem 0x0000000000000000-0x000000001fffffff]
+[    0.000000]   HighMem  empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000000000000-0x000000001fffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000000000000-0x000000001fffffff]
+[    0.000000] OF: reserved mem: Reserved memory: No reserved-memory node in the DT
+[    0.000000] percpu: Embedded 14 pages/cpu s24908 r8192 d24244 u57344
+[    0.000000] pcpu-alloc: s24908 r8192 d24244 u57344 alloc=14*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 
+[    0.000000] Kernel command line: console=ttyS0,115200 root=/dev/mtdblock6
+[    0.000000] Bootloader command line (ignored): console= root=/dev/mtdblock6
+[    0.000000] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes, linear)
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 131072
+[    0.000000] mem auto-init: stack:off, heap alloc:off, heap free:off
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000] rcu: Hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=4 to nr_cpu_ids=2.
+[    0.000000] 	Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+[    0.000000] RCU Tasks Trace: Setting shift to 1 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=2.
+[    0.000000] NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+[    0.000000] L2C: DT/platform modifies aux control register: 0x06070000 -> 0x16070000
+[    0.000000] L2C-310 enabling early BRESP for Cortex-A9
+[    0.000000] L2C-310 full line of zeros enabled for Cortex-A9
+[    0.000000] L2C-310 D prefetch enabled, offset 1 lines
+[    0.000000] L2C-310 dynamic clock gating enabled, standby mode enabled
+[    0.000000] L2C-310 Coherent cache controller enabled, 16 ways, 1024 kB
+[    0.000000] L2C-310 Coherent: CACHE_ID 0x410054c9, AUX_CTRL 0x56070001
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.000001] sched_clock: 64 bits at 933MHz, resolution 1ns, wraps every 4398046511103ns
+[    0.000012] clocksource: arm_global_timer: mask: 0xffffffffffffffff max_cycles: 0x1ae5b571769, max_idle_ns: 881590513431 ns
+[    0.000024] Switching to timer-based delay loop, resolution 1ns
+[    0.000140] Ignoring duplicate/late registration of read_current_timer delay
+[    0.000143] clocksource: armada_370_xp_clocksource: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 76450417870 ns
+[    0.000273] Calibrating delay loop (skipped), value calculated using timer frequency.. 1866.00 BogoMIPS (lpj=9330000)
+[    0.000279] CPU: Testing write buffer coherency: ok
+[    0.000292] CPU0: Spectre v2: using BPIALL workaround
+[    0.000295] pid_max: default: 32768 minimum: 301
+[    0.003703] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+[    0.003709] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+[    0.005248] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[    0.005676] Setting up static identity map for 0x100000 - 0x100060
+[    0.005745] mvebu-soc-id: MVEBU SoC ID=0x6820, Rev=0x4
+[    0.005812] mvebu-pmsu: Initializing Power Management Service Unit
+[    0.005876] rcu: Hierarchical SRCU implementation.
+[    0.005878] rcu: 	Max phase no-delay instances is 1000.
+[    0.005981] Timer migration: 1 hierarchy levels; 8 children per group; 1 crossnode level
+[    0.006094] smp: Bringing up secondary CPUs ...
+[    0.006290] Booting CPU 1
+[    0.006407] CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+[    0.006413] CPU1: Spectre v2: using BPIALL workaround
+[    0.006470] smp: Brought up 1 node, 2 CPUs
+[    0.006475] SMP: Total of 2 processors activated (3732.00 BogoMIPS).
+[    0.006478] CPU: All CPU(s) started in SVC mode.
+[    0.006627] Memory: 504684K/524288K available (9216K kernel code, 659K rwdata, 1364K rodata, 1024K init, 251K bss, 18436K reserved, 0K cma-reserved, 0K highmem)
+[    0.008874] VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 4
+[    0.008926] futex hash table entries: 512 (order: 3, 32768 bytes, linear)
+[    0.010722] pinctrl core: initialized pinctrl subsystem
+[    0.011497] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.011901] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.012310] thermal_sys: Registered thermal governor 'step_wise'
+[    0.012337] cpuidle: using governor menu
+[    0.012458] mvebu-pmsu: CPU hotplug support is currently broken on Armada 38x: disabling
+[    0.012462] mvebu-pmsu: CPU idle is currently broken on Armada 38x: disabling
+[    0.018850] cryptd: max_cpu_qlen set to 1000
+[    0.020255] SCSI subsystem initialized
+[    0.020331] libata version 3.00 loaded.
+[    0.020409] usbcore: registered new interface driver usbfs
+[    0.020425] usbcore: registered new interface driver hub
+[    0.020447] usbcore: registered new device driver usb
+[    0.021158] clocksource: Switched to clocksource arm_global_timer
+[    0.023105] NET: Registered PF_INET protocol family
+[    0.023184] IP idents hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.023716] tcp_listen_portaddr_hash hash table entries: 512 (order: 0, 4096 bytes, linear)
+[    0.023727] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.023733] TCP established hash table entries: 4096 (order: 2, 16384 bytes, linear)
+[    0.023751] TCP bind hash table entries: 4096 (order: 4, 65536 bytes, linear)
+[    0.023802] TCP: Hash tables configured (established 4096 bind 4096)
+[    0.023920] MPTCP token hash table entries: 512 (order: 1, 8192 bytes, linear)
+[    0.024026] UDP hash table entries: 256 (order: 1, 8192 bytes, linear)
+[    0.024039] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes, linear)
+[    0.024268] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.024286] PCI: CLS 0 bytes, default 64
+[    0.024994] workingset: timestamp_bits=14 max_order=17 bucket_order=3
+[    0.029544] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.029547] jffs2: version 2.2 (NAND) (SUMMARY) (LZMA) (RTIME) (CMODE_PRIORITY) (c) 2001-2006 Red Hat, Inc.
+[    0.031782] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 250)
+[    0.032751] armada-38x-pinctrl f1018000.pinctrl: registered pinctrl driver
+[    0.033330] gpio gpiochip0: Static allocation of GPIO base is deprecated, use dynamic allocation.
+[    0.033411] debugfs: Directory 'f1018100.gpio' with parent 'regmap' already present!
+[    0.033626] gpio gpiochip1: Static allocation of GPIO base is deprecated, use dynamic allocation.
+[    0.033711] debugfs: Directory 'f1018140.gpio' with parent 'regmap' already present!
+[    0.035634] mvebu-pcie soc:pcie: host bridge /soc/pcie ranges:
+[    0.035657] mvebu-pcie soc:pcie:      MEM 0x00f1080000..0x00f1081fff -> 0x0000080000
+[    0.035672] mvebu-pcie soc:pcie:      MEM 0x00f1040000..0x00f1041fff -> 0x0000040000
+[    0.035683] mvebu-pcie soc:pcie:      MEM 0x00f1044000..0x00f1045fff -> 0x0000044000
+[    0.035695] mvebu-pcie soc:pcie:      MEM 0x00f1048000..0x00f1049fff -> 0x0000048000
+[    0.035706] mvebu-pcie soc:pcie:      MEM 0xffffffffffffffff..0x00fffffffe -> 0x0100000000
+[    0.035716] mvebu-pcie soc:pcie:       IO 0xffffffffffffffff..0x00fffffffe -> 0x0100000000
+[    0.035727] mvebu-pcie soc:pcie:      MEM 0xffffffffffffffff..0x00fffffffe -> 0x0200000000
+[    0.035737] mvebu-pcie soc:pcie:       IO 0xffffffffffffffff..0x00fffffffe -> 0x0200000000
+[    0.035748] mvebu-pcie soc:pcie:      MEM 0xffffffffffffffff..0x00fffffffe -> 0x0300000000
+[    0.035758] mvebu-pcie soc:pcie:       IO 0xffffffffffffffff..0x00fffffffe -> 0x0300000000
+[    0.035768] mvebu-pcie soc:pcie:      MEM 0xffffffffffffffff..0x00fffffffe -> 0x0400000000
+[    0.035775] mvebu-pcie soc:pcie:       IO 0xffffffffffffffff..0x00fffffffe -> 0x0400000000
+[    0.036068] mvebu-pcie soc:pcie: PCI host bridge to bus 0000:00
+[    0.036076] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    0.036082] pci_bus 0000:00: root bus resource [mem 0xf1080000-0xf1081fff] (bus address [0x00080000-0x00081fff])
+[    0.036087] pci_bus 0000:00: root bus resource [mem 0xf1040000-0xf1041fff] (bus address [0x00040000-0x00041fff])
+[    0.036091] pci_bus 0000:00: root bus resource [mem 0xf1044000-0xf1045fff] (bus address [0x00044000-0x00045fff])
+[    0.036096] pci_bus 0000:00: root bus resource [mem 0xf1048000-0xf1049fff] (bus address [0x00048000-0x00049fff])
+[    0.036100] pci_bus 0000:00: root bus resource [mem 0xe0000000-0xe7ffffff]
+[    0.036103] pci_bus 0000:00: root bus resource [io  0x1000-0xeffff]
+[    0.036173] pci 0000:00:01.0: [11ab:6820] type 01 class 0x060400 PCIe Root Port
+[    0.036185] pci 0000:00:01.0: PCI bridge to [bus 00]
+[    0.036191] pci 0000:00:01.0:   bridge window [io  0x0000-0x0fff]
+[    0.036195] pci 0000:00:01.0:   bridge window [mem 0x00000000-0x000fffff]
+[    0.036320] /soc/pcie/pcie@1,0: Fixed dependency cycle(s) with /soc/pcie/pcie@1,0/interrupt-controller
+[    0.036350] pci 0000:00:02.0: [11ab:6820] type 01 class 0x060400 PCIe Root Port
+[    0.036361] pci 0000:00:02.0: PCI bridge to [bus 00]
+[    0.036366] pci 0000:00:02.0:   bridge window [io  0x0000-0x0fff]
+[    0.036369] pci 0000:00:02.0:   bridge window [mem 0x00000000-0x000fffff]
+[    0.036472] /soc/pcie/pcie@2,0: Fixed dependency cycle(s) with /soc/pcie/pcie@2,0/interrupt-controller
+[    0.037100] PCI: bus0: Fast back to back transfers disabled
+[    0.037104] pci 0000:00:01.0: bridge configuration invalid ([bus 00-00]), reconfiguring
+[    0.037110] pci 0000:00:02.0: bridge configuration invalid ([bus 00-00]), reconfiguring
+[    0.037165] pci 0000:01:00.0: [11ab:2b40] type 00 class 0x020000 PCIe Endpoint
+[    0.037181] pci 0000:01:00.0: BAR 0 [mem 0x40000000-0x401fffff 64bit pref]
+[    0.037193] pci 0000:01:00.0: BAR 2 [mem 0x40200000-0x402fffff 64bit pref]
+[    0.037265] pci 0000:01:00.0: supports D1 D2
+[    0.037268] pci 0000:01:00.0: PME# supported from D0 D1 D3hot D3cold
+[    0.037367] PCI: bus1: Fast back to back transfers disabled
+[    0.037371] pci_bus 0000:01: busn_res: [bus 01-ff] end is updated to 01
+[    0.037433] pci 0000:02:00.0: [11ab:2b40] type 00 class 0x020000 PCIe Endpoint
+[    0.037452] pci 0000:02:00.0: BAR 0 [mem 0x42000000-0x421fffff 64bit pref]
+[    0.037464] pci 0000:02:00.0: BAR 2 [mem 0x42200000-0x422fffff 64bit pref]
+[    0.037564] pci 0000:02:00.0: supports D1 D2
+[    0.037567] pci 0000:02:00.0: PME# supported from D0 D1 D3hot D3cold
+[    0.037589] pci 0000:02:00.0: 2.000 Gb/s available PCIe bandwidth, limited by 2.5 GT/s PCIe x1 link at 0000:00:02.0 (capable of 4.000 Gb/s with 5.0 GT/s PCIe x1 link)
+[    0.037679] PCI: bus2: Fast back to back transfers disabled
+[    0.037682] pci_bus 0000:02: busn_res: [bus 02-ff] end is updated to 02
+[    0.037699] pci 0000:00:01.0: bridge window [mem 0xe0000000-0xe02fffff]: assigned
+[    0.037705] pci 0000:00:02.0: bridge window [mem 0xe0400000-0xe06fffff]: assigned
+[    0.037712] pci 0000:01:00.0: BAR 0 [mem 0xe0000000-0xe01fffff 64bit pref]: assigned
+[    0.037721] pci 0000:01:00.0: BAR 2 [mem 0xe0200000-0xe02fffff 64bit pref]: assigned
+[    0.037729] pci 0000:00:01.0: PCI bridge to [bus 01]
+[    0.037734] pci 0000:00:01.0:   bridge window [mem 0xe0000000-0xe02fffff]
+[    0.037746] pci 0000:02:00.0: BAR 0 [mem 0xe0400000-0xe05fffff 64bit pref]: assigned
+[    0.037756] pci 0000:02:00.0: BAR 2 [mem 0xe0600000-0xe06fffff 64bit pref]: assigned
+[    0.037765] pci 0000:00:02.0: PCI bridge to [bus 02]
+[    0.037769] pci 0000:00:02.0:   bridge window [mem 0xe0400000-0xe06fffff]
+[    0.037779] pci_bus 0000:00: resource 4 [mem 0xf1080000-0xf1081fff]
+[    0.037783] pci_bus 0000:00: resource 5 [mem 0xf1040000-0xf1041fff]
+[    0.037787] pci_bus 0000:00: resource 6 [mem 0xf1044000-0xf1045fff]
+[    0.037790] pci_bus 0000:00: resource 7 [mem 0xf1048000-0xf1049fff]
+[    0.037794] pci_bus 0000:00: resource 8 [mem 0xe0000000-0xe7ffffff]
+[    0.037797] pci_bus 0000:00: resource 9 [io  0x1000-0xeffff]
+[    0.037801] pci_bus 0000:01: resource 1 [mem 0xe0000000-0xe02fffff]
+[    0.037804] pci_bus 0000:02: resource 1 [mem 0xe0400000-0xe06fffff]
+[    0.038203] mv_xor f1060800.xor: Marvell shared XOR driver
+[    0.071859] mv_xor f1060800.xor: Marvell XOR (Descriptor Mode): ( xor cpy intr )
+[    0.072052] mv_xor f1060900.xor: Marvell shared XOR driver
+[    0.121631] mv_xor f1060900.xor: Marvell XOR (Descriptor Mode): ( xor cpy intr )
+[    0.121822] Serial: 8250/16550 driver, 16 ports, IRQ sharing enabled
+[    0.123007] printk: legacy console [ttyS0] disabled
+[    0.143212] f1012000.serial: ttyS0 at MMIO 0xf1012000 (irq = 40, base_baud = 12500000) is a 16550A
+[    0.143244] printk: legacy console [ttyS0] enabled
+[    1.336415] loop: module loaded
+[    1.340254] ahci-mvebu f10a8000.sata: supply ahci not found, using dummy regulator
+[    1.347974] ahci-mvebu f10a8000.sata: supply phy not found, using dummy regulator
+[    1.355526] ahci-mvebu f10a8000.sata: supply target not found, using dummy regulator
+[    1.363403] ahci-mvebu f10a8000.sata: AHCI vers 0001.0000, 32 command slots, 6 Gbps, platform mode
+[    1.372416] ahci-mvebu f10a8000.sata: 2/2 ports implemented (port mask 0x3)
+[    1.379411] ahci-mvebu f10a8000.sata: flags: 64bit ncq sntf led only pmp fbs pio slum part sxs 
+[    1.388686] scsi host0: ahci-mvebu
+[    1.392519] scsi host1: ahci-mvebu
+[    1.396054] ata1: SATA max UDMA/133 mmio [mem 0xf10a8000-0xf10a9fff] port 0x100 irq 41 lpm-pol 0
+[    1.404897] ata2: SATA max UDMA/133 mmio [mem 0xf10a8000-0xf10a9fff] port 0x180 irq 41 lpm-pol 0
+[    1.414230] nand: device found, Manufacturer ID: 0x01, Chip ID: 0xda
+[    1.420616] nand: AMD/Spansion S34ML02G2
+[    1.424572] nand: 256 MiB, SLC, erase size: 128 KiB, page size: 2048, OOB size: 128
+[    1.432570] Bad block table found at page 131008, version 0x01
+[    1.438772] Bad block table found at page 130944, version 0x01
+[    1.445171] 10 fixed-partitions partitions found on MTD device pxa3xx_nand-0
+[    1.452273] Creating 10 MTD partitions on "pxa3xx_nand-0":
+[    1.457784] 0x000000000000-0x000000200000 : "u-boot"
+[    1.462985] 0x000000200000-0x000000220000 : "u_env"
+[    1.468031] 0x000000220000-0x000000260000 : "s_env"
+[    1.473183] 0x000000260000-0x000000820000 : "unused_area"
+[    1.478863] 0x0000007e0000-0x000000820000 : "devinfo"
+[    1.484170] 0x000000900000-0x000008400000 : "kernel1"
+[    1.489676] 0x000000f00000-0x000008400000 : "ubi"
+[    1.494724] 0x000008400000-0x00000ff00000 : "kernel2"
+[    1.500088] 0x000008a00000-0x00000ff00000 : "rootfs2"
+[    1.505570] 0x00000ff00000-0x000010000000 : "BBT"
+[    1.513045] mvneta_bm f10c8000.bm: Buffer Manager for network controller enabled
+[    1.522091] mvneta f1070000.ethernet eth0: Using hardware mac address 60:38:e0:c1:c5:20
+[    1.530477] orion-ehci f1058000.usb: EHCI Host Controller
+[    1.535929] orion-ehci f1058000.usb: new USB bus registered, assigned bus number 1
+[    1.543597] orion-ehci f1058000.usb: irq 44, io mem 0xf1058000
+[    1.561163] orion-ehci f1058000.usb: USB 2.0 started, EHCI 1.00
+[    1.567381] hub 1-0:1.0: USB hub found
+[    1.571179] hub 1-0:1.0: 1 port detected
+[    1.575563] usbcore: registered new interface driver usb-storage
+[    1.581782] i2c_dev: i2c /dev entries driver
+[    1.591513] orion_wdt: Initial timeout 171 sec
+[    1.596203] sdhci: Secure Digital Host Controller Interface driver
+[    1.602431] sdhci: Copyright(c) Pierre Ossman
+[    1.606892] sdhci-pltfm: SDHCI platform and OF driver helper
+[    1.613192] marvell-cesa f1090000.crypto: CESA device successfully registered
+[    1.621049] NET: Registered PF_INET6 protocol family
+[    1.626783] Segment Routing with IPv6
+[    1.630489] In-situ OAM (IOAM) with IPv6
+[    1.634490] NET: Registered PF_PACKET protocol family
+[    1.639587] bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+[    1.652664] 8021q: 802.1Q VLAN Support v1.8
+[    1.656938] Registering SWP/SWPB emulation handler
+[    1.657575] mmc0: SDHCI controller on f10d8000.sdhci [f10d8000.sdhci] using ADMA
+[    1.673346] usb_phy_generic usb3_1-phy: dummy supplies not allowed for exclusive requests (id=vbus)
+[    1.682675] xhci-hcd f10f8000.usb3: xHCI Host Controller
+[    1.688026] xhci-hcd f10f8000.usb3: new USB bus registered, assigned bus number 2
+[    1.696045] xhci-hcd f10f8000.usb3: hcc params 0x0a000990 hci version 0x100 quirks 0x0000000000000010
+[    1.705356] xhci-hcd f10f8000.usb3: irq 45, io mem 0xf10f8000
+[    1.711227] xhci-hcd f10f8000.usb3: xHCI Host Controller
+[    1.716569] xhci-hcd f10f8000.usb3: new USB bus registered, assigned bus number 3
+[    1.724193] xhci-hcd f10f8000.usb3: Host supports USB 3.0 SuperSpeed
+[    1.730862] hub 2-0:1.0: USB hub found
+[    1.734670] hub 2-0:1.0: 1 port detected
+[    1.738858] usb usb3: We don't know the algorithms for LPM for this host, disabling LPM.
+[    1.747214] hub 3-0:1.0: USB hub found
+[    1.751028] hub 3-0:1.0: 1 port detected
+[    1.755414] UBI: auto-attach mtd6
+[    1.758759] ubi0: attaching mtd6
+[    1.771282] ata1: SATA link down (SStatus 0 SControl 300)
+[    1.776739] ata2: SATA link down (SStatus 0 SControl 300)
+[    1.791877] mmc0: new high speed SDIO card at address 0001
+[    2.077845] ubi0: scanning is finished
+[    2.121459] ubi0: attached mtd6 (name "ubi", size 117 MiB)
+[    2.126975] ubi0: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+[    2.133893] ubi0: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+[    2.140713] ubi0: VID header offset: 2048 (aligned 2048), data offset: 4096
+[    2.147711] ubi0: good PEBs: 936, bad PEBs: 0, corrupted PEBs: 0
+[    2.153747] ubi0: user volume: 2, internal volumes: 1, max. volumes count: 128
+[    2.161002] ubi0: max/mean erase counter: 3/1, WL threshold: 4096, image sequence number: 1665787481
+[    2.170181] ubi0: available PEBs: 0, total reserved PEBs: 936, PEBs reserved for bad PEB handling: 40
+[    2.179449] ubi0: background thread "ubi_bgt0d" started, PID 648
+[    2.179856] block ubiblock0_0: created from ubi0:0(rootfs)
+[    2.191007] ubiblock: device ubiblock0_0 (rootfs) set to be root filesystem
+[    2.198098] clk: Disabling unused clocks
+[    2.203937] VFS: Mounted root (squashfs filesystem) readonly on device 254:0.
+[    2.211619] Freeing unused kernel image (initmem) memory: 1024K
+[    2.217705] Run /sbin/init as init process
+[    2.221831]   with arguments:
+[    2.221834]     /sbin/init
+[    2.221837]   with environment:
+[    2.221839]     HOME=/
+[    2.221841]     TERM=linux
+[    2.374732] init: Console is alive
+[    2.378231] init: - watchdog -
+[    2.739347] kmodloader: loading kernel modules from /etc/modules-boot.d/*
+[    2.760828] pps_core: LinuxPPS API ver. 1 registered
+[    2.765846] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    2.775846] PTP clock support registered
+[    2.780355] gpio_button_hotplug: loading out-of-tree module taints kernel.
+[    2.791711] mv88e6085 f1072004.mdio-mii:00: switch 0x3520 detected: Marvell 88E6352, revision 1
+[    2.853606] hwmon hwmon2: temp1_input not attached to any thermal zone
+[    2.900914] hwmon hwmon3: temp1_input not attached to any thermal zone
+[    2.946098] hwmon hwmon4: temp1_input not attached to any thermal zone
+[    2.993224] hwmon hwmon5: temp1_input not attached to any thermal zone
+[    3.044198] hwmon hwmon6: temp1_input not attached to any thermal zone
+[    3.801489] mv88e6085 f1072004.mdio-mii:00: configuring for fixed/sgmii link mode
+[    3.813738] mv88e6085 f1072004.mdio-mii:00: Link is Up - 1Gbps/Full - flow control off
+[    3.895994] mv88e6085 f1072004.mdio-mii:00 lan4 (uninitialized): PHY [mv88e6xxx-0:00] driver [Marvell 88E1540] (irq=63)
+[    3.988098] mv88e6085 f1072004.mdio-mii:00 lan3 (uninitialized): PHY [mv88e6xxx-0:01] driver [Marvell 88E1540] (irq=64)
+[    4.088084] mv88e6085 f1072004.mdio-mii:00 lan2 (uninitialized): PHY [mv88e6xxx-0:02] driver [Marvell 88E1540] (irq=65)
+[    4.195999] mv88e6085 f1072004.mdio-mii:00 lan1 (uninitialized): PHY [mv88e6xxx-0:03] driver [Marvell 88E1540] (irq=66)
+[    4.285993] mv88e6085 f1072004.mdio-mii:00 wan (uninitialized): PHY [mv88e6xxx-0:04] driver [Marvell 88E1540] (irq=67)
+[    4.299989] mvneta f1070000.ethernet eth0: entered promiscuous mode
+[    4.306319] DSA: tree 0 setup
+[    4.309787] kmodloader: done loading kernel modules from /etc/modules-boot.d/*
+[    4.317585] init: - preinit -
+[    8.381163] random: crng init done
+[    8.420431] mtdblock: MTD device 'devinfo' is NAND, please consider using UBI block devices instead.
+[    8.694466] mvneta f1070000.ethernet eth0: configuring for fixed/rgmii-id link mode
+[    8.702591] mv88e6085 f1072004.mdio-mii:00 lan1: configuring for phy/gmii link mode
+[    8.710675] mvneta f1070000.ethernet eth0: Link is Up - 1Gbps/Full - flow control off
+[   12.940567] UBIFS (ubi0:1): Mounting in unauthenticated mode
+[   12.946354] UBIFS (ubi0:1): background thread "ubifs_bgt0_1" started, PID 860
+[   12.967877] UBIFS (ubi0:1): recovery needed
+[   13.028086] UBIFS (ubi0:1): recovery completed
+[   13.032604] UBIFS (ubi0:1): UBIFS: mounted UBI device 0, volume 1, name "rootfs_data"
+[   13.040473] UBIFS (ubi0:1): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+[   13.050439] UBIFS (ubi0:1): FS size: 106405888 bytes (101 MiB, 838 LEBs), max 849 LEBs, journal size 5332992 bytes (5 MiB, 42 LEBs)
+[   13.062325] UBIFS (ubi0:1): reserved for root: 4952683 bytes (4836 KiB)
+[   13.068970] UBIFS (ubi0:1): media format: w5/r0 (latest is w5/r0), UUID CF2171B4-284D-456A-BC68-F401E0D5C2EA, small LPT model
+[   13.083419] mount_root: switching to ubifs overlay
+[   13.145007] urandom-seed: Seeding with /etc/urandom.seed
+[   13.225654] procd: - early -
+[   13.228599] procd: - watchdog -
+[   13.759017] procd: - watchdog -
+[   13.763365] procd: - ubus -
+[   13.823617] procd: - init -
+[   14.141443] kmodloader: loading kernel modules from /etc/modules.d/*
+[   14.292695] Loading modules backported from Linux version v6.18.55-0-g725bd2f3c
+[   14.300047] Backport generated by backports.git 0c0df20
+[   14.383479] <<Marvell Mac80211 Wireless PCIE Network Driver version 10.4.11.0>>
+[   14.390837] pci 0000:00:01.0: enabling device (0140 -> 0142)
+[   14.396630] rate_adapt_mode: 0, dwds_stamode: 1, optimization_level: 1, dump_hostcmd: 0, feature: 0
+[   14.397526] urngd: v1.0.2 started.
+[   14.405883] ieee80211 phy0: priv->pcmd_buf = 92a26cdb  priv->pphys_cmd_buf = 4c4a44c2
+[   14.461188] ieee80211 phy0: fw download start
+[   14.461201] ieee80211 phy0: ddr init: download start
+[   14.461581] ieee80211 phy0: ddr init: download complete
+[   14.600068] ieee80211 phy0: FwSize = 451040 downloaded Size = 451040 curr_iteration 65521
+[   17.267161] ieee80211 phy0: fw download complete
+[   17.267206] ieee80211 phy0: device node: pcie@1,0
+[   17.300197] ieee80211 phy0: firmware version: 0x903020c
+[   17.323494] ieee80211 phy0: firmware region code: 0
+[   17.360920] ieee80211 phy0: 2G disabled, 5G enabled
+[   17.365870] ieee80211 phy0: 4 TX antennas, 4 RX antennas
+[   17.371499] pci 0000:00:02.0: enabling device (0140 -> 0142)
+[   17.377279] rate_adapt_mode: 0, dwds_stamode: 1, optimization_level: 1, dump_hostcmd: 0, feature: 0
+[   17.386444] ieee80211 phy1: priv->pcmd_buf = 8698a22d  priv->pphys_cmd_buf = 4f76ed2c
+[   17.391631] ieee80211 phy1: fw download start
+[   17.391647] ieee80211 phy1: ddr init: download start
+[   17.392033] ieee80211 phy1: ddr init: download complete
+[   17.533612] ieee80211 phy1: FwSize = 451040 downloaded Size = 451040 curr_iteration 65526
+[   18.537161] ieee80211 phy1: fw download complete
+[   18.537200] ieee80211 phy1: device node: pcie@2,0
+[   18.570182] ieee80211 phy1: firmware version: 0x903020c
+[   18.593481] ieee80211 phy1: firmware region code: 0
+[   18.625679] ieee80211 phy1: 2G enabled, 5G disabled
+[   18.630588] ieee80211 phy1: 4 TX antennas, 4 RX antennas
+[   18.641119] hid: raw HID events driver (C) Jiri Kosina
+[   18.659858] Bluetooth: Core ver 2.22
+[   18.663547] NET: Registered PF_BLUETOOTH protocol family
+[   18.668896] Bluetooth: HCI device and connection manager initialized
+[   18.675308] Bluetooth: HCI socket layer initialized
+[   18.680223] Bluetooth: L2CAP socket layer initialized
+[   18.685346] Bluetooth: SCO socket layer initialized
+[   18.690979] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[   18.696365] Bluetooth: BNEP filters: protocol multicast
+[   18.701666] Bluetooth: BNEP socket layer initialized
+[   18.711085] Bluetooth: vendor=0x2df, device=0x9136, class=255, fn=2
+[   19.396194] Bluetooth: FW download over, size 616840 bytes
+[   20.061190] btmrvl_sdio mmc0:0001:2: sdio device tree data not available
+[   20.070695] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+[   20.076686] Bluetooth: HIDP socket layer initialized
+[   20.089054] mwifiex_sdio mmc0:0001:1: WLAN FW already running! Skip FW dnld
+[   20.096085] mwifiex_sdio mmc0:0001:1: WLAN FW is active
+[   20.105380] Bluetooth: RFCOMM TTY layer initialized
+[   20.110296] Bluetooth: RFCOMM socket layer initialized
+[   20.115479] Bluetooth: RFCOMM ver 1.11
+[   20.125558] mwifiex_sdio mmc0:0001:1: host_mlme: disable, key_api: 2
+[   20.139228] PPP generic driver version 2.4.2
+[   20.144192] NET: Registered PF_PPPOX protocol family
+[   20.157636] mwifiex_sdio mmc0:0001:1: info: MWIFIEX VERSION: mwifiex 1.0 (15.68.7.p189) 
+[   20.157664] wireguard: WireGuard 1.0.0 loaded. See www.wireguard.com for information.
+[   20.165808] mwifiex_sdio mmc0:0001:1: driver_version = mwifiex 1.0 (15.68.7.p189) 
+[   20.173677] wireguard: Copyright (C) 2015-2019 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
+[   20.175330] kmodloader: done loading kernel modules from /etc/modules.d/*
+[   22.221781] mvneta f1070000.ethernet eth0: Link is Down
+[   22.243362] mvneta f1070000.ethernet eth0: configuring for fixed/rgmii-id link mode
+[   22.251482] mvneta f1070000.ethernet eth0: Link is Up - 1Gbps/Full - flow control off
+[   22.386320] mv88e6085 f1072004.mdio-mii:00 lan1: configuring for phy/gmii link mode
+[   22.451239] br-lan: port 1(lan1) entered blocking state
+[   22.456514] br-lan: port 1(lan1) entered disabled state
+[   22.461829] mv88e6085 f1072004.mdio-mii:00 lan1: entered allmulticast mode
+[   22.468752] mvneta f1070000.ethernet eth0: entered allmulticast mode
+[   22.522084] mv88e6085 f1072004.mdio-mii:00 lan1: entered promiscuous mode
+[   22.648139] mv88e6085 f1072004.mdio-mii:00 lan2: configuring for phy/gmii link mode
+[   22.707046] br-lan: port 2(lan2) entered blocking state
+[   22.712359] br-lan: port 2(lan2) entered disabled state
+[   22.717651] mv88e6085 f1072004.mdio-mii:00 lan2: entered allmulticast mode
+[   22.742650] mv88e6085 f1072004.mdio-mii:00 lan2: entered promiscuous mode
+[   22.841288] mv88e6085 f1072004.mdio-mii:00 lan3: configuring for phy/gmii link mode
+[   22.899997] br-lan: port 3(lan3) entered blocking state
+[   22.905367] br-lan: port 3(lan3) entered disabled state
+[   22.910645] mv88e6085 f1072004.mdio-mii:00 lan3: entered allmulticast mode
+[   22.935008] mv88e6085 f1072004.mdio-mii:00 lan3: entered promiscuous mode
+[   23.030685] mv88e6085 f1072004.mdio-mii:00 lan4: configuring for phy/gmii link mode
+[   23.088583] br-lan: port 4(lan4) entered blocking state
+[   23.093853] br-lan: port 4(lan4) entered disabled state
+[   23.099119] mv88e6085 f1072004.mdio-mii:00 lan4: entered allmulticast mode
+[   23.127959] mv88e6085 f1072004.mdio-mii:00 lan4: entered promiscuous mode
+[   23.254577] mv88e6085 f1072004.mdio-mii:00 wan: configuring for phy/gmii link mode
+[   26.677568] mv88e6085 f1072004.mdio-mii:00 wan: Link is Up - 1Gbps/Full - flow control rx/tx
+[25726.461149] mv88e6085 f1072004.mdio-mii:00 lan1: left allmulticast mode
+[25726.467829] mv88e6085 f1072004.mdio-mii:00 lan1: left promiscuous mode
+[25726.474589] br-lan: port 1(lan1) entered disabled state
+[25726.594870] mv88e6085 f1072004.mdio-mii:00 lan2: left allmulticast mode
+[25726.601577] mv88e6085 f1072004.mdio-mii:00 lan2: left promiscuous mode
+[25726.608247] br-lan: port 2(lan2) entered disabled state
+[25726.721086] mv88e6085 f1072004.mdio-mii:00 lan3: left allmulticast mode
+[25726.727776] mv88e6085 f1072004.mdio-mii:00 lan3: left promiscuous mode
+[25726.734467] br-lan: port 3(lan3) entered disabled state
+[25726.851068] mv88e6085 f1072004.mdio-mii:00 lan4: left allmulticast mode
+[25726.857741] mvneta f1070000.ethernet eth0: left allmulticast mode
+[25726.863918] mv88e6085 f1072004.mdio-mii:00 lan4: left promiscuous mode
+[25726.870582] br-lan: port 4(lan4) entered disabled state
+[25727.781972] mv88e6085 f1072004.mdio-mii:00 wan: Link is Down
+[25727.793892] mvneta f1070000.ethernet eth0: Link is Down
+[25728.822582] mvneta f1070000.ethernet eth0: configuring for fixed/rgmii-id link mode
+[25728.832075] mvneta f1070000.ethernet eth0: Link is Up - 1Gbps/Full - flow control off
+[25728.910284] mv88e6085 f1072004.mdio-mii:00 lan1: configuring for phy/gmii link mode
+[25728.961846] br-lan: port 1(lan1) entered blocking state
+[25728.967100] br-lan: port 1(lan1) entered disabled state
+[25728.972369] mv88e6085 f1072004.mdio-mii:00 lan1: entered allmulticast mode
+[25728.979279] mvneta f1070000.ethernet eth0: entered allmulticast mode
+[25729.042645] mv88e6085 f1072004.mdio-mii:00 lan1: entered promiscuous mode
+[25729.144079] mv88e6085 f1072004.mdio-mii:00 lan2: configuring for phy/gmii link mode
+[25729.198723] br-lan: port 2(lan2) entered blocking state
+[25729.203986] br-lan: port 2(lan2) entered disabled state
+[25729.209247] mv88e6085 f1072004.mdio-mii:00 lan2: entered allmulticast mode
+[25729.232713] mv88e6085 f1072004.mdio-mii:00 lan2: entered promiscuous mode
+[25729.317867] mv88e6085 f1072004.mdio-mii:00 lan3: configuring for phy/gmii link mode
+[25729.371981] br-lan: port 3(lan3) entered blocking state
+[25729.377235] br-lan: port 3(lan3) entered disabled state
+[25729.382502] mv88e6085 f1072004.mdio-mii:00 lan3: entered allmulticast mode
+[25729.405853] mv88e6085 f1072004.mdio-mii:00 lan3: entered promiscuous mode
+[25729.496391] mv88e6085 f1072004.mdio-mii:00 lan4: configuring for phy/gmii link mode
+[25729.551782] br-lan: port 4(lan4) entered blocking state
+[25729.557051] br-lan: port 4(lan4) entered disabled state
+[25729.562320] mv88e6085 f1072004.mdio-mii:00 lan4: entered allmulticast mode
+[25729.586047] mv88e6085 f1072004.mdio-mii:00 lan4: entered promiscuous mode
+[25729.681789] mv88e6085 f1072004.mdio-mii:00 wan: configuring for phy/gmii link mode
+[25732.809309] mv88e6085 f1072004.mdio-mii:00 wan: Link is Up - 1Gbps/Full - flow control rx/tx
+[25882.266300] mv88e6085 f1072004.mdio-mii:00 lan1: Link is Up - 1Gbps/Full - flow control rx/tx
+[25882.274927] br-lan: port 1(lan1) entered blocking state
+[25882.280190] br-lan: port 1(lan1) entered forwarding state
+[27920.535408] mv88e6085 f1072004.mdio-mii:00 lan1: Link is Down
+[27920.541247] br-lan: port 1(lan1) entered disabled state
+[27923.748356] mv88e6085 f1072004.mdio-mii:00 lan1: Link is Up - 1Gbps/Full - flow control rx/tx
+[27923.756960] br-lan: port 1(lan1) entered blocking state
+[27923.762214] br-lan: port 1(lan1) entered forwarding state
+[28183.089810] br-lan: port 1(lan1) entered disabled state
+[28183.105418] mv88e6085 f1072004.mdio-mii:00 lan1: left allmulticast mode
+[28183.112078] mv88e6085 f1072004.mdio-mii:00 lan1: left promiscuous mode
+[28183.118768] br-lan: port 1(lan1) entered disabled state
+[28183.153302] mv88e6085 f1072004.mdio-mii:00 lan1: Link is Down
+[28183.242515] mv88e6085 f1072004.mdio-mii:00 lan2: left allmulticast mode
+[28183.249181] mv88e6085 f1072004.mdio-mii:00 lan2: left promiscuous mode
+[28183.255811] br-lan: port 2(lan2) entered disabled state
+[28183.370164] mv88e6085 f1072004.mdio-mii:00 lan3: left allmulticast mode
+[28183.376835] mv88e6085 f1072004.mdio-mii:00 lan3: left promiscuous mode
+[28183.383444] br-lan: port 3(lan3) entered disabled state
+[28183.494747] mv88e6085 f1072004.mdio-mii:00 lan4: left allmulticast mode
+[28183.501411] mvneta f1070000.ethernet eth0: left allmulticast mode
+[28183.507548] mv88e6085 f1072004.mdio-mii:00 lan4: left promiscuous mode
+[28183.514155] br-lan: port 4(lan4) entered disabled state
+[28183.756775] mv88e6085 f1072004.mdio-mii:00 lan1: configuring for phy/gmii link mode
+[28183.811641] br-lan: port 1(lan1) entered blocking state
+[28183.816908] br-lan: port 1(lan1) entered disabled state
+[28183.822168] mv88e6085 f1072004.mdio-mii:00 lan1: entered allmulticast mode
+[28183.829085] mvneta f1070000.ethernet eth0: entered allmulticast mode
+[28183.881308] mv88e6085 f1072004.mdio-mii:00 lan1: entered promiscuous mode
+[28184.005046] mv88e6085 f1072004.mdio-mii:00 lan2: configuring for phy/gmii link mode
+[28184.067875] br-lan: port 2(lan2) entered blocking state
+[28184.073129] br-lan: port 2(lan2) entered disabled state
+[28184.078398] mv88e6085 f1072004.mdio-mii:00 lan2: entered allmulticast mode
+[28184.102488] mv88e6085 f1072004.mdio-mii:00 lan2: entered promiscuous mode
+[28184.205929] mv88e6085 f1072004.mdio-mii:00 lan3: configuring for phy/gmii link mode
+[28184.268374] br-lan: port 3(lan3) entered blocking state
+[28184.273636] br-lan: port 3(lan3) entered disabled state
+[28184.278922] mv88e6085 f1072004.mdio-mii:00 lan3: entered allmulticast mode
+[28184.302347] mv88e6085 f1072004.mdio-mii:00 lan3: entered promiscuous mode
+[28184.399237] mv88e6085 f1072004.mdio-mii:00 lan4: configuring for phy/gmii link mode
+[28184.455103] br-lan: port 4(lan4) entered blocking state
+[28184.460371] br-lan: port 4(lan4) entered disabled state
+[28184.465640] mv88e6085 f1072004.mdio-mii:00 lan4: entered allmulticast mode
+[28184.489573] mv88e6085 f1072004.mdio-mii:00 lan4: entered promiscuous mode
+[28186.587977] mv88e6085 f1072004.mdio-mii:00 lan1: Link is Up - 1Gbps/Full - flow control rx/tx
+[28186.596593] br-lan: port 1(lan1) entered blocking state
+[28186.601848] br-lan: port 1(lan1) entered forwarding state
+[28235.122578] mtdblock: MTD device 'devinfo' is NAND, please consider using UBI block devices instead.
+[28235.631066] ieee80211 phy0: change: 0xfffffffd
+[28235.984792] ieee80211 phy0: change: 0x100
+[28236.014163] ieee80211 phy0: change: 0x40
+[28236.147286] ieee80211 phy0: change: 0x40
+[28236.329305] ieee80211 phy1: change: 0xfffffffd
+[28236.353283] ieee80211 phy0: change: 0x40
+[28236.483116] br-lan: port 5(wlan1-1) entered blocking state
+[28236.488663] br-lan: port 5(wlan1-1) entered disabled state
+[28236.494234] mwlwifi 0000:02:00.0 wlan1-1: entered allmulticast mode
+[28236.500652] mwlwifi 0000:02:00.0 wlan1-1: entered promiscuous mode
+[28236.512766] ieee80211 phy1: change: 0x100
+[28236.526475] ieee80211 phy1: change: 0x60
+[28236.553516] ieee80211 phy0: change: 0x40
+[28236.637424] ieee80211 phy1: change: 0x40
+[28236.783473] ieee80211 phy0: change: 0x40
+[28236.873522] ieee80211 phy1: change: 0x40
+[28237.003531] ieee80211 phy0: change: 0x60
+[28237.103543] ieee80211 phy1: change: 0x40
+[28237.243583] ieee80211 phy0: change: 0x40
+[28237.323611] ieee80211 phy1: change: 0x40
+[28237.493668] ieee80211 phy0: change: 0x40
+[28237.543688] ieee80211 phy1: change: 0x40
+[28237.733747] ieee80211 phy0: change: 0x40
+[28237.763769] ieee80211 phy1: change: 0x40
+[28237.913810] ieee80211 phy0: change: 0x60
+[28237.983831] ieee80211 phy1: change: 0x40
+[28238.153890] ieee80211 phy0: change: 0x40
+[28238.203908] ieee80211 phy1: change: 0x40
+[28238.403979] ieee80211 phy0: change: 0x40
+[28238.433985] ieee80211 phy1: change: 0x40
+[28238.654063] ieee80211 phy1: change: 0x40
+[28238.658012] ieee80211 phy0: change: 0x40
+[28238.884148] ieee80211 phy1: change: 0x40
+[28238.914151] ieee80211 phy0: change: 0x40
+[28239.104212] ieee80211 phy1: change: 0x40
+[28239.164234] ieee80211 phy0: change: 0x40
+[28239.334298] ieee80211 phy1: change: 0x40
+[28239.414317] ieee80211 phy0: change: 0x40
+[28239.604385] ieee80211 phy1: change: 0x40
+[28239.674408] ieee80211 phy0: change: 0x40
+[28239.713428] ieee80211 phy1: change: 0x100
+[28239.726785] ieee80211 phy1: change: 0x100
+[28239.739440] ieee80211 phy1: change: 0x40
+[28239.847357] ieee80211 phy1: change: 0x40
+[28239.924637] ieee80211 phy0: change: 0x40
+[28240.074546] ieee80211 phy1: change: 0x40
+[28240.184581] ieee80211 phy0: change: 0x40
+[28240.294617] ieee80211 phy1: change: 0x40
+[28240.434669] ieee80211 phy0: change: 0x40
+[28240.514707] ieee80211 phy1: change: 0x40
+[28240.674748] ieee80211 phy0: change: 0x40
+[28240.734770] ieee80211 phy1: change: 0x40
+[28240.914839] ieee80211 phy0: change: 0x60
+[28240.954843] ieee80211 phy1: change: 0x40
+[28241.114899] ieee80211 phy0: change: 0x40
+[28241.174921] ieee80211 phy1: change: 0x40
+[28241.324967] ieee80211 phy0: change: 0x40
+[28241.394995] ieee80211 phy1: change: 0x40
+[28241.535047] ieee80211 phy0: change: 0x40
+[28241.615072] ieee80211 phy1: change: 0x40
+[28241.795131] ieee80211 phy0: change: 0x60
+[28241.835144] ieee80211 phy1: change: 0x40
+[28241.918196] ieee80211 phy0: change: 0x100
+[28241.932245] ieee80211 phy0: change: 0x100
+[28241.945237] ieee80211 phy0: change: 0x40
+[28242.065220] ieee80211 phy1: change: 0x40
+[28242.077309] labsta0: authenticate with dc:d8:7c:54:83:f0 (local address=60:38:e0:c1:c5:22)
+[28242.085628] labsta0: send auth to dc:d8:7c:54:83:f0 (try 1/3)
+[28242.099678] labsta0: authenticated
+[28242.115244] labsta0: associate with dc:d8:7c:54:83:f0 (try 1/3)
+[28242.127545] labsta0: RX AssocResp from dc:d8:7c:54:83:f0 (capab=0x11 status=0 aid=1)
+[28242.218295] ieee80211 phy0: change: 0x2
+[28242.222161] labsta0: associated
+[28242.295317] ieee80211 phy1: change: 0x40
+[28242.525389] ieee80211 phy1: change: 0x40
+[28242.785472] ieee80211 phy1: change: 0x40
+[28242.894516] ieee80211 phy1: change: 0x100
+[28242.907876] ieee80211 phy1: change: 0x100
+[28242.920526] ieee80211 phy1: change: 0x40
+[28243.029850] ieee80211 phy1: change: 0x40
+[28243.255674] ieee80211 phy1: change: 0x40
+[28243.485719] ieee80211 phy1: change: 0x40
+[28243.705783] ieee80211 phy1: change: 0x40
+[28243.935862] ieee80211 phy1: change: 0x40
+[28244.155933] ieee80211 phy1: change: 0x40
+[28244.376016] ieee80211 phy1: change: 0x40
+[28244.596087] ieee80211 phy1: change: 0x40
+[28244.816158] ieee80211 phy1: change: 0x40
+[28245.036233] ieee80211 phy1: change: 0x40
+[28245.266310] ieee80211 phy1: change: 0x40
+[28245.486386] ieee80211 phy1: change: 0x40
+[28245.706460] ieee80211 phy1: change: 0x40
+[28245.976555] ieee80211 phy1: change: 0x40
+[28246.085599] ieee80211 phy1: change: 0x100
+[28246.098982] ieee80211 phy1: change: 0x100
+[28246.111660] ieee80211 phy1: change: 0x40
+[28246.222800] ieee80211 phy1: change: 0x40
+[28246.446712] ieee80211 phy1: change: 0x40
+[28246.666786] ieee80211 phy1: change: 0x40
+[28246.886863] ieee80211 phy1: change: 0x40
+[28247.106940] ieee80211 phy1: change: 0x40
+[28247.327148] ieee80211 phy1: change: 0x40
+[28247.557096] ieee80211 phy1: change: 0x40
+[28247.777169] ieee80211 phy1: change: 0x40
+[28247.997241] ieee80211 phy1: change: 0x40
+[28248.217314] ieee80211 phy1: change: 0x40
+[28248.437396] ieee80211 phy1: change: 0x40
+[28248.657464] ieee80211 phy1: change: 0x40
+[28248.877541] ieee80211 phy1: change: 0x40
+[28249.137629] ieee80211 phy1: change: 0x40
+[28249.246676] ieee80211 phy1: change: 0x100
+[28249.260000] ieee80211 phy1: change: 0x100
+[28249.272685] ieee80211 phy1: change: 0x40
+[28249.381751] ieee80211 phy1: change: 0x40
+[28249.607791] ieee80211 phy1: change: 0x40
+[28249.827868] ieee80211 phy1: change: 0x40
+[28250.047943] ieee80211 phy1: change: 0x40
+[28250.268012] ieee80211 phy1: change: 0x40
+[28250.488088] ieee80211 phy1: change: 0x40
+[28250.708177] ieee80211 phy1: change: 0x40
+[28250.928238] ieee80211 phy1: change: 0x40
+[28251.148312] ieee80211 phy1: change: 0x40
+[28251.368392] ieee80211 phy1: change: 0x40
+[28251.588460] ieee80211 phy1: change: 0x40
+[28251.808536] ieee80211 phy1: change: 0x40
+[28252.028611] ieee80211 phy1: change: 0x40
+[28252.288703] ieee80211 phy1: change: 0x40
+[28252.396762] ieee80211 phy1: change: 0x100
+[28252.432087] ieee80211 phy1: change: 0x100
+[28252.445142] ieee80211 phy1: change: 0x40
+[28252.555799] ieee80211 phy1: change: 0x2
+[28252.627860] br-lan: port 5(wlan1-1) entered blocking state
+[28252.633383] br-lan: port 5(wlan1-1) entered forwarding state
+[28252.708921] br-lan: port 6(wlan1-2) entered blocking state
+[28252.714470] br-lan: port 6(wlan1-2) entered disabled state
+[28252.720108] mwlwifi 0000:02:00.0 wlan1-2: entered allmulticast mode
+[28252.726537] mwlwifi 0000:02:00.0 wlan1-2: entered promiscuous mode
+[28252.805045] br-lan: port 6(wlan1-2) entered blocking state
+[28252.810572] br-lan: port 6(wlan1-2) entered forwarding state
+[28252.816719] mwlwifi 0000:02:00.0 wlan1-2: left allmulticast mode
+[28252.822826] mwlwifi 0000:02:00.0 wlan1-2: left promiscuous mode
+[28252.828829] br-lan: port 6(wlan1-2) entered disabled state
+[28252.836377] br-lan: port 6(wlan1-2) entered blocking state
+[28252.841915] br-lan: port 6(wlan1-2) entered disabled state
+[28252.847439] mwlwifi 0000:02:00.0 wlan1-2: entered allmulticast mode
+[28252.853854] mwlwifi 0000:02:00.0 wlan1-2: entered promiscuous mode
+[28252.955030] br-lan: port 6(wlan1-2) entered blocking state
+[28252.960559] br-lan: port 6(wlan1-2) entered forwarding state
+[28287.959183] br-lan: port 6(wlan1-2) entered disabled state
+[28287.981083] mwlwifi 0000:02:00.0 wlan1-2 (unregistering): left allmulticast mode
+[28287.988563] mwlwifi 0000:02:00.0 wlan1-2 (unregistering): left promiscuous mode
+[28287.995936] br-lan: port 6(wlan1-2) entered disabled state
+[28288.051416] mwlwifi 0000:02:00.0 wlan1-1: left allmulticast mode
+[28288.057541] mwlwifi 0000:02:00.0 wlan1-1: left promiscuous mode
+[28288.063623] br-lan: port 5(wlan1-1) entered disabled state
+[28288.079359] ieee80211 phy1: change: 0x40
+[28288.188930] ieee80211 phy1: change: 0x100
+[28589.525356] labsta0: deauthenticated from dc:d8:7c:54:83:f0 (Reason: 3=DEAUTH_LEAVING)
+[28589.742549] ieee80211 phy0: staid 1 deleted
+[28589.753508] ieee80211 phy0: staid 2 deleted
+[28589.797949] ieee80211 phy0: change: 0x40
+[28589.926477] ieee80211 phy0: change: 0x100
+[28590.040165] ieee80211 phy0: change: 0x100
+[28590.053230] ieee80211 phy0: change: 0x40
+[28590.177591] ieee80211 phy0: change: 0x40
+[28590.373592] ieee80211 phy0: change: 0x40
+[28590.583666] ieee80211 phy0: change: 0x40
+[28590.793748] ieee80211 phy0: change: 0x40
+[28591.003809] ieee80211 phy0: change: 0x60
+[28591.243891] ieee80211 phy0: change: 0x40
+[28591.503981] ieee80211 phy0: change: 0x40
+[28591.754205] ieee80211 phy0: change: 0x40
+[28591.924127] ieee80211 phy0: change: 0x60
+[28592.124186] ieee80211 phy0: change: 0x40
+[28592.334257] ieee80211 phy0: change: 0x40
+[28592.544329] ieee80211 phy0: change: 0x40
+[28592.794422] ieee80211 phy0: change: 0x60
+[28592.920900] ieee80211 phy0: change: 0x100
+[28592.935774] ieee80211 phy0: change: 0x100
+[28592.948832] ieee80211 phy0: change: 0x40
+[28593.080582] labsta0: authenticate with dc:d8:7c:54:83:f0 (local address=60:38:e0:c1:c5:22)
+[28593.088899] labsta0: send auth to dc:d8:7c:54:83:f0 (try 1/3)
+[28593.314592] labsta0: send auth to dc:d8:7c:54:83:f0 (try 2/3)
+[28593.328546] labsta0: authenticated
+[28593.334607] labsta0: associate with dc:d8:7c:54:83:f0 (try 1/3)
+[28593.346423] labsta0: RX AssocResp from dc:d8:7c:54:83:f0 (capab=0x11 status=0 aid=1)
+[28593.437803] ieee80211 phy0: change: 0x2
+[28593.441666] labsta0: associated
+[28718.180915] labsta0: deauthenticated from dc:d8:7c:54:83:f0 (Reason: 3=DEAUTH_LEAVING)
+[28718.396160] ieee80211 phy0: staid 1 deleted
+[28718.407097] ieee80211 phy0: staid 2 deleted
+[28718.452015] ieee80211 phy0: change: 0x40
+[28718.580091] ieee80211 phy0: change: 0x100
+[28718.693780] ieee80211 phy0: change: 0x100
+[28718.706854] ieee80211 phy0: change: 0x40
+[28719.031253] ieee80211 phy0: change: 0x40
+[28719.227275] ieee80211 phy0: change: 0x40
+[28719.437345] ieee80211 phy0: change: 0x40
+[28719.647419] ieee80211 phy0: change: 0x40
+[28719.857492] ieee80211 phy0: change: 0x60
+[28720.067561] ieee80211 phy0: change: 0x40
+[28720.317643] ieee80211 phy0: change: 0x40
+[28720.557731] ieee80211 phy0: change: 0x40
+[28720.787811] ieee80211 phy0: change: 0x60
+[28720.987873] ieee80211 phy0: change: 0x40
+[28721.197945] ieee80211 phy0: change: 0x40
+[28721.408160] ieee80211 phy0: change: 0x40
+[28721.658103] ieee80211 phy0: change: 0x60
+[28721.784162] ieee80211 phy0: change: 0x100
+[28721.798979] ieee80211 phy0: change: 0x100
+[28721.812040] ieee80211 phy0: change: 0x40
+[28721.946276] labsta0: authenticate with dc:d8:7c:54:83:f0 (local address=60:38:e0:c1:c5:22)
+[28721.954594] labsta0: send auth to dc:d8:7c:54:83:f0 (try 1/3)
+[28721.966879] labsta0: authenticated
+[28721.980258] labsta0: associate with dc:d8:7c:54:83:f0 (try 1/3)
+[28721.991390] labsta0: RX AssocResp from dc:d8:7c:54:83:f0 (capab=0x11 status=0 aid=1)
+[28722.085249] ieee80211 phy0: change: 0x2
+[28722.089121] labsta0: associated
+[30973.904240] labsta0: deauthenticated from dc:d8:7c:54:83:f0 (Reason: 3=DEAUTH_LEAVING)
+[30974.117966] ieee80211 phy0: staid 1 deleted
+[30974.128926] ieee80211 phy0: staid 2 deleted
+[30974.173833] ieee80211 phy0: change: 0x40
+[30974.301899] ieee80211 phy0: change: 0x100
+[30974.415910] ieee80211 phy0: change: 0x100
+[30974.428964] ieee80211 phy0: change: 0x40
+[30974.555015] ieee80211 phy0: change: 0x40
+[30974.759021] ieee80211 phy0: change: 0x40
+[30974.969094] ieee80211 phy0: change: 0x40
+[30975.179160] ieee80211 phy0: change: 0x40
+[30975.389234] ieee80211 phy0: change: 0x60
+[30975.629322] ieee80211 phy0: change: 0x40
+[30975.879397] ieee80211 phy0: change: 0x40
+[30976.119477] ieee80211 phy0: change: 0x40
+[30976.319552] ieee80211 phy0: change: 0x60
+[30976.519615] ieee80211 phy0: change: 0x40
+[30976.729685] ieee80211 phy0: change: 0x40
+[30976.939754] ieee80211 phy0: change: 0x40
+[30977.369903] ieee80211 phy0: change: 0x60
+[30977.495958] ieee80211 phy0: change: 0x100
+[30977.510723] ieee80211 phy0: change: 0x100
+[30977.523781] ieee80211 phy0: change: 0x40
+[30977.655056] labsta0: authenticate with dc:d8:7c:54:83:f0 (local address=60:38:e0:c1:c5:22)
+[30977.663379] labsta0: send auth to dc:d8:7c:54:83:f0 (try 1/3)
+[30977.674864] labsta0: authenticated
+[30977.680061] labsta0: associate with dc:d8:7c:54:83:f0 (try 1/3)
+[30977.691903] labsta0: RX AssocResp from dc:d8:7c:54:83:f0 (capab=0x11 status=0 aid=1)
+[30977.784055] ieee80211 phy0: change: 0x2
+[30977.787936] labsta0: associated
+[31002.039302] br-lan: port 1(lan1) entered disabled state
+[31002.047464] mv88e6085 f1072004.mdio-mii:00 lan1: left allmulticast mode
+[31002.054165] mv88e6085 f1072004.mdio-mii:00 lan1: left promiscuous mode
+[31002.060809] br-lan: port 1(lan1) entered disabled state
+[31002.089898] mv88e6085 f1072004.mdio-mii:00 lan1: Link is Down
+[31002.179443] mv88e6085 f1072004.mdio-mii:00 lan2: left allmulticast mode
+[31002.186098] mv88e6085 f1072004.mdio-mii:00 lan2: left promiscuous mode
+[31002.192736] br-lan: port 2(lan2) entered disabled state
+[31002.308407] mv88e6085 f1072004.mdio-mii:00 lan3: left allmulticast mode
+[31002.315091] mv88e6085 f1072004.mdio-mii:00 lan3: left promiscuous mode
+[31002.321724] br-lan: port 3(lan3) entered disabled state
+[31002.443242] mv88e6085 f1072004.mdio-mii:00 lan4: left allmulticast mode
+[31002.449927] mvneta f1070000.ethernet eth0: left allmulticast mode
+[31002.456057] mv88e6085 f1072004.mdio-mii:00 lan4: left promiscuous mode
+[31002.462679] br-lan: port 4(lan4) entered disabled state
+[31002.714393] mv88e6085 f1072004.mdio-mii:00 lan1: configuring for phy/gmii link mode
+[31002.727142] br-lan: port 1(lan1) entered blocking state
+[31002.732418] br-lan: port 1(lan1) entered disabled state
+[31002.737680] mv88e6085 f1072004.mdio-mii:00 lan1: entered allmulticast mode
+[31002.744602] mvneta f1070000.ethernet eth0: entered allmulticast mode
+[31002.819045] mv88e6085 f1072004.mdio-mii:00 lan1: entered promiscuous mode
+[31002.966925] mv88e6085 f1072004.mdio-mii:00 lan2: configuring for phy/gmii link mode
+[31003.027230] br-lan: port 2(lan2) entered blocking state
+[31003.032520] br-lan: port 2(lan2) entered disabled state
+[31003.037787] mv88e6085 f1072004.mdio-mii:00 lan2: entered allmulticast mode
+[31003.062404] mv88e6085 f1072004.mdio-mii:00 lan2: entered promiscuous mode
+[31003.155334] mv88e6085 f1072004.mdio-mii:00 lan3: configuring for phy/gmii link mode
+[31003.212376] br-lan: port 3(lan3) entered blocking state
+[31003.217630] br-lan: port 3(lan3) entered disabled state
+[31003.222906] mv88e6085 f1072004.mdio-mii:00 lan3: entered allmulticast mode
+[31003.247334] mv88e6085 f1072004.mdio-mii:00 lan3: entered promiscuous mode
+[31003.337685] mv88e6085 f1072004.mdio-mii:00 lan4: configuring for phy/gmii link mode
+[31003.350283] br-lan: port 4(lan4) entered blocking state
+[31003.355537] br-lan: port 4(lan4) entered disabled state
+[31003.360811] mv88e6085 f1072004.mdio-mii:00 lan4: entered allmulticast mode
+[31003.385172] mv88e6085 f1072004.mdio-mii:00 lan4: entered promiscuous mode
+[31003.581278] labsta0: deauthenticating from dc:d8:7c:54:83:f0 by local choice (Reason: 3=DEAUTH_LEAVING)
+[31003.708321] ieee80211 phy0: staid 1 deleted
+[31003.717366] ieee80211 phy0: staid 2 deleted
+[31003.758833] ieee80211 phy0: change: 0x40
+[31003.888933] ieee80211 phy0: change: 0x100
+[31004.272238] ieee80211 phy0: change: 0xffffff9d
+[31004.287504] br-lan: port 5(wlan0-1) entered blocking state
+[31004.293078] br-lan: port 5(wlan0-1) entered disabled state
+[31004.298626] mwlwifi 0000:01:00.0 wlan0-1: entered allmulticast mode
+[31004.305089] mwlwifi 0000:01:00.0 wlan0-1: entered promiscuous mode
+[31004.312891] ieee80211 phy0: change: 0x100
+[31004.325792] ieee80211 phy0: change: 0x40
+[31004.453389] ieee80211 phy0: change: 0x40
+[31004.699119] ieee80211 phy0: change: 0x40
+[31004.999227] ieee80211 phy0: change: 0x40
+[31005.125274] ieee80211 phy0: change: 0x100
+[31005.161749] ieee80211 phy0: change: 0x100
+[31005.174285] ieee80211 phy0: change: 0x40
+[31005.305330] ieee80211 phy0: change: 0x2
+[31005.377431] br-lan: port 5(wlan0-1) entered blocking state
+[31005.382956] br-lan: port 5(wlan0-1) entered forwarding state
+[31005.468407] mv88e6085 f1072004.mdio-mii:00 lan1: Link is Up - 1Gbps/Full - flow control rx/tx
+[31005.477020] br-lan: port 1(lan1) entered blocking state
+[31005.482284] br-lan: port 1(lan1) entered forwarding state
+[31161.085787] mwlwifi 0000:01:00.0 wlan0-1: left allmulticast mode
+[31161.091846] mwlwifi 0000:01:00.0 wlan0-1: left promiscuous mode
+[31161.097893] br-lan: port 5(wlan0-1) entered disabled state
+[31161.112084] ieee80211 phy0: change: 0x40
+[31161.238120] ieee80211 phy0: change: 0x100
+[32062.337349] br-lan: port 1(lan1) entered disabled state
+[32062.346035] mv88e6085 f1072004.mdio-mii:00 lan1: left allmulticast mode
+[32062.352727] mv88e6085 f1072004.mdio-mii:00 lan1: left promiscuous mode
+[32062.359347] br-lan: port 1(lan1) entered disabled state
+[32062.388029] mv88e6085 f1072004.mdio-mii:00 lan1: Link is Down
+[32062.478912] mv88e6085 f1072004.mdio-mii:00 lan2: left allmulticast mode
+[32062.485589] mv88e6085 f1072004.mdio-mii:00 lan2: left promiscuous mode
+[32062.492211] br-lan: port 2(lan2) entered disabled state
+[32062.608395] mv88e6085 f1072004.mdio-mii:00 lan3: left allmulticast mode
+[32062.615064] mv88e6085 f1072004.mdio-mii:00 lan3: left promiscuous mode
+[32062.621691] br-lan: port 3(lan3) entered disabled state
+[32062.736046] mv88e6085 f1072004.mdio-mii:00 lan4: left allmulticast mode
+[32062.742714] mvneta f1070000.ethernet eth0: left allmulticast mode
+[32062.748844] mv88e6085 f1072004.mdio-mii:00 lan4: left promiscuous mode
+[32062.755468] br-lan: port 4(lan4) entered disabled state
+[32062.995746] mv88e6085 f1072004.mdio-mii:00 lan1: configuring for phy/gmii link mode
+[32063.052313] br-lan: port 1(lan1) entered blocking state
+[32063.057568] br-lan: port 1(lan1) entered disabled state
+[32063.062844] mv88e6085 f1072004.mdio-mii:00 lan1: entered allmulticast mode
+[32063.069760] mvneta f1070000.ethernet eth0: entered allmulticast mode
+[32063.122107] mv88e6085 f1072004.mdio-mii:00 lan1: entered promiscuous mode
+[32063.242471] mv88e6085 f1072004.mdio-mii:00 lan2: configuring for phy/gmii link mode
+[32063.299010] br-lan: port 2(lan2) entered blocking state
+[32063.304270] br-lan: port 2(lan2) entered disabled state
+[32063.309530] mv88e6085 f1072004.mdio-mii:00 lan2: entered allmulticast mode
+[32063.333620] mv88e6085 f1072004.mdio-mii:00 lan2: entered promiscuous mode
+[32063.424603] mv88e6085 f1072004.mdio-mii:00 lan3: configuring for phy/gmii link mode
+[32063.481722] br-lan: port 3(lan3) entered blocking state
+[32063.486976] br-lan: port 3(lan3) entered disabled state
+[32063.492250] mv88e6085 f1072004.mdio-mii:00 lan3: entered allmulticast mode
+[32063.516542] mv88e6085 f1072004.mdio-mii:00 lan3: entered promiscuous mode
+[32063.609471] mv88e6085 f1072004.mdio-mii:00 lan4: configuring for phy/gmii link mode
+[32063.666104] br-lan: port 4(lan4) entered blocking state
+[32063.671365] br-lan: port 4(lan4) entered disabled state
+[32063.676626] mv88e6085 f1072004.mdio-mii:00 lan4: entered allmulticast mode
+[32063.700479] mv88e6085 f1072004.mdio-mii:00 lan4: entered promiscuous mode
+[32064.128122] ieee80211 phy0: change: 0xffffff9d
+[32065.276638] ieee80211 phy0: change: 0x100
+[32065.289711] ieee80211 phy0: change: 0x40
+[32065.414529] ieee80211 phy0: change: 0x40
+[32065.610561] ieee80211 phy0: change: 0x40
+[32065.780758] mv88e6085 f1072004.mdio-mii:00 lan1: Link is Up - 1Gbps/Full - flow control rx/tx
+[32065.789363] br-lan: port 1(lan1) entered blocking state
+[32065.794630] br-lan: port 1(lan1) entered forwarding state
+[32065.820641] ieee80211 phy0: change: 0x40
+[32066.030710] ieee80211 phy0: change: 0x40
+[32066.240781] ieee80211 phy0: change: 0x60
+[32066.480872] ieee80211 phy0: change: 0x40
+[32066.730946] ieee80211 phy0: change: 0x40
+[32066.971137] ieee80211 phy0: change: 0x40
+[32067.161167] ieee80211 phy0: change: 0x60
+[32067.361161] ieee80211 phy0: change: 0x40
+[32067.561233] ieee80211 phy0: change: 0x40
+[32067.771299] ieee80211 phy0: change: 0x40
+[32068.021387] ieee80211 phy0: change: 0x60
+[32068.147437] ieee80211 phy0: change: 0x100
+[32068.162350] ieee80211 phy0: change: 0x100
+[32068.175405] ieee80211 phy0: change: 0x40
+[32068.307549] wlan0-sta: authenticate with dc:d8:7c:54:83:f0 (local address=62:38:e0:c1:c5:23)
+[32068.316063] wlan0-sta: send auth to dc:d8:7c:54:83:f0 (try 1/3)
+[32068.331354] wlan0-sta: authenticated
+[32068.351500] wlan0-sta: associate with dc:d8:7c:54:83:f0 (try 1/3)
+[32068.365140] wlan0-sta: RX AssocResp from dc:d8:7c:54:83:f0 (capab=0x11 status=0 aid=1)
+[32068.458537] ieee80211 phy0: change: 0x2
+[32068.462413] wlan0-sta: associated
+[32181.294848] wlan0-sta: deauthenticating from dc:d8:7c:54:83:f0 by local choice (Reason: 3=DEAUTH_LEAVING)
+[32181.479194] ieee80211 phy0: staid 1 deleted
+[32181.490222] ieee80211 phy0: staid 2 deleted
+[32181.535053] ieee80211 phy0: change: 0x40
+[32181.663119] ieee80211 phy0: change: 0x100
+[32182.427356] ieee80211 phy0: change: 0xffffff9d
+[32184.567398] ieee80211 phy0: change: 0x100
+[32184.580475] ieee80211 phy0: change: 0x40
+[32184.705209] ieee80211 phy0: change: 0x40
+[32184.901190] ieee80211 phy0: change: 0x40
+[32185.101259] ieee80211 phy0: change: 0x40
+[32185.311382] ieee80211 phy0: change: 0x40
+[32185.521403] ieee80211 phy0: change: 0x60
+[32185.691459] ieee80211 phy0: change: 0x40
+[32185.941559] ieee80211 phy0: change: 0x40
+[32186.181629] ieee80211 phy0: change: 0x40
+[32186.391698] ieee80211 phy0: change: 0x40
+[32186.631778] ieee80211 phy0: change: 0x40
+[32186.871866] ieee80211 phy0: change: 0x40
+[32187.121949] ieee80211 phy0: change: 0x40
+[32187.372044] ieee80211 phy0: change: 0x40
+[32187.622116] ieee80211 phy0: change: 0x40
+[32187.872207] ieee80211 phy0: change: 0x40
+[32188.122437] ieee80211 phy0: change: 0x40
+[32188.372372] ieee80211 phy0: change: 0x40
+[32188.622456] ieee80211 phy0: change: 0x40
+[32188.872545] ieee80211 phy0: change: 0x40
+[32189.112634] ieee80211 phy0: change: 0x40
+[32189.352722] ieee80211 phy0: change: 0x60
+[32189.552775] ieee80211 phy0: change: 0x40
+[32189.762845] ieee80211 phy0: change: 0x40
+[32189.972916] ieee80211 phy0: change: 0x40
+[32190.223005] ieee80211 phy0: change: 0x60
+[32190.349064] ieee80211 phy0: change: 0x100
+[32190.363894] ieee80211 phy0: change: 0x100
+[32190.376986] ieee80211 phy0: change: 0x40
+[32190.509170] wlan0-sta: authenticate with dc:d8:7c:54:83:f0 (local address=62:38:e0:c1:c5:23)
+[32190.517664] wlan0-sta: send auth to dc:d8:7c:54:83:f0 (try 1/3)
+[32190.531165] wlan0-sta: authenticated
+[32190.543123] wlan0-sta: associate with dc:d8:7c:54:83:f0 (try 1/3)
+[32190.555211] wlan0-sta: RX AssocResp from dc:d8:7c:54:83:f0 (capab=0x11 status=0 aid=1)
+[32190.648149] ieee80211 phy0: change: 0x2
+[32190.652012] wlan0-sta: associated
+[69019.372083] wlan0-sta: deauthenticated from dc:d8:7c:54:83:f0 (Reason: 3=DEAUTH_LEAVING)
+[69019.453803] ieee80211 phy0: staid 1 deleted
+[69019.465143] ieee80211 phy0: staid 2 deleted
+[69019.510621] ieee80211 phy0: change: 0x40
+[69020.649799] mv88e6085 f1072004.mdio-mii:00 lan1: Link is Down
+[69031.241089] mv88e6085 f1072004.mdio-mii:00 lan1: Link is Up - 1Gbps/Full - flow control rx/tx
+[69039.550378] ieee80211 phy0: cmd 0x810a=SetRfChannel timed out
+[69039.556168] ieee80211 phy0: return code: 0x010a
+[69039.560719] ieee80211 phy0: timeout: 0x010a
+[69039.564933] ieee80211 phy0: change: 0x100
+[69039.568961] ieee80211 phy0: MACREG_REG_INT_CODE: 0x0000
+[69049.307438] mv88e6085 f1072004.mdio-mii:00 lan1: Link is Down
+[69052.516913] mv88e6085 f1072004.mdio-mii:00 lan1: Link is Up - 1Gbps/Full - flow control rx/tx
+[69059.608268] ieee80211 phy0: cmd 0x801c=80211RadioControl timed out
+[69059.614496] ieee80211 phy0: return code: 0x001c
+[69059.619048] ieee80211 phy0: timeout: 0x001c
+[69059.623290] ieee80211 phy0: MACREG_REG_INT_CODE: 0x0000
+[69079.629935] ieee80211 phy0: cmd 0x9122=UpdateEncryption timed out
+[69079.636066] ieee80211 phy0: return code: 0x1122
+[69079.640627] ieee80211 phy0: timeout: 0x1122
+[69079.644829] wlan0-sta: failed to remove key (2, ff:ff:ff:ff:ff:ff) from hardware (-5)
+[69079.655787] ieee80211 phy0: change: 0x100
+[69079.659880] ieee80211 phy0: change: 0x40
+[69079.663832] ieee80211 phy0: MACREG_REG_INT_CODE: 0x0000
+[69099.654709] ieee80211 phy0: cmd 0x9114=SetApMode timed out
+[69099.660231] ieee80211 phy0: return code: 0x1114
+[69099.664795] ieee80211 phy0: timeout: 0x1114
+[69099.668998] ieee80211 phy0: MACREG_REG_INT_CODE: 0x0000
+[69119.655483] ieee80211 phy0: cmd 0x8129=LinkAdaptCsMode timed out
+[69119.661545] ieee80211 phy0: return code: 0x0129
+[69119.666096] ieee80211 phy0: timeout: 0x0129
+[69119.670299] ieee80211 phy0: MACREG_REG_INT_CODE: 0x0000
+[69139.666258] ieee80211 phy0: cmd 0x8120=80211hDetectRadar timed out
+[69139.672488] ieee80211 phy0: return code: 0x0120
+[69139.677038] ieee80211 phy0: timeout: 0x0120
+[69139.681250] ieee80211 phy0: MACREG_REG_INT_CODE: 0x0000
+[69159.688336] ieee80211 phy0: cmd 0x810a=SetRfChannel timed out
+[69159.694120] ieee80211 phy0: return code: 0x010a
+[69159.698681] ieee80211 phy0: timeout: 0x010a
+[69159.702934] ieee80211 phy0: change: 0x40
+[69159.706930] ieee80211 phy0: MACREG_REG_INT_CODE: 0x0000
+[69179.699295] ieee80211 phy0: cmd 0x9114=SetApMode timed out
+[69179.704834] ieee80211 phy0: return code: 0x1114
+[69179.709392] ieee80211 phy0: timeout: 0x1114
+[69179.713604] ieee80211 phy0: MACREG_REG_INT_CODE: 0x0000
+[69199.706163] ieee80211 phy0: cmd 0x8129=LinkAdaptCsMode timed out
+[69199.712217] ieee80211 phy0: return code: 0x0129
+[69199.716774] ieee80211 phy0: timeout: 0x0129
+[69199.720984] ieee80211 phy0: MACREG_REG_INT_CODE: 0x0000
+[69219.741359] ieee80211 phy0: cmd 0x8120=80211hDetectRadar timed out
+[69219.747587] ieee80211 phy0: return code: 0x0120
+[69219.752138] ieee80211 phy0: timeout: 0x0120
+[69219.756354] ieee80211 phy0: MACREG_REG_INT_CODE: 0x0000
+[69239.758124] ieee80211 phy0: cmd 0x810a=SetRfChannel timed out
+[69239.763916] ieee80211 phy0: return code: 0x010a
+[69239.768468] ieee80211 phy0: timeout: 0x010a
+[69239.772683] ieee80211 phy0: change: 0x40
+[69239.776625] ieee80211 phy0: MACREG_REG_INT_CODE: 0x0000
+[69259.782176] ieee80211 phy0: cmd 0x9114=SetApMode timed out
+[69259.787712] ieee80211 phy0: return code: 0x1114
+[69259.792278] ieee80211 phy0: timeout: 0x1114
+[69259.796487] ieee80211 phy0: MACREG_REG_INT_CODE: 0x0000
+  PID USER       VSZ STAT COMMAND
+    1 root      1372 S    /sbin/procd
+    2 root         0 SW   [kthreadd]
+    3 root         0 SW   [pool_workqueue_]
+    4 root         0 IW<  [kworker/R-kvfre]
+    5 root         0 IW<  [kworker/R-rcu_g]
+    6 root         0 IW<  [kworker/R-sync_]
+    7 root         0 IW<  [kworker/R-slub_]
+    8 root         0 IW<  [kworker/R-netns]
+   10 root         0 IW<  [kworker/0:0H-ev]
+   13 root         0 IW<  [kworker/R-mm_pe]
+   14 root         0 IW   [rcu_tasks_trace]
+   15 root         0 SW   [ksoftirqd/0]
+   16 root         0 IW   [rcu_sched]
+   17 root         0 SW   [rcu_exp_par_gp_]
+   18 root         0 SW   [rcu_exp_gp_kthr]
+   19 root         0 SW   [migration/0]
+   20 root         0 SW   [cpuhp/0]
+   21 root         0 SW   [cpuhp/1]
+   22 root         0 SW   [migration/1]
+   23 root         0 SW   [ksoftirqd/1]
+   25 root         0 IW<  [kworker/1:0H-kb]
+   27 root         0 IW   [kworker/u10:0-e]
+   28 root         0 IW<  [kworker/R-inet_]
+   29 root         0 SW   [oom_reaper]
+   30 root         0 IW<  [kworker/R-write]
+   31 root         0 SW   [kcompactd0]
+   32 root         0 IW<  [kworker/R-pencr]
+   33 root         0 IW<  [kworker/R-pdecr]
+   34 root         0 IW<  [kworker/R-crypt]
+   35 root         0 IW<  [kworker/R-kbloc]
+   36 root         0 IW<  [kworker/R-blkcg]
+   38 root         0 IW<  [kworker/0:1H-kb]
+   39 root         0 IW<  [kworker/R-ata_s]
+   40 root         0 SW   [watchdogd]
+   41 root         0 SW   [kswapd0]
+   51 root         0 IW<  [kworker/R-kthro]
+  214 root         0 IW<  [kworker/R-nvme-]
+  215 root         0 IW<  [kworker/R-nvme-]
+  217 root         0 IW<  [kworker/R-nvme-]
+  226 root         0 SW   [scsi_eh_0]
+  234 root         0 IW<  [kworker/R-scsi_]
+  236 root         0 SW   [scsi_eh_1]
+  239 root         0 IW<  [kworker/R-scsi_]
+  414 root         0 IW<  [kworker/u11:0-h]
+  415 root         0 SW   [irq/50-f1090000]
+  416 root         0 IW<  [kworker/u12:0-M]
+  417 root         0 IW<  [kworker/u13:0-M]
+  418 root         0 IW<  [kworker/R-sdhci]
+  419 root         0 SW   [irq/51-f1090000]
+  420 root         0 SW   [irq/49-mmc0]
+  429 root         0 IW<  [kworker/R-mld]
+  431 root         0 IW<  [kworker/R-ipv6_]
+  432 root         0 IW   [kworker/u8:1-ds]
+  433 root         0 IW<  [kworker/R-kstrp]
+  648 root         0 SW   [ubi_bgt0d]
+  656 root         0 IW<  [kworker/1:1H]
+  662 root         0 SW   [irq/52-gpio-key]
+  663 root         0 SW   [irq/53-gpio-key]
+  670 root         0 IW<  [kworker/R-dsa_o]
+  672 root         0 SW   [f1072004.mdio-m]
+  673 root         0 SW   [irq/61-mv88e6xx]
+  674 root         0 SW   [irq/78-mv88e6xx]
+  675 root         0 SW   [irq/57-mv88e6xx]
+  676 root         0 SW   [irq/59-mv88e6xx]
+  700 root         0 SW   [ptp0]
+  702 root         0 SW   [irq/63-mv88e6xx]
+  706 root         0 SW   [irq/64-mv88e6xx]
+  710 root         0 SW   [irq/65-mv88e6xx]
+  714 root         0 SW   [irq/66-mv88e6xx]
+  718 root         0 SW   [irq/67-mv88e6xx]
+  719 root         0 SW   [irq/74-mv88e6xx]
+  860 root         0 SW   [ubifs_bgt0_1]
+  967 ubus       916 S    /sbin/ubusd
+  968 root       724 S    /sbin/askfirst /usr/libexec/login.sh
+ 1003 root       804 S    /sbin/urngd
+ 1086 root         0 IW<  [kworker/R-cfg80]
+ 1180 root         0 SW   [btmrvl_main_ser]
+ 1191 root         0 IW<  [kworker/u11:2-h]
+ 1193 root         0 IW<  [kworker/R-MWIFI]
+ 1194 root         0 IW<  [kworker/R-MWIFI]
+ 1198 root         0 IW<  [kworker/u12:1-M]
+ 1206 root         0 SW<  [krfcommd]
+ 1417 logd      1560 S    /sbin/logd -S 128
+ 1471 root      1880 S    /sbin/rpcd -s /var/run/ubus/ubus.sock -t 30
+ 1738 root       908 S    /usr/sbin/dropbear -F -P /var/run/dropbear.main.pid -p 22 -a -K 300 -T 3
+ 1844 root      2104 S    {hostapd} /sbin/ujail -t 5 -n hostapd -U network -G network -C /etc/capabilities/wpad.json -c -- /usr/sbi
+ 1845 root      2104 S    {wpa_supplicant} /sbin/ujail -t 5 -n wpa_supplicant -U network -G network -C /etc/capabilities/wpad.json 
+ 1887 network   3280 S    /usr/sbin/hostapd -s -g /var/run/hostapd/global
+ 1888 network   3392 D    /usr/sbin/wpa_supplicant -n -s -g /var/run/wpa_supplicant/global
+ 2027 root      1140 S    /usr/sbin/odhcpd
+ 2154 root      1656 S    /usr/sbin/uhttpd -f -h /www -r LY-WRTW32X -x /cgi-bin -u /ubus -t 60 -T 30 -k 20 -A 1 -n 3 -N 100 -R -p 0
+ 2597 root      2104 S    {ntpd} /sbin/ujail -t 5 -n ntpd -U ntp -G ntp -C /etc/capabilities/ntpd.json -c -u -r /bin/ubus -r /usr/b
+ 2615 ntp       1128 S    /usr/sbin/ntpd -n -N -l -S /usr/sbin/ntpd-hotplug -p 0.openwrt.pool.ntp.org -p 1.openwrt.pool.ntp.org -p
+ 2660 root      600m S    /usr/bin/netbird service run
+ 2738 root       744 S    /usr/sbin/ubihealthd -f -d /dev/ubi0
+ 4240 root         0 DW   [kworker/u10:1+e]
+ 4252 root      4284 S    {tmux: server} tmux
+ 4253 root      1132 S    -ash
+ 4261 root       920 S    iperf3 -s
+ 4323 root      1132 S    -ash
+ 4909 root      2512 S    /sbin/netifd
+ 5431 root      1128 S    udhcpc -p /var/run/udhcpc-wan.pid -s /lib/netifd/dhcp.script -f -t 0 -i wan -x hostname:LY-WRTW32X -x 0x3
+ 5439 root       932 S    odhcp6c -s /lib/netifd/dhcpv6.script -P0:bc6680c1 -c00042b35da825ca04e33906e5ab6702f8320 -t120 wan
+ 5744 root         0 IW<  [kworker/u13:1]
+ 6156 root         0 IW   [kworker/1:0-eve]
+ 7569 root         0 IW   [kworker/u9:1-kv]
+ 7757 root         0 IW   [kworker/u9:2-ev]
+ 8610 root         0 IW   [kworker/0:0-eve]
+ 8787 root         0 IW   [kworker/u9:3-kv]
+ 9785 root      2104 S    {dnsmasq} /sbin/ujail -t 5 -n dnsmasq -u -l -r /bin/ubus -r /etc/TZ -r /etc/dnsmasq.conf -r /etc/ethers -
+ 9815 dnsmasq   1272 S    /usr/sbin/dnsmasq -C /var/etc/dnsmasq.conf.cfg01411c -k -x /var/run/dnsmasq/dnsmasq.cfg01411c.pid
+10970 root         0 IW   [kworker/u10:2-e]
+10991 root         0 DW   [kworker/u8:0+ip]
+11042 root         0 IW   [kworker/1:1-eve]
+11048 root       924 S    /usr/sbin/dropbear -F -P /var/run/dropbear.main.pid -p 22 -a -K 300 -T 3 -2 9
+11049 root      1132 S    -ash
+11109 root         0 IW   [kworker/0:2-mm_]
+11153 root         0 IW   [kworker/u9:0]
+11215 root         0 IW   [kworker/1:2-eve]
+11245 root         0 IW   [kworker/0:1-eve]
+11246 root       924 S    /usr/sbin/dropbear -F -P /var/run/dropbear.main.pid -p 22 -a -K 300 -T 3 -2 9
+11247 root      1128 S    ash -c iw dev wlan0-sta link; ip -4 -o addr show dev wlan0-sta
+11248 root       880 D    iw dev wlan0-sta link
+11249 root       924 S    /usr/sbin/dropbear -F -P /var/run/dropbear.main.pid -p 22 -a -K 300 -T 3 -2 9
+11250 root      1128 S    ash -c iw dev wlan0-sta link; ip -4 -o addr show dev wlan0-sta
+11251 root       880 D    iw dev wlan0-sta link
+11259 root       924 S    /usr/sbin/dropbear -F -P /var/run/dropbear.main.pid -p 22 -a -K 300 -T 3 -2 9
+11260 root      1136 R    ps w

@@ -1,0 +1,34 @@
+-----------------------------------------------------------
+Server listening on 5360 (test #1)
+-----------------------------------------------------------
+Accepted connection from 192.168.1.207, port 34341
+[  5] local 192.168.1.2 port 5360 connected to 192.168.1.207 port 33079
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-1.00   sec  23.9 MBytes   200 Mbits/sec                  
+[  5]   1.00-2.00   sec  52.0 MBytes   436 Mbits/sec                  
+[  5]   2.00-3.00   sec  43.4 MBytes   364 Mbits/sec                  
+[  5]   3.00-4.00   sec  44.0 MBytes   369 Mbits/sec                  
+[  5]   4.00-5.00   sec  49.0 MBytes   411 Mbits/sec                  
+[  5]   5.00-6.00   sec  46.5 MBytes   390 Mbits/sec                  
+[  5]   6.00-7.00   sec  49.8 MBytes   417 Mbits/sec                  
+[  5]   7.00-8.00   sec  52.2 MBytes   438 Mbits/sec                  
+[  5]   8.00-9.00   sec  51.2 MBytes   430 Mbits/sec                  
+[  5]   9.00-10.00  sec  52.1 MBytes   437 Mbits/sec                  
+[  5]  10.00-11.00  sec  50.6 MBytes   425 Mbits/sec                  
+[  5]  11.00-12.00  sec  51.5 MBytes   432 Mbits/sec                  
+[  5]  12.00-13.00  sec  52.2 MBytes   438 Mbits/sec                  
+[  5]  13.00-14.00  sec  48.8 MBytes   409 Mbits/sec                  
+[  5]  14.00-15.00  sec  51.8 MBytes   434 Mbits/sec                  
+[  5]  15.00-16.00  sec  50.8 MBytes   425 Mbits/sec                  
+[  5]  16.00-17.00  sec  51.2 MBytes   430 Mbits/sec                  
+[  5]  17.00-18.00  sec  49.9 MBytes   418 Mbits/sec                  
+[  5]  18.00-19.00  sec  53.1 MBytes   446 Mbits/sec                  
+[  5]  19.00-20.00  sec  53.6 MBytes   449 Mbits/sec                  
+[  5]  20.00-20.01  sec   512 KBytes   377 Mbits/sec                  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-20.01  sec   978 MBytes   410 Mbits/sec                  receiver
+iperf3: interrupt - the server has terminated by signal Terminated(15)
+-----------------------------------------------------------
+Server listening on 5360 (test #2)
+-----------------------------------------------------------

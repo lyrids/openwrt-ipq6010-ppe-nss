@@ -1,0 +1,24 @@
+CASE ethernet-baseline
+ethernet-baseline 936.53 Mbit/s
+CASE ethernet-tbf100
+ethernet-tbf100 94.87 Mbit/s
+CASE ethernet-tbf200
+ethernet-tbf200 188.28 Mbit/s
+CASE ethernet-fq-codel
+ethernet-fq-codel 936.56 Mbit/s
+CASE ethernet-cake100
+ethernet-cake100 936.25 Mbit/s
+CASE ethernet-recovery
+ethernet-recovery 936.46 Mbit/s
+CASE ethernet-prio
+ethernet-prio 935.63 Mbit/s
+CASE wifi-baseline
+RESULTS /home/ubuntu/openwrt-ramboot/qdisc-tests-20261026/run-052438
+Traceback (most recent call last):
+  File "/home/ubuntu/openwrt-ramboot/qdisc-tests-20261026/run-qdisc-tests.py", line 86, in <module>
+    test("wifi-baseline","phy2-ap0",wireless)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/openwrt-ramboot/qdisc-tests-20261026/run-qdisc-tests.py", line 32, in test
+    if rc: raise RuntimeError(name+" failed: "+str(rc))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: wifi-baseline failed: 124

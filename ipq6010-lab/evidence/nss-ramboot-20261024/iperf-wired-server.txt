@@ -1,0 +1,81 @@
+-----------------------------------------------------------
+Server listening on 5209 (test #1)
+-----------------------------------------------------------
+Accepted connection from 192.168.1.162, port 57846
+[  6] local 192.168.1.158 port 5209 connected to 192.168.1.162 port 57856
+[ ID] Interval           Transfer     Bitrate
+[  6]   0.00-1.00   sec   128 KBytes  1.05 Mbits/sec                  
+[  6]   1.00-2.00   sec   256 KBytes  2.10 Mbits/sec                  
+[  6]   2.00-3.00   sec   128 KBytes  1.05 Mbits/sec                  
+[  6]   3.00-4.00   sec   256 KBytes  2.10 Mbits/sec                  
+[  6]   4.00-5.00   sec   384 KBytes  3.15 Mbits/sec                  
+[  6]   5.00-6.00   sec   256 KBytes  2.10 Mbits/sec                  
+[  6]   6.00-7.00   sec   384 KBytes  3.15 Mbits/sec                  
+[  6]   7.00-8.00   sec   384 KBytes  3.15 Mbits/sec                  
+[  6]   8.00-9.00   sec   256 KBytes  2.10 Mbits/sec                  
+[  6]   9.00-10.00  sec   384 KBytes  3.15 Mbits/sec                  
+[  6]  10.00-11.00  sec   128 KBytes  1.05 Mbits/sec                  
+[  6]  11.00-12.00  sec   384 KBytes  3.15 Mbits/sec                  
+[  6]  12.00-13.00  sec   128 KBytes  1.05 Mbits/sec                  
+[  6]  13.00-14.00  sec   256 KBytes  2.10 Mbits/sec                  
+[  6]  14.00-15.00  sec   256 KBytes  2.10 Mbits/sec                  
+[  6]  15.00-16.00  sec   256 KBytes  2.10 Mbits/sec                  
+[  6]  16.00-17.00  sec   256 KBytes  2.10 Mbits/sec                  
+[  6]  17.00-18.00  sec   256 KBytes  2.10 Mbits/sec                  
+[  6]  18.00-19.00  sec   128 KBytes  1.05 Mbits/sec                  
+[  6]  19.00-20.00  sec   256 KBytes  2.10 Mbits/sec                  
+[  6]  20.00-21.00  sec   384 KBytes  3.15 Mbits/sec                  
+[  6]  21.00-22.00  sec   128 KBytes  1.05 Mbits/sec                  
+[  6]  22.00-23.00  sec   256 KBytes  2.10 Mbits/sec                  
+[  6]  23.00-24.00  sec   384 KBytes  3.15 Mbits/sec                  
+[  6]  24.00-25.00  sec   256 KBytes  2.10 Mbits/sec                  
+[  6]  25.00-26.00  sec   256 KBytes  2.10 Mbits/sec                  
+[  6]  26.00-27.00  sec   256 KBytes  2.10 Mbits/sec                  
+[  6]  27.00-28.00  sec   384 KBytes  3.15 Mbits/sec                  
+[  6]  28.00-29.00  sec   256 KBytes  2.10 Mbits/sec                  
+[  6]  29.00-30.00  sec   256 KBytes  2.10 Mbits/sec                  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate
+[  6]   0.00-30.02  sec  7.75 MBytes  2.17 Mbits/sec                  receiver
+-----------------------------------------------------------
+Server listening on 5209 (test #2)
+-----------------------------------------------------------
+Accepted connection from 192.168.1.162, port 57790
+[  6] local 192.168.1.158 port 5209 connected to 192.168.1.162 port 57800
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  6]   0.00-1.00   sec  68.1 MBytes   571 Mbits/sec    1   2.48 MBytes       
+[  6]   1.00-2.00   sec  72.2 MBytes   606 Mbits/sec   23   1.84 MBytes       
+[  6]   2.00-3.00   sec  75.0 MBytes   629 Mbits/sec    0   1.86 MBytes       
+[  6]   3.00-4.00   sec  72.6 MBytes   609 Mbits/sec    0   1.89 MBytes       
+[  6]   4.00-5.00   sec  71.5 MBytes   600 Mbits/sec    0   1.92 MBytes       
+[  6]   5.00-6.00   sec  74.0 MBytes   621 Mbits/sec    0   1.95 MBytes       
+[  6]   6.00-7.00   sec  74.1 MBytes   622 Mbits/sec    0   1.97 MBytes       
+[  6]   7.00-8.00   sec  72.2 MBytes   606 Mbits/sec    0   2.00 MBytes       
+[  6]   8.00-9.00   sec  72.9 MBytes   611 Mbits/sec    7   2.02 MBytes       
+[  6]   9.00-10.00  sec  77.6 MBytes   651 Mbits/sec    0   2.05 MBytes       
+[  6]  10.00-11.00  sec  73.0 MBytes   612 Mbits/sec    1   2.07 MBytes       
+[  6]  11.00-12.00  sec  59.8 MBytes   501 Mbits/sec    0   2.09 MBytes       
+[  6]  12.00-13.00  sec  76.0 MBytes   638 Mbits/sec    0   2.12 MBytes       
+[  6]  13.00-14.00  sec  76.4 MBytes   641 Mbits/sec    0   2.14 MBytes       
+[  6]  14.00-15.00  sec  67.2 MBytes   564 Mbits/sec   31   1.54 MBytes       
+[  6]  15.00-16.00  sec  67.9 MBytes   569 Mbits/sec    0   1.71 MBytes       
+[  6]  16.00-17.00  sec  75.1 MBytes   630 Mbits/sec    0   1.84 MBytes       
+[  6]  17.00-18.00  sec  72.4 MBytes   607 Mbits/sec    0   1.94 MBytes       
+[  6]  18.00-19.00  sec  70.5 MBytes   591 Mbits/sec    0   2.00 MBytes       
+[  6]  19.00-20.00  sec  65.9 MBytes   553 Mbits/sec    0   2.03 MBytes       
+[  6]  20.00-21.00  sec  54.9 MBytes   460 Mbits/sec    0   2.05 MBytes       
+[  6]  21.00-22.00  sec  58.1 MBytes   488 Mbits/sec    0   2.07 MBytes       
+[  6]  22.00-23.00  sec  56.9 MBytes   477 Mbits/sec    0   2.09 MBytes       
+[  6]  23.00-24.00  sec  56.8 MBytes   476 Mbits/sec    0   2.11 MBytes       
+[  6]  24.00-25.00  sec  55.6 MBytes   467 Mbits/sec    0   2.13 MBytes       
+[  6]  25.00-26.00  sec  58.8 MBytes   493 Mbits/sec    0   2.15 MBytes       
+[  6]  26.00-27.00  sec  58.6 MBytes   492 Mbits/sec    0   2.23 MBytes       
+[  6]  27.00-28.00  sec  63.9 MBytes   536 Mbits/sec    0   2.33 MBytes       
+[  6]  28.00-29.00  sec  63.4 MBytes   532 Mbits/sec    0   2.46 MBytes       
+[  6]  29.00-30.00  sec  59.6 MBytes   500 Mbits/sec    0   2.58 MBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  6]   0.00-30.01  sec  1.98 GBytes   565 Mbits/sec   63             sender
+-----------------------------------------------------------
+Server listening on 5209 (test #3)
+-----------------------------------------------------------

@@ -1,0 +1,4 @@
+lyrids	git@github.com:lyrids/openwrt-ipq6010-ppe-nss.git (fetch)
+lyrids	git@github.com:lyrids/openwrt-ipq6010-ppe-nss.git (push)
+origin	https://github.com/openwrt/openwrt.git (fetch) [blob:none]
+origin	https://github.com/openwrt/openwrt.git (push)

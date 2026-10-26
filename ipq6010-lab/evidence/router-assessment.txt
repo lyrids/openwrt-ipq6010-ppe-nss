@@ -1,0 +1,99 @@
+Router assessment — 2026-10-24, Asia/Singapore
+
+Scope
+Read-only SSH inspection of root@192.168.21.143. No package installation,
+configuration changes, service restarts, partition repairs, or flashing.
+Evidence files may include local interface identifiers and SSIDs.
+
+Confirmed identity
+JDCloud RE-CS-02 / jdcloud,re-cs-02; qualcommax/ipq60xx.
+LibWrt 25.12-SNAPSHOT r0+38706-0a42723cf9; Linux 6.12.108.
+Package manager: APK. Installed package list is a runtime inventory, not the
+original image manifest: packages may have been added or upgraded later.
+
+Networking architecture
+All five Ethernet interfaces are bound to nss-dp, confirmed by ethtool -i.
+Loaded stack: qca_ssdk, qca_nss_dp, qca_nss_drv, ecm, NSS bridge/VLAN and
+other clients. ath11k and mac80211 reference qca_nss_drv in lsmod.
+The presence of qca8k/dsa_core does not establish that these physical ports
+are using DSA; their bound Ethernet driver is nss-dp.
+NSS runtime firmware: NSS.FW.12.5-210-CP.R.
+At the counter snapshot, ECM reported 7 accelerated IPv4 connections and
+0 accelerated IPv6 connections. This does not identify a particular client,
+radio, bridge path, or prove maximum throughput/coverage.
+
+Installed source identifiers
+qca-nss-dp: 2025.11.24~19c51af0-r1
+qca-ssdk: 2025.05.30~446db12b-r1
+qca-nss-drv: 12.5.2024.11.13~d5ee67b-r17
+qca-nss-ecm: 12.5.2024.11.06~30fbfa4-r7
+ath11k/mac80211 backports package version: 6.12.108.6.18.39-r1
+ath11k firmware packages: 2026.08.21~0c817c46-r1
+Firmware package URL: https://github.com/laipeng668/ath11k-firmware-ddwrt.git
+NSS firmware package URL:
+https://github.com/qosmio/qca-sdk-nss-fw/releases/download/v2025.05.01
+These are source/package identifiers, not a complete set of feed commits or
+downstream patch revisions. Kernel package ABI hash is not a source Git SHA.
+
+Public-source cross-check
+Current LibWrt 25.12-nss feeds.conf.default points to qosmio/nss-packages,
+qosmio/sqm-scripts-nss, ImmortalWrt packages/LuCI and OpenWrt ancillary feeds.
+This corroborates the integration family, not exact historical feed pins.
+https://raw.githubusercontent.com/LiBwrt/LibWrt/25.12-nss/feeds.conf.default
+Current ath11k firmware recipe matches the installed date and short hash;
+it specifies full source SHA 0c817c46568ef6871042c7e2efc95ac24a1f02e6.
+https://raw.githubusercontent.com/LiBwrt/LibWrt/25.12-nss/package/firmware/ath11k-firmware/Makefile
+Exact LibWrt commit 0a42723cf9 has not been resolved by the web lookup.
+
+Wireless baseline
+phy0: integrated device, 5 GHz channel 149 / 80 MHz.
+phy1: integrated device, 2.4 GHz channel 4 / 20 MHz.
+phy2: PCIe QCN9074 driver family, 5 GHz channel 52 / 160 MHz.
+All three AP interfaces are up and members of br-lan.
+PCIe startup peer-creation timeout appears in dmesg before recovery.
+Channel 52/160 MHz makes DFS/CAC relevant to subsequent delays; existing
+captured hostapd logs did not establish the cause of those delays.
+
+Storage and upgrade contract
+eMMC: 123731968000 bytes (115.23 GiB).
+p12 0:APPSBLENV 256 KiB; p13/p14 APPSBL/APPSBL_1 each 640 KiB.
+p15 0:ART 512 KiB.
+p16 0:HLOS 6 MiB; p17 0:HLOS_1 6 MiB.
+p18 rootfs 2 GiB, active squashfs root.
+p20 rootfs_1 60 MiB; slot names do not prove automatic rollback works.
+p22 rootfs_data 20 MiB, not the mounted overlay in this snapshot.
+Mounted F2FS overlay: loop0 backed by p18 with byte offset 131661824.
+Installed platform.sh selects CI_KERNPART=0:HLOS and CI_ROOTPART=rootfs,
+then invokes emmc_do_upgrade. That path does not implement slot rotation.
+The generic helper writes root/kernel and invalidates the target kernel
+before root replacement. It was read as text, not executed.
+fdisk reports corrupt/inconsistent backup GPT metadata; primary used.
+No repair or raw partition backup was performed.
+
+Package-feed caveat
+Current APK repository configuration uses an ImmortalWrt 25.12.1 mirror
+and a separate collect_luci feed, despite LibWrt snapshot system identity.
+This describes configured binary repositories, not original source feeds.
+One collect_luci index is unavailable in the local APK cache.
+Do not use this configuration alone to select a matching build toolchain
+or replace kernel modules.
+
+Migration sequence
+1. Resolve historical LibWrt source commit, build configuration, feed pins,
+   and builder overrides; preserve recovery metadata and partitions.
+2. Rebuild current lineage with pinned firmware and backports as reference.
+3. RAM-boot pinned OpenWrt main with standard ath11k and verify all ports,
+   radios, calibration loading, and the image/partition contract.
+4. Verify wired bridge/VLAN PPE offload with external traffic endpoints.
+5. Add coherent PPE routing changes and NSS Wi-Fi integration separately;
+   verify integrated radios and PCIe radio as distinct cases.
+6. Compare throughput, CPU work, offload counters, isolation and recovery.
+
+Artifacts
+collect-router-info.sh: initial collector, no router-side writes.
+router-inventory.txt: identity, packages, mounts, partitions, drivers,
+firmware checksums, installed platform upgrade script, and dmesg.
+router-provenance.txt: selected APK records, aggregate NSS statistics,
+ECM counter paths, installed eMMC upgrade helper, firmware text versions.
+router-origins.txt: concise source metadata, ECM counts, partition IDs,
+and sanitized configured APK repository URLs.

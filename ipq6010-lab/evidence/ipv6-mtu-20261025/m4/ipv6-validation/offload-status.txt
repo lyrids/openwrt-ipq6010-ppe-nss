@@ -1,0 +1,29 @@
+offloaded                208
+reinstalled              0
+destroy_miss             112
+stale                    0
+xmit_drop                0
+sparse_promoted          84
+sparse_demoted           0
+live_entries             0
+ingress_not_switch_port  0
+ingress_vlan_domain      0
+unsupported_match        0
+unsupported_protocol     0
+unsupported_action       0
+no_egress_l2_header      0
+egress_not_switch_port   0
+snat_and_dnat            0
+ipv6_nat                 0
+table_full               0
+hardware_op_failed       0
+index type proto fwd age host  pri packets bytes
+ethernet enabled 1 active 1 offers 260 pushed 107 rejected 24
+bound 0 pushed 107 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0

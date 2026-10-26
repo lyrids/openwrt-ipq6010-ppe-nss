@@ -1,0 +1,8 @@
+PING 172.31.100.1 (172.31.100.1) from 192.168.1.158 : 1464(1492) bytes of data.
+1472 bytes from 172.31.100.1: icmp_seq=1 ttl=63 time=1.12 ms
+1472 bytes from 172.31.100.1: icmp_seq=2 ttl=63 time=1.10 ms
+1472 bytes from 172.31.100.1: icmp_seq=3 ttl=63 time=1.22 ms
+
+--- 172.31.100.1 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 1.095/1.144/1.216/0.052 ms

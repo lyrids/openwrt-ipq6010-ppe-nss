@@ -1,0 +1,27 @@
+ethernet enabled 1 active 1 offers 222 pushed 88 rejected 24
+bound 0 pushed 88 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.200.60 sport=44093 dport=5234 packets=6 bytes=337 src=192.168.200.60 dst=192.168.100.63 sport=5234 dport=44093 packets=37 bytes=363932 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.200.60 sport=45831 dport=5234 packets=12 bytes=28181 src=192.168.200.60 dst=192.168.100.63 sport=5234 dport=45831 packets=11 bytes=490 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.200.60 sport=50691 dport=5234 packets=7 bytes=6201 src=192.168.200.60 dst=192.168.100.63 sport=5234 dport=50691 packets=11 bytes=490 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.200.60 sport=58831 dport=5234 packets=7 bytes=411 src=192.168.200.60 dst=192.168.100.63 sport=5234 dport=58831 packets=4 bytes=216 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.200.60 sport=34745 dport=5234 packets=6 bytes=4701 src=192.168.200.60 dst=192.168.100.63 sport=5234 dport=34745 packets=7 bytes=322 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.200.60 sport=57239 dport=5234 packets=5 bytes=295 src=192.168.200.60 dst=192.168.100.63 sport=5234 dport=57239 packets=24 bytes=387872 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.200.60 sport=56071 dport=5234 packets=5 bytes=295 src=192.168.200.60 dst=192.168.100.63 sport=5234 dport=56071 packets=37 bytes=374068 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.200.60 sport=57245 dport=5234 packets=10 bytes=42557 src=192.168.200.60 dst=192.168.100.63 sport=5234 dport=57245 packets=9 bytes=406 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.200.60 sport=46655 dport=5234 packets=5 bytes=295 src=192.168.200.60 dst=192.168.100.63 sport=5234 dport=46655 packets=57 bytes=744348 [OFFLOAD] mark=0 use=2
+port              vlan-id  
+lan1              100 PVID
+lan2              1 PVID Egress Untagged
+lan3              1 PVID Egress Untagged
+lan4              1 PVID Egress Untagged
+                  200
+br-lan            1 PVID Egress Untagged
+                  100
+                  200

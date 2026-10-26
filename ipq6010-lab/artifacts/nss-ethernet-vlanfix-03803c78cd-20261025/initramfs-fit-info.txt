@@ -1,0 +1,32 @@
+FIT description: ARM64 OpenWrt FIT (Flattened Image Tree)
+Created:         Sat Oct 24 22:35:47 2026
+ Image 0 (kernel-1)
+  Description:  ARM64 OpenWrt Linux-6.18.55
+  Created:      Sat Oct 24 22:35:47 2026
+  Type:         Kernel Image
+  Compression:  gzip compressed
+  Data Size:    18827958 Bytes = 18386.68 KiB = 17.96 MiB
+  Architecture: AArch64
+  OS:           Linux
+  Load Address: 0x41000000
+  Entry Point:  0x41000000
+  Hash algo:    crc32
+  Hash value:   4a653323
+  Hash algo:    sha1
+  Hash value:   d9245c762e00e0ffcadf72a9b50ae392379f95e0
+ Image 1 (fdt-1)
+  Description:  ARM64 OpenWrt jdcloud_re-cs-02 device tree blob
+  Created:      Sat Oct 24 22:35:47 2026
+  Type:         Flat Device Tree
+  Compression:  uncompressed
+  Data Size:    29786 Bytes = 29.09 KiB = 0.03 MiB
+  Architecture: AArch64
+  Hash algo:    crc32
+  Hash value:   84905a01
+  Hash algo:    sha1
+  Hash value:   c196c6c3bf3d1c8327c4ce11f04fd4912095dcc7
+ Default Configuration: 'config@cp03-c3'
+ Configuration 0 (config@cp03-c3)
+  Description:  OpenWrt jdcloud_re-cs-02
+  Kernel:       kernel-1
+  FDT:          fdt-1

@@ -1,0 +1,32 @@
+before=0-3
+after_offline=0-2
+online_write_failed=1
+remaining_online=0-2
+[    0.015266] psci: ipq-cpu-diag: CPU1 mpidr=0x1 entry=0x0000000041c41520 affinity-before=1
+[    0.015315] psci: ipq-cpu-diag: CPU_ON fn=0xc4000003 target=0x1 entry=0x41c41520 raw=0 errno=0
+[    0.015333] psci: ipq-cpu-diag: CPU1 cpu_on-errno=0 affinity-after=2
+[    0.015464] ipq-cpu-diag: CPU1 reached secondary C before capability checks
+[    0.015631] ipq-cpu-diag: CPU1 completed starting notifiers
+[    0.016243] psci: ipq-cpu-diag: CPU2 mpidr=0x2 entry=0x0000000041c41520 affinity-before=1
+[    0.016287] psci: ipq-cpu-diag: CPU_ON fn=0xc4000003 target=0x2 entry=0x41c41520 raw=0 errno=0
+[    0.016304] psci: ipq-cpu-diag: CPU2 cpu_on-errno=0 affinity-after=2
+[    0.016415] ipq-cpu-diag: CPU2 reached secondary C before capability checks
+[    0.016544] ipq-cpu-diag: CPU2 completed starting notifiers
+[    0.017119] psci: ipq-cpu-diag: CPU3 mpidr=0x3 entry=0x0000000041c41520 affinity-before=1
+[    0.017162] psci: ipq-cpu-diag: CPU_ON fn=0xc4000003 target=0x3 entry=0x41c41520 raw=0 errno=0
+[    0.017179] psci: ipq-cpu-diag: CPU3 cpu_on-errno=0 affinity-after=2
+[    0.017286] ipq-cpu-diag: CPU3 reached secondary C before capability checks
+[    0.017304] Detected VIPT I-cache on CPU3
+[    0.017404] ipq-cpu-diag: CPU3 completed starting notifiers
+[    0.017414] CPU3: Booted secondary processor 0x0000000003 [0x51af8014]
+[   71.498330] IRQ54: set affinity failed(-22).
+[   71.498353] IRQ55: set affinity failed(-22).
+[   71.498360] IRQ56: set affinity failed(-22).
+[   71.498740] psci: CPU3 killed (polled 0 ms)
+[   71.514232] psci: ipq-cpu-diag: CPU3 mpidr=0x3 entry=0x0000000041c41520 affinity-before=1
+[   71.514499] psci: ipq-cpu-diag: CPU_ON fn=0xc4000003 target=0x3 entry=0x41c41520 raw=0 errno=0
+[   71.522943] psci: ipq-cpu-diag: CPU3 cpu_on-errno=0 affinity-after=2
+[   76.567940] CPU3: failed to come online
+[   76.567987] ipq-cpu-diag: CPU3 secondary-status=0xffffffffffffffff early-status=0x0 online=0
+[   76.570614] CPU3: failed in unknown state : 0x0
+STOP: preserve logs; do not offline another CPU or bypass the kexec guard.

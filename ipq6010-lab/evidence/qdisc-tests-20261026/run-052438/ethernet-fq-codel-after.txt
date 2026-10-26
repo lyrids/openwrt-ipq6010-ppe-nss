@@ -1,0 +1,136 @@
+Mon Oct 26 05:25:40 UTC 2026
+qdisc fq_codel 150: root refcnt 13 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms memory_limit 4Mb ecn drop_batch 64 
+ Sent 27870 bytes 26 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+  maxpacket 0 drop_overlimit 0 new_flow_count 0 ecn_mark 0
+  new_flows_len 0 old_flows_len 0
+cpu  1123 0 1903 712904 2 0 664 0 0 0
+cpu0 259 0 356 177254 2 0 654 0 0 0
+cpu1 299 0 984 178843 0 0 4 0 0 0
+cpu2 240 0 271 177201 0 0 3 0 0 0
+cpu3 325 0 292 179604 0 0 3 0 0 0
+ethernet enabled 1 active 1 offers 16 pushed 0 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 3/7
+bound 1 pushed 8 last-ifindex 3
+rejected not-ours 8 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 6 tx 6 drop 0/0/0/0 exceptions
+node ipv4 rx 6 tx 0 drop 0/0/0/0 exceptions 9:6
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:44789 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:54007 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:58267 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:51843 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:34527 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:35293 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:34429 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33655 -> 192.168.21.154:5201 detail 3
+proto 6 v4 ethernet if 1/5 prio 0 installed 0 age 880ms fw flow rx 1073787 tx 124380 return rx 124380 tx 1073787
+proto 6 v4 ethernet if 1/5 prio 0 installed 0 age 7120ms fw flow rx 4 tx 6 return rx 6 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+PPE-egress
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    3046987 3978469085 0 0
+1    438242 29270407 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    457 105333 0 0
+5    2608745 3949234022 0 0
+6    0 0 0 0
+vsi packets bytes
+0   437553 28951085
+1   2610198 3949754229
+vport packets bytes drop_packets drop_bytes
+PPE-queues
+queue packets bytes buffers
+0     229386 346742740 0
+1     20 27880 0
+2     2379554 3602643084 0
+3     24 33456 0
+4     377458 24959256 0
+5     59927 3993607 0
+6     214 24667 0
+7     405 44461 0
+144   55 57367 0
+145   113687 7534942 0
+146   322430 21414510 0
+147   34 17139 0
+148   333 52883 0
+149   693 79830 0
+150   807 81896 0
+151   193 30880 0
+192   30 15140 0
+193   6 8364 0
+194   8 11152 0
+195   6 8364 0
+196   134 21679 0
+197   64 10178 0
+198   85 13469 0
+199   105 14384 0
+208   1247137 1888056190 0
+209   20 2611 0
+210   1132450 1714513832 0
+211   228959 346643166 0
+212   69 8433 0
+213   41 3558 0
+214   34 2992 0
+215   35 3240 0
+272   2 120 0
+275   10 1372 0
+284   8 480 0
+287   11 2123 0
+group buffers prealloc_used
+0     0 0
+1     0 0
+2     0 0
+3     0 0
+PPE-queue_drops
+queue reason packets bytes
+PPE-policer
+port colour packets bytes
+0    green  0 0
+0    yellow 0 0
+0    red    0 0
+1    green  0 0
+1    yellow 0 0
+1    red    0 0
+2    green  0 0
+2    yellow 0 0
+2    red    0 0
+3    green  0 0
+3    yellow 0 0
+3    red    0 0
+4    green  0 0
+4    yellow 0 0
+4    red    0 0
+5    green  0 0
+5    yellow 0 0
+5    red    0 0
+6    green  0 0
+6    yellow 0 0
+6    red    0 0
+PPE-offload
+offloaded                16
+reinstalled              0
+destroy_miss             0
+stale                    0
+xmit_drop                0
+sparse_promoted          8
+sparse_demoted           0
+live_entries             4
+ingress_not_switch_port  0
+ingress_vlan_domain      0
+unsupported_match        0
+unsupported_protocol     0
+unsupported_action       0
+no_egress_l2_header      0
+egress_not_switch_port   0
+snat_and_dnat            0
+ipv6_nat                 0
+table_full               0
+hardware_op_failed       0
+ipv4     2 tcp      6 src=192.168.1.2 dst=192.168.21.154 sport=33655 dport=5201 packets=7 bytes=26473 src=192.168.21.154 dst=192.168.21.138 sport=5201 dport=33655 packets=19 bytes=894 [HW_OFFLOAD] mark=0 zone=0 use=3
+ipv4     2 tcp      6 src=192.168.1.2 dst=192.168.21.154 sport=34429 dport=5201 packets=5 bytes=305 src=192.168.21.154 dst=192.168.21.138 sport=5201 dport=34429 packets=2 bytes=112 [HW_OFFLOAD] mark=0 zone=0 use=3

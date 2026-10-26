@@ -1,0 +1,8 @@
+7: wan@eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000
+    link/ether dc:d8:7b:54:83:ec brd ff:ff:ff:ff:ff:ff
+    RX:  bytes packets errors dropped  missed   mcast           
+    2078485493 1523059      0       5       0    2995 
+    TX:  bytes packets errors dropped carrier collsns           
+    2051061386 1406056      0       0       0       0 
+ 15:27:13 up  2:28,  load average: 0.00, 0.00, 0.00
+0-3

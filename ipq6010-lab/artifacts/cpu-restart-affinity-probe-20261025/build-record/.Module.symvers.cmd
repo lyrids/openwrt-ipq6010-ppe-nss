@@ -1,0 +1,1 @@
+savedcmd_Module.symvers :=  /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/scripts/mod/modpost -M          -o Module.symvers -n -T modules.order -i /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/Module.symvers -e 

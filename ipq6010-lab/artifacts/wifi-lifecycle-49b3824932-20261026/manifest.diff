@@ -1,0 +1,20 @@
+--- iteration5.manifest
++++ iteration9.manifest
+@@ -1,7 +1,7 @@
+ apk-mbedtls - 3.0.5-r4
+ ath11k-firmware-ipq6018 - 2024.10.14~15f05012-r2
+ ath11k-firmware-qcn9074 - 20260916-r1
+-base-files - 1719~a31dd90f69
++base-files - 1719~49b3824932
+ busybox - 1.38.0-r3
+ ca-bundle - 20260816-r2
+ conntrack - 1.4.8-r1
+@@ -9,7 +9,7 @@
+ dropbear - 2026.94-r3
+ e2fsprogs - 1.47.4-r1
+ ethtool-full - 7.1-r1
+-firewall4 - 2025.03.17~b6e51575-r2
++firewall4 - 2025.03.17~b6e51575-r3
+ fstools - 2026.10.18~907cf449-r1
+ fwtool - 2025.10.03~04cd252e-r1
+ getrandom - 2025.10.30~6f78fa49-r1

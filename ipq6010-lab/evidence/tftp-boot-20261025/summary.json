@@ -1,0 +1,48 @@
+{
+  "runtime": "pre-kexec iteration5",
+  "kexec_work": "suspended by user",
+  "image_sha256": "b2b63a339a3e6496a198de3d39a14ca21d19214dc08c047f00a8da1953795c56",
+  "normal_boot_order": [
+    "TFTP",
+    "original eMMC bootipq"
+  ],
+  "USB": "next phase; not configured",
+  "TFTP_server": {
+    "host": "p43",
+    "management": "ubuntu@192.168.21.63",
+    "address": "192.168.1.2/24 on eth0",
+    "path": "/srv/tftp/openwrt/jdcloud-re-cs-02.itb",
+    "service": "tftpd-hpa enabled, bound192.168.1.2:69",
+    "default_route": "management Wi-Fi"
+  },
+  "tests": {
+    "full_client_download_SHA256": "passed",
+    "U_Boot_TFTP_and_FIT_hashes": "passed",
+    "missing_file_branch": "passed; full eMMC OS not booted",
+    "stopped_service_branch": "passed about2seconds while p43 online",
+    "ordinary_unattended_reboot": "passed; new boot ID and p43 RRQ",
+    "publisher_wrong_SHA": "rejected",
+    "publisher_atomic_update": "passed"
+  },
+  "final_router": {
+    "boot_id": "82657a2f-af63-4c12-ac83-416734d6d13b",
+    "CPU_online": "0-3",
+    "NSS_boot": 1,
+    "NSS_Ethernet": "enabled1 active1",
+    "root": "tmpfs",
+    "kexec": "absent"
+  },
+  "environment": {
+    "bootcmd": "run boot_tftp; run boot_emmc",
+    "readback": "all values match",
+    "backup": "named boot variables only; no raw environment copied",
+    "written": "APPSBLENV only; no firmware, bootloader binary or GPT writes"
+  },
+  "limits": [
+    "USB not configured",
+    "complete p43 outage/ARP timeout not measured",
+    "full eMMC OS fallback not exercised",
+    "kernel hangs after bootm need separate watchdog/boot-count/power recovery"
+  ],
+  "timestamp_utc": "2026-10-25T09:50:32.057160+00:00"
+}

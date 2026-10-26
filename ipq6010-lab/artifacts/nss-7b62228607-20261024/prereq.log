@@ -1,0 +1,7 @@
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/target/linux'
+make[4]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/target/linux/qualcommax'
+make[5]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/target/linux/qualcommax/image'
+make[5]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/target/linux/qualcommax/image'
+make[4]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/target/linux/qualcommax'
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/target/linux'
+time: target/linux/prereq#0.03#0.01#0.04

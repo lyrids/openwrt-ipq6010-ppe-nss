@@ -1,0 +1,25 @@
+{
+	"start":	{
+		"connected":	[],
+		"version":	"iperf 3.17.1",
+		"system_info":	"Linux p43 7.0.0-1020-raspi #20-Ubuntu SMP PREEMPT_DYNAMIC Fri Sep 11 16:02:28 UTC 2026 aarch64",
+		"timestamp":	{
+			"time":	"Sun, 25 Oct 2026 15:29:41 GMT",
+			"timesecs":	1792942181
+		},
+		"connecting_to":	{
+			"host":	"192.168.21.154",
+			"port":	5201
+		},
+		"cookie":	"7udjapmk75oejng6byu2eqqbisieegko4izv",
+		"target_bitrate":	500000000,
+		"fq_rate":	0,
+		"sock_bufsize":	0,
+		"sndbuf_actual":	212992,
+		"rcvbuf_actual":	212992
+	},
+	"intervals":	[],
+	"end":	{
+	},
+	"error":	"unable to read from stream socket: Connection refused"
+}

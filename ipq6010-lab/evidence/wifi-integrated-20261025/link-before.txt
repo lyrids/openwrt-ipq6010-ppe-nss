@@ -1,0 +1,11 @@
+Connected to dc:d8:7c:54:83:ef (on wlan0)
+	SSID: OpenWrt-RAM-test-QCN9074
+	freq: 5745.0
+	RX: 1510 bytes (14 packets)
+	TX: 2787 bytes (17 packets)
+	signal: -52 dBm
+	rx bitrate: 390.0 MBit/s
+	tx bitrate: 585.0 MBit/s
+	bss flags: short-preamble
+	dtim period: 2
+	beacon int: 100

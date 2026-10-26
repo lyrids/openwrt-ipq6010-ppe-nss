@@ -1,0 +1,68 @@
+ 00:01:52 up 1 min,  load average: 0.08, 0.05, 0.01
+1
+wifili 203 reports 0
+wifili 215 reports 0
+wifili 216 reports 0
+bound 0 pushed 0 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 5 tx 5 drop 0/0/0/0 exceptions
+node ipv4 rx 5 tx 0 drop 0/0/0/0 exceptions 9:5
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+the last bring-up did not complete
+[    0.000000] psci: PSCIv1.0 detected in firmware.
+[   28.701448] nss-wifi-drv 39000000.nss: core 0 booted
+[   28.744149] nss-wifi-drv 39000000.nss: lan1: port 1 routes in the firmware
+[   28.751065] nss-wifi-drv 39000000.nss: lan2: port 2 routes in the firmware
+[   28.757539] nss-wifi-drv 39000000.nss: lan3: port 3 routes in the firmware
+[   28.764818] nss-wifi-drv 39000000.nss: lan4: port 4 routes in the firmware
+[   28.771717] nss-wifi-drv 39000000.nss: wan: port 5 routes in the firmware
+wireless.radio0=wifi-device
+wireless.radio0.type='mac80211'
+wireless.radio0.path='platform/soc@0/c000000.wifi'
+wireless.radio0.band='5g'
+wireless.radio0.channel='100'
+wireless.radio0.htmode='HE80'
+wireless.default_radio0=wifi-iface
+wireless.default_radio0.device='radio0'
+wireless.default_radio0.network='lan'
+wireless.default_radio0.mode='ap'
+wireless.default_radio0.ssid='OpenWrt'
+wireless.default_radio0.encryption='none'
+wireless.default_radio0.disabled='1'
+wireless.radio1=wifi-device
+wireless.radio1.type='mac80211'
+wireless.radio1.path='platform/soc@0/c000000.wifi+1'
+wireless.radio1.band='2g'
+wireless.radio1.channel='1'
+wireless.radio1.htmode='HE20'
+wireless.default_radio1=wifi-iface
+wireless.default_radio1.device='radio1'
+wireless.default_radio1.network='lan'
+wireless.default_radio1.mode='ap'
+wireless.default_radio1.ssid='OpenWrt'
+wireless.default_radio1.encryption='none'
+wireless.default_radio1.disabled='1'
+wireless.radio2=wifi-device
+wireless.radio2.type='mac80211'
+wireless.radio2.path='soc@0/20000000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0'
+wireless.radio2.band='5g'
+wireless.radio2.channel='36'
+wireless.radio2.htmode='HE80'
+wireless.default_radio2=wifi-iface
+wireless.default_radio2.device='radio2'
+wireless.default_radio2.network='lan'
+wireless.default_radio2.mode='ap'
+wireless.default_radio2.ssid='OpenWrt'
+wireless.default_radio2.encryption='none'
+wireless.default_radio2.disabled='1'
+74590d7c46ba69fa9e969f43b2b1c327c9ccefd10afead98f6f221fea3bfce67  /dev/mmcblk0p2
+74590d7c46ba69fa9e969f43b2b1c327c9ccefd10afead98f6f221fea3bfce67  /dev/mmcblk0p3
+b215f6800ca0c370b60b149e5326281fa2e9483059a2891c1e0c2a4ef091a79f  /dev/mmcblk0p12
+fa4f13a4465a3271307ea7f6031f95b1e6420697539e4210721c2645541602cf  /dev/mmcblk0p13
+fa4f13a4465a3271307ea7f6031f95b1e6420697539e4210721c2645541602cf  /dev/mmcblk0p14
+dbdb663ce453e419997728b9b7783e4ef071f9f56be192253163b29673537d5b  /dev/mmcblk0p15
+370dcc2ef7b44d472c15fde23c02a2107d3d496543541be3ae116aefd88c0b32  /dev/mmcblk0p16
+b69dae56a14d1a8314ed40664c4033ea0a550eea2673e04df42a66ac6b9faf2c  /dev/mmcblk0p17

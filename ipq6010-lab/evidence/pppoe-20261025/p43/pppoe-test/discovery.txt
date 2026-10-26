@@ -1,0 +1,29 @@
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on eth0.100, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+01:13:51.585064 96:63:65:3c:53:51 > ff:ff:ff:ff:ff:ff, ethertype PPPoE D (0x8863), length 56: PPPoE PADI [Service-Name "nss-test"] [Host-Uniq 0x3FF80600]
+01:13:51.585127 96:63:65:3c:53:51 > ff:ff:ff:ff:ff:ff, ethertype PPPoE D (0x8863), length 56: PPPoE PADI [Service-Name "nss-test"] [Host-Uniq 0x3FF80600]
+01:13:51.585200 dc:a6:32:b0:ab:b0 > 96:63:65:3c:53:51, ethertype PPPoE D (0x8863), length 79: PPPoE PADO [AC-Name "nss-test-ac"] [Service-Name "nss-test"] [AC-Cookie 0x18FEACB75B613FC0ED7290F5356B258AE71E0100] [Host-Uniq 0x3FF80600]
+01:13:51.585231 dc:a6:32:b0:ab:b0 > 96:63:65:3c:53:51, ethertype PPPoE D (0x8863), length 79: PPPoE PADO [AC-Name "nss-test-ac"] [Service-Name "nss-test"] [AC-Cookie 0x18FEACB75B613FC0ED7290F5356B258AE71E0100] [Host-Uniq 0x3FF80600]
+01:13:51.586110 96:63:65:3c:53:51 > dc:a6:32:b0:ab:b0, ethertype PPPoE D (0x8863), length 64: PPPoE PADR [Service-Name "nss-test"] [Host-Uniq 0x3FF80600] [AC-Cookie 0x18FEACB75B613FC0ED7290F5356B258AE71E0100]
+01:13:51.586674 dc:a6:32:b0:ab:b0 > 96:63:65:3c:53:51, ethertype PPPoE D (0x8863), length 40: PPPoE PADS [ses 0x1] [Service-Name "nss-test"] [Host-Uniq 0x3FF80600]
+01:13:51.663700 96:63:65:3c:53:51 > dc:a6:32:b0:ab:b0, ethertype PPPoE S (0x8864), length 56: PPPoE  [ses 0x1] LCP (0xc021), length 16: LCP, Conf-Request (0x01), id 1, length 16
+01:13:51.704689 dc:a6:32:b0:ab:b0 > 96:63:65:3c:53:51, ethertype PPPoE S (0x8864), length 36: PPPoE  [ses 0x1] LCP (0xc021), length 16: LCP, Conf-Request (0x01), id 1, length 16
+01:13:51.705519 96:63:65:3c:53:51 > dc:a6:32:b0:ab:b0, ethertype PPPoE S (0x8864), length 56: PPPoE  [ses 0x1] LCP (0xc021), length 16: LCP, Conf-Ack (0x02), id 1, length 16
+01:13:54.664862 96:63:65:3c:53:51 > dc:a6:32:b0:ab:b0, ethertype PPPoE S (0x8864), length 56: PPPoE  [ses 0x1] LCP (0xc021), length 16: LCP, Conf-Request (0x01), id 1, length 16
+01:13:54.665028 dc:a6:32:b0:ab:b0 > 96:63:65:3c:53:51, ethertype PPPoE S (0x8864), length 36: PPPoE  [ses 0x1] LCP (0xc021), length 16: LCP, Conf-Ack (0x02), id 1, length 16
+01:13:54.665295 dc:a6:32:b0:ab:b0 > 96:63:65:3c:53:51, ethertype PPPoE S (0x8864), length 30: PPPoE  [ses 0x1] LCP (0xc021), length 10: LCP, Echo-Request (0x09), id 0, length 10
+01:13:54.665765 dc:a6:32:b0:ab:b0 > 96:63:65:3c:53:51, ethertype PPPoE S (0x8864), length 32: PPPoE  [ses 0x1] IPCP (0x8021), length 12: IPCP, Conf-Request (0x01), id 1, length 12
+01:13:54.666417 96:63:65:3c:53:51 > dc:a6:32:b0:ab:b0, ethertype PPPoE S (0x8864), length 56: PPPoE  [ses 0x1] LCP (0xc021), length 10: LCP, Echo-Request (0x09), id 0, length 10
+01:13:54.666521 dc:a6:32:b0:ab:b0 > 96:63:65:3c:53:51, ethertype PPPoE S (0x8864), length 30: PPPoE  [ses 0x1] LCP (0xc021), length 10: LCP, Echo-Reply (0x0a), id 0, length 10
+01:13:54.666704 96:63:65:3c:53:51 > dc:a6:32:b0:ab:b0, ethertype PPPoE S (0x8864), length 56: PPPoE  [ses 0x1] IPCP (0x8021), length 12: IPCP, Conf-Request (0x01), id 1, length 12
+01:13:54.666785 dc:a6:32:b0:ab:b0 > 96:63:65:3c:53:51, ethertype PPPoE S (0x8864), length 32: PPPoE  [ses 0x1] IPCP (0x8021), length 12: IPCP, Conf-Nack (0x03), id 1, length 12
+01:13:54.667003 96:63:65:3c:53:51 > dc:a6:32:b0:ab:b0, ethertype PPPoE S (0x8864), length 56: PPPoE  [ses 0x1] LCP (0xc021), length 10: LCP, Echo-Reply (0x0a), id 0, length 10
+01:13:54.667424 96:63:65:3c:53:51 > dc:a6:32:b0:ab:b0, ethertype PPPoE S (0x8864), length 56: PPPoE  [ses 0x1] IPCP (0x8021), length 12: IPCP, Conf-Ack (0x02), id 1, length 12
+01:13:54.667664 96:63:65:3c:53:51 > dc:a6:32:b0:ab:b0, ethertype PPPoE S (0x8864), length 56: PPPoE  [ses 0x1] IPCP (0x8021), length 12: IPCP, Conf-Request (0x01), id 2, length 12
+01:13:54.667746 dc:a6:32:b0:ab:b0 > 96:63:65:3c:53:51, ethertype PPPoE S (0x8864), length 32: PPPoE  [ses 0x1] IPCP (0x8021), length 12: IPCP, Conf-Ack (0x02), id 2, length 12
+01:14:04.675428 dc:a6:32:b0:ab:b0 > 96:63:65:3c:53:51, ethertype PPPoE S (0x8864), length 30: PPPoE  [ses 0x1] LCP (0xc021), length 10: LCP, Echo-Request (0x09), id 1, length 10
+01:14:04.676678 96:63:65:3c:53:51 > dc:a6:32:b0:ab:b0, ethertype PPPoE S (0x8864), length 56: PPPoE  [ses 0x1] LCP (0xc021), length 10: LCP, Echo-Reply (0x0a), id 1, length 10
+
+23 packets captured
+25 packets received by filter
+0 packets dropped by kernel

@@ -1,0 +1,61 @@
+Image contains unit addresses @, this will break signing
+{
+  "target": "qualcommax/ipq60xx",
+  "version_code": "r37616+92-a31dd90f69",
+  "supported_devices": [
+    "jdcloud,re-cs-02"
+  ],
+  "images": [
+    {
+      "filesystem": "initramfs",
+      "name": "openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-initramfs-uImage.itb",
+      "sha256": "03f1d8ed58e55401cc3b3d0d157578b35ff44adcb39b87276a0a9424838fa247",
+      "sha256_unsigned": "03f1d8ed58e55401cc3b3d0d157578b35ff44adcb39b87276a0a9424838fa247",
+      "size": 18959608,
+      "type": "kernel"
+    },
+    {
+      "filesystem": "squashfs",
+      "name": "openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-squashfs-sysupgrade.bin",
+      "sha256": "49819d21e2205d5208f23f89c9278fae42d5c77177c49a20e295289aedad301f",
+      "sha256_unsigned": "49819d21e2205d5208f23f89c9278fae42d5c77177c49a20e295289aedad301f",
+      "size": 18032918,
+      "type": "sysupgrade",
+      "kernel_bytes": 5905568,
+      "rootfs_bytes": 12114944,
+      "kernel_partition_bytes": 6291456,
+      "archive_members": [
+        "sysupgrade-jdcloud_re-cs-02",
+        "sysupgrade-jdcloud_re-cs-02/CONTROL",
+        "sysupgrade-jdcloud_re-cs-02/kernel",
+        "sysupgrade-jdcloud_re-cs-02/root"
+      ]
+    }
+  ],
+  "checks": [
+    "metadata SHA256 and size",
+    "FIT board configuration",
+    "sysupgrade archive and 6 MiB kernel limit",
+    "required wireless package manifest",
+    "PPE/EDMA kernel configuration"
+  ],
+  "hardware_boot_tested": false
+}
+Traceback (most recent call last):
+  File "/home/ly/projects/openwrt-dev/bin/validate-nss-ethernet-kexec-extra.py", line 5, in <module>
+    listing=(r/"rootfs-file-list.txt").read_text();uns=t/"staging_dir/host/bin/unsquashfs4"
+  File "/usr/lib/python3.13/pathlib/_local.py", line 548, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/pathlib/_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/pathlib/_local.py", line 539, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/ly/projects/openwrt-dev/artifacts/nss-ethernet-kexec-20261025/rootfs-file-list.txt'
+Image contains unit addresses @, this will break signing
+openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-initramfs-uImage.itb 18959608 03f1d8ed58e55401cc3b3d0d157578b35ff44adcb39b87276a0a9424838fa247
+openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-squashfs-sysupgrade.bin 18032918 49819d21e2205d5208f23f89c9278fae42d5c77177c49a20e295289aedad301f
+Kernel headroom: 385888
+Offline checks passed; hardware boot and acceleration remain untested.

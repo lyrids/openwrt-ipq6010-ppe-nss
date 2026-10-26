@@ -1,0 +1,22 @@
+������
+U-Boot Telnet Console
+Version: U-Boot 2016.01-3011049 (2026-08-16 14:28:46 +0800)
+Ported from project: Yuzhii0718/bl-mt798x-dhcpd
+Author: Yuzhii0718
+
+IPQ6018# 
+>>> if tftpboot 0x50000000 openwrt/missing-test-file.itb; then echo UNEXPECTED_SUCCESS; else echo EXPECTED_EMMC_FALLBACK_BRANCH; fi
+
+httpd is running, skipping eth_init(). If this is not the case, run `httpd stop` first
+Using eth0 device
+TFTP from server 192.168.1.2; our IP address is 192.168.1.1
+Filename 'openwrt/missing-test-file.itb'.
+Load address: 0x50000000
+Loading: *
+TFTP error: 'File not found' (1)
+Not retrying...
+httpd is running, skipping eth_halt(). If this is not the case, run `httpd stop` first
+httpd is running, skipping eth_halt(). If this is not the case, run `httpd stop` first
+EXPECTED_EMMC_FALLBACK_BRANCH
+
+IPQ6018# 

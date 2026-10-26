@@ -1,0 +1,37 @@
+EEE settings for lan4:
+	EEE status: enabled - inactive
+	Tx LPI: 256 (us)
+	Supported EEE link modes:  100baseT/Full
+	                           1000baseT/Full
+	Advertised EEE link modes:  100baseT/Full
+	                            1000baseT/Full
+	Link partner advertised EEE link modes:  Not reported
+BEFORE
+60
+594.57 2332.37
+0
+60
+599.58 2352.17
+0
+62
+604.58 2371.99
+0
+62
+609.59 2391.81
+0
+62
+614.59 2411.59
+1
+65
+619.59 2431.42
+1
+65
+EEE settings for lan4:
+	EEE status: disabled
+	Tx LPI: 256 (us)
+	Supported EEE link modes:  100baseT/Full
+	                           1000baseT/Full
+	Advertised EEE link modes:  100baseT/Full
+	                            1000baseT/Full
+	Link partner advertised EEE link modes:  Not reported
+1792989151 dc:a6:32:b0:ab:b0 192.168.1.132 p43 ff:f8:ce:1b:a1:00:02:00:00:ab:11:fd:e6:d9:46:13:59:8a:b0

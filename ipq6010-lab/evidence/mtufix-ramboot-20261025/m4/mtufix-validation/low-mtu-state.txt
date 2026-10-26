@@ -1,0 +1,12 @@
+ethernet enabled 1 active 1 offers 4 pushed 2 rejected 0
+bound 0 pushed 2 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 17 v6 ethernet if 1/4 prio 0 installed 1 age 3640ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv6     10 udp      17 168 src=fd42:6018:100::63 dst=fd42:6018:1::60 sport=50817 dport=5242 packets=64 bytes=92672 src=fd42:6018:1::60 dst=fd42:6018:100::63 sport=5242 dport=50817 packets=1 bytes=132 [ASSURED] mark=0 use=1
+ipv6     10 udp      17 src=fd42:6018:100::63 dst=fd42:6018:1::60 sport=32847 dport=5242 packets=1 bytes=304 src=fd42:6018:1::60 dst=fd42:6018:100::63 sport=5242 dport=32847 packets=1 bytes=132 [HW_OFFLOAD] mark=0 use=2

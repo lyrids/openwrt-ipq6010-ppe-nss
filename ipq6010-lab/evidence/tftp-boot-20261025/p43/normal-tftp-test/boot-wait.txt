@@ -1,0 +1,7 @@
+ssh: connect to host 192.168.1.1 port 22: Connection refused
+ssh: connect to host 192.168.1.1 port 22: Connection refused
+ssh: connect to host 192.168.1.1 port 22: Connection timed out
+ssh: connect to host 192.168.1.1 port 22: Connection timed out
+ssh: connect to host 192.168.1.1 port 22: Connection timed out
+ssh: connect to host 192.168.1.1 port 22: Connection timed out
+Warning: Permanently added '192.168.1.1' (ED25519) to the list of known hosts.

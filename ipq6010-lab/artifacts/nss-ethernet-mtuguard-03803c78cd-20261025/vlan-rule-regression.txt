@@ -1,0 +1,2 @@
+PASS: VLAN100 on one side and VLAN100/VLAN200 routing do not require PPPoE
+PASS: two PPPoE sides remain rejected; existing PPPoE+VLAN100 session path preserved

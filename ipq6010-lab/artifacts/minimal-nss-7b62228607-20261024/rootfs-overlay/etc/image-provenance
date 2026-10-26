@@ -1,0 +1,8 @@
+Variant: JDCloud RE-CS-02 PPE/NSS minimal, iteration 1
+Source: JuliusBairaktaris/openwrt-ppe-nss ppe-nss
+Commit: 7b62228607e718d1317e5622264147772c59916c
+Firmware feed: 1f60d7e9409930bbd298eae1831c5b76d21eb1d2
+Local changes: guard missing stacked DSA tagger; install selected NSS firmware only
+NSS firmware: IPQ60xx CP 12.5 only; 11.4 not included
+Architecture: qca_edma/qca_ppe, nss-wifi-drv, patched ath11k; no ECM/vendor NSS driver
+Experimental: QCN9074 uplink performance unresolved

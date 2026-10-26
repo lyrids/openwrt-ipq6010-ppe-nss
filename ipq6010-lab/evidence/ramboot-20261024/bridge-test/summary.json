@@ -1,0 +1,11 @@
+{
+  "tcp_received_mbps": {
+    "forward": 940.9249717678758,
+    "reverse": 941.1155371229873
+  },
+  "router_mean_cpu_busy_percent": 0.4213831281500454,
+  "duration_note": "CPU sampled across both 15-second tests plus collection overhead",
+  "path": "p43 eth0 192.168.1.2 -> router lan1/PPE/lan4 -> m4 end0 192.168.1.186",
+  "interpretation": "Strong hardware bridge forwarding evidence: near gigabit TCP, physical egress ~1.85 GB each, CPU port RX increased only 10600 bytes and 51 packets, ~0.42% aggregate CPU busy. No new physical egress drops.",
+  "wifi": "PCIe AP started; client throughput not tested"
+}

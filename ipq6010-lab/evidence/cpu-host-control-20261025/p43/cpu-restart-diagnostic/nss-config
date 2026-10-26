@@ -1,0 +1,4 @@
+nss-wifi.general=general
+nss-wifi.general.offload='0'
+nss-wifi.general.firmware='12.5'
+nss-wifi.general.ethernet_offload='0'

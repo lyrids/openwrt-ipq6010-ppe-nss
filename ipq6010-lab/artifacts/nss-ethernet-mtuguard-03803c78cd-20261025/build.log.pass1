@@ -1,0 +1,1180 @@
+make[2]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/scripts/config'
+make[2]: 'conf' is up to date.
+make[2]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/scripts/config'
+make[1]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss'
+make[2]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss'
+make[2]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss'
+rm -rf /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax
+make[2]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss'
++ mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl
++ cd /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl
++ mkdir -p bin lib stamp usr/include usr/lib
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/stamp
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/.prepared
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/target/linux'
+make[4]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/target/linux/qualcommax'
+rm -f /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/localversion
+/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/scripts/kconfig.pl  + + /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/target/linux/generic/config-6.18 /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/target/linux/qualcommax/config-6.18 /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/target/linux/qualcommax/ipq60xx/config-default > /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/.config.target
+awk '/^(#[[:space:]]+)?CONFIG_KERNEL/{sub("CONFIG_KERNEL_","CONFIG_");print}' /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/.config >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/.config.target
+echo "# CONFIG_KALLSYMS_ALL is not set" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/.config.target
+echo "CONFIG_KALLSYMS_UNCOMPRESSED=y" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/.config.target
+/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/scripts/package-metadata.pl kconfig /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.packageinfo /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/.config 6.18 > /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/.config.override
+/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/scripts/kconfig.pl 'm+' '+' /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/.config.target /dev/null /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/.config.override > /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/.config.set
+mv /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/.config.set /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/.config.old
+grep -v INITRAMFS /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/.config.old > /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/.config.set
+echo 'CONFIG_INITRAMFS_SOURCE=""' >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/.config.set
+echo '# CONFIG_INITRAMFS_FORCE is not set' >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/.config.set
+echo "# CONFIG_INITRAMFS_PRESERVE_MTIME is not set" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/.config.set
+rm -rf /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/modules
+cmp -s /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/.config.set /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/.config.prev || { cp /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/.config.set /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/.config; cp /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/.config.set /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/.config.prev; }
+export MAKEFLAGS= ; [ -d /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/user_headers ] || make -C /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55 KCFLAGS="-fmacro-prefix-map=/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl=target-aarch64_cortex-a53_musl -fmacro-prefix-map=/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl=staging_dir/target-aarch64_cortex-a53_musl -fmacro-prefix-map=/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.4.0_musl=staging_dir/toolchain-aarch64_cortex-a53_gcc-14.4.0_musl -fno-caller-saves " KAFLAGS="-fmacro-prefix-map=/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl=target-aarch64_cortex-a53_musl -fmacro-prefix-map=/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl=staging_dir/target-aarch64_cortex-a53_musl -fmacro-prefix-map=/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.4.0_musl=staging_dir/toolchain-aarch64_cortex-a53_gcc-14.4.0_musl" HOSTCFLAGS="-O2 -I/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/host/include -Wall -Wmissing-prototypes -Wstrict-prototypes" CROSS_COMPILE="aarch64-openwrt-linux-musl-" ARCH="arm64" KBUILD_HAVE_NLS=no KBUILD_BUILD_USER="" KBUILD_BUILD_HOST="" KBUILD_BUILD_TIMESTAMP="Sat Oct 24 14:35:47 2026" KBUILD_BUILD_VERSION="0" KBUILD_HOSTLDFLAGS="-L/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/host/lib" CONFIG_SHELL="bash" V=''  cmd_syscalls=  CC="ccache aarch64-openwrt-linux-musl-gcc" KERNELRELEASE=6.18.55  INSTALL_HDR_PATH=/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/user_headers headers_install
+grep '=[ym]' /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/.config.set | LC_ALL=C sort | /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/host/bin/mkhash md5 > /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/.vermagic
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/.configured
+{ stamp=/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/.kbuild_modules; key="$(printf '%s' 'make -C /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55 KCFLAGS="-fmacro-prefix-map=/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl=target-aarch64_cortex-a53_musl -fmacro-prefix-map=/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl=staging_dir/target-aarch64_cortex-a53_musl -fmacro-prefix-map=/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.4.0_musl=staging_dir/toolchain-aarch64_cortex-a53_gcc-14.4.0_musl -fno-caller-saves " KAFLAGS="-fmacro-prefix-map=/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl=target-aarch64_cortex-a53_musl -fmacro-prefix-map=/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl=staging_dir/target-aarch64_cortex-a53_musl -fmacro-prefix-map=/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.4.0_musl=staging_dir/toolchain-aarch64_cortex-a53_gcc-14.4.0_musl" HOSTCFLAGS="-O2 -I/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/host/include -Wall -Wmissing-prototypes -Wstrict-prototypes" CROSS_COMPILE="aarch64-openwrt-linux-musl-" ARCH="arm64" KBUILD_HAVE_NLS=no KBUILD_BUILD_USER="" KBUILD_BUILD_HOST="" KBUILD_BUILD_TIMESTAMP="Sat Oct 24 14:35:47 2026" KBUILD_BUILD_VERSION="0" KBUILD_HOSTLDFLAGS="-L/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/host/lib" CONFIG_SHELL="bash" V='\'''\''  cmd_syscalls=  CC="ccache aarch64-openwrt-linux-musl-gcc" KERNELRELEASE=6.18.55 Image modules' | /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/host/bin/mkhash md5)"; [ "$(cat $stamp 2>/dev/null)" = "$key" ] && [ -z "$(find /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55 /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.4.0_musl/bin  \( -path '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/.*' ! -path '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/.config' \) -prune -o ! -type d -newer $stamp -print -quit)" ] || { rm -f $stamp;  rm -f /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/vmlinux /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/System.map; make -C /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55 KCFLAGS="-fmacro-prefix-map=/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl=target-aarch64_cortex-a53_musl -fmacro-prefix-map=/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl=staging_dir/target-aarch64_cortex-a53_musl -fmacro-prefix-map=/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.4.0_musl=staging_dir/toolchain-aarch64_cortex-a53_gcc-14.4.0_musl -fno-caller-saves " KAFLAGS="-fmacro-prefix-map=/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl=target-aarch64_cortex-a53_musl -fmacro-prefix-map=/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl=staging_dir/target-aarch64_cortex-a53_musl -fmacro-prefix-map=/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.4.0_musl=staging_dir/toolchain-aarch64_cortex-a53_gcc-14.4.0_musl" HOSTCFLAGS="-O2 -I/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/host/include -Wall -Wmissing-prototypes -Wstrict-prototypes" CROSS_COMPILE="aarch64-openwrt-linux-musl-" ARCH="arm64" KBUILD_HAVE_NLS=no KBUILD_BUILD_USER="" KBUILD_BUILD_HOST="" KBUILD_BUILD_TIMESTAMP="Sat Oct 24 14:35:47 2026" KBUILD_BUILD_VERSION="0" KBUILD_HOSTLDFLAGS="-L/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/host/lib" CONFIG_SHELL="bash" V=''  cmd_syscalls=  CC="ccache aarch64-openwrt-linux-musl-gcc" KERNELRELEASE=6.18.55 Image modules && echo "$key" > $stamp; }; }
+make[5]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55'
+  SYNC    include/config/auto.conf
+  GEN     usr/initramfs_data.cpio
+  COPY    usr/initramfs_inc_data
+  AS      usr/initramfs_data.o
+  AR      usr/built-in.a
+  CC      lib/decompress.o
+  AR      lib/lib.a
+  AR      built-in.a
+  AR      vmlinux.a
+  LD      vmlinux.o
+  MODPOST Module.symvers
+WARNING: modpost: missing MODULE_DESCRIPTION() in fs/mbcache.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in fs/ext4/ext4.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in fs/jbd2/jbd2.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in crypto/geniv.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in crypto/seqiv.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in crypto/cmac.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in crypto/hmac.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in crypto/sha512.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in crypto/sha3_generic.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in crypto/michael_mic.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in crypto/crc32c-cryptoapi.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in crypto/drbg.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in crypto/jitterentropy_rng.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in lib/crc/crc-ccitt.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in lib/crypto/libsha512.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in drivers/bus/mhi/host/mhi.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in drivers/leds/leds-gpio.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in drivers/net/ppp/ppp_generic.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in drivers/net/ppp/ppp_async.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in drivers/net/ppp/pppox.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in drivers/net/ppp/pppoe.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in drivers/net/slip/slhc.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in drivers/usb/host/xhci-hcd.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in drivers/usb/host/xhci-pci.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in drivers/usb/host/xhci-plat-hcd.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in drivers/usb/dwc3/dwc3.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in drivers/usb/dwc3/dwc3-qcom.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in drivers/usb/dwc3/dwc3-qcom-legacy.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in drivers/usb/roles/roles.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in net/netfilter/nfnetlink.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in net/netfilter/nf_conntrack.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in net/netfilter/nf_conntrack_netlink.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in net/netfilter/nf_log_syslog.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in net/netfilter/nf_nat.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in net/netfilter/nf_tables.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in net/netfilter/nft_numgen.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in net/netfilter/nft_ct.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in net/netfilter/nft_flow_offload.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in net/netfilter/nft_limit.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in net/netfilter/nft_nat.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in net/netfilter/nft_quota.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in net/netfilter/nft_reject.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in net/netfilter/nft_reject_inet.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in net/netfilter/nft_log.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in net/netfilter/nft_masq.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in net/netfilter/nft_redir.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in net/netfilter/nft_hash.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in net/netfilter/nft_fib.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in net/netfilter/nft_fib_inet.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in net/netfilter/nft_chain_nat.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in net/netfilter/nf_flow_table.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in net/netfilter/nf_flow_table_inet.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in net/ipv4/netfilter/nf_defrag_ipv4.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in net/ipv4/netfilter/nf_reject_ipv4.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in net/ipv4/netfilter/nft_reject_ipv4.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in net/ipv4/netfilter/nft_fib_ipv4.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in net/ipv6/netfilter/nf_defrag_ipv6.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in net/ipv6/netfilter/nf_reject_ipv6.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in net/ipv6/netfilter/nft_reject_ipv6.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in net/ipv6/netfilter/nft_fib_ipv6.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in net/bridge/netfilter/nft_meta_bridge.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in net/bridge/netfilter/nft_reject_bridge.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in net/bridge/netfilter/nf_conntrack_bridge.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in net/qrtr/qrtr.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in net/qrtr/qrtr-smd.o
+WARNING: modpost: missing MODULE_DESCRIPTION() in net/qrtr/qrtr-mhi.o
+  GEN     modules.builtin.modinfo
+  KSYMS   .tmp_vmlinux0.kallsyms.S
+  AS      .tmp_vmlinux0.kallsyms.o
+  GEN     modules.builtin
+  LD      .tmp_vmlinux1
+  NM      .tmp_vmlinux1.syms
+  KSYMS   .tmp_vmlinux1.kallsyms.S
+  AS      .tmp_vmlinux1.kallsyms.o
+  LD      .tmp_vmlinux2
+  NM      .tmp_vmlinux2.syms
+  KSYMS   .tmp_vmlinux2.kallsyms.S
+  AS      .tmp_vmlinux2.kallsyms.o
+  LD      vmlinux.unstripped
+  NM      System.map
+  SORTTAB vmlinux.unstripped
+  OBJCOPY vmlinux
+  OBJCOPY arch/arm64/boot/Image
+make[5]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55'
+# If .config did not change, use the previous timestamp to avoid package rebuilds
+cmp -s /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/.config /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/.config.modules.save && mv /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/.config.modules.save /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/.config; cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/.config /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/.config.modules.save
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/.modules
+make -C image compile TARGET_BUILD=
+make[5]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/target/linux/qualcommax/image'
+make[5]: Nothing to be done for 'compile'.
+make[5]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/target/linux/qualcommax/image'
+make[4]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/target/linux/qualcommax'
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/target/linux'
+time: target/linux/compile#4.14#1.35#3.07
+make[2]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss'
+export MAKEFLAGS= ;make -w -r buildinfo
+make[2]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss'
+make[2]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss'
+ make[3] diffconfig buildversion feedsversion
+make[2]: Circular package/firmware/linux-firmware/compile <- package/kernel/linux/compile dependency dropped.
+make[2]: Circular package/system/procd/compile <- package/system/fstools/compile dependency dropped.
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/system/fwtool'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/system/usign'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/utils/lua'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/ncurses'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/libjson-c'
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/system/fwtool'
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/utils/lua'
+time: package/system/fwtool/host-compile#0.01#0.00#0.02
+time: package/utils/lua/host-compile#0.01#0.00#0.03
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/libjson-c'
+time: package/libs/libjson-c/host-compile#0.01#0.01#0.02
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/system/usign'
+time: package/system/usign/host-compile#0.01#0.00#0.02
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/libubox'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/system/apk'
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/ncurses'
+time: package/libs/ncurses/host-compile#0.02#0.01#0.04
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/system/apk'
+time: package/system/apk/host-compile#0.01#0.00#0.02
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/libubox'
+time: package/libs/libubox/host-compile#0.01#0.00#0.03
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/kernel/gpio-button-hotplug'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/system/ucert'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/toolchain'
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/system/ucert'
+time: package/system/ucert/host-compile#0.01#0.00#0.02
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/gpio-button-hotplug/.pkgdir/kmod-gpio-button-hotplug/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-gpio-button-hotplug_installed
+echo "kmod-gpio-button-hotplug" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/gpio-button-hotplug.default.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/kernel/gpio-button-hotplug'
+time: package/kernel/gpio-button-hotplug/compile#0.03#0.00#0.04
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+echo '1' | cmp -s - /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libgcc.version || { mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo; echo '1' > /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libgcc.version;  cp /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libgcc.version /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libgcc-any.version;  } 
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/toolchain/.pkgdir/libgcc/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.libgcc_installed
+echo "libgcc" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/toolchain.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/toolchain/.pkgdir/libc/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.libc_installed
+echo "libc" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/toolchain.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+echo '1' | cmp -s - /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libatomic.version || { mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo; echo '1' > /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libatomic.version;  cp /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libatomic.version /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libatomic-any.version;  } 
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/toolchain/.pkgdir/libatomic/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.libatomic_installed
+echo "libatomic" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/toolchain.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/toolchain/.pkgdir/libpthread/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.libpthread_installed
+echo "libpthread" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/toolchain.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/toolchain/.pkgdir/librt/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.librt_installed
+echo "librt" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/toolchain.default.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/toolchain'
+time: package/libs/toolchain/compile#0.05#0.02#0.08
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/libnl-tiny'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/utils/lua'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/libffi'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/libjson-c'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/libmd'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/zlib'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/firmware/linux-firmware'
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/utils/lua'
+time: package/utils/lua/compile#0.02#0.01#0.03
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/libmd'
+time: package/libs/libmd/compile#0.01#0.02#0.03
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+echo '1' | cmp -s - /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libnl-tiny.version || { mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo; echo '1' > /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libnl-tiny.version;  cp /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libnl-tiny.version /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libnl-tiny-any.version;  } 
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/libnl-tiny-2025.12.02~40493a65/.pkgdir/libnl-tiny/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/libsepol'
+echo '5' | cmp -s - /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libjson-c.version || { mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo; echo '5' > /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libjson-c.version;  cp /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libjson-c.version /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libjson-c-any.version;  } 
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/zlib-2.3.3/.pkgdir/zlib/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.libnl-tiny_installed
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/musl-fts'
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/json-c-0.19/.pkgdir/libjson-c/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+echo "libnl-tiny" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libnl-tiny.default.install
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.zlib_installed
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/libnl-tiny'
+time: package/libs/libnl-tiny/compile#0.02#0.02#0.05
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.libjson-c_installed
+echo "zlib" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/zlib.default.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/zlib'
+time: package/libs/zlib/compile#0.02#0.02#0.05
+echo "libjson-c" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libjson-c.default.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/libjson-c'
+time: package/libs/libjson-c/compile#0.02#0.03#0.05
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/system/fwtool'
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/libffi'
+time: package/libs/libffi/compile#0.03#0.01#0.05
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/system/openwrt-keyring'
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-firmware-20260916/.pkgdir/ath11k-firmware-qcn9074/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.ath11k-firmware-qcn9074_installed
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/feeds/nss/nss-firmware'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/libmnl'
+echo "ath11k-firmware-qcn9074" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux-firmware.default.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/firmware/linux-firmware'
+time: package/firmware/linux-firmware/compile#0.02#0.03#0.06
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/libnfnetlink'
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/fwtool-2025.10.03~04cd252e/.pkgdir/fwtool/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/libsepol'
+time: package/libs/libsepol/compile#0.03#0.02#0.05
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.fwtool_installed
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/musl-fts'
+time: package/libs/musl-fts/compile#0.03#0.02#0.05
+echo "fwtool" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/fwtool.default.install
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/openwrt-keyring-2025.12.10~f0670054/.pkgdir/openwrt-keyring/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/system/fwtool'
+time: package/system/fwtool/compile#0.02#0.01#0.04
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.openwrt-keyring_installed
+echo '0' | cmp -s - /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libmnl.version || { mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo; echo '0' > /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libmnl.version;  cp /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libmnl.version /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libmnl-any.version;  } 
+echo "openwrt-keyring" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/openwrt-keyring.default.install
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/firmware/ath11k-firmware'
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/libmnl-1.0.5/.pkgdir/libmnl/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/feeds/packages/libs/libtirpc'
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/system/openwrt-keyring'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.libmnl_installed
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/openssl'
+Package/openssl/add-module 1='provider'; 2='legacy'; 3='/usr/lib/ossl-modules' 4=''
+MOD_TYPE='provider'; MOD_NAME='legacy'; MOD_DIR='/usr/lib/ossl-modules' OSSL_PKG='libopenssl-legacy'
+Package/openssl/add-module 1='engine'; 2='afalg'; 3='/usr/lib/engines-3' 4=''
+MOD_TYPE='engine'; MOD_NAME='afalg'; MOD_DIR='/usr/lib/engines-3' OSSL_PKG='libopenssl-afalg'
+Package/openssl/add-module 1='engine'; 2='devcrypto'; 3='/usr/lib/engines-3' 4=''
+MOD_TYPE='engine'; MOD_NAME='devcrypto'; MOD_DIR='/usr/lib/engines-3' OSSL_PKG='libopenssl-devcrypto'
+Package/openssl/add-module 1='engine'; 2='padlock'; 3='/usr/lib/engines-3' 4=''
+MOD_TYPE='engine'; MOD_NAME='padlock'; MOD_DIR='/usr/lib/engines-3' OSSL_PKG='libopenssl-padlock'
+time: package/system/openwrt-keyring/compile#0.02#0.02#0.05
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/nss-firmware-2025.05.01/.pkgdir/nss-firmware-ipq60xx/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+echo "libmnl" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libmnl.default.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/libmnl'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.nss-firmware-ipq60xx_installed
+time: package/libs/libmnl/compile#0.03#0.01#0.05
+echo "nss-firmware-ipq60xx" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/nss-firmware.default.install
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/firmware/ipq-wifi'
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+echo '0' | cmp -s - /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libnfnetlink.version || { mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo; echo '0' > /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libnfnetlink.version;  cp /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libnfnetlink.version /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libnfnetlink-any.version;  } 
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/nss-firmware-2025.05.01/.pkgdir/nss-firmware/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/libnfnetlink-1.0.2/.pkgdir/libnfnetlink/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/firmware/wireless-regdb'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.nss-firmware_installed
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.libnfnetlink_installed
+echo "nss-firmware" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/nss-firmware.default.install
+echo "libnfnetlink" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libnfnetlink.default.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/feeds/nss/nss-firmware'
+time: package/feeds/nss/nss-firmware/compile#0.03#0.02#0.06
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/libnfnetlink'
+time: package/libs/libnfnetlink/compile#0.02#0.01#0.05
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/network/utils/iw'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/utils/bzip2'
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/ath11k-firmware-2024.10.14~15f05012/.pkgdir/ath11k-firmware-ipq6018/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.ath11k-firmware-ipq6018_installed
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/feeds/packages/libs/libtirpc'
+time: package/feeds/packages/libtirpc/compile#0.02#0.02#0.05
+echo "ath11k-firmware-ipq6018" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/ath11k-firmware.default.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/firmware/ath11k-firmware'
+time: package/firmware/ath11k-firmware/compile#0.02#0.02#0.05
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/wireless-regdb-2026.09.03/.pkgdir/wireless-regdb/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/ipq-wifi-2026.10.18~0f8eb5d7/.pkgdir/ipq-wifi-jdcloud_re-cs-02/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.wireless-regdb_installed
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/argp-standalone'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.ipq-wifi-jdcloud_re-cs-02_installed
+echo "wireless-regdb" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/wireless-regdb.default.install
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/jansson'
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/firmware/wireless-regdb'
+time: package/firmware/wireless-regdb/compile#0.03#0.01#0.05
+echo "ipq-wifi-jdcloud_re-cs-02" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/ipq-wifi.default.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/firmware/ipq-wifi'
+time: package/firmware/ipq-wifi/compile#0.03#0.01#0.06
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/iw-tiny/iw-6.17/.pkgdir/iw/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.iw_installed
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+echo "iw" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/iw.tiny.install
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/libnftnl'
+echo '3' | cmp -s - /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libopenssl.version || { mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo; echo '3' > /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libopenssl.version;  cp /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libopenssl.version /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libopenssl-any.version;  } 
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/libpcap'
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/openssl-3.5.9/.pkgdir/libopenssl/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/network/utils/iw'
+time: package/network/utils/iw/tiny/compile#0.03#0.01#0.05
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.libopenssl_installed
+echo "libopenssl" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/openssl.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/utils/bzip2'
+time: package/utils/bzip2/compile#0.03#0.01#0.05
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/openssl-3.5.9/.pkgdir/libopenssl-conf/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/mbedtls'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.libopenssl-conf_installed
+echo "libopenssl-conf" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/openssl.default.install
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/network/services/dropbear'
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/openssl-3.5.9/.pkgdir/libopenssl-legacy/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.libopenssl-legacy_installed
+echo "libopenssl-legacy" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/openssl.default.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/openssl'
+time: package/libs/openssl/compile#0.04#0.04#0.09
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+echo '4' | cmp -s - /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/jansson.version || { mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo; echo '4' > /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/jansson.version;  cp /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/jansson.version /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/jansson-any.version;  } 
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/network/utils/resolveip'
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/jansson-2.15.1/.pkgdir/jansson/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.jansson_installed
+echo "jansson" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/jansson.default.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/argp-standalone'
+time: package/libs/argp-standalone/compile#0.03#0.02#0.05
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/jansson'
+time: package/libs/jansson/compile#0.02#0.02#0.05
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+echo '1' | cmp -s - /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libpcap.version || { mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo; echo '1' > /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libpcap.version;  cp /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libpcap.version /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libpcap-any.version;  } 
+echo '11' | cmp -s - /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libnftnl.version || { mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo; echo '11' > /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libnftnl.version;  cp /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libnftnl.version /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libnftnl-any.version;  } 
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/libpcap-1.10.7/.pkgdir/libpcap/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/libnftnl-1.3.2/.pkgdir/libnftnl/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.libpcap_installed
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.libnftnl_installed
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/network/utils/resolveip'
+echo "libpcap" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libpcap.default.install
+time: package/network/utils/resolveip/compile#0.00#0.00#0.02
+echo "libnftnl" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libnftnl.default.install
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/network/utils/ethtool'
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/libpcap'
+time: package/libs/libpcap/compile#0.02#0.02#0.05
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/libnftnl'
+time: package/libs/libnftnl/compile#0.03#0.01#0.05
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/system/ca-certificates'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/libubox'
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+echo '21' | cmp -s - /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libmbedtls.version || { mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo; echo '21' > /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libmbedtls.version;  cp /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libmbedtls.version /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libmbedtls-any.version;  } 
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/utils/ppe-help'
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/mbedtls-3.6.7/.pkgdir/libmbedtls/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/pcre2'
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.libmbedtls_installed
+echo "libmbedtls" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/mbedtls.default.install
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/dropbear-2026.94/.pkgdir/dropbear/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/mbedtls'
+time: package/libs/mbedtls/compile#0.02#0.02#0.05
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.dropbear_installed
+echo "dropbear" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/dropbear.default.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/network/services/dropbear'
+time: package/network/services/dropbear/compile#0.03#0.02#0.05
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/ncurses'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/feeds/packages/libs/libnetfilter-cthelper'
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/ca-certificates-20260816/.pkgdir/ca-bundle/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/ethtool-full/ethtool-7.1/.pkgdir/ethtool-full/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.ca-bundle_installed
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.ethtool-full_installed
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/pcre2'
+time: package/libs/pcre2/compile#0.02#0.01#0.04
+echo "ca-bundle" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/ca-certificates.default.install
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/ppe-help-1/.pkgdir/ppe-help/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+echo "ethtool-full" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/ethtool.full.install
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.ppe-help_installed
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/system/ca-certificates'
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/network/utils/ethtool'
+time: package/system/ca-certificates/compile#0.02#0.02#0.05
+time: package/network/utils/ethtool/full/compile#0.02#0.02#0.05
+echo "ppe-help" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/ppe-help.default.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/utils/ppe-help'
+time: package/utils/ppe-help/compile#0.02#0.02#0.04
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/feeds/packages/libs/libnetfilter-cttimeout'
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/feeds/packages/libs/libnetfilter-queue'
+echo '20260721' | cmp -s - /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libubox.version || { mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo; echo '20260721' > /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libubox.version;  cp /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libubox.version /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libubox-any.version;  } 
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/feeds/packages/net/iperf3'
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/libubox-2026.07.21~e7608b69/.pkgdir/libubox/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/elfutils'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.libubox_installed
+echo "libubox" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libubox.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+echo '20260721' | cmp -s - /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libblobmsg-json.version || { mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo; echo '20260721' > /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libblobmsg-json.version;  cp /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libblobmsg-json.version /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libblobmsg-json-any.version;  } 
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/libubox-2026.07.21~e7608b69/.pkgdir/libblobmsg-json/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.libblobmsg-json_installed
+echo "libblobmsg-json" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libubox.default.install
+echo '0' | cmp -s - /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libnetfilter-cthelper.version || { mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo; echo '0' > /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libnetfilter-cthelper.version;  cp /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libnetfilter-cthelper.version /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libnetfilter-cthelper-any.version;  } 
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/libnetfilter_cthelper-1.0.0/.pkgdir/libnetfilter-cthelper/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/libubox-2026.07.21~e7608b69/.pkgdir/jshn/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.libnetfilter-cthelper_installed
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.jshn_installed
+echo "libnetfilter-cthelper" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libnetfilter-cthelper.default.install
+echo "jshn" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libubox.default.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/feeds/packages/libs/libnetfilter-cthelper'
+time: package/feeds/packages/libnetfilter-cthelper/compile#0.03#0.02#0.05
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+echo '20260721' | cmp -s - /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libjson-script.version || { mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo; echo '20260721' > /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libjson-script.version;  cp /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libjson-script.version /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libjson-script-any.version;  } 
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/libubox-2026.07.21~e7608b69/.pkgdir/libjson-script/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/ncurses'
+time: package/libs/ncurses/compile#0.03#0.02#0.06
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.libjson-script_installed
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/network/utils/tcpdump'
+echo "libjson-script" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libubox.default.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/libubox'
+time: package/libs/libubox/compile#0.03#0.04#0.08
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+echo '1' | cmp -s - /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libnetfilter-cttimeout.version || { mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo; echo '1' > /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libnetfilter-cttimeout.version;  cp /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libnetfilter-cttimeout.version /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libnetfilter-cttimeout-any.version;  } 
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/libselinux'
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/libnetfilter_cttimeout-1.0.0/.pkgdir/libnetfilter-cttimeout/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.libnetfilter-cttimeout_installed
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/utils/util-linux'
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+echo "libnetfilter-cttimeout" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libnetfilter-cttimeout.default.install
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/iperf-nossl/iperf-3.22/.pkgdir/iperf3/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+echo '1' | cmp -s - /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libnetfilter-queue.version || { mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo; echo '1' > /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libnetfilter-queue.version;  cp /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libnetfilter-queue.version /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libnetfilter-queue-any.version;  } 
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.iperf3_installed
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/feeds/packages/libs/libnetfilter-cttimeout'
+time: package/feeds/packages/libnetfilter-cttimeout/compile#0.02#0.02#0.05
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/libnetfilter_queue-1.0.5/.pkgdir/libnetfilter-queue/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+echo "iperf3" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/iperf3.nossl.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.libnetfilter-queue_installed
+echo '1' | cmp -s - /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libelf.version || { mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo; echo '1' > /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libelf.version;  cp /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libelf.version /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libelf-any.version;  } 
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/iperf-nossl/iperf-3.22/.pkgdir/libiperf3/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+echo "libnetfilter-queue" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libnetfilter-queue.default.install
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/elfutils-0.196/.pkgdir/libelf/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/utils/jsonfilter'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.libiperf3_installed
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/feeds/packages/libs/libnetfilter-queue'
+time: package/feeds/packages/libnetfilter-queue/compile#0.03#0.02#0.05
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.libelf_installed
+echo "libiperf3" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/iperf3.nossl.install
+echo "libelf" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/elfutils.default.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/feeds/packages/net/iperf3'
+time: package/feeds/packages/iperf3/nossl/compile#0.02#0.03#0.06
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/elfutils'
+time: package/libs/elfutils/compile#0.02#0.02#0.06
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/system/usign'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/ustream-ssl'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/system/mtd'
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/tcpdump-full/tcpdump-4.99.7/.pkgdir/tcpdump/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.tcpdump_installed
+echo "tcpdump" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/tcpdump.full.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/network/utils/tcpdump'
+time: package/network/utils/tcpdump/full/compile#0.02#0.02#0.05
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/system/urngd'
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/libselinux'
+time: package/libs/libselinux/compile#0.03#0.02#0.05
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/system/ubus'
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+echo '1' | cmp -s - /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libuuid.version || { mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo; echo '1' > /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libuuid.version;  cp /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libuuid.version /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libuuid-any.version;  } 
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/util-linux-2.42.2/.pkgdir/libuuid/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/jsonfilter-2026.03.16~b9034210/.pkgdir/jsonfilter/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.libuuid_installed
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/usign-2025.10.03~c4c72b1b/.pkgdir/usign/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+echo "libuuid" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/util-linux.default.install
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.jsonfilter_installed
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.usign_installed
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+echo "jsonfilter" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/jsonfilter.default.install
+echo "usign" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/usign.default.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/utils/jsonfilter'
+time: package/utils/jsonfilter/compile#0.01#0.03#0.06
+echo '1' | cmp -s - /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libblkid.version || { mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo; echo '1' > /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libblkid.version;  cp /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libblkid.version /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libblkid-any.version;  } 
+echo '20201210' | cmp -s - /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libustream-mbedtls.version || { mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo; echo '20201210' > /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libustream-mbedtls.version;  cp /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libustream-mbedtls.version /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libustream-mbedtls-any.version;  } 
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/system/usign'
+time: package/system/usign/compile#0.02#0.02#0.05
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/util-linux-2.42.2/.pkgdir/libblkid/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/ustream-ssl-mbedtls/ustream-ssl-2026.03.01~99f1c0db/.pkgdir/libustream-mbedtls/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.libblkid_installed
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.libustream-mbedtls_installed
+echo "libblkid" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/util-linux.default.install
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/system/uci'
+echo "libustream-mbedtls" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/ustream-ssl.mbedtls.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/ustream-ssl'
+time: package/libs/ustream-ssl/mbedtls/compile#0.02#0.02#0.05
+echo '1' | cmp -s - /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libsmartcols.version || { mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo; echo '1' > /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libsmartcols.version;  cp /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libsmartcols.version /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libsmartcols-any.version;  } 
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/utils/busybox'
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/util-linux-2.42.2/.pkgdir/libsmartcols/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.libsmartcols_installed
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/mtd/.pkgdir/mtd/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+echo "libsmartcols" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/util-linux.default.install
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.mtd_installed
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/libbpf'
+echo "mtd" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/mtd.default.install
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/util-linux-2.42.2/.pkgdir/losetup/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/system/mtd'
+time: package/system/mtd/compile#0.03#0.02#0.06
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.losetup_installed
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/urngd-2025.10.03~f17e33d9/.pkgdir/urngd/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+echo "losetup" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/util-linux.default.install
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.urngd_installed
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/utils/util-linux'
+time: package/utils/util-linux/compile#0.04#0.04#0.09
+echo "urngd" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/urngd.default.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/system/urngd'
+time: package/system/urngd/compile#0.03#0.01#0.05
+make[2]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/utils/mtd-utils'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/utils/e2fsprogs'
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+echo '20260925' | cmp -s - /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libubus.version || { mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo; echo '20260925' > /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libubus.version;  cp /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libubus.version /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libubus-any.version;  } 
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/ubus-2026.09.25~414c60a2/.pkgdir/libubus/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.libubus_installed
+echo "libubus" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/ubus.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/ubus-2026.09.25~414c60a2/.pkgdir/ubus/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.ubus_installed
+echo '20250120' | cmp -s - /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libuci.version || { mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo; echo '20250120' > /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libuci.version;  cp /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libuci.version /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libuci-any.version;  } 
+echo "ubus" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/ubus.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/uci-2025.12.02~66127cd7/.pkgdir/libuci/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.libuci_installed
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/ubus-2026.09.25~414c60a2/.pkgdir/ubusd/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+echo "libuci" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/uci.default.install
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.ubusd_installed
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+echo "ubusd" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/ubus.default.install
+echo '1' | cmp -s - /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libbpf.version || { mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo; echo '1' > /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libbpf.version;  cp /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libbpf.version /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libbpf-any.version;  } 
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/system/ubus'
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/uci-2025.12.02~66127cd7/.pkgdir/uci/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+time: package/system/ubus/compile#0.03#0.02#0.07
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/libbpf-1.8.0/.pkgdir/libbpf/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.uci_installed
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.libbpf_installed
+echo "uci" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/uci.default.install
+echo "libbpf" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libbpf.default.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/system/uci'
+time: package/system/uci/compile#0.03#0.02#0.05
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/network/ipv6/odhcp6c'
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/libbpf'
+time: package/libs/libbpf/compile#0.02#0.01#0.05
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/busybox-default/busybox-1.38.0/.pkgdir/busybox/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/network/services/dnsmasq'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/utils/ucode'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/network/services/odhcpd'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.busybox_installed
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+echo "busybox" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/busybox.default.install
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/mtd-utils-2.3.1/.pkgdir/ubi-utils/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/utils/busybox'
+time: package/utils/busybox/default/compile#0.03#0.02#0.06
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.ubi-utils_installed
+echo "ubi-utils" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/mtd-utils.default.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/utils/mtd-utils'
+time: package/utils/mtd-utils/compile#0.02#0.01#0.04
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+echo '0' | cmp -s - /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libcomerr.version || { mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo; echo '0' > /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libcomerr.version;  cp /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libcomerr.version /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libcomerr-any.version;  } 
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/e2fsprogs-1.47.4/.pkgdir/libcomerr/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.libcomerr_installed
+echo "libcomerr" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/e2fsprogs.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+echo '2' | cmp -s - /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libss.version || { mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo; echo '2' > /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libss.version;  cp /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libss.version /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libss-any.version;  } 
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/e2fsprogs-1.47.4/.pkgdir/libss/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.libss_installed
+echo "libss" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/e2fsprogs.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/odhcp6c-2026.06.27~10a52220/.pkgdir/odhcp6c/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/dnsmasq-nodhcpv6/dnsmasq-2.93/.pkgdir/dnsmasq/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+echo '2' | cmp -s - /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libext2fs.version || { mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo; echo '2' > /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libext2fs.version;  cp /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libext2fs.version /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libext2fs-any.version;  } 
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.odhcp6c_installed
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/e2fsprogs-1.47.4/.pkgdir/libext2fs/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.dnsmasq_installed
+echo "odhcp6c" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/odhcp6c.default.install
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.libext2fs_installed
+echo "dnsmasq" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/dnsmasq.nodhcpv6.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/network/ipv6/odhcp6c'
+time: package/network/ipv6/odhcp6c/compile#0.02#0.01#0.04
+echo "libext2fs" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/e2fsprogs.default.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/network/services/dnsmasq'
+time: package/network/services/dnsmasq/nodhcpv6/compile#0.02#0.02#0.04
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+echo '2' | cmp -s - /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libe2p.version || { mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo; echo '2' > /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libe2p.version;  cp /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libe2p.version /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libe2p-any.version;  } 
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/e2fsprogs-1.47.4/.pkgdir/libe2p/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/odhcpd-ipv6only/odhcpd-2026.06.28~68f38269/.pkgdir/odhcpd-ipv6only/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.libe2p_installed
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.odhcpd-ipv6only_installed
+echo "libe2p" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/e2fsprogs.default.install
+echo "odhcpd-ipv6only" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/odhcpd.ipv6only.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/network/services/odhcpd'
+time: package/network/services/odhcpd/ipv6only/compile#0.02#0.01#0.05
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/e2fsprogs-1.47.4/.pkgdir/e2fsprogs/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.e2fsprogs_installed
+echo "e2fsprogs" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/e2fsprogs.default.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/utils/e2fsprogs'
+time: package/utils/e2fsprogs/compile#0.04#0.04#0.08
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+echo '20261009' | cmp -s - /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libucode.version || { mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo; echo '20261009' > /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libucode.version;  cp /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libucode.version /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libucode-any.version;  } 
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/ucode-2026.10.18~d2e8b8d2/.pkgdir/libucode/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.libucode_installed
+echo "libucode" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/ucode.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/ucode-2026.10.18~d2e8b8d2/.pkgdir/ucode/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.ucode_installed
+echo "ucode" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/ucode.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/ucode-2026.10.18~d2e8b8d2/.pkgdir/ucode-mod-fs/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.ucode-mod-fs_installed
+echo "ucode-mod-fs" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/ucode.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/ucode-2026.10.18~d2e8b8d2/.pkgdir/ucode-mod-nl80211/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.ucode-mod-nl80211_installed
+echo "ucode-mod-nl80211" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/ucode.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/ucode-2026.10.18~d2e8b8d2/.pkgdir/ucode-mod-rtnl/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.ucode-mod-rtnl_installed
+echo "ucode-mod-rtnl" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/ucode.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/ucode-2026.10.18~d2e8b8d2/.pkgdir/ucode-mod-ubus/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.ucode-mod-ubus_installed
+echo "ucode-mod-ubus" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/ucode.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/ucode-2026.10.18~d2e8b8d2/.pkgdir/ucode-mod-uci/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.ucode-mod-uci_installed
+echo "ucode-mod-uci" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/ucode.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/ucode-2026.10.18~d2e8b8d2/.pkgdir/ucode-mod-uloop/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.ucode-mod-uloop_installed
+echo "ucode-mod-uloop" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/ucode.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/ucode-2026.10.18~d2e8b8d2/.pkgdir/ucode-mod-digest/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.ucode-mod-digest_installed
+echo "ucode-mod-digest" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/ucode.default.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/utils/ucode'
+time: package/utils/ucode/compile#0.05#0.04#0.09
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/udebug'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/uclient'
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+echo '20201210' | cmp -s - /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libuclient.version || { mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo; echo '20201210' > /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libuclient.version;  cp /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libuclient.version /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libuclient-any.version;  } 
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/udebug-2026.09.25~6726e98a/.pkgdir/libudebug/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/uclient-2026.06.07~daad21fa/.pkgdir/libuclient/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.libudebug_installed
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.libuclient_installed
+echo "libudebug" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/udebug.default.install
+echo "libuclient" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/uclient.default.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/udebug'
+time: package/libs/udebug/compile#0.02#0.01#0.04
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/uclient-2026.06.07~daad21fa/.pkgdir/uclient-fetch/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.uclient-fetch_installed
+echo "uclient-fetch" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/uclient.default.install
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/network/config/netifd'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/system/ubox'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/network/services/hostapd'
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/uclient'
+time: package/libs/uclient/compile#0.02#0.01#0.04
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/system/apk'
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/netifd-2026.09.11~06d06c86/.pkgdir/netifd/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/apk-mbedtls/apk-3.0.5/.pkgdir/apk-mbedtls/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.netifd_installed
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/ubox-2025.10.30~6f78fa49/.pkgdir/ubox/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+echo "netifd" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/netifd.default.install
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.apk-mbedtls_installed
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/network/config/netifd'
+time: package/network/config/netifd/compile#0.02#0.02#0.04
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.ubox_installed
+echo "apk-mbedtls" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/apk.mbedtls.install
+echo "ubox" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/ubox.default.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/system/apk'
+time: package/system/apk/mbedtls/compile#0.02#0.01#0.04
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/ubox-2025.10.30~6f78fa49/.pkgdir/getrandom/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/hostapd-wpad-full-openssl/hostapd-2026.08.07~831364bf/.pkgdir/hostapd-common/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.getrandom_installed
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.hostapd-common_installed
+echo "getrandom" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/ubox.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/network/config/wifi-scripts'
+echo "hostapd-common" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/hostapd.wpad-full-openssl.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/ubox-2025.10.30~6f78fa49/.pkgdir/logd/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/hostapd-wpad-full-openssl/hostapd-2026.08.07~831364bf/.pkgdir/wpad-openssl/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.logd_installed
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.wpad-openssl_installed
+echo "logd" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/ubox.default.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/system/ubox'
+time: package/system/ubox/compile#0.03#0.02#0.06
+echo "wpad-openssl" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/hostapd.wpad-full-openssl.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/network/services/hostapd'
+time: package/network/services/hostapd/wpad-full-openssl/compile#0.03#0.02#0.06
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/system/procd'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/system/urandom-seed'
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/wifi-scripts-1.0/.pkgdir/wifi-scripts/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.wifi-scripts_installed
+echo "wifi-scripts" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/wifi-scripts.default.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/network/config/wifi-scripts'
+time: package/network/config/wifi-scripts/compile#0.02#0.01#0.04
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/procd-default/procd-2026.10.18~5aef7c33/.pkgdir/procd/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.procd_installed
+echo "procd" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/procd.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/procd-default/procd-2026.10.18~5aef7c33/.pkgdir/procd-ujail/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.procd-ujail_installed
+echo "procd-ujail" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/procd.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/procd-default/procd-2026.10.18~5aef7c33/.pkgdir/procd-seccomp/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.procd-seccomp_installed
+echo "procd-seccomp" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/procd.default.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/system/procd'
+time: package/system/procd/default/compile#0.03#0.02#0.06
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/system/hardware-support'
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/system/hardware-support'
+time: package/system/hardware-support/compile#0.00#0.00#0.01
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/kernel/linux'
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/urandom-seed/.pkgdir/urandom-seed/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.urandom-seed_installed
+echo "urandom-seed" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/urandom-seed.default.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/system/urandom-seed'
+time: package/system/urandom-seed/compile#0.11#0.01#0.13
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kernel/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kernel_installed
+echo "kernel" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-crypto-aead/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-crypto-aead_installed
+echo "kmod-crypto-aead" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-crypto-ccm/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-crypto-ccm_installed
+echo "kmod-crypto-ccm" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-crypto-cmac/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-crypto-cmac_installed
+echo "kmod-crypto-cmac" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-crypto-crc32c/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-crypto-crc32c_installed
+echo "kmod-crypto-crc32c" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-crypto-ctr/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-crypto-ctr_installed
+echo "kmod-crypto-ctr" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-crypto-gcm/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-crypto-gcm_installed
+echo "kmod-crypto-gcm" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-crypto-gf128/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-crypto-gf128_installed
+echo "kmod-crypto-gf128" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-crypto-ghash/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-crypto-ghash_installed
+echo "kmod-crypto-ghash" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-crypto-hash/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-crypto-hash_installed
+echo "kmod-crypto-hash" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-crypto-hmac/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-crypto-hmac_installed
+echo "kmod-crypto-hmac" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-crypto-manager/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-crypto-manager_installed
+echo "kmod-crypto-manager" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-crypto-michael-mic/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-crypto-michael-mic_installed
+echo "kmod-crypto-michael-mic" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-crypto-null/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-crypto-null_installed
+echo "kmod-crypto-null" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-crypto-rng/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-crypto-rng_installed
+echo "kmod-crypto-rng" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-crypto-geniv/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-crypto-geniv_installed
+echo "kmod-crypto-geniv" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-crypto-seqiv/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-crypto-seqiv_installed
+echo "kmod-crypto-seqiv" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-crypto-sha3/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-crypto-sha3_installed
+echo "kmod-crypto-sha3" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-crypto-sha512/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-crypto-sha512_installed
+echo "kmod-crypto-sha512" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-fs-ext4/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-fs-ext4_installed
+echo "kmod-fs-ext4" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-hwmon-core/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-hwmon-core_installed
+echo "kmod-hwmon-core" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-i2c-core/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-i2c-core_installed
+echo "kmod-i2c-core" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-leds-gpio/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-leds-gpio_installed
+echo "kmod-leds-gpio" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-lib-crc-ccitt/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-lib-crc-ccitt_installed
+echo "kmod-lib-crc-ccitt" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-lib-crc16/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-lib-crc16_installed
+echo "kmod-lib-crc16" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-nf-reject/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-nf-reject_installed
+echo "kmod-nf-reject" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-nf-reject6/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-nf-reject6_installed
+echo "kmod-nf-reject6" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-nf-conntrack/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-nf-conntrack_installed
+echo "kmod-nf-conntrack" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-nf-log/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-nf-log_installed
+echo "kmod-nf-log" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-nf-log6/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-nf-log6_installed
+echo "kmod-nf-log6" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-nf-nat/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-nf-nat_installed
+echo "kmod-nf-nat" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-nf-flow/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-nf-flow_installed
+echo "kmod-nf-flow" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-nfnetlink/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-nfnetlink_installed
+echo "kmod-nfnetlink" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-nf-conntrack-netlink/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-nf-conntrack-netlink_installed
+echo "kmod-nf-conntrack-netlink" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-nft-core/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-nft-core_installed
+echo "kmod-nft-core" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-nft-bridge/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-nft-bridge_installed
+echo "kmod-nft-bridge" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-nft-nat/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-nft-nat_installed
+echo "kmod-nft-nat" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-nft-offload/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-nft-offload_installed
+echo "kmod-nft-offload" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-nft-fib/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-nft-fib_installed
+echo "kmod-nft-fib" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-slhc/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-slhc_installed
+echo "kmod-slhc" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-ppp/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-ppp_installed
+echo "kmod-ppp" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-pppox/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-pppox_installed
+echo "kmod-pppox" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-pppoe/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-pppoe_installed
+echo "kmod-pppoe" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-qrtr/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-qrtr_installed
+echo "kmod-qrtr" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-qrtr-smd/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-qrtr-smd_installed
+echo "kmod-qrtr-smd" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-qrtr-mhi/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-qrtr-mhi_installed
+echo "kmod-qrtr-mhi" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-nls-base/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-nls-base_installed
+echo "kmod-nls-base" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+WARNING: kmod-thermal is not available in the kernel config - generating empty package
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-thermal/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-thermal_installed
+echo "kmod-thermal" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-mhi-bus/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-mhi-bus_installed
+echo "kmod-mhi-bus" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-usb-common/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-usb-common_installed
+echo "kmod-usb-common" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-usb-core/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-usb-core_installed
+echo "kmod-usb-core" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-usb-dwc3/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-usb-dwc3_installed
+echo "kmod-usb-dwc3" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-usb-dwc3-qcom/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-usb-dwc3-qcom_installed
+echo "kmod-usb-dwc3-qcom" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-usb3/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-usb3_installed
+echo "kmod-usb3" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-usb-roles/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-usb-roles_installed
+echo "kmod-usb-roles" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/packages/.pkgdir/kmod-usb-xhci-hcd/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.kmod-usb-xhci-hcd_installed
+echo "kmod-usb-xhci-hcd" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/linux.default.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/kernel/linux'
+time: package/kernel/linux/compile#0.25#0.03#0.29
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/system/fstools'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/kernel/nss-wifi-drv'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/network/services/ppp'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/network/utils/iptables'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/libnetfilter-conntrack'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/network/utils/nftables'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/nss-wifi-drv/.prepared_d997b1c7a001d94ccbe02d1df9c7a4eb_6664517399ebbbc92a37c5bb081b5c53_check
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/nss-wifi-drv
+cp -fpR ./src/* /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/nss-wifi-drv/
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/nss-wifi-drv/.prepared_d997b1c7a001d94ccbe02d1df9c7a4eb_6664517399ebbbc92a37c5bb081b5c53
+rm -f /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/nss-wifi-drv/.configured_*
+rm -f /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/stamp/.nss-wifi-drv_installed
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/fstools-2026.10.18~907cf449/.pkgdir/fstools/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.fstools_installed
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+echo "fstools" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/fstools.default.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/system/fstools'
+time: package/system/fstools/compile#0.02#0.01#0.04
+echo '3' | cmp -s - /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libnetfilter-conntrack.version || { mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo; echo '3' > /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libnetfilter-conntrack.version;  cp /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libnetfilter-conntrack.version /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libnetfilter-conntrack-any.version;  } 
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/libnetfilter_conntrack-1.1.1/.pkgdir/libnetfilter-conntrack/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.libnetfilter-conntrack_installed
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/base-files'
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/nftables-json/nftables-1.1.7/.pkgdir/nftables-json/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+echo "libnetfilter-conntrack" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/libnetfilter-conntrack.default.install
+(cd /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/nss-wifi-drv/./; if [ -x ./configure ]; then find /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/nss-wifi-drv/ -name config.guess | xargs -r chmod u+w; find /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/nss-wifi-drv/ -name config.guess | xargs -r -n1 cp --remove-destination /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/scripts/config.guess; find /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/nss-wifi-drv/ -name config.sub | xargs -r chmod u+w; find /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/nss-wifi-drv/ -name config.sub | xargs -r -n1 cp --remove-destination /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/scripts/config.sub; AR="aarch64-openwrt-linux-musl-gcc-ar" AS="ccache aarch64-openwrt-linux-musl-gcc -c -Os -pipe -mcpu=cortex-a53 -fno-caller-saves -fno-plt -fhonour-copts -fmacro-prefix-map=/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/nss-wifi-drv=nss-wifi-drv -fmacro-prefix-map=/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl=staging_dir/target-aarch64_cortex-a53_musl -Wl,-z,max-page-size=4096 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro -Wl,-z,pack-relative-relocs" LD="aarch64-openwrt-linux-musl-ld.bfd" NM="aarch64-openwrt-linux-musl-gcc-nm" CC="ccache aarch64-openwrt-linux-musl-gcc" GCC="ccache aarch64-openwrt-linux-musl-gcc" CXX="ccache aarch64-openwrt-linux-musl-g++" RANLIB="aarch64-openwrt-linux-musl-gcc-ranlib" STRIP=aarch64-openwrt-linux-musl-strip OBJCOPY=aarch64-openwrt-linux-musl-objcopy OBJDUMP=aarch64-openwrt-linux-musl-objdump SIZE=aarch64-openwrt-linux-musl-size CFLAGS="-Os -pipe -mcpu=cortex-a53 -fno-caller-saves -fno-plt -fhonour-copts -fmacro-prefix-map=/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/nss-wifi-drv=nss-wifi-drv -fmacro-prefix-map=/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl=staging_dir/target-aarch64_cortex-a53_musl -Wl,-z,max-page-size=4096 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro -Wl,-z,pack-relative-relocs " CXXFLAGS="-Os -pipe -mcpu=cortex-a53 -fno-caller-saves -fno-plt -fhonour-copts -fmacro-prefix-map=/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/nss-wifi-drv=nss-wifi-drv -fmacro-prefix-map=/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl=staging_dir/target-aarch64_cortex-a53_musl -Wl,-z,max-page-size=4096 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro -Wl,-z,pack-relative-relocs " CPPFLAGS="-I/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.4.0_musl/usr/include -I/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.4.0_musl/include -I/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.4.0_musl/include/fortify " LDFLAGS="-L/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.4.0_musl/usr/lib -L/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.4.0_musl/lib -fuse-ld=bfd -zmax-page-size=4096 -znow -zrelro -zpack-relative-relocs "   ./configure --target=aarch64-openwrt-linux --host=aarch64-openwrt-linux --build=aarch64-unknown-linux-gnu --disable-dependency-tracking --program-prefix="" --program-suffix="" --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/sbin --libexecdir=/usr/lib --sysconfdir=/etc --datadir=/usr/share --localstatedir=/var --mandir=/usr/man --infodir=/usr/info --disable-nls  ; fi; )
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/ppp-default/ppp-2.5.4/.pkgdir/ppp/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/libs/libnetfilter-conntrack'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.nftables-json_installed
+time: package/libs/libnetfilter-conntrack/compile#0.03#0.01#0.05
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/nss-wifi-drv/.configured_68b329da9893e34099c7d8ad5cb9c940
+echo "nftables-json" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/nftables.json.install
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/boot/uboot-tools'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.ppp_installed
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/network/utils/nftables'
+time: package/network/utils/nftables/json/compile#0.03#0.01#0.05
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/network/utils/iptables'
+time: package/network/utils/iptables/compile#0.03#0.01#0.05
+echo "ppp" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/ppp.default.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/ppp-default/ppp-2.5.4/.pkgdir/ppp-mod-pppoe/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+rm -f /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/nss-wifi-drv/.built
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/network/config/firewall4'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.ppp-mod-pppoe_installed
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/network/utils/iproute2'
+make[3]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/feeds/packages/net/conntrack-tools'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/nss-wifi-drv/.built_check
+echo "ppp-mod-pppoe" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/ppp.default.install
+make -C /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55 KCFLAGS="-fmacro-prefix-map=/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl=target-aarch64_cortex-a53_musl -fmacro-prefix-map=/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl=staging_dir/target-aarch64_cortex-a53_musl -fmacro-prefix-map=/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.4.0_musl=staging_dir/toolchain-aarch64_cortex-a53_gcc-14.4.0_musl -fno-caller-saves " KAFLAGS="-fmacro-prefix-map=/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl=target-aarch64_cortex-a53_musl -fmacro-prefix-map=/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl=staging_dir/target-aarch64_cortex-a53_musl -fmacro-prefix-map=/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/toolchain-aarch64_cortex-a53_gcc-14.4.0_musl=staging_dir/toolchain-aarch64_cortex-a53_gcc-14.4.0_musl" HOSTCFLAGS="-O2 -I/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/host/include -I/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/hostpkg/include -I/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/host/include -Wall -Wmissing-prototypes -Wstrict-prototypes" CROSS_COMPILE="aarch64-openwrt-linux-musl-" ARCH="arm64" KBUILD_HAVE_NLS=no KBUILD_BUILD_USER="" KBUILD_BUILD_HOST="" KBUILD_BUILD_TIMESTAMP="Sat Oct 24 14:35:47 2026" KBUILD_BUILD_VERSION="0" KBUILD_HOSTLDFLAGS="-L/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/host/lib" CONFIG_SHELL="bash" V=''  cmd_syscalls= KBUILD_EXTRA_SYMBOLS="/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/symvers/gpio-button-hotplug.symvers /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/symvers/mac80211.symvers /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/symvers/nss-wifi-drv.symvers" CC="ccache aarch64-openwrt-linux-musl-gcc" KERNELRELEASE=6.18.55 M="/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/nss-wifi-drv" modules
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/network/services/ppp'
+time: package/network/services/ppp/default/compile#0.02#0.02#0.06
+make[4]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55'
+make[5]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/nss-wifi-drv'
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/firewall4-2025.03.17~b6e51575/.pkgdir/firewall4/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.firewall4_installed
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+echo "firewall4" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/firewall4.default.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/network/config/firewall4'
+time: package/network/config/firewall4/compile#0.02#0.01#0.04
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/conntrack-tools-1.4.8/.pkgdir/conntrack/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.conntrack_installed
+echo "conntrack" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/conntrack-tools.default.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/feeds/packages/net/conntrack-tools'
+time: package/feeds/packages/conntrack-tools/compile#0.02#0.02#0.05
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/iproute2-ipfull/iproute2-6.18.0/.pkgdir/ip-full/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.ip-full_installed
+echo "ip-full" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/iproute2.ipfull.install
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/iproute2-ipfull/iproute2-6.18.0/.pkgdir/ip-bridge/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.ip-bridge_installed
+echo "ip-bridge" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/iproute2.ipfull.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/network/utils/iproute2'
+time: package/network/utils/iproute2/ipfull/compile#0.03#0.02#0.06
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/u-boot-v2026.10/.pkgdir/uboot-envtools/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.uboot-envtools_installed
+echo "uboot-envtools" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/uboot-tools.default.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/boot/uboot-tools'
+time: package/boot/uboot-tools/compile#0.09#0.04#0.13
+  CC [M]  nss_bridge.o
+  CC [M]  nss_core.o
+  CC [M]  nss_flow.o
+mkdir -p /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp
+SHELL= flock /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/tmp/.root-copy.flock -c 'cp -fpR /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/base-files/.pkgdir/base-files/. /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/'
+touch /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/root-qualcommax/stamp/.base-files_installed
+echo "base-files" >> /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/pkginfo/base-files.default.install
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/base-files'
+time: package/base-files/compile#0.44#0.03#0.47
+nss_flow.c: In function 'nss_flow_effective_mtu':
+nss_flow.c:702:35: error: expected expression before ')' token
+  702 |                 scoped_guard(rcu)() {
+      |                                   ^
+nss_flow.c:678:28: error: unused variable 'dev' [-Werror=unused-variable]
+  678 |         struct net_device *dev;
+      |                            ^~~
+cc1: all warnings being treated as errors
+make[7]: *** [/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/scripts/Makefile.build:287: nss_flow.o] Error 1
+make[6]: *** [/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/Makefile:2055: .] Error 2
+make[5]: *** [/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55/Makefile:248: __sub-make] Error 2
+make[5]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/nss-wifi-drv'
+make[4]: *** [Makefile:248: __sub-make] Error 2
+make[4]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55'
+make[3]: *** [Makefile:74: /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/nss-wifi-drv/.built] Error 2
+make[3]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/package/kernel/nss-wifi-drv'
+time: package/kernel/nss-wifi-drv/compile#0.65#0.10#0.75
+    ERROR: package/kernel/nss-wifi-drv failed to build.
+make[2]: *** [package/Makefile:255: package/kernel/nss-wifi-drv/compile] Error 1
+make[2]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss'
+make[1]: *** [package/Makefile:251: /home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/staging_dir/target-aarch64_cortex-a53_musl/stamp/.package_compile] Error 2
+make[1]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss'
+make: *** [/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/include/toplevel.mk:268: world] Error 2

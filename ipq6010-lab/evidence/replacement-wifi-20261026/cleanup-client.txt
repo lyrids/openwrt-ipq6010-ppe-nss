@@ -1,0 +1,17 @@
+CONFIGS-MATCH
+radio0
+false
+radio1
+false
+radio2
+false
+linksys,wrt32x
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+eth0             UP             fe80::6238:e0ff:fec1:c520/64 
+lan4@eth0        LOWERLAYERDOWN 
+lan3@eth0        LOWERLAYERDOWN 
+lan2@eth0        LOWERLAYERDOWN 
+lan1@eth0        UP             
+wan@eth0         UP             192.168.21.154/24 fe80::6038:e0ff:fec1:c520/64 
+br-lan           UP             192.168.25.1/24 192.168.1.3/24 fd6a:bf1d:3b1a::1/60 fe80::6238:e0ff:fec1:c520/64 
+tcp        0      0 :::5201                 :::*                    LISTEN      

@@ -1,0 +1,132 @@
+INITIAL
+table inet fw4 {
+	flowtable ft {
+		hook ingress priority filter
+		devices = { "lan1", "lan2", "lan3", "lan4", "phy2-ap0", "wan" }
+		flags offload
+		counter
+	}
+}
+Interface phy2-ap0
+	ifindex 9
+	wdev 0x200000001
+	addr dc:d8:7c:54:83:f0
+	ssid OpenWrt-RAM-test-QCN9074
+	type AP
+	wiphy 2
+	channel 36 (5180 MHz), width: 80 MHz, center1: 5210 MHz
+	txpower 27.00 dBm
+	multicast TXQ:
+		qsz-byt	qsz-pkt	flows	drops	marks	overlmt	hashcol	tx-bytes	tx-packets
+		0	0	0	0	0	0	0	0		0
+CYCLE-1-DOWN
+table inet fw4 {
+	flowtable ft {
+		hook ingress priority filter
+		devices = { "lan1", "lan2", "lan3", "lan4", "wan" }
+		flags offload
+		counter
+	}
+}
+CYCLE-1-UP
+table inet fw4 {
+	flowtable ft {
+		hook ingress priority filter
+		devices = { "lan1", "lan2", "lan3", "lan4", "phy2-ap0", "wan" }
+		flags offload
+		counter
+	}
+}
+Interface phy2-ap0
+	ifindex 10
+	wdev 0x200000002
+	addr dc:d8:7c:54:83:f0
+	ssid OpenWrt-RAM-test-QCN9074
+	type AP
+	wiphy 2
+	channel 36 (5180 MHz), width: 80 MHz, center1: 5210 MHz
+	txpower 27.00 dBm
+	multicast TXQ:
+		qsz-byt	qsz-pkt	flows	drops	marks	overlmt	hashcol	tx-bytes	tx-packets
+		0	0	0	0	0	0	0	0		0
+CYCLE-2-DOWN
+table inet fw4 {
+	flowtable ft {
+		hook ingress priority filter
+		devices = { "lan1", "lan2", "lan3", "lan4", "wan" }
+		flags offload
+		counter
+	}
+}
+CYCLE-2-UP
+table inet fw4 {
+	flowtable ft {
+		hook ingress priority filter
+		devices = { "lan1", "lan2", "lan3", "lan4", "phy2-ap0", "wan" }
+		flags offload
+		counter
+	}
+}
+Interface phy2-ap0
+	ifindex 11
+	wdev 0x200000003
+	addr dc:d8:7c:54:83:f0
+	ssid OpenWrt-RAM-test-QCN9074
+	type AP
+	wiphy 2
+	channel 36 (5180 MHz), width: 80 MHz, center1: 5210 MHz
+	txpower 27.00 dBm
+	multicast TXQ:
+		qsz-byt	qsz-pkt	flows	drops	marks	overlmt	hashcol	tx-bytes	tx-packets
+		0	0	0	0	0	0	0	0		0
+{
+	"firewall": {
+		"triggers": [
+			[
+				"config.change",
+				[
+					"if",
+					[
+						"eq",
+						"package",
+						"firewall"
+					],
+					[
+						"run_script",
+						"/etc/init.d/firewall",
+						"reload"
+					]
+				],
+				1000
+			],
+			[
+				"service.data.update",
+				[
+					"if",
+					[
+						"eq",
+						"name",
+						"firewall"
+					],
+					[
+						"run_script",
+						"/etc/init.d/firewall",
+						"reload"
+					]
+				],
+				1000
+			],
+			[
+				"netifd.wireless.done",
+				[
+					[
+						"run_script",
+						"/etc/init.d/firewall",
+						"reload"
+					]
+				],
+				1000
+			]
+		]
+	}
+}

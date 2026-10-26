@@ -1,0 +1,372 @@
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x51af8014]
+[    0.000000] Linux version 6.18.55 (ly@openwrt-dev) (aarch64-openwrt-linux-musl-gcc (OpenWrt GCC 14.4.0 toolchain-eae4708b1a) 14.4.0, GNU ld (GNU Binutils) 2.46.1) #0 SMP Mon Oct 26 04:51:44 2026
+[    0.000000] Machine model: JDCloud RE-CS-02
+[    0.000000] OF: reserved mem: 0x0000000000060000..0x0000000000065fff (24 KiB) nomap non-reusable memory@60000
+[    0.000000] OF: reserved mem: 0x0000000040000000..0x0000000040ffffff (16384 KiB) nomap non-reusable memory@40000000
+[    0.000000] OF: reserved mem: 0x000000004a100000..0x000000004a4fffff (4096 KiB) nomap non-reusable bootloader@4a100000
+[    0.000000] OF: reserved mem: 0x000000004a600000..0x000000004a9fffff (4096 KiB) nomap non-reusable memory@4a600000
+[    0.000000] OF: reserved mem: 0x000000004aa00000..0x000000004aafffff (1024 KiB) nomap non-reusable memory@4aa00000
+[    0.000000] OF: reserved mem: 0x000000004ab00000..0x000000004fffffff (87040 KiB) nomap non-reusable memory@4ab00000
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000040000000-0x000000007fffffff]
+[    0.000000]   DMA32    empty
+[    0.000000]   Normal   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000040000000-0x0000000040ffffff]
+[    0.000000]   node   0: [mem 0x0000000041000000-0x000000004a0fffff]
+[    0.000000]   node   0: [mem 0x000000004a100000-0x000000004a4fffff]
+[    0.000000]   node   0: [mem 0x000000004a500000-0x000000004a5fffff]
+[    0.000000]   node   0: [mem 0x000000004a600000-0x000000004fffffff]
+[    0.000000]   node   0: [mem 0x0000000050000000-0x000000007fffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000040000000-0x000000007fffffff]
+[    0.000000] psci: probing for conduit method from DT.
+[    0.000000] psci: PSCIv1.0 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: MIGRATE_INFO_TYPE not supported.
+[    0.000000] psci: SMC Calling Convention v1.0
+[    0.000000] percpu: Embedded 20 pages/cpu s44504 r8192 d29224 u81920
+[    0.000000] pcpu-alloc: s44504 r8192 d29224 u81920 alloc=20*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+[    0.000000] Detected VIPT I-cache on CPU0
+[    0.000000] CPU features: detected: Spectre-v4
+[    0.000000] alternatives: applying boot alternatives
+[    0.000000] Kernel command line: console=ttyMSM0,115200n8
+[    0.000000] printk: log buffer data + meta data: 131072 + 458752 = 589824 bytes
+[    0.000000] Dentry cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    0.000000] software IO TLB: SWIOTLB bounce buffer size adjusted to 1MB
+[    0.000000] software IO TLB: area num 4.
+[    0.000000] software IO TLB: mapped [mem 0x000000007eb30000-0x000000007ec30000] (1MB)
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 262144
+[    0.000000] mem auto-init: stack:off, heap alloc:off, heap free:off
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] rcu: Hierarchical RCU implementation.
+[    0.000000] 	Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+[    0.000000] RCU Tasks Trace: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=4.
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] Root IRQ handler: gic_handle_irq
+[    0.000000] GICv2m: range[mem 0x0b00a000-0x0b00affc], SPI[448:479]
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.000000] arch_timer: cp15 timer running at 24.00MHz (virt).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x588fe9dc0, max_idle_ns: 440795202592 ns
+[    0.000000] sched_clock: 56 bits at 24MHz, resolution 41ns, wraps every 4398046511097ns
+[    0.000137] Calibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=240000)
+[    0.000151] pid_max: default: 32768 minimum: 301
+[    0.004267] Mount-cache hash table entries: 2048 (order: 2, 16384 bytes, linear)
+[    0.004282] Mountpoint-cache hash table entries: 2048 (order: 2, 16384 bytes, linear)
+[    0.013976] rcu: Hierarchical SRCU implementation.
+[    0.013984] rcu: 	Max phase no-delay instances is 1000.
+[    0.014283] Timer migration: 1 hierarchy levels; 8 children per group; 1 crossnode level
+[    0.014690] smp: Bringing up secondary CPUs ...
+[    0.015368] Detected VIPT I-cache on CPU1
+[    0.015513] CPU1: Booted secondary processor 0x0000000001 [0x51af8014]
+[    0.016251] Detected VIPT I-cache on CPU2
+[    0.016363] CPU2: Booted secondary processor 0x0000000002 [0x51af8014]
+[    0.017074] Detected VIPT I-cache on CPU3
+[    0.017181] CPU3: Booted secondary processor 0x0000000003 [0x51af8014]
+[    0.017259] smp: Brought up 1 node, 4 CPUs
+[    0.017268] SMP: Total of 4 processors activated.
+[    0.017272] CPU: All CPU(s) started at EL1
+[    0.017276] CPU features: detected: 32-bit EL0 Support
+[    0.017281] CPU features: detected: CRC32 instructions
+[    0.017330] alternatives: applying system-wide alternatives
+[    0.017540] CPU features: emulated: Privileged Access Never (PAN) using TTBR0_EL1 switching
+[    0.017800] Memory: 883272K/1048576K available (9344K kernel code, 918K rwdata, 3048K rodata, 14016K init, 284K bss, 161824K reserved, 0K cma-reserved)
+[    0.024055] posixtimers hash table entries: 2048 (order: 3, 32768 bytes, linear)
+[    0.024128] futex hash table entries: 1024 (65536 bytes on 1 NUMA nodes, total 64 KiB, linear).
+[    0.024203] 25808 pages in range for non-PLT usage
+[    0.024208] 517328 pages in range for PLT usage
+[    0.026546] pinctrl core: initialized pinctrl subsystem
+[    0.028645] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.029178] DMA: preallocated 128 KiB GFP_KERNEL pool for atomic allocations
+[    0.029217] DMA: preallocated 128 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    0.029251] DMA: preallocated 128 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    0.029614] thermal_sys: Registered thermal governor 'step_wise'
+[    0.029673] cpuidle: using governor menu
+[    0.029861] ASID allocator initialised with 65536 entries
+[    0.035063] /soc@0/clock-controller@1800000: Fixed dependency cycle(s) with /soc@0/clock-controller@9b000
+[    0.035082] /soc@0/clock-controller@1800000: Fixed dependency cycle(s) with /soc@0/ethernet-pcs@7a10000
+[    0.035096] /soc@0/clock-controller@1800000: Fixed dependency cycle(s) with /soc@0/ethernet-pcs@7a00000
+[    0.035185] /soc@0/interrupt-controller@b000000: Fixed dependency cycle(s) with /soc@0/interrupt-controller@b000000
+[    0.035282] /soc@0/clock-controller@9b000: Fixed dependency cycle(s) with /soc@0/clock-controller@1800000
+[    0.035302] /soc@0/ethernet-pcs@7a00000: Fixed dependency cycle(s) with /soc@0/clock-controller@1800000
+[    0.035321] /soc@0/ethernet-pcs@7a10000: Fixed dependency cycle(s) with /soc@0/clock-controller@1800000
+[    0.039653] /soc@0/clock-controller@1800000: Fixed dependency cycle(s) with /soc@0/clock-controller@9b000
+[    0.039674] /soc@0/clock-controller@1800000: Fixed dependency cycle(s) with /soc@0/ethernet-pcs@7a10000
+[    0.039688] /soc@0/clock-controller@1800000: Fixed dependency cycle(s) with /soc@0/ethernet-pcs@7a00000
+[    0.084384] SCSI subsystem initialized
+[    0.084609] usbcore: registered new interface driver usbfs
+[    0.084649] usbcore: registered new interface driver hub
+[    0.084705] usbcore: registered new device driver usb
+[    0.085008] qcom_scm: convention: smc arm 64
+[    0.087125] clocksource: Switched to clocksource arch_sys_counter
+[    0.091294] NET: Registered PF_INET protocol family
+[    0.091466] IP idents hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.093900] tcp_listen_portaddr_hash hash table entries: 512 (order: 1, 8192 bytes, linear)
+[    0.093923] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.093945] TCP established hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.094030] TCP bind hash table entries: 8192 (order: 6, 262144 bytes, linear)
+[    0.094306] TCP: Hash tables configured (established 8192 bind 8192)
+[    0.094648] MPTCP token hash table entries: 1024 (order: 3, 24576 bytes, linear)
+[    0.094825] UDP hash table entries: 512 (order: 3, 32768 bytes, linear)
+[    0.094877] UDP-Lite hash table entries: 512 (order: 3, 32768 bytes, linear)
+[    0.095434] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.095474] PCI: CLS 0 bytes, default 64
+[    0.104837] workingset: timestamp_bits=46 max_order=18 bucket_order=0
+[    0.105437] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.105444] jffs2: version 2.2 (NAND) (SUMMARY) (LZMA) (RTIME) (CMODE_PRIORITY) (c) 2001-2006 Red Hat, Inc.
+[    0.112694] qcom-qmp-usb-phy 78000.ssphy: supply vdda-phy not found, using dummy regulator
+[    0.112864] qcom-qmp-usb-phy 78000.ssphy: supply vdda-pll not found, using dummy regulator
+[    0.114242] qcom-qusb2-phy 79000.qusb: supply vdda-pll not found, using dummy regulator
+[    0.114409] qcom-qusb2-phy 79000.qusb: supply vdda-phy-dpdm not found, using dummy regulator
+[    0.117210] qcom-pcie 20000000.pcie: host bridge /soc@0/pcie@20000000 ranges:
+[    0.117285] qcom-pcie 20000000.pcie:       IO 0x0020200000..0x002020ffff -> 0x0000000000
+[    0.117318] qcom-pcie 20000000.pcie:      MEM 0x0020220000..0x002fffffff -> 0x0020220000
+[    0.123225] Serial: 8250/16550 driver, 2 ports, IRQ sharing disabled
+[    0.124100] msm_serial 78b1000.serial: msm_serial: detected port #0
+[    0.124173] msm_serial 78b1000.serial: uartclk = 1843199
+[    0.124699] 78b1000.serial: ttyMSM0 at MMIO 0x78b1000 (irq = 18, base_baud = 115199) is a MSM
+[    0.124790] msm_serial: console setup on port #0
+[    0.124840] printk: legacy console [ttyMSM0] enabled
+[    0.229369] qcom-pcie 20000000.pcie: iATU: unroll T, 8 ob, 8 ib, align 4K, limit 1024G
+[    0.232933] msm_serial 78b4000.serial: msm_serial: detected port #1
+[    0.437149] qcom-pcie 20000000.pcie: PCIe Gen.3 x1 link up
+[    0.438883] msm_serial 78b4000.serial: uartclk = 24000000
+[    0.449167] qcom-pcie 20000000.pcie: PCI host bridge to bus 0000:00
+[    0.455060] 78b4000.serial: ttyMSM1 at MMIO 0x78b4000 (irq = 27, base_baud = 1500000) is a MSM
+[    0.465163] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    0.473698] msm_serial: driver initialized
+[    0.483521] pci_bus 0000:00: root bus resource [io  0x0000-0xffff]
+[    1.051033] pci_bus 0000:00: root bus resource [mem 0x20220000-0x2fffffff]
+[    1.057272] pci 0000:00:00.0: [17cb:1003] type 01 class 0x060400 PCIe Root Port
+[    1.064048] pci 0000:00:00.0: BAR 0 [mem 0x00000000-0x00000fff]
+[    1.071249] pci 0000:00:00.0: PCI bridge to [bus 01-ff]
+[    1.077149] pci 0000:00:00.0:   bridge window [io  0x0000-0x0fff]
+[    1.082349] pci 0000:00:00.0:   bridge window [mem 0x00000000-0x000fffff]
+[    1.088615] pci 0000:00:00.0:   bridge window [mem 0x00000000-0x000fffff 64bit pref]
+[    1.095423] pci 0000:00:00.0: PME# supported from D0 D3hot D3cold
+[    1.105657] pci 0000:01:00.0: [17cb:1104] type 00 class 0x028000 PCIe Endpoint
+[    1.109389] pci 0000:01:00.0: BAR 0 [mem 0x00000000-0x001fffff 64bit]
+[    1.116728] pci 0000:01:00.0: PME# supported from D0 D3hot D3cold
+[    1.122982] pci 0000:01:00.0: 7.876 Gb/s available PCIe bandwidth, limited by 8.0 GT/s PCIe x1 link at 0000:00:00.0 (capable of 15.752 Gb/s with 8.0 GT/s PCIe x2 link)
+[    1.129232] pci 0000:00:00.0: bridge window [mem 0x20400000-0x205fffff]: assigned
+[    1.143649] pci 0000:00:00.0: BAR 0 [mem 0x20220000-0x20220fff]: assigned
+[    1.151289] pci 0000:01:00.0: BAR 0 [mem 0x20400000-0x205fffff 64bit]: assigned
+[    1.158097] pci 0000:00:00.0: PCI bridge to [bus 01-ff]
+[    1.165161] pci 0000:00:00.0:   bridge window [mem 0x20400000-0x205fffff]
+[    1.170383] pci_bus 0000:00: resource 4 [io  0x0000-0xffff]
+[    1.177321] pci_bus 0000:00: resource 5 [mem 0x20220000-0x2fffffff]
+[    1.182696] pci_bus 0000:01: resource 1 [mem 0x20400000-0x205fffff]
+[    1.191442] pcieport 0000:00:00.0: PME: Signaling with IRQ 29
+[    1.195463] pcieport 0000:00:00.0: AER: enabled with IRQ 29
+[    1.200064] loop: module loaded
+[    1.655731] i2c_dev: i2c /dev entries driver
+[    1.661079] sdhci: Secure Digital Host Controller Interface driver
+[    1.661125] sdhci: Copyright(c) Pierre Ossman
+[    1.666161] sdhci-pltfm: SDHCI platform and OF driver helper
+[    1.670900] qcom_rng e3000.qrng: TRNG support not detected
+[    1.677141] clocksource: arch_mmio_counter: mask: 0xffffffffffffff max_cycles: 0x588fe9dc0, max_idle_ns: 440795202592 ns
+[    1.681639] arch-timer-mmio b120000.timer: mmio timer running at 24.00MHz (virt)
+[    1.695347] remoteproc remoteproc0: releasing wcnss
+[    1.702407] NET: Registered PF_INET6 protocol family
+[    1.706175] Segment Routing with IPv6
+[    1.707123] mmc0: SDHCI controller on 7804000.mmc [7804000.mmc] using ADMA 64-bit
+[    1.709923] In-situ OAM (IOAM) with IPv6
+[    1.720958] NET: Registered PF_PACKET protocol family
+[    1.725007] 8021q: 802.1Q VLAN Support v1.8
+[    1.822361] mmc0: new HS200 MMC card at address 0001
+[    1.823078] mmcblk0: mmc0:0001 SLD128 115 GiB
+[    1.852996] Alternate GPT is invalid, using primary GPT.
+[    1.853098]  mmcblk0: p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12 p13 p14 p15 p16 p17 p18 p19 p20 p21 p22 p23 p24 p25 p26
+[    1.860279] mmcblk0boot0: mmc0:0001 SLD128 4.00 MiB
+[    1.869470] mmcblk0boot1: mmc0:0001 SLD128 4.00 MiB
+[    1.873315] mmcblk0rpmb: mmc0:0001 SLD128 4.00 MiB, chardev (246:0)
+[    2.099779] qca-ppe 3a000000.ppe: configuring for fixed/internal link mode
+[    2.099859] qca-ppe 3a000000.ppe: Link is Up - 1Gbps/Full - flow control off
+[    2.278069] qca-ppe 3a000000.ppe lan1 (uninitialized): PHY [90000.mdio-1:18] driver [Qualcomm QCA8075] (irq=POLL)
+[    2.357636] qca-ppe 3a000000.ppe lan2 (uninitialized): PHY [90000.mdio-1:19] driver [Qualcomm QCA8075] (irq=POLL)
+[    2.427657] qca-ppe 3a000000.ppe lan3 (uninitialized): PHY [90000.mdio-1:1a] driver [Qualcomm QCA8075] (irq=POLL)
+[    2.507637] qca-ppe 3a000000.ppe lan4 (uninitialized): PHY [90000.mdio-1:1b] driver [Qualcomm QCA8075] (irq=POLL)
+[    2.589456] qca-ppe 3a000000.ppe wan (uninitialized): PHY [90000.mdio-1:0c] driver [Qualcomm QCA8081] (irq=POLL)
+[    2.591565] qca-edma 3ab00000.edma eth0: entered promiscuous mode
+[    2.598781] DSA: tree 0 setup
+[    2.605935] cpufreq: cpufreq_policy_online: CPU0: Running at unlisted initial frequency: 799999 kHz, changing to: 864000 kHz
+[    2.609427] remoteproc remoteproc0: wcnss is available
+[    2.619514] clk: Disabling unused clocks
+[    2.629882] Freeing unused kernel memory: 14016K
+[    2.630094] Run /init as init process
+[    2.633573]   with arguments:
+[    2.633575]     /init
+[    2.633577]   with environment:
+[    2.633580]     HOME=/
+[    2.633582]     TERM=linux
+[    2.820820] init: Console is alive
+[    2.820997] init: - watchdog -
+[    2.831026] kmodloader: loading kernel modules from /etc/modules-boot.d/*
+[    2.846679] gpio_button_hotplug: loading out-of-tree module taints kernel.
+[    2.859088] xhci-hcd xhci-hcd.1.auto: xHCI Host Controller
+[    2.859135] xhci-hcd xhci-hcd.1.auto: new USB bus registered, assigned bus number 1
+[    2.864361] xhci-hcd xhci-hcd.1.auto: hcc params 0x0220fe65 hci version 0x110 quirks 0x0000808000000010
+[    2.871088] xhci-hcd xhci-hcd.1.auto: irq 59, io mem 0x08a00000
+[    2.880529] xhci-hcd xhci-hcd.1.auto: xHCI Host Controller
+[    2.886302] xhci-hcd xhci-hcd.1.auto: new USB bus registered, assigned bus number 2
+[    2.891880] xhci-hcd xhci-hcd.1.auto: Host supports USB 3.0 SuperSpeed
+[    2.899770] hub 1-0:1.0: USB hub found
+[    2.906017] hub 1-0:1.0: 1 port detected
+[    2.910040] usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+[    2.914080] hub 2-0:1.0: USB hub found
+[    2.921981] hub 2-0:1.0: 1 port detected
+[    2.927218] kmodloader: done loading kernel modules from /etc/modules-boot.d/*
+[    2.934581] init: - preinit -
+[    9.187090] random: crng init done
+[    9.296078] qca-ppe 3a000000.ppe lan1: configuring for phy/psgmii link mode
+[    9.795030] qca-ppe 3a000000.ppe lan1: Link is Up - 1Gbps/Full - flow control rx/tx
+[   14.087100] qca-ppe 3a000000.ppe lan1: Link is Down
+[   14.092421] procd: - early -
+[   14.092528] procd: - watchdog -
+[   14.612708] procd: - watchdog -
+[   14.612944] procd: - ubus -
+[   14.666405] procd: - init -
+[   14.818150] kmodloader: loading kernel modules from /etc/modules.d/*
+[   14.912060] GACT probability on
+[   14.912778] Mirror/redirect action on
+[   14.918536] u32 classifier
+[   14.918566]     input device check on
+[   14.920428]     Actions configured
+[   14.928837] Simple TC action Loaded
+[   14.934513] urngd: v1.0.2 started.
+[   14.950420] NET: Registered PF_QIPCRTR protocol family
+[   14.984011] PPP generic driver version 2.4.2
+[   14.985066] NET: Registered PF_PPPOX protocol family
+[   14.993175] kmodloader: done loading kernel modules from /etc/modules.d/*
+[   17.927771] Loading modules backported from Linux version v7.2-0-g8d3ae59288f1
+[   17.927811] Backport generated by backports.git v5.15.58-1-198-g2580fa90cb79
+[   17.993294] ath11k c000000.wifi: ipq6018 hw1.0
+[   17.993332] ath11k c000000.wifi: FW memory mode: 0
+[   18.021114] remoteproc remoteproc0: powering up wcnss
+[   18.021228] remoteproc remoteproc0: Booting fw image IPQ6018/q6_fw.mdt, size 7340
+[   18.316929] remoteproc remoteproc0: remote processor wcnss is now up
+[   18.318742] ath11k c000000.wifi: chip_id 0x0 chip_family 0x4 board_id 0xff soc_id 0xffffffff
+[   18.322368] ath11k c000000.wifi: fw_version 0x25008f8e fw_build_timestamp 2024-03-01 03:54 fw_build_id WLAN.HK.2.5.0.1-03982-QCAHKSWPL_SILICONZ-3
+[   18.351197] ath11k_pci 0000:01:00.0: BAR 0 [mem 0x20400000-0x205fffff 64bit]: assigned
+[   18.351293] ath11k_pci 0000:01:00.0: enabling device (0000 -> 0002)
+[   18.358658] ath11k_pci 0000:01:00.0: MSI vectors: 16
+[   18.364204] ath11k_pci 0000:01:00.0: qcn9074 hw1.0
+[   18.369439] ath11k_pci 0000:01:00.0: FW memory mode: 2
+[   18.561106] mhi mhi0: Requested to power ON
+[   18.561158] mhi mhi0: Power on setup success
+[   18.584300] nss-wifi-drv: radio 0 rxdma id 128 base 0x52d60000 x4096 hw 0xc000000/0xc000000 swdesc 12288
+[   18.593121] nss-wifi-drv: radio 1 rxdma id 143 base 0x53d50000 x4096 hw 0xc000000/0xc000000 swdesc 12288
+[   18.647145] mhi mhi0: Wait for device to enter SBL or Mission mode
+[   18.952614] ath11k_pci 0000:01:00.0: chip_id 0x0 chip_family 0x0 board_id 0xff soc_id 0xffffffff
+[   18.952668] ath11k_pci 0000:01:00.0: fw_version 0x290b8862 fw_build_timestamp 2024-09-23 10:51 fw_build_id 
+[   19.424026] ath11k_pci 0000:01:00.0: htt event 48 not handled
+[   19.439688] nss-wifi-drv: radio 0 rxdma id 128 base 0x57b50000 x4096 hw 0x20400000/0x20400000 swdesc 12288
+[   23.030922] nss-wifi-drv 39000000.nss: loaded qca-nss0-retail-12.5.bin, line 12.5, 862184 bytes at 0x0000000040000000
+[   23.049929] nss-wifi-drv 39000000.nss: core 0 booted
+[   23.063076] nss-wifi-drv 39000000.nss: payload pool set to 16384: 0
+[   23.063386] nss-wifi-drv 39000000.nss: payload pool 8704 low 4352 high 16384: 0
+[   23.077385] nss-wifi-drv 39000000.nss: packet descriptors: 757 pages of 4096 lent: 0
+[   23.077548] nss-wifi-drv 39000000.nss: load reports off at 1497600219 Hz: 0 ack 1
+[   23.084778] nss-wifi-drv 39000000.nss: lan1: port 1 routes in the firmware
+[   23.092210] nss-wifi-drv 39000000.nss: lan2: port 2 routes in the firmware
+[   23.099040] nss-wifi-drv 39000000.nss: lan3: port 3 routes in the firmware
+[   23.105781] nss-wifi-drv 39000000.nss: lan4: port 4 routes in the firmware
+[   23.112602] nss-wifi-drv 39000000.nss: wan: port 5 routes in the firmware
+[   23.121040] nss-wifi-drv 39000000.nss: wifili: txdesc 0x000000005c5a0000+15000 ext 0x000000005c5c0000+29000, 2 pools, 3 tcl, 4 reo
+[   23.125797] nss-wifi-drv 39000000.nss: wifili: tcl0 id 16 base 0x45c10000 x512  txcomp id 106 base 0x42600000 x32768 hw 0xca34910/0xca370c0  tclhw 0xca44510/0xca46000 tcle 8
+[   23.137702] nss-wifi-drv 39000000.nss: wifili: tcl1 id 17 base 0x456b8000 x512  txcomp id 107 base 0x42000000 x32768 hw 0xca34968/0xca370c8  tclhw 0xca44568/0xca46008 tcle 8
+[   23.153168] nss-wifi-drv 39000000.nss: wifili: tcl2 id 18 base 0x456c0000 x512  txcomp id 108 base 0x42200000 x32768 hw 0xca349c0/0xca370d0  tclhw 0xca445c0/0xca46010 tcle 8
+[   23.168606] nss-wifi-drv 39000000.nss: wifili: shadow rd 0x489df000 wr 0x44d0e000 lmac from 128
+[   23.184007] nss-wifi-drv 39000000.nss: wifili: reo0 id 0 base 0x52000000 x2048 hw 0xca3829c/0xca3b038
+[   23.192557] nss-wifi-drv 39000000.nss: wifili: reo1 id 1 base 0x52040000 x2048 hw 0xca382f4/0xca3b040
+[   23.201890] nss-wifi-drv 39000000.nss: wifili: reo2 id 2 base 0x52080000 x2048 hw 0xca3834c/0xca3b048
+[   23.211095] nss-wifi-drv 39000000.nss: wifili: reo3 id 3 base 0x520c0000 x2048 hw 0xca383a4/0xca3b050
+[   23.220332] nss-wifi-drv 39000000.nss: wifili: radio 0 rxdma id 128 base 0x52d60000 x4096 hw 0xc000000/0xc000000 swdesc 12288
+[   23.229360] nss-wifi-drv 39000000.nss: wifili: radio 1 rxdma id 143 base 0x53d50000 x4096 hw 0xc000000/0xc000000 swdesc 12288
+[   23.255326] nss-wifi-drv 39000000.nss: wifili: txdesc 0x000000005d1e0000+b000 ext 0x000000005d200000+15000, 1 pools, 3 tcl, 4 reo
+[   23.255373] nss-wifi-drv 39000000.nss: wifili: tcl0 id 16 base 0x54bf8000 x512  txcomp id 106 base 0x57000000 x32768 hw 0x205b4924/0x205b70c0  tclhw 0x205c44f0/0x205c6000 tcle 8
+[   23.265990] nss-wifi-drv 39000000.nss: wifili: tcl1 id 17 base 0x56aa0000 x512  txcomp id 107 base 0x57200000 x32768 hw 0x205b497c/0x205b70c8  tclhw 0x205c4548/0x205c6008 tcle 8
+[   23.281788] nss-wifi-drv 39000000.nss: wifili: tcl2 id 18 base 0x56aa8000 x512  txcomp id 108 base 0x57400000 x32768 hw 0x205b49d4/0x205b70d0  tclhw 0x205c45a0/0x205c6010 tcle 8
+[   23.297586] nss-wifi-drv 39000000.nss: wifili: shadow rd 0x4570e000 wr 0x457dc000 lmac from 128
+[   23.313363] nss-wifi-drv 39000000.nss: wifili: reo0 id 0 base 0x57b80000 x2048 hw 0x205b829c/0x205bb038
+[   23.321870] nss-wifi-drv 39000000.nss: wifili: reo1 id 1 base 0x57bc0000 x2048 hw 0x205b82f4/0x205bb040
+[   23.331246] nss-wifi-drv 39000000.nss: wifili: reo2 id 2 base 0x57c00000 x2048 hw 0x205b834c/0x205bb048
+[   23.340621] nss-wifi-drv 39000000.nss: wifili: reo3 id 3 base 0x57c40000 x2048 hw 0x205b83a4/0x205bb050
+[   23.349999] nss-wifi-drv 39000000.nss: wifili: radio 0 rxdma id 128 base 0x57b50000 x4096 hw 0x20400000/0x20400000 swdesc 12288
+[   23.940359] qca-ppe 3a000000.ppe lan1: configuring for phy/psgmii link mode
+[   24.108087] br-lan: port 1(lan1) entered blocking state
+[   24.108134] br-lan: port 1(lan1) entered disabled state
+[   24.112158] qca-ppe 3a000000.ppe lan1: entered allmulticast mode
+[   24.117377] qca-edma 3ab00000.edma eth0: entered allmulticast mode
+[   24.124058] qca-ppe 3a000000.ppe lan1: entered promiscuous mode
+[   24.136135] qca-ppe 3a000000.ppe lan2: configuring for phy/psgmii link mode
+[   24.287740] br-lan: port 2(lan2) entered blocking state
+[   24.287779] br-lan: port 2(lan2) entered disabled state
+[   24.291879] qca-ppe 3a000000.ppe lan2: entered allmulticast mode
+[   24.297410] qca-ppe 3a000000.ppe lan2: entered promiscuous mode
+[   24.305902] qca-ppe 3a000000.ppe lan3: configuring for phy/psgmii link mode
+[   24.467889] br-lan: port 3(lan3) entered blocking state
+[   24.467932] br-lan: port 3(lan3) entered disabled state
+[   24.471986] qca-ppe 3a000000.ppe lan3: entered allmulticast mode
+[   24.477678] qca-ppe 3a000000.ppe lan3: entered promiscuous mode
+[   24.486252] qca-ppe 3a000000.ppe lan4: configuring for phy/psgmii link mode
+[   24.650117] qca-ppe 3a000000.ppe lan4: Link is Up - 1Gbps/Full - flow control rx/tx
+[   24.650193] br-lan: port 4(lan4) entered blocking state
+[   24.656611] br-lan: port 4(lan4) entered disabled state
+[   24.661871] qca-ppe 3a000000.ppe lan4: entered allmulticast mode
+[   24.667625] qca-ppe 3a000000.ppe lan4: entered promiscuous mode
+[   24.673649] br-lan: port 4(lan4) entered blocking state
+[   24.678915] br-lan: port 4(lan4) entered forwarding state
+[   24.689562] qca-ppe 3a000000.ppe wan: configuring for phy/2500base-x link mode
+[   25.686577] qca-ppe 3a000000.ppe wan: Link is Up - 1Gbps/Full - flow control rx/tx
+[   27.200234] qca-ppe 3a000000.ppe lan1: Link is Up - 1Gbps/Full - flow control rx/tx
+[   27.200300] br-lan: port 1(lan1) entered blocking state
+[   27.206720] br-lan: port 1(lan1) entered forwarding state
+[  148.511583] nss-wifi-drv 39000000.nss: vdev 0 on radio 0 is interface 31, encap 2 decap 2
+[  148.530143] nss-wifi-drv 39000000.nss: peer dc:d8:7c:54:83:f0: id 1 ast_idx 155 ast_hash 0x9b vdev 0
+[  148.531949] br-lan: port 5(phy2-ap0) entered blocking state
+[  148.538391] br-lan: port 5(phy2-ap0) entered disabled state
+[  148.543690] ath11k_pci 0000:01:00.0 phy2-ap0: entered allmulticast mode
+[  148.549553] ath11k_pci 0000:01:00.0 phy2-ap0: entered promiscuous mode
+[  149.388240] br-lan: port 5(phy2-ap0) entered blocking state
+[  149.388291] br-lan: port 5(phy2-ap0) entered forwarding state
+[  261.755873] br-lan: port 4(lan4) entered disabled state
+[  261.775213] qca-ppe 3a000000.ppe lan4: Link is Down
+[  264.878283] qca-ppe 3a000000.ppe lan4: Link is Up - 1Gbps/Full - flow control off
+[  264.878353] br-lan: port 4(lan4) entered blocking state
+[  264.884762] br-lan: port 4(lan4) entered forwarding state
+[  272.155703] br-lan: port 4(lan4) entered disabled state
+[  272.175090] qca-ppe 3a000000.ppe lan4: Link is Down
+[  274.238152] qca-ppe 3a000000.ppe lan4: Link is Up - 1Gbps/Full - flow control off
+[  274.238219] br-lan: port 4(lan4) entered blocking state
+[  274.244631] br-lan: port 4(lan4) entered forwarding state
+[  276.315654] br-lan: port 4(lan4) entered disabled state
+[  276.335000] qca-ppe 3a000000.ppe lan4: Link is Down
+[  278.398105] qca-ppe 3a000000.ppe lan4: Link is Up - 1Gbps/Full - flow control rx/tx
+[  278.398172] br-lan: port 4(lan4) entered blocking state
+[  278.404592] br-lan: port 4(lan4) entered forwarding state
+[  280.475602] br-lan: port 4(lan4) entered disabled state
+[  280.494938] qca-ppe 3a000000.ppe lan4: Link is Down
+[  291.917913] qca-ppe 3a000000.ppe lan4: Link is Up - 1Gbps/Full - flow control rx/tx
+[  291.917980] br-lan: port 4(lan4) entered blocking state
+[  291.924394] br-lan: port 4(lan4) entered forwarding state
+[  294.537728] nss-wifi-drv 39000000.nss: peer 60:38:e0:c1:c5:22: id 2 ast_idx 86 ast_hash 0x56 vdev 0
+[  294.741865] nss-wifi-drv 39000000.nss: interface 31 protects frames with 6
+0-3
+qdisc noqueue 0: dev lo root refcnt 2 
+qdisc mq 0: dev eth0 root 
+qdisc fq_codel 0: dev eth0 parent :4 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms memory_limit 4Mb ecn drop_batch 64 
+qdisc fq_codel 0: dev eth0 parent :3 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms memory_limit 4Mb ecn drop_batch 64 
+qdisc fq_codel 0: dev eth0 parent :2 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms memory_limit 4Mb ecn drop_batch 64 
+qdisc fq_codel 0: dev eth0 parent :1 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms memory_limit 4Mb ecn drop_batch 64 
+qdisc noqueue 0: dev lan1 root refcnt 2 
+qdisc noqueue 0: dev lan2 root refcnt 2 
+qdisc noqueue 0: dev lan3 root refcnt 2 
+qdisc noqueue 0: dev lan4 root refcnt 2 
+qdisc noqueue 0: dev wan root refcnt 2 
+qdisc noqueue 0: dev br-lan root refcnt 2 
+qdisc noqueue 0: dev phy2-ap0 root refcnt 2 

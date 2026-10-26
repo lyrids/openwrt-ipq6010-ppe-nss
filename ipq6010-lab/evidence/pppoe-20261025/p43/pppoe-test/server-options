@@ -1,0 +1,8 @@
+noauth
+nodefaultroute
+noipdefault
+noipv6
+mtu 1492
+mru 1492
+lcp-echo-interval 10
+lcp-echo-failure 3

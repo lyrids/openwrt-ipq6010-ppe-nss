@@ -1,0 +1,186 @@
+INITIAL
+{
+	"kernel": "6.18.55",
+	"hostname": "OpenWrt",
+	"system": "ARMv8 Processor rev 4",
+	"model": "JDCloud RE-CS-02",
+	"board_name": "jdcloud,re-cs-02",
+	"rootfs_type": "initramfs",
+	"release": {
+		"distribution": "OpenWrt",
+		"version": "SNAPSHOT",
+		"firmware_url": "https://downloads.openwrt.org/",
+		"revision": "r37715-49b3824932",
+		"target": "qualcommax/ipq60xx",
+		"manufacturer": "OpenWrt",
+		"description": "OpenWrt SNAPSHOT r37715-49b3824932",
+		"builddate": "1792946445"
+	}
+}
+Variant: experimental PPE + NSS Ethernet backend, iteration 9 (wireless flowtable lifecycle)
+Base: community 03803c78cd3b6968c20dab239c0c2f688692be63 plus archived local backend fixes
+Kernel/NSS datapath: pre-kexec iteration5 MTU-guard source; kexec disabled
+NSS: community Ethernet and Wi-Fi adapters, CP firmware 12.5; no vendor qca-nss-drv or ECM
+Wi-Fi lifecycle: firewall reload after netifd.wireless.done, debounced 1000ms
+Hardware baseline: wired NAT, QCN9074 bridge/NAT, bidirectional TCP and UDP, peer reconnect validated
+Reduced routed MTU: software fallback guard, not arbitrary NSS hardware MTU enforcement
+{
+	"firewall": {
+		"triggers": [
+			[
+				"config.change",
+				[
+					"if",
+					[
+						"eq",
+						"package",
+						"firewall"
+					],
+					[
+						"run_script",
+						"/etc/init.d/firewall",
+						"reload"
+					]
+				],
+				1000
+			],
+			[
+				"service.data.update",
+				[
+					"if",
+					[
+						"eq",
+						"name",
+						"firewall"
+					],
+					[
+						"run_script",
+						"/etc/init.d/firewall",
+						"reload"
+					]
+				],
+				1000
+			],
+			[
+				"netifd.wireless.done",
+				[
+					[
+						"run_script",
+						"/etc/init.d/firewall",
+						"reload"
+					]
+				],
+				1000
+			]
+		]
+	}
+}
+table inet fw4 {
+	flowtable ft {
+		hook ingress priority filter
+		devices = { "lan1", "lan2", "lan3", "lan4", "phy2-ap0", "wan" }
+		flags offload
+		counter
+	}
+}
+CYCLE-1-DOWN
+table inet fw4 {
+	flowtable ft {
+		hook ingress priority filter
+		devices = { "lan1", "lan2", "lan3", "lan4", "wan" }
+		flags offload
+		counter
+	}
+}
+CYCLE-1-UP
+table inet fw4 {
+	flowtable ft {
+		hook ingress priority filter
+		devices = { "lan1", "lan2", "lan3", "lan4", "phy2-ap0", "wan" }
+		flags offload
+		counter
+	}
+}
+CYCLE-2-DOWN
+table inet fw4 {
+	flowtable ft {
+		hook ingress priority filter
+		devices = { "lan1", "lan2", "lan3", "lan4", "wan" }
+		flags offload
+		counter
+	}
+}
+CYCLE-2-UP
+table inet fw4 {
+	flowtable ft {
+		hook ingress priority filter
+		devices = { "lan1", "lan2", "lan3", "lan4", "phy2-ap0", "wan" }
+		flags offload
+		counter
+	}
+}
+phy#2
+	Interface phy2-ap0
+		ifindex 11
+		wdev 0x200000003
+		addr dc:d8:7c:54:83:f0
+		ssid OpenWrt-RAM-test-QCN9074
+		type AP
+		channel 36 (5180 MHz), width: 80 MHz, center1: 5210 MHz
+		txpower 27.00 dBm
+		multicast TXQ:
+			qsz-byt	qsz-pkt	flows	drops	marks	overlmt	hashcol	tx-bytes	tx-packets
+			0	0	0	0	0	0	0	0		0
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+eth0             UNKNOWN        fe80::ded8:7bff:fe54:83ec/64 
+lan1@eth0        UP             
+lan2@eth0        DOWN           
+lan3@eth0        DOWN           
+lan4@eth0        UP             
+wan@eth0         UP             192.168.21.138/24 fe80::ded8:7bff:fe54:83ec/64 
+br-lan           UP             192.168.1.1/24 fd2a:f883:6d8c::1/60 fe80::ded8:7bff:fe54:83ec/64 
+phy2-ap0         UP             
+Settings for wan:
+	Supported ports: [  ]
+	Supported link modes:   10baseT/Half 10baseT/Full
+	                        100baseT/Half 100baseT/Full
+	                        1000baseT/Full
+	                        2500baseT/Full
+	Supported pause frame use: Symmetric Receive-only
+	Supports auto-negotiation: Yes
+	Supported FEC modes: Not reported
+	Advertised link modes:  10baseT/Half 10baseT/Full
+	                        100baseT/Half 100baseT/Full
+	                        1000baseT/Full
+	                        2500baseT/Full
+	Advertised pause frame use: Symmetric Receive-only
+	Advertised auto-negotiation: Yes
+	Advertised FEC modes: Not reported
+	Link partner advertised link modes:  10baseT/Half 10baseT/Full
+	                                     100baseT/Half 100baseT/Full
+	                                     1000baseT/Full
+	Link partner advertised pause frame use: Symmetric Receive-only
+	Link partner advertised auto-negotiation: Yes
+	Link partner advertised FEC modes: Not reported
+	Speed: 1000Mb/s
+	Duplex: Full
+	Auto-negotiation: on
+	master-slave cfg: preferred slave
+	master-slave status: master
+	Port: Twisted Pair
+	PHYAD: 12
+	Transceiver: external
+	MDI-X: on (auto)
+	Supports Wake-on: g
+	Wake-on: d
+	Link detected: yes
+ethernet enabled 1 active 1 offers 0 pushed 0 rejected 0
+mtu_policy limited 0 link 0/0 route 0/0 rule 0/0 l3if 0/0
+bound 1 pushed 0 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 1 tx 1 drop 0/0/0/0 exceptions
+node ipv4 rx 1 tx 0 drop 0/0/0/0 exceptions 9:1
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0

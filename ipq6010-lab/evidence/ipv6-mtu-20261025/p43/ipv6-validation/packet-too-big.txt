@@ -1,0 +1,7 @@
+PING fd42:6018:1::60 (fd42:6018:1::60) from fd42:6018:100::63 eth0.100: 1400 data bytes
+From fd42:6018:100::1 icmp_seq=1 Packet too big: mtu=1400
+ping: sendmsg: Message too long
+
+--- fd42:6018:1::60 ping statistics ---
+2 packets transmitted, 0 received, +2 errors, 100% packet loss, time 1058ms
+

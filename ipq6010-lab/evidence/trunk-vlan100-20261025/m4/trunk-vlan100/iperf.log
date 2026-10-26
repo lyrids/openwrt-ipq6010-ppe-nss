@@ -1,0 +1,63 @@
+-----------------------------------------------------------
+Server listening on 5211 (test #1)
+-----------------------------------------------------------
+Accepted connection from 192.168.100.63, port 49451
+[  6] local 192.168.100.60 port 5211 connected to 192.168.100.63 port 37937
+[ ID] Interval           Transfer     Bitrate
+[  6]   0.00-1.00   sec   112 MBytes   935 Mbits/sec                  
+[  6]   1.00-2.00   sec   112 MBytes   940 Mbits/sec                  
+[  6]   2.00-3.00   sec   112 MBytes   939 Mbits/sec                  
+[  6]   3.00-4.00   sec   112 MBytes   938 Mbits/sec                  
+[  6]   4.00-5.00   sec   112 MBytes   938 Mbits/sec                  
+[  6]   5.00-6.00   sec   112 MBytes   940 Mbits/sec                  
+[  6]   6.00-7.00   sec   112 MBytes   938 Mbits/sec                  
+[  6]   7.00-8.00   sec   112 MBytes   940 Mbits/sec                  
+[  6]   8.00-9.00   sec   112 MBytes   938 Mbits/sec                  
+[  6]   9.00-10.00  sec   112 MBytes   939 Mbits/sec                  
+[  6]  10.00-11.00  sec   112 MBytes   940 Mbits/sec                  
+[  6]  11.00-12.00  sec   112 MBytes   938 Mbits/sec                  
+[  6]  12.00-13.00  sec   112 MBytes   940 Mbits/sec                  
+[  6]  13.00-14.00  sec   112 MBytes   938 Mbits/sec                  
+[  6]  14.00-15.00  sec   112 MBytes   939 Mbits/sec                  
+[  6]  15.00-16.00  sec   112 MBytes   939 Mbits/sec                  
+[  6]  16.00-17.00  sec   112 MBytes   939 Mbits/sec                  
+[  6]  17.00-18.00  sec   112 MBytes   939 Mbits/sec                  
+[  6]  18.00-19.00  sec   112 MBytes   938 Mbits/sec                  
+[  6]  19.00-20.00  sec   112 MBytes   939 Mbits/sec                  
+[  6]  20.00-20.01  sec   640 KBytes   932 Mbits/sec                  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate
+[  6]   0.00-20.01  sec  2.19 GBytes   939 Mbits/sec                  receiver
+-----------------------------------------------------------
+Server listening on 5211 (test #2)
+-----------------------------------------------------------
+Accepted connection from 192.168.100.63, port 48493
+[  6] local 192.168.100.60 port 5211 connected to 192.168.100.63 port 59401
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  6]   0.00-1.00   sec   113 MBytes   950 Mbits/sec    0    396 KBytes       
+[  6]   1.00-2.00   sec   112 MBytes   939 Mbits/sec    0    396 KBytes       
+[  6]   2.00-3.00   sec   112 MBytes   941 Mbits/sec    0    396 KBytes       
+[  6]   3.00-4.00   sec   112 MBytes   938 Mbits/sec    0    396 KBytes       
+[  6]   4.00-5.00   sec   112 MBytes   937 Mbits/sec    0    396 KBytes       
+[  6]   5.00-6.00   sec   112 MBytes   944 Mbits/sec    0    396 KBytes       
+[  6]   6.00-7.00   sec   111 MBytes   934 Mbits/sec    0    396 KBytes       
+[  6]   7.00-8.00   sec   111 MBytes   933 Mbits/sec    0    396 KBytes       
+[  6]   8.00-9.00   sec   112 MBytes   943 Mbits/sec    0    396 KBytes       
+[  6]   9.00-10.00  sec   112 MBytes   944 Mbits/sec    0    662 KBytes       
+[  6]  10.00-11.00  sec   112 MBytes   941 Mbits/sec    0    662 KBytes       
+[  6]  11.00-12.00  sec   112 MBytes   937 Mbits/sec    0    662 KBytes       
+[  6]  12.00-13.00  sec   112 MBytes   938 Mbits/sec    0    662 KBytes       
+[  6]  13.00-14.00  sec   112 MBytes   938 Mbits/sec    0    662 KBytes       
+[  6]  14.00-15.00  sec   112 MBytes   943 Mbits/sec    0    662 KBytes       
+[  6]  15.00-16.00  sec   112 MBytes   944 Mbits/sec    0    662 KBytes       
+[  6]  16.00-17.00  sec   112 MBytes   936 Mbits/sec    0    662 KBytes       
+[  6]  17.00-18.00  sec   112 MBytes   936 Mbits/sec    0    662 KBytes       
+[  6]  18.00-19.00  sec   112 MBytes   936 Mbits/sec    0    662 KBytes       
+[  6]  19.00-20.00  sec   113 MBytes   945 Mbits/sec    0    662 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  6]   0.00-20.00  sec  2.19 GBytes   940 Mbits/sec    0             sender
+-----------------------------------------------------------
+Server listening on 5211 (test #3)
+-----------------------------------------------------------
+iperf3: interrupt - the server has terminated

@@ -1,0 +1,56 @@
+{
+  "image": "nss-ethernet-vlanfix-03803c78cd-20261025",
+  "topology": "p43 192.168.100.63 eth0.100 -> LAN1 tagged VLAN100 PVID100 -> router br-lan.100 192.168.100.1 -> routing -> LAN4 untagged VLAN1 -> m4 192.168.1.158",
+  "cases": {
+    "fallback-reverse": {
+      "receiver_mbps": 938.016317708129,
+      "retransmits": 4,
+      "error": null
+    },
+    "fallback-forward": {
+      "receiver_mbps": 935.963289070009,
+      "retransmits": 9,
+      "error": null
+    },
+    "reverse": {
+      "receiver_mbps": 938.8870637486644,
+      "retransmits": 9,
+      "error": null
+    },
+    "recovered": {
+      "receiver_mbps": 938.188702311008,
+      "retransmits": 0,
+      "error": null
+    },
+    "forward": {
+      "receiver_mbps": 938.7024507932597,
+      "retransmits": 0,
+      "error": null
+    }
+  },
+  "monitoring": {
+    "monitor": {
+      "samples": 55,
+      "average_all_core_cpu_busy_percent": 0.625,
+      "max_firmware_rx": 702093,
+      "max_firmware_return_rx": 1156355,
+      "note": "Monitoring windows include setup/teardown."
+    },
+    "fallback-monitor": {
+      "samples": 25,
+      "average_all_core_cpu_busy_percent": 28.536,
+      "max_firmware_rx": 0,
+      "max_firmware_return_rx": 0,
+      "note": "Monitoring windows include setup/teardown."
+    }
+  },
+  "hardware_evidence": "VLAN rules acknowledged; installed firmware flows if1/4; increasing firmware and PPE counters; conntrack HW_OFFLOAD.",
+  "fallback_evidence": "Forced rule rejection: pushed unchanged at4, no installed firmware flows or PPE steering, conntrack OFFLOAD without HW_OFFLOAD; both directions complete. Injection then disabled; pushed increases to6 and acceleration recovers.",
+  "final_state": "VLAN/PVID topology retained, test flows/servers removed, fault injection0, root tmpfs, startup survival check passed.",
+  "limitations": [
+    "One VLAN100-to-untagged IPv4 routed path tested",
+    "NAT on this revision not retested",
+    "IPv6/PPPoE/QinQ and WAN2.5G not verified",
+    "Long-duration and concurrent-flow stress pending"
+  ]
+}

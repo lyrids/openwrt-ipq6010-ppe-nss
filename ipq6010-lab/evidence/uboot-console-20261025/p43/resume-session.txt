@@ -1,0 +1,8 @@
+������
+U-Boot Telnet Console
+Version: U-Boot 2016.01-3011049 (2026-08-16 14:28:46 +0800)
+Ported from project: Yuzhii0718/bl-mt798x-dhcpd
+Author: Yuzhii0718
+
+IPQ6018# 
+>>> run bootcmd

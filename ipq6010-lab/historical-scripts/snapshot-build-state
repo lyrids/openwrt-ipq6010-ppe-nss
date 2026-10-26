@@ -1,0 +1,16 @@
+#!/bin/bash
+set -euo pipefail
+workspace="$HOME/projects/openwrt-dev"
+tree="${1:-$workspace/src/openwrt-main}"
+out="${2:-$workspace/artifacts/state-main}"
+mkdir -p "$out"
+cd "$tree"
+git rev-parse HEAD > "$out/source-commit.txt"
+git remote -v > "$out/source-remotes.txt"
+git status --short > "$out/source-status.txt"
+./scripts/feeds list -s -f > "$out/feeds.conf.pinned"
+if test -f .config; then
+    cp .config "$out/config.full"
+    ./scripts/diffconfig.sh > "$out/config.seed"
+fi
+printf 'Saved build state: %s\n' "$out"

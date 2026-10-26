@@ -1,0 +1,13 @@
+iperf3: error - unable to start listener for connections: Cannot assign requested address
+iperf3: exiting
+-----------------------------------------------------------
+Server listening on 5241 (test #1)
+-----------------------------------------------------------
+Accepted connection from fd42:6018:100::63, port 50727
+[  6] local fd42:6018:1::60 port 5241 connected to fd42:6018:100::63 port 51005
+[  7] local fd42:6018:1::60 port 5241 connected to fd42:6018:100::63 port 41848
+iperf3: error - idle timeout for receiving data
+-----------------------------------------------------------
+Server listening on 5241 (test #2)
+-----------------------------------------------------------
+iperf3: interrupt - the server has terminated

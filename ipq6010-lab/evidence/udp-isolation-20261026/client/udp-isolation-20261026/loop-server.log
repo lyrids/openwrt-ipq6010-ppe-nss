@@ -1,0 +1,44 @@
+-----------------------------------------------------------
+Server listening on 5362 (test #1)
+-----------------------------------------------------------
+Accepted connection from 127.0.0.1, port 48237
+[  6] local 127.0.0.1 port 5362 connected to 127.0.0.1 port 59285
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  6]   0.00-1.00   sec  11.9 MBytes   100 Mbits/sec  0.002 ms  0/10427 (0%)  
+[  6]   1.00-2.00   sec  11.9 MBytes   100 Mbits/sec  0.000 ms  0/10417 (0%)  
+[  6]   2.00-3.00   sec  11.9 MBytes   100 Mbits/sec  0.000 ms  0/10416 (0%)  
+[  6]   3.00-4.00   sec  11.9 MBytes   100 Mbits/sec  0.001 ms  0/10418 (0%)  
+[  6]   4.00-5.00   sec  11.9 MBytes   100 Mbits/sec  0.000 ms  0/10416 (0%)  
+[  6]   5.00-6.00   sec  11.9 MBytes   100 Mbits/sec  0.000 ms  0/10416 (0%)  
+[  6]   6.00-7.00   sec  11.9 MBytes   100 Mbits/sec  0.000 ms  0/10407 (0%)  
+[  6]   7.00-8.00   sec  11.9 MBytes   100 Mbits/sec  0.001 ms  0/10419 (0%)  
+[  6]   8.00-9.00   sec  11.9 MBytes   100 Mbits/sec  0.000 ms  0/10415 (0%)  
+[  6]   9.00-10.00  sec  11.9 MBytes   100 Mbits/sec  0.000 ms  0/10416 (0%)  
+[  6]  10.00-10.00  sec  2.34 KBytes  74.1 Mbits/sec  0.001 ms  0/2 (0%)  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  6]   0.00-10.00  sec   119 MBytes   100 Mbits/sec  0.001 ms  0/104169 (0%)  receiver
+-----------------------------------------------------------
+Server listening on 5362 (test #2)
+-----------------------------------------------------------
+Accepted connection from 127.0.0.1, port 41193
+[  6] local 127.0.0.1 port 5362 connected to 127.0.0.1 port 44444
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  6]   0.00-1.00   sec   130 MBytes  1.09 Gbits/sec  0.000 ms  0/113931 (0%)  
+[  6]   1.00-2.00   sec   130 MBytes  1.09 Gbits/sec  0.000 ms  0/113530 (0%)  
+[  6]   2.00-3.00   sec   130 MBytes  1.09 Gbits/sec  0.000 ms  0/113259 (0%)  
+[  6]   3.00-4.00   sec   130 MBytes  1.09 Gbits/sec  0.000 ms  0/113663 (0%)  
+[  6]   4.00-5.00   sec   130 MBytes  1.09 Gbits/sec  0.000 ms  0/113841 (0%)  
+[  6]   5.00-6.00   sec   130 MBytes  1.09 Gbits/sec  0.000 ms  0/113649 (0%)  
+[  6]   6.00-7.00   sec   130 MBytes  1.09 Gbits/sec  0.000 ms  0/113947 (0%)  
+[  6]   7.00-8.00   sec   130 MBytes  1.09 Gbits/sec  0.000 ms  0/113950 (0%)  
+[  6]   8.00-9.00   sec   130 MBytes  1.09 Gbits/sec  0.000 ms  0/113365 (0%)  
+[  6]   9.00-10.00  sec   130 MBytes  1.09 Gbits/sec  0.000 ms  0/113848 (0%)  
+[  6]  10.00-10.00  sec  4.69 KBytes   187 Mbits/sec  0.004 ms  0/4 (0%)  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  6]   0.00-10.00  sec  1.27 GBytes  1.09 Gbits/sec  0.004 ms  0/1136987 (0%)  receiver
+-----------------------------------------------------------
+Server listening on 5362 (test #3)
+-----------------------------------------------------------
+iperf3: interrupt - the server has terminated by signal Terminated(15)

@@ -1,0 +1,30 @@
+ethernet enabled 1 active 1 offers 246 pushed 100 rejected 24
+bound 0 pushed 100 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 17 v4 ethernet if 1/4 prio 0 installed 1 age 7370ms fw flow rx 0 tx 321439 return rx 321439 tx 0
+proto 17 v4 ethernet if 1/4 prio 0 installed 1 age 7370ms fw flow rx 321408 tx 0 return rx 0 tx 321408
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 udp      17 src=192.168.100.63 dst=192.168.200.60 sport=59332 dport=5235 packets=1 bytes=32 src=192.168.200.60 dst=192.168.200.1 sport=5235 dport=59332 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 udp      17 src=192.168.100.63 dst=192.168.200.60 sport=59336 dport=5235 packets=1 bytes=32 src=192.168.200.60 dst=192.168.200.1 sport=5235 dport=59336 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    28764302 37924640098 0 0
+1    15993836 21577630686 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    15486344 19910893055 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   7616274 9626671244
+1   208 52734
+2   12402398 16335859367
+3   9118882 12133508735
+4   2349681 3400077188
+vport packets bytes drop_packets drop_bytes

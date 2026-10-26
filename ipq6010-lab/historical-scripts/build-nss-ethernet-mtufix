@@ -1,0 +1,25 @@
+#!/bin/bash
+set -euo pipefail
+workspace="$HOME/projects/openwrt-dev"
+. "$workspace/env.sh"
+run="$workspace/artifacts/nss-ethernet-mtufix-03803c78cd-20261025"
+mkdir -p "$run"
+exec 9>"$workspace/.build.lock"
+flock -n 9 || { echo 'Another workspace build is running'; exit 1; }
+printf '%s\n' "$$" > "$run/pid"
+trap 'rc=$?; printf "%s\n" "$rc" > "$run/exit-code"; if test "$rc" -ne 0; then printf "failed\n" > "$run/status"; fi' EXIT
+cd "$workspace/src/openwrt-ppe-nss"
+test "$(git rev-parse HEAD)" = 03803c78cd3b6968c20dab239c0c2f688692be63
+"$workspace/bin/snapshot-build-state" "$PWD" "$run/build-state"
+git diff > "$run/source-local.patch"
+git -C feeds/nss diff > "$run/firmware-feed-local.patch"
+git -C feeds/nss rev-parse HEAD > "$run/firmware-feed-commit.txt"
+sha256sum "$run/source-local.patch" "$run/firmware-feed-local.patch" > "$run/patches.sha256"
+date -u +%FT%TZ > "$run/started-utc"
+printf 'downloading\n' > "$run/status"
+make download -j"$BUILD_JOBS" > "$run/download.log" 2>&1
+printf 'building\n' > "$run/status"
+# Kernel source already rebuilt successfully in pass1; packaging dependency fix only.
+make -j"$BUILD_JOBS" V=s > "$run/build.log" 2>&1
+printf 'built\n' > "$run/status"
+date -u +%FT%TZ > "$run/finished-utc"

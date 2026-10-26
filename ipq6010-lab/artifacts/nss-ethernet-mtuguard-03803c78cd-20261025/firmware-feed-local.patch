@@ -1,0 +1,34 @@
+diff --git a/nss-firmware/Makefile b/nss-firmware/Makefile
+index 7715f8f..2c88531 100644
+--- a/nss-firmware/Makefile
++++ b/nss-firmware/Makefile
+@@ -12,7 +12,7 @@ PKG_VERSION:=2025.05.01
+ PKG_HASH:=10a4b1e69470db150915cb063525436494b8ae4eebb8b50ea6ad894082d7abb0
+ PKG_SOURCE_URL:=https://github.com/qosmio/qca-sdk-nss-fw/releases/download/v$(PKG_VERSION)
+ PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.zst
+-PKG_RELEASE:=1
++PKG_RELEASE:=2
+ 
+ PKG_LICENSE_FILES:=LICENSE.md
+ 
+@@ -82,8 +82,8 @@ define Package/nss-firmware/config
+   endmenu
+ endef
+ 
+-# Both lines are installed as qca-nss<N>-retail-<line>.bin, and the plain
+-# name points at the line selected above.
++# Install only the selected firmware line for this minimal image.
++# The plain name points at that selected version.
+ NSS_LINE_12.5:=210 QCA_Networking_2024.SPF_12.5/ED1
+ NSS_LINE_11.4:=6 QCA_Networking_2021.SPF_11.4/CS
+ NSS_LINE:=$(if $(CONFIG_NSS_FIRMWARE_VERSION_11_4),11.4,12.5)
+@@ -104,8 +104,7 @@ endef
+ 
+ define Package/nss-firmware-common/install
+ 	$(INSTALL_DIR) $(1)/lib/firmware
+-	$(call nss-firmware-line,$(1),12.5)
+-	$(call nss-firmware-line,$(1),11.4)
++	$(call nss-firmware-line,$(1),$(NSS_LINE))
+ 	$(LN) qca-nss0-retail-$(NSS_LINE).bin $(1)/lib/firmware/qca-nss0-retail.bin
+ 	$(if $(filter HK,$(NSS_SOC)),$(LN) qca-nss1-retail-$(NSS_LINE).bin \
+ 		$(1)/lib/firmware/qca-nss1-retail.bin)

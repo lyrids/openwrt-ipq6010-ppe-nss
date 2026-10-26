@@ -1,0 +1,149 @@
+[
+  {
+    "patch": "900-ath11k-describe-the-data-path-rings-to-the-NSS-firmware.patch",
+    "files": [
+      "b/drivers/net/wireless/ath/ath11k/dp.c",
+      "b/drivers/net/wireless/ath/ath11k/core.c",
+      "b/drivers/net/wireless/ath/ath11k/core.h"
+    ]
+  },
+  {
+    "patch": "901-ath11k-stop-driving-the-rings-the-NSS-firmware-owns.patch",
+    "files": [
+      "b/drivers/net/wireless/ath/ath11k/core.c",
+      "b/drivers/net/wireless/ath/ath11k/core.h",
+      "b/drivers/net/wireless/ath/ath11k/dp.c",
+      "b/drivers/net/wireless/ath/ath11k/dp_rx.c",
+      "b/drivers/net/wireless/ath/ath11k/mac.c",
+      "b/drivers/net/wireless/ath/ath11k/hw.c"
+    ]
+  },
+  {
+    "patch": "902-ath11k-return-the-link-descriptors-the-NSS-firmware-hands-back.patch",
+    "files": [
+      "b/drivers/net/wireless/ath/ath11k/dp.c",
+      "b/drivers/net/wireless/ath/ath11k/dp_rx.c",
+      "b/drivers/net/wireless/ath/ath11k/dp_rx.h"
+    ]
+  },
+  {
+    "patch": "903-ath11k-hand-data-frames-to-the-NSS-firmware.patch",
+    "files": [
+      "b/drivers/net/wireless/ath/ath11k/core.h",
+      "b/drivers/net/wireless/ath/ath11k/mac.c",
+      "b/drivers/net/wireless/ath/ath11k/core.c",
+      "b/drivers/net/wireless/ath/ath11k/dp.c",
+      "b/drivers/net/wireless/ath/ath11k/dp_rx.c",
+      "b/drivers/net/wireless/ath/ath11k/dp_rx.h",
+      "b/drivers/net/wireless/ath/ath11k/hal_rx.c"
+    ]
+  },
+  {
+    "patch": "904-ath11k-tell-the-NSS-firmware-about-a-station.patch",
+    "files": [
+      "b/drivers/net/wireless/ath/ath11k/peer.c"
+    ]
+  },
+  {
+    "patch": "905-ath11k-tell-the-NSS-firmware-how-frames-are-protected.patch",
+    "files": [
+      "b/drivers/net/wireless/ath/ath11k/mac.c"
+    ]
+  },
+  {
+    "patch": "906-ath11k-let-a-supplicant-see-an-offloaded-key-exchange.patch",
+    "files": [
+      "backports-7.2/drivers/net/wireless/ath/ath11k/mac.c"
+    ]
+  },
+  {
+    "patch": "907-ath11k-let-the-flow-table-reach-the-NSS-firmware.patch",
+    "files": [
+      "backports-7.2/drivers/net/wireless/ath/ath11k/mac.c"
+    ]
+  },
+  {
+    "patch": "908-mac80211-let-a-driver-mirror-the-mesh-path-table.patch",
+    "files": [
+      "backports-7.2/include/net/mac80211.h",
+      "backports-7.2/net/mac80211/driver-ops.h",
+      "backports-7.2/net/mac80211/mesh.h",
+      "backports-7.2/net/mac80211/mesh_pathtbl.c",
+      "backports-7.2/net/mac80211/mesh_hwmp.c",
+      "backports-7.2/net/mac80211/mesh.c",
+      "backports-7.2/net/mac80211/cfg.c"
+    ]
+  },
+  {
+    "patch": "909-ath11k-offload-802.11s-to-the-NSS-firmware.patch",
+    "files": [
+      "b/drivers/net/wireless/ath/ath11k/dp_rx.c",
+      "b/drivers/net/wireless/ath/ath11k/mac.c"
+    ]
+  },
+  {
+    "patch": "910-ath11k-report-what-the-NSS-firmware-counts-for-a-station.patch",
+    "files": [
+      "b/drivers/net/wireless/ath/ath11k/core.h",
+      "b/drivers/net/wireless/ath/ath11k/dp.c",
+      "b/drivers/net/wireless/ath/ath11k/mac.c"
+    ]
+  },
+  {
+    "patch": "911-ath11k-send-a-QoS-null-frame-over-WMI-when-the-NSS-firmware-owns-transmit.patch",
+    "files": [
+      "b/drivers/net/wireless/ath/ath11k/mac.c",
+      "b/drivers/net/wireless/ath/ath11k/wmi.c",
+      "b/drivers/net/wireless/ath/ath11k/wmi.h"
+    ]
+  },
+  {
+    "patch": "912-mac80211-notify-the-driver-of-AP-isolation.patch",
+    "files": [
+      "b/include/net/mac80211.h",
+      "b/net/mac80211/cfg.c",
+      "b/net/mac80211/util.c"
+    ]
+  },
+  {
+    "patch": "913-ath11k-apply-AP-isolation-in-the-NSS-firmware.patch",
+    "files": [
+      "b/drivers/net/wireless/ath/ath11k/mac.c"
+    ]
+  },
+  {
+    "patch": "914-ath11k-classify-NSS-transmitted-frames-as-mac80211-does.patch",
+    "files": [
+      "b/drivers/net/wireless/ath/ath11k/hal_tx.c"
+    ]
+  },
+  {
+    "patch": "915-ath11k-keep-NSS-vdevs-on-ethernet-with-a-monitor-interface.patch",
+    "files": [
+      "b/drivers/net/wireless/ath/ath11k/mac.c"
+    ]
+  },
+  {
+    "patch": "916-ath11k-convert-station-vdev-802.11-frames-for-the-NSS-firmware.patch",
+    "files": [
+      "b/drivers/net/wireless/ath/ath11k/mac.c"
+    ]
+  },
+  {
+    "patch": "917-ath11k-authorise-open-network-peers-in-the-NSS-firmware.patch",
+    "files": [
+      "b/drivers/net/wireless/ath/ath11k/mac.c"
+    ]
+  },
+  {
+    "patch": "918-ath11k-offload-the-QCN9074-to-the-NSS-firmware.patch",
+    "files": [
+      "b/drivers/net/wireless/ath/ath11k/ahb.c",
+      "b/drivers/net/wireless/ath/ath11k/core.c",
+      "b/drivers/net/wireless/ath/ath11k/core.h",
+      "b/drivers/net/wireless/ath/ath11k/dp.c",
+      "b/drivers/net/wireless/ath/ath11k/hif.h",
+      "b/drivers/net/wireless/ath/ath11k/pci.c"
+    ]
+  }
+]

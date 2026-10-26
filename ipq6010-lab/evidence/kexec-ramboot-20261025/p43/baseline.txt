@@ -1,0 +1,71 @@
+ethernet enabled 1 active 1 offers 0 pushed 0 rejected 0
+mtu_policy limited 0 link 0/0 route 0/0 rule 0/0 l3if 0/0
+bound 0 pushed 0 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+[    0.000000] psci: probing for conduit method from DT.
+[    0.000000] psci: PSCIv1.0 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: MIGRATE_INFO_TYPE not supported.
+[    0.000000] psci: SMC Calling Convention v1.0
+              total        used        free      shared  buff/cache   available
+Mem:         900688      282304      574200       37532       44184      552952
+Swap:             0           0           0
+-r--------    1 root     root         32768 Jan  1 00:07 /sys/firmware/fdt
+0
+kexec-tools 2.0.32
+Usage: kexec [OPTION]... [kernel]
+Directly reboot into a new kernel
+
+ -h, --help           Print this help.
+ -v, --version        Print the version of kexec.
+ -f, --force          Force an immediate kexec,
+                      don't call shutdown.
+ -i, --no-checks      Fast reboot, no memory integrity checks.
+ -x, --no-ifdown      Don't bring down network interfaces.
+ -y, --no-sync        Don't sync filesystems before kexec.
+ -l, --load           Load the new kernel into the
+                      current kernel.
+ -p, --load-panic     Load the new kernel for use on panic.
+ -u, --unload         Unload the current kexec target kernel.
+                      If capture kernel is being unloaded
+                      specify -p with -u.
+ -e, --exec           Execute a currently loaded kernel.
+     --exec-live-update Execute a currently loaded xen image after
+storing the state required to live update.
+ -t, --type=TYPE      Specify the new kernel is of this type.
+     --mem-min=<addr> Specify the lowest memory address to
+                      load code into.
+     --mem-max=<addr> Specify the highest memory address to
+                      load code into.
+     --reuseinitrd    Reuse initrd from first boot.
+     --print-ckr-size Print crash kernel region size.
+     --load-preserve-context Load the new kernel and preserve
+                      context of current kernel during kexec.
+     --load-jump-back-helper Load a helper image to jump back
+                      to original kernel.
+     --load-live-update Load the new kernel to overwrite the
+                      running kernel.
+     --entry=<addr>   Specify jump back address.
+                      (0 means it's not jump back or
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+eth0             UNKNOWN        fe80::ded8:7bff:fe54:83ec/64 
+lan1@eth0        UP             
+lan2@eth0        DOWN           
+lan3@eth0        DOWN           
+lan4@eth0        UP             
+wan@eth0         DOWN           
+br-lan           UP             192.168.1.1/24 fddc:5075:9eef::1/60 fe80::ded8:7bff:fe54:83ec/64 
+PING 192.168.1.158 (192.168.1.158): 56 data bytes
+64 bytes from 192.168.1.158: seq=0 ttl=64 time=1.051 ms
+64 bytes from 192.168.1.158: seq=1 ttl=64 time=0.936 ms
+64 bytes from 192.168.1.158: seq=2 ttl=64 time=0.942 ms
+
+--- 192.168.1.158 ping statistics ---
+3 packets transmitted, 3 packets received, 0% packet loss
+round-trip min/avg/max = 0.936/0.976/1.051 ms

@@ -1,0 +1,27 @@
+table inet fw4 {
+	flowtable ft {
+		hook ingress priority filter
+		devices = { "lan1", "lan2", "lan3", "lan4", "phy2-ap0", "wan" }
+		flags offload
+		counter
+	}
+}
+CYCLE 1 DOWN
+table inet fw4 {
+	flowtable ft {
+		hook ingress priority filter
+		devices = { "lan1", "lan2", "lan3", "lan4", "wan" }
+		flags offload
+		counter
+	}
+}
+CYCLE 1 UP
+table inet fw4 {
+	flowtable ft {
+		hook ingress priority filter
+		devices = { "lan1", "lan2", "lan3", "lan4", "phy2-ap0", "wan" }
+		flags offload
+		counter
+	}
+}
+PASS: automatic wireless flowtable membership across 1 cycles

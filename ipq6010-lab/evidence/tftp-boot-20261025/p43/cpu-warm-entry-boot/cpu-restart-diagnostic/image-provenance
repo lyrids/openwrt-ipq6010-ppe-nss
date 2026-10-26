@@ -1,0 +1,6 @@
+Variant: iteration 8 opt-in SCM warm-entry experiment, host-control
+Source base: 9f8c7df335 plus diagnostic0990 and opt-in0991
+Kernel: KEXEC/KEXEC_FILE/HOTPLUG_CPU/SUSPEND retained
+PSCI: raw CPU_ON result, entry/affinity, secondary-C checkpoints
+NSS firmware packaging: 12.5 only; no secure firmware modifications
+CPU restart fix: unverified experiment, disabled by default; sysfs ipq_cpu_warm_vector

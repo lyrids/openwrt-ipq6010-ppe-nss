@@ -1,0 +1,36 @@
+{
+  "image": "nss-ethernet-mtufix-03803c78cd-20261025",
+  "hardware_boot_tested": true,
+  "tests": {
+    "existing-flow": {
+      "baseline1500": {
+        "sent": 150,
+        "acked": 127
+      },
+      "mtu1400": {
+        "sent": 40,
+        "acked": 0
+      }
+    },
+    "fresh-flow": {
+      "warm-fresh": {
+        "sent": 19,
+        "acked": 19
+      },
+      "oversize-fresh": {
+        "sent": 40,
+        "acked": 40
+      }
+    },
+    "recovery": {
+      "restored1500": {
+        "sent": 29,
+        "acked": 29
+      }
+    }
+  },
+  "verdict": "Partial fix only: active-flow invalidation works; fresh reduced-MTU NSS flow still forwards oversized packets.",
+  "next_diagnostics": "Instrument kernel directional MTUs and actual NSS rule MTUs; verify firmware direction/MTU semantics before claiming a fix.",
+  "cleanup": "RouterMTU1500; NSSactive; failure injection0; IPv6 probes removed; LAN1VLAN100/PVID100 and LAN4native1 retained; router ping passed.",
+  "reboot_timing": "Initial automatic approval review timed out before execution; single authorized retry succeeded."
+}

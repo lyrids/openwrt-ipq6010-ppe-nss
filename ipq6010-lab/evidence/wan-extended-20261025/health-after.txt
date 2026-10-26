@@ -1,0 +1,44 @@
+ 15:30:17 up  2:31,  load average: 0.00, 0.00, 0.00
+0-3
+7: wan@eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000
+    link/ether dc:d8:7b:54:83:ec brd ff:ff:ff:ff:ff:ff
+    RX:  bytes packets errors dropped  missed   mcast           
+    5979908796 4292009      0       5       0    2998 
+    TX:  bytes packets errors dropped carrier collsns           
+    5710540803 3905524      0       0       0       0 
+[   26.529070] nss-wifi-drv 39000000.nss: wifili: radio 0 rxdma id 128 base 0x575c0000 x4096 hw 0x20400000/0x20400000 swdesc 12288
+[   27.101142] qca-ppe 3a000000.ppe lan1: configuring for phy/psgmii link mode
+[   27.258421] br-lan: port 1(lan1) entered blocking state
+[   27.258467] br-lan: port 1(lan1) entered disabled state
+[   27.262508] qca-ppe 3a000000.ppe lan1: entered allmulticast mode
+[   27.267702] qca-edma 3ab00000.edma eth0: entered allmulticast mode
+[   27.274341] qca-ppe 3a000000.ppe lan1: entered promiscuous mode
+[   27.286053] qca-ppe 3a000000.ppe lan2: configuring for phy/psgmii link mode
+[   27.438292] br-lan: port 2(lan2) entered blocking state
+[   27.438340] br-lan: port 2(lan2) entered disabled state
+[   27.442363] qca-ppe 3a000000.ppe lan2: entered allmulticast mode
+[   27.448110] qca-ppe 3a000000.ppe lan2: entered promiscuous mode
+[   27.457294] qca-ppe 3a000000.ppe lan3: configuring for phy/psgmii link mode
+[   27.618201] br-lan: port 3(lan3) entered blocking state
+[   27.618243] br-lan: port 3(lan3) entered disabled state
+[   27.622266] qca-ppe 3a000000.ppe lan3: entered allmulticast mode
+[   27.627996] qca-ppe 3a000000.ppe lan3: entered promiscuous mode
+[   27.636436] qca-ppe 3a000000.ppe lan4: configuring for phy/psgmii link mode
+[   27.800431] qca-ppe 3a000000.ppe lan4: Link is Up - 1Gbps/Full - flow control rx/tx
+[   27.800513] br-lan: port 4(lan4) entered blocking state
+[   27.806905] br-lan: port 4(lan4) entered disabled state
+[   27.812167] qca-ppe 3a000000.ppe lan4: entered allmulticast mode
+[   27.817861] qca-ppe 3a000000.ppe lan4: entered promiscuous mode
+[   27.823944] br-lan: port 4(lan4) entered blocking state
+[   27.829228] br-lan: port 4(lan4) entered forwarding state
+[   27.839768] qca-ppe 3a000000.ppe wan: configuring for phy/2500base-x link mode
+[   28.836912] qca-ppe 3a000000.ppe wan: Link is Up - 1Gbps/Full - flow control rx/tx
+[   30.411394] qca-ppe 3a000000.ppe lan1: Link is Up - 1Gbps/Full - flow control rx/tx
+[   30.411462] br-lan: port 1(lan1) entered blocking state
+[   30.417891] br-lan: port 1(lan1) entered forwarding state
+table inet fw4 {
+	chain dstnat {
+		type nat hook prerouting priority dstnat; policy accept;
+		iifname "wan" ip saddr 192.168.21.60 ip daddr 192.168.21.138 tcp dport 5261 counter packets 4 bytes 240 dnat ip to 192.168.1.2:5262 comment "lab-dnat-20261025"
+	}
+}

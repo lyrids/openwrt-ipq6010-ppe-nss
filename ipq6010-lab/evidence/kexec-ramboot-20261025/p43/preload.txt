@@ -1,0 +1,6 @@
+kexec_file_load with invalid fds: return=-1 errno=9 (Bad file descriptor)
+kexec_load with invalid flags: return=-1 errno=22 (Invalid argument)
+c66cc48981aa13d31c938a72d9380a8d8669e0f288c6a5142b2fb2fd9b7fae71  /tmp/kexec-test/Image
+fcffe029dac05cea6d9aceb7fd2db9df2000e57b0dffb00947341fe0e46d6752  /tmp/kexec-test/target.dtb
+11bed04e-a8b8-40c6-a389-a5217746b5d1
+0

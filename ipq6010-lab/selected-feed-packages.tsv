@@ -1,0 +1,7 @@
+nss	nss-firmware
+packages	conntrack-tools
+packages	iperf3
+packages	libnetfilter-cthelper
+packages	libnetfilter-cttimeout
+packages	libnetfilter-queue
+packages	libtirpc

@@ -1,0 +1,127 @@
+Mon Oct 26 05:25:10 UTC 2026
+qdisc tbf 100: root refcnt 13 offloaded rate 200Mbit burst 64Kb/1 mpu 0b lat 50ms linklayer ethernet 
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+class tbf 100:1 parent 100: 
+
+cpu  1093 0 1881 701082 2 0 603 0 0 0
+cpu0 257 0 347 174313 2 0 596 0 0 0
+cpu1 291 0 978 175872 0 0 3 0 0 0
+cpu2 227 0 268 174271 0 0 2 0 0 0
+cpu3 318 0 288 176624 0 0 2 0 0 0
+ethernet enabled 1 active 1 offers 8 pushed 0 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 3/7
+bound 1 pushed 4 last-ifindex 3
+rejected not-ours 4 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 6 tx 6 drop 0/0/0/0 exceptions
+node ipv4 rx 6 tx 0 drop 0/0/0/0 exceptions 9:6
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:44789 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:54007 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:58267 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:51843 -> 192.168.21.154:5201 detail 3
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+PPE-egress
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    1440191 1901196732 0 0
+1    192778 13009074 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    457 105333 0 0
+5    1247442 1888275276 0 0
+6    0 0 0 0
+vsi packets bytes
+0   192272 12740394
+1   1248683 1888692567
+vport packets bytes drop_packets drop_bytes
+PPE-queues
+queue packets bytes buffers
+0     371 30264 0
+1     12 16728 0
+2     1247248 1888331800 0
+3     20 27880 0
+4     132181 8747382 0
+5     59837 3983819 0
+6     194 22107 0
+7     329 36818 0
+144   51 51583 0
+145   13 18039 0
+146   191254 12740130 0
+147   20 11983 0
+148   285 43667 0
+149   256 48190 0
+150   746 71610 0
+151   143 22912 0
+192   30 15140 0
+193   6 8364 0
+194   8 11152 0
+195   6 8364 0
+196   134 21679 0
+197   64 10178 0
+198   85 13469 0
+199   105 14384 0
+208   114818 173742904 0
+209   11 1553 0
+210   1132450 1714513832 0
+212   61 7815 0
+213   36 3183 0
+214   34 2992 0
+215   32 2997 0
+272   2 120 0
+275   10 1372 0
+284   8 480 0
+287   11 2123 0
+group buffers prealloc_used
+0     0 0
+1     0 0
+2     0 0
+3     0 0
+PPE-queue_drops
+queue reason packets bytes
+PPE-policer
+port colour packets bytes
+0    green  0 0
+0    yellow 0 0
+0    red    0 0
+1    green  0 0
+1    yellow 0 0
+1    red    0 0
+2    green  0 0
+2    yellow 0 0
+2    red    0 0
+3    green  0 0
+3    yellow 0 0
+3    red    0 0
+4    green  0 0
+4    yellow 0 0
+4    red    0 0
+5    green  0 0
+5    yellow 0 0
+5    red    0 0
+6    green  0 0
+6    yellow 0 0
+6    red    0 0
+PPE-offload
+offloaded                8
+reinstalled              0
+destroy_miss             0
+stale                    0
+xmit_drop                0
+sparse_promoted          4
+sparse_demoted           0
+live_entries             0
+ingress_not_switch_port  0
+ingress_vlan_domain      0
+unsupported_match        0
+unsupported_protocol     0
+unsupported_action       0
+no_egress_l2_header      0
+egress_not_switch_port   0
+snat_and_dnat            0
+ipv6_nat                 0
+table_full               0
+hardware_op_failed       0

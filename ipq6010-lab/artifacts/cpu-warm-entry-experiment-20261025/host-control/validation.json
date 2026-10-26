@@ -1,0 +1,36 @@
+{
+  "variant": "host-control",
+  "images": [
+    {
+      "filesystem": "initramfs",
+      "name": "openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-initramfs-uImage.itb",
+      "sha256": "5e072483cefb5558c59da01d351d4bf47bfb50c294b34a36df9f4d7ce3ed968c",
+      "sha256_unsigned": "5e072483cefb5558c59da01d351d4bf47bfb50c294b34a36df9f4d7ce3ed968c",
+      "size": 18960156,
+      "type": "kernel"
+    },
+    {
+      "filesystem": "squashfs",
+      "name": "openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-squashfs-sysupgrade.bin",
+      "sha256": "b7655e414659a50a6bbc07eb332cac0ff8e9c156e1f91bbc8c0b7d3cbf38875b",
+      "sha256_unsigned": "b7655e414659a50a6bbc07eb332cac0ff8e9c156e1f91bbc8c0b7d3cbf38875b",
+      "size": 18032915,
+      "type": "sysupgrade",
+      "kernel_bytes": 5906932,
+      "kernel_headroom_bytes": 384524
+    }
+  ],
+  "hardware_boot_tested": true,
+  "fix_applied": false,
+  "checks": [
+    "profile size/SHA256",
+    "FIT cp03-c3",
+    "6MiB kernel limit",
+    "diagnostic strings in actual kernel",
+    "actual embedded initramfs variant config and identity",
+    "selected NSS12.5 only",
+    "built-in kexec and effective kernel config",
+    "vendor NSS/ECM/SSDK packages absent"
+  ],
+  "experiment_runtime": "SCM -EIO before CPU_ON; suspended; see evidence/tftp-boot-20261025"
+}

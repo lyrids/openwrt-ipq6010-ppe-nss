@@ -1,0 +1,154 @@
+{
+	"kernel": "6.18.55",
+	"hostname": "OpenWrt",
+	"system": "ARMv8 Processor rev 4",
+	"model": "JDCloud RE-CS-02",
+	"board_name": "jdcloud,re-cs-02",
+	"rootfs_type": "initramfs",
+	"release": {
+		"distribution": "OpenWrt",
+		"version": "SNAPSHOT",
+		"firmware_url": "https://downloads.openwrt.org/",
+		"revision": "r37652-5192094fd6",
+		"target": "qualcommax/ipq60xx",
+		"manufacturer": "OpenWrt",
+		"description": "OpenWrt SNAPSHOT r37652-5192094fd6",
+		"builddate": "1792789607"
+	}
+}
+Linux OpenWrt 6.18.55 #0 SMP Fri Oct 23 21:06:47 2026 aarch64 GNU/Linux
+
+Command line
+console=ttyMSM0,115200n8 <NULL> rootwait
+
+Mounts
+tmpfs / tmpfs rw,relatime 0 0
+proc /proc proc rw,nosuid,nodev,noexec,relatime 0 0
+sysfs /sys sysfs rw,nosuid,nodev,noexec,relatime 0 0
+cgroup2 /sys/fs/cgroup cgroup2 rw,nosuid,nodev,noexec,relatime,nsdelegate 0 0
+tmpfs /tmp tmpfs rw,nosuid,nodev,noatime 0 0
+tmpfs /tmp/.ujail tmpfs ro,nosuid,nodev,noexec,relatime,size=4k,mode=000 0 0
+tmpfs /dev tmpfs rw,nosuid,noexec,noatime,size=512k,mode=755 0 0
+devpts /dev/pts devpts rw,nosuid,noexec,noatime,mode=600,ptmxmode=000 0 0
+debugfs /sys/kernel/debug debugfs rw,nosuid,nodev,noexec,noatime 0 0
+bpffs /sys/fs/bpf bpf rw,nosuid,nodev,noexec,noatime,mode=700 0 0
+
+Interfaces
+
+Wireless devices
+
+Driver modules
+ath11k                499712  2 ath11k_pci,ath11k_ahb
+ath11k_ahb             24576  0 
+ath11k_pci             20480  0 
+cfg80211              393216  2 ath11k,mac80211
+cmac                   12288  0 
+compat                 16384  4 ath11k_pci,ath11k_ahb,mac80211,cfg80211
+crc_ccitt              12288  1 ppp_async
+crc32c_cryptoapi       12288  0 
+drbg                   24576  0 
+dwc3                   53248  1 dwc3_qcom
+dwc3_qcom              16384  0 
+dwc3_qcom_legacy       16384  0 
+ext4                  462848  0 
+geniv                  12288  1 seqiv
+gpio_button_hotplug    16384  0 
+hmac                   16384  0 
+jbd2                   77824  1 ext4
+jitterentropy_rng      16384  0 
+leds_gpio              12288  0 
+libsha512              24576  1 sha512
+mac80211              737280  1 ath11k
+mbcache                12288  1 ext4
+mhi                    69632  2 ath11k_pci,qrtr_mhi
+michael_mic            12288  0 
+nf_conntrack           90112  7 nft_flow_offload,nf_flow_table,nft_redir,nft_nat,nft_masq,nft_ct,nf_nat
+nf_defrag_ipv4         12288  1 nf_conntrack
+nf_defrag_ipv6         16384  1 nf_conntrack
+nf_flow_table          36864  2 nft_flow_offload,nf_flow_table_inet
+nf_flow_table_inet     12288  0 
+nf_log_syslog          20480  0 
+nf_nat                 36864  4 nft_redir,nft_nat,nft_masq,nft_chain_nat
+nf_reject_ipv4         12288  2 nft_reject_ipv4,nft_reject_inet
+nf_reject_ipv6         12288  2 nft_reject_ipv6,nft_reject_inet
+nf_tables             221184209 nft_flow_offload,nft_fib_inet,nf_flow_table_inet,nf_flow_table,nft_reject_ipv6,nft_reject_ipv4,nft_reject_inet,nft_reject,nft_redir,nft_quota,nft_numgen,nft_nat,nft_masq,nft_log,nft_limit,nft_hash,nft_fib_ipv6,nft_fib_ipv4,nft_fib,nft_ct,nft_chain_nat
+nfnetlink              16384  1 nf_tables
+nft_chain_nat          12288  2 
+nft_ct                 16384  4 
+nft_fib                12288  3 nft_fib_inet,nft_fib_ipv6,nft_fib_ipv4
+nft_fib_inet           12288  0 
+nft_fib_ipv4           12288  1 nft_fib_inet
+nft_fib_ipv6           12288  1 nft_fib_inet
+nft_flow_offload       12288  0 
+nft_hash               12288  0 
+nft_limit              12288  5 
+nft_log                12288  0 
+nft_masq               12288  1 
+nft_nat                12288  0 
+nft_numgen             12288  0 
+nft_quota              12288  0 
+nft_redir              12288  0 
+nft_reject             12288  3 nft_reject_ipv6,nft_reject_ipv4,nft_reject_inet
+nft_reject_inet        12288  2 
+nft_reject_ipv4        12288  0 
+nft_reject_ipv6        12288  0 
+ppp_async              16384  0 
+ppp_generic            40960  3 pppoe,ppp_async,pppox
+pppoe                  24576  0 
+pppox                  12288  1 pppoe
+qmi_helpers            20480  1 ath11k
+qrtr                   28672  6 qrtr_smd,qrtr_mhi
+qrtr_mhi               12288  0 
+qrtr_smd               12288  0 
+seqiv                  12288  0 
+sha3_generic           12288  0 
+sha512                 16384  0 
+slhc                   12288  1 ppp_generic
+xhci_hcd              147456  2 xhci_plat_hcd,xhci_pci
+xhci_pci               16384  0 
+xhci_plat_hcd          12288  0 
+
+Driver startup
+[    0.000000] psci: PSCIv1.0 detected in firmware.
+[    0.000000] software IO TLB: mapped [mem 0x000000007eb30000-0x000000007ec30000] (1MB)
+[    0.000139] Calibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=240000)
+[    1.307186] CPU: 0 UID: 0 PID: 1 Comm: swapper/0 Not tainted 6.18.55 #0 NONE 
+[    1.476891]  qca_ppe_driver_init+0x1c/0x28
+[    2.294715] qca-ppe 3a000000.ppe: configuring for fixed/internal link mode
+[    2.294796] qca-ppe 3a000000.ppe: Link is Up - 1Gbps/Full - flow control off
+[    2.466496] qca-ppe 3a000000.ppe lan1 (uninitialized): PHY [90000.mdio-1:18] driver [Qualcomm QCA8075] (irq=POLL)
+[    2.536071] qca-ppe 3a000000.ppe lan2 (uninitialized): PHY [90000.mdio-1:19] driver [Qualcomm QCA8075] (irq=POLL)
+[    2.606074] qca-ppe 3a000000.ppe lan3 (uninitialized): PHY [90000.mdio-1:1a] driver [Qualcomm QCA8075] (irq=POLL)
+[    2.676085] qca-ppe 3a000000.ppe lan4 (uninitialized): PHY [90000.mdio-1:1b] driver [Qualcomm QCA8075] (irq=POLL)
+[    2.747873] qca-ppe 3a000000.ppe wan (uninitialized): PHY [90000.mdio-1:0c] driver [Qualcomm QCA8081] (irq=POLL)
+[    2.749980] qca-edma 3ab00000.edma eth0: entered promiscuous mode
+[    9.541038] qca-ppe 3a000000.ppe lan1: configuring for phy/psgmii link mode
+[   10.033496] qca-ppe 3a000000.ppe lan1: Link is Up - 1Gbps/Full - flow control rx/tx
+[   14.335622] qca-ppe 3a000000.ppe lan1: Link is Down
+[   15.215964] ath11k c000000.wifi: ipq6018 hw1.0
+[   15.215999] ath11k c000000.wifi: FW memory mode: 0
+[   15.537138] ath11k c000000.wifi: chip_id 0x0 chip_family 0x4 board_id 0xff soc_id 0xffffffff
+[   15.540436] ath11k c000000.wifi: fw_version 0x25008f8e fw_build_timestamp 2024-03-01 03:54 fw_build_id WLAN.HK.2.5.0.1-03982-QCAHKSWPL_SILICONZ-3
+[   15.540997] ath11k_pci 0000:01:00.0: BAR 0 [mem 0x20400000-0x205fffff 64bit]: assigned
+[   15.561889] ath11k_pci 0000:01:00.0: enabling device (0000 -> 0002)
+[   15.570184] ath11k_pci 0000:01:00.0: MSI vectors: 16
+[   15.575811] ath11k_pci 0000:01:00.0: qcn9074 hw1.0
+[   15.580968] ath11k_pci 0000:01:00.0: FW memory mode: 2
+[   16.192426] ath11k_pci 0000:01:00.0: chip_id 0x0 chip_family 0x0 board_id 0xff soc_id 0xffffffff
+[   16.192487] ath11k_pci 0000:01:00.0: fw_version 0x290b8862 fw_build_timestamp 2024-09-23 10:51 fw_build_id 
+[   16.665266] ath11k_pci 0000:01:00.0: htt event 48 not handled
+[   19.489892] qca-ppe 3a000000.ppe lan1: configuring for phy/psgmii link mode
+[   19.660425] qca-ppe 3a000000.ppe lan1: entered allmulticast mode
+[   19.665679] qca-edma 3ab00000.edma eth0: entered allmulticast mode
+[   19.672284] qca-ppe 3a000000.ppe lan1: entered promiscuous mode
+[   19.682954] qca-ppe 3a000000.ppe lan2: configuring for phy/psgmii link mode
+[   19.840403] qca-ppe 3a000000.ppe lan2: entered allmulticast mode
+[   19.846003] qca-ppe 3a000000.ppe lan2: entered promiscuous mode
+[   19.854036] qca-ppe 3a000000.ppe lan3: configuring for phy/psgmii link mode
+[   20.020363] qca-ppe 3a000000.ppe lan3: entered allmulticast mode
+[   20.026035] qca-ppe 3a000000.ppe lan3: entered promiscuous mode
+[   20.034565] qca-ppe 3a000000.ppe lan4: configuring for phy/psgmii link mode
+[   20.200299] qca-ppe 3a000000.ppe lan4: entered allmulticast mode
+[   20.205967] qca-ppe 3a000000.ppe lan4: entered promiscuous mode
+[   20.216608] qca-ppe 3a000000.ppe wan: configuring for phy/2500base-x link mode
+[   22.799358] qca-ppe 3a000000.ppe lan1: Link is Up - 1Gbps/Full - flow control rx/tx

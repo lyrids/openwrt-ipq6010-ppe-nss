@@ -1,0 +1,165 @@
+Mon Oct 26 06:07:38 UTC 2026
+qdisc cake 300: root refcnt 2 bandwidth 100Mbit diffserv3 triple-isolate nonat nowash no-ack-filter split-gso rtt 100ms raw overhead 0 
+ Sent 872 bytes 10 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+ memory used: 4352b of 5000000b
+ capacity estimate: 100Mbit
+ min/max network layer size:           66 /     174
+ min/max overhead-adjusted size:       66 /     174
+ active queues:                         0
+ average network hdr offset:            1
+
+                   Bulk  Best Effort        Voice
+  thresh       6250Kbit      100Mbit       25Mbit
+  target            5ms          5ms          5ms
+  interval        100ms        100ms        100ms
+  pk_delay          0us         10us          0us
+  av_delay          0us          0us          0us
+  sp_delay          0us          0us          0us
+  backlog            0b           0b           0b
+  pkts                0           10            0
+  bytes               0          872            0
+  way_inds            0            0            0
+  way_miss            0            4            0
+  way_cols            0            0            0
+  drops               0            0            0
+  marks               0            0            0
+  ack_drop            0            0            0
+  sp_flows            0            1            0
+  bk_flows            0            0            0
+  un_flows            0            0            0
+  max_len             0          174            0
+  quantum           300         1514          762
+
+class cake 300:7ba parent 300: 
+ (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+  deficit 1382 count 0 blue_prob 0
+cpu  1783 0 2494 1710299 2 0 1622 0 0 0
+cpu0 423 0 552 424852 2 0 1608 0 0 0
+cpu1 651 0 1277 429555 0 0 8 0 0 0
+cpu2 313 0 329 424969 0 0 3 0 0 0
+cpu3 396 0 336 430921 0 0 3 0 0 0
+ethernet enabled 1 active 1 offers 28 pushed 0 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 0/0
+bound 1 pushed 14 last-ifindex 3
+rejected not-ours 14 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 6 tx 6 drop 0/0/0/0 exceptions
+node ipv4 rx 7 tx 0 drop 0/0/0/0 exceptions 9:7
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:54031 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:41885 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:36995 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:56863 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:46681 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:60129 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:34429 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33655 -> 192.168.21.154:5201 detail 3
+proto 6 v4 bridged if 31/1 prio 0 installed 0 age 11130ms fw flow rx 4 tx 6 return rx 6 tx 4
+proto 6 v4 bridged if 31/1 prio 0 installed 0 age 2810ms fw flow rx 57436 tx 829447 return rx 829447 tx 57436
+bridged on 1 pushed 8 entries 2 learn 0 ready 0 active 2 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 6
+PPE-egress
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    10918603 15330830974 0 0
+1    1099177 73225827 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    633 138843 0 0
+5    6004670 9090421904 0 0
+6    0 0 0 0
+vsi packets bytes
+0   825615 54619620
+1   10094022 15276532595
+vport packets bytes drop_packets drop_bytes
+PPE-queues
+queue packets bytes buffers
+0     4533222 6862066158 0
+1     1018595 1542145726 0
+2     4538583 6871410750 0
+3     48 66912 0
+4     637788 42296244 0
+5     60756 4146816 0
+6     128858 8616223 0
+7     754 82211 0
+144   265611 17620716 0
+145   180721 11983118 0
+146   389798 25951681 0
+147   259739 17216823 0
+148   622 102090 0
+149   925 119665 0
+150   1182 145279 0
+151   561 84103 0
+192   35 18108 0
+193   6 8364 0
+194   14 19516 0
+195   6 8364 0
+196   202 31065 0
+197   64 10178 0
+198   144 21925 0
+199   139 18124 0
+208   1247198 1888060365 0
+209   2264449 3428335546 0
+210   1132450 1714513832 0
+211   1360303 2059484124 0
+212   106 13360 0
+213   67 5769 0
+214   39 3442 0
+215   58 5466 0
+272   2 120 0
+275   18 2764 0
+284   8 480 0
+287   15 2719 0
+group buffers prealloc_used
+0     0 0
+1     0 0
+2     0 0
+3     0 0
+PPE-queue_drops
+queue reason packets bytes
+PPE-policer
+port colour packets bytes
+0    green  0 0
+0    yellow 0 0
+0    red    0 0
+1    green  0 0
+1    yellow 0 0
+1    red    0 0
+2    green  0 0
+2    yellow 0 0
+2    red    0 0
+3    green  0 0
+3    yellow 0 0
+3    red    0 0
+4    green  0 0
+4    yellow 0 0
+4    red    0 0
+5    green  0 0
+5    yellow 0 0
+5    red    0 0
+6    green  0 0
+6    yellow 0 0
+6    red    0 0
+PPE-offload
+offloaded                28
+reinstalled              0
+destroy_miss             0
+stale                    0
+xmit_drop                0
+sparse_promoted          14
+sparse_demoted           0
+live_entries             0
+ingress_not_switch_port  0
+ingress_vlan_domain      0
+unsupported_match        0
+unsupported_protocol     0
+unsupported_action       0
+no_egress_l2_header      0
+egress_not_switch_port   0
+snat_and_dnat            0
+ipv6_nat                 0
+table_full               0
+hardware_op_failed       0

@@ -1,0 +1,20 @@
+ethernet enabled 1 active 1 offers 72 pushed 12 rejected 24
+bound 0 pushed 12 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 2593 tx 2593 drop 0/0/0/0 exceptions
+node ipv4 rx 2595 tx 2595 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 4/1 prio 0 installed 1 age 5070ms fw flow rx 285535 tx 73663 return rx 73663 tx 285535
+proto 6 v4 ethernet if 4/1 prio 0 installed 1 age 5070ms fw flow rx 4 tx 6 return rx 6 tx 4
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+472   ipv4 1     4   3   376   0   696879 1049498334
+496   ipv4 1     4   3   392   0   187130 14604832
+1376  ipv4 1     4   2   376   12  0 0
+1848  ipv4 1     4   2   392   12  0 0
+ipv4     2 tcp      6 src=192.168.1.158 dst=172.31.100.1 sport=56059 dport=5216 packets=3 bytes=201 src=172.31.100.1 dst=172.31.100.2 sport=5216 dport=56059 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.1.158 dst=172.31.100.1 sport=60289 dport=5216 packets=3 bytes=201 src=172.31.100.1 dst=172.31.100.2 sport=5216 dport=60289 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+Id       Address              Device
+00000100 dc:a6:32:b0:ab:b0 br-lan.100

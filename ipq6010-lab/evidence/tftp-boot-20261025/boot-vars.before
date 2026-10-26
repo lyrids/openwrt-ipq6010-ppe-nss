@@ -1,0 +1,6 @@
+bootcmd=bootipq
+bootargs=console=ttyMSM0,115200n8
+bootdelay=2
+ipaddr=192.168.1.1
+serverip=192.168.1.2
+netmask=255.255.255.0

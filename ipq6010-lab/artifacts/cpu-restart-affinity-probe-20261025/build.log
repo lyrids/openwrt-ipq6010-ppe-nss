@@ -1,0 +1,10 @@
+make: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55'
+make[1]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/ipq6010-lab/cpu-restart/affinity-probe'
+  CC [M]  ipq_psci_affinity_probe.o
+  MODPOST Module.symvers
+WARNING: modpost: missing MODULE_DESCRIPTION() in ipq_psci_affinity_probe.o
+  CC [M]  ipq_psci_affinity_probe.mod.o
+  CC [M]  .module-common.o
+  LD [M]  ipq_psci_affinity_probe.ko
+make[1]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/ipq6010-lab/cpu-restart/affinity-probe'
+make: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/build_dir/target-aarch64_cortex-a53_musl/linux-qualcommax_ipq60xx/linux-6.18.55'

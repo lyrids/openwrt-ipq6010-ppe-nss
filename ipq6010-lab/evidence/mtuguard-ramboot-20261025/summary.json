@@ -1,0 +1,39 @@
+{
+  "image": "nss-ethernet-mtuguard-03803c78cd-20261025",
+  "hardware_boot_tested": true,
+  "tests": {
+    "existing-flow": {
+      "baseline1500": {
+        "probes": 166,
+        "acked": 144
+      },
+      "mtu1400": {
+        "probes": 40,
+        "acked": 0
+      }
+    },
+    "fresh-flow": {
+      "warm-fresh": {
+        "probes": 19,
+        "acked": 19
+      },
+      "oversize-fresh": {
+        "probes": 40,
+        "acked": 0
+      }
+    },
+    "recovery": {
+      "restored1500": {
+        "probes": 29,
+        "acked": 29
+      }
+    }
+  },
+  "verdict": "MTU correctness guard passed: existing and fresh MTU1400 flows block1448-byte IPv6 probes; software fallback explicit; MTU1500 restores NSS.",
+  "notes": [
+    "Baseline phase includes the configuration-transition window and is not a loss-rate benchmark",
+    "Reduced-MTU forwarding uses Linux, not hardware-enforced NSS per-route MTU",
+    "Standard PPPoE1492 eligibility has offline regression coverage but still needs hardware retest on this image"
+  ],
+  "cleanup": "Both br-lan and br-lan.100 restored to1500; temporary IPv6 probes/rules/addresses removed; VLAN100/PVID setup retained; router ping passed."
+}

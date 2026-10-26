@@ -1,0 +1,1160 @@
+SAMPLE
+465.27 1791.00
+cpu  797 0 1856 179100 2 0 2586 0 0 0
+cpu0 177 0 297 44636 2 0 591 0 0 0
+cpu1 100 0 1120 44400 0 0 121 0 0 0
+cpu2 406 0 183 45869 0 0 1 0 0 0
+cpu3 114 0 256 44193 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 6 tx 6 drop 0/0/0/0 exceptions
+node ipv4 rx 7 tx 0 drop 0/0/0/0 exceptions 9:7
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213189 2213189 3081343816 0 0
+3   2747095 2747095 3946926266 4 376
+SAMPLE
+466.27 1794.99
+cpu  797 0 1856 179499 2 0 2586 0 0 0
+cpu0 177 0 297 44735 2 0 591 0 0 0
+cpu1 100 0 1120 44499 0 0 121 0 0 0
+cpu2 406 0 183 45970 0 0 1 0 0 0
+cpu3 114 0 256 44294 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213193 2213193 3081344111 0 0
+3   2747095 2747095 3946926266 4 376
+SAMPLE
+467.28 1798.98
+cpu  798 0 1857 179899 2 0 2586 0 0 0
+cpu0 177 0 297 44835 2 0 591 0 0 0
+cpu1 101 0 1120 44598 0 0 121 0 0 0
+cpu2 406 0 184 46070 0 0 1 0 0 0
+cpu3 114 0 256 44394 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213197 2213197 3081344406 0 0
+3   2784142 2784142 3990758052 4 376
+SAMPLE
+468.29 1802.98
+cpu  799 0 1857 180298 2 0 2586 0 0 0
+cpu0 177 0 297 44934 2 0 591 0 0 0
+cpu1 102 0 1120 44697 0 0 121 0 0 0
+cpu2 406 0 184 46170 0 0 1 0 0 0
+cpu3 114 0 256 44495 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 1 tx 0 drop 0/0/0/0 exceptions 9:1
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213200 2213200 3081344604 0 0
+3   2888431 2888431 4116501714 4 376
+SAMPLE
+469.30 1806.97
+cpu  799 0 1858 180697 2 0 2586 0 0 0
+cpu0 177 0 298 45034 2 0 591 0 0 0
+cpu1 102 0 1120 44796 0 0 121 0 0 0
+cpu2 406 0 184 46271 0 0 1 0 0 0
+cpu3 114 0 256 44595 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213203 2213203 3081344802 0 0
+3   2992831 2992831 4242314514 4 376
+SAMPLE
+470.30 1810.96
+cpu  799 0 1859 181097 2 0 2586 0 0 0
+cpu0 177 0 298 45133 2 0 591 0 0 0
+cpu1 102 0 1120 44895 0 0 121 0 0 0
+cpu2 406 0 185 46371 0 0 1 0 0 0
+cpu3 114 0 256 44696 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213206 2213206 3081345000 0 0
+3   3097099 3097099 4368043578 4 376
+SAMPLE
+471.31 1814.95
+cpu  799 0 1859 181496 2 0 2586 0 0 0
+cpu0 177 0 298 45233 2 0 591 0 0 0
+cpu1 102 0 1120 44994 0 0 121 0 0 0
+cpu2 406 0 185 46471 0 0 1 0 0 0
+cpu3 114 0 256 44796 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213209 2213209 3081345198 0 0
+3   3201420 3201420 4493807016 4 376
+SAMPLE
+472.32 1818.95
+cpu  799 0 1860 181895 2 0 2586 0 0 0
+cpu0 177 0 298 45332 2 0 591 0 0 0
+cpu1 102 0 1120 45093 0 0 121 0 0 0
+cpu2 406 0 186 46572 0 0 1 0 0 0
+cpu3 114 0 256 44897 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213212 2213212 3081345396 0 0
+3   3305758 3305758 4619553060 4 376
+SAMPLE
+473.33 1822.94
+cpu  800 0 1861 182294 2 0 2586 0 0 0
+cpu0 177 0 298 45431 2 0 591 0 0 0
+cpu1 103 0 1120 45192 0 0 121 0 0 0
+cpu2 406 0 186 46672 0 0 1 0 0 0
+cpu3 114 0 257 44998 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213215 2213215 3081345594 0 0
+3   3410079 3410079 4745290578 4 376
+SAMPLE
+474.33 1826.93
+cpu  801 0 1862 182693 2 0 2586 0 0 0
+cpu0 177 0 298 45531 2 0 591 0 0 0
+cpu1 103 0 1120 45290 0 0 121 0 0 0
+cpu2 407 0 186 46772 0 0 1 0 0 0
+cpu3 114 0 258 45098 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213218 2213218 3081345792 0 0
+3   3514459 3514459 4871074422 4 376
+SAMPLE
+475.34 1830.92
+cpu  801 0 1862 183093 2 0 2586 0 0 0
+cpu0 177 0 298 45630 2 0 591 0 0 0
+cpu1 103 0 1120 45389 0 0 121 0 0 0
+cpu2 407 0 186 46873 0 0 1 0 0 0
+cpu3 114 0 258 45199 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213221 2213221 3081345990 0 0
+3   3613760 3613760 4990897084 4 376
+SAMPLE
+476.35 1834.91
+cpu  801 0 1863 183492 2 0 2586 0 0 0
+cpu0 177 0 298 45730 2 0 591 0 0 0
+cpu1 103 0 1121 45488 0 0 121 0 0 0
+cpu2 407 0 186 46973 0 0 1 0 0 0
+cpu3 114 0 258 45299 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213225 2213225 3081346285 0 0
+3   3713997 3713998 5109732448 4 376
+SAMPLE
+477.36 1838.91
+cpu  802 0 1863 183891 2 0 2586 0 0 0
+cpu0 177 0 298 45829 2 0 591 0 0 0
+cpu1 103 0 1121 45587 0 0 121 0 0 0
+cpu2 408 0 186 47073 0 0 1 0 0 0
+cpu3 114 0 258 45400 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213229 2213229 3081346580 0 0
+3   3812006 3812007 5228698090 4 376
+SAMPLE
+478.36 1842.90
+cpu  803 0 1863 184290 2 0 2586 0 0 0
+cpu0 177 0 298 45929 2 0 591 0 0 0
+cpu1 104 0 1121 45686 0 0 121 0 0 0
+cpu2 408 0 186 47174 0 0 1 0 0 0
+cpu3 114 0 258 45500 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213232 2213232 3081346778 0 0
+3   3915511 3915511 5353850602 4 376
+SAMPLE
+479.37 1846.89
+cpu  803 0 1863 184690 2 0 2586 0 0 0
+cpu0 177 0 298 46028 2 0 591 0 0 0
+cpu1 104 0 1121 45785 0 0 121 0 0 0
+cpu2 408 0 186 47274 0 0 1 0 0 0
+cpu3 114 0 258 45600 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213234 2213234 3081346910 0 0
+3   4018187 4018187 5477416002 4 376
+SAMPLE
+480.38 1850.88
+cpu  804 0 1863 185089 2 0 2586 0 0 0
+cpu0 177 0 298 46128 2 0 591 0 0 0
+cpu1 105 0 1121 45884 0 0 121 0 0 0
+cpu2 408 0 186 47375 0 0 1 0 0 0
+cpu3 114 0 258 45701 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213238 2213238 3081347174 0 0
+3   4122176 4122177 5603165142 4 376
+SAMPLE
+481.39 1854.88
+cpu  804 0 1864 185488 2 0 2586 0 0 0
+cpu0 177 0 298 46227 2 0 591 0 0 0
+cpu1 105 0 1121 45983 0 0 121 0 0 0
+cpu2 408 0 186 47475 0 0 1 0 0 0
+cpu3 114 0 259 45801 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 1 tx 0 drop 0/0/0/0 exceptions 9:1
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213241 2213241 3081347372 0 0
+3   4219225 4219225 5720263014 4 376
+SAMPLE
+482.40 1858.87
+cpu  805 0 1864 185887 2 0 2586 0 0 0
+cpu0 178 0 298 46327 2 0 591 0 0 0
+cpu1 105 0 1121 46082 0 0 121 0 0 0
+cpu2 408 0 186 47576 0 0 1 0 0 0
+cpu3 114 0 259 45902 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213244 2213244 3081347570 0 0
+3   4310639 4310640 5839682644 4 376
+SAMPLE
+483.40 1862.86
+cpu  805 0 1864 186287 2 0 2586 0 0 0
+cpu0 178 0 298 46426 2 0 591 0 0 0
+cpu1 105 0 1121 46181 0 0 121 0 0 0
+cpu2 408 0 186 47676 0 0 1 0 0 0
+cpu3 114 0 259 46002 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213247 2213247 3081347768 0 0
+3   4391445 4391445 5956685434 4 376
+SAMPLE
+484.41 1866.85
+cpu  805 0 1866 186686 2 0 2586 0 0 0
+cpu0 178 0 298 46525 2 0 591 0 0 0
+cpu1 105 0 1122 46279 0 0 121 0 0 0
+cpu2 408 0 187 47776 0 0 1 0 0 0
+cpu3 114 0 259 46103 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 1 tx 1 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213250 2213250 3081347966 0 0
+3   4472025 4472025 6073378318 4 376
+SAMPLE
+485.42 1870.85
+cpu  806 0 1866 187085 2 0 2586 0 0 0
+cpu0 178 0 298 46625 2 0 591 0 0 0
+cpu1 105 0 1122 46378 0 0 121 0 0 0
+cpu2 409 0 187 47877 0 0 1 0 0 0
+cpu3 114 0 259 46204 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213253 2213253 3081348164 0 0
+3   4552569 4552569 6189996430 4 376
+SAMPLE
+486.43 1874.84
+cpu  806 0 1868 187484 2 0 2586 0 0 0
+cpu0 178 0 299 46724 2 0 591 0 0 0
+cpu1 105 0 1123 46477 0 0 121 0 0 0
+cpu2 409 0 187 47977 0 0 1 0 0 0
+cpu3 114 0 259 46304 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213256 2213256 3081348362 0 0
+3   4633316 4633316 6306919816 4 376
+SAMPLE
+487.43 1878.83
+cpu  806 0 1869 187884 2 0 2586 0 0 0
+cpu0 178 0 299 46824 2 0 591 0 0 0
+cpu1 105 0 1123 46576 0 0 121 0 0 0
+cpu2 409 0 188 48078 0 0 1 0 0 0
+cpu3 114 0 259 46405 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213259 2213259 3081348560 0 0
+3   4713973 4713973 6423699382 4 376
+SAMPLE
+488.44 1882.82
+cpu  806 0 1870 188283 2 0 2586 0 0 0
+cpu0 178 0 299 46923 2 0 591 0 0 0
+cpu1 105 0 1124 46675 0 0 121 0 0 0
+cpu2 409 0 188 48178 0 0 1 0 0 0
+cpu3 114 0 259 46505 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213262 2213262 3081348758 0 0
+3   4794650 4794650 6540480508 4 376
+SAMPLE
+489.45 1886.82
+cpu  806 0 1871 188682 2 0 2586 0 0 0
+cpu0 178 0 299 47023 2 0 591 0 0 0
+cpu1 105 0 1125 46774 0 0 121 0 0 0
+cpu2 409 0 188 48279 0 0 1 0 0 0
+cpu3 114 0 259 46605 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213265 2213265 3081348956 0 0
+3   4875200 4875200 6657101964 4 376
+SAMPLE
+490.46 1890.81
+cpu  807 0 1871 189081 2 0 2586 0 0 0
+cpu0 178 0 299 47122 2 0 591 0 0 0
+cpu1 105 0 1125 46873 0 0 121 0 0 0
+cpu2 410 0 188 48379 0 0 1 0 0 0
+cpu3 114 0 259 46706 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213268 2213268 3081349154 0 0
+3   4955775 4955775 6773745534 4 376
+SAMPLE
+491.46 1894.80
+cpu  807 0 1872 189480 2 0 2587 0 0 0
+cpu0 178 0 299 47222 2 0 592 0 0 0
+cpu1 105 0 1126 46971 0 0 121 0 0 0
+cpu2 410 0 188 48479 0 0 1 0 0 0
+cpu3 114 0 259 46807 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 1 tx 0 drop 0/0/0/0 exceptions 9:1
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213271 2213271 3081349352 0 0
+3   5036409 5036410 6890481624 4 376
+SAMPLE
+492.47 1898.79
+cpu  807 0 1872 189880 2 0 2587 0 0 0
+cpu0 178 0 299 47321 2 0 592 0 0 0
+cpu1 105 0 1126 47070 0 0 121 0 0 0
+cpu2 410 0 188 48579 0 0 1 0 0 0
+cpu3 114 0 259 46907 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213275 2213275 3081349610 0 0
+3   5117122 5117122 7007340360 4 376
+SAMPLE
+493.48 1902.79
+cpu  808 0 1872 190279 2 0 2587 0 0 0
+cpu0 178 0 299 47421 2 0 592 0 0 0
+cpu1 106 0 1126 47169 0 0 121 0 0 0
+cpu2 410 0 188 48680 0 0 1 0 0 0
+cpu3 114 0 259 47007 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213278 2213278 3081349808 0 0
+3   5197830 5197830 7124191837 4 376
+SAMPLE
+494.49 1906.78
+cpu  808 0 1873 190678 2 0 2587 0 0 0
+cpu0 178 0 299 47521 2 0 592 0 0 0
+cpu1 106 0 1126 47268 0 0 121 0 0 0
+cpu2 410 0 189 48780 0 0 1 0 0 0
+cpu3 114 0 259 47108 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 2 tx 0 drop 0/0/0/0 exceptions 9:2
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213281 2213281 3081350006 0 0
+3   5274773 5274773 7235520679 4 376
+SAMPLE
+495.50 1910.77
+cpu  809 0 1873 191077 2 0 2587 0 0 0
+cpu0 179 0 299 47620 2 0 592 0 0 0
+cpu1 106 0 1126 47367 0 0 121 0 0 0
+cpu2 410 0 189 48880 0 0 1 0 0 0
+cpu3 114 0 259 47208 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213284 2213284 3081350204 0 0
+3   5355315 5355315 7352158795 4 376
+SAMPLE
+496.50 1914.76
+cpu  809 0 1873 191477 2 0 2587 0 0 0
+cpu0 179 0 299 47720 2 0 592 0 0 0
+cpu1 106 0 1126 47466 0 0 121 0 0 0
+cpu2 410 0 189 48980 0 0 1 0 0 0
+cpu3 114 0 259 47309 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213287 2213287 3081350402 0 0
+3   5435990 5435990 7468988725 4 376
+SAMPLE
+497.51 1918.76
+cpu  809 0 1874 191876 2 0 2587 0 0 0
+cpu0 179 0 299 47819 2 0 592 0 0 0
+cpu1 106 0 1126 47565 0 0 121 0 0 0
+cpu2 410 0 190 49081 0 0 1 0 0 0
+cpu3 114 0 259 47409 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 1 tx 1 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213290 2213290 3081350600 0 0
+3   5470153 5470153 7518438264 4 376
+SAMPLE
+498.52 1922.75
+cpu  809 0 1875 192275 2 0 2587 0 0 0
+cpu0 179 0 299 47919 2 0 592 0 0 0
+cpu1 106 0 1126 47664 0 0 121 0 0 0
+cpu2 410 0 191 49181 0 0 1 0 0 0
+cpu3 114 0 259 47510 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213293 2213293 3081350798 0 0
+3   5470153 5470153 7518438264 4 376
+SAMPLE
+499.53 1926.74
+cpu  809 0 1876 192674 2 0 2587 0 0 0
+cpu0 179 0 299 48018 2 0 592 0 0 0
+cpu1 106 0 1126 47763 0 0 121 0 0 0
+cpu2 410 0 192 49282 0 0 1 0 0 0
+cpu3 114 0 259 47611 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213296 2213296 3081350996 0 0
+3   5470153 5470153 7518438264 4 376
+SAMPLE
+500.53 1930.74
+cpu  809 0 1877 193074 2 0 2587 0 0 0
+cpu0 179 0 299 48118 2 0 592 0 0 0
+cpu1 106 0 1126 47861 0 0 121 0 0 0
+cpu2 410 0 193 49382 0 0 1 0 0 0
+cpu3 114 0 259 47711 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213299 2213299 3081351194 0 0
+3   5470153 5470153 7518438264 4 376
+SAMPLE
+501.54 1934.73
+cpu  809 0 1877 193473 2 0 2587 0 0 0
+cpu0 179 0 299 48217 2 0 592 0 0 0
+cpu1 106 0 1126 47960 0 0 121 0 0 0
+cpu2 410 0 193 49482 0 0 1 0 0 0
+cpu3 114 0 259 47812 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213302 2213302 3081351392 0 0
+3   5470153 5470153 7518438264 4 376
+SAMPLE
+502.55 1938.72
+cpu  809 0 1878 193873 2 0 2587 0 0 0
+cpu0 179 0 299 48317 2 0 592 0 0 0
+cpu1 106 0 1127 48059 0 0 121 0 0 0
+cpu2 410 0 193 49583 0 0 1 0 0 0
+cpu3 114 0 259 47912 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213305 2213305 3081351590 0 0
+3   5470153 5470153 7518438264 4 376
+SAMPLE
+503.56 1942.71
+cpu  810 0 1878 194272 2 0 2587 0 0 0
+cpu0 179 0 299 48417 2 0 592 0 0 0
+cpu1 106 0 1127 48158 0 0 121 0 0 0
+cpu2 411 0 193 49683 0 0 1 0 0 0
+cpu3 114 0 259 48012 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213308 2213308 3081351788 0 0
+3   5470153 5470153 7518438264 4 376
+SAMPLE
+504.56 1946.71
+cpu  810 0 1879 194671 2 0 2587 0 0 0
+cpu0 179 0 299 48516 2 0 592 0 0 0
+cpu1 106 0 1128 48257 0 0 121 0 0 0
+cpu2 411 0 193 49784 0 0 1 0 0 0
+cpu3 114 0 259 48113 0 0 1873 0 0 0
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 1 tx 0 drop 0/0/0/0 exceptions 9:1
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   1 1 338 0 0
+1   189 189 49747 9 930
+2   2213311 2213311 3081351986 0 0
+3   5470155 5470155 7518438384 4 376

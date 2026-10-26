@@ -1,0 +1,64 @@
+{
+  "target": "qualcommax/ipq60xx",
+  "version_code": "r37652-5192094fd6",
+  "supported_devices": [
+    "jdcloud,re-cs-02"
+  ],
+  "images": [
+    {
+      "filesystem": "initramfs",
+      "name": "openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-initramfs-uImage.itb",
+      "sha256": "cd94c82d62b5c2e9df62744000c5f7dd5e2e009e8e54489eb2bcc49682f9f582",
+      "sha256_unsigned": "cd94c82d62b5c2e9df62744000c5f7dd5e2e009e8e54489eb2bcc49682f9f582",
+      "size": 15172976,
+      "type": "kernel"
+    },
+    {
+      "filesystem": "squashfs",
+      "name": "openwrt-qualcommax-ipq60xx-jdcloud_re-cs-02-squashfs-sysupgrade.bin",
+      "sha256": "abd4a0436b242f1569f30fae354bb125bbb7532a74f0fb651c1620ceba34f364",
+      "sha256_unsigned": "abd4a0436b242f1569f30fae354bb125bbb7532a74f0fb651c1620ceba34f364",
+      "size": 14510355,
+      "type": "sysupgrade",
+      "kernel_bytes": 5834248,
+      "rootfs_bytes": 8666112,
+      "kernel_partition_bytes": 6291456,
+      "archive_members": [
+        "sysupgrade-jdcloud_re-cs-02",
+        "sysupgrade-jdcloud_re-cs-02/CONTROL",
+        "sysupgrade-jdcloud_re-cs-02/kernel",
+        "sysupgrade-jdcloud_re-cs-02/root"
+      ]
+    }
+  ],
+  "checks": [
+    "metadata SHA256 and size",
+    "FIT board configuration",
+    "sysupgrade archive and 6 MiB kernel limit",
+    "required wireless package manifest",
+    "PPE/EDMA kernel configuration",
+    "embedded sysupgrade board metadata",
+    "actual squashfs radio firmware/modules",
+    "sysupgrade FIT board configuration"
+  ],
+  "hardware_boot_tested": true,
+  "hardware_validation": {
+    "mode": "HTTP U-Boot initramfs RAM boot",
+    "kernel": "6.18.55",
+    "board": "jdcloud,re-cs-02",
+    "wired_bridge": {
+      "tcp_received_mbps": {
+        "forward": 940.9249717678758,
+        "reverse": 941.1155371229873
+      },
+      "router_mean_cpu_busy_percent": 0.4213831281500454,
+      "duration_note": "CPU sampled across both 15-second tests plus collection overhead",
+      "path": "p43 eth0 192.168.1.2 -> router lan1/PPE/lan4 -> m4 end0 192.168.1.186",
+      "interpretation": "Strong hardware bridge forwarding evidence: near gigabit TCP, physical egress ~1.85 GB each, CPU port RX increased only 10600 bytes and 51 packets, ~0.42% aggregate CPU busy. No new physical egress drops.",
+      "wifi": "PCIe AP started; client throughput not tested"
+    },
+    "warning": "nss_crypto_clk_src RCG update timeout at probe; investigation pending",
+    "persistent_installation_tested": false,
+    "wifi_client_tested": false
+  }
+}

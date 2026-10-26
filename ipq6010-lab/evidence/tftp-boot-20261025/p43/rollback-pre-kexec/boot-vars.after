@@ -1,0 +1,16 @@
+bootcmd=run boot_tftp; run boot_emmc
+boot_tftp=if tftpboot ${netloadaddr} ${netbootfile}; then if iminfo ${netloadaddr}; then setenv bootargs ${netbootargs}; bootm ${netloadaddr}#config@cp03-c3; fi; fi; setenv bootargs ${emmc_bootargs}
+boot_emmc=setenv bootargs ${emmc_bootargs}; bootipq
+netloadaddr=0x50000000
+netbootfile=openwrt/jdcloud-re-cs-02.itb
+netbootargs=console=ttyMSM0,115200n8
+emmc_bootargs=console=ttyMSM0,115200n8
+ipaddr=192.168.1.1
+serverip=192.168.1.2
+netmask=255.255.255.0
+autostart=no
+netretry=no
+tftptimeout=1000
+tftptimeoutcountmax=2
+tftpblocksize=1468
+bootdelay=2

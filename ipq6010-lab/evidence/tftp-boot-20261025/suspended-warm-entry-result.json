@@ -1,0 +1,13 @@
+{
+  "iteration": 8,
+  "RAM_boot": "passed, four CPUs, opt-inN, NSSoff",
+  "CPU3_offline": "passed",
+  "SCM_registration_errno": -5,
+  "CPU_ON_after_error": false,
+  "opt_in_after": "N",
+  "CPU_online_after": "0-2",
+  "kexec_loaded": 0,
+  "retry": false,
+  "fix_verified": false,
+  "followup": "user suspended experiments; router/source restored to iteration5 and all four CPUs"
+}

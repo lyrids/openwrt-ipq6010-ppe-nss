@@ -1,0 +1,44 @@
+{
+	"kernel": "6.18.55",
+	"hostname": "OpenWrt",
+	"system": "ARMv8 Processor rev 4",
+	"model": "JDCloud RE-CS-02",
+	"board_name": "jdcloud,re-cs-02",
+	"rootfs_type": "initramfs",
+	"release": {
+		"distribution": "OpenWrt",
+		"version": "SNAPSHOT",
+		"firmware_url": "https://downloads.openwrt.org/",
+		"revision": "r37718+1-d614d3f1a9",
+		"target": "qualcommax/ipq60xx",
+		"manufacturer": "OpenWrt",
+		"description": "OpenWrt SNAPSHOT r37718+1-d614d3f1a9",
+		"builddate": "1792990304"
+	}
+}
+Variant: experimental PPE + NSS Ethernet backend, iteration 10 (persistent UDP socket defaults)
+Base: community 03803c78cd3b6968c20dab239c0c2f688692be63 plus archived local backend fixes
+Kernel/NSS datapath: pre-kexec iteration5 MTU-guard source; kexec disabled
+NSS: community Ethernet and Wi-Fi adapters, CP firmware 12.5; no vendor qca-nss-drv or ECM
+Wi-Fi lifecycle: firewall reload after netifd.wireless.done, debounced 1000ms
+Hardware baseline: wired NAT, QCN9074 bridge/NAT, bidirectional TCP and UDP, peer reconnect validated
+Reduced routed MTU: software fallback guard, not arbitrary NSS hardware MTU enforcement
+UDP sockets: default send 8 MiB; send/receive maxima 8 MiB; receive default unchanged
+TC qualification tools: standard tc-full and scheduler modules; hardware behavior requires measured tests
+tc utility, iproute2-6.18.0, libbpf 1.8.0
+qdisc noqueue 0: dev lo root refcnt 2 
+qdisc mq 0: dev eth0 root 
+qdisc fq_codel 0: dev eth0 parent :4 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms memory_limit 4Mb ecn drop_batch 64 
+qdisc fq_codel 0: dev eth0 parent :3 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms memory_limit 4Mb ecn drop_batch 64 
+qdisc fq_codel 0: dev eth0 parent :2 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms memory_limit 4Mb ecn drop_batch 64 
+qdisc fq_codel 0: dev eth0 parent :1 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms memory_limit 4Mb ecn drop_batch 64 
+qdisc noqueue 0: dev lan1 root refcnt 2 
+qdisc noqueue 0: dev lan2 root refcnt 2 
+qdisc noqueue 0: dev lan3 root refcnt 2 
+qdisc noqueue 0: dev lan4 root refcnt 2 
+qdisc noqueue 0: dev wan root refcnt 2 
+qdisc noqueue 0: dev br-lan root refcnt 2 
+qdisc noqueue 0: dev phy2-ap0 root refcnt 2 
+net.core.wmem_default = 8388608
+net.core.wmem_max = 8388608
+net.core.rmem_max = 8388608

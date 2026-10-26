@@ -1,0 +1,30 @@
+baseline 5192094fd6fb7050ec3c859cf9f3f8fee5b10d91
+LINUX_VERSION-6.18 = .55
+LINUX_KERNEL_HASH-6.18.55 = f410638061a165c12f42ab871d2f3fcd525515359b5faeee80969cff84524df9
+version r37652-5192094fd6
+nss 7b62228607e718d1317e5622264147772c59916c
+LINUX_VERSION-6.18 = .55
+LINUX_KERNEL_HASH-6.18.55 = f410638061a165c12f42ab871d2f3fcd525515359b5faeee80969cff84524df9
+version r37616+90-a31dd90f69
+Added selected packages:
+libatomic=y
+nss-firmware=y
+nss-firmware-ipq60xx=y
+kmod-nf-log6=y
+kmod-nft-bridge=y
+kmod-nss-wifi-drv=y
+libopenssl=y
+libopenssl-conf=y
+libopenssl-legacy=y
+libiperf3=y
+wpad-openssl=y
+ethtool-full=y
+iperf3=y
+ppe-help=y
+Removed selected packages:
+wpad-basic-mbedtls=y
+NSS options:
+CONFIG_NSS_FIRMWARE_VERSION_12_5=y
+CONFIG_ATH11K_NSS_WIFI=y
+Source divergence baseline-only/candidate-only: 36	90
+ 238 files changed, 25707 insertions(+), 4938 deletions(-)

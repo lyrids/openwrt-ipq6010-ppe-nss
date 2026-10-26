@@ -1,0 +1,143 @@
+-----------------------------------------------------------
+Server listening on 5362 (test #1)
+-----------------------------------------------------------
+Accepted connection from 192.168.1.144, port 56345
+[  5] local 192.168.1.2 port 5362 connected to 192.168.1.144 port 52915
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  95.6 MBytes   801 Mbits/sec    0   2.10 MBytes       (omitted)
+[  5]   1.00-2.00   sec  99.6 MBytes   836 Mbits/sec    0   2.10 MBytes       (omitted)
+[  5]   0.00-1.00   sec   104 MBytes   869 Mbits/sec    0   2.10 MBytes       
+[  5]   1.00-2.00   sec   105 MBytes   879 Mbits/sec    0   2.10 MBytes       
+[  5]   2.00-3.00   sec  99.5 MBytes   835 Mbits/sec    0   2.10 MBytes       
+[  5]   3.00-4.00   sec   100 MBytes   843 Mbits/sec    0   2.10 MBytes       
+[  5]   4.00-5.00   sec   102 MBytes   858 Mbits/sec    0   2.10 MBytes       
+[  5]   5.00-6.00   sec   101 MBytes   844 Mbits/sec    0   2.10 MBytes       
+[  5]   6.00-7.00   sec   102 MBytes   859 Mbits/sec    0   2.10 MBytes       
+[  5]   7.00-8.00   sec   101 MBytes   850 Mbits/sec    0   2.10 MBytes       
+[  5]   8.00-9.00   sec  99.1 MBytes   832 Mbits/sec    0   2.10 MBytes       
+[  5]   9.00-10.00  sec   102 MBytes   860 Mbits/sec    0   2.10 MBytes       
+[  5]  10.00-11.00  sec   104 MBytes   872 Mbits/sec    0   2.10 MBytes       
+[  5]  11.00-12.00  sec   102 MBytes   860 Mbits/sec    0   2.10 MBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-12.01  sec  1.20 GBytes   855 Mbits/sec    0            sender
+-----------------------------------------------------------
+Server listening on 5362 (test #2)
+-----------------------------------------------------------
+Accepted connection from 192.168.1.144, port 44473
+[  5] local 192.168.1.2 port 5362 connected to 192.168.1.144 port 43505
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec   102 MBytes   860 Mbits/sec    0   1.34 MBytes       (omitted)
+[  5]   1.00-2.00   sec   102 MBytes   851 Mbits/sec    0   1.34 MBytes       (omitted)
+[  5]   0.00-1.00   sec   103 MBytes   867 Mbits/sec    0   1.34 MBytes       
+[  5]   1.00-2.00   sec   103 MBytes   864 Mbits/sec    0   1.34 MBytes       
+[  5]   2.00-3.00   sec  99.6 MBytes   836 Mbits/sec    0   1.34 MBytes       
+[  5]   3.00-4.00   sec   100 MBytes   840 Mbits/sec    0   1.34 MBytes       
+[  5]   4.00-5.00   sec   103 MBytes   864 Mbits/sec    0   1.34 MBytes       
+[  5]   5.00-6.00   sec   100 MBytes   843 Mbits/sec    0   1.34 MBytes       
+[  5]   6.00-7.00   sec   103 MBytes   861 Mbits/sec    0   1.34 MBytes       
+[  5]   7.00-8.00   sec  94.5 MBytes   793 Mbits/sec    0   1.34 MBytes       
+[  5]   8.00-9.00   sec  99.2 MBytes   833 Mbits/sec    0   1.34 MBytes       
+[  5]   9.00-10.00  sec  98.5 MBytes   826 Mbits/sec    0   1.34 MBytes       
+[  5]  10.00-11.00  sec  95.4 MBytes   800 Mbits/sec    0   1.34 MBytes       
+[  5]  11.00-12.00  sec   103 MBytes   864 Mbits/sec    0   1.34 MBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-12.01  sec  1.18 GBytes   840 Mbits/sec    0            sender
+-----------------------------------------------------------
+Server listening on 5362 (test #3)
+-----------------------------------------------------------
+Accepted connection from 192.168.1.144, port 50267
+[  5] local 192.168.1.2 port 5362 connected to 192.168.1.144 port 44329
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec   103 MBytes   862 Mbits/sec    0   2.45 MBytes       (omitted)
+[  5]   1.00-2.00   sec   101 MBytes   845 Mbits/sec    0   2.45 MBytes       (omitted)
+[  5]   0.00-1.00   sec   102 MBytes   854 Mbits/sec    0   2.45 MBytes       
+[  5]   1.00-2.00   sec   101 MBytes   844 Mbits/sec    0   2.45 MBytes       
+[  5]   2.00-3.00   sec   103 MBytes   867 Mbits/sec    0   2.45 MBytes       
+[  5]   3.00-4.00   sec   100 MBytes   840 Mbits/sec    0   2.45 MBytes       
+[  5]   4.00-5.00   sec   104 MBytes   868 Mbits/sec    0   2.45 MBytes       
+[  5]   5.00-6.00   sec   103 MBytes   866 Mbits/sec    0   2.45 MBytes       
+[  5]   6.00-7.00   sec   100 MBytes   841 Mbits/sec    0   2.45 MBytes       
+[  5]   7.00-8.00   sec  98.4 MBytes   825 Mbits/sec    0   2.45 MBytes       
+[  5]   8.00-9.00   sec  99.8 MBytes   837 Mbits/sec    0   2.45 MBytes       
+[  5]   9.00-10.00  sec   101 MBytes   846 Mbits/sec    0   2.45 MBytes       
+[  5]  10.00-11.00  sec  98.6 MBytes   827 Mbits/sec    0   2.45 MBytes       
+[  5]  11.00-12.00  sec   100 MBytes   839 Mbits/sec    0   2.45 MBytes       
+[  5]  12.00-12.01  sec  1.50 MBytes  2.06 Gbits/sec    0   2.45 MBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-12.01  sec  1.18 GBytes   847 Mbits/sec    0            sender
+-----------------------------------------------------------
+Server listening on 5362 (test #4)
+-----------------------------------------------------------
+Accepted connection from 192.168.1.144, port 57729
+[  5] local 192.168.1.2 port 5362 connected to 192.168.1.144 port 37067
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec   103 MBytes   866 Mbits/sec    0   1.46 MBytes       (omitted)
+[  5]   1.00-2.00   sec   103 MBytes   867 Mbits/sec    0   1.46 MBytes       (omitted)
+[  5]   0.00-1.00   sec   102 MBytes   858 Mbits/sec    0   1.46 MBytes       
+[  5]   1.00-2.00   sec   105 MBytes   884 Mbits/sec    0   1.46 MBytes       
+[  5]   2.00-3.00   sec   102 MBytes   853 Mbits/sec    0   1.46 MBytes       
+[  5]   3.00-4.00   sec   101 MBytes   845 Mbits/sec    0   1.46 MBytes       
+[  5]   4.00-5.00   sec  99.6 MBytes   836 Mbits/sec    0   1.46 MBytes       
+[  5]   5.00-6.00   sec  97.2 MBytes   816 Mbits/sec   78    778 KBytes       
+[  5]   6.00-7.00   sec  96.6 MBytes   810 Mbits/sec    0    868 KBytes       
+[  5]   7.00-8.00   sec  95.2 MBytes   799 Mbits/sec    0    946 KBytes       
+[  5]   8.00-9.00   sec  98.0 MBytes   822 Mbits/sec    0   1015 KBytes       
+[  5]   9.00-10.00  sec   100 MBytes   842 Mbits/sec    0   1.05 MBytes       
+[  5]  10.00-11.00  sec  97.4 MBytes   817 Mbits/sec    0   1.10 MBytes       
+[  5]  11.00-12.00  sec   102 MBytes   856 Mbits/sec    0   1.15 MBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-12.01  sec  1.17 GBytes   836 Mbits/sec   78            sender
+-----------------------------------------------------------
+Server listening on 5362 (test #5)
+-----------------------------------------------------------
+Accepted connection from 192.168.1.144, port 34759
+[  5] local 192.168.1.2 port 5362 connected to 192.168.1.144 port 47867
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec   102 MBytes   854 Mbits/sec    0   1.36 MBytes       (omitted)
+[  5]   1.00-2.00   sec  97.1 MBytes   815 Mbits/sec    0   1.36 MBytes       (omitted)
+[  5]   0.00-1.00   sec   102 MBytes   851 Mbits/sec    0   1.36 MBytes       
+[  5]   1.00-2.00   sec   102 MBytes   857 Mbits/sec    0   1.36 MBytes       
+[  5]   2.00-3.00   sec   102 MBytes   855 Mbits/sec    0   1.36 MBytes       
+[  5]   3.00-4.00   sec   101 MBytes   849 Mbits/sec    0   1.36 MBytes       
+[  5]   4.00-5.00   sec   103 MBytes   862 Mbits/sec    0   1.36 MBytes       
+[  5]   5.00-6.00   sec   101 MBytes   850 Mbits/sec    0   1.36 MBytes       
+[  5]   6.00-7.00   sec  99.4 MBytes   834 Mbits/sec    0   1.36 MBytes       
+[  5]   7.00-8.00   sec   102 MBytes   851 Mbits/sec    0   1.36 MBytes       
+[  5]   8.00-9.00   sec   103 MBytes   861 Mbits/sec    0   1.36 MBytes       
+[  5]   9.00-10.00  sec   103 MBytes   867 Mbits/sec    0   1.36 MBytes       
+[  5]  10.00-11.00  sec  99.6 MBytes   836 Mbits/sec    0   1.36 MBytes       
+[  5]  11.00-12.00  sec  97.1 MBytes   815 Mbits/sec    0   1.36 MBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-12.00  sec  1.19 GBytes   849 Mbits/sec    0            sender
+-----------------------------------------------------------
+Server listening on 5362 (test #6)
+-----------------------------------------------------------
+Accepted connection from 192.168.1.144, port 53067
+[  5] local 192.168.1.2 port 5362 connected to 192.168.1.144 port 45043
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  97.9 MBytes   820 Mbits/sec    0   1.35 MBytes       (omitted)
+[  5]   1.00-2.00   sec   101 MBytes   844 Mbits/sec    0   1.35 MBytes       (omitted)
+[  5]   0.00-1.00   sec   103 MBytes   861 Mbits/sec    0   1.35 MBytes       
+[  5]   1.00-2.00   sec   103 MBytes   866 Mbits/sec    0   1.35 MBytes       
+[  5]   2.00-3.00   sec   101 MBytes   847 Mbits/sec    0   1.35 MBytes       
+[  5]   3.00-4.00   sec  98.9 MBytes   830 Mbits/sec    0   1.35 MBytes       
+[  5]   4.00-5.00   sec  96.6 MBytes   810 Mbits/sec    0   1.35 MBytes       
+[  5]   5.00-6.00   sec   101 MBytes   849 Mbits/sec    0   1.35 MBytes       
+[  5]   6.00-7.00   sec   104 MBytes   869 Mbits/sec    0   1.35 MBytes       
+[  5]   7.00-8.00   sec   101 MBytes   844 Mbits/sec    0   1.35 MBytes       
+[  5]   8.00-9.00   sec   103 MBytes   865 Mbits/sec    0   1.35 MBytes       
+[  5]   9.00-10.00  sec   100 MBytes   839 Mbits/sec    0   1.35 MBytes       
+[  5]  10.00-11.00  sec   105 MBytes   881 Mbits/sec    0   1.35 MBytes       
+[  5]  11.00-12.00  sec   101 MBytes   845 Mbits/sec    0   1.35 MBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-12.01  sec  1.19 GBytes   851 Mbits/sec    0            sender
+iperf3: interrupt - the server has terminated by signal Terminated(15)
+-----------------------------------------------------------
+Server listening on 5362 (test #7)
+-----------------------------------------------------------

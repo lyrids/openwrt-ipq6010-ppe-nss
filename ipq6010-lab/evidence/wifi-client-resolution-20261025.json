@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-25",
+  "status": "resolved",
+  "source": "user-reported retest",
+  "cause": "test machine Wi-Fi adapter bug",
+  "result": "Both 5 GHz test SSIDs performed well with a different client",
+  "throughput_numbers": "not provided",
+  "interpretation": "Earlier QCN9074 upload measurements are not evidence of a router/NSS defect"
+}

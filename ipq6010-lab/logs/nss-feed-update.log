@@ -1,0 +1,58 @@
+Updating feed 'nss' from 'https://github.com/JuliusBairaktaris/nss-packages.git^1f60d7e9409930bbd298eae1831c5b76d21eb1d2' ...
+Cloning into './feeds/nss'...
+From https://github.com/JuliusBairaktaris/nss-packages
+ * branch            1f60d7e9409930bbd298eae1831c5b76d21eb1d2 -> FETCH_HEAD
+HEAD is now at 1f60d7e nss-packages: carry only nss-firmware for ppe-nss
+/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss
+Create index file './feeds/nss.index' 
+Checking 'true'... ok.
+Checking 'false'... ok.
+Checking 'working-make'... ok.
+Checking 'case-sensitive-fs'... ok.
+Checking 'proper-umask'... ok.
+Checking 'gcc'... updated.
+Checking 'working-gcc'... ok.
+Checking 'g++'... updated.
+Checking 'working-g++'... ok.
+Checking 'ncurses.h'... ok.
+Checking 'git'... updated.
+Checking 'rsync'... updated.
+Checking 'perl-data-dumper'... ok.
+Checking 'perl-findbin'... ok.
+Checking 'perl-file-copy'... ok.
+Checking 'perl-file-compare'... ok.
+Checking 'perl-thread-queue'... ok.
+Checking 'perl-ipc-cmd'... ok.
+Checking 'tar'... updated.
+Checking 'find'... updated.
+Checking 'bash'... updated.
+Checking 'xargs'... updated.
+Checking 'patch'... updated.
+Checking 'diff'... updated.
+Checking 'cp'... updated.
+Checking 'seq'... updated.
+Checking 'awk'... updated.
+Checking 'grep'... updated.
+Checking 'egrep'... updated.
+Checking 'getopt'... updated.
+Checking 'realpath'... updated.
+Checking 'stat'... updated.
+Checking 'gzip'... updated.
+Checking 'unzip'... updated.
+Checking 'bzip2'... updated.
+Checking 'wget'... updated.
+Checking 'install'... updated.
+Checking 'perl'... updated.
+Checking 'python'... updated.
+Checking 'python3'... updated.
+Checking 'python3-distutils'... ok.
+Checking 'python3-stdlib'... ok.
+Checking 'file'... updated.
+Checking 'which'... updated.
+Checking 'argp.h'... ok.
+Checking 'fts.h'... ok.
+Checking 'obstack.h'... ok.
+Checking 'libintl.h'... ok.
+Checking 'ldconfig-stub'... ok.
+[MCollecting package info: feeds/nss/nss-firmware[MCollecting package info: merging...[MCollecting package info: done
+[MCollecting target info: merging...[MCollecting target info: done

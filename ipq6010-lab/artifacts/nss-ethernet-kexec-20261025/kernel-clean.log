@@ -1,0 +1,12 @@
+make[2]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/scripts/config'
+make[2]: 'conf' is up to date.
+make[2]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/scripts/config'
+make[4]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/target/linux'
+make[5]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/target/linux/qualcommax'
+make[6]: Entering directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/target/linux/qualcommax/image'
+make[6]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/target/linux/qualcommax/image'
+make[5]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/target/linux/qualcommax'
+make[4]: Leaving directory '/home/ly/projects/openwrt-dev/src/openwrt-ppe-nss/target/linux'
+time: target/linux/prereq#0.03#0.01#0.04
+ make[1] target/linux/clean
+ make[2] -C target/linux clean

@@ -1,0 +1,12 @@
+ethernet enabled 1 active 1 offers 274 pushed 114 rejected 24
+bound 0 pushed 114 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 17 v6 ethernet if 1/4 prio 0 installed 1 age 4830ms fw flow rx 56 tx 56 return rx 56 tx 56
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv6     10 udp      17 src=fd42:6018:100::63 dst=fd42:6018:1::60 sport=60343 dport=5242 packets=1 bytes=304 src=fd42:6018:1::60 dst=fd42:6018:100::63 sport=5242 dport=60343 packets=1 bytes=132 [HW_OFFLOAD] mark=0 use=2
+fd42:6018:1::60 from :: dev br-lan proto kernel src fd42:6018:1::1 metric 256 pref medium

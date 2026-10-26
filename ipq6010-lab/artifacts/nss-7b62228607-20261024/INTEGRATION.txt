@@ -1,0 +1,27 @@
+NSS integration candidate: 7b62228607e718d1317e5622264147772c59916c
+Firmware feed: 1f60d7e9409930bbd298eae1831c5b76d21eb1d2
+Build tree: src/openwrt-ppe-nss (separate from the verified baseline).
+qca_edma/qca_ppe + nss-wifi-drv + patched ath11k + NSS CP 12.5 firmware.
+No qca-nss-drv or ECM. Optional QoS/UI suite not selected.
+QCN9074 support exists; actual board BAR 0x20400000 fits the sub-4GiB requirement.
+IPQ60xx maintainer hardware validation absent. This candidate is experimental.
+NSS uses reserved memory 0x40000000..0x41000000, adjacent to FIT kernel load.
+Offload is selected at radio probe and requires reboot to change.
+Do not attempt to unload/reload ath11k to toggle offload.
+
+Acceptance:
+1. RAM boot through the already verified installed U-Boot HTTP mechanism.
+2. Verify boot/firmware version, NSS driver, three radios, radio-ring handoff
+   and successful firmware acknowledgments. Inspect NSS boot/log/msgs and
+   read-only wifili_rx/flows. wifili_start performs setup on read, so do not
+   treat it as a passive diagnostic read after startup.
+3. Confirm no NSS exception/reset and no new clock warning before traffic.
+4. Generate wired-to-WiFi flows and confirm per-radio/per-vdev firmware
+   packet/byte counters advance for the tested radio and flow entries hit.
+5. Compare identical traffic against a separate offload=0 RAM boot. CPU
+   utilization/throughput supplement the explicit NSS evidence.
+6. Wired LAN-LAN switching is only a regression test, not NSS proof.
+7. Test both integrated and PCIe radios, both traffic directions, IPv4
+   bridge/routed traffic before broader IPv6/VLAN/multicast tests.
+8. Archive kernel log, package/config manifests, counter deltas and failures.
+No persistent installation planned for initial NSS bring-up.

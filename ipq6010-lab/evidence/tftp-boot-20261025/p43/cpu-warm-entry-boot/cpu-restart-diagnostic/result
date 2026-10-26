@@ -1,0 +1,4 @@
+before=0-3
+after_offline=0-2
+online_write_failed=1
+remaining_online=0-2

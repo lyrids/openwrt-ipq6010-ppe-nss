@@ -1,0 +1,190 @@
+{
+  "known_test_wifi_PSK_checked": true,
+  "known_PSK_remaining_matches": 0,
+  "redacted_files": [],
+  "private_key_GitHub_token_AWS_ID_URL_credentials": "no matches",
+  "candidate_assignment_locations": [
+    {
+      "path": "ipq6010-lab/config.seed",
+      "line": 19
+    },
+    {
+      "path": "ipq6010-lab/artifacts/ax6600-main.config",
+      "line": 994
+    },
+    {
+      "path": "ipq6010-lab/artifacts/state-main/config.full",
+      "line": 994
+    },
+    {
+      "path": "ipq6010-lab/artifacts/nss-ethernet-kexec-20261025/config.full",
+      "line": 996
+    },
+    {
+      "path": "ipq6010-lab/artifacts/nss-ethernet-kexec-20261025/config.full",
+      "line": 3473
+    },
+    {
+      "path": "ipq6010-lab/artifacts/cpu-restart-diag-20261025/config.full",
+      "line": 996
+    },
+    {
+      "path": "ipq6010-lab/artifacts/cpu-restart-diag-20261025/config.full",
+      "line": 3473
+    },
+    {
+      "path": "ipq6010-lab/artifacts/cpu-warm-entry-experiment-20261025/config.full",
+      "line": 996
+    },
+    {
+      "path": "ipq6010-lab/artifacts/cpu-warm-entry-experiment-20261025/config.full",
+      "line": 3473
+    },
+    {
+      "path": "ipq6010-lab/artifacts/cpu-warm-entry-experiment-20261025/host-control/images/config.buildinfo",
+      "line": 21
+    },
+    {
+      "path": "ipq6010-lab/artifacts/cpu-restart-diag-20261025/nss-enabled/images/config.buildinfo",
+      "line": 21
+    },
+    {
+      "path": "ipq6010-lab/artifacts/cpu-restart-diag-20261025/host-control/images/config.buildinfo",
+      "line": 21
+    },
+    {
+      "path": "ipq6010-lab/artifacts/nss-ethernet-kexec-20261025/images/config.buildinfo",
+      "line": 21
+    },
+    {
+      "path": "ipq6010-lab/artifacts/nss-ethernet-kexec-20261025/build-state/config.full",
+      "line": 996
+    },
+    {
+      "path": "ipq6010-lab/artifacts/nss-ethernet-kexec-20261025/build-state/config.full",
+      "line": 3473
+    },
+    {
+      "path": "ipq6010-lab/artifacts/nss-ethernet-kexec-20261025/build-state/config.seed",
+      "line": 21
+    },
+    {
+      "path": "ipq6010-lab/artifacts/nss-ethernet-mtuguard-03803c78cd-20261025/build-state/config.full",
+      "line": 996
+    },
+    {
+      "path": "ipq6010-lab/artifacts/nss-ethernet-mtuguard-03803c78cd-20261025/build-state/config.full",
+      "line": 3473
+    },
+    {
+      "path": "ipq6010-lab/artifacts/nss-ethernet-mtuguard-03803c78cd-20261025/build-state/config.seed",
+      "line": 19
+    },
+    {
+      "path": "ipq6010-lab/artifacts/nss-ethernet-mtuguard-03803c78cd-20261025/images/config.buildinfo",
+      "line": 19
+    },
+    {
+      "path": "ipq6010-lab/artifacts/nss-ethernet-mtufix-03803c78cd-20261025/build-state/config.full",
+      "line": 996
+    },
+    {
+      "path": "ipq6010-lab/artifacts/nss-ethernet-mtufix-03803c78cd-20261025/build-state/config.full",
+      "line": 3473
+    },
+    {
+      "path": "ipq6010-lab/artifacts/nss-ethernet-mtufix-03803c78cd-20261025/build-state/config.seed",
+      "line": 19
+    },
+    {
+      "path": "ipq6010-lab/artifacts/nss-ethernet-mtufix-03803c78cd-20261025/images/config.buildinfo",
+      "line": 19
+    },
+    {
+      "path": "ipq6010-lab/artifacts/nss-ethernet-vlanfix-03803c78cd-20261025/build-state/config.full",
+      "line": 996
+    },
+    {
+      "path": "ipq6010-lab/artifacts/nss-ethernet-vlanfix-03803c78cd-20261025/build-state/config.full",
+      "line": 3473
+    },
+    {
+      "path": "ipq6010-lab/artifacts/nss-ethernet-vlanfix-03803c78cd-20261025/build-state/config.seed",
+      "line": 19
+    },
+    {
+      "path": "ipq6010-lab/artifacts/nss-ethernet-vlanfix-03803c78cd-20261025/images/config.buildinfo",
+      "line": 19
+    },
+    {
+      "path": "ipq6010-lab/artifacts/nss-ethernet-bootfix-03803c78cd-20261025/build-state/config.full",
+      "line": 996
+    },
+    {
+      "path": "ipq6010-lab/artifacts/nss-ethernet-bootfix-03803c78cd-20261025/build-state/config.full",
+      "line": 3473
+    },
+    {
+      "path": "ipq6010-lab/artifacts/nss-ethernet-bootfix-03803c78cd-20261025/build-state/config.seed",
+      "line": 19
+    },
+    {
+      "path": "ipq6010-lab/artifacts/nss-ethernet-bootfix-03803c78cd-20261025/images/config.buildinfo",
+      "line": 19
+    },
+    {
+      "path": "ipq6010-lab/artifacts/nss-ethernet-03803c78cd-20261025/build-state/config.full",
+      "line": 996
+    },
+    {
+      "path": "ipq6010-lab/artifacts/nss-ethernet-03803c78cd-20261025/build-state/config.full",
+      "line": 3473
+    },
+    {
+      "path": "ipq6010-lab/artifacts/nss-ethernet-03803c78cd-20261025/build-state/config.seed",
+      "line": 19
+    },
+    {
+      "path": "ipq6010-lab/artifacts/nss-ethernet-03803c78cd-20261025/images/config.buildinfo",
+      "line": 19
+    },
+    {
+      "path": "ipq6010-lab/artifacts/minimal-nss-7b62228607-20261024/build-state/config.full",
+      "line": 996
+    },
+    {
+      "path": "ipq6010-lab/artifacts/minimal-nss-7b62228607-20261024/build-state/config.full",
+      "line": 3473
+    },
+    {
+      "path": "ipq6010-lab/artifacts/minimal-nss-7b62228607-20261024/build-state/config.seed",
+      "line": 19
+    },
+    {
+      "path": "ipq6010-lab/artifacts/minimal-nss-7b62228607-20261024/images/config.buildinfo",
+      "line": 19
+    },
+    {
+      "path": "ipq6010-lab/artifacts/nss-7b62228607-20261024/build-state/config.full",
+      "line": 996
+    },
+    {
+      "path": "ipq6010-lab/artifacts/nss-7b62228607-20261024/build-state/config.full",
+      "line": 3473
+    },
+    {
+      "path": "ipq6010-lab/artifacts/nss-7b62228607-20261024/build-state/config.seed",
+      "line": 19
+    },
+    {
+      "path": "ipq6010-lab/artifacts/nss-7b62228607-20261024/images/config.buildinfo",
+      "line": 19
+    },
+    {
+      "path": "ipq6010-lab/artifacts/baseline-5192094fd6-20261024/build-state/config.full",
+      "line": 994
+    }
+  ],
+  "raw_environment_dump_included": false,
+  "assignment_review": "All 45 matches are Kconfig boolean selections, not credentials"
+}

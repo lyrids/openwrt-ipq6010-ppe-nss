@@ -1,0 +1,10 @@
+{
+  "timestamp_utc": "2026-10-25T08:42:37.551863+00:00",
+  "ram_image_iteration": 6,
+  "CPUs_online": "0-3",
+  "kexec_loaded": 0,
+  "NSS_boot": 1,
+  "NSS_Ethernet": "enabled1 active1",
+  "boot_id": "6e0e3dc0-da82-48ca-b622-ffbbc74af932",
+  "CPU_hotplug_retested": false
+}

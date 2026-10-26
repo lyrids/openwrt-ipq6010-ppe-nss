@@ -1,0 +1,6 @@
+[  313.762131] ipq-affinity-probe: mpidr=0x0 affinity=0 (0=ON 1=OFF 2=ON_PENDING)
+[  313.762182] ipq-affinity-probe: mpidr=0x1 affinity=0 (0=ON 1=OFF 2=ON_PENDING)
+[  313.768340] ipq-affinity-probe: mpidr=0x2 affinity=0 (0=ON 1=OFF 2=ON_PENDING)
+[  313.775470] ipq-affinity-probe: mpidr=0x3 affinity=2 (0=ON 1=OFF 2=ON_PENDING)
+0-2
+0

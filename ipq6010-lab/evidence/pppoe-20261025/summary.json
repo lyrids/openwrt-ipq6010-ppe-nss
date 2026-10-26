@@ -1,0 +1,68 @@
+{
+  "image": "nss-ethernet-vlanfix-03803c78cd-20261025",
+  "stages": {
+    "host_to_host": "m4 end0.100 PPPoE client -> LAN4 tagged100 -> PPE bridge -> LAN1 tagged100 -> p43 eth0.100 PPPoE server; PPP addresses172.31.100.2/172.31.100.1",
+    "nss_routed": "m4 end0 192.168.1.158 -> LAN4 untagged1 -> router NSS IPv4 SNAT and PPPoE client br-lan.100 -> LAN1 tagged100 -> p43 PPPoE server172.31.100.1; translated source172.31.100.2"
+  },
+  "cases": {
+    "bridge-reverse": {
+      "error": null,
+      "receiver_mbps": 874.4441190624386,
+      "retransmits": 0
+    },
+    "nss-reconnected": {
+      "error": null,
+      "receiver_mbps": 933.3496821129818,
+      "retransmits": 10
+    },
+    "nss-reverse": {
+      "error": null,
+      "receiver_mbps": 872.1375482137425,
+      "retransmits": 0
+    },
+    "nss-forward": {
+      "error": null,
+      "receiver_mbps": 932.8575216105462,
+      "retransmits": 15
+    },
+    "bridge-forward": {
+      "error": null,
+      "receiver_mbps": 916.21918969475,
+      "retransmits": 0
+    }
+  },
+  "monitoring": {
+    "bridge-monitor": {
+      "samples": 40,
+      "all_core_busy_percent": 0.237,
+      "nss_pushed_observed": [
+        6
+      ],
+      "max_firmware_flow_rx": 0,
+      "max_firmware_return_rx": 0,
+      "note": "Window includes setup/teardown around two 15-second tests."
+    },
+    "nss-monitor": {
+      "samples": 50,
+      "all_core_busy_percent": 0.506,
+      "nss_pushed_observed": [
+        6,
+        8,
+        10
+      ],
+      "max_firmware_flow_rx": 1027347,
+      "max_firmware_return_rx": 845808,
+      "note": "Window includes setup/teardown around two 15-second tests."
+    }
+  },
+  "mtu": "1492-byte DF IP packets pass;1493-byte DF packet gets ICMP fragmentation-needed from router with MTU1492",
+  "offload_evidence": "NSS if4/1 installed rules and firmware packet counters; PPE steering; conntrack HW_OFFLOAD with SNAT reply destination172.31.100.2; PPPoE session frames captured on eth0.100.",
+  "reconnection": "Confirmed removal of PPP socket and flow tables; reconnect, fresh NSS rules and throughput passed.",
+  "cleanup": "Temporary PPP clients/server and iperf stopped; scoped NAT/forward rules and m4 temporary routes removed; original host routes and LAN1PVID100/LAN4VLAN1 layout restored.",
+  "limits": [
+    "IPv4 only",
+    "One PPPoE session",
+    "No PAP/CHAP authentication test",
+    "No PPPoE IPv6, concurrent session, long-duration or WAN2.5G test"
+  ]
+}

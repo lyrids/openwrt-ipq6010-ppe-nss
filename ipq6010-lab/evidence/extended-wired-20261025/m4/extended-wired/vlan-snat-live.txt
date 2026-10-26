@@ -1,0 +1,25 @@
+ethernet enabled 1 active 1 offers 240 pushed 97 rejected 24
+bound 0 pushed 97 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.200.60 sport=43863 dport=5234 packets=32 bytes=1429 src=192.168.200.60 dst=192.168.200.1 sport=5234 dport=43863 packets=16 bytes=158672 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.200.60 sport=55197 dport=5234 packets=15 bytes=100737 src=192.168.200.60 dst=192.168.200.1 sport=5234 dport=55197 packets=25 bytes=1078 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.200.60 sport=37047 dport=5234 packets=13 bytes=631 src=192.168.200.60 dst=192.168.200.1 sport=5234 dport=37047 packets=6 bytes=48104 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.200.60 sport=55675 dport=5234 packets=5 bytes=305 src=192.168.200.60 dst=192.168.200.1 sport=5234 dport=55675 packets=3 bytes=164 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.200.60 sport=35609 dport=5234 packets=9 bytes=29473 src=192.168.200.60 dst=192.168.200.1 sport=5234 dport=35609 packets=20 bytes=868 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.200.60 sport=37867 dport=5234 packets=4 bytes=243 src=192.168.200.60 dst=192.168.200.1 sport=5234 dport=37867 packets=17 bytes=752 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.200.60 sport=45423 dport=5234 packets=23 bytes=1051 src=192.168.200.60 dst=192.168.200.1 sport=5234 dport=45423 packets=11 bytes=130900 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.200.60 sport=46437 dport=5234 packets=13 bytes=631 src=192.168.200.60 dst=192.168.200.1 sport=5234 dport=46437 packets=6 bytes=51000 [OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.200.60 sport=53103 dport=5234 packets=3 bytes=201 src=192.168.200.60 dst=192.168.200.1 sport=5234 dport=53103 packets=14 bytes=616 [OFFLOAD] mark=0 use=2
+table inet fw4 {
+	chain srcnat {
+		type nat hook postrouting priority srcnat; policy accept;
+		oifname "wan" jump srcnat_wan comment "!fw4: Handle wan IPv4/IPv6 srcnat traffic"
+		ip saddr 192.168.100.63 ip daddr 192.168.200.60 counter packets 9 bytes 540 snat ip to 192.168.200.1 comment "extended-snat"
+	}
+}

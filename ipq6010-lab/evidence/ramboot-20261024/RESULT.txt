@@ -1,0 +1,19 @@
+RAM boot succeeded, 2026-10-24.
+Image: OpenWrt SNAPSHOT r37652-5192094fd6, Linux 6.18.55, JDCloud RE-CS-02.
+Booted through installed U-Boot HTTP initramfs upload and /result action.
+Uploaded FIT MD5 matched staged image; iminfo verified FIT hashes and board.
+Actual HTTP multipart FIT address was 0x500000a8, not 0x50000000.
+U-Boot recovery used 2.5G port; Linux management then used gigabit LAN.
+Rootfs type initramfs; / is tmpfs; no eMMC filesystem/overlay mounted.
+PPE/EDMA LAN link and root SSH work. Ten pings: 0% loss, average 0.259 ms.
+Three wireless PHYs registered. AP operation and hardware forwarding untested.
+Eight checked boot/config/calibration/kernel partition hashes unchanged.
+Boot warning: nss_crypto_clk_src RCG configuration update timeout during PPE
+clock defaults setup. Networking continued; investigation still required.
+No sysupgrade, firmware flashing, saved boot environment change, or GPT repair.
+Router remains running the RAM image; normal reboot without SCREEN should
+return to installed LibWrt. Upstream cable should remain disconnected during
+this isolated test. Wi-Fi management of p43 remains 192.168.21.63.
+Full evidence: /home/ubuntu/openwrt-ramboot/ramboot-verification.txt.
+VM evidence synchronization pending: OrbStack accepts connections but guest
+command execution is currently unresponsive. No VM restart was performed.

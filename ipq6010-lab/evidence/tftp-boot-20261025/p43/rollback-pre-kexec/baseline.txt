@@ -1,0 +1,43 @@
+Variant: experimental PPE + NSS Ethernet backend, iteration 5 (live routed MTU guard with safe software fallback)
+Base: 03803c78cd3b6968c20dab239c0c2f688692be63
+PPE: DSA/VLAN topology and unchanged-packet flow steering
+NSS: Ethernet-only routed flow backend, Wi-Fi datapath, CP firmware 12.5
+Module parameter ethernet_offload=1 selected at boot
+No vendor qca-nss-drv or ECM
+Reduced-MTU guard hardware validation pending; Wi-Fi upload issue resolved by user retest (client adapter)
+0-3
+1
+ethernet enabled 1 active 1 offers 0 pushed 0 rejected 0
+mtu_policy limited 0 link 0/0 route 0/0 rule 0/0 l3if 0/0
+bound 0 pushed 0 last-ifindex 0
+/dev/mmcblk0p12 0x0 0x40000 0x20000 
+bootcmd=bootipq
+bootargs=console=ttyMSM0,115200n8
+bootdelay=2
+ipaddr=192.168.1.1
+serverip=192.168.1.2
+console=ttyMSM0,115200n8
+tmpfs / tmpfs rw,relatime 0 0
+proc /proc proc rw,nosuid,nodev,noexec,relatime 0 0
+MAJOR=179
+MINOR=12
+DEVNAME=mmcblk0p12
+DEVTYPE=partition
+DISKSEQ=9
+PARTN=12
+PARTNAME=0:APPSBLENV
+PARTUUID=479d21c5-0f87-3986-9537-a980aefc6e0a
+fw_setenv: option requires an argument: h
+Usage: fw_setenv [OPTIONS]... [VARIABLE]...
+Modify variables in U-Boot environment
+
+ -h, --help           print this help.
+ -v, --version        display version
+ -c, --config         configuration file, default:/etc/fw_env.config
+ -l, --lock           lock node, default:/var/lock
+ -s, --script         batch mode to minimize writes
+
+Examples:
+  fw_setenv foo bar   set variable foo equal bar
+  fw_setenv foo       clear variable foo
+  fw_setenv --script file run batch script

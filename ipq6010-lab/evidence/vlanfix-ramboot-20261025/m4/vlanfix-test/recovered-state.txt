@@ -1,0 +1,28 @@
+ethernet enabled 1 active 1 offers 60 pushed 6 rejected 24
+bound 0 pushed 6 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 5 tx 5 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/4 prio 0 installed 0 age 900ms fw flow rx 518395 tx 28338 return rx 28338 tx 518395
+proto 6 v4 ethernet if 1/4 prio 0 installed 0 age 900ms fw flow rx 5 tx 6 return rx 6 tx 5
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+1112  ipv4 1     4   3   192   0   567946 862140600
+1280  ipv4 1     4   3   376   12  6 735
+1520  ipv4 1     4   3   192   12  9 951
+1688  ipv4 1     4   3   376   0   31044 2048904
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=56811 dport=5214 packets=44 bytes=519269 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=56811 packets=4 bytes=204 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.100.63 dst=192.168.1.158 sport=52915 dport=5214 packets=6 bytes=358 src=192.168.1.158 dst=192.168.100.63 sport=5214 dport=52915 packets=3 bytes=164 [HW_OFFLOAD] mark=0 use=2
+0
+ 00:03:07 up 3 min,  load average: 0.42, 0.17, 0.06
+[   28.912127] qca-ppe 3a000000.ppe lan4: entered allmulticast mode
+[   28.917789] qca-ppe 3a000000.ppe lan4: entered promiscuous mode
+[   28.923915] br-lan: port 4(lan4) entered blocking state
+[   28.929173] br-lan: port 4(lan4) entered forwarding state
+[   28.939648] qca-ppe 3a000000.ppe wan: configuring for phy/2500base-x link mode
+[   31.521059] qca-ppe 3a000000.ppe lan1: Link is Up - 1Gbps/Full - flow control rx/tx
+[   31.521124] br-lan: port 1(lan1) entered blocking state
+[   31.527558] br-lan: port 1(lan1) entered forwarding state

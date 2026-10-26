@@ -1,0 +1,5 @@
+PASS: no early steering; copied rule lifetime; second-direction rejection rollback
+PASS: pair commit installs both directions; destroy clears both
+PASS: second PPE insertion failure rolls back first entry and NSS rule
+PASS: allocation failure withdraws pending NSS state
+PASS: unavailable backend clears pending pair and preserves software fallback

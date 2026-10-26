@@ -1,0 +1,2650 @@
+SAMPLE
+25435.88 101021.52
+cpu  1094 0 2025 10102152 2 0 1255 0 0 0
+cpu0 217 0 243 2520463 0 0 1200 0 0 0
+cpu1 252 0 980 2502062 2 0 27 0 0 0
+cpu2 361 0 406 2539583 0 0 11 0 0 0
+cpu3 264 0 396 2540042 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   312 312 201917 2 220
+3   21 21 2519 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813466 9878065450 0 0
+1    4712067 5021718205 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    26105788 39369815818 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   312 201917
+3   28 3810
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 6 tx 6 drop 0/0/0/0 exceptions
+node ipv4 rx 6 tx 0 drop 0/0/0/0 exceptions 9:5 23:1
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25436.88 101025.52
+cpu  1094 0 2026 10102552 2 0 1255 0 0 0
+cpu0 217 0 243 2520563 0 0 1200 0 0 0
+cpu1 252 0 980 2502161 2 0 27 0 0 0
+cpu2 361 0 407 2539684 0 0 11 0 0 0
+cpu3 264 0 396 2540142 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   318 318 202313 2 220
+3   27599 27599 39880953 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813473 9878065912 0 0
+1    4713432 5021813775 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    26132131 39409779414 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   319 202379
+3   27730 40061788
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25437.89 101029.51
+cpu  1095 0 2026 10102952 2 0 1255 0 0 0
+cpu0 217 0 243 2520663 0 0 1200 0 0 0
+cpu1 252 0 980 2502261 2 0 27 0 0 0
+cpu2 362 0 407 2539784 0 0 11 0 0 0
+cpu3 264 0 396 2540243 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   325 325 202775 2 220
+3   114090 114090 164464259 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813480 9878066374 0 0
+1    4718067 5022138225 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    26213991 39534034974 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   326 202841
+3   114218 164639092
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 2 tx 2 drop 0/0/0/0 exceptions
+node ipv4 rx 5 tx 0 drop 0/0/0/0 exceptions 9:5
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25438.90 101033.51
+cpu  1095 0 2027 10103352 2 0 1255 0 0 0
+cpu0 217 0 243 2520762 0 0 1200 0 0 0
+cpu1 252 0 980 2502360 2 0 27 0 0 0
+cpu2 362 0 408 2539885 0 0 11 0 0 0
+cpu3 264 0 396 2540343 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   336 336 208333 2 220
+3   200568 200568 289065479 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813491 9878071932 0 0
+1    4722677 5022461965 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    26295872 39658322420 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   337 208399
+3   200700 289246384
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 2 tx 2 drop 0/0/0/0 exceptions
+node ipv4 rx 2 tx 0 drop 0/0/0/0 exceptions 23:2
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25439.91 101037.51
+cpu  1095 0 2028 10103752 2 0 1255 0 0 0
+cpu0 217 0 243 2520862 0 0 1200 0 0 0
+cpu1 252 0 980 2502459 2 0 27 0 0 0
+cpu2 362 0 409 2539985 0 0 11 0 0 0
+cpu3 264 0 396 2540443 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   345 345 211343 2 220
+3   287036 287036 413661659 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813501 9878075016 0 0
+1    4727278 5022784043 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    26377743 39782594686 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   346 211409
+3   287165 413838014
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 6 tx 6 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25440.92 101041.51
+cpu  1095 0 2029 10104151 2 0 1255 0 0 0
+cpu0 217 0 243 2520962 0 0 1200 0 0 0
+cpu1 252 0 980 2502558 2 0 27 0 0 0
+cpu2 362 0 410 2540086 0 0 11 0 0 0
+cpu3 264 0 396 2540544 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   354 354 214353 2 220
+3   373479 373479 538218437 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813510 9878078026 0 0
+1    4731880 5023106183 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    26459592 39906833548 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   355 214419
+3   373609 538396310
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 1 tx 0 drop 0/0/0/0 exceptions 9:1
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25441.93 101045.51
+cpu  1095 0 2029 10104551 2 0 1255 0 0 0
+cpu0 217 0 243 2521062 0 0 1200 0 0 0
+cpu1 252 0 980 2502657 2 0 27 0 0 0
+cpu2 362 0 410 2540186 0 0 11 0 0 0
+cpu3 264 0 396 2540644 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   363 363 217363 2 220
+3   459943 459943 662775237 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813519 9878081036 0 0
+1    4736507 5023430593 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    26541438 40031067864 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   364 217429
+3   460075 662953250
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25442.94 101049.51
+cpu  1095 0 2030 10104951 2 0 1255 0 0 0
+cpu0 217 0 243 2521162 0 0 1200 0 0 0
+cpu1 252 0 980 2502756 2 0 27 0 0 0
+cpu2 362 0 411 2540287 0 0 11 0 0 0
+cpu3 264 0 396 2540745 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   370 370 217825 2 220
+3   546487 546487 787366858 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813527 9878081829 0 0
+1    4741189 5023758855 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    26623309 40155340122 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   371 217891
+3   546620 787549546
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 2 tx 2 drop 0/0/0/0 exceptions
+node ipv4 rx 5 tx 0 drop 0/0/0/0 exceptions 9:5
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25443.95 101053.51
+cpu  1095 0 2031 10105351 2 0 1255 0 0 0
+cpu0 217 0 243 2521261 0 0 1200 0 0 0
+cpu1 252 0 981 2502855 2 0 27 0 0 0
+cpu2 362 0 411 2540388 0 0 11 0 0 0
+cpu3 264 0 396 2540845 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   377 377 218287 2 220
+3   632855 632855 911961826 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813534 9878082291 0 0
+1    4745685 5024073575 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    26705183 40279616942 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   378 218353
+3   632983 912138372
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25444.96 101057.50
+cpu  1095 0 2032 10105750 2 0 1255 0 0 0
+cpu0 217 0 243 2521361 0 0 1200 0 0 0
+cpu1 252 0 982 2502955 2 0 27 0 0 0
+cpu2 362 0 411 2540488 0 0 11 0 0 0
+cpu3 264 0 396 2540945 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   384 384 218749 2 220
+3   719300 719300 1036533224 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813541 9878082753 0 0
+1    4750281 5024395295 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    26787043 40403872502 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   385 218815
+3   719432 1036712946
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 6 tx 6 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25445.97 101061.50
+cpu  1096 0 2033 10106150 2 0 1255 0 0 0
+cpu0 217 0 243 2521461 0 0 1200 0 0 0
+cpu1 252 0 983 2503054 2 0 27 0 0 0
+cpu2 362 0 411 2540588 0 0 11 0 0 0
+cpu3 265 0 396 2541046 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   393 393 219405 2 220
+3   805738 805738 1161151916 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813550 9878083409 0 0
+1    4754836 5024714145 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    26868936 40528175334 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   394 219471
+3   805872 1161333226
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 1 tx 0 drop 0/0/0/0 exceptions 9:1
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25446.98 101065.45
+cpu  1099 0 2037 10106545 2 0 1255 0 0 0
+cpu0 220 0 245 2521556 0 0 1200 0 0 0
+cpu1 252 0 983 2503153 2 0 27 0 0 0
+cpu2 362 0 413 2540689 0 0 11 0 0 0
+cpu3 265 0 396 2541146 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   414 414 223698 2 220
+3   892164 892164 1285716192 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813571 9878087702 0 0
+1    4759415 5025034665 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    26950803 40652430492 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   415 223764
+3   892301 1285903504
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 1 tx 1 drop 0/0/0/0 exceptions
+node ipv4 rx 1 tx 0 drop 0/0/0/0 exceptions 9:1
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25447.99 101069.39
+cpu  1099 0 2043 10106940 2 0 1255 0 0 0
+cpu0 220 0 245 2521655 0 0 1200 0 0 0
+cpu1 252 0 984 2503251 2 0 27 0 0 0
+cpu2 362 0 418 2540786 0 0 11 0 0 0
+cpu3 265 0 396 2541246 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   436 436 226041 2 220
+3   978550 978550 1410328348 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813593 9878090045 0 0
+1    4763920 5025350015 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    27032703 40776722173 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   437 226107
+3   978679 1410502068
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 2 tx 2 drop 0/0/0/0 exceptions
+node ipv4 rx 5 tx 0 drop 0/0/0/0 exceptions 9:5
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25449.00 101073.39
+cpu  1099 0 2046 10107340 2 0 1255 0 0 0
+cpu0 220 0 245 2521755 0 0 1200 0 0 0
+cpu1 252 0 985 2503350 2 0 27 0 0 0
+cpu2 362 0 418 2540887 0 0 11 0 0 0
+cpu3 265 0 398 2541346 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   444 444 226577 2 220
+3   1064941 1064941 1534910446 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813601 9878090581 0 0
+1    4768450 5025667115 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    27114585 40901011153 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   445 226643
+3   1065084 1535105418
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25450.01 101077.39
+cpu  1099 0 2046 10107739 2 0 1255 0 0 0
+cpu0 220 0 245 2521854 0 0 1200 0 0 0
+cpu1 252 0 985 2503450 2 0 27 0 0 0
+cpu2 362 0 418 2540987 0 0 11 0 0 0
+cpu3 265 0 398 2541447 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   452 452 227136 2 220
+3   1151390 1151390 1659479228 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813609 9878091140 0 0
+1    4773048 5025988975 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    27196439 41025256206 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   453 227202
+3   1151528 1659669506
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25451.02 101081.39
+cpu  1099 0 2048 10108139 2 0 1255 0 0 0
+cpu0 220 0 246 2521954 0 0 1200 0 0 0
+cpu1 252 0 985 2503549 2 0 27 0 0 0
+cpu2 362 0 418 2541088 0 0 11 0 0 0
+cpu3 265 0 399 2541547 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   459 459 227598 2 220
+3   1237752 1237752 1784085360 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813616 9878091602 0 0
+1    4777534 5026302995 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    27278316 41149537588 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   460 227664
+3   1237884 1784262186
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 1 tx 0 drop 0/0/0/0 exceptions 9:1
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25452.03 101085.38
+cpu  1099 0 2049 10108539 2 0 1256 0 0 0
+cpu0 220 0 246 2522054 0 0 1201 0 0 0
+cpu1 252 0 985 2503648 2 0 27 0 0 0
+cpu2 362 0 418 2541188 0 0 11 0 0 0
+cpu3 265 0 400 2541647 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   466 466 228060 2 220
+3   1324197 1324197 1908642278 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813623 9878092064 0 0
+1    4782136 5026625135 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    27360177 41273794690 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   467 228126
+3   1324341 1908840216
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25453.04 101089.38
+cpu  1099 0 2050 10108939 2 0 1257 0 0 0
+cpu0 220 0 246 2522154 0 0 1202 0 0 0
+cpu1 252 0 985 2503747 2 0 27 0 0 0
+cpu2 362 0 419 2541289 0 0 11 0 0 0
+cpu3 265 0 400 2541748 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   473 473 228522 2 220
+3   1410652 1410652 2033178176 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813630 9878092526 0 0
+1    4786767 5026949305 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    27442036 41398048748 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   474 228588
+3   1410824 2033415722
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 4 tx 4 drop 0/0/0/0 exceptions
+node ipv4 rx 5 tx 0 drop 0/0/0/0 exceptions 9:5
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25454.05 101093.38
+cpu  1099 0 2051 10109339 2 0 1257 0 0 0
+cpu0 220 0 246 2522253 0 0 1202 0 0 0
+cpu1 252 0 985 2503846 2 0 27 0 0 0
+cpu2 362 0 419 2541390 0 0 11 0 0 0
+cpu3 265 0 401 2541848 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   480 480 228984 2 220
+3   1497160 1497160 2157848104 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813637 9878092988 0 0
+1    4791358 5027270675 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    27523929 41522354426 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   481 229050
+3   1497300 2158038522
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25455.06 101097.38
+cpu  1100 0 2052 10109738 2 0 1257 0 0 0
+cpu0 221 0 246 2522353 0 0 1202 0 0 0
+cpu1 252 0 986 2503945 2 0 27 0 0 0
+cpu2 362 0 419 2541490 0 0 11 0 0 0
+cpu3 265 0 401 2541948 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   487 487 229446 2 220
+3   1583651 1583651 2282453130 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813644 9878093450 0 0
+1    4795976 5027593935 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    27605805 41646634290 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   488 229512
+3   1583787 2282638924
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 6 tx 6 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25456.07 101101.38
+cpu  1100 0 2052 10110138 2 0 1258 0 0 0
+cpu0 221 0 246 2522453 0 0 1203 0 0 0
+cpu1 252 0 986 2504044 2 0 27 0 0 0
+cpu2 362 0 419 2541591 0 0 11 0 0 0
+cpu3 265 0 401 2542049 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   494 494 229908 2 220
+3   1670157 1670157 2407075134 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813651 9878093912 0 0
+1    4800598 5027917475 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    27687699 41770941478 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   495 229974
+3   1670298 2407268518
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 1 tx 0 drop 0/0/0/0 exceptions 9:1
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25457.08 101105.38
+cpu  1101 0 2053 10110538 2 0 1258 0 0 0
+cpu0 221 0 246 2522553 0 0 1203 0 0 0
+cpu1 253 0 987 2504144 2 0 27 0 0 0
+cpu2 362 0 419 2541691 0 0 11 0 0 0
+cpu3 265 0 401 2542149 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   502 502 230460 2 220
+3   1753593 1753593 2528550820 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813659 9878094472 0 0
+1    4842848 5088787959 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    27728887 41831540424 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   502 230460
+3   1753727 2528735030
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25458.09 101109.38
+cpu  1101 0 2054 10110938 2 0 1258 0 0 0
+cpu0 221 0 246 2522652 0 0 1203 0 0 0
+cpu1 253 0 988 2504243 2 0 27 0 0 0
+cpu2 362 0 419 2541792 0 0 11 0 0 0
+cpu3 265 0 401 2542250 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   507 507 230790 2 220
+3   1838096 1838096 2653001019 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813667 9878095265 0 0
+1    4924714 5213058173 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    27731535 41831728016 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   509 230922
+3   1838234 2653190114
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 1 tx 1 drop 0/0/0/0 exceptions
+node ipv4 rx 4 tx 0 drop 0/0/0/0 exceptions 9:4
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25459.10 101113.38
+cpu  1101 0 2054 10111338 2 0 1258 0 0 0
+cpu0 221 0 246 2522751 0 0 1203 0 0 0
+cpu1 253 0 988 2504342 2 0 27 0 0 0
+cpu2 362 0 419 2541893 0 0 11 0 0 0
+cpu3 265 0 401 2542350 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   516 516 231384 2 220
+3   1922592 1922592 2777450467 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813674 9878095727 0 0
+1    5006570 5337315581 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    27734178 41831915266 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   516 231384
+3   1922726 2777632042
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25460.11 101117.37
+cpu  1101 0 2055 10111738 2 0 1258 0 0 0
+cpu0 221 0 246 2522851 0 0 1203 0 0 0
+cpu1 253 0 988 2504441 2 0 27 0 0 0
+cpu2 362 0 420 2541993 0 0 11 0 0 0
+cpu3 265 0 401 2542451 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   523 523 231846 2 220
+3   2007085 2007085 2901905497 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813682 9878096255 0 0
+1    5088461 5461626119 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    27736814 41832102018 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   524 231912
+3   2007247 2902128128
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 5 tx 5 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25461.12 101121.37
+cpu  1101 0 2056 10112138 2 0 1258 0 0 0
+cpu0 221 0 247 2522951 0 0 1203 0 0 0
+cpu1 253 0 988 2504540 2 0 27 0 0 0
+cpu2 362 0 421 2542094 0 0 11 0 0 0
+cpu3 265 0 401 2542552 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   530 530 232308 2 220
+3   2091645 2091646 3026459407 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813688 9878096651 0 0
+1    5170363 5585953355 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    27739450 41832288770 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   530 232308
+3   2091777 3026637876
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25462.13 101125.37
+cpu  1101 0 2058 10112538 2 0 1258 0 0 0
+cpu0 221 0 248 2523050 0 0 1203 0 0 0
+cpu1 253 0 988 2504639 2 0 27 0 0 0
+cpu2 362 0 421 2542194 0 0 11 0 0 0
+cpu3 265 0 401 2542653 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   535 535 232638 2 220
+3   2176128 2176128 3150893395 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813695 9878097113 0 0
+1    5252206 5710191029 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    27742088 41832475662 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   537 232770
+3   2176252 3151061238
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25463.14 101129.37
+cpu  1101 0 2058 10112937 2 0 1258 0 0 0
+cpu0 221 0 248 2523150 0 0 1203 0 0 0
+cpu1 253 0 988 2504738 2 0 27 0 0 0
+cpu2 362 0 421 2542295 0 0 11 0 0 0
+cpu3 265 0 401 2542753 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   544 544 233232 2 220
+3   2260655 2260655 3275376869 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813703 9878097641 0 0
+1    5334100 5834506121 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    27744740 41832663534 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   545 233298
+3   2260790 3275559962
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 1 tx 1 drop 0/0/0/0 exceptions
+node ipv4 rx 4 tx 0 drop 0/0/0/0 exceptions 9:4
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25464.15 101133.37
+cpu  1101 0 2060 10113337 2 0 1258 0 0 0
+cpu0 221 0 249 2523249 0 0 1203 0 0 0
+cpu1 253 0 988 2504837 2 0 27 0 0 0
+cpu2 362 0 421 2542396 0 0 11 0 0 0
+cpu3 265 0 402 2542854 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   553 553 238658 2 220
+3   2345143 2345143 3399795349 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813713 9878103133 0 0
+1    5415936 5958731313 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    27747394 41832851554 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   555 238790
+3   2345271 3399969264
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25465.16 101137.37
+cpu  1101 0 2062 10113737 2 0 1258 0 0 0
+cpu0 221 0 249 2523349 0 0 1203 0 0 0
+cpu1 253 0 989 2504936 2 0 27 0 0 0
+cpu2 362 0 421 2542496 0 0 11 0 0 0
+cpu3 265 0 403 2542954 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   562 562 241668 2 220
+3   2429657 2429657 3524259089 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813722 9878106143 0 0
+1    5497797 6082996311 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    27750045 41833039356 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   564 241800
+3   2429776 3524419342
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25466.17 101141.36
+cpu  1101 0 2063 10114137 2 0 1258 0 0 0
+cpu0 221 0 250 2523449 0 0 1203 0 0 0
+cpu1 253 0 989 2505035 2 0 27 0 0 0
+cpu2 362 0 421 2542597 0 0 11 0 0 0
+cpu3 265 0 403 2543054 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   589 589 267610 2 220
+3   2514137 2514137 3648681353 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813749 9878132085 0 0
+1    5579644 6207240057 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    27752690 41833226738 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   591 267742
+3   2514261 3648847748
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25467.18 101145.36
+cpu  1101 0 2064 10114537 2 0 1258 0 0 0
+cpu0 221 0 250 2523548 0 0 1203 0 0 0
+cpu1 253 0 989 2505134 2 0 27 0 0 0
+cpu2 362 0 421 2542698 0 0 11 0 0 0
+cpu3 265 0 404 2543155 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   606 606 278396 2 220
+3   2598576 2598576 3773131155 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813764 9878142739 0 0
+1    5661508 6331509609 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    27755271 41833409640 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   606 278396
+3   2598700 3773298998
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25468.19 101149.36
+cpu  1101 0 2065 10114937 2 0 1258 0 0 0
+cpu0 221 0 250 2523648 0 0 1203 0 0 0
+cpu1 253 0 989 2505234 2 0 27 0 0 0
+cpu2 362 0 421 2542798 0 0 11 0 0 0
+cpu3 265 0 405 2543255 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   613 613 278858 2 220
+3   2683091 2683091 3897589173 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813772 9878143267 0 0
+1    5743374 6455782197 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    27757928 41833597862 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   614 278924
+3   2683215 3897755568
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 2 tx 2 drop 0/0/0/0 exceptions
+node ipv4 rx 5 tx 0 drop 0/0/0/0 exceptions 9:5
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25469.20 101153.36
+cpu  1101 0 2066 10115336 2 0 1258 0 0 0
+cpu0 221 0 250 2523748 0 0 1203 0 0 0
+cpu1 253 0 989 2505333 2 0 27 0 0 0
+cpu2 362 0 421 2542899 0 0 11 0 0 0
+cpu3 265 0 406 2543355 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   624 624 286832 2 220
+3   2767580 2767580 4021999035 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813784 9878151307 0 0
+1    5825208 6580006209 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    27760589 41833786372 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   626 286964
+3   2767703 4022165360
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25470.21 101157.36
+cpu  1101 0 2067 10115736 2 0 1258 0 0 0
+cpu0 221 0 250 2523848 0 0 1203 0 0 0
+cpu1 253 0 989 2505432 2 0 27 0 0 0
+cpu2 362 0 421 2543000 0 0 11 0 0 0
+cpu3 265 0 407 2543456 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   634 634 287486 2 220
+3   2852081 2852081 4146457521 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813792 9878151829 0 0
+1    5907076 6704280375 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    27763231 41833973544 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   634 287486
+3   2852205 4146623916
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25471.22 101161.36
+cpu  1101 0 2069 10116136 2 0 1258 0 0 0
+cpu0 221 0 251 2523947 0 0 1203 0 0 0
+cpu1 253 0 989 2505531 2 0 27 0 0 0
+cpu2 362 0 421 2543100 0 0 11 0 0 0
+cpu3 265 0 408 2543556 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   640 640 287882 2 220
+3   2936584 2936584 4270914699 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813800 9878152357 0 0
+1    5988976 6828604575 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    27765875 41834160856 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   642 288014
+3   2936743 4271134224
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 2 tx 0 drop 0/0/0/0 exceptions 9:2
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25472.23 101165.36
+cpu  1101 0 2071 10116536 2 0 1258 0 0 0
+cpu0 221 0 251 2524047 0 0 1203 0 0 0
+cpu1 253 0 989 2505630 2 0 27 0 0 0
+cpu2 362 0 422 2543201 0 0 11 0 0 0
+cpu3 265 0 409 2543657 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   648 648 288410 2 220
+3   3021142 3021142 4395462607 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813806 9878152753 0 0
+1    6070862 6952907523 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    27768513 41834347756 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   648 288410
+3   3021259 4395619824
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25473.24 101169.36
+cpu  1102 0 2071 10116936 2 0 1258 0 0 0
+cpu0 221 0 251 2524146 0 0 1203 0 0 0
+cpu1 253 0 989 2505729 2 0 27 0 0 0
+cpu2 362 0 422 2543302 0 0 11 0 0 0
+cpu3 266 0 409 2543758 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   655 655 288872 2 220
+3   3105653 3105653 4519924689 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813813 9878153215 0 0
+1    6152732 7077186183 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    27771161 41834535348 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   656 288938
+3   3105772 4520086390
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 2 tx 2 drop 0/0/0/0 exceptions
+node ipv4 rx 5 tx 0 drop 0/0/0/0 exceptions 9:5
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25474.25 101173.36
+cpu  1102 0 2072 10117336 2 0 1258 0 0 0
+cpu0 221 0 251 2524246 0 0 1203 0 0 0
+cpu1 253 0 989 2505828 2 0 27 0 0 0
+cpu2 362 0 422 2543402 0 0 11 0 0 0
+cpu3 266 0 410 2543858 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   660 660 289202 2 220
+3   3190173 3190173 4644396089 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813820 9878153677 0 0
+1    6234604 7201467879 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    27773813 41834723228 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   662 289334
+3   3190287 4644550200
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25475.26 101177.36
+cpu  1102 0 2073 10117736 2 0 1258 0 0 0
+cpu0 221 0 251 2524346 0 0 1203 0 0 0
+cpu1 253 0 989 2505927 2 0 27 0 0 0
+cpu2 362 0 422 2543503 0 0 11 0 0 0
+cpu3 266 0 411 2543959 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   669 669 289796 2 220
+3   3274702 3274702 4768882599 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813828 9878154205 0 0
+1    6316498 7325782971 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    27776465 41834911100 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   670 289862
+3   3274827 4769051960
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25476.27 101181.35
+cpu  1103 0 2073 10118136 2 0 1258 0 0 0
+cpu0 221 0 251 2524445 0 0 1203 0 0 0
+cpu1 253 0 989 2506026 2 0 27 0 0 0
+cpu2 362 0 422 2543604 0 0 11 0 0 0
+cpu3 267 0 411 2544059 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   677 677 290318 2 220
+3   3359166 3359166 4893292159 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813835 9878154661 0 0
+1    6398337 7450014573 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    27779103 41835097982 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   677 290318
+3   3359295 4893466144
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 1 tx 0 drop 0/0/0/0 exceptions 9:1
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25477.28 101185.35
+cpu  1103 0 2075 10118536 2 0 1258 0 0 0
+cpu0 221 0 251 2524545 0 0 1203 0 0 0
+cpu1 253 0 990 2506125 2 0 27 0 0 0
+cpu2 362 0 422 2543704 0 0 11 0 0 0
+cpu3 267 0 412 2544160 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   684 684 290780 2 220
+3   3386433 3386433 4933447469 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813843 9878155189 0 0
+1    6424645 7489941759 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    27779953 41835159988 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   685 290846
+3   3386444 4933449570
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25478.29 101189.35
+cpu  1103 0 2076 10118936 2 0 1258 0 0 0
+cpu0 221 0 251 2524644 0 0 1203 0 0 0
+cpu1 253 0 991 2506224 2 0 27 0 0 0
+cpu2 362 0 422 2543805 0 0 11 0 0 0
+cpu3 267 0 412 2544260 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   691 691 291242 2 220
+3   3386433 3386433 4933447469 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813850 9878155651 0 0
+1    6424645 7489941759 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    27779960 41835162710 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   692 291308
+3   3386444 4933449570
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 4 tx 4 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25479.30 101193.35
+cpu  1103 0 2077 10119336 2 0 1259 0 0 0
+cpu0 221 0 251 2524744 0 0 1204 0 0 0
+cpu1 253 0 992 2506323 2 0 27 0 0 0
+cpu2 362 0 422 2543906 0 0 11 0 0 0
+cpu3 267 0 412 2544361 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   698 698 291704 2 220
+3   3386433 3386433 4933447469 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813857 9878156113 0 0
+1    6424645 7489941759 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    27779967 41835165432 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   699 291770
+3   3386444 4933449570
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25480.31 101197.35
+cpu  1103 0 2078 10119735 2 0 1259 0 0 0
+cpu0 221 0 251 2524844 0 0 1204 0 0 0
+cpu1 253 0 993 2506422 2 0 27 0 0 0
+cpu2 362 0 422 2544006 0 0 11 0 0 0
+cpu3 267 0 412 2544462 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   705 705 292166 2 220
+3   3386433 3386433 4933447469 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813864 9878156575 0 0
+1    6424645 7489941759 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    27779974 41835168154 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   706 292232
+3   3386444 4933449570
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25481.32 101201.35
+cpu  1103 0 2079 10120135 2 0 1260 0 0 0
+cpu0 221 0 251 2524943 0 0 1205 0 0 0
+cpu1 253 0 994 2506521 2 0 27 0 0 0
+cpu2 362 0 422 2544107 0 0 11 0 0 0
+cpu3 267 0 412 2544562 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   712 712 292628 2 220
+3   3386433 3386433 4933447469 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813871 9878157037 0 0
+1    6424645 7489941759 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    27779981 41835170876 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   713 292694
+3   3386444 4933449570
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 2 tx 0 drop 0/0/0/0 exceptions 9:2
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25482.33 101205.35
+cpu  1104 0 2079 10120535 2 0 1260 0 0 0
+cpu0 221 0 251 2525043 0 0 1205 0 0 0
+cpu1 254 0 994 2506620 2 0 27 0 0 0
+cpu2 362 0 422 2544207 0 0 11 0 0 0
+cpu3 267 0 412 2544663 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   719 719 293090 2 220
+3   3386433 3386433 4933447469 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813878 9878157499 0 0
+1    6424645 7489941759 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    27779988 41835173606 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   720 293156
+3   3386444 4933449570
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25483.34 101209.34
+cpu  1104 0 2080 10120935 2 0 1260 0 0 0
+cpu0 221 0 251 2525143 0 0 1205 0 0 0
+cpu1 254 0 995 2506720 2 0 27 0 0 0
+cpu2 362 0 422 2544308 0 0 11 0 0 0
+cpu3 267 0 412 2544763 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   726 726 293552 2 220
+3   3386433 3386433 4933447469 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813885 9878157961 0 0
+1    6424645 7489941759 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    27779995 41835176328 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   727 293618
+3   3386444 4933449570
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 5 tx 5 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25484.35 101213.30
+cpu  1108 0 2082 10121330 2 0 1260 0 0 0
+cpu0 225 0 251 2525239 0 0 1205 0 0 0
+cpu1 254 0 996 2506819 2 0 27 0 0 0
+cpu2 362 0 422 2544409 0 0 11 0 0 0
+cpu3 267 0 413 2544863 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   741 741 297384 2 220
+3   3386433 3386433 4933447469 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813900 9878161793 0 0
+1    6424650 7489943967 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    27780002 41835179050 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   742 297450
+3   3386444 4933449570
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 1 tx 1 drop 0/0/0/0 exceptions
+node ipv4 rx 1 tx 0 drop 0/0/0/0 exceptions 9:1
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+SAMPLE
+25485.36 101217.27
+cpu  1109 0 2084 10121728 2 0 1260 0 0 0
+cpu0 225 0 251 2525338 0 0 1205 0 0 0
+cpu1 255 0 997 2506917 2 0 27 0 0 0
+cpu2 362 0 422 2544508 0 0 11 0 0 0
+cpu3 267 0 414 2544963 0 0 17 0 0 0
+port prx_drops parsed_packets parsed_bytes
+0    0 0 0
+1    0 0 0
+2    0 0 0
+3    0 0 0
+4    0 0 0
+5    0 0 0
+6    0 0 0
+vsi vlan_packets l2_packets l2_bytes l2_drops l2_drop_bytes
+0   3350138 3350138 4920431800 3 270
+1   27487553 27487551 39490698984 185 20290
+2   761 761 306544 2 220
+3   3386433 3386433 4933447469 4 376
+epe_in 0
+epe_out 0
+port packets bytes drop_packets drop_bytes
+0    6813921 9878171055 0 0
+1    6424663 7489946973 0 0
+2    0 0 0 0
+3    0 0 0 0
+4    27780009 41835181780 0 0
+5    0 0 0 0
+6    0 0 0 0
+vsi packets bytes
+0   3350138 4920431800
+1   27487601 39490707387
+2   763 306712
+3   3386444 4933449570
+vport packets bytes drop_packets drop_bytes
+ethernet enabled 1 active 1 offers 44 pushed 8 rejected 12
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 12
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0

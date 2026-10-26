@@ -1,0 +1,19 @@
+Executed on router after successful file/legacy load-unload:
+test "$(cat /sys/devices/system/cpu/cpu3/online)" = 1
+trap 'echo 1 > /sys/devices/system/cpu/cpu3/online' EXIT
+echo 0 > /sys/devices/system/cpu/cpu3/online
+cat /sys/devices/system/cpu/online
+echo 1 > /sys/devices/system/cpu/cpu3/online
+
+The first re-online returned I/O error after a5-second timeout.
+The restoration trap retried and got Invalid argument.
+Do not repeat this test on another CPU: CPU3 remains offline and the kernel's
+stuck-CPU guard is latched for this boot. No kexec safety guard was bypassed.
+No ordinary reboot or kexec execution was performed after this test.
+
+Source trace:
+arch/arm64/kernel/psci.c cpu_psci_cpu_boot uses PSCI CPU_ON with secondary_entry.
+arch/arm64/kernel/smp.c __cpu_up increments cpus_stuck_in_kernel on unknown
+secondary boot state; machine_kexec_prepare then returns EBUSY.
+Qualcomm SCM warm boot address registration is an investigation lead only;
+no causal finding or firmware workaround has been established.

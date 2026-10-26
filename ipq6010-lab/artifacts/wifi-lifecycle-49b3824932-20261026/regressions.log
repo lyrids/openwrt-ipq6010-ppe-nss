@@ -1,0 +1,14 @@
+PASS: no early steering; copied rule lifetime; second-direction rejection rollback
+PASS: pair commit installs both directions; destroy clears both
+PASS: second PPE insertion failure rolls back first entry and NSS rule
+PASS: allocation failure withdraws pending NSS state
+PASS: unavailable backend clears pending pair and preserves software fallback
+
+PASS: VLAN100 on one side and VLAN100/VLAN200 routing do not require PPPoE
+PASS: two PPPoE sides remain rejected; existing PPPoE+VLAN100 session path preserved
+
+PASS: normal1500 stays eligible; live bridge1400 overrides stale cached1500 and declines NSS
+PASS: both directional route limits and asymmetric MTUs are checked
+PASS: standard PPPoE1492 retained without double subtraction; custom PPPoE1400 falls back
+PASS: physical cap, missing device, neighbour route and bridged pointer safety
+PASS: all three regression harnesses

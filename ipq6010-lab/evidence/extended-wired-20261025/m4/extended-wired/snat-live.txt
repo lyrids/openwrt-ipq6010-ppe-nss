@@ -1,0 +1,34 @@
+ethernet enabled 1 active 1 offers 108 pushed 30 rejected 24
+bound 0 pushed 30 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 3894 tx 3894 drop 0/0/0/0 exceptions
+node ipv4 rx 3679 tx 3678 drop 0/0/0/0 exceptions 9:1
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 5460ms fw flow rx 27876 tx 2101 return rx 2101 tx 27876
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 5460ms fw flow rx 1795 tx 55236 return rx 55236 tx 1795
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 5460ms fw flow rx 6 tx 6 return rx 6 tx 6
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 5460ms fw flow rx 30549 tx 2816 return rx 2816 tx 30549
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 5460ms fw flow rx 95896 tx 4587 return rx 4587 tx 95896
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 5460ms fw flow rx 93443 tx 3954 return rx 3954 tx 93443
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 5460ms fw flow rx 2199 tx 68116 return rx 68116 tx 2199
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 5460ms fw flow rx 2443 tx 77383 return rx 77383 tx 2443
+proto 6 v4 ethernet if 1/4 prio 0 installed 1 age 5460ms fw flow rx 2167 tx 65446 return rx 65446 tx 2167
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 tcp      6 src=192.168.88.2 dst=192.168.1.158 sport=53329 dport=5230 packets=3 bytes=201 src=192.168.1.158 dst=192.168.1.1 sport=5230 dport=53329 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.88.2 dst=192.168.1.158 sport=56367 dport=5230 packets=3 bytes=201 src=192.168.1.158 dst=192.168.1.1 sport=5230 dport=56367 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.88.2 dst=192.168.1.158 sport=58769 dport=5230 packets=3 bytes=201 src=192.168.1.158 dst=192.168.1.1 sport=5230 dport=58769 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.88.2 dst=192.168.1.158 sport=38123 dport=5230 packets=3 bytes=201 src=192.168.1.158 dst=192.168.1.1 sport=5230 dport=38123 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.88.2 dst=192.168.1.158 sport=34707 dport=5230 packets=3 bytes=201 src=192.168.1.158 dst=192.168.1.1 sport=5230 dport=34707 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.88.2 dst=192.168.1.158 sport=58353 dport=5230 packets=3 bytes=201 src=192.168.1.158 dst=192.168.1.1 sport=5230 dport=58353 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.88.2 dst=192.168.1.158 sport=58197 dport=5230 packets=3 bytes=201 src=192.168.1.158 dst=192.168.1.1 sport=5230 dport=58197 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.88.2 dst=192.168.1.158 sport=47935 dport=5230 packets=3 bytes=201 src=192.168.1.158 dst=192.168.1.1 sport=5230 dport=47935 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 tcp      6 src=192.168.88.2 dst=192.168.1.158 sport=49485 dport=5230 packets=3 bytes=201 src=192.168.1.158 dst=192.168.1.1 sport=5230 dport=49485 packets=1 bytes=60 [HW_OFFLOAD] mark=0 use=2
+table inet fw4 {
+	chain srcnat {
+		type nat hook postrouting priority srcnat; policy accept;
+		oifname "wan" jump srcnat_wan comment "!fw4: Handle wan IPv4/IPv6 srcnat traffic"
+		ip saddr 192.168.88.2 ip daddr 192.168.1.158 counter packets 9 bytes 540 snat ip to 192.168.1.1 comment "extended-snat"
+	}
+}

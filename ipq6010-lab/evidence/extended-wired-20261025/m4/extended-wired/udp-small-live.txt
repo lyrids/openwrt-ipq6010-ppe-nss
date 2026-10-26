@@ -1,0 +1,13 @@
+ethernet enabled 1 active 1 offers 142 pushed 48 rejected 24
+bound 0 pushed 48 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+proto 17 v4 ethernet if 1/4 prio 0 installed 0 age 15520ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 17 v4 ethernet if 1/4 prio 0 installed 1 age 8680ms fw flow rx 0 tx 104 return rx 104 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv4     2 udp      17 src=192.168.88.2 dst=192.168.1.158 sport=39461 dport=5233 packets=3 bytes=1496 src=192.168.1.158 dst=192.168.88.2 sport=5233 dport=39461 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2
+ipv4     2 udp      17 src=192.168.88.2 dst=192.168.1.158 sport=54950 dport=5233 packets=1 bytes=32 src=192.168.1.158 dst=192.168.88.2 sport=5233 dport=54950 packets=1 bytes=32 [HW_OFFLOAD] mark=0 use=2

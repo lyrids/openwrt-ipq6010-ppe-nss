@@ -1,0 +1,19 @@
+Warning: Permanently added '192.168.1.1' (ED25519) to the list of known hosts.
+Variant: experimental PPE + NSS Ethernet backend, iteration 6 (kexec bootstrap; live routed MTU guard retained)
+Base: 03803c78cd3b6968c20dab239c0c2f688692be63
+PPE: DSA/VLAN topology and unchanged-packet flow steering
+NSS: Ethernet-only routed flow backend, Wi-Fi datapath, CP firmware 12.5
+Module parameter ethernet_offload=1 selected at boot
+No vendor qca-nss-drv or ECM
+Reduced-MTU guard passed via software fallback; kexec bootstrap/warm boot validation pending; Wi-Fi upload issue resolved by user retest (client adapter)
+
+Kexec: kernel KEXEC/KEXEC_FILE, CPU hotplug, packaged kexec; NSS/EDMA shutdown callbacks
+0-3
+0
+6e0e3dc0-da82-48ca-b622-ffbbc74af932
+1
+ethernet enabled 1 active 1 offers 0 pushed 0 rejected 0
+mtu_policy limited 0 link 0/0 route 0/0 rule 0/0 l3if 0/0
+[    0.015541] CPU1: Booted secondary processor 0x0000000001 [0x51af8014]
+[    0.016419] CPU2: Booted secondary processor 0x0000000002 [0x51af8014]
+[    0.017252] CPU3: Booted secondary processor 0x0000000003 [0x51af8014]

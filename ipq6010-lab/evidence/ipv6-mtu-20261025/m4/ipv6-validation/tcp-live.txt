@@ -1,0 +1,25 @@
+ethernet enabled 1 active 1 offers 260 pushed 107 rejected 24
+bound 0 pushed 107 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0
+node eth_rx rx 2096 tx 2096 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 2097 tx 2097 drop 0/0/0/0 exceptions
+proto 6 v6 ethernet if 1/4 prio 0 installed 1 age 3500ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v6 ethernet if 1/4 prio 0 installed 1 age 3510ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+ipv6     10 tcp      6 src=fd42:6018:100::63 dst=fd42:6018:1::60 sport=60663 dport=5240 packets=71 bytes=487821 src=fd42:6018:1::60 dst=fd42:6018:100::63 sport=5240 dport=60663 packets=4 bytes=272 [OFFLOAD] mark=0 use=2
+ipv6     10 tcp      6 src=fd42:6018:100::63 dst=fd42:6018:1::60 sport=44011 dport=5240 packets=3 bytes=261 src=fd42:6018:1::60 dst=fd42:6018:100::63 sport=5240 dport=44011 packets=1 bytes=80 [HW_OFFLOAD] mark=0 use=2
+ipv6     10 tcp      6 src=fd42:6018:100::63 dst=fd42:6018:1::60 sport=41533 dport=5240 packets=9 bytes=696 src=fd42:6018:1::60 dst=fd42:6018:100::63 sport=5240 dport=41533 packets=7 bytes=524 [OFFLOAD] mark=0 use=2
+ipv6     10 tcp      6 src=fd42:6018:100::63 dst=fd42:6018:1::60 sport=39925 dport=5240 packets=3 bytes=261 src=fd42:6018:1::60 dst=fd42:6018:100::63 sport=5240 dport=39925 packets=1 bytes=80 [HW_OFFLOAD] mark=0 use=2
+[   31.527558] br-lan: port 1(lan1) entered forwarding state
+[ 1510.345251] qca-ppe 3a000000.ppe lan1: left allmulticast mode
+[ 1510.345297] qca-ppe 3a000000.ppe lan1: left promiscuous mode
+[ 1510.350256] br-lan: port 1(lan1) entered disabled state
+[ 3199.812635] br-lan: port 1(lan1) entered blocking state
+[ 3199.812675] br-lan: port 1(lan1) entered disabled state
+[ 3199.816709] qca-ppe 3a000000.ppe lan1: entered allmulticast mode
+[ 3199.822458] qca-ppe 3a000000.ppe lan1: entered promiscuous mode
+[ 3199.828382] br-lan: port 1(lan1) entered blocking state
+[ 3199.833775] br-lan: port 1(lan1) entered forwarding state

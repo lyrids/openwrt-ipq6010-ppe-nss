@@ -1,0 +1,41 @@
+ethernet enabled 1 active 1 offers 34 pushed 8 rejected 7
+bound 0 pushed 8 last-ifindex 0
+rejected not-ours 0 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 7
+node eth_rx rx 2 tx 2 drop 0/0/0/0 exceptions
+node ipv4 rx 3 tx 0 drop 0/0/0/0 exceptions 9:3
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:36789 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+reject firmware dir 0 proto 6 192.168.88.2:50543 -> 192.168.1.158:5210 detail 95
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 2140ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 ethernet if 0/4 prio 0 installed 0 age 16120ms fw flow rx 0 tx 0 return rx 0 tx 0
+bridged on 1 pushed 0 entries 0 learn 0 ready 0 active 0 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 0 moved 0 gone 0
+index type proto fwd age host  pri packets bytes
+704   ipv4 1     4   3   376   12  8 596
+976   ipv4 1     4   3   376   12  20 1490
+[   24.707136] br-lan: port 4(lan4) entered disabled state
+[   24.712386] qca-ppe 3a000000.ppe lan4: entered allmulticast mode
+[   24.718139] qca-ppe 3a000000.ppe lan4: entered promiscuous mode
+[   24.724157] br-lan: port 4(lan4) entered blocking state
+[   24.729427] br-lan: port 4(lan4) entered forwarding state
+[   24.740154] qca-ppe 3a000000.ppe wan: configuring for phy/2500base-x link mode
+[   27.291444] qca-ppe 3a000000.ppe lan1: Link is Up - 1Gbps/Full - flow control rx/tx
+[   27.291517] br-lan: port 1(lan1) entered blocking state
+[   27.297943] br-lan: port 1(lan1) entered forwarding state
+[ 2526.530620] nss-wifi-drv 39000000.nss: interface 176 type 2 refused: 1
+[ 2528.753311] nss-wifi-drv 39000000.nss: interface 176 type 2 refused: 1
+[23967.038578] qca-ppe 3a000000.ppe lan1: left allmulticast mode
+[23967.038629] qca-ppe 3a000000.ppe lan1: left promiscuous mode
+[23967.043590] br-lan: port 1(lan1) entered disabled state
+[23967.067667] qca-ppe 3a000000.ppe lan1: Link is Down
+[23967.070076] qca-ppe 3a000000.ppe lan1: configuring for phy/psgmii link mode
+[23970.331095] qca-ppe 3a000000.ppe lan1: Link is Up - 1Gbps/Full - flow control rx/tx
+[24098.377688] qca-ppe 3a000000.ppe lan1: Link is Down
+[24098.433823] qca-ppe 3a000000.ppe lan1: configuring for phy/psgmii link mode
+[24101.700596] qca-ppe 3a000000.ppe lan1: Link is Up - 1Gbps/Full - flow control rx/tx
