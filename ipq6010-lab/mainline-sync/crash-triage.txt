@@ -8,3 +8,4 @@ Diagnostic iteration12 preserves datapath code and adds packaged pstore/ramoops/
 References:
 https://cdn.kernel.org/doc/html/latest/admin-guide/ramoops.html
 https://docs.kernel.org/networking/netconsole.html
+The initial diagnostic build also showed lockup detectors disabled. Enable soft/hard buddy lockup and hung-task diagnostics to distinguish a kernel exception from a watchdog reset after stalled CPUs/tasks. These are diagnostic instrumentation, not a datapath fix.
