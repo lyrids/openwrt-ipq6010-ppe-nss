@@ -12,11 +12,58 @@
 #include <linux/phylink.h>
 #include <linux/platform_device.h>
 #include <linux/reset.h>
+#include <linux/srcu.h>
 #include <linux/if_bridge.h>
 #include <linux/if_vlan.h>
 #include <linux/soc/qcom/qca_ppe.h>
 
 #include "qca_ppe.h"
+
+static const struct dsa_switch_ops qca_ppe_ops;
+
+/* Firmware messages can sleep; regular RCU is not sufficient here. */
+DEFINE_STATIC_SRCU(ppe_fw_flow_srcu);
+
+int ppe_fw_flow_offload(struct qca_ppe_priv *priv,
+		       struct flow_cls_offload *f,
+		       const struct flow_block *block, bool *owned)
+{
+	int (*handler)(struct flow_cls_offload *, const struct flow_block *,
+		       bool *);
+	int idx, ret = 0;
+
+	*owned = false;
+	idx = srcu_read_lock(&ppe_fw_flow_srcu);
+	handler = srcu_dereference(priv->fw_flow, &ppe_fw_flow_srcu);
+	if (handler)
+		ret = handler(f, block, owned);
+	srcu_read_unlock(&ppe_fw_flow_srcu, idx);
+	return ret;
+}
+
+int qca_ppe_fw_flow_set(struct net_device *conduit,
+		int (*handler)(struct flow_cls_offload *,
+			       const struct flow_block *, bool *))
+{
+	struct qca_ppe_priv *priv;
+
+	if (!conduit || !netdev_uses_dsa(conduit) ||
+	    conduit->dsa_ptr->ds->ops != &qca_ppe_ops)
+		return -ENODEV;
+	priv = ds_to_priv(conduit->dsa_ptr->ds);
+	if (handler && rcu_access_pointer(priv->fw_flow) &&
+	    rcu_access_pointer(priv->fw_flow) != handler)
+		return -EBUSY;
+	if (handler)
+		WRITE_ONCE(priv->fw_flow_reserved, true);
+	rcu_assign_pointer(priv->fw_flow, handler);
+	if (!handler) {
+		synchronize_srcu(&ppe_fw_flow_srcu);
+		ppe_flow_purge_steer(priv);
+	}
+	return 0;
+}
+EXPORT_SYMBOL_GPL(qca_ppe_fw_flow_set);
 
 /* A port carrying nothing but minimum-sized frames at 10G wraps a packet
  * counter in under five minutes, and a total only stays monotonic for as long

@@ -27,9 +27,11 @@
 #include <linux/if_arp.h>
 #include <linux/if_vlan.h>
 #include <linux/mutex.h>
+#include <linux/module.h>
 #include <linux/netdevice.h>
 #include <linux/rhashtable.h>
 #include <linux/soc/qcom/nss_wifi.h>
+#include <linux/soc/qcom/qca_ppe.h>
 #include <net/flow_offload.h>
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_flow_table.h>
@@ -102,6 +104,8 @@ struct nss_flow_pppoe {
 static struct nss_flow_pppoe nss_flow_pppoe_tbl[4];
 
 struct nss_flow_entry {
+	const struct flow_block *ppe_block;
+	bool ethernet;
 	struct rhash_head node;
 	struct rcu_head rcu;	/* the debugfs walker holds no lock */
 	unsigned long flow;
@@ -133,6 +137,19 @@ static LIST_HEAD(nss_flow_blocks);
 static struct rhashtable nss_flow_table;
 static bool nss_flow_ready;
 static struct nss_core *nss_flow_core;
+/* One-shot failure injection for paired-rule rollback validation. */
+static unsigned int nss_ethernet_fail_create;
+module_param_named(ethernet_fail_create, nss_ethernet_fail_create, uint, 0644);
+MODULE_PARM_DESC(ethernet_fail_create, "fail this many complete Ethernet rule offers");
+
+static bool nss_ethernet_offload;
+static bool nss_ethernet_active;
+module_param_named(ethernet_offload, nss_ethernet_offload, bool, 0444);
+MODULE_PARM_DESC(ethernet_offload,
+	"Experimental Ethernet routed/NAT flow backend; select at module load");
+static u32 nss_ethernet_offers, nss_ethernet_pushed;
+static u32 nss_ethernet_rejected;
+
 /* Why a flow was not taken. A flow the firmware does not carry and a flow it
  * was never offered look the same from outside, and so do the several reasons
  * for the first, so each is counted where it is decided.
@@ -145,12 +162,13 @@ enum nss_flow_reject {
 	NSS_FLOW_REJECT_NO_MAC,
 	NSS_FLOW_REJECT_NO_CT,
 	NSS_FLOW_REJECT_FIRMWARE,
+	NSS_FLOW_REJECT_MTU,
 	NSS_FLOW_REJECT_MAX,
 };
 
 static const char *const nss_flow_reject_name[] = {
 	"not-ours", "key", "interface", "action", "no-mac", "no-ct",
-	"firmware",
+	"firmware", "mtu",
 };
 
 static u32 nss_flow_pushed, nss_flow_bound, nss_flow_reject[NSS_FLOW_REJECT_MAX];
@@ -596,10 +614,11 @@ static int nss_flow_pppoe_take(struct nss_core *core, struct nss_flow_entry *e)
 	if (e->pppoe)
 		return 0;
 
-	if (o->pppoe == r->pppoe) {
-		/* ponytail: VLAN without PPPoE is not offloaded yet */
-		return (o->pppoe || o->vtpid || r->vtpid) ? -EOPNOTSUPP : 0;
-	}
+	/* VLAN tags are carried by the IPv4/IPv6 rule independently of a
+	 * PPPoE session. Only PPPoE on both sides is unsupported here.
+	 */
+	if (o->pppoe == r->pppoe)
+		return o->pppoe ? -EOPNOTSUPP : 0;
 
 	push = o->pppoe ? o : r;
 	wan = o->pppoe ? r : o;
@@ -641,6 +660,60 @@ static void nss_flow_encap_get(const struct nss_flow_entry *e,
 		x->pppoe[side] = e->pppoe && e->pppoe_dir == side ?
 				 e->pppoe->if_num : -1;
 	}
+}
+
+/* Firmware enforcement of a routed MTU below the underlying link's IP
+ * capacity is not established. Keep those flows in Linux, which owns PMTU
+ * exceptions. Standard PPPoE capacity is deducted before this check.
+ */
+static bool nss_flow_mtu_limited;
+static u32 nss_flow_mtu_link[2], nss_flow_mtu_route[2], nss_flow_mtu_rule[2];
+static int nss_flow_mtu_l3if[2];
+
+static u32 nss_flow_effective_mtu(const struct nss_flow_entry *e,
+				enum flow_offload_tuple_dir side, u32 mtu)
+{
+	const struct flow_offload_tuple *tuple;
+	const struct flow_offload *flow;
+	struct net_device *dev;
+	u32 routed = mtu;
+	int ifindex = 0;
+
+	if (!e->bridged) {
+		flow = (const void *)e->flow;
+		/* The opposite direction routes back towards this NSS side. */
+		tuple = &flow->tuplehash[!side].tuple;
+		routed = READ_ONCE(tuple->mtu);
+		switch (tuple->xmit_type) {
+		case FLOW_OFFLOAD_XMIT_DIRECT:
+			ifindex = tuple->out.ifidx;
+			break;
+		case FLOW_OFFLOAD_XMIT_NEIGH:
+			ifindex = tuple->ifidx;
+			break;
+		default:
+			routed = 0;
+			break;
+		}
+		/* The direct path retains the original routed upper device
+		 * separately from its physical hardware output interface.
+		 * A bridge/VLAN MTU must not be replaced by the DSA port MTU.
+		 */
+		scoped_guard(rcu) {
+			dev = dev_get_by_index_rcu(&init_net, ifindex);
+			routed = dev ? min_t(u32, routed, READ_ONCE(dev->mtu)) : 0;
+		}
+	}
+	nss_flow_mtu_link[side] = mtu;
+	nss_flow_mtu_route[side] = routed;
+	nss_flow_mtu_l3if[side] = ifindex;
+	if (routed < mtu) {
+		nss_flow_mtu_limited = true;
+		nss_flow_mtu_rule[side] = 0;
+		return 0;
+	}
+	nss_flow_mtu_rule[side] = mtu;
+	return mtu;
 }
 
 static int nss_flow_send_v4(struct nss_core *core, struct nss_flow_entry *e,
@@ -729,6 +802,13 @@ static int nss_flow_send_v4(struct nss_core *core, struct nss_flow_entry *e,
 		c->conn_rule.return_mtu -= NSS_FLOW_PPPOE_HLEN;
 		c->valid_flags |= NSS_IPV4_RULE_CREATE_PPPOE_VALID;
 	}
+
+	c->conn_rule.flow_mtu = nss_flow_effective_mtu(e,
+			FLOW_OFFLOAD_DIR_ORIGINAL, c->conn_rule.flow_mtu);
+	c->conn_rule.return_mtu = nss_flow_effective_mtu(e,
+			FLOW_OFFLOAD_DIR_REPLY, c->conn_rule.return_mtu);
+	if (c->conn_rule.flow_mtu < 68 || c->conn_rule.return_mtu < 68)
+		return -EOPNOTSUPP;
 
 	if (e->protocol == IPPROTO_TCP) {
 		spin_lock_bh(&ct->lock);
@@ -853,6 +933,13 @@ static int nss_flow_send_v6(struct nss_core *core, struct nss_flow_entry *e,
 		c->valid_flags |= NSS_IPV6_RULE_CREATE_PPPOE_VALID;
 	}
 
+	c->conn_rule.flow_mtu = nss_flow_effective_mtu(e,
+			FLOW_OFFLOAD_DIR_ORIGINAL, c->conn_rule.flow_mtu);
+	c->conn_rule.return_mtu = nss_flow_effective_mtu(e,
+			FLOW_OFFLOAD_DIR_REPLY, c->conn_rule.return_mtu);
+	if (c->conn_rule.flow_mtu < 1280 || c->conn_rule.return_mtu < 1280)
+		return -EOPNOTSUPP;
+
 	if (e->protocol == IPPROTO_TCP) {
 		spin_lock_bh(&ct->lock);
 		c->tcp_rule.flow_window_scale = ct->proto.tcp.seen[IP_CT_DIR_ORIGINAL].td_scale;
@@ -938,7 +1025,8 @@ static void nss_flow_forget(struct nss_core *core, struct nss_flow_entry *e)
 	kfree_rcu(e, rcu);
 }
 
-static int nss_flow_replace(struct nss_core *core, struct flow_cls_offload *f)
+static int nss_flow_replace(struct nss_core *core, struct flow_cls_offload *f,
+			    bool ethernet)
 {
 	enum flow_offload_tuple_dir dir = nss_flow_dir_of(f->cookie);
 	struct flow_offload *flow = nss_flow_of(f->cookie);
@@ -965,7 +1053,8 @@ static int nss_flow_replace(struct nss_core *core, struct flow_cls_offload *f)
 		 * flow.
 		 */
 		flow_rule_match_meta(rule, &meta);
-		if (!nss_flow_is_ours(meta.key->ingress_ifindex) &&
+		if (!ethernet &&
+		    !nss_flow_is_ours(meta.key->ingress_ifindex) &&
 		    !nss_flow_is_ours(flow->tuplehash[!dir].tuple.iifidx)) {
 			nss_flow_last_ifindex = meta.key->ingress_ifindex;
 			dev_dbg_ratelimited(core->dev,
@@ -990,6 +1079,7 @@ static int nss_flow_replace(struct nss_core *core, struct flow_cls_offload *f)
 			return -ENOMEM;
 
 		e->flow = key;
+		e->ethernet = ethernet;
 		e->protocol = basic.key->ip_proto;
 		e->v6 = basic.key->n_proto == htons(ETH_P_IPV6);
 		e->lastused = jiffies;
@@ -1027,19 +1117,27 @@ static int nss_flow_replace(struct nss_core *core, struct flow_cls_offload *f)
 		goto drop;
 	}
 
+	if (ethernet && nss_ethernet_fail_create) {
+		nss_ethernet_fail_create--;
+		ret = -EIO;
+		goto drop;
+	}
+
 	ret = nss_flow_pppoe_take(core, e);
 	if (ret) {
 		nss_flow_reject_at(NSS_FLOW_REJECT_FIRMWARE, ret, f, -ret);
 		goto drop;
 	}
 
+	nss_flow_mtu_limited = false;
 	ret = e->v6 ? nss_flow_send_v6(core, e, flow->ct, &fw_err) :
 		      nss_flow_send_v4(core, e, flow->ct, &fw_err);
 	if (ret) {
 		/* The firmware's code where it gave one, the transport's
 		 * otherwise: a create that never reached it has no other.
 		 */
-		nss_flow_reject_at(NSS_FLOW_REJECT_FIRMWARE, ret, f,
+		nss_flow_reject_at(nss_flow_mtu_limited ? NSS_FLOW_REJECT_MTU :
+				   NSS_FLOW_REJECT_FIRMWARE, ret, f,
 				   fw_err ? fw_err : -ret);
 		goto drop;
 	}
@@ -1333,7 +1431,7 @@ static int nss_flow_block_cb(enum tc_setup_type type, void *type_data,
 
 	switch (f->command) {
 	case FLOW_CLS_REPLACE:
-		return nss_flow_replace(core, f);
+		return nss_flow_replace(core, f, false);
 	case FLOW_CLS_DESTROY:
 		return nss_flow_destroy(core, f);
 	case FLOW_CLS_STATS:
@@ -1341,6 +1439,216 @@ static int nss_flow_block_cb(enum tc_setup_type type, void *type_data,
 	default:
 		return -EOPNOTSUPP;
 	}
+}
+
+/* This path is offered through the PPE's own DSA block, so no
+ * netfilter patch or second device-level classifier is needed.
+ */
+static bool nss_ethernet_port(struct nss_core *core, int ifindex)
+{
+	struct net_device *dev;
+	u32 mtu;
+
+	guard(rcu)();
+	dev = dev_get_by_index_rcu(&init_net, ifindex);
+	return dev && dsa_user_dev_check(dev) &&
+	       nss_flow_ifnum(core, ifindex, &mtu) >= 0;
+}
+
+static int nss_ethernet_flow(struct flow_cls_offload *f,
+			     const struct flow_block *block, bool *owned)
+{
+	struct nss_flow_entry *e;
+	struct nss_core *core;
+	struct flow_offload *flow;
+	struct flow_rule *rule;
+	unsigned long key;
+	bool installed;
+	int ret;
+
+	*owned = false;
+	guard(mutex)(&nss_flow_lock);
+	core = nss_flow_core;
+	if (!nss_ethernet_offload || !nss_ethernet_active ||
+	    !core || !core->running)
+		return 0;
+
+	if (!f) {
+		struct rhashtable_iter iter;
+
+		/* Blocks disappear before their flows get DESTROY offers. */
+		do {
+			rhashtable_walk_enter(&nss_flow_table, &iter);
+			rhashtable_walk_start(&iter);
+			while ((e = rhashtable_walk_next(&iter)) != NULL)
+				if (!IS_ERR(e) && e->ethernet &&
+				    e->ppe_block == block)
+					break;
+			rhashtable_walk_stop(&iter);
+			rhashtable_walk_exit(&iter);
+			if (e)
+				nss_flow_forget(core, e);
+		} while (e);
+		return 0;
+	}
+
+	flow = nss_flow_of(f->cookie);
+	key = (unsigned long)flow;
+	e = rhashtable_lookup_fast(&nss_flow_table, &key, nss_flow_ht_params);
+	if (e && e->ethernet) {
+		*owned = true;
+		if (f->command == FLOW_CLS_DESTROY)
+			return nss_flow_destroy(core, f);
+		if (f->command == FLOW_CLS_STATS)
+			return nss_flow_stats(core, f);
+	}
+	if (f->command != FLOW_CLS_REPLACE)
+		return 0;
+
+	/* Both ends must be physical ports that this core has armed. */
+	if (!nss_ethernet_port(core, flow->tuplehash[0].tuple.iifidx) ||
+	    !nss_ethernet_port(core, flow->tuplehash[1].tuple.iifidx))
+		return 0;
+	*owned = true;
+	if (!test_bit(NF_FLOW_HW_BIDIRECTIONAL, &flow->flags))
+		return -EOPNOTSUPP;
+	/* A queued offer may outlive a topology invalidation. */
+	if (test_bit(NF_FLOW_TEARDOWN, &flow->flags)) {
+		ret = -EOPNOTSUPP;
+		goto reject;
+	}
+	nss_ethernet_offers++;
+	rule = flow_cls_offload_flow_rule(f);
+	if (flow_rule_match_key(rule, FLOW_DISSECTOR_KEY_CVLAN)) {
+		ret = -EOPNOTSUPP;
+		goto reject;
+	}
+	if (flow_rule_match_key(rule, FLOW_DISSECTOR_KEY_VLAN)) {
+		struct flow_match_vlan vlan;
+
+		flow_rule_match_vlan(rule, &vlan);
+		if (vlan.key->vlan_tpid != htons(ETH_P_8021Q)) {
+			ret = -EOPNOTSUPP;
+			goto reject;
+		}
+	}
+	installed = e && e->installed;
+	ret = nss_flow_replace(core, f, true);
+	if (ret)
+		goto reject;
+	e = rhashtable_lookup_fast(&nss_flow_table, &key, nss_flow_ht_params);
+	if (e) {
+		e->ppe_block = block;
+		if (e->installed && !installed)
+			nss_ethernet_pushed++;
+	}
+	/* Do not let PPE steer either half until the firmware accepted the
+	 * complete connection. The caller saves the first offer for later.
+	 */
+	return e && e->installed ? 0 : -EAGAIN;
+reject:
+	/* A changed encapsulation must not leave the old rule active. */
+	e = rhashtable_lookup_fast(&nss_flow_table, &key, nss_flow_ht_params);
+	if (e && e->ethernet)
+		nss_flow_forget(core, e);
+	nss_ethernet_rejected++;
+	return ret;
+}
+
+/* RTNL serializes topology changes. Stop new hardware offers before
+ * invalidating connection state, without holding nss_flow_lock while waiting
+ * for the PPE's SRCU readers.
+ */
+static int nss_ethernet_netdev_event(struct notifier_block *nb,
+				   unsigned long event, void *ptr)
+{
+	struct nss_core *core;
+	struct net_device *conduit;
+
+	if (!nss_ethernet_offload)
+		return NOTIFY_DONE;
+	switch (event) {
+	case NETDEV_DOWN:
+	case NETDEV_UNREGISTER:
+	case NETDEV_CHANGEUPPER:
+	case NETDEV_CHANGEADDR:
+	case NETDEV_CHANGEMTU:
+		break;
+	default:
+		return NOTIFY_DONE;
+	}
+	/* The initial prototype deliberately invalidates all Ethernet rules
+	 * on topology changes, including VLAN/PPPoE uppers. It is preferable
+	 * to guessing which cached encapsulation is still valid.
+	 */
+	scoped_guard(mutex, &nss_flow_lock) {
+		core = nss_flow_core;
+		if (!core || !core->running)
+			return NOTIFY_DONE;
+		conduit = core->conduit;
+		dev_hold(conduit);
+	}
+	qca_ppe_fw_flow_set(conduit, NULL);
+	scoped_guard(mutex, &nss_flow_lock) {
+		struct rhashtable_iter iter;
+		struct nss_flow_entry *e;
+
+		/* Binding can disappear while SRCU drains; do not retain the
+		 * old core pointer outside nss_flow_lock.
+		 */
+		core = nss_flow_core;
+		if (!core || !core->running || !nss_ethernet_active) {
+			dev_put(conduit);
+			return NOTIFY_DONE;
+		}
+		do {
+			rhashtable_walk_enter(&nss_flow_table, &iter);
+			rhashtable_walk_start(&iter);
+			while ((e = rhashtable_walk_next(&iter)) != NULL)
+				if (!IS_ERR(e) && e->ethernet)
+					break;
+			rhashtable_walk_stop(&iter);
+			rhashtable_walk_exit(&iter);
+			if (e) {
+				/* Drop the kernel's cached route/MTU as well as
+				 * the firmware rule; the next flow must resolve
+				 * the topology again through the normal stack.
+				 */
+				flow_offload_teardown((void *)e->flow);
+				nss_flow_forget(core, e);
+			}
+		} while (e);
+		/* A concurrent halt clears active under this same mutex
+		 * before removing the callback.
+		 */
+		qca_ppe_fw_flow_set(conduit, nss_ethernet_flow);
+	}
+	dev_put(conduit);
+	return NOTIFY_DONE;
+}
+
+static struct notifier_block nss_ethernet_netdev_nb = {
+	.notifier_call = nss_ethernet_netdev_event,
+};
+
+int nss_ethernet_setup(struct net_device *conduit)
+{
+	int ret;
+
+	if (!nss_ethernet_offload)
+		return 0;
+	guard(mutex)(&nss_flow_lock);
+	ret = qca_ppe_fw_flow_set(conduit, nss_ethernet_flow);
+	if (!ret)
+		nss_ethernet_active = true;
+	return ret;
+}
+
+void nss_ethernet_stop(struct net_device *conduit)
+{
+	scoped_guard(mutex, &nss_flow_lock)
+		nss_ethernet_active = false;
+	qca_ppe_fw_flow_set(conduit, NULL);
 }
 
 /* Withdraw every routed rule through @dev. The flow table lets go of a
@@ -1503,6 +1811,7 @@ int nss_flow_br_add(struct nf_conn *ct, const struct nss_flow_br_dir *dir,
 		spin_unlock_bh(&ct->lock);
 	}
 
+	nss_flow_mtu_limited = false;
 	ret = e->v6 ? nss_flow_send_v6(nss_flow_core, e, ct, &fw_err) :
 		      nss_flow_send_v4(nss_flow_core, e, ct, &fw_err);
 	if (ret) {
@@ -1554,6 +1863,14 @@ void nss_flow_print(struct seq_file *s)
 	struct nss_flow_node *nd;
 	int i;
 
+	seq_printf(s, "ethernet enabled %u active %u offers %u pushed %u rejected %u\n",
+		   nss_ethernet_offload, nss_ethernet_active, nss_ethernet_offers,
+		   nss_ethernet_pushed, nss_ethernet_rejected);
+	seq_printf(s, "mtu_policy limited %u link %u/%u route %u/%u rule %u/%u l3if %d/%d\n",
+		   nss_flow_mtu_limited, nss_flow_mtu_link[0], nss_flow_mtu_link[1],
+		   nss_flow_mtu_route[0], nss_flow_mtu_route[1],
+		   nss_flow_mtu_rule[0], nss_flow_mtu_rule[1],
+		   nss_flow_mtu_l3if[0], nss_flow_mtu_l3if[1]);
 	seq_printf(s, "bound %u pushed %u last-ifindex %d\n",
 		   nss_flow_bound, nss_flow_pushed, nss_flow_last_ifindex);
 	seq_puts(s, "rejected");
@@ -1596,7 +1913,7 @@ void nss_flow_print(struct seq_file *s)
 			continue;
 		seq_printf(s, "proto %u %s%s if %d/%d prio %u installed %d age %ums fw flow rx %llu tx %llu return rx %llu tx %llu\n",
 			   e->protocol, e->v6 ? "v6" : "v4",
-			   e->bridged ? " bridged" : "",
+			   e->bridged ? " bridged" : e->ethernet ? " ethernet" : "",
 			   e->dir[FLOW_OFFLOAD_DIR_ORIGINAL].ifnum,
 			   e->dir[FLOW_OFFLOAD_DIR_REPLY].ifnum,
 			   e->priority, e->installed,
@@ -1646,6 +1963,12 @@ int nss_flow_init(void)
 		return ret;
 	}
 
+	ret = register_netdevice_notifier(&nss_ethernet_netdev_nb);
+	if (ret) {
+		flow_indr_dev_unregister(nss_flow_indr_cb, &nss_flow_blocks, NULL);
+		rhashtable_destroy(&nss_flow_table);
+		return ret;
+	}
 	nss_flow_ready = true;
 
 	return 0;
@@ -1661,6 +1984,7 @@ void nss_flow_exit(void)
 	if (!nss_flow_ready)
 		return;
 
+	unregister_netdevice_notifier(&nss_ethernet_netdev_nb);
 	flow_indr_dev_unregister(nss_flow_indr_cb, &nss_flow_blocks, NULL);
 	rhashtable_free_and_destroy(&nss_flow_table, nss_flow_free, NULL);
 	nss_flow_ready = false;

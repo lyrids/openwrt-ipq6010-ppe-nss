@@ -1454,7 +1454,13 @@ struct qca_ppe_priv {
 	struct ppe_pppoe_session pppoe[PPE_PPPOE_SESSIONS];
 	u32 flow_reject[PPE_REJECT_MAX];
 	/* Which devices the NSS firmware forwards to, while it runs. */
+	/* Boot-latched: a stopped backend falls back to Linux, not PPE NAT. */
+	struct mutex fw_pending_lock;
+	struct list_head fw_pending;
+	bool fw_flow_reserved;
 	bool (__rcu *fw_carries)(int ifindex);
+	int (__rcu *fw_flow)(struct flow_cls_offload *,
+			    const struct flow_block *, bool *);
 	u32 flow_offloaded;
 	u32 flow_reinstalled;
 	u32 flow_destroy_miss;
@@ -1706,6 +1712,10 @@ int qca_ppe_port_vlan_add(struct dsa_switch *ds, int port,
 int qca_ppe_port_vlan_del(struct dsa_switch *ds, int port,
 			  const struct switchdev_obj_port_vlan *vlan);
 
+int ppe_fw_flow_offload(struct qca_ppe_priv *priv,
+		       struct flow_cls_offload *f,
+		       const struct flow_block *block, bool *owned);
+void ppe_flow_purge_steer(struct qca_ppe_priv *priv);
 void ppe_flow_init(struct qca_ppe_priv *priv);
 void ppe_flow_excep_init(struct qca_ppe_priv *priv);
 void ppe_qm_pri_map_init(struct qca_ppe_priv *priv);

@@ -563,6 +563,8 @@ void nss_flow_dyn_free(struct nss_core *core, u32 type, int if_num);
 void nss_flow_notify(const struct nss_cmn_msg *ncm, u32 len);
 void nss_flow_print(struct seq_file *s);
 int nss_flow_init(void);
+int nss_ethernet_setup(struct net_device *conduit);
+void nss_ethernet_stop(struct net_device *conduit);
 void nss_flow_exit(void);
 bool nss_redir_bound(int ifindex);
 bool nss_redir_recv(struct nss_core *core, const struct n2h_descriptor *desc,

@@ -57,7 +57,30 @@ start_service() {
 	echo "the last bring-up did not complete" > "$PENDING"
 	sync
 
-	modprobe nss-wifi-drv 2>/dev/null
+	# OpenWrt kmodloader's modprobe ignores trailing parameters.
+	# Its options are read from /etc/modules.conf using the .ko basename.
+	local ethernet=0 expected=N opts
+	if [ "$(uci -q get nss-wifi.general.ethernet_offload)" = "1" ]; then
+		ethernet=1
+		expected=Y
+	fi
+	opts=$(mktemp /etc/modules.conf.nss.XXXXXX) || return 1
+	if [ -f /etc/modules.conf ]; then
+		sed '/# nss-wifi-managed-ethernet$/d' /etc/modules.conf > "$opts"
+	fi
+	printf 'options nss-wifi-drv ethernet_offload=%s # nss-wifi-managed-ethernet\n' "$ethernet" >> "$opts"
+	chmod 644 "$opts"
+	mv "$opts" /etc/modules.conf || return 1
+	if ! modprobe nss-wifi-drv; then
+		logger -t nss-wifi "NSS module load failed"
+		wifi_load_host
+		return 1
+	fi
+	if [ "$(cat /sys/module/nss_wifi_drv/parameters/ethernet_offload)" != "$expected" ]; then
+		logger -t nss-wifi "Ethernet mode mismatch; refusing NSS firmware startup"
+		wifi_load_host
+		return 1
+	fi
 
 	# The radios are handed over below, so a board whose device tree
 	# describes no NSS core keeps them on the host path instead.
