@@ -1,0 +1,979 @@
+SAMPLE-1
+34219.56 135447.75
+cpu  9116 0 10114 13544776 3 0 13600 0 0 0
+cpu0 3378 0 3013 3360290 0 0 13337 0 0 0
+cpu1 3849 0 4020 3406337 0 0 208 0 0 0
+cpu2 1061 0 1260 3413273 0 0 19 0 0 0
+cpu3 828 0 1821 3364875 2 0 36 0 0 0
+ethernet enabled 1 active 1 offers 52 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 0/0
+bound 1 pushed 60 last-ifindex 3
+rejected not-ours 26 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 265 tx 265 drop 0/0/0/0 exceptions
+node ipv4 rx 268 tx 263 drop 0/0/0/0 exceptions 9:5
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:39953 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:53789 -> 192.168.21.154:5201 detail 3
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 1170ms fw flow rx 21237 tx 0 return rx 0 tx 21237
+proto 6 v4 bridged if 31/1 prio 0 installed 1 age 1170ms fw flow rx 4 tx 6 return rx 6 tx 4
+bridged on 1 pushed 39 entries 2 learn 0 ready 0 active 2 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 9 moved 0 gone 28
+SAMPLE-2
+34221.56 135455.68
+cpu  9116 0 10114 13545569 3 0 13602 0 0 0
+cpu0 3378 0 3013 3360486 0 0 13339 0 0 0
+cpu1 3849 0 4020 3406537 0 0 208 0 0 0
+cpu2 1061 0 1260 3413473 0 0 19 0 0 0
+cpu3 828 0 1821 3365072 2 0 36 0 0 0
+ethernet enabled 1 active 1 offers 52 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 0/0
+bound 1 pushed 60 last-ifindex 3
+rejected not-ours 26 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 256 tx 256 drop 0/0/0/0 exceptions
+node ipv4 rx 258 tx 258 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:39953 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:53789 -> 192.168.21.154:5201 detail 3
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 3170ms fw flow rx 21237 tx 0 return rx 0 tx 21237
+proto 6 v4 bridged if 31/1 prio 0 installed 1 age 3170ms fw flow rx 4 tx 6 return rx 6 tx 4
+bridged on 1 pushed 39 entries 2 learn 0 ready 0 active 2 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 9 moved 0 gone 28
+SAMPLE-3
+34223.57 135463.62
+cpu  9116 0 10116 13546363 3 0 13603 0 0 0
+cpu0 3378 0 3013 3360682 0 0 13340 0 0 0
+cpu1 3849 0 4021 3406737 0 0 208 0 0 0
+cpu2 1061 0 1261 3413673 0 0 19 0 0 0
+cpu3 828 0 1821 3365269 2 0 36 0 0 0
+ethernet enabled 1 active 1 offers 52 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 0/0
+bound 1 pushed 60 last-ifindex 3
+rejected not-ours 26 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 259 tx 259 drop 0/0/0/0 exceptions
+node ipv4 rx 259 tx 259 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:39953 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:53789 -> 192.168.21.154:5201 detail 3
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 1020ms fw flow rx 64573 tx 0 return rx 0 tx 64573
+proto 6 v4 bridged if 31/1 prio 0 installed 1 age 5180ms fw flow rx 4 tx 6 return rx 6 tx 4
+bridged on 1 pushed 39 entries 2 learn 0 ready 0 active 2 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 9 moved 0 gone 28
+SAMPLE-4
+34225.57 135471.56
+cpu  9116 0 10117 13547156 3 0 13604 0 0 0
+cpu0 3378 0 3013 3360878 0 0 13341 0 0 0
+cpu1 3849 0 4021 3406937 0 0 208 0 0 0
+cpu2 1061 0 1262 3413873 0 0 19 0 0 0
+cpu3 828 0 1821 3365467 2 0 36 0 0 0
+ethernet enabled 1 active 1 offers 52 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 0/0
+bound 1 pushed 60 last-ifindex 3
+rejected not-ours 26 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 259 tx 259 drop 0/0/0/0 exceptions
+node ipv4 rx 271 tx 269 drop 0/0/0/0 exceptions 9:2
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:39953 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:53789 -> 192.168.21.154:5201 detail 3
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 3030ms fw flow rx 64573 tx 0 return rx 0 tx 64573
+proto 6 v4 bridged if 31/1 prio 0 installed 1 age 7190ms fw flow rx 4 tx 6 return rx 6 tx 4
+bridged on 1 pushed 39 entries 2 learn 0 ready 0 active 2 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 9 moved 0 gone 28
+SAMPLE-5
+34227.58 135479.49
+cpu  9116 0 10117 13547949 3 0 13604 0 0 0
+cpu0 3378 0 3013 3361074 0 0 13341 0 0 0
+cpu1 3849 0 4021 3407137 0 0 208 0 0 0
+cpu2 1061 0 1262 3414073 0 0 19 0 0 0
+cpu3 828 0 1821 3365664 2 0 36 0 0 0
+ethernet enabled 1 active 1 offers 52 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 0/0
+bound 1 pushed 60 last-ifindex 3
+rejected not-ours 26 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 784 tx 784 drop 0/0/0/0 exceptions
+node ipv4 rx 766 tx 766 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:39953 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:53789 -> 192.168.21.154:5201 detail 3
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 70ms fw flow rx 104177 tx 0 return rx 0 tx 104177
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 70ms fw flow rx 32414 tx 0 return rx 0 tx 32414
+proto 6 v4 bridged if 31/1 prio 0 installed 1 age 70ms fw flow rx 4 tx 6 return rx 6 tx 4
+bridged on 1 pushed 41 entries 3 learn 0 ready 0 active 3 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 9 moved 0 gone 29
+SAMPLE-6
+34229.59 135487.43
+cpu  9117 0 10117 13548743 3 0 13604 0 0 0
+cpu0 3378 0 3013 3361270 0 0 13341 0 0 0
+cpu1 3849 0 4021 3407337 0 0 208 0 0 0
+cpu2 1062 0 1262 3414273 0 0 19 0 0 0
+cpu3 828 0 1821 3365861 2 0 36 0 0 0
+ethernet enabled 1 active 1 offers 52 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 0/0
+bound 1 pushed 60 last-ifindex 3
+rejected not-ours 26 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 777 tx 777 drop 0/0/0/0 exceptions
+node ipv4 rx 784 tx 784 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:39953 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:53789 -> 192.168.21.154:5201 detail 3
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 2080ms fw flow rx 104177 tx 0 return rx 0 tx 104177
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 2080ms fw flow rx 32414 tx 0 return rx 0 tx 32414
+proto 6 v4 bridged if 31/1 prio 0 installed 1 age 2080ms fw flow rx 4 tx 6 return rx 6 tx 4
+bridged on 1 pushed 41 entries 3 learn 0 ready 0 active 3 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 9 moved 0 gone 29
+SAMPLE-7
+34231.59 135495.36
+cpu  9117 0 10117 13549537 3 0 13605 0 0 0
+cpu0 3378 0 3013 3361467 0 0 13342 0 0 0
+cpu1 3849 0 4021 3407537 0 0 208 0 0 0
+cpu2 1062 0 1262 3414473 0 0 19 0 0 0
+cpu3 828 0 1821 3366059 2 0 36 0 0 0
+ethernet enabled 1 active 1 offers 52 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 0/0
+bound 1 pushed 60 last-ifindex 3
+rejected not-ours 26 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 769 tx 769 drop 0/0/0/0 exceptions
+node ipv4 rx 797 tx 797 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:39953 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:53789 -> 192.168.21.154:5201 detail 3
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 4090ms fw flow rx 104177 tx 0 return rx 0 tx 104177
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 4090ms fw flow rx 32414 tx 0 return rx 0 tx 32414
+proto 6 v4 bridged if 31/1 prio 0 installed 1 age 4090ms fw flow rx 4 tx 6 return rx 6 tx 4
+bridged on 1 pushed 41 entries 3 learn 0 ready 0 active 3 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 9 moved 0 gone 29
+SAMPLE-8
+34233.60 135503.30
+cpu  9117 0 10119 13550331 3 0 13605 0 0 0
+cpu0 3378 0 3013 3361664 0 0 13342 0 0 0
+cpu1 3849 0 4022 3407737 0 0 208 0 0 0
+cpu2 1062 0 1263 3414673 0 0 19 0 0 0
+cpu3 828 0 1821 3366256 2 0 36 0 0 0
+ethernet enabled 1 active 1 offers 52 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 0/0
+bound 1 pushed 60 last-ifindex 3
+rejected not-ours 26 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 774 tx 774 drop 0/0/0/0 exceptions
+node ipv4 rx 776 tx 774 drop 0/0/0/0 exceptions 9:2
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:39953 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:53789 -> 192.168.21.154:5201 detail 3
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 6090ms fw flow rx 104177 tx 0 return rx 0 tx 104177
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 1930ms fw flow rx 162434 tx 0 return rx 0 tx 162434
+proto 6 v4 bridged if 31/1 prio 0 installed 1 age 6090ms fw flow rx 4 tx 6 return rx 6 tx 4
+bridged on 1 pushed 41 entries 3 learn 0 ready 0 active 3 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 9 moved 0 gone 29
+SAMPLE-9
+34235.61 135511.24
+cpu  9117 0 10120 13551124 3 0 13605 0 0 0
+cpu0 3378 0 3014 3361860 0 0 13342 0 0 0
+cpu1 3849 0 4022 3407937 0 0 208 0 0 0
+cpu2 1062 0 1263 3414873 0 0 19 0 0 0
+cpu3 828 0 1821 3366453 2 0 36 0 0 0
+ethernet enabled 1 active 1 offers 52 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 0/0
+bound 1 pushed 60 last-ifindex 3
+rejected not-ours 26 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 771 tx 771 drop 0/0/0/0 exceptions
+node ipv4 rx 791 tx 791 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:39953 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:53789 -> 192.168.21.154:5201 detail 3
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 8100ms fw flow rx 104177 tx 0 return rx 0 tx 104177
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 3940ms fw flow rx 162434 tx 0 return rx 0 tx 162434
+proto 6 v4 bridged if 31/1 prio 0 installed 1 age 8100ms fw flow rx 4 tx 6 return rx 6 tx 4
+bridged on 1 pushed 41 entries 3 learn 0 ready 0 active 3 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 9 moved 0 gone 29
+SAMPLE-10
+34237.61 135519.14
+cpu  9117 0 10121 13551914 3 0 13605 0 0 0
+cpu0 3378 0 3015 3362053 0 0 13342 0 0 0
+cpu1 3849 0 4022 3408137 0 0 208 0 0 0
+cpu2 1062 0 1263 3415073 0 0 19 0 0 0
+cpu3 828 0 1821 3366650 2 0 36 0 0 0
+ethernet enabled 1 active 1 offers 52 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 0/0
+bound 1 pushed 60 last-ifindex 3
+rejected not-ours 26 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 782 tx 782 drop 0/0/0/0 exceptions
+node ipv4 rx 782 tx 782 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:39953 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:53789 -> 192.168.21.154:5201 detail 3
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 10110ms fw flow rx 104177 tx 0 return rx 0 tx 104177
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 1040ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 bridged if 31/1 prio 0 installed 1 age 1090ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 1790ms fw flow rx 292430 tx 0 return rx 0 tx 292430
+bridged on 1 pushed 43 entries 4 learn 0 ready 0 active 4 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 9 moved 0 gone 30
+SAMPLE-11
+34239.62 135526.99
+cpu  9117 0 10124 13552700 3 0 13606 0 0 0
+cpu0 3378 0 3017 3362241 0 0 13343 0 0 0
+cpu1 3849 0 4022 3408337 0 0 208 0 0 0
+cpu2 1062 0 1264 3415273 0 0 19 0 0 0
+cpu3 828 0 1821 3366847 2 0 36 0 0 0
+ethernet enabled 1 active 1 offers 52 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 0/0
+bound 1 pushed 60 last-ifindex 3
+rejected not-ours 26 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 781 tx 781 drop 0/0/0/0 exceptions
+node ipv4 rx 780 tx 780 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:39953 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:53789 -> 192.168.21.154:5201 detail 3
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 12110ms fw flow rx 104177 tx 0 return rx 0 tx 104177
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 3040ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 6 v4 bridged if 31/1 prio 0 installed 1 age 3090ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 3790ms fw flow rx 292430 tx 0 return rx 0 tx 292430
+bridged on 1 pushed 43 entries 4 learn 0 ready 0 active 4 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 9 moved 0 gone 30
+SAMPLE-12
+34241.63 135534.85
+cpu  9118 0 10124 13553485 3 0 13612 0 0 0
+cpu0 3378 0 3017 3362429 0 0 13349 0 0 0
+cpu1 3850 0 4022 3408537 0 0 208 0 0 0
+cpu2 1062 0 1264 3415473 0 0 19 0 0 0
+cpu3 828 0 1821 3367045 2 0 36 0 0 0
+ethernet enabled 1 active 1 offers 52 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 0/0
+bound 1 pushed 60 last-ifindex 3
+rejected not-ours 26 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 782 tx 782 drop 0/0/0/0 exceptions
+node ipv4 rx 782 tx 781 drop 0/0/0/0 exceptions 9:1
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:39953 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:53789 -> 192.168.21.154:5201 detail 3
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 14120ms fw flow rx 104177 tx 0 return rx 0 tx 104177
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 920ms fw flow rx 0 tx 128801 return rx 128801 tx 0
+proto 6 v4 bridged if 31/1 prio 0 installed 1 age 920ms fw flow rx 4 tx 6 return rx 6 tx 4
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 920ms fw flow rx 312532 tx 0 return rx 0 tx 312532
+bridged on 1 pushed 43 entries 4 learn 0 ready 0 active 4 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 9 moved 0 gone 30
+SAMPLE-13
+34243.63 135542.70
+cpu  9119 0 10124 13554270 3 0 13613 0 0 0
+cpu0 3378 0 3017 3362617 0 0 13350 0 0 0
+cpu1 3851 0 4022 3408736 0 0 208 0 0 0
+cpu2 1062 0 1264 3415673 0 0 19 0 0 0
+cpu3 828 0 1821 3367242 2 0 36 0 0 0
+ethernet enabled 1 active 1 offers 52 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 0/0
+bound 1 pushed 60 last-ifindex 3
+rejected not-ours 26 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 781 tx 781 drop 0/0/0/0 exceptions
+node ipv4 rx 781 tx 781 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:39953 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:53789 -> 192.168.21.154:5201 detail 3
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 16130ms fw flow rx 104177 tx 0 return rx 0 tx 104177
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 2930ms fw flow rx 0 tx 128801 return rx 128801 tx 0
+proto 6 v4 bridged if 31/1 prio 0 installed 1 age 2930ms fw flow rx 4 tx 6 return rx 6 tx 4
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 2930ms fw flow rx 312532 tx 0 return rx 0 tx 312532
+bridged on 1 pushed 43 entries 4 learn 0 ready 0 active 4 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 9 moved 0 gone 30
+SAMPLE-14
+34245.64 135550.56
+cpu  9120 0 10125 13555056 3 0 13613 0 0 0
+cpu0 3378 0 3017 3362807 0 0 13350 0 0 0
+cpu1 3852 0 4023 3408936 0 0 208 0 0 0
+cpu2 1062 0 1264 3415873 0 0 19 0 0 0
+cpu3 828 0 1821 3367439 2 0 36 0 0 0
+ethernet enabled 1 active 1 offers 52 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 0/0
+bound 1 pushed 60 last-ifindex 3
+rejected not-ours 26 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 781 tx 781 drop 0/0/0/0 exceptions
+node ipv4 rx 781 tx 781 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:39953 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:53789 -> 192.168.21.154:5201 detail 3
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 18130ms fw flow rx 104177 tx 0 return rx 0 tx 104177
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 770ms fw flow rx 0 tx 258799 return rx 258799 tx 0
+proto 6 v4 bridged if 31/1 prio 0 installed 1 age 4930ms fw flow rx 4 tx 6 return rx 6 tx 4
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 4930ms fw flow rx 312532 tx 0 return rx 0 tx 312532
+bridged on 1 pushed 43 entries 4 learn 0 ready 0 active 4 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 9 moved 0 gone 30
+SAMPLE-15
+34247.65 135558.47
+cpu  9121 0 10125 13555847 3 0 13613 0 0 0
+cpu0 3379 0 3017 3363001 0 0 13350 0 0 0
+cpu1 3852 0 4023 3409135 0 0 208 0 0 0
+cpu2 1062 0 1264 3416073 0 0 19 0 0 0
+cpu3 828 0 1821 3367637 2 0 36 0 0 0
+ethernet enabled 1 active 1 offers 52 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 0/0
+bound 1 pushed 60 last-ifindex 3
+rejected not-ours 26 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 1885 tx 1885 drop 0/0/0/0 exceptions
+node ipv4 rx 1791 tx 1791 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:39953 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:53789 -> 192.168.21.154:5201 detail 3
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 20140ms fw flow rx 104177 tx 0 return rx 0 tx 104177
+proto 6 v4 bridged if 31/1 prio 0 installed 1 age 1000ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 940ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 2780ms fw flow rx 0 tx 258799 return rx 258799 tx 0
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 6940ms fw flow rx 312532 tx 0 return rx 0 tx 312532
+bridged on 1 pushed 45 entries 5 learn 0 ready 0 active 5 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 9 moved 0 gone 31
+SAMPLE-16
+34249.65 135566.41
+cpu  9121 0 10125 13556642 3 0 13613 0 0 0
+cpu0 3379 0 3017 3363198 0 0 13350 0 0 0
+cpu1 3852 0 4023 3409335 0 0 208 0 0 0
+cpu2 1062 0 1264 3416273 0 0 19 0 0 0
+cpu3 828 0 1821 3367834 2 0 36 0 0 0
+ethernet enabled 1 active 1 offers 52 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 0/0
+bound 1 pushed 60 last-ifindex 3
+rejected not-ours 26 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 2088 tx 2088 drop 0/0/0/0 exceptions
+node ipv4 rx 2106 tx 2106 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:39953 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:53789 -> 192.168.21.154:5201 detail 3
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 22140ms fw flow rx 104177 tx 0 return rx 0 tx 104177
+proto 6 v4 bridged if 31/1 prio 0 installed 1 age 3000ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 2940ms fw flow rx 0 tx 0 return rx 0 tx 0
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 4780ms fw flow rx 0 tx 258799 return rx 258799 tx 0
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 8940ms fw flow rx 312532 tx 0 return rx 0 tx 312532
+bridged on 1 pushed 45 entries 5 learn 0 ready 0 active 5 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 9 moved 0 gone 31
+SAMPLE-17
+34251.66 135574.36
+cpu  9121 0 10128 13557436 3 0 13613 0 0 0
+cpu0 3379 0 3017 3363396 0 0 13350 0 0 0
+cpu1 3852 0 4025 3409535 0 0 208 0 0 0
+cpu2 1062 0 1265 3416472 0 0 19 0 0 0
+cpu3 828 0 1821 3368031 2 0 36 0 0 0
+ethernet enabled 1 active 1 offers 52 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 0/0
+bound 1 pushed 60 last-ifindex 3
+rejected not-ours 26 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 1917 tx 1917 drop 0/0/0/0 exceptions
+node ipv4 rx 1728 tx 1728 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:39953 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:53789 -> 192.168.21.154:5201 detail 3
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 24150ms fw flow rx 104177 tx 0 return rx 0 tx 104177
+proto 6 v4 bridged if 31/1 prio 0 installed 1 age 1830ms fw flow rx 4 tx 5 return rx 5 tx 4
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 1830ms fw flow rx 171172 tx 0 return rx 0 tx 171172
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 1830ms fw flow rx 0 tx 312766 return rx 312766 tx 0
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 10950ms fw flow rx 312532 tx 0 return rx 0 tx 312532
+bridged on 1 pushed 45 entries 5 learn 0 ready 0 active 5 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 9 moved 0 gone 31
+SAMPLE-18
+34253.66 135582.30
+cpu  9122 0 10128 13558231 3 0 13614 0 0 0
+cpu0 3379 0 3017 3363593 0 0 13350 0 0 0
+cpu1 3853 0 4025 3409735 0 0 209 0 0 0
+cpu2 1062 0 1265 3416672 0 0 19 0 0 0
+cpu3 828 0 1821 3368229 2 0 36 0 0 0
+ethernet enabled 1 active 1 offers 52 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 0/0
+bound 1 pushed 60 last-ifindex 3
+rejected not-ours 26 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 2241 tx 2241 drop 0/0/0/0 exceptions
+node ipv4 rx 2241 tx 2241 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:39953 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:53789 -> 192.168.21.154:5201 detail 3
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 26160ms fw flow rx 104177 tx 0 return rx 0 tx 104177
+proto 6 v4 bridged if 31/1 prio 0 installed 1 age 3840ms fw flow rx 4 tx 5 return rx 5 tx 4
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 3840ms fw flow rx 171172 tx 0 return rx 0 tx 171172
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 3840ms fw flow rx 0 tx 312766 return rx 312766 tx 0
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 12960ms fw flow rx 312532 tx 0 return rx 0 tx 312532
+bridged on 1 pushed 45 entries 5 learn 0 ready 0 active 5 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 9 moved 0 gone 31
+SAMPLE-19
+34255.67 135590.25
+cpu  9122 0 10128 13559026 3 0 13614 0 0 0
+cpu0 3379 0 3017 3363791 0 0 13350 0 0 0
+cpu1 3853 0 4025 3409935 0 0 209 0 0 0
+cpu2 1062 0 1265 3416873 0 0 19 0 0 0
+cpu3 828 0 1821 3368426 2 0 36 0 0 0
+ethernet enabled 1 active 1 offers 52 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 0/0
+bound 1 pushed 60 last-ifindex 3
+rejected not-ours 26 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 2261 tx 2261 drop 0/0/0/0 exceptions
+node ipv4 rx 1971 tx 1971 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:39953 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:53789 -> 192.168.21.154:5201 detail 3
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 28160ms fw flow rx 104177 tx 0 return rx 0 tx 104177
+proto 6 v4 bridged if 31/1 prio 0 installed 1 age 5840ms fw flow rx 4 tx 5 return rx 5 tx 4
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 1680ms fw flow rx 409177 tx 0 return rx 0 tx 409177
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 5840ms fw flow rx 0 tx 312766 return rx 312766 tx 0
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 14960ms fw flow rx 312532 tx 0 return rx 0 tx 312532
+bridged on 1 pushed 45 entries 5 learn 0 ready 0 active 5 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 9 moved 0 gone 31
+SAMPLE-20
+34257.68 135598.19
+cpu  9122 0 10129 13559820 3 0 13614 0 0 0
+cpu0 3379 0 3017 3363988 0 0 13350 0 0 0
+cpu1 3853 0 4026 3410135 0 0 209 0 0 0
+cpu2 1062 0 1265 3417072 0 0 19 0 0 0
+cpu3 828 0 1821 3368623 2 0 36 0 0 0
+ethernet enabled 1 active 1 offers 52 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 0/0
+bound 1 pushed 60 last-ifindex 3
+rejected not-ours 26 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:39953 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:53789 -> 192.168.21.154:5201 detail 3
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 30170ms fw flow rx 104177 tx 0 return rx 0 tx 104177
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 3690ms fw flow rx 409177 tx 0 return rx 0 tx 409177
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 7850ms fw flow rx 0 tx 312766 return rx 312766 tx 0
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 16970ms fw flow rx 312532 tx 0 return rx 0 tx 312532
+bridged on 1 pushed 45 entries 4 learn 0 ready 0 active 4 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 9 moved 0 gone 32
+SAMPLE-21
+34259.68 135606.14
+cpu  9122 0 10130 13560615 3 0 13614 0 0 0
+cpu0 3379 0 3017 3364186 0 0 13350 0 0 0
+cpu1 3853 0 4027 3410334 0 0 209 0 0 0
+cpu2 1062 0 1265 3417272 0 0 19 0 0 0
+cpu3 828 0 1821 3368820 2 0 36 0 0 0
+ethernet enabled 1 active 1 offers 52 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 0/0
+bound 1 pushed 60 last-ifindex 3
+rejected not-ours 26 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:39953 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:53789 -> 192.168.21.154:5201 detail 3
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 1540ms fw flow rx 571363 tx 0 return rx 0 tx 571363
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 9860ms fw flow rx 0 tx 312766 return rx 312766 tx 0
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 18980ms fw flow rx 312532 tx 0 return rx 0 tx 312532
+bridged on 1 pushed 45 entries 3 learn 0 ready 0 active 3 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 10 moved 0 gone 32
+SAMPLE-22
+34261.69 135614.09
+cpu  9122 0 10130 13561409 3 0 13614 0 0 0
+cpu0 3379 0 3017 3364384 0 0 13350 0 0 0
+cpu1 3853 0 4027 3410533 0 0 209 0 0 0
+cpu2 1062 0 1265 3417472 0 0 19 0 0 0
+cpu3 828 0 1821 3369018 2 0 36 0 0 0
+ethernet enabled 1 active 1 offers 52 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 0/0
+bound 1 pushed 60 last-ifindex 3
+rejected not-ours 26 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:39953 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:53789 -> 192.168.21.154:5201 detail 3
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 3540ms fw flow rx 571363 tx 0 return rx 0 tx 571363
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 11860ms fw flow rx 0 tx 312766 return rx 312766 tx 0
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 20980ms fw flow rx 312532 tx 0 return rx 0 tx 312532
+bridged on 1 pushed 45 entries 3 learn 0 ready 0 active 3 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 10 moved 0 gone 32
+SAMPLE-23
+34263.70 135622.02
+cpu  9123 0 10132 13562203 3 0 13614 0 0 0
+cpu0 3379 0 3017 3364582 0 0 13350 0 0 0
+cpu1 3854 0 4029 3410733 0 0 209 0 0 0
+cpu2 1062 0 1265 3417672 0 0 19 0 0 0
+cpu3 828 0 1821 3369215 2 0 36 0 0 0
+ethernet enabled 1 active 1 offers 52 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 0/0
+bound 1 pushed 60 last-ifindex 3
+rejected not-ours 26 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 2 tx 2 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:39953 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:53789 -> 192.168.21.154:5201 detail 3
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 5550ms fw flow rx 571363 tx 0 return rx 0 tx 571363
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 13870ms fw flow rx 0 tx 312766 return rx 312766 tx 0
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 22990ms fw flow rx 312532 tx 0 return rx 0 tx 312532
+bridged on 1 pushed 45 entries 3 learn 0 ready 0 active 3 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 10 moved 0 gone 32
+SAMPLE-24
+34265.70 135629.97
+cpu  9124 0 10132 13562997 3 0 13614 0 0 0
+cpu0 3379 0 3017 3364780 0 0 13350 0 0 0
+cpu1 3855 0 4029 3410932 0 0 209 0 0 0
+cpu2 1062 0 1265 3417872 0 0 19 0 0 0
+cpu3 828 0 1821 3369412 2 0 36 0 0 0
+ethernet enabled 1 active 1 offers 52 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 0/0
+bound 1 pushed 60 last-ifindex 3
+rejected not-ours 26 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:39953 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:53789 -> 192.168.21.154:5201 detail 3
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 7560ms fw flow rx 571363 tx 0 return rx 0 tx 571363
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 15880ms fw flow rx 0 tx 312766 return rx 312766 tx 0
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 25000ms fw flow rx 312532 tx 0 return rx 0 tx 312532
+bridged on 1 pushed 45 entries 3 learn 0 ready 0 active 3 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 10 moved 0 gone 32
+SAMPLE-25
+34267.71 135637.91
+cpu  9124 0 10133 13563791 3 0 13614 0 0 0
+cpu0 3379 0 3017 3364977 0 0 13350 0 0 0
+cpu1 3855 0 4030 3411131 0 0 209 0 0 0
+cpu2 1062 0 1265 3418072 0 0 19 0 0 0
+cpu3 828 0 1821 3369609 2 0 36 0 0 0
+ethernet enabled 1 active 1 offers 52 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 0/0
+bound 1 pushed 60 last-ifindex 3
+rejected not-ours 26 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:39953 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:53789 -> 192.168.21.154:5201 detail 3
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 9560ms fw flow rx 571363 tx 0 return rx 0 tx 571363
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 17880ms fw flow rx 0 tx 312766 return rx 312766 tx 0
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 27000ms fw flow rx 312532 tx 0 return rx 0 tx 312532
+bridged on 1 pushed 45 entries 3 learn 0 ready 0 active 3 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 10 moved 0 gone 32
+SAMPLE-26
+34269.72 135645.86
+cpu  9124 0 10135 13564586 3 0 13614 0 0 0
+cpu0 3379 0 3018 3365175 0 0 13350 0 0 0
+cpu1 3855 0 4031 3411330 0 0 209 0 0 0
+cpu2 1062 0 1265 3418272 0 0 19 0 0 0
+cpu3 828 0 1821 3369807 2 0 36 0 0 0
+ethernet enabled 1 active 1 offers 52 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 0/0
+bound 1 pushed 60 last-ifindex 3
+rejected not-ours 26 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:39953 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:53789 -> 192.168.21.154:5201 detail 3
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 11570ms fw flow rx 571363 tx 0 return rx 0 tx 571363
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 19890ms fw flow rx 0 tx 312766 return rx 312766 tx 0
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 29010ms fw flow rx 312532 tx 0 return rx 0 tx 312532
+bridged on 1 pushed 45 entries 3 learn 0 ready 0 active 3 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 10 moved 0 gone 32
+SAMPLE-27
+34271.72 135653.81
+cpu  9124 0 10136 13565381 3 0 13614 0 0 0
+cpu0 3379 0 3018 3365374 0 0 13350 0 0 0
+cpu1 3855 0 4032 3411529 0 0 209 0 0 0
+cpu2 1062 0 1265 3418472 0 0 19 0 0 0
+cpu3 828 0 1821 3370004 2 0 36 0 0 0
+ethernet enabled 1 active 1 offers 52 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 0/0
+bound 1 pushed 60 last-ifindex 3
+rejected not-ours 26 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 2 tx 2 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:39953 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:53789 -> 192.168.21.154:5201 detail 3
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 13580ms fw flow rx 571363 tx 0 return rx 0 tx 571363
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 21900ms fw flow rx 0 tx 312766 return rx 312766 tx 0
+bridged on 1 pushed 45 entries 2 learn 0 ready 0 active 2 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 11 moved 0 gone 32
+SAMPLE-28
+34273.73 135661.76
+cpu  9124 0 10137 13566176 3 0 13614 0 0 0
+cpu0 3379 0 3018 3365572 0 0 13350 0 0 0
+cpu1 3855 0 4032 3411729 0 0 209 0 0 0
+cpu2 1062 0 1266 3418672 0 0 19 0 0 0
+cpu3 828 0 1821 3370201 2 0 36 0 0 0
+ethernet enabled 1 active 1 offers 52 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 0/0
+bound 1 pushed 60 last-ifindex 3
+rejected not-ours 26 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:39953 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:53789 -> 192.168.21.154:5201 detail 3
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 15580ms fw flow rx 571363 tx 0 return rx 0 tx 571363
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 23900ms fw flow rx 0 tx 312766 return rx 312766 tx 0
+bridged on 1 pushed 45 entries 2 learn 0 ready 0 active 2 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 11 moved 0 gone 32
+SAMPLE-29
+34275.73 135669.70
+cpu  9125 0 10138 13566970 3 0 13614 0 0 0
+cpu0 3379 0 3018 3365769 0 0 13350 0 0 0
+cpu1 3856 0 4033 3411928 0 0 209 0 0 0
+cpu2 1062 0 1266 3418872 0 0 19 0 0 0
+cpu3 828 0 1821 3370399 2 0 36 0 0 0
+ethernet enabled 1 active 1 offers 52 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 0/0
+bound 1 pushed 60 last-ifindex 3
+rejected not-ours 26 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:39953 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:53789 -> 192.168.21.154:5201 detail 3
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 17590ms fw flow rx 571363 tx 0 return rx 0 tx 571363
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 25910ms fw flow rx 0 tx 312766 return rx 312766 tx 0
+bridged on 1 pushed 45 entries 2 learn 0 ready 0 active 2 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 11 moved 0 gone 32
+SAMPLE-30
+34277.74 135677.64
+cpu  9125 0 10138 13567764 3 0 13614 0 0 0
+cpu0 3379 0 3018 3365967 0 0 13350 0 0 0
+cpu1 3856 0 4033 3412128 0 0 209 0 0 0
+cpu2 1062 0 1266 3419072 0 0 19 0 0 0
+cpu3 828 0 1821 3370596 2 0 36 0 0 0
+ethernet enabled 1 active 1 offers 52 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 0/0
+bound 1 pushed 60 last-ifindex 3
+rejected not-ours 26 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:39953 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:53789 -> 192.168.21.154:5201 detail 3
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 19590ms fw flow rx 571363 tx 0 return rx 0 tx 571363
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 27910ms fw flow rx 0 tx 312766 return rx 312766 tx 0
+bridged on 1 pushed 45 entries 2 learn 0 ready 0 active 2 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 11 moved 0 gone 32
+SAMPLE-31
+34279.75 135685.58
+cpu  9125 0 10140 13568559 3 0 13614 0 0 0
+cpu0 3379 0 3018 3366164 0 0 13350 0 0 0
+cpu1 3856 0 4033 3412328 0 0 209 0 0 0
+cpu2 1062 0 1267 3419272 0 0 19 0 0 0
+cpu3 828 0 1822 3370793 2 0 36 0 0 0
+ethernet enabled 1 active 1 offers 52 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 0/0
+bound 1 pushed 60 last-ifindex 3
+rejected not-ours 26 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 2 tx 2 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:39953 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:53789 -> 192.168.21.154:5201 detail 3
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 21600ms fw flow rx 571363 tx 0 return rx 0 tx 571363
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 29920ms fw flow rx 0 tx 312766 return rx 312766 tx 0
+bridged on 1 pushed 45 entries 2 learn 0 ready 0 active 2 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 11 moved 0 gone 32
+SAMPLE-32
+34281.75 135693.53
+cpu  9125 0 10140 13569353 3 0 13614 0 0 0
+cpu0 3379 0 3018 3366362 0 0 13350 0 0 0
+cpu1 3856 0 4033 3412528 0 0 209 0 0 0
+cpu2 1062 0 1267 3419472 0 0 19 0 0 0
+cpu3 828 0 1822 3370990 2 0 36 0 0 0
+ethernet enabled 1 active 1 offers 52 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 0/0
+bound 1 pushed 60 last-ifindex 3
+rejected not-ours 26 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:39953 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:53789 -> 192.168.21.154:5201 detail 3
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 23610ms fw flow rx 571363 tx 0 return rx 0 tx 571363
+bridged on 1 pushed 45 entries 1 learn 0 ready 0 active 1 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 12 moved 0 gone 32
+SAMPLE-33
+34283.76 135701.48
+cpu  9125 0 10141 13570148 3 0 13614 0 0 0
+cpu0 3379 0 3018 3366559 0 0 13350 0 0 0
+cpu1 3856 0 4034 3412728 0 0 209 0 0 0
+cpu2 1062 0 1267 3419672 0 0 19 0 0 0
+cpu3 828 0 1822 3371188 2 0 36 0 0 0
+ethernet enabled 1 active 1 offers 52 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 0/0
+bound 1 pushed 60 last-ifindex 3
+rejected not-ours 26 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:39953 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:53789 -> 192.168.21.154:5201 detail 3
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 25610ms fw flow rx 571363 tx 0 return rx 0 tx 571363
+bridged on 1 pushed 45 entries 1 learn 0 ready 0 active 1 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 12 moved 0 gone 32
+SAMPLE-34
+34285.77 135709.42
+cpu  9126 0 10141 13570943 3 0 13614 0 0 0
+cpu0 3379 0 3018 3366757 0 0 13350 0 0 0
+cpu1 3856 0 4034 3412928 0 0 209 0 0 0
+cpu2 1063 0 1267 3419872 0 0 19 0 0 0
+cpu3 828 0 1822 3371385 2 0 36 0 0 0
+ethernet enabled 1 active 1 offers 52 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 0/0
+bound 1 pushed 60 last-ifindex 3
+rejected not-ours 26 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:39953 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:53789 -> 192.168.21.154:5201 detail 3
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 27620ms fw flow rx 571363 tx 0 return rx 0 tx 571363
+bridged on 1 pushed 45 entries 1 learn 0 ready 0 active 1 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 12 moved 0 gone 32
+SAMPLE-35
+34287.77 135717.37
+cpu  9126 0 10142 13571737 3 0 13614 0 0 0
+cpu0 3379 0 3019 3366954 0 0 13350 0 0 0
+cpu1 3856 0 4034 3413127 0 0 209 0 0 0
+cpu2 1063 0 1267 3420072 0 0 19 0 0 0
+cpu3 828 0 1822 3371582 2 0 36 0 0 0
+ethernet enabled 1 active 1 offers 52 pushed 8 rejected 0
+mtu_policy limited 0 link 1500/1500 route 1500/1500 rule 1500/1500 l3if 0/0
+bound 1 pushed 60 last-ifindex 3
+rejected not-ours 26 key 0 interface 0 action 0 no-mac 0 no-ct 0 firmware 0 mtu 0
+node eth_rx rx 2 tx 2 drop 0/0/0/0 exceptions
+node ipv4 rx 0 tx 0 drop 0/0/0/0 exceptions
+node ipv6 rx 0 tx 0 drop 0/0/0/0 exceptions
+reject not-ours dir 0 proto 6 192.168.1.2:39953 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40497 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:42147 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:33235 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:40881 -> 192.168.21.154:5201 detail 3
+reject not-ours dir 0 proto 6 192.168.1.2:53789 -> 192.168.21.154:5201 detail 3
+proto 17 v4 bridged if 31/1 prio 0 installed 1 age 29620ms fw flow rx 571363 tx 0 return rx 0 tx 571363
+bridged on 1 pushed 45 entries 1 learn 0 ready 0 active 1 skip 0
+bridged rejected port 0 vlan 0 ct 0 full 0 firmware 0
+bridged removed dying 0 idle 12 moved 0 gone 32

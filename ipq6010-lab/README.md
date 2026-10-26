@@ -2,7 +2,7 @@
 
 Kexec work remains suspended. Kernel/NSS source matches the pre-kexec08c04ac881 baseline; firewall4 adds a debounced netifd.wireless.done reload trigger. Iteration9 (built from49b3824932) runs with CPUs0-3 and active NSS. Normal reboot downloads the current image from p43 over TFTP, retaining original eMMC bootipq fallback. [Build and boot checkpoint](artifacts/wifi-lifecycle-49b3824932-20261026/README.md).
 
-Automatic AP flowtable membership, active deauthentication/AP-restart recovery, a30-minute wired NAT soak, and a separate30-minute mixed wired/Wi-Fi soak passed. Receiver rates and limitations are in iteration9-* and replacement-wifi-* evidence folders. WRT32X UDP sender under-delivery persists with IP-flow offload bypassed and remains unisolated; it is not a full-rate UDP pass.
+Automatic AP flowtable membership, active deauthentication/AP-restart recovery, a30-minute wired NAT soak, and a separate30-minute mixed wired/Wi-Fi soak passed. Receiver rates and limitations are in iteration9-* and replacement-wifi-* evidence folders. The WRT32X UDP upload plateau is now isolated to its local send-buffer budget: larger-buffer tests reached300 Mbit/s both ways and548 Mbit/s unpaced upload with NSS active; original limits restored. See evidence/udp-isolation-20261026.
 
 [TFTP workflow/rollback](tftp-boot/README.md), [on-demand U-Boot Telnet pause](uboot-console/README.md), and [wireless lifecycle integration](wifi-lifecycle/README.md). Earlier experiments below are retained as historical records.
 
@@ -100,3 +100,7 @@ Source49b3824932 produced FIT1f1cc86103aa7ead9dcdaf8c4b814ed9450c56383eed0de310d
 ## Persistent WRT32X STA performance (2026-10-26)
 
 Current DHCP STA1.207 on QCN9074, explicitly interface-bound: single TCP432/835 Mbit/s, four streams523/921, simultaneous291/470. NSS bridge firmware counters confirmed the Wi-Fi path. UDP down100/298 Mbit/s with0.012%/0.65% reported loss; upload stayed6..8 Mbit/s including unpaced/burst controls. Root cause unresolved; no full-rate UDP upload pass. See [matrix report](evidence/wrt32x-sta-performance-20261026/RESULTS.md) and [persistent STA setup](wifi-lifecycle/wrt32x-persistent-sta.md).
+
+## UDP buffer diagnosis resolved (2026-10-26)
+
+[Controlled endpoint tests](evidence/udp-isolation-20261026/RESULTS.md) isolated the WRT Wi-Fi send-buffer constraint. Sender-only4MiB default restored100M delivery; explicit -w4M allowed300M both ways with zero reported loss and548M unpaced upload. Restoring176KiB defaults returned the6..8M plateau. Original limits remain in place; use the documented temporary per-test buffer settings. DUT firmware unchanged. Earlier unresolved reports describe their original default-buffer runs.

@@ -1,0 +1,1 @@
+net.core.wmem_default = 4194304

@@ -1,5 +1,7 @@
 # WRT32X persistent STA Wi-Fi performance, 2026-10-26
 
+Follow-up: the UDP upload plateau was removed by increasing the WRT sender-buffer budget; see ../udp-isolation-20261026/RESULTS.md. Original measurements below remain unchanged.
+
 Accepted full matrix: run-234158; sender controls: run-234951. Other run directories retain interrupted/missing-agent launcher attempts; they are not performance qualifications. Data uses endpoint-reported durations; raw endpoint timestamps are preserved.
 
 Path: WRT32X wlan0-sta192.168.1.207 (MAC62:38:e0:c1:c5:23) ->QCN9074 US channel36 HE80 AP ->DUT LAN1 ->p43 Ethernet192.168.1.2:5360. WRT uses three-stream802.11ac VHT80, not an HE client. Both iperf3 endpoints version3.20. All cases explicitly bind source1.207 and SO_BINDTODEVICE wlan0-sta. Ordinary route would use WRT br-lan/LAN4; explicit binding and server neighbor matching STA MAC prevent bypass. NSS installed bridged31/1 rules and advancing firmware counters captured (291 installed-rule observations in accepted matrix).

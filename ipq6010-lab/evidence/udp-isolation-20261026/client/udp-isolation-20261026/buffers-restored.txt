@@ -1,0 +1,3 @@
+net.core.wmem_default = 180224
+net.core.wmem_max = 180224
+net.core.rmem_max = 180224
