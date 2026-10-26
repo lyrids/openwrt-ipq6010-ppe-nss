@@ -20,6 +20,22 @@
 		serial1 = &blsp1_uart6;
 	};
 
+	/* Keep crash logs clear of the 0x50000000 TFTP/FIT staging area. */
+	reserved-memory {
+		#address-cells = <2>;
+		#size-cells = <2>;
+		ranges;
+
+		ramoops@57f00000 {
+			compatible = "ramoops";
+			reg = <0x0 0x57f00000 0x0 0x100000>;
+			no-map;
+			record-size = <0x20000>;
+			console-size = <0x80000>;
+			ecc-size = <16>;
+		};
+	};
+
 	keys {
 		compatible = "gpio-keys";
 		pinctrl-0 = <&button_pins>;

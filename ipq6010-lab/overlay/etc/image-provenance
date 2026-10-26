@@ -1,4 +1,4 @@
-Variant: experimental PPE + NSS Ethernet backend, iteration 11 (official main integration)
+Variant: experimental PPE + NSS Ethernet backend, iteration 12 (crash-capture diagnostic)
 Official base: 6c9452a35b923d98bb26c85b5734a6058c02185e
 Community layer: 03803c78cd3b6968c20dab239c0c2f688692be63 replayed; official forward-path/FDB fixes retained
 Local layer: validated Ethernet backend, MTU/VLAN guards and wireless lifecycle fix
@@ -10,3 +10,4 @@ This image: hardware qualification pending
 Reduced routed MTU: software fallback guard, not arbitrary NSS hardware MTU enforcement
 UDP sockets: default send 8 MiB; send/receive maxima 8 MiB; receive default unchanged
 TC qualification tools: standard tc-full and scheduler modules; hardware behavior requires measured tests
+Crash capture: board-local1MiB ramoops at0x57f00000; pstore/netconsole modules; datapath source unchanged

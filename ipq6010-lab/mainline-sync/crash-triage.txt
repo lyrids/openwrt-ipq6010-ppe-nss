@@ -1,0 +1,10 @@
+Iteration11 crash triage,2026-10-27
+Two unexpected RAM reboots: NSS-on qdisc Wi-Fi baseline around2026-10-26T08:07Z and NSS-off/software-only QCN bridge download around2026-10-26T17:09Z. User confirms no power cycle for second event.
+Second event: ath11k NSS=N, firmware boot0, firewall software/hardware offload0, no flowtable/native PPE flows. QCN host-path downlink timed out. No panic trace yet; watchdog/hardware reset not excluded.
+Prepared-source comparison against old e68abf244f: ath11k dp_tx.c/dp_rx.c/core.c and mac80211 tx.c identical. iface.c differs only by removed compile-time6.18 guard, true on both builds. nf_flow_table_offload.c/ip.c and netdevice.h identical; core.c differs in include/assignment order. PPE/EDMA/NSS driver source unchanged.
+Priorities: obtain actual panic/watchdog evidence; isolate QCN host TX/EDMA RX/GRO and shared skb lifetime paths; compare clean boot versus flowtable teardown history. Do not label a speculative NSS or official-main regression as confirmed.
+Current kernel panic=3, panic_on_oops=1, panic_on_warn=0; procd watchdog30s/5s. Observed post-reboot temperatures61-63C are not evidence of temperature at failure.
+Diagnostic iteration12 preserves datapath code and adds packaged pstore/ramoops/netconsole. Reserve0x57f00000..0x57ffffff, outside observed bootloader/NSS reserved regions and19.2MB FIT staged from0x50000000. Warm-reset retention and actual log capture still require hardware validation.
+References:
+https://cdn.kernel.org/doc/html/latest/admin-guide/ramoops.html
+https://docs.kernel.org/networking/netconsole.html

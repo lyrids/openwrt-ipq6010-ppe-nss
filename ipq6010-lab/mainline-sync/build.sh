@@ -6,7 +6,7 @@ cd "$(dirname "$0")/../.."
 mode=on
 if [ "$#" -gt 0 ]; then mode=$1; fi
 case "$mode" in on|off) ;; *) echo "Use on or off" >&2; exit 2;; esac
-run="$workspace/artifacts/mainline-sync-nss-$mode-$(git rev-parse --short=10 HEAD)-20261026"
+run="$workspace/artifacts/mainline-sync-nss-$mode-$(git rev-parse --short=10 HEAD)-$(date -u +%Y%m%d)"
 mkdir -p "$run"
 exec 9>"$workspace/.build.lock"
 flock -n 9 || exit 1

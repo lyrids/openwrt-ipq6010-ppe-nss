@@ -53,7 +53,7 @@ try:
  save("harness.py",pathlib.Path(__file__).read_text())
  identity=remote(dut,"ubus call system board; cat /etc/image-provenance; cat /sys/devices/system/cpu/online; ip -br -4 addr; nft list ruleset; tc qdisc show").stdout
  save("identity.txt",identity)
- assert "iteration 11" in identity and "jdcloud,re-cs-02" in identity
+ assert any(v in identity for v in ("iteration 11","iteration 12")) and "jdcloud,re-cs-02" in identity
  assert remote(dut,"cat /sys/devices/system/cpu/online").stdout.strip()=="0-3"
  enabled=remote(dut,"cat /sys/module/ath11k/parameters/nss_offload").stdout.strip()
  assert (enabled=="Y")== (a.mode=="nss"),"Unexpected radio acceleration mode"
