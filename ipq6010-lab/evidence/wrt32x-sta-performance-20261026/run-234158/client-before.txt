@@ -1,0 +1,20 @@
+Connected to dc:d8:7c:54:83:f0 (on wlan0-sta)
+	SSID: OpenWrt-RAM-test-QCN9074
+	freq: 5180.0
+	RX: 450055990 bytes (596790 packets)
+	TX: 1087391804 bytes (708956 packets)
+	signal: -34 dBm
+	rx bitrate: 1300.0 MBit/s VHT-MCS 9 80MHz short GI VHT-NSS 3
+	tx bitrate: 975.0 MBit/s VHT-MCS 7 80MHz short GI VHT-NSS 3
+	bss flags: short-slot-time
+	dtim period: 2
+	beacon int: 100
+192.168.1.2 from 192.168.1.207 dev wlan0-sta uid 0 
+    cache 
+19: wlan0-sta: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DORMANT group default qlen 1000
+    link/ether 62:38:e0:c1:c5:23 brd ff:ff:ff:ff:ff:ff
+    RX:  bytes packets errors dropped  missed   mcast           
+       1725138   25810      0       0       0       0 
+    TX:  bytes packets errors dropped carrier collsns           
+    1087391507  708951      0       0       0       0 
+default via 192.168.21.1 dev wan proto static src 192.168.21.154 

@@ -1,0 +1,1 @@
+PASS: server neighbor is Wi-Fi STA MAC

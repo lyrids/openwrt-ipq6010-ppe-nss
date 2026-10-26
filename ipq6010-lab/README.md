@@ -96,3 +96,7 @@ Lifecycle fix and reproducible test AP recipe: [wifi-lifecycle](wifi-lifecycle/R
 ## Iteration9 RAM-boot qualification (2026-10-26)
 
 Source49b3824932 produced FIT1f1cc86103aa7ead9dcdaf8c4b814ed9450c56383eed0de310dee5c435637f4e and successfully normal-TFTP RAM-booted. Automatic AP lifecycle membership passes. Thirty-minute wired NAT bidirectional899/924 Mbit/s; additional thirty-minute mixed wired NAT plus Wi-Fi routing saturated shared gigabit LAN at938/939 Mbit/s aggregate per direction, with four NSS rules active and mean normalized DUT CPU0.25%. No new kernel failure markers or WAN errors. WRT32X Wi-Fi/LAN short tests433/827 Mbit/s; proper deauth reconnected in3.7s and active TCP/NSS resumed. Retransmissions and endpoint UDP under-delivery are retained in reports, not hidden by a blanket loss-free claim. See iteration9-* and replacement-wifi-* evidence, and wifi-lifecycle/replacement-client.md. No kexec, bootloader rewrite, or eMMC firmware flash.
+
+## Persistent WRT32X STA performance (2026-10-26)
+
+Current DHCP STA1.207 on QCN9074, explicitly interface-bound: single TCP432/835 Mbit/s, four streams523/921, simultaneous291/470. NSS bridge firmware counters confirmed the Wi-Fi path. UDP down100/298 Mbit/s with0.012%/0.65% reported loss; upload stayed6..8 Mbit/s including unpaced/burst controls. Root cause unresolved; no full-rate UDP upload pass. See [matrix report](evidence/wrt32x-sta-performance-20261026/RESULTS.md) and [persistent STA setup](wifi-lifecycle/wrt32x-persistent-sta.md).
