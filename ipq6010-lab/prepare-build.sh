@@ -18,7 +18,7 @@ from pathlib import Path
 import os
 p=Path(".config");s=p.read_text()
 s=s.replace("/home/ly/projects/openwrt-dev/ccache",os.environ.get("CCACHE_DIR",str(Path.cwd()/".ccache")))
-s=s.replace("/home/ly/projects/openwrt-dev/downloads",os.environ.get("OPENWRT_DL_DIR",str(Path.cwd()/"dl")))
+s=s.replace("/home/ly/projects/openwrt-dev/downloads",os.environ.get("OPENWRT_DL_DIR",str(Path.cwd().parents[1]/"downloads")))
 p.write_text(s)
 PY
 mkdir -p files

@@ -13,3 +13,12 @@ Hardware matrix: p43 wired endpoints and WRT32X Wi-Fi client. Verify NSS counter
 Paired builds: build.sh on and build.sh off differ only in NSS boot configuration and provenance. Both package the same CP12.5 firmware and kernel/modules. Off uses the existing host-path boot branch before radio probe; verify ath11k nss_offload=0, no active NSS data plane and CPUs0-3 before measuring. Measure native PPE hardware-offload-on and a separately identified full-software control with flow offload disabled. Do not label PPE-only forwarding as full software. Use repeated TCP saturation and matched offered-load UDP tests, per-core busy and softirq deltas, firmware counters and PHY/link state. Physical LAN switching alone is not a CPU-offload benchmark.
 
 Deliver a standalone interactive HTML qualification report with searchable/filterable results, on/off throughput and CPU charts, source and image provenance, topology, Ethernet/VLAN/PPPoE, built-in and external Wi-Fi bridge/NAT, firewall tests, qdisc results, boot/recovery procedure, limitations and raw evidence links. Distinguish historical results from tests on iteration11 and mark untested cases explicitly.
+
+Current qualification controls:
+- Run the helpers on p43 with SSH agent forwarding and DUT_KNOWN_HOSTS pointing at the verified boot's separate known-host file.
+- control-matrix.sh ppe and control-matrix.sh software require the NSS-off RAM variant; SKIP_WIRED=1 resumes after a completed wired matrix.
+- restore-test-aps.py transfers the existing PSK directly between the two routers; never export credentials into this repository.
+- The user waived further built-in 2.4GHz attempts after unsuccessful retries. Its rows are diagnostic/unqualified, excluded from qualified counts.
+- Kernel-mode RP-PPPoE (-k) is required for the useful throughput comparison. Earlier userspace-server results remain diagnostic evidence.
+- Use the wired p43 management fallback through WRT WAN if p43's management Wi-Fi connection stalls. Preserve interrupted runs; do not silently relabel them as completed.
+- An unexplained router restart occurred during the first Wi-Fi qdisc baseline. The complete rerun succeeded, but this does not establish the cause or long-term stability. See qualification-notes.txt.

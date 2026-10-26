@@ -1,0 +1,7 @@
+2026-10-26 qualification notes
+User waived additional built-in 2.4 GHz tests following unsuccessful retries. Keep diagnostics, do not count as pass.
+Unexpected DUT restart: first qdisc run run-080432 completed Ethernet qdisc cases. During Wi-Fi baseline (before Wi-Fi qdisc installation), server data stopped after approximately nine measured seconds. DUT subsequently presented a new RAM-boot host key; uptime at 11:41 UTC was 3h34m, consistent with reboot near 08:07 UTC. Cause unproven; no persistent crash log available. Do not classify the first Wi-Fi failure as SSH-only or claim stability qualification passed.
+A separate background SSH ControlMaster stdout-pipe bug was fixed in the harness. It does not explain the verified DUT reboot.
+Kernel-mode PPPoE rerun attempt stopped at SSH host-key verification before VLAN setup; no throughput result from that attempt.
+Wi-Fi qdisc rerun run-114455 completed without restart: baseline771.89, fq_codel805.78, TBF100805.32, CAKE100771.66, HTB100810.12, recovery822.66 Mbit/s. Router-local baseline816.07 and TBF10095.68 Mbit/s. Earlier restart remains unresolved, not reproduced in this rerun.
+Kernel-mode PPPoE 20261026T114409Z: 933.86/874.73 Mbit/s, DUT meanCPU0.606/0.544percent.

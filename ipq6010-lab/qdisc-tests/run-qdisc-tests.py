@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Run on p43 with agent forwarding; all code is maintained on Orb."""
 import concurrent.futures, datetime, json, os, pathlib, shlex, subprocess, time
-root=pathlib.Path.home()/"openwrt-ramboot/qdisc-tests-20261026"
+root=pathlib.Path.home()/("openwrt-ramboot/mainline-qualification/qdisc-"+os.environ.get("MODE","nss"))
 run=root/("run-"+datetime.datetime.now(datetime.timezone.utc).strftime("%H%M%S"))
 run.mkdir(parents=True); (root/"latest-run.txt").write_text(str(run)+"\n")
 kh=os.environ.get("DUT_KNOWN_HOSTS",str(pathlib.Path.home()/"openwrt-ramboot/iteration11-known-hosts"))
@@ -49,7 +49,7 @@ def delete(dev):
 save("harness.py",pathlib.Path(__file__).read_text())
 control="/tmp/qdisc-wrt-"+str(os.getpid())+".sock"
 master=wrt.copy()
-cmd(master[:-1]+["-M","-S",control,"-o","ControlPersist=600","-fNT",master[-1]])
+subprocess.run(master[:-1]+["-M","-S",control,"-o","ControlPersist=600","-fNT",master[-1]],check=True,stdin=subprocess.DEVNULL,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL,timeout=20)
 wrt=master[:-1]+["-S",control,master[-1]]
 server=None; route_added=False; touched=set()
 try:
@@ -65,10 +65,10 @@ try:
  save("client-path.txt",remote(wrt,"iw dev wlan0-sta link; ip route show default; ip -s link show wlan0-sta").stdout)
  common=["-J","-t","12","-O","2","--connect-timeout","5000"]
  if os.environ.get("SECTION") != "wifi":
-  assert not cmd(["ip","route","show","192.168.21.154/32"]).stdout.strip(), "Existing test host route"
-  cmd(["sudo","ip","route","add","192.168.21.154/32","via","192.168.1.1","dev","eth0","src","192.168.1.2"]); route_added=True
-  save("wired-route.txt",cmd(["ip","route","get","192.168.21.154","from","192.168.1.2"]).stdout)
-  wired=["iperf3","-c","192.168.21.154","-p","5201","-B","192.168.1.2"]+common
+  assert not cmd(["ip","route","show","198.18.21.154/32"]).stdout.strip(), "Existing test host route"
+  cmd(["sudo","ip","route","add","198.18.21.154/32","via","192.168.1.1","dev","eth0","src","192.168.1.2"]); route_added=True
+  save("wired-route.txt",cmd(["ip","route","get","198.18.21.154","from","192.168.1.2"]).stdout)
+  wired=["iperf3","-c","198.18.21.154","-p","5366","-B","192.168.1.2"]+common
   test("ethernet-baseline","wan",wired)
   for rate in [100,200]:
    name="ethernet-tbf"+str(rate)
@@ -118,7 +118,7 @@ finally:
  for dev in touched:
   delete(dev)
   save("restored-"+dev+".txt",remote(dut,"tc -s -d qdisc show dev "+dev,False).stdout)
- if route_added: cmd(["sudo","ip","route","del","192.168.21.154/32","via","192.168.1.1","dev","eth0"],False)
+ if route_added: cmd(["sudo","ip","route","del","198.18.21.154/32","via","192.168.1.1","dev","eth0"],False)
  if server: server.terminate(); server.wait(timeout=5)
  cmd(master[:-1]+["-S",control,"-O","exit",master[-1]],False)
  save("dut-final.txt",remote(dut,"dmesg; cat /sys/devices/system/cpu/online; tc qdisc show",False).stdout)
