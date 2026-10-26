@@ -1,0 +1,15 @@
+# Official-main integration, iteration11
+
+Branch jdcloud-mainline-ppe-nss starts from official6c9452a35b923d98bb26c85b5734a6058c02185e, fetched2026-10-26. Kernel6.18.55. The old validated jdcloud-ipq6010-ppe-nss branch and TFTP FIT remain available.
+
+Community series: replay90 commits from a31dd90f6974a935b16aea8c7c31eeec1aac18c1 to03803c78cd3b6968c20dab239c0c2f688692be63. Omit fba94679ea (forward-path fix already official2d7e2a4ae6) and235672ea5f (FDB roaming fix already official279704475c). Retain official patch contents for conflicting header-offset-only refreshes; their community parent/child patch bodies were compared programmatically before resolution.88 community commits remain.
+
+Local functional layer9cbf88bca3 applies the effective current delta from the validated old branch, rather than historical kexec experiments and rollback commits. It includes the NSS Ethernet backend, MTU/VLAN guards and wireless-done firewall reload. Firewall4 now uses official2026-10-25/a3296754 source; package release2 accounts for our retained local lifecycle patch. Historical test records are copied separately in25aec75b2b. Kexec remains disabled in the build configuration. CP firmware12.5 and all feed pins are retained to isolate official-main changes.
+
+Preparation: source workspace/env.sh, run ipq6010-lab/prepare-build.sh, then ipq6010-lab/mainline-sync/build.sh. The build uses this checkout, not the old tree. Record any integration repairs as additional commits. Validate patch preparation, complete image build, then TFTP RAM boot; no eMMC flashing.
+
+Hardware matrix: p43 wired endpoints and WRT32X Wi-Fi client. Verify NSS counters for wired/VLAN/PPPoE/NAT, built-in radios and QCN9074 bridge/NAT, TCP/UDP, firewall blocked/allowed/reloaded flows, radio reconnect, standard hardware TBF and known software-qdisc bypass behavior. Stop the client STA before AP reboot to avoid the observed mwlwifi reconnect firmware stall; restore management and test configuration after each scoped case. Current image results do not automatically qualify this new integration.
+
+Paired builds: build.sh on and build.sh off differ only in NSS boot configuration and provenance. Both package the same CP12.5 firmware and kernel/modules. Off uses the existing host-path boot branch before radio probe; verify ath11k nss_offload=0, no active NSS data plane and CPUs0-3 before measuring. Measure native PPE hardware-offload-on and a separately identified full-software control with flow offload disabled. Do not label PPE-only forwarding as full software. Use repeated TCP saturation and matched offered-load UDP tests, per-core busy and softirq deltas, firmware counters and PHY/link state. Physical LAN switching alone is not a CPU-offload benchmark.
+
+Deliver a standalone interactive HTML qualification report with searchable/filterable results, on/off throughput and CPU charts, source and image provenance, topology, Ethernet/VLAN/PPPoE, built-in and external Wi-Fi bridge/NAT, firewall tests, qdisc results, boot/recovery procedure, limitations and raw evidence links. Distinguish historical results from tests on iteration11 and mark untested cases explicitly.

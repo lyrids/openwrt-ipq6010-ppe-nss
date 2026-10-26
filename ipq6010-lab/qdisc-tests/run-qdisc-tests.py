@@ -4,7 +4,7 @@ import concurrent.futures, datetime, json, os, pathlib, shlex, subprocess, time
 root=pathlib.Path.home()/"openwrt-ramboot/qdisc-tests-20261026"
 run=root/("run-"+datetime.datetime.now(datetime.timezone.utc).strftime("%H%M%S"))
 run.mkdir(parents=True); (root/"latest-run.txt").write_text(str(run)+"\n")
-kh=os.environ.get("DUT_KNOWN_HOSTS",str(pathlib.Path.home()/"openwrt-ramboot/iteration10-known-hosts"))
+kh=os.environ.get("DUT_KNOWN_HOSTS",str(pathlib.Path.home()/"openwrt-ramboot/iteration11-known-hosts"))
 base=["ssh","-n","-o","BatchMode=yes","-o","ConnectTimeout=5","-o","StrictHostKeyChecking=yes"]
 dut=base+["-o","UserKnownHostsFile="+kh,"root@192.168.1.1"]
 wrt=base+["-b","192.168.1.132","-o","UserKnownHostsFile="+str(pathlib.Path.home()/"openwrt-ramboot/replacement154-lan-known-hosts"),"root@192.168.1.3"]
@@ -55,7 +55,7 @@ server=None; route_added=False; touched=set()
 try:
  identity=remote(dut,"ubus call system board; cat /etc/image-provenance; tc -V; tc qdisc show; sysctl net.core.wmem_default net.core.wmem_max net.core.rmem_max").stdout
  save("identity.txt",identity)
- assert "JDCloud" in identity and "iteration 10" in identity
+ assert "JDCloud" in identity and "iteration 11" in identity
  for dev in ["wan","phy2-ap0"]:
   q=remote(dut,"tc qdisc show dev "+dev).stdout
   save("original-"+dev+".txt",q)
