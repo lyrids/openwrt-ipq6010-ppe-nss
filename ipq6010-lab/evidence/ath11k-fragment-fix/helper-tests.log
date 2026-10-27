@@ -1,0 +1,3 @@
+PASS: stale expiry preserves rearmed fragment sequence
+PASS: peer free waits for callback completion without lock deadlock
+PASS: key flush cancels pending timers and clears every TID

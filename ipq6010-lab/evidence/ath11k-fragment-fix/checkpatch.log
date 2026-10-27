@@ -1,0 +1,3 @@
+total: 0 errors, 0 warnings, 0 checks, 229 lines checked
+
+package/kernel/mac80211/patches/ath11k/959-wifi-ath11k-serialize-fragments-and-defer-peer-free.patch has no obvious style problems and is ready for submission.

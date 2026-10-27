@@ -1,4 +1,4 @@
-Variant: experimental PPE + NSS Ethernet backend, iteration 13 (peer-lifetime fixes and netconsole)
+Variant: experimental PPE + NSS Ethernet backend, iteration 14 (fragment lifetime and timer teardown fixes)
 Official base: 6c9452a35b923d98bb26c85b5734a6058c02185e
 Community layer: 03803c78cd3b6968c20dab239c0c2f688692be63 replayed; official forward-path/FDB fixes retained
 Local layer: validated Ethernet backend, MTU/VLAN guards and wireless lifecycle fix
@@ -12,3 +12,5 @@ UDP sockets: default send 8 MiB; send/receive maxima 8 MiB; receive default unch
 TC qualification tools: standard tc-full and scheduler modules; hardware behavior requires measured tests
 Crash capture: board-local1MiB ramoops at0x57f00000; pstore/netconsole modules; patched ath11k peer snapshots
 Validation: original TX source fails forced-unmap ASAN case; fixed source passes. Earlier router reset attribution remains unproven.
+
+Fragment RX: continuous base_lock protection; deferred peer free after synchronous timer shutdown; native and NSS testing pending
