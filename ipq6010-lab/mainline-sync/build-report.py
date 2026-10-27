@@ -9,8 +9,16 @@ for f in sorted(a.evidence.glob("*/results.json")):
  try:items=json.loads(f.read_text())
  except json.JSONDecodeError:continue
  for r in items:
+  if not isinstance(r,dict) or not all(k in r for k in ("radio","path","case","mode")):continue
   r["run"]=f.parent.name
+  identity=(f.parent/"identity.txt").read_text() if (f.parent/"identity.txt").exists() else ""
+  match=re.search(r"iteration\s+(\d+)",identity)
+  r["image_iteration"]=match[1] if match else "11"
+  if r["image_iteration"]!="11":
+   r["diagnostic"]=True;r["note"]="Later diagnostic/fix image; excluded from iteration11 qualification pairs"
   r["run_complete"]=(f.parent/"status").exists()
+  if not r["run_complete"]:
+   r["diagnostic"]=True;r["note"]="Interrupted run; completed repeat is used for comparisons"
   if r.get("radio")=="builtin2":
    r["diagnostic"]=True;r["note"]="2.4GHz retries waived by user; performance/offload unqualified"
   if r.get("path")=="pppoe" and not r.get("server_mode")=="kernel":
@@ -34,6 +42,13 @@ for mode in ["nss","ppe","software"]:
   elif "100" in name:interpretation="Cap enforced" if 80<mbps<110 else "Configured100M cap bypassed"
   else:interpretation="Forwarding compatibility; inspect queue counters"
   qdisc.append({"mode":mode,"case":name,"mbps":mbps,"interpretation":interpretation,"href":base+str(f.relative_to(a.evidence)),"tc_excerpt":"\n".join(text.splitlines()[:7])})
+fix_runs=[]
+fragment=repo/"ipq6010-lab/evidence/ath11k-fragment-fix/runtime"
+fix_files=list(a.evidence.glob("fix-validation-*/results.json"))+list(fragment.glob("fragment-*/results.json"))
+for f in sorted(fix_files):
+ try:items=json.loads(f.read_text())
+ except json.JSONDecodeError:continue
+ fix_runs.append({"run":f.parent.name,"complete":(f.parent/"status").exists(),"cases":items})
 provenance={
  "Official OpenWrt":"6c9452a35b923d98bb26c85b5734a6058c02185e",
  "Community source":"03803c78cd3b6968c20dab239c0c2f688692be63 (88 replayed, 2 already upstream)",
@@ -46,7 +61,13 @@ provenance={
  "Previous iteration10 FIT SHA256":"3efc36b646da67cd4c99563f97a39b7b787ad3a1a9821bd6231bba72d996a7c4"
 }
 provenance.update(meta.get("provenance",{}))
-data={"generated":datetime.datetime.now(datetime.timezone.utc).isoformat(),"rows":rows,"qdisc":qdisc,"provenance":provenance,**{k:v for k,v in meta.items() if k!="provenance"}}
+pairs={}
+for r in rows:
+ if r.get("error") or r.get("diagnostic") or not r.get("run_complete") or r.get("seconds")!=15:continue
+ key=(r["radio"],r["path"],r["case"])
+ pairs.setdefault(key,{})[r["mode"]]=r
+comparisons=[{"radio":k[0],"path":k[1],"case":k[2],"modes":v} for k,v in sorted(pairs.items()) if "nss" in v and len(v)>1]
+data={"fix_runs":fix_runs,"comparisons":comparisons,"generated":datetime.datetime.now(datetime.timezone.utc).isoformat(),"rows":rows,"qdisc":qdisc,"provenance":provenance,**{k:v for k,v in meta.items() if k!="provenance"}}
 a.output.mkdir(parents=True,exist_ok=True)
 (a.output/"results.json").write_text(json.dumps(data,indent=2))
 with (a.output/"measurements.csv").open("w") as f:

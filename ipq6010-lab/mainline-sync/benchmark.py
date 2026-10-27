@@ -24,7 +24,11 @@ def run(v,check=True,timeout=35):
  return r
 def remote(h,s,check=True):return run(h+[s],check)
 def save(n,s):(out/n).write_text(s)
-subprocess.run(wrtbase[:-1]+["-M","-S",sock,"-o","ControlPersist=600","-fNT",wrtbase[-1]],check=True,stdin=subprocess.DEVNULL,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL,timeout=20)
+external_control=os.environ.get("WRT_CONTROL_SOCKET")
+if external_control:
+ sock=external_control
+else:
+ subprocess.run(wrtbase[:-1]+["-M","-S",sock,"-o","ControlPersist=600","-fNT",wrtbase[-1]],check=True,stdin=subprocess.DEVNULL,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL,timeout=20)
 wrt=wrtbase[:-1]+["-S",sock,wrtbase[-1]]
 snapshot="date -u; cat /proc/uptime; cat /proc/stat; cat /sys/module/ath11k/parameters/nss_offload; cat /sys/module/nss_wifi_drv/parameters/ethernet_offload 2>/dev/null; for f in /sys/kernel/debug/*.nss/boot /sys/kernel/debug/*.nss/flows /sys/kernel/debug/*.nss/wifili_rx; do echo FILE-$f; cat $f; done; for f in egress flows offload queue_drops; do echo PPE-$f; cat /sys/kernel/debug/3a000000.ppe/$f; done; nft list flowtable inet fw4 ft 2>/dev/null; cat /proc/net/nf_conntrack 2>/dev/null"
 def cpus(s):
@@ -53,7 +57,7 @@ try:
  save("harness.py",pathlib.Path(__file__).read_text())
  identity=remote(dut,"ubus call system board; cat /etc/image-provenance; cat /sys/devices/system/cpu/online; ip -br -4 addr; nft list ruleset; tc qdisc show").stdout
  save("identity.txt",identity)
- assert any(v in identity for v in ("iteration 11","iteration 12","iteration 13")) and "jdcloud,re-cs-02" in identity
+ assert any(v in identity for v in ("iteration 11","iteration 12","iteration 13","iteration 14","iteration 15")) and "jdcloud,re-cs-02" in identity
  assert remote(dut,"cat /sys/devices/system/cpu/online").stdout.strip()=="0-3"
  enabled=remote(dut,"cat /sys/module/ath11k/parameters/nss_offload").stdout.strip()
  assert (enabled=="Y")== (a.mode=="nss"),"Unexpected radio acceleration mode"
@@ -132,5 +136,5 @@ finally:
  if a.path=="wifi-nat":remote(wrt,"ip route del 198.18.21.154/32 via 192.168.1.1 dev wlan0-sta",False)
  if server:server.terminate();server.wait(timeout=5)
  save("dut-final.txt",remote(dut,"dmesg; cat /sys/devices/system/cpu/online; tc qdisc show",False).stdout)
- run(wrtbase[:-1]+["-S",sock,"-O","exit",wrtbase[-1]],False)
+ if not external_control:run(wrtbase[:-1]+["-S",sock,"-O","exit",wrtbase[-1]],False)
  print("RESULTS",out,flush=True)

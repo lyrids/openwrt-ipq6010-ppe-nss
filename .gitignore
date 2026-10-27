@@ -35,3 +35,4 @@ git-src
 .cproject
 .ccache
 .vscode*
+/ipq6010-lab/mainline-sync/__pycache__/

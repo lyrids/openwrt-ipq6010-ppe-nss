@@ -6,6 +6,7 @@ settings={"builtin5":("radio0","OpenWrt-RAM-test-IPQ6018-5G","phy0-ap0"),"builti
 assert choice in settings or choice=="stop"
 base=["ssh","-n","-o","BatchMode=yes","-o","ConnectTimeout=5","-o","StrictHostKeyChecking=yes"]
 wrt=base+["-b","192.168.1.132","-o","UserKnownHostsFile="+str(pathlib.Path.home()/"openwrt-ramboot/replacement154-lan-known-hosts"),"root@192.168.1.3"]
+if os.environ.get("WRT_CONTROL_SOCKET"):wrt=wrt[:-1]+["-S",os.environ["WRT_CONTROL_SOCKET"],wrt[-1]]
 dut=base+["-o","UserKnownHostsFile="+os.environ["DUT_KNOWN_HOSTS"],"root@192.168.1.1"]
 def call(host,s,timeout=25):
  r=subprocess.run(host+[s],text=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,timeout=timeout)

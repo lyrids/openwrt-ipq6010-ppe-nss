@@ -1,0 +1,180 @@
+{
+  "readiness": "Iteration15 fragment fix running; bounded regression suite passed",
+  "conclusion": "Fragment lifetime patch959 is committed and iteration15 is RAM-booted with NSS enabled and verified netconsole. Native iteration14 and corrected NSS iteration15 each passed both-radio bridge/NAT and40 fresh transition/reconnect traffic cases. Both AP lifecycle checks passed on iteration15. Earlier reset attribution, on-air802.11 fragmentation and long-term stability remain unqualified.",
+  "overview": [
+    "Iteration15 adds fragment RX/timer lifetime protection to the earlier peer-access fixes and preserves existing peer member offsets. Later diagnostic results are excluded from iteration11 paired comparisons.",
+    "Two historical unexpected restarts remain unattributed. Identified source lifetime defects are fixed, but attribution of those resets is unproven.",
+    "2.4GHz testing was waived after unsuccessful retries; that radio remains unqualified.",
+    "NSS forwarding bypasses Wi-Fi host qdiscs; NSS-off controls restore approximately95M shaping at a100M cap.",
+    "Two historical unexplained restarts prevent a long-term stability claim even though the complete Wi-Fi qdisc rerun succeeded."
+  ],
+  "checks": [
+    {
+      "subject": "Official main integration",
+      "status": "Passed",
+      "detail": "Official6c9452a35b base;88 community commits replayed;2 duplicate fixes retained from official main. Local effective driver fixes preserved.",
+      "href": "https://github.com/lyrids/openwrt-ipq6010-ppe-nss/blob/jdcloud-mainline-ppe-nss/ipq6010-lab/evidence/ath11k-fragment-fix/qualification-summary.json"
+    },
+    {
+      "subject": "Paired complete image builds",
+      "status": "Passed",
+      "detail": "Same kernel6.18.55, config, package manifests and CP12.5 firmware. On/off FIT hashes are recorded. Kexec disabled.",
+      "href": "https://github.com/lyrids/openwrt-ipq6010-ppe-nss/blob/jdcloud-mainline-ppe-nss/ipq6010-lab/evidence/ath11k-fragment-fix/qualification-summary.json"
+    },
+    {
+      "subject": "RAM boot / CPU state",
+      "status": "Passed",
+      "detail": "Both variants booted through normal p43 TFTP with CPUs0-3 online; NSS-on firmware boot1, control boot0 and ath11kN.",
+      "href": "https://github.com/lyrids/openwrt-ipq6010-ppe-nss/blob/jdcloud-mainline-ppe-nss/ipq6010-lab/evidence/ath11k-fragment-fix/qualification-summary.json"
+    },
+    {
+      "subject": "Wired IPv4 NAT / conntrack",
+      "status": "Passed",
+      "detail": "Bidirectional TCP,4streams and100/300M UDP. Active NSS firmware rules and packet counters; PPE-only also shows native flow counters and HW_OFFLOAD.",
+      "href": "https://github.com/lyrids/openwrt-ipq6010-ppe-nss/blob/jdcloud-mainline-ppe-nss/ipq6010-lab/evidence/ath11k-fragment-fix/qualification-summary.json"
+    },
+    {
+      "subject": "Tagged VLAN100 NAT",
+      "status": "Passed",
+      "detail": "LAN1/LAN4/self tagged100, native VLAN1 management retained. Tagged router/peer pings; near937M TCP both directions with NSS flow evidence.",
+      "href": "https://github.com/lyrids/openwrt-ipq6010-ppe-nss/blob/jdcloud-mainline-ppe-nss/ipq6010-lab/evidence/ath11k-fragment-fix/qualification-summary.json"
+    },
+    {
+      "subject": "PPPoE over VLAN100",
+      "status": "Passed",
+      "detail": "DUT PPPoE client, p43 kernel-mode access concentrator, WRT wired traffic client. NSS-on934/875M; PPE-only934/868M. Userspace-server results remain diagnostic.",
+      "href": "https://github.com/lyrids/openwrt-ipq6010-ppe-nss/blob/jdcloud-mainline-ppe-nss/ipq6010-lab/evidence/ath11k-fragment-fix/qualification-summary.json"
+    },
+    {
+      "subject": "QCN9074 5GHz bridge/NAT",
+      "status": "Passed",
+      "detail": "TCP and matched100M UDP both directions; explicit Wi-Fi binding and neighbor/NAT path checks. Active NSS firmware packet counters.",
+      "href": "https://github.com/lyrids/openwrt-ipq6010-ppe-nss/blob/jdcloud-mainline-ppe-nss/ipq6010-lab/evidence/ath11k-fragment-fix/qualification-summary.json"
+    },
+    {
+      "subject": "Built-in5GHz bridge/NAT",
+      "status": "Passed",
+      "detail": "TCP and matched100M UDP both directions on channel149/HE80, with active NSS firmware counters.",
+      "href": "https://github.com/lyrids/openwrt-ipq6010-ppe-nss/blob/jdcloud-mainline-ppe-nss/ipq6010-lab/evidence/ath11k-fragment-fix/qualification-summary.json"
+    },
+    {
+      "subject": "Built-in2.4GHz",
+      "status": "Waived / unqualified",
+      "detail": "Repeated low-rate/error runs retained. User waived additional retries; no NSS-off qualification or confirmed root cause.",
+      "href": "https://github.com/lyrids/openwrt-ipq6010-ppe-nss/blob/jdcloud-mainline-ppe-nss/ipq6010-lab/evidence/ath11k-fragment-fix/qualification-summary.json"
+    },
+    {
+      "subject": "Firewall new-connection deny",
+      "status": "Passed",
+      "detail": "A normal UCI LAN-to-WAN reject blocked a fresh TCP connection; scoped rule removed afterward.",
+      "href": "https://github.com/lyrids/openwrt-ipq6010-ppe-nss/blob/jdcloud-mainline-ppe-nss/ipq6010-lab/evidence/ath11k-fragment-fix/qualification-summary.json"
+    },
+    {
+      "subject": "Firewall LAN/WAN input separation",
+      "status": "Passed",
+      "detail": "Router-local service reachable from LAN, blocked from isolated WAN namespace; rule counters retained.",
+      "href": "https://github.com/lyrids/openwrt-ipq6010-ppe-nss/blob/jdcloud-mainline-ppe-nss/ipq6010-lab/evidence/ath11k-fragment-fix/qualification-summary.json"
+    },
+    {
+      "subject": "DNAT bidirectional forwarding",
+      "status": "Passed",
+      "detail": "Isolated WAN namespace to DUT DNAT to WRT wired server;927.83/932.29M TCP, captured active flow/counter evidence.",
+      "href": "https://github.com/lyrids/openwrt-ipq6010-ppe-nss/blob/jdcloud-mainline-ppe-nss/ipq6010-lab/evidence/ath11k-fragment-fix/qualification-summary.json"
+    },
+    {
+      "subject": "Ethernet TBF / PRIO",
+      "status": "Passed",
+      "detail": "TBF100/200 hardware caps enforced with NSS on and off; TC offloaded state and counters recorded. PRIO attachment only, arbitration not qualified.",
+      "href": "https://github.com/lyrids/openwrt-ipq6010-ppe-nss/blob/jdcloud-mainline-ppe-nss/ipq6010-lab/evidence/ath11k-fragment-fix/qualification-summary.json"
+    },
+    {
+      "subject": "Wi-Fi qdisc with NSS",
+      "status": "Known limitation",
+      "detail": "Forwarded NSS traffic bypasses AP TBF/HTB/CAKE100M; router-local TBF caps95.68M. PPE/NSS-off control caps all three at roughly95M.",
+      "href": "https://github.com/lyrids/openwrt-ipq6010-ppe-nss/blob/jdcloud-mainline-ppe-nss/ipq6010-lab/evidence/ath11k-fragment-fix/qualification-summary.json"
+    },
+    {
+      "subject": "Ethernet CAKE with acceleration",
+      "status": "Known limitation",
+      "detail": "CAKE100M attaches but accelerated frames continue near937M; hardware TBF is a distinct, measured port-shaping mechanism.",
+      "href": "https://github.com/lyrids/openwrt-ipq6010-ppe-nss/blob/jdcloud-mainline-ppe-nss/ipq6010-lab/evidence/ath11k-fragment-fix/qualification-summary.json"
+    },
+    {
+      "subject": "MTU / VLAN transaction guards",
+      "status": "Historical + source regression",
+      "detail": "Source-derived transaction/VLAN/MTU harnesses passed before build; detailed oversize/fault-injection hardware results are from earlier images, not repeated yet on iteration11.",
+      "href": "https://github.com/lyrids/openwrt-ipq6010-ppe-nss/blob/jdcloud-mainline-ppe-nss/ipq6010-lab/evidence/ath11k-fragment-fix/qualification-summary.json"
+    },
+    {
+      "subject": "Wi-Fi lifecycle / reconnect",
+      "status": "Pending",
+      "detail": "Final NSS-on reboot and automatic AP flowtable membership checks remain pending."
+    },
+    {
+      "subject": "Software L3 throughput / CPU",
+      "status": "Partial / interrupted",
+      "detail": "Wired controls completed; Wi-Fi matrix interrupted by unexpected restart. Completed clean QCN retries retained. No full software-matrix pass claimed."
+    },
+    {
+      "subject": "Stability / unexpected restart",
+      "status": "Failed / cause under investigation",
+      "detail": "Two unexpected RAM boots; second confirmed not a user power cycle. NSS disabled and no flowtable during second failure. Clean15s/60s QCN software retries passed; diagnostic crash capture being prepared.",
+      "href": "https://github.com/lyrids/openwrt-ipq6010-ppe-nss/blob/jdcloud-mainline-ppe-nss/ipq6010-lab/evidence/ath11k-fragment-fix/qualification-summary.json"
+    },
+    {
+      "subject": "IPv6 / advanced QoS",
+      "status": "Not requalified",
+      "detail": "Current campaign measures IPv4. PRIO arbitration, RED/GRED congestion and ETS/MQPRIO semantics are not qualified by module presence."
+    },
+    {
+      "subject": "UDP buffer persistence",
+      "status": "Passed",
+      "detail": "Both routers retain8MiB default/max send and max receive profiles. Receive defaults unchanged. Stock eMMC fallback is unchanged.",
+      "href": "https://github.com/lyrids/openwrt-ipq6010-ppe-nss/blob/jdcloud-mainline-ppe-nss/ipq6010-lab/evidence/ath11k-fragment-fix/qualification-summary.json"
+    },
+    {
+      "subject": "2.5G /6GHz capacity",
+      "status": "Not qualified",
+      "detail": "WAN link negotiated1G. Observed external radio isQCN9074; VHT test client does not qualify HE/6GHz capacity."
+    },
+    {
+      "subject": "U-Boot TFTP and console",
+      "status": "Current boot + historical console",
+      "detail": "Normal LAN1 TFTP boots verified in this campaign. Existing on-demand Telnet pause policy and eMMC fallback were tested previously; no new bootloader change."
+    },
+    {
+      "subject": "Kexec / USB",
+      "status": "Suspended / not implemented",
+      "detail": "Kexec excluded after historical CPU restart failures. USB boot fallback has not been implemented or qualified."
+    },
+    {
+      "subject": "Fragment RX/timer lifetime fix",
+      "status": "Bounded regressions passed",
+      "detail": "Fixed-helper ASAN/UBSAN ordering tests pass. Native iteration14 and NSS iteration15 each passed both-radio bridge/NAT and40 fresh flow/qdisc/reconnect cases; iteration15 AP lifecycle passed on both radios. No new kernel fault or reboot captured. On-air802.11 fragmentation remains unqualified.",
+      "href": "https://github.com/lyrids/openwrt-ipq6010-ppe-nss/tree/jdcloud-mainline-ppe-nss/ipq6010-lab/evidence/ath11k-fragment-fix"
+    }
+  ],
+  "decisions": [
+    "Native PPE and NSS both reach the1G wired endpoint ceiling. Their maximum capacities cannot be inferred from these rates.",
+    "Use matched offered-load UDP CPU/loss and per-core load to assess acceleration benefit. TCP rates alone mix endpoint, RF and CPU limits."
+  ],
+  "limits": [
+    "Tests use sequential runs with schedutil CPU frequency and uncontrolled RF conditions. No energy measurement or statistical confidence interval is claimed.",
+    "ath11k source and original module .text match the previous checkpoint. This rules out an ath11k code delta as the direct rebase change, but does not exclude a latent shared-driver bug, reset/hardware issue or lifecycle interaction.",
+    "Patch959 is validated by source-derived helper tests and ordinary traffic/lifecycle tests. On-air802.11 fragmentation remains unqualified; no all-races-eliminated or long-term stability claim is made."
+  ],
+  "provenance": {
+    "Fixed-image capture": "netconsole UDP6665\u21926666 via br-lan to p43; receiver verified",
+    "Pstore limitation": "Records survived logger reload but not the tested normal TFTP reboot; not relied upon for crash evidence",
+    "Fragment fix source": "d69ebcba83",
+    "Fragment fix NSS-on FIT SHA256": "10bb8dad50b81163c3c5cc19256aa7c52a61424ab7df952fe8cb7ee31bc7708e",
+    "Fragment fix ath11k package": "6.18.55.7.2-r13",
+    "Rejected iteration14 NSS FIT": "74b67a0b202e08f55d7ff75782d6dc6bfcd40fba27702430762c3c8b16aff531",
+    "Iteration13 image source": "b56fbc6bec",
+    "Iteration13 NSS-on FIT SHA256": "4f67b3fdb6a61b77d52548ad95ad55de7b4667b0f47bcc7c1050914e90e5e60a",
+    "Iteration13 ath11k package": "6.18.55.7.2-r11",
+    "Current image source": "d69ebcba83",
+    "Current NSS-on FIT SHA256": "10bb8dad50b81163c3c5cc19256aa7c52a61424ab7df952fe8cb7ee31bc7708e",
+    "Current ath11k package": "6.18.55.7.2-r13"
+  }
+}

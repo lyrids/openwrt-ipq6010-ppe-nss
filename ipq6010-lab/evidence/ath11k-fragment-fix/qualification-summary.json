@@ -1,0 +1,57 @@
+{
+  "source_commit": "d69ebcba83",
+  "running_image": "iteration15",
+  "fit_sha256": "10bb8dad50b81163c3c5cc19256aa7c52a61424ab7df952fe8cb7ee31bc7708e",
+  "helper_tests": {
+    "asan": "passed",
+    "ubsan": "passed",
+    "cases": [
+      "old timeout versus rearm",
+      "running callback versus peer deletion",
+      "pending timer cancellation across 17 TIDs"
+    ]
+  },
+  "native_runtime": {
+    "image": "iteration14 NSS off",
+    "fresh_cases": 40,
+    "passed": 40,
+    "radios": [
+      "QCN9074 5GHz",
+      "built-in 5GHz"
+    ],
+    "initial_bridge_nat_cases": 16
+  },
+  "nss_runtime": {
+    "image": "iteration15 NSS on",
+    "fresh_cases": 40,
+    "passed": 40,
+    "radios": [
+      "QCN9074 5GHz",
+      "built-in 5GHz"
+    ],
+    "initial_bridge_nat_cases": 16,
+    "ap_lifecycle_checks": 2,
+    "ap_lifecycle_passed": 2,
+    "nss_nat_flow_observations": true,
+    "cpus_online": "0-3",
+    "boot_id_unchanged": true,
+    "kernel_fault_signatures_captured": false
+  },
+  "rejected_candidate": {
+    "image": "iteration14 NSS on",
+    "reason": "TCP control handshake failures; previous iteration13 passed the same test",
+    "mechanism": "not established by the layout-preserving comparison"
+  },
+  "historical_suite": {
+    "image": "iteration13 NSS on",
+    "fresh_cases": 240,
+    "passed": 240
+  },
+  "limits": [
+    "No on-air802.11 fragmentation qualification",
+    "Historical unexpected reboot attribution remains unproven",
+    "No all-races-eliminated or long-term stability claim",
+    "Short diagnostic rates are not matched long-duration CPU benchmarks"
+  ],
+  "raw_evidence_retained_on_orb": "/home/ly/projects/openwrt-dev/src/openwrt-mainline-ppe-nss/ipq6010-lab/evidence/mainline-qualification-20261026"
+}

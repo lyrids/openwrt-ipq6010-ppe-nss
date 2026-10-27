@@ -4,6 +4,7 @@ import os,pathlib,subprocess,time
 b=["ssh","-o","BatchMode=yes","-o","ConnectTimeout=5","-o","StrictHostKeyChecking=yes"]
 d=b+["-o","UserKnownHostsFile="+os.environ["DUT_KNOWN_HOSTS"],"root@192.168.1.1"]
 w=b+["-b","192.168.1.132","-o","UserKnownHostsFile="+str(pathlib.Path.home()/"openwrt-ramboot/replacement154-lan-known-hosts"),"root@192.168.1.3"]
+if os.environ.get("WRT_CONTROL_SOCKET"): w=w[:-1]+["-S",os.environ["WRT_CONTROL_SOCKET"],w[-1]]
 source=subprocess.Popen(w+["uci -q get wireless.qcn_sta.key"],stdout=subprocess.PIPE)
 script="""set -e
 umask 077
@@ -29,6 +30,8 @@ uci set wireless.default_radio1.ssid=OpenWrt-RAM-test-IPQ6018-2G
 uci set wireless.radio2.channel=36
 uci set wireless.radio2.htmode=HE80
 uci set wireless.default_radio2.ssid=OpenWrt-RAM-test-QCN9074
+uci set wireless.radio1.disabled=1
+uci set wireless.default_radio1.disabled=1
 uci commit wireless
 wifi reload
 ip -4 addr show dev wan | grep -q '198.18.21.1/' || ip addr add 198.18.21.1/24 dev wan

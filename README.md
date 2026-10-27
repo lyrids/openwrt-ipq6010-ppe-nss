@@ -1,6 +1,6 @@
 # JDCloud IPQ6010 PPE + NSS development
 
-Current RAM image: iteration9, source49b3824932, kernel6.18.55. It retains the pre-kexec kernel/NSS backend and adds automatic firewall flowtable refresh after Wi-Fi setup. Kexec remains suspended. [Normal TFTP boot and rollback](ipq6010-lab/tftp-boot/README.md), [build provenance](ipq6010-lab/artifacts/wifi-lifecycle-49b3824932-20261026/README.md), and [hardware results](ipq6010-lab/README.md) describe the active integration.
+Current RAM image: iteration15, sourced69ebcba83, Linux6.18.55, ath11k backports7.2 release13. Patches954–958 fix peer-access sites; patch959 serializes fragments and defers peer destruction until timer callbacks finish. Native iteration14 and NSS iteration15 each passed both-radio bridge/NAT checks and40 fresh transition/reconnect traffic cases. Iteration15 also passed both AP teardown/recreation checks. Iteration14 NSS was rejected; iteration15 preserves original peer member offsets. Historical iteration11 resets remain unattributed, and on-air802.11 fragmentation is unqualified. Kexec remains disabled. See ipq6010-lab/evidence/ath11k-fragment-fix and ipq6010-lab/mainline-sync.
 
 On this IPQ6010 lab build, eligible Ethernet routing/NAT uses the community NSS firmware backend through the PPE flow callback; Wi-Fi uses the community NSS adapter. The general engine table below is inherited community-project documentation. Device-specific architecture and qualified cases are recorded in the lab documentation.
 
