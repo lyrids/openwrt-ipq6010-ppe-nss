@@ -20,7 +20,7 @@ for f in sorted(a.evidence.glob("*/results.json")):
   if not r["run_complete"]:
    r["diagnostic"]=True;r["note"]="Interrupted run; completed repeat is used for comparisons"
   if r.get("radio")=="builtin2":
-   r["diagnostic"]=True;r["note"]="2.4GHz retries waived by user; performance/offload unqualified"
+   r["diagnostic"]=True;r["note"]=("Iteration15 p43 bridge retest; 1x1 HT20, separate from iteration11 comparisons" if r.get("test_client")=="p43-brcmfmac" else "LY-WRT32X antenna-limited retest; not router qualification" if r.get("requested_2g_retest") else "Historical2.4GHz retries waived; superseded by separate p43 retest")
   if r.get("path")=="pppoe" and not r.get("server_mode")=="kernel":
    r["diagnostic"]=True;r["note"]="Userspace PPPoE server; use kernel-mode rerun for comparison"
   r["nss_flow_observations"]=r.get("nss_flow_observations",[])[:4]

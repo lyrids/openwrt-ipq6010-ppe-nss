@@ -1,0 +1,172 @@
+{
+  "date_utc": "2026-10-27",
+  "driver_source": "d69ebcba83",
+  "kernel": "6.18.55",
+  "ath11k_release": 13,
+  "nss_firmware": "CP12.5",
+  "on_fit_sha256": "10bb8dad50b81163c3c5cc19256aa7c52a61424ab7df952fe8cb7ee31bc7708e",
+  "off_fit_sha256": "c008b72b76e56865a083dc16b2615ba85288669478bc69d33bc235e60cf623f2",
+  "client": "p43 brcmfmac, HT MCS0-7, one spatial stream",
+  "server": "LY-WRT32X wired LAN4, 192.168.1.3:5362",
+  "management": "p43 192.168.21.130 via enx000ec6beaaf2",
+  "channel": 11,
+  "width_mhz": 20,
+  "client_phy_mbps": 72.2,
+  "country": "US",
+  "campaigns": [
+    {
+      "mode": "nss",
+      "run": "20261027T134829Z-nss-builtin2-wifi-bridge-p43",
+      "passed_cases": 6,
+      "cases": [
+        {
+          "case": "tcp-up",
+          "seconds": 15,
+          "receiver_mbps": 51.370282524196554,
+          "udp_loss_pct": null,
+          "dut_cpu_mean_pct": 0.871853923342655,
+          "dut_cpu_max_core_pct": 3.2042723631508676,
+          "error": null
+        },
+        {
+          "case": "tcp-down",
+          "seconds": 15,
+          "receiver_mbps": 45.085341514044934,
+          "udp_loss_pct": null,
+          "dut_cpu_mean_pct": 0.3050738599871548,
+          "dut_cpu_max_core_pct": 0.53156146179402,
+          "error": null
+        },
+        {
+          "case": "udp5-up",
+          "seconds": 15,
+          "receiver_mbps": 4.99945116563821,
+          "udp_loss_pct": 0,
+          "dut_cpu_mean_pct": 0.3983402489626556,
+          "dut_cpu_max_core_pct": 0.8885850991114149,
+          "error": null
+        },
+        {
+          "case": "udp5-down",
+          "seconds": 15,
+          "receiver_mbps": 5.003143763588978,
+          "udp_loss_pct": 0,
+          "dut_cpu_mean_pct": 0.4826897470039947,
+          "dut_cpu_max_core_pct": 1.1049723756906078,
+          "error": null
+        },
+        {
+          "case": "udp20-up",
+          "seconds": 15,
+          "receiver_mbps": 19.994373943240003,
+          "udp_loss_pct": 0,
+          "dut_cpu_mean_pct": 0.9303871074929391,
+          "dut_cpu_max_core_pct": 2.88659793814433,
+          "error": null
+        },
+        {
+          "case": "udp20-down",
+          "seconds": 15,
+          "receiver_mbps": 19.989817629979715,
+          "udp_loss_pct": 0,
+          "dut_cpu_mean_pct": 0.3679545074427162,
+          "dut_cpu_max_core_pct": 0.9866102889358703,
+          "error": null
+        }
+      ],
+      "boot_id": "a3670635-582f-4d1e-ae92-cec9f9817abd",
+      "cleanup_errors": []
+    },
+    {
+      "mode": "ppe",
+      "run": "20261027T135331Z-ppe-builtin2-wifi-bridge-p43",
+      "passed_cases": 6,
+      "cases": [
+        {
+          "case": "tcp-up",
+          "seconds": 15,
+          "receiver_mbps": 51.14304432933619,
+          "udp_loss_pct": null,
+          "dut_cpu_mean_pct": 3.924802110817942,
+          "dut_cpu_max_core_pct": 14.670255720053836,
+          "error": null
+        },
+        {
+          "case": "tcp-down",
+          "seconds": 15,
+          "receiver_mbps": 44.31664510376325,
+          "udp_loss_pct": null,
+          "dut_cpu_mean_pct": 1.539448364336113,
+          "dut_cpu_max_core_pct": 5.461901550910317,
+          "error": null
+        },
+        {
+          "case": "udp5-up",
+          "seconds": 15,
+          "receiver_mbps": 4.998165457476797,
+          "udp_loss_pct": 0,
+          "dut_cpu_mean_pct": 0.2984084880636605,
+          "dut_cpu_max_core_pct": 0.9491525423728814,
+          "error": null
+        },
+        {
+          "case": "udp5-down",
+          "seconds": 15,
+          "receiver_mbps": 4.999954336672844,
+          "udp_loss_pct": 0,
+          "dut_cpu_mean_pct": 1.6134343101745143,
+          "dut_cpu_max_core_pct": 5.270092226613966,
+          "error": null
+        },
+        {
+          "case": "udp20-up",
+          "seconds": 15,
+          "receiver_mbps": 19.992243754023054,
+          "udp_loss_pct": 0,
+          "dut_cpu_mean_pct": 1.4164305949008498,
+          "dut_cpu_max_core_pct": 5.493741307371349,
+          "error": null
+        },
+        {
+          "case": "udp20-down",
+          "seconds": 15,
+          "receiver_mbps": 20.001725261332425,
+          "udp_loss_pct": 0,
+          "dut_cpu_mean_pct": 2.937778511305496,
+          "dut_cpu_max_core_pct": 10.836120401337793,
+          "error": null
+        }
+      ],
+      "boot_id": "bc5f380e-96e5-44bb-8aa1-804b843402e6",
+      "cleanup_errors": []
+    }
+  ],
+  "limitations": [
+    "Single sequential run per mode; uncontrolled RF and schedutil CPU frequency.",
+    "1x1 HT20 client: not maximum 2x2 HE throughput.",
+    "IPv4 bridge forwarding only; 2.4 GHz NAT/firewall/qdisc coverage not added.",
+    "LY-WRT32X wireless measurements excluded from router qualification: user reports only two 5 GHz antennas. Exact antenna versus client-driver cause is not isolated.",
+    "Initial p43 campaign had an invalid receive-only timeout option in transmit cases; corrected campaign supersedes it."
+  ],
+  "nss_wifi_telemetry": {
+    "active_firmware_interface": 33,
+    "rx_enqueue_delta": 113928,
+    "rx_bytes_delta": 150471837,
+    "tx_received_delta": 134270,
+    "tx_enqueue_delta": 134175,
+    "tx_enqueue_fail_delta": 94,
+    "reported_desc_fail_delta": 18169036,
+    "reported_drop_delta": 0,
+    "interpretation": "Firmware RX/TX activity confirms service during the test. desc_fail also increases during successful forwarding; it is not used as a root-cause or pass/fail criterion pending counter validation."
+  },
+  "restoration": {
+    "running_image": "iteration15 NSS-on d69ebcba83",
+    "nssoffload": true,
+    "cpus_online": "0-3",
+    "dut_builtin2_disabled_after_test": true,
+    "p43_original_supplicant_network_restored": true,
+    "temporary_supplicant_network_removed": true,
+    "wired_management_preferred": "192.168.21.130; runtime IPv4 route metric100",
+    "original_route_snapshot_on_p43": "/home/ubuntu/openwrt-ramboot/p43-wifi-test/routes.before"
+  }
+}
