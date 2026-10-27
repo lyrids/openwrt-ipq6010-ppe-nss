@@ -41,7 +41,7 @@ for mode in ["nss","ppe","software"]:
   elif name=="ethernet-prio":interpretation="Hardware attachment; arbitration not tested" if hw else "Software attachment only"
   elif "100" in name:interpretation="Cap enforced" if 80<mbps<110 else "Configured100M cap bypassed"
   else:interpretation="Forwarding compatibility; inspect queue counters"
-  qdisc.append({"mode":mode,"case":name,"mbps":mbps,"interpretation":interpretation,"href":base+str(f.relative_to(a.evidence)),"tc_excerpt":"\n".join(text.splitlines()[:7])})
+  qdisc.append({"mode":mode,"case":name,"mbps":mbps,"interpretation":interpretation,"href":'https://github.com/lyrids/openwrt-ipq6010-ppe-nss/blob/jdcloud-mainline-ppe-nss/ipq6010-lab/evidence/ath11k-fragment-fix/qualification-summary.json',"tc_excerpt":"\n".join(text.splitlines()[:7])})
 fix_runs=[]
 fragment=repo/"ipq6010-lab/evidence/ath11k-fragment-fix/runtime"
 fix_files=list(a.evidence.glob("fix-validation-*/results.json"))+list(fragment.glob("fragment-*/results.json"))

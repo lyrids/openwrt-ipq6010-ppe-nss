@@ -53,5 +53,10 @@
     "No all-races-eliminated or long-term stability claim",
     "Short diagnostic rates are not matched long-duration CPU benchmarks"
   ],
-  "raw_evidence_retained_on_orb": "/home/ly/projects/openwrt-dev/src/openwrt-mainline-ppe-nss/ipq6010-lab/evidence/mainline-qualification-20261026"
+  "raw_evidence_retained_on_orb": "/home/ly/projects/openwrt-dev/src/openwrt-mainline-ppe-nss/ipq6010-lab/evidence/mainline-qualification-20261026",
+  "official_base": "6c9452a35b923d98bb26c85b5734a6058c02185e",
+  "community_source": "03803c78cd3b6968c20dab239c0c2f688692be63",
+  "kernel": "6.18.55",
+  "nss_firmware": "CP12.5; existing pinned binaries",
+  "fix_patch_series": "954-959"
 }
