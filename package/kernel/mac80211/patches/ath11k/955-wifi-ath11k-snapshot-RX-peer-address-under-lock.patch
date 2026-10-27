@@ -1,0 +1,41 @@
+From: Yong Liu <lyrids@me.com>
+Subject: [PATCH] wifi: ath11k: snapshot RX peer address under the peer lock
+
+The RX debug message formats a peer MAC after releasing base_lock.
+Peer unmap can free the containing object first. Copy the address while
+locked, leaving the existing station RCU lifetime unchanged.
+
+Signed-off-by: Yong Liu <lyrids@me.com>
+
+--- a/drivers/net/wireless/ath/ath11k/dp_rx.c
++++ b/drivers/net/wireless/ath/ath11k/dp_rx.c
+@@ -2461,6 +2461,8 @@
+ 	struct ieee80211_radiotap_he *he = NULL;
+ 	struct ieee80211_sta *pubsta = NULL;
+ 	struct ath11k_peer *peer;
++	u8 peer_addr[ETH_ALEN];
++	bool peer_addr_valid;
+ 	struct ath11k_skb_rxcb *rxcb = ATH11K_SKB_RXCB(msdu);
+ 	u8 decap = DP_RX_DECAP_TYPE_RAW;
+ 	bool is_mcbc = rxcb->is_mcbc;
+@@ -2479,15 +2481,18 @@
+ 
+ 	spin_lock_bh(&ar->ab->base_lock);
+ 	peer = ath11k_dp_rx_h_find_peer(ar->ab, msdu);
+-	if (peer && peer->sta)
++	peer_addr_valid = !!peer;
++	if (peer) {
++		ether_addr_copy(peer_addr, peer->addr);
+ 		pubsta = peer->sta;
++	}
+ 	spin_unlock_bh(&ar->ab->base_lock);
+ 
+ 	ath11k_dbg(ar->ab, ATH11K_DBG_DATA,
+ 		   "rx skb %p len %u peer %pM %d %s sn %u %s%s%s%s%s%s%s %srate_idx %u vht_nss %u freq %u band %u flag 0x%x fcs-err %i mic-err %i amsdu-more %i\n",
+ 		   msdu,
+ 		   msdu->len,
+-		   peer ? peer->addr : NULL,
++		   peer_addr_valid ? peer_addr : NULL,
+ 		   rxcb->tid,
+ 		   is_mcbc ? "mcast" : "ucast",
+ 		   rxcb->seq_no,

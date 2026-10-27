@@ -1,0 +1,44 @@
+From: Yong Liu <lyrids@me.com>
+Subject: [PATCH] wifi: ath11k: avoid freed peers in WMI error diagnostics
+
+Peer unmap frees peers under base_lock. Use a vdev ID copied under that
+lock in power-save and kickout error messages rather than dereferencing
+the peer after unlocking.
+
+Signed-off-by: Yong Liu <lyrids@me.com>
+
+--- a/drivers/net/wireless/ath/ath11k/wmi.c
++++ b/drivers/net/wireless/ath/ath11k/wmi.c
+@@ -7524,6 +7524,7 @@
+ 	struct ath11k_sta *arsta;
+ 	const void **tb;
+ 	enum ath11k_wmi_peer_ps_state peer_previous_ps_state;
++	u32 vdev_id;
+ 	int ret;
+ 
+ 	tb = ath11k_wmi_tlv_parse_alloc(ab, skb, GFP_ATOMIC);
+@@ -7558,12 +7559,13 @@
+ 		goto exit;
+ 	}
+ 
+-	ar = ath11k_mac_get_ar_by_vdev_id(ab, peer->vdev_id);
++	vdev_id = peer->vdev_id;
++	ar = ath11k_mac_get_ar_by_vdev_id(ab, vdev_id);
+ 
+ 	if (!ar) {
+ 		spin_unlock_bh(&ab->base_lock);
+ 		ath11k_warn(ab, "invalid vdev id in peer sta ps state change ev %d",
+-			    peer->vdev_id);
++			    vdev_id);
+ 
+ 		goto exit;
+ 	}
+@@ -7922,7 +7924,7 @@
+ 	ar = ath11k_mac_get_ar_by_vdev_id(ab, vdev_id);
+ 	if (!ar) {
+ 		ath11k_warn(ab, "invalid vdev id in peer sta kickout ev %d",
+-			    peer->vdev_id);
++			    vdev_id);
+ 		goto exit;
+ 	}
+ 

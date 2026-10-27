@@ -1,0 +1,83 @@
+From: Yong Liu <lyrids@me.com>
+Subject: [PATCH] wifi: ath11k: avoid holding a peer across key command waits
+
+The peer lock is released before key installation waits for WMI. Copy
+the key pointers under base_lock instead of accessing a potentially
+unmapped peer while unlocked. mac80211 key ownership and the existing
+configuration serialization are unchanged. Re-lookup the peer before
+clearing a key slot, and only clear it if it still contains the same key.
+
+Signed-off-by: Yong Liu <lyrids@me.com>
+
+--- a/drivers/net/wireless/ath/ath11k/mac.c
++++ b/drivers/net/wireless/ath/ath11k/mac.c
+@@ -4438,6 +4438,8 @@
+ 	struct ath11k *ar = arvif->ar;
+ 	struct ath11k_base *ab = ar->ab;
+ 	struct ath11k_peer *peer;
++	struct ieee80211_key_conf *keys[WMI_MAX_KEY_INDEX + 1];
++	bool found;
+ 	int first_errno = 0;
+ 	int ret;
+ 	int i;
+@@ -4447,17 +4449,20 @@
+ 
+ 	spin_lock_bh(&ab->base_lock);
+ 	peer = ath11k_peer_find(ab, arvif->vdev_id, addr);
++	found = !!peer;
++	if (peer)
++		memcpy(keys, peer->keys, sizeof(keys));
+ 	spin_unlock_bh(&ab->base_lock);
+ 
+-	if (!peer)
++	if (!found)
+ 		return -ENOENT;
+ 
+-	for (i = 0; i < ARRAY_SIZE(peer->keys); i++) {
+-		if (!peer->keys[i])
++	for (i = 0; i < ARRAY_SIZE(keys); i++) {
++		if (!keys[i])
+ 			continue;
+ 
+ 		/* key flags are not required to delete the key */
+-		ret = ath11k_install_key(arvif, peer->keys[i],
++		ret = ath11k_install_key(arvif, keys[i],
+ 					 DISABLE_KEY, addr, flags);
+ 		if (ret < 0 && first_errno == 0)
+ 			first_errno = ret;
+@@ -4467,7 +4472,9 @@
+ 				    i, ret);
+ 
+ 		spin_lock_bh(&ab->base_lock);
+-		peer->keys[i] = NULL;
++		peer = ath11k_peer_find(ab, arvif->vdev_id, addr);
++		if (peer && peer->keys[i] == keys[i])
++			peer->keys[i] = NULL;
+ 		spin_unlock_bh(&ab->base_lock);
+ 	}
+ 
+@@ -4481,16 +4488,21 @@
+ 	const u8 *addr = arvif->bssid;
+ 	int i, ret, first_errno = 0;
+ 	struct ath11k_peer *peer;
++	struct ieee80211_key_conf *keys[WMI_MAX_KEY_INDEX + 1];
++	bool found;
+ 
+ 	spin_lock_bh(&ab->base_lock);
+ 	peer = ath11k_peer_find(ab, arvif->vdev_id, addr);
++	found = !!peer;
++	if (peer)
++		memcpy(keys, peer->keys, sizeof(keys));
+ 	spin_unlock_bh(&ab->base_lock);
+ 
+-	if (!peer)
++	if (!found)
+ 		return -ENOENT;
+ 
+-	for (i = 0; i < ARRAY_SIZE(peer->keys); i++) {
+-		struct ieee80211_key_conf *key = peer->keys[i];
++	for (i = 0; i < ARRAY_SIZE(keys); i++) {
++		struct ieee80211_key_conf *key = keys[i];
+ 
+ 		if (!key || (key->flags & IEEE80211_KEY_FLAG_PAIRWISE))
+ 			continue;

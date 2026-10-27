@@ -1,0 +1,23 @@
+From: Yong Liu <lyrids@me.com>
+Subject: [PATCH] wifi: ath11k: copy TX status station before releasing peer lock
+
+Peer unmap frees struct ath11k_peer while holding ab->base_lock. Copy the
+station pointer before releasing that lock so a concurrent unmap cannot
+free the peer before the subsequent dereference. The existing mac80211
+station lifetime rules and status callback context are unchanged.
+
+Signed-off-by: Yong Liu <lyrids@me.com>
+
+--- a/drivers/net/wireless/ath/ath11k/dp_tx.c
++++ b/drivers/net/wireless/ath/ath11k/dp_tx.c
+@@ -377,9 +377,8 @@
+ 		ieee80211_free_txskb(ar->hw, msdu);
+ 		return;
+ 	}
++	status.sta = peer->sta;
+ 	spin_unlock_bh(&ab->base_lock);
+-
+-	status.sta = peer->sta;
+ 	status.info = info;
+ 	status.skb = msdu;
+ 

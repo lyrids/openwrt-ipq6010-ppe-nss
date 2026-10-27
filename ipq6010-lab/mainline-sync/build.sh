@@ -21,6 +21,14 @@ if [ "$mode" = off ]; then
  sed -i "s/option offload '1'/option offload '0'/; s/option ethernet_offload '1'/option ethernet_offload '0'/" files/etc/config/nss-wifi
 fi
 printf "NSS control variant: %s\n" "$mode" >> files/etc/image-provenance
+# Network structure layouts can change with kernel configuration. Rebuild
+# out-of-tree modules instead of reusing an incompatible incremental object.
+make defconfig > "$run/defconfig.log" 2>&1
+config_hash=$(sha256sum .config | cut -d' ' -f1)
+config_stamp=tmp/ipq6010-lab-external-config.sha256
+if [ ! -f "$config_stamp" ] || [ "$(cat "$config_stamp")" != "$config_hash" ]; then
+ make package/kernel/mac80211/clean package/kernel/nss-wifi-drv/clean > "$run/external-clean.log" 2>&1
+fi
 cp files/etc/config/nss-wifi "$run/nss-wifi.config"
 cp files/etc/image-provenance "$run/image-provenance"
 "$workspace/bin/snapshot-build-state" "$PWD" "$run/build-state"
@@ -34,4 +42,5 @@ mkdir -p "$run/images"
 cp bin/targets/qualcommax/ipq60xx/*jdcloud_re-cs-02* "$run/images/"
 (cd "$run/images"; sha256sum *) > "$run/images.sha256"
 date -u +%FT%TZ > "$run/finished-utc"
+printf "%s\n" "$config_hash" > "$config_stamp"
 echo built > "$run/status"
