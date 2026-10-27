@@ -15,20 +15,22 @@ Signed-off-by: Yong Liu <lyrids@me.com>
 
 --- a/drivers/net/wireless/ath/ath11k/peer.h
 +++ b/drivers/net/wireless/ath/ath11k/peer.h
-@@ -7,8 +7,11 @@
+@@ -6,6 +6,8 @@
+ 
  #ifndef ATH11K_PEER_H
  #define ATH11K_PEER_H
- 
-+#include <linux/workqueue.h>
 +
++#include <linux/workqueue.h>
+ 
  struct ath11k_peer {
  	struct list_head list;
-+	struct work_struct delete_work;
- 	struct ieee80211_sta *sta;
- 	int vdev_id;
- 	u8 addr[ETH_ALEN];
-@@ -37,6 +40,7 @@
+@@ -35,8 +37,12 @@
+ 	u16 sec_type_grp;
+ 	bool is_authorized;
  	bool dp_setup_done;
++
++	/* Preserve the offsets of existing peer members. */
++	struct work_struct delete_work;
  };
  
 +void ath11k_peer_free(struct ath11k_base *ab, struct ath11k_peer *peer);
